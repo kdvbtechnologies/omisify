@@ -86,23 +86,34 @@ footer {
   .cards {
 	height: auto;
 	width: 250px;
-    font-size: 18px;
+    font-size: 19px;
 	padding: 30px;
 	color: #4e4e4e;
+    
 }
 
 .cards .card {
-  border: 2px solid  #4e4e4e;
+  border: 2px solid  #cdcdcd;
   border-radius: 12px;
   padding: 20px;
+  
 }
 
-.cards .card h2 {
+.cards .card h3 {
     color:  #4e4e4e;
     font-family: Helvetica, sans-serif;
     text-align: center;
+    margin: 20px 0px;
 }
 
 .cards .card hr {
-    color:  #4e4e4e;
+   border: 0.1px solid #4e4e4e;
+   
 }
+
+
+.cards .card p {
+    
+    padding: 20px 0px;
+    
+  }

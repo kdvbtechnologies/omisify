@@ -16,15 +16,17 @@ export default function HomeAction() {
     <>
       <div className="cards">
         <div className="card">
-          <h2>HTML / CSS</h2>
+          <h3>HTML / CSS</h3>
           <hr />
-          <p>
-            Responsive Design + bonus: Creation de logo, Certificat SSL,
-            Hebergement Creation de site internet au prix de 10 euros. Omisify
-            est une entreprise qui crée des sites internet au prix de 10 euros.
-            Le paimenent se fait après la livraison. Visitez leur site internet
-            en cliquant ici https://www.omisify.com
-          </p>
+          <div className="card-desc">
+            <p>
+              Responsive Design + bonus: Creation de logo, Certificat SSL,
+              Hebergement Creation de site internet au prix de 10 euros. Omisify
+              est une entreprise qui crée des sites internet au prix de 10
+              euros. Le paimenent se fait après la livraison. Visitez leur site
+              internet en cliquant ici https://www.omisify.com
+            </p>
+          </div>
         </div>
       </div>
       <Footer />
