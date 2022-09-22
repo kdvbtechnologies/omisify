@@ -14,7 +14,11 @@ import Footer from "./Footer";
 export default function HomeAction() {
   return (
     <>
-      <h1>Bienvenue</h1>
+      <div className="cards">
+        <div className="card">
+          <h1>Bienvenue</h1>
+        </div>
+      </div>
       <p>
         Responsive Design + bonus: Creation de logo, Certificat SSL, Hebergement
         Creation de site internet au prix de 10 euros. Omisify est une

@@ -41,7 +41,7 @@
     font-size: 22px;
 }
 
-/* Home.js */
+/* Footer.js */
 
 footer {
   width: 100%;
@@ -49,5 +49,12 @@ footer {
   background-color: red;
   color: white;
   padding: 90px 0;
+}
+
+
+/* Home.js */
+.cards .card {
+    border-radius: 20px;
+    background-color: yellow;
 }
 
