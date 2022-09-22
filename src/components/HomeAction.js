@@ -1,11 +1,11 @@
-import { Helmet } from "react-helmet";
-
+/*import { Helmet } from "react-helmet";
+<Helmet>
+        <body className="body-navbar"></body>
+      </Helmet>
+      */
 export default function HomeAction() {
   return (
     <>
-      <Helmet>
-        <body className="body-navbar"></body>
-      </Helmet>
       <h1>Bienvenue</h1>
       <p>
         N.B : Les paiements après satisfaction sont uniquement réservés aux
