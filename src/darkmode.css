@@ -75,7 +75,8 @@ footer {
 }
 
 .cards .card-desc {
-    display: flex;              /* Children use Flexbox */
+    display: flex;    
+    flex-wrap: wrap;          /* Children use Flexbox */
     flex-direction: column;     /* Rotate Axis to Vertical */
     justify-content: center;    /* Group Children in Center */
     align-items: center;        /* Group Children in Center (on cross axis) */
