@@ -1,7 +1,13 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+
 export default function App() {
   return (
-    <>
-      <h1>Bienvenue sur Omisify App</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="*" element={<Home />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
