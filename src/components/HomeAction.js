@@ -8,8 +8,8 @@ export default function HomeAction() {
       </Helmet>
       <h1>Bienvenue</h1>
       <p>
-        N.B : Les paiements à la livraison sont uniquement réservés aux nouveaux
-        sites.
+        N.B : Les paiements après satisfaction sont uniquement réservés aux
+        nouveaux sites.
       </p>
       <footer>
         <p>© 2022 Omisify</p>
