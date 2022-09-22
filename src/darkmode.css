@@ -63,8 +63,8 @@ footer {
     overflow: hidden;             /* Fixes the corners */
     margin: 5px;                  /* Add space between cards */
   }
-  
-.cards .card {
+
+.cards .card-header {
     color: #D32F2F;
   text-align: center;
   font-size: 12px;
@@ -73,4 +73,12 @@ footer {
   background-color: #FFEBEE;
   padding: 5px 10px;
 }
+
+.cards .card-desc {
+    display: flex;              /* Children use Flexbox */
+    flex-direction: column;     /* Rotate Axis to Vertical */
+    justify-content: center;    /* Group Children in Center */
+    align-items: center;        /* Group Children in Center (on cross axis) */
+    padding: 15px 0;            /* Add padding to the top/bottom */
+  }
 

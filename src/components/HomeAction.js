@@ -15,9 +15,10 @@ export default function HomeAction() {
   return (
     <>
       <div className="cards">
-        <div className="card">
+        <div className="card-header">
           <h1>Bienvenue</h1>
-
+        </div>
+        <div className="card-desc">
           <p>
             Responsive Design + bonus: Creation de logo, Certificat SSL,
             Hebergement Creation de site internet au prix de 10 euros. Omisify
