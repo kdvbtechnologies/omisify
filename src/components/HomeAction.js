@@ -8,7 +8,7 @@ export default function HomeAction() {
       </Helmet>
       <h1>Bienvenue</h1>
       <footer>
-        <p>Footer</p>
+        <p>© 2022 Omisify</p>
       </footer>
     </>
   );
