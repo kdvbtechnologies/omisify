@@ -1,7 +1,7 @@
 export default function HomeAction() {
   return (
     <>
-      <h1>Bienvenue sur</h1>
+      <h1>Bienvenue</h1>
     </>
   );
 }
