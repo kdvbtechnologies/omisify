@@ -10,3 +10,21 @@
 .navigation .left-navigation .navlink li {
     text-decoration: none;
 }
+
+.navigation .left-navigation .navlink li {
+    color: #30a528;
+    list-style: none;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+.navigation .right-navigation .navlink {
+    text-decoration: none;
+}
+
+.navigation .right-navigation .navlink li {
+    display:inline;
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 22px;
+}
