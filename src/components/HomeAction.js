@@ -7,10 +7,7 @@ export default function HomeAction() {
   return (
     <>
       <h1>Bienvenue</h1>
-      <p>
-        N.B : Les paiements après satisfaction sont uniquement réservés aux
-        nouveaux sites.
-      </p>
+
       <footer>
         <p>© 2022 Omisify</p>
       </footer>

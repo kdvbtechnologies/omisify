@@ -30,6 +30,7 @@
     list-style: none;
     padding: 10px 20px;
     font-size: 22px;
+    text-align: center;
 }
 
 /* Home.js */
@@ -40,7 +41,6 @@
 footer {
     width: 100%;
     text-align: center;
-  padding: 3px;
   background-color: DarkSalmon;
   color: white;
   display: block;
