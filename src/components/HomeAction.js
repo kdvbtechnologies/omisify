@@ -7,6 +7,9 @@ export default function HomeAction() {
         <body className="body-navbar"></body>
       </Helmet>
       <h1>Bienvenue</h1>
+      <footer>
+        <p>Footer</p>
+      </footer>
     </>
   );
 }
