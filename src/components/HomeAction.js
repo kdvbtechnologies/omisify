@@ -14,8 +14,7 @@ export default function HomeAction() {
     <>
       <h1>Bienvenue</h1>
       <p>
-        Responsive Design Creation de logo Gratuit Certificat SSL Gratuit
-        Hebergement
+        Responsive Design + bonus: Creation de logo, Certificat SSL, Hebergement
       </p>
 
       <footer>

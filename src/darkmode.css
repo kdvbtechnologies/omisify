@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 /** components - navigation.js */
 
 .navigation {
@@ -42,3 +48,4 @@ footer {
   color: white;
   padding: 90px 0;
 }
+
