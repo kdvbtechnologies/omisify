@@ -23,8 +23,9 @@
 }
 
 .navigation .right-navigation .navlink li {
-    display:inline;
+    display: inline;
     list-style: none;
     padding: 10px 20px;
     font-size: 22px;
 }
+
