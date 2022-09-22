@@ -6,6 +6,7 @@
 
   body {
     width: 100%;
+    flex-wrap: wrap;         
   }
 
 /** components - navigation.js */
@@ -76,7 +77,6 @@ footer {
 
 .cards .card-desc {
     display: flex;    
-    flex-wrap: wrap;          /* Children use Flexbox */
     flex-direction: column;     /* Rotate Axis to Vertical */
     justify-content: center;    /* Group Children in Center */
     align-items: center;        /* Group Children in Center (on cross axis) */
