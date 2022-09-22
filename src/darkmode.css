@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 100px;
-    background: yellow;
+    background: red;
 }
 
 .navigation .left-navigation .navlink {
@@ -13,7 +13,7 @@
 }
 
 .navigation .left-navigation .navlink li {
-    color: red;
+    color: white;
     list-style: none;
     font-size: 30px;
     padding: 0px 10px;
@@ -25,6 +25,7 @@
 
 .navigation .right-navigation .navlink li {
     display: inline;
+    color: white;
     list-style: none;
     padding: 10px 20px;
     font-size: 22px;
