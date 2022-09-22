@@ -18,7 +18,11 @@ export default function HomeAction() {
         <div className="card">
           <h3>HTML / CSS</h3>
           <hr />
+
           <div className="card-desc">
+            <p>Creation de petit site internet</p>
+            <p>A partir de 10€</p>
+            <button>Souscrire</button>
             <p>
               Responsive Design + bonus: Creation de logo, Certificat SSL,
               Hebergement Creation de site internet au prix de 10 euros. Omisify
