@@ -54,21 +54,21 @@ footer {
 
 
 /* Home.js */
-
+/*
 .cards {
-    width: 150px;                 /* Set width of cards */
-    display: flex;                /* Children use Flexbox */
-    flex-direction: column;       /* Rotate Axis */
-    border: 1px solid #EF9A9A;    /* Set up Border */
-    border-radius: 4px;           /* Slightly Curve edges */
-    overflow: hidden;             /* Fixes the corners */
-    margin: 5px;                  /* Add space between cards */
+    width: 150px; 
+    display: flex;                
+    flex-direction: column;       
+    border: 1px solid #EF9A9A;   
+    border-radius: 4px;           
+    overflow: hidden;           
+    margin: 5px;                
   }
 
 .cards .card-header {
     color: #D32F2F;
   text-align: center;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
   border-bottom: 1px solid #EF9A9A;
   background-color: #FFEBEE;
@@ -76,10 +76,33 @@ footer {
 }
 
 .cards .card-desc {
+    height: auto;  
     display: flex;    
-    flex-direction: column;     /* Rotate Axis to Vertical */
-    justify-content: center;    /* Group Children in Center */
-    align-items: center;        /* Group Children in Center (on cross axis) */
-    padding: 15px 0;            /* Add padding to the top/bottom */
-  }
+    flex-direction: column; 
+    justify-content: center;    
+    align-items: center;        
+  }*/
 
+  .cards {
+	height: auto;
+	width: 250px;
+    font-size: 18px;
+	padding: 30px;
+	color: #4e4e4e;
+}
+
+.cards .card {
+  border: 2px solid  #4e4e4e;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.cards .card h2 {
+    color:  #4e4e4e;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+.cards .card hr {
+    color:  #4e4e4e;
+}
