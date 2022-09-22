@@ -6,6 +6,7 @@
     justify-content: space-between;
     padding-bottom: 25px;
     background: red;
+    width: 100%;
 }
 
 .navigation .left-navigation .navlink {
