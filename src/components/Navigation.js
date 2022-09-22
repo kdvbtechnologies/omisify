@@ -4,7 +4,11 @@ export default function Navigation() {
   return (
     <>
       <div className="navigation">
-        <div className="left-navigation"></div>
+        <div className="left-navigation">
+          <NavLink className="navlink" to="/">
+            <li>Omisify</li>
+          </NavLink>
+        </div>
         <div className="right-navigation">
           <NavLink className="navlink" to="/">
             <li>Accueil</li>
