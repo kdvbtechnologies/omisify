@@ -22,6 +22,7 @@
 
 .navigation .right-navigation .navlink {
     text-decoration: none;
+    text-align: center;
 }
 
 .navigation .right-navigation .navlink li {
@@ -30,7 +31,6 @@
     list-style: none;
     padding: 10px 20px;
     font-size: 22px;
-    text-align: center;
 }
 
 /* Home.js */
@@ -39,9 +39,9 @@
 }
 
 footer {
-    width: 100%;
-    text-align: center;
-  background-color: DarkSalmon;
+width: 100%;
+text-align: center;
+  background-color: red;
   color: white;
   padding: 90px 0;
 }
