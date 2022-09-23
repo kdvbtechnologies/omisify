@@ -1,12 +1,14 @@
-import Footer from "./Footer";
 import Navigation from "./Navigation";
 
 export default function ContactAction() {
   return (
     <>
       <Navigation />
-      <h1>Ici Contact</h1>
-      <Footer />
+      <div className="contact">
+        <div className="contact-title">
+          <h1>Contactez-Nous</h1>
+        </div>
+      </div>
     </>
   );
 }
