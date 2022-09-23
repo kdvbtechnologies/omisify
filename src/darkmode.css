@@ -291,6 +291,15 @@ footer {
       padding: 30px 10px;
     }
 
+    .introduce .remuneration {
+      color: blue;
+      border: 1px solid blue;
+      background-color: transparent;
+      border-radius: 20px;
+      padding: 20px 5px;
+      font-family: "Roboto", sans-serif;
+    }
+
 
 /*
   body {

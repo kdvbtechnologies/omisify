@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import SaliouNavigation from "./SaliouNavigation";
 
 export default function SaliouKoffiAction() {
@@ -30,9 +31,13 @@ export default function SaliouKoffiAction() {
             <li>Affilié = 0 point</li>
             <li>Total des points : 0 point = 0€</li>
           </div>
-          <p className="gain">0€</p>
+          <p className="gain">Gains : 0€</p>
         </div>
-        <p style={{ textAlign: "center", padding: "30px" }}>© 2022 Omisify</p>
+        <NavLink to="/saliou-contact">
+          <p className="remuneration" align="center">
+            Demander ma rémunération
+          </p>
+        </NavLink>
       </div>
     </>
   );
