@@ -35,6 +35,11 @@
   padding: 0px 10px;
 }
 
+.introduce {
+  text-decoration: none;
+
+}
+
 .introduce .introduce-title {
   padding: 170px;
   color: black;
@@ -298,6 +303,19 @@ footer {
       border-radius: 20px;
       padding: 20px 5px;
       font-family: "Roboto", sans-serif;
+    }
+
+    .program {
+      
+      padding: 100px 10px;
+    }
+
+    .program h2{
+      color: red;
+    }
+
+    .program p{
+      padding: 10px 0px;
     }
 
 
