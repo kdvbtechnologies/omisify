@@ -13,7 +13,7 @@ export default function PolitiqueAction() {
           </p>
         </div>
         <div className="politique">
-          <h1>Quelles informations recueillons-nous ?</h1>
+          <h2>Quelles informations recueillons-nous ?</h2>
           <p>
             Les données personnelles que nous recueillons peuvent inclure votre
             nom, votre adresse postale et électronique, votre numéro de
@@ -26,7 +26,7 @@ export default function PolitiqueAction() {
         </div>
 
         <div className="politique">
-          <h1>Comment traitons-nous ces données ?</h1>
+          <h2>Comment traitons-nous ces données ?</h2>
           <p>
             Nous utilisons vos données pour les finalités suivantes :
             <li>La création, la gestion et le suivi de votre votre projet.</li>
@@ -84,7 +84,7 @@ export default function PolitiqueAction() {
         </div>
 
         <div className="politique">
-          <h1>Durées de conservation de vos données personnelles</h1>
+          <h2>Durées de conservation de vos données personnelles</h2>
           <p>
             Vos données sont conservées sous une forme permettant votre
             identification uniquement pendant le temps nécessaire à

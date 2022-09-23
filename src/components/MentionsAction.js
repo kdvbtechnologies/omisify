@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function MentionsAction() {
   return (
     <>
@@ -32,16 +34,19 @@ export default function MentionsAction() {
             pas cette interdiction.
           </p>
           <p>
-            Nous vous invitons à prendre connaissance de nos ***termes et
-            conditions d'utilisation.
+            Nous vous invitons à prendre connaissance de nos{" "}
+            <NavLink to="/conditions">
+              termes et conditions d'utilisation.
+            </NavLink>
           </p>
         </div>
         <div className="politique">
           <h2>Protection des données personnelles</h2>
           <p>
-            Nous vous invitons à prendre connaissance de notre ***politique de
-            confidentialité qui présente les règles de protection des données
-            personnelles dans le cadre de l'utilisation de notre plateforme.
+            Nous vous invitons à prendre connaissance de notre
+            <NavLink to="/mentions"> politique de confidentialité</NavLink> qui
+            présente les règles de protection des données personnelles dans le
+            cadre de l'utilisation de notre plateforme.
           </p>
         </div>
         <div className="politique">

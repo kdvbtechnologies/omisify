@@ -3,7 +3,8 @@ export default function ConditionsAction() {
     <>
       <div className="main-politique">
         <div className="politique">
-          <h1>1. Conditions: </h1>
+          <h1>Termes et Conditions d'utilisation</h1>
+          <h2>1. Conditions: </h2>
           <p>
             Les Termes et Conditions suivantes s'appliquent à l'utilisation de
             ce site Web. Cet Accord (désigné sous le nom de « Accord ») désigne
@@ -20,7 +21,7 @@ export default function ConditionsAction() {
         </div>
 
         <div className="politique">
-          <h1>2. Site WEB:</h1>
+          <h2>2. Site WEB:</h2>
           <p>
             Le site web Omisify.com fournit un moyen pour les Utilisateurs
             Porteurs de Projets de faire appel à Omisify pour les réaliser à bas
@@ -42,7 +43,7 @@ export default function ConditionsAction() {
         </div>
 
         <div className="politique">
-          <h1>3. LES SERVICES </h1>
+          <h2>3. LES SERVICES </h2>
           <p>
             Omisify.com fournit des services à la fois aux particuliers et aux
             entreprises.
@@ -50,7 +51,7 @@ export default function ConditionsAction() {
         </div>
 
         <div className="politique">
-          <h1>4. INTEGRITE DU SYSTEME</h1>
+          <h2>4. INTEGRITE DU SYSTEME</h2>
           <p>
             Vous n'êtes pas autorisé à utiliser des dispositifs, logiciels, ou
             algorithme, incluant mais ne se limitant pas aux virus, trojan,
@@ -63,7 +64,7 @@ export default function ConditionsAction() {
         </div>
 
         <div className="politique">
-          <h1>5. INFORMATIONS PUBLIEES SUR LE SITE WEB </h1>
+          <h2>5. INFORMATIONS PUBLIEES SUR LE SITE WEB </h2>
           <p>
             Le Site Web peut contenir des liens vers des site web extérieurs qui
             ne sont pas sous le contrôle de Omisify.com. Nous ne sommes pas
@@ -73,7 +74,7 @@ export default function ConditionsAction() {
         </div>
 
         <div className="politique">
-          <h1>6. PAIEMENTS </h1>
+          <h2>6. PAIEMENTS </h2>
           <p>
             Omisify perçoit des paiements en contreparties des services proposés
             sur Omisify.com . Ces services commencent immédiatement, à partir du
@@ -88,7 +89,7 @@ export default function ConditionsAction() {
         </div>
 
         <div className="politique">
-          <h1>7. PROPRIETE ET DROIT </h1>
+          <h2>7. PROPRIETE ET DROIT </h2>
           <p>
             Le Site Web ainsi que tous les droits de la propriété intellectuelle
             liés à ce Site Web, incluant mais ne se limitant pas, au copyright,
@@ -100,7 +101,7 @@ export default function ConditionsAction() {
         </div>
 
         <div className="politique">
-          <h1>8. ACTE</h1>
+          <h2>8. ACTE</h2>
           <p>
             Omisify.com a le droit de transférer ou d'assigner cet Accord à
             toute autre personne ou entité sans votre consentement. Vous n'avez
@@ -110,7 +111,7 @@ export default function ConditionsAction() {
         </div>
 
         <div className="politique">
-          <h1>9. LIMITATION DE RESPONSABILITE</h1>
+          <h2>9. LIMITATION DE RESPONSABILITE</h2>
           <p>
             Nous ne sommes en aucun cas responsable des dommages, de quelque
             nature que ce soit, directs ou indirects, spéciaux, punitifs ou
@@ -127,7 +128,7 @@ export default function ConditionsAction() {
         </div>
 
         <div className="politique">
-          <h1>10. DISPOSITIONS COMMUNES </h1>
+          <h2>10. DISPOSITIONS COMMUNES </h2>
           <p>
             Le Contrat est conclu intuitu personae entre Omisify.com et
             l'Utilisateur. Les droits et obligations qui en résultent ne peuvent
