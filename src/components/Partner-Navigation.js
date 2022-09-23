@@ -14,7 +14,7 @@ export default function PartnerNavigation() {
             <li>Partenaire</li>
           </NavLink>
 
-          <NavLink className="navlink" to="/contact">
+          <NavLink className="navlink" to="/contact-partner">
             <li>Contact</li>
           </NavLink>
         </div>
