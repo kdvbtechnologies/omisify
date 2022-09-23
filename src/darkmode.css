@@ -316,3 +316,24 @@ footer {
 .introduce-title p {
   padding: 30px 0px;
 }
+
+
+.introduce .posts {
+	color: #4e4e4e;
+  padding: 100px 0px;
+}
+
+.introduce .posts .post {
+  width: auto;
+  border: 2px solid #cdcdcd;
+  border-radius: 12px;
+  padding: 50px;
+}
+
+.posts .post p {
+  padding: 10px 0px;
+}
+
+.introduce .posts .post li { 
+  padding: 10px 0px;
+}

@@ -43,7 +43,27 @@ export default function Partner() {
         <NavLink to="/contact">
           <button>Devenez partenaire Omisify !</button>
         </NavLink>
+
+        <div className="posts">
+          <div className="post">
+            <h1>Rémunération</h1>
+            <li>1 commentaire = 1 point</li>
+            <li>1 message/utilisateur = 1 point</li>
+            <li>1 message/page = 1 point</li>
+            <li>1 affiliés = 2 points</li>
+            <li>1000 points = 1€</li>
+            <p>
+              N.B : Tous les jours les Gains sont mis à jour sur la page de
+              chaque partenaire.
+            </p>
+            <p>
+              Tous les partenaires peuvent retirés leur rémunération à n'importe
+              quel moment.
+            </p>
+          </div>
+        </div>
       </div>
+      <p style={{ textAlign: "center", padding: "30px" }}>© 2022 Omisify</p>
     </div>
   );
 }
