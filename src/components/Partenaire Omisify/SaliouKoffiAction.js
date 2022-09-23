@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Programme from "../Programme";
 import SaliouNavigation from "./SaliouNavigation";
 
 export default function SaliouKoffiAction() {
@@ -40,6 +41,7 @@ export default function SaliouKoffiAction() {
           </p>
         </NavLink>
       </div>
+      <Programme />
     </>
   );
 }

@@ -1,6 +1,10 @@
 export default function Programme() {
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
   return (
-    <>
+    <div style={family}>
       <h1>Pragramme D'affiliation 1</h1>
       <h4>Création de site internet</h4>
       <p>
@@ -18,6 +22,6 @@ export default function Programme() {
         vos proches de faire le meme travail que vous sur Omisify cela vaut 2
         points.
       </p>
-    </>
+    </div>
   );
 }
