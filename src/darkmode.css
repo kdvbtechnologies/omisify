@@ -278,6 +278,18 @@ footer {
     cursor: pointer;
     }
 
+    .posts .gain {
+      text-align: center;
+      border-radius: 20px;
+      background-color: blue;
+      padding: 10px 5px;
+      color: white;
+      font-size: 25px;
+    }
+
+    .partner-profil {
+      padding: 30px 10px;
+    }
 
 
 /*
@@ -705,6 +717,7 @@ footer {
     .introduce .introduce-mytitle p {
       padding: 10px 0px;
     }
+
     
 }
 

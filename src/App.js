@@ -7,6 +7,9 @@ import Conditions from "./Pages/Conditions";
 import Mentions from "./Pages/Mentions";
 import Partner from "./components/Partner";
 import ContactPartner from "./Pages/ContactPartner";
+import SaliouKoffi from "./Pages/Partenaire Omisify/SaliouKoffi";
+import SaliouContact from "./Pages/Partenaire Omisify/SaliouContact";
+import SaliouPartner from "./Pages/Partenaire Omisify/SaliouPartner";
 
 export default function App() {
   return (
@@ -20,6 +23,9 @@ export default function App() {
         <Route path="/mentions" element={<Mentions />} />
         <Route path="/politique" element={<Politique />} />
         <Route path="/partner" element={<Partner />} />
+        <Route path="/saliou" element={<SaliouKoffi />} />
+        <Route path="/saliou-contact" element={<SaliouContact />} />
+        <Route path="/saliou-partner" element={<SaliouPartner />} />
       </Routes>
     </BrowserRouter>
   );
