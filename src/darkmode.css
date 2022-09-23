@@ -171,3 +171,24 @@ footer {
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
+
+  /* src-component- ContactAction.js */
+  /* je vais regarder ici pour regler le cadre du signup dans jamelfase*/
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .contact-title {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    font-size: 18px;
+    border: 3px solid  #4e4e4e;
+    margin-top: 100px;
+    border-radius: 15px;
+  }

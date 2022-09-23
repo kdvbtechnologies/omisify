@@ -35,6 +35,7 @@ export default function HomeAction() {
               </div>
               <div className="mydesc">
                 <li>Responsive Design</li>
+                <li>Code Source</li>
                 <li>paimenent après livraison</li>
                 <p className="bonus">Bonus</p>
                 <li>Création de logo</li>
