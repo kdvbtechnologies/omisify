@@ -9,7 +9,7 @@ export default function Programme() {
       <h4>Création de site internet</h4>
       <p>
         [ Publier un commentaire sur les réseaux sociaux dans lequel vous allez
-        insérer ce lien <a href="https://omisify.com">https://omisify.com</a>]
+        insérer ce lien <a href="https://omisify.com">https://omisify.com</a> ]
       </p>
 
       <p>
