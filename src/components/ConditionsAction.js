@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 export default function ConditionsAction() {
+  const navigate = useNavigate();
+
   return (
     <>
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>Retour</button>
+      </div>
       <div className="main-politique">
         <div className="politique">
           <h1>Termes et Conditions d'utilisation</h1>

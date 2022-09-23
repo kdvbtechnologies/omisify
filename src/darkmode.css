@@ -247,3 +247,15 @@ footer {
   .politique {
     padding: 20px 30px;
   }
+
+  .back-btn button{
+    background-color: transparent;
+      color: black;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px 15px;
+      border-radius: 20px;
+      margin: px 20px;
+      border: 3px solid black;
+    cursor: pointer;
+    }
