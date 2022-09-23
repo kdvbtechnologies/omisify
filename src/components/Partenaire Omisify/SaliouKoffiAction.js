@@ -19,6 +19,7 @@ export default function SaliouKoffiAction() {
             <p>Sexe : Homme</p>
             <p>Pays : Côte d'Ivoire</p>
             <p>Age : 33 ans</p>
+            <p>Date d'inscription : 23/09/2022</p>
           </div>
         </div>
         <div className="posts">
