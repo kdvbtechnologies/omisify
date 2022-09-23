@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 25px;
+    padding: 20px;
     background: red;
 }
 
@@ -56,7 +56,15 @@ footer {
     -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
     position: absolute;
-    
+  }
+
+  footer .footer-linkk {
+    text-decoration: none;
+  }
+  
+  
+  footer .footer-link p {
+  color: white;
 }
 
 
@@ -92,6 +100,7 @@ footer {
 
   .display-cards {
     display: flex;
+    padding-bottom: 200px;
   }
 
   .cards {
@@ -218,4 +227,23 @@ footer {
     border: 3px solid  #4e4e4e;
     margin-top: 100px;
     border-radius: 15px;
+  }
+
+  /* ConditionsAcions*/
+  .conditions {
+    color: #4e4e4e;
+    font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 20px;
+  }
+
+    
+  /* politique Acions*/
+  .main-politique {
+    color: #4e4e4e;
+    font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 10px;
+  }
+
+  .politique {
+    padding: 20px 30px;
   }

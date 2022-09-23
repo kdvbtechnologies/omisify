@@ -20,7 +20,7 @@ export default function HomeAction() {
           <p>" Obtenez votre site internet complet pour seulement 10€ "</p>
         </div>
         <div className="introduce-mytitle">
-          <p>Economisez de l'argent! Gagnez du temps !</p>
+          <p>Economisez de l'argent ! Gagnez du temps !</p>
           <p>
             Omisify se charge de la création de votre site internet et vous le
             livre le plus rapidement possible pour seulement 10€.

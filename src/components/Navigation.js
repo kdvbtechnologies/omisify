@@ -13,9 +13,7 @@ export default function Navigation() {
           <NavLink className="navlink" to="/">
             <li>Accueil</li>
           </NavLink>
-          <NavLink className="navlink" to="/contact">
-            <li>Tarification</li>
-          </NavLink>
+
           <NavLink className="navlink" to="/contact">
             <li>Contact</li>
           </NavLink>
