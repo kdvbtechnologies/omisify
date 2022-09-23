@@ -5,6 +5,7 @@ import "./darkmode.css";
 import Politique from "./Pages/Politique";
 import Conditions from "./Pages/Conditions";
 import Mentions from "./Pages/Mentions";
+import Partner from "./components/Partner";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/conditions" element={<Conditions />} />
         <Route path="/mentions" element={<Mentions />} />
         <Route path="/politique" element={<Politique />} />
+        <Route path="/partner" element={<Partner />} />
       </Routes>
     </BrowserRouter>
   );

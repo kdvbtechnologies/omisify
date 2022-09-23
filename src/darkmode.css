@@ -259,3 +259,60 @@ footer {
       border: 3px solid black;
     cursor: pointer;
     }
+
+
+    /* Partner.js */
+    .div {
+      width: 100%;
+      text-align: center;
+      background-color: red;
+      font-size: 30px;
+      color: white;
+      padding: 90px 0;
+      /*-webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+        position: relative;*/
+        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+        position: absolute;
+    }
+
+    .p3 {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+      padding: 400px;
+    }
+
+    .p3 p {
+      font-size: 20px;
+      padding: 30px 0px;
+    }
+
+
+    .p3  button {
+      color: white;
+      text-align: center;
+      background-color: blue;
+      cursor: pointer;
+      border: none;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-family: Roboto, Arial, sans-serif;
+    }
+
+.introduce-title button {
+  color: white;
+  text-align: center;
+  background-color: blue;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.introduce-title p {
+  padding: 30px 0px;
+}
