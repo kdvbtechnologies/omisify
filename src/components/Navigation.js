@@ -14,7 +14,13 @@ export default function Navigation() {
             <li>Accueil</li>
           </NavLink>
           <NavLink className="navlink" to="/contact">
+            <li>Tarification</li>
+          </NavLink>
+          <NavLink className="navlink" to="/contact">
             <li>Contact</li>
+          </NavLink>
+          <NavLink className="navlink" to="/contact">
+            <li>Carilizo</li>
           </NavLink>
         </div>
       </div>
