@@ -50,7 +50,7 @@ export default function Partner() {
             <li>1 commentaire = 1 point</li>
             <li>1 message/utilisateur = 1 point</li>
             <li>1 message/page = 1 point</li>
-            <li>1 affiliés = 2 points</li>
+            <li>1 affilié = 2 points</li>
             <li>1000 points = 1€</li>
             <p>
               N.B : Tous les jours les Gains sont mis à jour sur la page de
