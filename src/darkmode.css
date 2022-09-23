@@ -597,7 +597,7 @@ footer {
 }
 */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 760px) {
   
 .navigation .right-navigation .navlink li {
     display: inline;
