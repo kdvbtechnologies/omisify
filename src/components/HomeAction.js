@@ -15,6 +15,19 @@ import Footer from "./Footer";
 export default function HomeAction() {
   return (
     <>
+      <div className="introduce">
+        <div className="introduce-title">
+          <p>" Obtenez votre site internet complet pour seulement 10€ "</p>
+        </div>
+        <div className="introduce-mytitle">
+          <p>Economisez de l'argent! Gagnez du temps !</p>
+          <p>
+            Omisify se charge de la création de votre site internet et vous le
+            livre le plus rapidement possible pour seulement 10€.
+          </p>
+          <p>Vous payerez après la livraison !</p>
+        </div>
+      </div>
       <div className="display-cards">
         <div className="cards">
           <div className="card">

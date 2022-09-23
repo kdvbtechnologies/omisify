@@ -50,6 +50,13 @@ footer {
   background-color: red;
   color: white;
   padding: 90px 0;
+  /*-webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    position: relative;*/
+    -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    position: absolute;
+    
 }
 
 
@@ -170,6 +177,26 @@ footer {
     padding: 10px 20px;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .introduce .introduce-title {
+    padding: 170px;
+    color: black;
+    font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .introduce .introduce-mytitle {
+    margin-bottom: 100px;
+    padding: 60px;
+    background: red;
+    color: white;
+    font-size: 25px;
+  }
+
+  .introduce .introduce-mytitle p {
+    padding: 10px 0px;
   }
 
 
