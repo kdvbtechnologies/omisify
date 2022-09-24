@@ -35,7 +35,7 @@ export default function DeborahKongoloAction() {
           </div>
           <p className="gain">Gains : 0€</p>
         </div>
-        <NavLink to="/saliou-contact">
+        <NavLink to="/deborah-contact">
           <p className="remuneration" align="center">
             Demander ma rémunération
           </p>
