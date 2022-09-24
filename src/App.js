@@ -10,6 +10,9 @@ import ContactPartner from "./Pages/ContactPartner";
 import SaliouKoffi from "./Pages/Partenaire Omisify/SaliouKoffi";
 import SaliouContact from "./Pages/Partenaire Omisify/SaliouContact";
 import SaliouPartner from "./Pages/Partenaire Omisify/SaliouPartner";
+import DeborahKongolo from "./Pages/Partenaire Omisify/DeborahKongolo";
+import DeborahContact from "./Pages/Partenaire Omisify/DeborahContact";
+import DeborahPartner from "./Pages/Partenaire Omisify/DeborahPartner";
 
 export default function App() {
   return (
@@ -26,6 +29,9 @@ export default function App() {
         <Route path="/saliou" element={<SaliouKoffi />} />
         <Route path="/saliou-contact" element={<SaliouContact />} />
         <Route path="/saliou-partner" element={<SaliouPartner />} />
+        <Route path="/deborah" element={<DeborahKongolo />} />
+        <Route path="/deborah-contact" element={<DeborahContact />} />
+        <Route path="/deborah-partner" element={<DeborahPartner />} />
       </Routes>
     </BrowserRouter>
   );

@@ -51,7 +51,7 @@ export default function SaliouPartnerAction() {
             <li>1 publication groupe = 1 point</li>
             <li>1 message/utilisateur = 1 point</li>
             <li>1 message/page = 1 point</li>
-            <li>1 affilié = 2 points</li>
+            <li>1 invitation = 2 points</li>
             <li>1000 points = 1€</li>
             <p>
               N.B : Les Gains sont mis à jour tout les jours sur la page de

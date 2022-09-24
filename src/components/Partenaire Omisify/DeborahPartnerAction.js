@@ -1,20 +1,20 @@
-import PartnerNavigation from "./Partner-Navigation";
 import { NavLink } from "react-router-dom";
+import DeborahNavigation from "./DeborahNavigation";
 
-export default function Partner() {
+export default function DeborahPartnerAction() {
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
   return (
     <div className="introduce" style={family}>
-      <PartnerNavigation />
+      <DeborahNavigation />
       <div className="introduce-title">
         <p>
           Omisify est une plateforme qui proprose des programmes d'affiliation.
           Vous pourrez augmenter vos revenus en devenant partenaire Omisify.
         </p>
-        <NavLink to="/contact-partner">
+        <NavLink to="/deborah-contact">
           <button>Devenir Partenaire Omisify</button>
         </NavLink>
       </div>
@@ -40,7 +40,7 @@ export default function Partner() {
           Avec Omisify vous pourrez gagner de l'argent meme lorsque vous dormez.
           Omisify est gratuit et remunere toujours ses partenaires !
         </p>
-        <NavLink to="/contact-partner">
+        <NavLink to="/deborah-contact">
           <button>Devenez partenaire Omisify !</button>
         </NavLink>
 

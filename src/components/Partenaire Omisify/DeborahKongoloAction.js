@@ -1,26 +1,26 @@
 import { NavLink } from "react-router-dom";
 import Programme from "../Programme";
-import SaliouNavigation from "./SaliouNavigation";
+import DeborahNavigation from "./DeborahNavigation";
 
-export default function SaliouKoffiAction() {
+export default function DeborahKongoloAction() {
   return (
     <>
-      <SaliouNavigation />
+      <DeborahNavigation />
       <div className="introduce">
         <div className="profil">
           <div className="partner-profil">
-            <h1>@Saliou Koffi</h1>
+            <h1>@Deborah Kongolo</h1>
             <p>Partenaire Omisify</p>
             <hr />
             <hr />
             <br />
           </div>
           <div className="partner-myprofil">
-            <p>Noms de naissance : Saliou Koffi Jean Donatien</p>
-            <p>Sexe : Homme</p>
-            <p>Pays : Côte d'Ivoire</p>
-            <p>Age : 33 ans</p>
-            <p>Date d'inscription : 23/09/2022</p>
+            <p>Noms de naissance : Deborah Kongolo</p>
+            <p>Sexe : Femme</p>
+            <p>Pays : RDC</p>
+            <p>Age : 24 ans</p>
+            <p>Date d'inscription : 24/09/2022</p>
           </div>
         </div>
         <div className="posts">

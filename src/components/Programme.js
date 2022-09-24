@@ -19,8 +19,8 @@ export default function Programme() {
       </p>
       <p>
         N.B : Outre les commentaires, vous pouvez aussi publier dans des
-        groupes, Envoyer par message à vos proches. Vous pouvez aussi demander à
-        vos proches de faire le meme travail que vous sur Omisify cela vaut 2
+        groupes, Envoyer par message à vos proches. Vous pouvez aussi inviter
+        vos proches à faire le même travail que vous sur Omisify cela vaut 2
         points. Maintenant gagnez de l'argent pour chaque commentaire publier.
       </p>
     </div>
