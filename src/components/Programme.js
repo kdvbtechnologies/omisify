@@ -15,7 +15,7 @@ export default function Programme() {
       <p>
         Voilà un exemple de commentaire : Création de site internet au prix de
         10€. Omisify est une entreprise qui crée des sites internet au prix de
-        10€. Visitez leur site internet en cliquant ici https://www.omisify.com
+        10€. Visitez leur site internet en cliquant ici https://omisify.com
       </p>
       <p>
         N.B : Outre les commentaires, vous pouvez aussi publier dans des
