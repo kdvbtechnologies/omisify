@@ -632,12 +632,16 @@ footer {
 */
 
 @media screen and (max-width: 760px) {
-  
+
+  .navigation .right-navigation .navlink {
+    text-decoration: none;
+}
+
 .navigation .right-navigation .navlink li {
     display: inline;
     color: white;
     list-style: none;
-    padding: 10px 5x;
+    padding: 10px 5px;
     font-size: 18px;
 }
 
