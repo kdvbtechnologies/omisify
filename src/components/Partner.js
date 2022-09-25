@@ -13,7 +13,7 @@ export default function Partner() {
       <div className="introduce-title">
         <p>
           Omisify est une plateforme qui proprose des programmes d'affiliation.
-          Vous pourrez augmenter vos revenus en devenant partenaire Omisify.
+          Vous pourrez augmenter vos revenus en devenant Partenaire Omisify.
         </p>
         <NavLink to="/contact-partner">
           <button>Devenir Partenaire Omisify</button>
@@ -32,17 +32,17 @@ export default function Partner() {
           votre pays.
         </p>
         <p>
-          Avec Omisify vous pourrez retirer votre remuneration a tout moment que
-          vous le souhaiterez. Avec Omisify, votre remuneration est a porter de
+          Avec Omisify vous pourrez retirer votre rémunération à tout moment que
+          vous le souhaiterez. Avec Omisify, votre rémunération est à porter de
           vos mains. Nous utilisons tout les moyens de paiement disponible pour
-          permettre a tout nos partenaires d'etre toujours remunerer.
+          permettre à tout nos partenaires d'être toujours rémunérer.
         </p>
         <p>
-          Avec Omisify vous pourrez gagner de l'argent meme lorsque vous dormez.
-          Omisify est gratuit et remunere toujours ses partenaires !
+          Avec Omisify vous pourrez gagner de l'argent même lorsque vous dormez.
+          Omisify est gratuit et rémunère toujours ses partenaires !
         </p>
         <NavLink to="/contact-partner">
-          <button>Devenez partenaire Omisify !</button>
+          <button>Devenez Partenaire Omisify !</button>
         </NavLink>
 
         <div className="posts">
