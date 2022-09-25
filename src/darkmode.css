@@ -423,13 +423,13 @@ footer {
     }
 
     .introduce .posts .post li { 
-      padding: 10px -10px;
+      padding: 10px -20px;
       font-size: 16px;
     }
 
     .introduce .posts .post p { 
       font-size: 16px;
-      padding: 10px -10px;
+      padding: 10px -20px;
     }
 
     .introduce .posts .post h1 { 
