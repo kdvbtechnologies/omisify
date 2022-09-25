@@ -1,5 +1,6 @@
 import PartnerNavigation from "./Partner-Navigation";
 import { NavLink } from "react-router-dom";
+import Millions from "./Partner/Millions";
 
 export default function Partner() {
   const family = {
@@ -47,15 +48,15 @@ export default function Partner() {
         <div className="posts">
           <div className="post">
             <h1>Rémunération</h1>
-            <li>1 commentaire = 1 point</li>
-            <li>1 publication groupe = 1 point</li>
-            <li>1 message/utilisateur = 1 point</li>
-            <li>1 message/page = 1 point</li>
-            <li>1 invitation = 2 points</li>
-            <li>1000 points = 1€</li>
+            <li>1 Commentaire = 1 point</li>
+            <li>1 Publication = 1 point</li>
+            <li>1 Message = 1 point</li>
+            <li>1 Invitation = 1€</li>
+            <li>1000 Points = 1€</li>
+            <li>10 000 Likes = 1€</li>
             <p>
               N.B : Les Gains sont mis à jour tout les jours sur la page de
-              chaque partenaire.
+              chaque Partenaire Omisify.
             </p>
             <p>
               Tous les partenaires peuvent retirés leur rémunération à n'importe
@@ -64,7 +65,7 @@ export default function Partner() {
           </div>
         </div>
       </div>
-      <p style={{ textAlign: "center", padding: "30px" }}>© 2022 Omisify</p>
+      <Millions />
     </div>
   );
 }

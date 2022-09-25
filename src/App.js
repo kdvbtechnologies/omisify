@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./Pages/Contact";
-import Home from "./Pages/Home";
 import "./darkmode.css";
 import Politique from "./Pages/Politique";
 import Conditions from "./Pages/Conditions";
@@ -18,14 +17,13 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="*" element={<Home />} />
-        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Partner />} />
+        <Route path="/" element={<Partner />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact-partner" element={<ContactPartner />} />
         <Route path="/conditions" element={<Conditions />} />
         <Route path="/mentions" element={<Mentions />} />
         <Route path="/politique" element={<Politique />} />
-        <Route path="/partner" element={<Partner />} />
         <Route path="/saliou" element={<SaliouKoffi />} />
         <Route path="/saliou-contact" element={<SaliouContact />} />
         <Route path="/saliou-partner" element={<SaliouPartner />} />
