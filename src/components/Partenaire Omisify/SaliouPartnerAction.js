@@ -47,12 +47,12 @@ export default function SaliouPartnerAction() {
         <div className="posts">
           <div className="post">
             <h1>Rémunération</h1>
-            <li>1 commentaire = 1 point</li>
-            <li>1 publication groupe = 1 point</li>
-            <li>1 message/utilisateur = 1 point</li>
-            <li>1 message/page = 1 point</li>
-            <li>1 invitation = 2 points</li>
-            <li>1000 points = 1€</li>
+            <li>1 Commentaire = 1 point</li>
+            <li>1 Publication = 1 point</li>
+            <li>1 Message = 1 point</li>
+            <li>1 Invitation = 2 points</li>
+            <li>1000 Points = 1€</li>
+            <li>10 000 Likes = 1€</li>
             <p>
               N.B : Les Gains sont mis à jour tout les jours sur la page de
               chaque partenaire.

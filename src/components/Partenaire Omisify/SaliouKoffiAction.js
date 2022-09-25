@@ -25,13 +25,13 @@ export default function SaliouKoffiAction() {
         </div>
         <div className="posts">
           <div className="post">
-            <h1>Mes Points</h1>
-            <li>Commentaire = 0 point</li>
-            <li>Publication groupe = 0 point</li>
-            <li>Message/utilisateur = 0 point</li>
-            <li>Message/page = 0 point</li>
-            <li>Invitation = 0 point</li>
-            <li>Total des points : 0 point = 0€</li>
+            <h1>Points</h1>
+            <li>Commentaires = 0 Point</li>
+            <li>Publications = 0 Point</li>
+            <li>Messages = 0 Point</li>
+            <li>Invitations = 0 Point</li>
+            <li>Likes = 0 Point</li>
+            <li>Total des Points : 0 Point = 0€</li>
           </div>
           <p className="gain">Gains : 0€</p>
         </div>
