@@ -51,7 +51,7 @@ export default function Partner() {
             <li>1 Commentaire = 1 point</li>
             <li>1 Publication = 1 point</li>
             <li>1 Message = 1 point</li>
-            <li>1 Invitation = 1€</li>
+            <li>1 Invitation = 2 points</li>
             <li>1000 Points = 1€</li>
             <li>10 000 Likes = 1€</li>
             <p>
