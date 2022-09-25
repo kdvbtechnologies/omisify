@@ -382,7 +382,7 @@ footer {
   background-color: blue;
   cursor: pointer;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 0px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
 }
@@ -424,7 +424,11 @@ footer {
 
     .introduce .posts .post li { 
       padding: 10px 0px;
-      font-size: 18px;
+      font-size: 16px;
+    }
+
+    .introduce .posts .post p { 
+      font-size: 16px;
     }
 
     .introduce .posts .post {
