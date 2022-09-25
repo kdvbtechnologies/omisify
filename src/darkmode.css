@@ -431,6 +431,10 @@ footer {
       font-size: 16px;
     }
 
+    .introduce .posts .post h1 { 
+      font-size: 30px;
+    }
+
     .introduce .posts .post {
       width: auto;
       border: 2px solid #cdcdcd;
