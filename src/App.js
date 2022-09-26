@@ -10,9 +10,6 @@ import SaliouContact from "./Pages/Partenaire Omisify/SaliouContact";
 import SaliouPartner from "./Pages/Partenaire Omisify/SaliouPartner";
 import SaliouNavigationMenu from "./components/Partenaire Omisify/SaliouNavigationMenu";
 import SaliouHistorical from "./Pages/Partenaire Omisify/SaliouHistorical";
-import DeborahKongolo from "./Pages/Partenaire Omisify/DeborahKongolo";
-import DeborahContact from "./Pages/Partenaire Omisify/DeborahContact";
-import DeborahPartner from "./Pages/Partenaire Omisify/DeborahPartner";
 import Program from "./components/Program";
 import WilfriedMboundja from "./Pages/Partenaire Omisify/WilfriedMboundja";
 import WilfriedContact from "./Pages/Partenaire Omisify/WilfriedContact";
@@ -36,9 +33,6 @@ export default function App() {
         <Route path="/sialou-home" element={<SaliouPartner />} />
         <Route path="/sialou-historical" element={<SaliouHistorical />} />
         <Route path="/sialou-menu" element={<SaliouNavigationMenu />} />
-        <Route path="/deborah" element={<DeborahKongolo />} />
-        <Route path="/deborah-contact" element={<DeborahContact />} />
-        <Route path="/deborah-partner" element={<DeborahPartner />} />
         <Route path="/wilfried" element={<WilfriedMboundja />} />
         <Route path="/wilfried-contact" element={<WilfriedContact />} />
         <Route path="/wilfried-home" element={<WilfriedPartner />} />
