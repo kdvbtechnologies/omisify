@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Programme from "../Programme";
 import DeborahNavigation from "./DeborahNavigation";
 
 export default function DeborahKongoloAction() {
@@ -41,7 +40,6 @@ export default function DeborahKongoloAction() {
           </p>
         </NavLink>
       </div>
-      <Programme />
     </>
   );
 }

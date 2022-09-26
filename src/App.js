@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Contact from "./Pages/Contact";
 import "./darkmode.css";
 import Politique from "./Pages/Politique";
 import Conditions from "./Pages/Conditions";
@@ -12,6 +11,7 @@ import SaliouPartner from "./Pages/Partenaire Omisify/SaliouPartner";
 import DeborahKongolo from "./Pages/Partenaire Omisify/DeborahKongolo";
 import DeborahContact from "./Pages/Partenaire Omisify/DeborahContact";
 import DeborahPartner from "./Pages/Partenaire Omisify/DeborahPartner";
+import Program from "./components/Program";
 
 export default function App() {
   return (
@@ -19,8 +19,8 @@ export default function App() {
       <Routes>
         <Route path="*" element={<Partner />} />
         <Route path="/" element={<Partner />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/contact-partner" element={<ContactPartner />} />
+        <Route path="/program" element={<Program />} />
+        <Route path="/contact" element={<ContactPartner />} />
         <Route path="/conditions" element={<Conditions />} />
         <Route path="/mentions" element={<Mentions />} />
         <Route path="/politique" element={<Politique />} />

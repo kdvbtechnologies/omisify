@@ -266,53 +266,6 @@ footer {
     padding: 20px 30px;
   }
 
-  .back-btn button{
-    background-color: transparent;
-      color: black;
-      text-align: center;
-      font-size: 15px;
-      padding: 10px 15px;
-      border-radius: 20px;
-      margin: px 20px;
-      border: 3px solid black;
-    cursor: pointer;
-    }
-
-    .posts .gain {
-      text-align: center;
-      border-radius: 20px;
-      background-color: blue;
-      padding: 10px 5px;
-      color: white;
-      font-size: 25px;
-    }
-
-    .partner-profil {
-      padding: 30px 10px;
-    }
-
-    .introduce .remuneration {
-      color: blue;
-      border: 1px solid blue;
-      background-color: transparent;
-      border-radius: 20px;
-      padding: 20px 5px;
-      font-family: "Roboto", sans-serif;
-    }
-
-    .program {
-      
-      padding: 100px 10px;
-    }
-
-    .program h2{
-      color: red;
-    }
-
-    .program p{
-      padding: 10px 0px;
-    }
-
 /* components - partner - millions.js */
 
 .millions {
@@ -340,11 +293,160 @@ footer {
   border-radius: 50px;
 }
 
+/* src - components - Program.js*/
+.back-btn {
+  padding: 20px 10px;
+}
+
+.back-btn button{
+  background-color: transparent;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: px 20px;
+    border: 3px solid black;
+  cursor: pointer;
+  }
+
+.accordion {
+  max-width: 600px;
+  margin: 32px auto;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #eee;
+  color: #444;
+}
+
+.accordion-title:hover {
+  background-color: blue;
+  color: white
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 16px;
+  font-size: 17px;
+}
+
+.accordion-desc {
+  padding: 16px;
+  font-size: 17px;
+}
+
+.accordion-programs {
+  padding: 16px;
+  background-color: white;
+  font-size: 17px;
+}
+.accordion-programs .accordion-program {
+  padding: 3px 0px;
+}
+
+.accordion-consignes {
+  padding: 16px;
+  font-size: 17px;
+}
+
+.accordion-consignes .accordion-con  {
+  padding: 0px 16px;
+  font-size: 16px;
+}
+
+.accordion-consignes .accordion-con  .accordion-c{
+  padding: 16px 0px;
+}
+
+.accordion-consignes .accordion-con  .accordion-c li{
+  padding: 10px 0px;
+}
+
+/* src - components - partenaire Omisify - SaliouHeader.js */
+.profil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  padding-bottom: 100px;
+}
+
+.partner-profil {
+  border: 3px solid #ccc;
+  border-radius: 10px;
+}
+
+.profil-desc {
+  padding: 40px 30px ;
+}
+
+.profil-desc .partner-name {
+  font-size: 25px;
+}
+
+.profil-desc .partner-role {
+  padding: 0px 16px;
+}
+
+.profil-name-role {
+  padding-bottom: 40px;
+}
+
+.profil-hr {
+  padding: 20px 0px;
+}
+
+.partner-info p {
+  padding: 5px 0px;
+  font-size: 17px;
+}
+
+.partner-stats li {
+  padding: 5px 0px;
+  font-size: 17px;
+}
+
+.partner-money p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.request-money {
+  text-align: center;
+}
+
+.request-money button {
+  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 25px;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+/* src - component- Print.js */
+
+.print {
+  text-align: center;
+  padding: 40px;
+}
+
+.print-details {
+  padding-top: 50px 0px;
+}
+
 
 
 
 @media screen and (max-width: 760px) {
-
   .navigation .right-navigation .navlink {
     text-decoration: none;
 }
@@ -488,6 +590,32 @@ footer {
       font-size: 18px;
       padding: 10px 15px;
       border-radius: 50px;
+    }
+
+    .accordion {
+      width: 90%;
+    }
+
+    .partner-info p {
+      padding: 5px 0px;
+      font-size: 16px;
+    }
+
+    .partner-stats li {
+      padding: 5px 0px;
+      font-size: 16px;
+    }
+
+    .request-money button {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      color: white;
+      background-color: blue;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 23px;
+      margin-top: 40px;
+      font-size: 14px;
     }
     
 }
