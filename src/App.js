@@ -41,7 +41,7 @@ export default function App() {
         <Route path="/deborah-partner" element={<DeborahPartner />} />
         <Route path="/wilfried" element={<WilfriedMboundja />} />
         <Route path="/wilfried-contact" element={<WilfriedContact />} />
-        <Route path="/wilfried" element={<WilfriedPartner />} />
+        <Route path="/wilfried-home" element={<WilfriedPartner />} />
         <Route path="/wilfried-historical" element={<WilfriedHistorical />} />
         <Route path="/wilfried-menu" element={<WilfriedNavigationMenu />} />
       </Routes>

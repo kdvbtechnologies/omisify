@@ -5,7 +5,7 @@ export default function WilfriedNavigation() {
     <>
       <div className="navigation">
         <div className="left-navigation">
-          <NavLink className="navlink" to="/wilfried">
+          <NavLink className="navlink" to="/wilfried-home">
             <li>Omisify</li>
           </NavLink>
         </div>
