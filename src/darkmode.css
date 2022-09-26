@@ -367,13 +367,22 @@ footer {
   padding: 10px 0px;
 }
 
-/* src - components - partenaire Omisify - SaliouHeader.js */
+/*
 .profil {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0px 10px;
   padding-bottom: 100px;
+}
+*/
+
+/* src - components - partenaire Omisify - SaliouHeader.js */
+.profil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 10px;
 }
 
 .partner-profil {
@@ -441,6 +450,55 @@ footer {
 
 .print-details {
   padding-top: 50px 0px;
+}
+
+/* src - components - navigation menu.js */
+
+.menu-navigation-title p {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.menu-navigation {
+  padding-top: 20px;
+}
+
+.menu-navigation .li {
+  text-decoration: none;
+}
+
+.menu-navigation li {
+  list-style: none;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #551a8b;
+}
+
+.historical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.historical .historic {
+  border: 3px solid #eee;
+  border-radius: 10px;
+  padding: 50px 70px;
+  font-size: 17px;
+  color: #444;
+}
+
+.omisify-copy {
+  padding: 20px 0px;
+}
+
+.omisify-copy .omisify-copyright {
+  padding-top: 300px;
+  text-align: center;
+  font-size: 14px;
 }
 
 

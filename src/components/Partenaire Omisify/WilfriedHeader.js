@@ -1,6 +1,6 @@
-import SaliouFooter from "./SaliouFooter";
+import WilfriedFooter from "./WilfriedFooter";
 
-export default function SaliouHeader() {
+export default function WilfriedHeader() {
   return (
     <>
       <div className="profil">
@@ -8,7 +8,7 @@ export default function SaliouHeader() {
           <div className="profil-desc">
             <div className="profil-name-role">
               <div className="partner-name">
-                <p>@Saliou Koffi</p>
+                <p>@Wilfried MBoundja</p>
               </div>
               <div className="partner-role">
                 <i>Partenaire Omisify</i>
@@ -16,17 +16,17 @@ export default function SaliouHeader() {
             </div>
 
             <div className="partner-info">
-              <p>Noms de naissance : Saliou Koffi Jean Donatien</p>
+              <p>Noms de naissance : Wilfried MBoundja</p>
               <p>Sexe : Homme</p>
-              <p>Pays : Côte d'Ivoire</p>
-              <p>Age : 33 ans</p>
-              <p>Date d'inscription : 23/09/2022</p>
-              <p>Page Facebook : _ _ _</p>
+              <p>Pays : Cameroun</p>
+              <p>Age : 21 ans</p>
+              <p>Date d'inscription : 26/09/2022</p>
+              <p>Page Facebook : Les Chroniques de Josi</p>
               <div className="profil-hr">
                 <hr />
                 <hr />
               </div>
-              <SaliouFooter />
+              <WilfriedFooter />
             </div>
           </div>
         </div>

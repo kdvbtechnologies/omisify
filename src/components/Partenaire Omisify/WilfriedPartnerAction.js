@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import SaliouMillions from "./SaliouMillions";
+import WilfriedMillions from "./WilfriedMillions";
 import SaliouNavigation from "./SaliouNavigation";
 
-export default function Partner() {
+export default function WilfriedPartnerAction() {
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -16,7 +16,7 @@ export default function Partner() {
           Omisify est une plateforme qui proprose des programmes d'affiliation.
           Vous pourrez augmenter vos revenus en devenant Partenaire Omisify.
         </p>
-        <NavLink to="/saliou-contact">
+        <NavLink to="/wilfried-contact">
           <button>Devenir Partenaire Omisify</button>
         </NavLink>
       </div>
@@ -42,7 +42,7 @@ export default function Partner() {
           Avec Omisify vous pourrez gagner de l'argent même lorsque vous dormez.
           Omisify est gratuit et rémunère toujours ses partenaires !
         </p>
-        <NavLink to="/saliou-contact">
+        <NavLink to="/wilfried-contact">
           <button>Devenez Partenaire Omisify !</button>
         </NavLink>
 
@@ -65,7 +65,7 @@ export default function Partner() {
           </div>
         </div>
       </div>
-      <SaliouMillions />
+      <WilfriedMillions />
     </div>
   );
 }

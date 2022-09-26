@@ -2,7 +2,7 @@ import { forwardRef, useRef } from "react";
 import ReactToPrint, { PrintContextConsumer } from "react-to-print";
 
 const ComponentToPrint = forwardRef((props, ref) => {
-  return <div ref={ref}></div>;
+  return <div ref={ref}>hello world</div>;
 });
 
 export default function Print() {
@@ -14,6 +14,7 @@ export default function Print() {
         <div className="print-details">
           <ReactToPrint content={() => ref.current}>
             <PrintContextConsumer>
+              {" "}
               {({ handlePrint }) => (
                 <button onClick={handlePrint}>
                   <svg

@@ -7,6 +7,7 @@ export default function Partner() {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
+
   return (
     <div className="introduce" style={family}>
       <PartnerNavigation />
