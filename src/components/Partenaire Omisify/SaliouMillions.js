@@ -16,7 +16,7 @@ export default function SaliouMillions() {
         </div>
         <hr />
         <div className="button">
-          <NavLink to="/saliou-contact">
+          <NavLink to="/sialou-contact">
             <button>Devenir Partenaire Omisify </button>
           </NavLink>
         </div>

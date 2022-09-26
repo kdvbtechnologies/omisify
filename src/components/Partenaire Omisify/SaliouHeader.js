@@ -8,7 +8,7 @@ export default function SaliouHeader() {
           <div className="profil-desc">
             <div className="profil-name-role">
               <div className="partner-name">
-                <p>@Saliou Koffi</p>
+                <p>@Sialou Koffi</p>
               </div>
               <div className="partner-role">
                 <i>Partenaire Omisify</i>
@@ -16,7 +16,7 @@ export default function SaliouHeader() {
             </div>
 
             <div className="partner-info">
-              <p>Noms de naissance : Saliou Koffi Jean Donatien</p>
+              <p>Noms de naissance : Sialou Koffi Jean Donatien</p>
               <p>Sexe : Homme</p>
               <p>Pays : Côte d'Ivoire</p>
               <p>Age : 33 ans</p>

@@ -17,10 +17,10 @@ export default function SaliouNavigationMenu() {
         <NavLink className="li" to="/program">
           <li>Programme</li>
         </NavLink>
-        <NavLink className="li" to="/saliou-historical">
+        <NavLink className="li" to="/sialou-historical">
           <li>Historique</li>
         </NavLink>
-        <NavLink className="li" to="/saliou-contact">
+        <NavLink className="li" to="/sialou-contact">
           <li>Contact</li>
         </NavLink>
         <div className="omisify-copy">

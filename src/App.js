@@ -31,11 +31,11 @@ export default function App() {
         <Route path="/conditions" element={<Conditions />} />
         <Route path="/mentions" element={<Mentions />} />
         <Route path="/politique" element={<Politique />} />
-        <Route path="/saliou" element={<SaliouKoffi />} />
-        <Route path="/saliou-contact" element={<SaliouContact />} />
-        <Route path="/saliou-partner" element={<SaliouPartner />} />
-        <Route path="/saliou-historical" element={<SaliouHistorical />} />
-        <Route path="/saliou-menu" element={<SaliouNavigationMenu />} />
+        <Route path="/sialou" element={<SaliouKoffi />} />
+        <Route path="/sialou-contact" element={<SaliouContact />} />
+        <Route path="/sialou-partner" element={<SaliouPartner />} />
+        <Route path="/sialou-historical" element={<SaliouHistorical />} />
+        <Route path="/sialou-menu" element={<SaliouNavigationMenu />} />
         <Route path="/deborah" element={<DeborahKongolo />} />
         <Route path="/deborah-contact" element={<DeborahContact />} />
         <Route path="/deborah-partner" element={<DeborahPartner />} />

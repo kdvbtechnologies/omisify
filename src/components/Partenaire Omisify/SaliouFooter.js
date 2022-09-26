@@ -17,7 +17,7 @@ export default function SaliouFooter() {
         </div>
       </div>
       <div className="request-money">
-        <NavLink to="/saliou-contact">
+        <NavLink to="/sialou-contact">
           <button>Demander ma rémunération</button>
         </NavLink>
       </div>
