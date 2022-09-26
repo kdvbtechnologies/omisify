@@ -33,7 +33,7 @@ export default function App() {
         <Route path="/politique" element={<Politique />} />
         <Route path="/sialou" element={<SaliouKoffi />} />
         <Route path="/sialou-contact" element={<SaliouContact />} />
-        <Route path="/sialou-partner" element={<SaliouPartner />} />
+        <Route path="/sialou-home" element={<SaliouPartner />} />
         <Route path="/sialou-historical" element={<SaliouHistorical />} />
         <Route path="/sialou-menu" element={<SaliouNavigationMenu />} />
         <Route path="/deborah" element={<DeborahKongolo />} />
