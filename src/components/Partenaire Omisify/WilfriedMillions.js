@@ -16,7 +16,7 @@ export default function WilfriedMillions() {
         </div>
         <hr />
         <div className="button">
-          <NavLink to="/wilfried-contact">
+          <NavLink to="/wilfried">
             <button>Devenir Partenaire Omisify </button>
           </NavLink>
         </div>
