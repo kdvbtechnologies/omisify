@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import WilfriedMillions from "./WilfriedMillions";
-import SaliouNavigation from "./SaliouNavigation";
+import WilfriedNavigation from "./WilfriedNavigation";
 
 export default function WilfriedPartnerAction() {
   const family = {
@@ -10,7 +10,7 @@ export default function WilfriedPartnerAction() {
 
   return (
     <div className="introduce" style={family}>
-      <SaliouNavigation />
+      <WilfriedNavigation />
       <div className="introduce-title">
         <p>
           Omisify est une plateforme qui proprose des programmes d'affiliation.
