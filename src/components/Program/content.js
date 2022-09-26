@@ -20,8 +20,8 @@ export const accordionData = [
   {
     title: "Programme 2",
     program: "Programme d'Affiliation : Création de site internet",
-    programLink: "Lien d'Affiliation : https://carilizo.com",
-    programDesc: `Carilizo est une entreprise de création de site internet. Faites créer votre site internet par Carilizo au prix de 10€ seulement. Le payement se fera après la livraison !`,
+    programLink: "Lien d'Affiliation : https://rasivy.com",
+    programDesc: `Rasiy est une entreprise de création de site internet. Faites créer votre site internet par Rasivy au prix de 10€ seulement. Le payement se fera après la livraison !`,
     points: "Nombre de points : 1 point",
     consignes: "Consignes :",
     comment:
