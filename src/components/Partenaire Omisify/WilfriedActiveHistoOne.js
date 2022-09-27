@@ -10,7 +10,10 @@ export default function WilfriedActiveHistoOne() {
             <p>Programme d'Affiliation : Devenir Partenaire Omisify</p>
             <p>
               lien de la publication :{" "}
-              <a href="https://m.facebook.com/story.php?story_fbid=pfbid0JNNnJMfwGZ37MiNKqz5kM4a755DGdqsXsncG5qjBVNeAfUA4FoR5jT8oynhaCXj9l&id=101177059160028&eav=AfZqA4Nn3jT97rWuIh1Y9W7AvFpP7HrIwKThnMpMseTP1xtX7zNbhPOQfZJSuK4yhnQ&fs=0&focus_composer=0&m_entstream_source=timeline&paipv=0">
+              <a
+                href="https://m.facebook.com/story.php?story_fbid=pfbid0JNNnJMfwGZ37MiNKqz5kM4a755DGdqsXsncG5qjBVNeAfUA4FoR5jT8oynhaCXj9l&id=101177059160028&eav=AfZqA4Nn3jT97rWuIh1Y9W7AvFpP7HrIwKThnMpMseTP1xtX7zNbhPOQfZJSuK4yhnQ&fs=0&focus_composer=0&m_entstream_source=timeline&paipv=0"
+                target="_blank"
+              >
                 https://m.facebook.com/post
               </a>
             </p>

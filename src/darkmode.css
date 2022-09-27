@@ -532,6 +532,10 @@ footer {
   padding: 20px 0px;
 }
 
+.less-important a {
+  color: #444;
+}
+
 .historic-active .less-important p {
   padding: 5px 0px;
 }
