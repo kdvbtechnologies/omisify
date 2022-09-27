@@ -16,6 +16,11 @@ import WilfriedContact from "./Pages/Partenaire Omisify/WilfriedContact";
 import WilfriedPartner from "./Pages/Partenaire Omisify/WilfriedPartner";
 import WilfriedHistorical from "./Pages/Partenaire Omisify/WilfriedHistorical";
 import WilfriedNavigationMenu from "./components/Partenaire Omisify/WilfriedNavigationMenu";
+import OyonaLyse from "./Pages/Partenaire Omisify/OyonaLyse";
+import OyonaHome from "./Pages/Partenaire Omisify/OyonaHome";
+import OyonaHistorical from "./Pages/Partenaire Omisify/OyonaHistorical";
+import OyonaContact from "./Pages/Partenaire Omisify/OyonaContact";
+import OyonaNavigationMenu from "./components/Partenaire Omisify/OyonaNavigationMenu";
 
 export default function App() {
   return (
@@ -38,6 +43,11 @@ export default function App() {
         <Route path="/wilfried-home" element={<WilfriedPartner />} />
         <Route path="/wilfried-historical" element={<WilfriedHistorical />} />
         <Route path="/wilfried-menu" element={<WilfriedNavigationMenu />} />
+        <Route path="/oyona" element={<OyonaLyse />} />
+        <Route path="/oyona-home" element={<OyonaHome />} />
+        <Route path="/oyona-historical" element={<OyonaHistorical />} />
+        <Route path="/oyona-contact" element={<OyonaContact />} />
+        <Route path="/oyona-menu" element={<OyonaNavigationMenu />} />
       </Routes>
     </BrowserRouter>
   );
