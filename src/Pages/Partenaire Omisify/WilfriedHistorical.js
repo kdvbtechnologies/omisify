@@ -1,4 +1,4 @@
-import WilfriedHistoricalAction from "../../components/Partenaire Omisify/WilfriedHistoricalAction";
+import WilfriedHistoOneAction from "../../components/Partenaire Omisify/WilfriedHistoOneAction";
 
 export default function WilfriedHistorical() {
   const family = {
@@ -7,7 +7,7 @@ export default function WilfriedHistorical() {
   };
   return (
     <div style={family}>
-      <WilfriedHistoricalAction />
+      <WilfriedHistoOneAction />
     </div>
   );
 }

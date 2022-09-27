@@ -17,8 +17,11 @@ export default function WilfriedNavigationMenu() {
         <NavLink className="li" to="/program">
           <li>Programme</li>
         </NavLink>
-        <NavLink className="li" to="/wilfried-historical">
+        <NavLink className="li" to="/wilfried-all-historical">
           <li>Historique</li>
+        </NavLink>
+        <NavLink className="li" to="/wilfried-transparence">
+          <li>Transparence</li>
         </NavLink>
         <NavLink className="li" to="/wilfried-contact">
           <li>Contact</li>

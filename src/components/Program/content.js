@@ -8,7 +8,8 @@ export const accordionData = [
     consignes: "Consignes :",
     comment:
       "Commentaire : Publier un commentaire dans lequel vous insérez votre lien d'affiliation",
-    commentG: "Gain : Chaque commentaire publier est équivaut à 1 point",
+    commentG:
+      "Gain : Chaque commentaire publier est équivaut à 1 point et 1 point est équivaut à 0.001€",
     message:
       "Envoyer un message dans lequel vous insérer votre lien d'affiliation",
     messageG: "Gain : Chaque message envoyé est équivaut à 1 point",
@@ -26,7 +27,8 @@ export const accordionData = [
     consignes: "Consignes :",
     comment:
       "Commentaire : Publier un commentaire dans lequel vous insérez votre lien d'affiliation",
-    commentG: "Gain : Chaque commentaire publier est équivaut à 1 point",
+    commentG:
+      "Gain : Chaque commentaire publier est équivaut à 1 point et 1 point est équivaut à 0.001€",
     message:
       "Envoyer un message dans lequel vous insérer votre lien d'affiliation",
     messageG: "Gain : Chaque message envoyé est équivaut à 1 point",
@@ -45,7 +47,7 @@ export const accordionData = [
     consignes: "Consignes :",
     comment:
       "Commentaire : Publier un commentaire dans lequel vous insérez votre lien d'affiliation",
-    commentG: "Gain : Chaque commentaire publier est équivaut à 1 point",
+    commentG: "Gain : Chaque commentaire publier est équivaut à 1 point et 1 point est équivaut à 0.001€",
     message:
       "Envoyer un message dans lequel vous insérer votre lien d'affiliation",
     messageG: "Gain : Chaque message envoyé est équivaut à 1 point",

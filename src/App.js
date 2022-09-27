@@ -16,6 +16,9 @@ import WilfriedContact from "./Pages/Partenaire Omisify/WilfriedContact";
 import WilfriedPartner from "./Pages/Partenaire Omisify/WilfriedPartner";
 import WilfriedHistorical from "./Pages/Partenaire Omisify/WilfriedHistorical";
 import WilfriedNavigationMenu from "./components/Partenaire Omisify/WilfriedNavigationMenu";
+import WilfriedAllHistorical from "./Pages/Partenaire Omisify/WilfriedAllHistorical";
+import WilfriedHistoOneAction from "./components/Partenaire Omisify/WilfriedHistoOneAction";
+import WilfriedTransparence from "./components/Partenaire Omisify/WilfriedTransparence";
 import OyonaLyse from "./Pages/Partenaire Omisify/OyonaLyse";
 import OyonaHome from "./Pages/Partenaire Omisify/OyonaHome";
 import OyonaHistorical from "./Pages/Partenaire Omisify/OyonaHistorical";
@@ -41,7 +44,19 @@ export default function App() {
         <Route path="/wilfried" element={<WilfriedMboundja />} />
         <Route path="/wilfried-contact" element={<WilfriedContact />} />
         <Route path="/wilfried-home" element={<WilfriedPartner />} />
+        <Route
+          path="/wilfried-transparence"
+          element={<WilfriedTransparence />}
+        />
+        <Route
+          path="/wilfried-histo-one"
+          element={<WilfriedHistoOneAction />}
+        />
         <Route path="/wilfried-historical" element={<WilfriedHistorical />} />
+        <Route
+          path="/wilfried-all-historical"
+          element={<WilfriedAllHistorical />}
+        />
         <Route path="/wilfried-menu" element={<WilfriedNavigationMenu />} />
         <Route path="/oyona" element={<OyonaLyse />} />
         <Route path="/oyona-home" element={<OyonaHome />} />

@@ -465,6 +465,8 @@ footer {
   color: #551a8b;
 }
 
+/* src - components - partenaire omisify - Wilfried Active Historical.js*/
+
 .historical {
   display: flex;
   align-items: center;
@@ -481,6 +483,109 @@ footer {
   color: #444;
 }
 
+.historical-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.historical-active .historic-active p {
+  color: #444;
+  padding: 10px 0px;
+}
+
+.historical-active .historic-active .historic-title p {
+  color: blue;
+}
+
+.historic-money-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.historic-money {
+  border: 3px solid #eee;
+  border-radius: 5px;
+  color: #444;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.historic-money .a {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.historic-money .b {
+  font-size: 17px;
+  padding: 10px 0px;
+}
+
+.historic-money .b p {
+  padding: 5px 0px;
+}
+
+.less-important {
+  font-size: 13px;
+  padding: 20px 0px;
+}
+
+.historic-active .less-important p {
+  padding: 5px 0px;
+}
+
+.recap {
+  padding: 40px 0px;
+  font-size: 16px;
+}
+
+.one-historical {
+  padding: 0px 10px;
+  font-size: 17px;
+  cursor: pointer;
+  color: black;
+}
+
+.one-historical-text-decoration {
+  text-decoration: none;
+}
+
+.all-historical-title {
+  padding: 0px 10px;
+  font-size: 20px;
+  color: blue;
+}
+
+.hr {
+  padding: 10px 0px;
+}
+
+.transparence-desc {
+  margin: 30px 20px;
+}
+
+.transparence-desc .a {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.transparence-desc .b {
+  padding: 10px 0px;
+  font-size: 16px;
+}
+
+.transparence-title {
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: red;
+}
+
+
+
+/* omisify - copyright - footer */
 .omisify-copy {
   padding: 20px 0px;
 }

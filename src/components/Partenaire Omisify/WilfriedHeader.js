@@ -20,7 +20,6 @@ export default function WilfriedHeader() {
               <p>Sexe : Homme</p>
               <p>Pays : Cameroun</p>
               <p>Age : 21 ans</p>
-              <p>Date d'inscription : 26/09/2022</p>
               <p>Page Facebook : Les Chroniques de Josi</p>
               <p>Code de Bienvenue : Les_chroniques_de_josi</p>
               <p>Catégorie : Influenceur</p>
