@@ -20,9 +20,9 @@ export default function AkouaHeader() {
               <p>Sexe : Féminin</p>
               <p>Pays : Côte d'Ivoire</p>
               <p>Age : 21 ans</p>
-              <p>Page Facebook : Djene Adou</p>
+              <p>Compte Facebook : Djene Adou</p>
               <p>Code de Bienvenue : _ _ _</p>
-              <p>Catégorie : Influenceur</p>
+              <p>Catégorie : Non-Influenceur</p>
               <p>Méthode de Paiement préféré : _ _ _</p>
               <div className="profil-hr">
                 <hr />

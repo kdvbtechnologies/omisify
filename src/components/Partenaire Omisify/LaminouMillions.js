@@ -16,7 +16,7 @@ export default function LaminouMillions() {
         </div>
         <hr />
         <div className="button">
-          <NavLink to="/laminou-contact">
+          <NavLink to="/laminou">
             <button>Devenir Partenaire Omisify </button>
           </NavLink>
         </div>
