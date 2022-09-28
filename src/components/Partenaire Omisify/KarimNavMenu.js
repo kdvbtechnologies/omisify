@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import KisaNav from "./KisaNav";
+import KarimNav from "./KarimNav";
 
 export default function KarimNavMenu() {
   const family = {
@@ -9,7 +9,7 @@ export default function KarimNavMenu() {
 
   return (
     <div style={family}>
-      <KisaNav />
+      <KarimNav />
       <div className="menu-navigation">
         <div className="menu-navigation-title">
           <p>Menu</p>
