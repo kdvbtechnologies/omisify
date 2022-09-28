@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function OyonaFooter() {
+export default function KarimFooter() {
   return (
     <>
       <div>
@@ -18,7 +18,7 @@ export default function OyonaFooter() {
         </div>
       </div>
       <div className="request-money">
-        <NavLink to="/oyona-contact">
+        <NavLink to="/akoua-contact">
           <button>Demander ma rémunération</button>
         </NavLink>
       </div>

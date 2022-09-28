@@ -1,9 +1,9 @@
-import OyonaNavigation from "./OyonaNavigation";
+import OyonaNav from "./OyonaNav";
 
 export default function OyonaContactAction() {
   return (
     <>
-      <OyonaNavigation />
+      <OyonaNav />
       <div className="contact">
         <div className="contact-title">
           <h1>Contactez-Nous</h1>

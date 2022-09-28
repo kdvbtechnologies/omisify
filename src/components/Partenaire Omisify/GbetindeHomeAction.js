@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import OyonaMillions from "./OyonaMillions";
-import OyonaNav from "./OyonaNav";
+import GbetindeMillions from "./GbetindeMillions";
+import GbetindeNav from "./GbetindeNav";
 
-export default function OyonaHomeAction() {
+export default function GbetindeHomeAction() {
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -10,13 +10,13 @@ export default function OyonaHomeAction() {
 
   return (
     <div className="introduce" style={family}>
-      <OyonaNav />
+      <GbetindeNav />
       <div className="introduce-title">
         <p>
           Omisify est une plateforme qui proprose des programmes d'affiliation.
           Vous pourrez augmenter vos revenus en devenant Partenaire Omisify.
         </p>
-        <NavLink to="/oyona">
+        <NavLink to="/gbetinde-contact">
           <button>Devenir Partenaire Omisify</button>
         </NavLink>
       </div>
@@ -42,7 +42,7 @@ export default function OyonaHomeAction() {
           Avec Omisify vous pourrez gagner de l'argent même lorsque vous dormez.
           Omisify est gratuit et rémunère toujours ses partenaires !
         </p>
-        <NavLink to="/oyona">
+        <NavLink to="/gbetinde-contact">
           <button>Devenez Partenaire Omisify !</button>
         </NavLink>
 
@@ -65,7 +65,7 @@ export default function OyonaHomeAction() {
           </div>
         </div>
       </div>
-      <OyonaMillions />
+      <GbetindeMillions />
     </div>
   );
 }

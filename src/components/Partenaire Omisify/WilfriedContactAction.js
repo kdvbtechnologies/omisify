@@ -1,9 +1,9 @@
-import WilfriedNavigation from "./WilfriedNavigation";
+import WilfriedNav from "./WilfriedNav";
 
 export default function WilfriedContactAction() {
   return (
     <>
-      <WilfriedNavigation />
+      <WilfriedNav />
       <div className="contact">
         <div className="contact-title">
           <h1>Contactez-Nous</h1>

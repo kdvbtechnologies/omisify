@@ -1,7 +1,7 @@
 import OyonaHeader from "./OyonaHeader";
-import OyonaNavigation from "./OyonaNavigation";
+import OyonaNavigation from "./OyonaNav";
 
-export default function OyonaActionAction() {
+export default function OyonaLyseAction() {
   return (
     <>
       <OyonaNavigation />

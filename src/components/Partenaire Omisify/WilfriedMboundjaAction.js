@@ -1,10 +1,10 @@
 import WilfriedHeader from "./WilfriedHeader";
-import WilfriedNavigation from "./WilfriedNavigation";
+import WilfriedNav from "./WilfriedNav";
 
 export default function WilfriedActionAction() {
   return (
     <>
-      <WilfriedNavigation />
+      <WilfriedNav />
       <div>
         <WilfriedHeader />
       </div>
