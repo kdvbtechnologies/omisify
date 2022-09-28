@@ -23,6 +23,7 @@ export default function KarimHeader() {
               <p>Compte Facebook : Karim Zénab la charmante</p>
               <p>Page Facebook I : Les écrits d'une inconnue</p>
               <p>Page Facebook II : Les chroniques de kaylee</p>
+              <p>Groupe Facebook : Ma vie mon choix</p>
               <p>Code de Bienvenue : _ _ _</p>
               <p>Catégorie : Non-Influenceur</p>
               <p>Méthode de Paiement préféré : _ _ _</p>
