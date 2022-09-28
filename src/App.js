@@ -37,7 +37,7 @@ import KisaHistoricalAction from "./components/Partenaire Omisify/KisaHistorical
 import KarimZenab from "./Pages/Partenaire Omisify/KarimZenab";
 import KarimHome from "./Pages/Partenaire Omisify/KarimHome";
 import KarimNavMenu from "./components/Partenaire Omisify/KarimNavMenu";
-//import KarimTrans from "./components/Partenaire Omisify/KarimTrans";
+import KarimTrans from "./components/Partenaire Omisify/KarimTrans";
 import KarimContactAction from "./components/Partenaire Omisify/KarimContactAction";
 import KarimHistoricalAction from "./components/Partenaire Omisify/KarimHistoricalAction";
 
@@ -51,7 +51,7 @@ import AkouaHistoricalAction from "./components/Partenaire Omisify/AkouaHistoric
 import GbetindeEpiphane from "./Pages/Partenaire Omisify/GbetindeEpiphane";
 import GbetindeHome from "./Pages/Partenaire Omisify/GbetindeHome";
 import GbetindeNavMenu from "./components/Partenaire Omisify/GbetindeNavMenu";
-//import GbetindeTrans from "./components/Partenaire Omisify/GbetindeTrans";
+import GbetindeTrans from "./components/Partenaire Omisify/GbetindeTrans";
 import GbetindeContactAction from "./components/Partenaire Omisify/GbetindeContactAction";
 import GbetindeHistoricalAction from "./components/Partenaire Omisify/GbetindeHistoricalAction";
 
@@ -94,6 +94,7 @@ export default function App() {
         <Route path="/karim-home" element={<KarimHome />} />
         <Route path="/karim-menu" element={<KarimNavMenu />} />
         <Route path="/karim-historical" element={<KarimHistoricalAction />} />
+        <Route path="/karim-trans" element={<KarimTrans />} />
         <Route path="/karim-contact" element={<KarimContactAction />} />
 
         <Route path="/kisa" element={<KisaDjata />} />
@@ -118,6 +119,7 @@ export default function App() {
           element={<GbetindeHistoricalAction />}
         />
         <Route path="/gbetinde-contact" element={<GbetindeContactAction />} />
+        <Route path="/gbetinde-trans" element={<GbetindeTrans />} />
       </Routes>
     </BrowserRouter>
   );

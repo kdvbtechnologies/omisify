@@ -8,7 +8,7 @@ export default function KarimHeader() {
           <div className="profil-desc">
             <div className="profil-name-role">
               <div className="partner-name">
-                <p>@Gbetinde Epiphane</p>
+                <p>@Karim Zénab</p>
               </div>
               <div className="partner-role">
                 <i>Partenaire Omisify</i>

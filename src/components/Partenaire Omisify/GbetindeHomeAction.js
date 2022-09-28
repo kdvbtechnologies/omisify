@@ -16,7 +16,7 @@ export default function GbetindeHomeAction() {
           Omisify est une plateforme qui proprose des programmes d'affiliation.
           Vous pourrez augmenter vos revenus en devenant Partenaire Omisify.
         </p>
-        <NavLink to="/gbetinde-contact">
+        <NavLink to="/gbetinde">
           <button>Devenir Partenaire Omisify</button>
         </NavLink>
       </div>
@@ -42,7 +42,7 @@ export default function GbetindeHomeAction() {
           Avec Omisify vous pourrez gagner de l'argent même lorsque vous dormez.
           Omisify est gratuit et rémunère toujours ses partenaires !
         </p>
-        <NavLink to="/gbetinde-contact">
+        <NavLink to="/gbetinde">
           <button>Devenez Partenaire Omisify !</button>
         </NavLink>
 

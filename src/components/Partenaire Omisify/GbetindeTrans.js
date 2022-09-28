@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function KarimTrans() {
+export default function GbetindeTrans() {
   const navigate = useNavigate();
   const family = {
     fontFamily:
@@ -18,13 +18,13 @@ export default function KarimTrans() {
         </div>
         <div className="transparence-desc">
           <div className="a">
-            <p>Administrateur : Karim Zénab</p>
+            <p>Administrateur : Gbetinde Epiphane</p>
           </div>
           <p>E-mail : _ _ _</p>
           <p>Date de création : 28/09/2022</p>
           <div className="b">
             <p>
-              Dernière mise à jour de la page : 28/09/2022, 20:12 (Heure de
+              Dernière mise à jour de la page : 28/09/2022, 20:09 (Heure de
               Brasilia)
             </p>
           </div>
