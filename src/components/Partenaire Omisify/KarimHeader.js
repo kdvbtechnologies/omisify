@@ -24,8 +24,8 @@ export default function KarimHeader() {
               <p>Page Facebook I : Les écrits d'une inconnue</p>
               <p>Page Facebook II : Les chroniques de kaylee</p>
               <p>Groupe Facebook : Ma vie mon choix</p>
-              <p>Code de Bienvenue : _ _ _</p>
-              <p>Catégorie : Non-Influenceur</p>
+              <p>Code de Bienvenue : Mitraillette</p>
+              <p>Catégorie : Influenceur</p>
               <p>Méthode de Paiement préféré : _ _ _</p>
               <div className="profil-hr">
                 <hr />
