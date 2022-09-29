@@ -21,7 +21,7 @@ export default function AkouaHeader() {
               <p>Pays : Côte d'Ivoire</p>
               <p>Age : 21 ans</p>
               <p>Compte Facebook : Djene Adou</p>
-              <p>Code de Bienvenue : _ _ _</p>
+              <p>Code de Bienvenue : Kamagate_djeny</p>
               <p>Catégorie : Non-Influenceur</p>
               <p>Méthode de Paiement préféré : _ _ _</p>
               <div className="profil-hr">

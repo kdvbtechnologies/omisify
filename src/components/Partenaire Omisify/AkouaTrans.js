@@ -20,11 +20,11 @@ export default function AkouaTrans() {
           <div className="a">
             <p>Administrateur : Akoua Kamagate</p>
           </div>
-          <p>E-mail : _ _ _</p>
+          <p>E-mail : djeneadou34@gmail.com</p>
           <p>Date de création : 28/09/2022</p>
           <div className="b">
             <p>
-              Dernière mise à jour de la page : 28/09/2022, 19:50 (Heure de
+              Dernière mise à jour de la page : 29/09/2022, 09:39 (Heure de
               Brasilia)
             </p>
           </div>
