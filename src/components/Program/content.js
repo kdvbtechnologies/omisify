@@ -22,7 +22,7 @@ export const accordionData = [
     title: "Programme 2",
     program: "Programme d'Affiliation : Création de site internet",
     programLink: "Lien d'Affiliation : https://rasivy.com",
-    programDesc: `Rasivy est une entreprise de création de site internet. Faites créer votre site internet par Rasivy au prix de 10€ seulement. Le payement se fera après la livraison !`,
+    programDesc: `Faites créer votre Site internet ou votre Application rapide par Rasivy. Le payement se fera après la livraison !`,
     points: "Nombre de points : 1 point",
     consignes: "Consignes :",
     comment:
@@ -35,7 +35,7 @@ export const accordionData = [
     publication:
       "Publier une publication dans lequel vous insérer votre lien d'affiliation",
     publicationG:
-      "Gain : Chaque publication est équivaut à 1 point et chaque like sur une publication est équivaut à 0.0001€",
+      "Gain : Chaque publication est équivaut à 1 point et chaque clic externe sur le lien d'affiliation est équivaut à 0.004€",
   },
   /*
   {
