@@ -20,11 +20,11 @@ export default function KarimTrans() {
           <div className="a">
             <p>Administrateur : Karim Zénab</p>
           </div>
-          <p>E-mail : _ _ _</p>
-          <p>Date de création : 28/09/2022</p>
+          <p>E-mail : zenabkarim83@gmail.com</p>
+          <p>Date de création : 29/09/2022</p>
           <div className="b">
             <p>
-              Dernière mise à jour de la page : 28/09/2022, 20:12 (Heure de
+              Dernière mise à jour de la page : 29/09/2022, 07:43 (Heure de
               Brasilia)
             </p>
           </div>
