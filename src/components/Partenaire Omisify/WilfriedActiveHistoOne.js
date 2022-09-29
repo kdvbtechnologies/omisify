@@ -27,14 +27,14 @@ export default function WilfriedActiveHistoOne() {
               </div>
               <div className="b">
                 <p>Publication : 1 point</p>
-                <p>117 likes : 0.0117€</p>
+                <p>203 likes : 0.0203€</p>
               </div>
             </div>
           </div>
 
           <div className="recap">
             <p>
-              Dernière mise à jour du récapitulatif : 27/09/2022, 15:01 (Heure
+              Dernière mise à jour du récapitulatif : 28/09/2022, 22:01 (Heure
               de Brasilia)
             </p>
           </div>

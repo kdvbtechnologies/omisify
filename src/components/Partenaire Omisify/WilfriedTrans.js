@@ -20,11 +20,11 @@ export default function WilfriedTrans() {
           <div className="a">
             <p>Administrateur : Wilfried MBoundja</p>
           </div>
-          <p>E-mail : _ _ _</p>
+          <p>E-mail : wilfriedmboundja17@gmail.com</p>
           <p>Date de création : 26/09/2022</p>
           <div className="b">
             <p>
-              Dernière mise à jour de la page : 27/09/2022, 15:01 (Heure de
+              Dernière mise à jour de la page : 28/09/2022, 22:01 (Heure de
               Brasilia)
             </p>
           </div>
