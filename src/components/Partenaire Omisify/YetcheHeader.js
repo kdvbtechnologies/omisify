@@ -21,7 +21,7 @@ export default function YetcheHeader() {
               <p>Pays : Cameroun</p>
               <p>Age : 32 ans</p>
               <p>Compte Facebook : Yetche Siegomnou Aldo</p>
-              <p>Code de Bienvenue : _ _ _</p>
+              <p>Code de Bienvenue : Crypto90</p>
               <p>Catégorie : Non-Influenceur</p>
               <p>Méthode de Paiement préféré : _ _ _</p>
               <div className="profil-hr">
