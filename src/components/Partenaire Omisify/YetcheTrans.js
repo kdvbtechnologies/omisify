@@ -24,7 +24,7 @@ export default function YetcheTrans() {
           <p>Date de création : 30/09/2022</p>
           <div className="b">
             <p>
-              Dernière mise à jour de la page : 30/09/2022, 12:55 (Heure de
+              Dernière mise à jour de la page : 30/09/2022, 15:04 (Heure de
               Brasilia)
             </p>
           </div>
