@@ -7,8 +7,9 @@ export default function WilfriedFooter() {
         <div className="partner-stats">
           <p>Statistiques </p>
           <li>Commentaires : 0 point(s)</li>
-          <li>Messages : 0 point(s)</li>
-          <li>Publications : 10 point(s)</li>
+          <li>Publications : 1 point(s)</li>
+          <li>Messages & PCA : 7 point(s)</li>
+          <li>Code Bonus : 2 point(s)</li>
           <li>Total des Points : 10 point(s)</li>
           <li>Valeur des Points : 0.01€</li>
           <li>Likes : 0.0221€</li>

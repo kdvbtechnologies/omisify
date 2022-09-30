@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function WilfriedHistoOne() {
+export default function AkouaHistoOne() {
   const navigate = useNavigate();
 
   const family = {
@@ -17,20 +17,13 @@ export default function WilfriedHistoOne() {
         <div className="historic-active">
           <div className="historic-title">
             <p>
-              {" "}
-              Première Pub du Programme d'Affiliation Devenir Partenaire Omisify
-              de Omisify.com
+              Le Code Bonus Les_chroniques_de_josi a été appliqué à votre Page
+              Partenaire
             </p>
           </div>
           <div className="less-important">
-            <p>Programme d'Affiliation : Devenir Partenaire Omisify</p>
-            <p>
-              lien de la publication :{" "}
-              <a href="https://omisify.com" target="_blank" rel="noreferrer">
-                https://facebook.com/post
-              </a>
-            </p>
-            <p>Date : 27/09/2022</p>
+            <p>Code Bonus : Les_chroniques_de_josi</p>
+            <p>Date : 28/09/2022</p>
           </div>
 
           <div className="historic-money-center">
@@ -39,15 +32,14 @@ export default function WilfriedHistoOne() {
                 <p>Gains :</p>
               </div>
               <div className="b">
-                <p>Publication : 1 point</p>
-                <p>221 likes : 0.0221€</p>
+                <p>Bonus de Bienvenue : 100 points</p>
               </div>
             </div>
           </div>
 
           <div className="recap">
             <p>
-              Dernière mise à jour du récapitulatif : 29/09/2022, 21:56 (Heure
+              Dernière mise à jour du récapitulatif : 30/09/2022, 02:42 (Heure
               de Brasilia)
             </p>
           </div>

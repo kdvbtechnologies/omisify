@@ -17,8 +17,10 @@ import WilfriedContact from "./Pages/Partenaire Omisify/WilfriedContact";
 import WilfriedHome from "./Pages/Partenaire Omisify/WilfriedHome";
 import WilfriedNavMenu from "./components/Partenaire Omisify/WilfriedNavMenu";
 import WilfriedAllHisto from "./Pages/Partenaire Omisify/WilfriedAllHisto";
-import WilfriedHistoOne from "./components/Partenaire Omisify/WilfriedHistoOne";
 import WilfriedTrans from "./components/Partenaire Omisify/WilfriedTrans";
+import WilfriedHistoOne from "./components/Partenaire Omisify/WilfriedHistoOne";
+import WilfriedHistoTwo from "./components/Partenaire Omisify/WilfriedHistoTwo";
+import WilfriedHistoThree from "./components/Partenaire Omisify/WilfriedHistoThree";
 
 import LaminouAkram from "./Pages/Partenaire Omisify/LaminouAkram";
 import LaminouHome from "./Pages/Partenaire Omisify/LaminouHome";
@@ -46,7 +48,11 @@ import AkouaHome from "./Pages/Partenaire Omisify/AkouaHome";
 import AkouaNavMenu from "./components/Partenaire Omisify/AkouaNavMenu";
 import AkouaTrans from "./components/Partenaire Omisify/AkouaTrans";
 import AkouaContactAction from "./components/Partenaire Omisify/AkouaContactAction";
-import AkouaHistoricalAction from "./components/Partenaire Omisify/AkouaHistoricalAction";
+import AkouaAllHisto from "./components/Partenaire Omisify/AkouaAllHisto";
+import AkouaHistoOne from "./components/Partenaire Omisify/AkouaHistoOne";
+import AkouaHistoTwo from "./components/Partenaire Omisify/AkouaHistoTwo";
+import AkouaHistoThree from "./components/Partenaire Omisify/AkouaHistoThree";
+import AkouaHistoFour from "./components/Partenaire Omisify/AkouaHistoFour";
 
 import GbetindeEpiphane from "./Pages/Partenaire Omisify/GbetindeEpiphane";
 import GbetindeHome from "./Pages/Partenaire Omisify/GbetindeHome";
@@ -54,8 +60,6 @@ import GbetindeNavMenu from "./components/Partenaire Omisify/GbetindeNavMenu";
 import GbetindeTrans from "./components/Partenaire Omisify/GbetindeTrans";
 import GbetindeContactAction from "./components/Partenaire Omisify/GbetindeContactAction";
 import GbetindeHistoricalAction from "./components/Partenaire Omisify/GbetindeHistoricalAction";
-import WilfriedHistoTwo from "./components/Partenaire Omisify/WilfriedHistoTwo";
-import WilfriedHistoThree from "./components/Partenaire Omisify/WilfriedHistoThree";
 
 export default function App() {
   return (
@@ -111,9 +115,13 @@ export default function App() {
         <Route path="/akoua" element={<AkouaDjenebou />} />
         <Route path="/akoua-home" element={<AkouaHome />} />
         <Route path="/akoua-menu" element={<AkouaNavMenu />} />
-        <Route path="/akoua-historical" element={<AkouaHistoricalAction />} />
         <Route path="/akoua-trans" element={<AkouaTrans />} />
         <Route path="/akoua-contact" element={<AkouaContactAction />} />
+        <Route path="/akoua-all-histo" element={<AkouaAllHisto />} />
+        <Route path="/akoua-histo-one" element={<AkouaHistoOne />} />
+        <Route path="/akoua-histo-two" element={<AkouaHistoTwo />} />
+        <Route path="/akoua-histo-three" element={<AkouaHistoThree />} />
+        <Route path="/akoua-histo-four" element={<AkouaHistoFour />} />
 
         <Route path="/gbetinde" element={<GbetindeEpiphane />} />
         <Route path="/gbetinde-home" element={<GbetindeHome />} />

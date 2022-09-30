@@ -30,7 +30,7 @@ export default function WilfriedHistoThree() {
                   <p>Gains :</p>
                 </div>
                 <div className="b">
-                  <p>7 publications : 7 points</p>
+                  <p>7 messages et publications chat app : 7 points</p>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function WilfriedHistoOne() {
+export default function AkouaHistoTwo() {
   const navigate = useNavigate();
 
   const family = {
@@ -17,7 +17,6 @@ export default function WilfriedHistoOne() {
         <div className="historic-active">
           <div className="historic-title">
             <p>
-              {" "}
               Première Pub du Programme d'Affiliation Devenir Partenaire Omisify
               de Omisify.com
             </p>
@@ -30,7 +29,7 @@ export default function WilfriedHistoOne() {
                 https://facebook.com/post
               </a>
             </p>
-            <p>Date : 27/09/2022</p>
+            <p>Date : 29/09/2022</p>
           </div>
 
           <div className="historic-money-center">
@@ -40,14 +39,14 @@ export default function WilfriedHistoOne() {
               </div>
               <div className="b">
                 <p>Publication : 1 point</p>
-                <p>221 likes : 0.0221€</p>
+                <p>1 like : 0.0001€</p>
               </div>
             </div>
           </div>
 
           <div className="recap">
             <p>
-              Dernière mise à jour du récapitulatif : 29/09/2022, 21:56 (Heure
+              Dernière mise à jour du récapitulatif : 30/09/2022, 03:15 (Heure
               de Brasilia)
             </p>
           </div>

@@ -17,7 +17,7 @@ export default function AkouaNavMenu() {
         <NavLink className="li" to="/program">
           <li>Programme</li>
         </NavLink>
-        <NavLink className="li" to="/akoua-historical">
+        <NavLink className="li" to="/akoua-all-histo">
           <li>Historique</li>
         </NavLink>
         <NavLink className="li" to="/akoua-trans">
