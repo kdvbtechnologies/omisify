@@ -24,7 +24,7 @@ export default function AkouaTrans() {
           <p>Date de création : 28/09/2022</p>
           <div className="b">
             <p>
-              Dernière mise à jour de la page : 30/09/2022, 04:14 (Heure de
+              Dernière mise à jour de la page : 30/09/2022, 14:16 (Heure de
               Brasilia)
             </p>
           </div>
