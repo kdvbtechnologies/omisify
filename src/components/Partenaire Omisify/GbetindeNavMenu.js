@@ -17,7 +17,7 @@ export default function GbetindeNavMenu() {
         <NavLink className="li" to="/program">
           <li>Programme</li>
         </NavLink>
-        <NavLink className="li" to="/gbetinde-historical">
+        <NavLink className="li" to="/gbetinde-all-historical">
           <li>Historique</li>
         </NavLink>
         <NavLink className="li" to="/gbetinde-trans">

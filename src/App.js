@@ -60,7 +60,8 @@ import GbetindeHome from "./Pages/Partenaire Omisify/GbetindeHome";
 import GbetindeNavMenu from "./components/Partenaire Omisify/GbetindeNavMenu";
 import GbetindeTrans from "./components/Partenaire Omisify/GbetindeTrans";
 import GbetindeContactAction from "./components/Partenaire Omisify/GbetindeContactAction";
-import GbetindeHistoricalAction from "./components/Partenaire Omisify/GbetindeHistoricalAction";
+import GbetindeAllHistorical from "./components/Partenaire Omisify/GbetindeAllHistorical";
+import GbetindeHistoOne from "./components/Partenaire Omisify/GbetindeHistoOne";
 
 import YetcheAldo from "./Pages/Partenaire Omisify/YetcheAldo";
 import YetcheNavMenu from "./components/Partenaire Omisify/YetcheNavMenu";
@@ -136,11 +137,12 @@ export default function App() {
         <Route path="/gbetinde-home" element={<GbetindeHome />} />
         <Route path="/gbetinde-menu" element={<GbetindeNavMenu />} />
         <Route
-          path="/gbetinde-historical"
-          element={<GbetindeHistoricalAction />}
+          path="/gbetinde-all-historical"
+          element={<GbetindeAllHistorical />}
         />
         <Route path="/gbetinde-contact" element={<GbetindeContactAction />} />
         <Route path="/gbetinde-trans" element={<GbetindeTrans />} />
+        <Route path="/gbetinde-histo-one" element={<GbetindeHistoOne />} />
 
         <Route path="/yetche" element={<YetcheAldo />} />
         <Route path="/yetche-home" element={<YetcheHome />} />

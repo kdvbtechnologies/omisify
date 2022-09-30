@@ -7,14 +7,14 @@ export default function GbetindeFooter() {
         <div className="partner-stats">
           <p>Statistiques </p>
           <li>Commentaires : 0 point(s)</li>
-          <li>Messages : 0 point(s)</li>
+          <li>Messages : 1 point(s)</li>
           <li>Publications : 0 point(s)</li>
-          <li>Total des Points : 0 point(s)</li>
-          <li>Valeur des Points : 0€</li>
+          <li>Total des Points : 1 point(s)</li>
+          <li>Valeur des Points : 0.001€</li>
           <li>Likes : 0€</li>
         </div>
         <div className="partner-money">
-          <p>Gains : 0€</p>
+          <p>Gains : 0.001€</p>
         </div>
       </div>
       <div className="request-money">
