@@ -21,7 +21,7 @@ export default function KisaHeader() {
               <p>Pays : RDC</p>
               <p>Age : 19 ans</p>
               <p>Page Facebook : Story of the life</p>
-              <p>Code de Bienvenue : _ _ _</p>
+              <p>Code de Bienvenue : Mampalife</p>
               <p>Catégorie : Influenceur</p>
               <p>Méthode de Paiement préféré : _ _ _</p>
               <div className="profil-hr">

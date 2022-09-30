@@ -21,7 +21,7 @@ export default function GbetindeHeader() {
               <p>Pays : Bénin</p>
               <p>Age : 18 ans</p>
               <p>Compte Facebook : Epiphane Gbetinde</p>
-              <p>Code de Bienvenue : _ _ _</p>
+              <p>Code de Bienvenue : Epiphane</p>
               <p>Catégorie : Non-Influenceur</p>
               <p>Méthode de Paiement préféré : _ _ _</p>
               <div className="profil-hr">
