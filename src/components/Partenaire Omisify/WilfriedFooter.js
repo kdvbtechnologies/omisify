@@ -8,13 +8,13 @@ export default function WilfriedFooter() {
           <p>Statistiques </p>
           <li>Commentaires : 0 point(s)</li>
           <li>Messages : 0 point(s)</li>
-          <li>Publications : 1 point(s)</li>
-          <li>Total des Points : 1 point(s)</li>
-          <li>Valeur des Points : 0.001€</li>
-          <li>Likes : 0.0203€</li>
+          <li>Publications : 10 point(s)</li>
+          <li>Total des Points : 10 point(s)</li>
+          <li>Valeur des Points : 0.01€</li>
+          <li>Likes : 0.0221€</li>
         </div>
         <div className="partner-money">
-          <p>Gains : 0.0213€</p>
+          <p>Gains : 0.0321€</p>
         </div>
       </div>
       <div className="request-money">

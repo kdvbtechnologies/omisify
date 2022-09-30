@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function WilfriedHistoOne() {
+export default function WilfriedHistoTwo() {
   const navigate = useNavigate();
 
   const family = {
@@ -16,20 +16,13 @@ export default function WilfriedHistoOne() {
       <div className="historical-active">
         <div className="historic-active">
           <div className="historic-title">
-            <p>Première publication Omisify</p>
+            <p>
+              1 personne c'est inscrite avec le Code Bonus
+              Les_Chroniques_de_josi
+            </p>
           </div>
           <div className="less-important">
             <p>Programme d'Affiliation : Devenir Partenaire Omisify</p>
-            <p>
-              lien de la publication :{" "}
-              <a
-                href="https://m.facebook.com/story.php?story_fbid=pfbid0JNNnJMfwGZ37MiNKqz5kM4a755DGdqsXsncG5qjBVNeAfUA4FoR5jT8oynhaCXj9l&id=101177059160028&eav=AfZqA4Nn3jT97rWuIh1Y9W7AvFpP7HrIwKThnMpMseTP1xtX7zNbhPOQfZJSuK4yhnQ&fs=0&focus_composer=0&m_entstream_source=timeline&paipv=0"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://facebook.com/post
-              </a>
-            </p>
             <p>Date : 27/09/2022</p>
           </div>
 
@@ -39,15 +32,14 @@ export default function WilfriedHistoOne() {
                 <p>Gains :</p>
               </div>
               <div className="b">
-                <p>Publication : 1 point</p>
-                <p>221 likes : 0.0221€</p>
+                <p>Code Bonus : 2 points</p>
               </div>
             </div>
           </div>
 
           <div className="recap">
             <p>
-              Dernière mise à jour du récapitulatif : 29/09/2022, 21:56 (Heure
+              Dernière mise à jour du récapitulatif : 29/09/2022, 21:41 (Heure
               de Brasilia)
             </p>
           </div>

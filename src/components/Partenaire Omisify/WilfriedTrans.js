@@ -24,7 +24,7 @@ export default function WilfriedTrans() {
           <p>Date de création : 26/09/2022</p>
           <div className="b">
             <p>
-              Dernière mise à jour de la page : 29/09/2022, 12:52 (Heure de
+              Dernière mise à jour de la page : 30/09/2022, 00:13 (Heure de
               Brasilia)
             </p>
           </div>

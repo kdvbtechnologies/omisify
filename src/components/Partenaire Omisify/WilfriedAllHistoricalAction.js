@@ -15,13 +15,37 @@ export default function WilfriedAllHistoricalAction() {
           <hr />
         </div>
 
+        <NavLink
+          className="one-historical-text-decoration"
+          to="/wilfried-histo-three"
+        >
+          <div className="one-historical">
+            <p>Publication whatsapp, Teleg..</p>
+          </div>
+        </NavLink>
+        <div className="hr">
+          <hr />
+        </div>
+
+        <NavLink
+          className="one-historical-text-decoration"
+          to="/wilfried-histo-two"
+        >
+          <div className="one-historical">
+            <p>1 personne c'est inscrite avec le Code Bo..</p>
+          </div>
+        </NavLink>
+        <div className="hr">
+          <hr />
+        </div>
+
         <div>
           <NavLink
             className="one-historical-text-decoration"
             to="/wilfried-histo-one"
           >
             <div className="one-historical">
-              <p>27/09/2022 - Publication - Omisify</p>
+              <p>Première publication Omisi..</p>
             </div>
           </NavLink>
           <div className="hr">

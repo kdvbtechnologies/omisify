@@ -54,6 +54,8 @@ import GbetindeNavMenu from "./components/Partenaire Omisify/GbetindeNavMenu";
 import GbetindeTrans from "./components/Partenaire Omisify/GbetindeTrans";
 import GbetindeContactAction from "./components/Partenaire Omisify/GbetindeContactAction";
 import GbetindeHistoricalAction from "./components/Partenaire Omisify/GbetindeHistoricalAction";
+import WilfriedHistoTwo from "./components/Partenaire Omisify/WilfriedHistoTwo";
+import WilfriedHistoThree from "./components/Partenaire Omisify/WilfriedHistoThree";
 
 export default function App() {
   return (
@@ -71,6 +73,8 @@ export default function App() {
         <Route path="/wilfried-home" element={<WilfriedHome />} />
         <Route path="/wilfried-trans" element={<WilfriedTrans />} />
         <Route path="/wilfried-histo-one" element={<WilfriedHistoOne />} />
+        <Route path="/wilfried-histo-two" element={<WilfriedHistoTwo />} />
+        <Route path="/wilfried-histo-three" element={<WilfriedHistoThree />} />
         <Route path="/wilfried-all-histo" element={<WilfriedAllHisto />} />
         <Route path="/wilfried-menu" element={<WilfriedNavMenu />} />
 
