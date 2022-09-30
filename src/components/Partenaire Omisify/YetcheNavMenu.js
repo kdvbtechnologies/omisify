@@ -17,7 +17,7 @@ export default function YetcheNavMenu() {
         <NavLink className="li" to="/program">
           <li>Programme</li>
         </NavLink>
-        <NavLink className="li" to="/yetche-all-histo">
+        <NavLink className="li" to="/yetche-historical">
           <li>Historique</li>
         </NavLink>
         <NavLink className="li" to="/yetche-trans">
