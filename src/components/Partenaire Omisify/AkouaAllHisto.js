@@ -22,10 +22,22 @@ export default function AkouaAllHisto() {
 
         <NavLink
           className="one-historical-text-decoration"
+          to="/akoua-histo-six"
+        >
+          <div className="one-historical">
+            <p>[Nouveau] 34 commentaires Face..</p>
+          </div>
+        </NavLink>
+        <div className="hr">
+          <hr />
+        </div>
+
+        <NavLink
+          className="one-historical-text-decoration"
           to="/akoua-histo-five"
         >
           <div className="one-historical">
-            <p>[Nouveau] 89 Commentaires et 1 Publica..</p>
+            <p>89 Commentaires et 1 Publica..</p>
           </div>
         </NavLink>
         <div className="hr">

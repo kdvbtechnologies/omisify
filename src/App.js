@@ -6,11 +6,6 @@ import Mentions from "./Pages/Mentions";
 import Partner from "./components/Partner";
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
-import OyonaLyse from "./Pages/Partenaire Omisify/OyonaLyse";
-import OyonaHome from "./Pages/Partenaire Omisify/OyonaHome";
-import OyonaHistorical from "./Pages/Partenaire Omisify/OyonaHistorical";
-import OyonaContact from "./Pages/Partenaire Omisify/OyonaContact";
-import OyonaNavMenu from "./components/Partenaire Omisify/OyonaNavMenu";
 
 import WilfriedMboundja from "./Pages/Partenaire Omisify/WilfriedMboundja";
 import WilfriedContact from "./Pages/Partenaire Omisify/WilfriedContact";
@@ -54,6 +49,7 @@ import AkouaHistoTwo from "./components/Partenaire Omisify/AkouaHistoTwo";
 import AkouaHistoThree from "./components/Partenaire Omisify/AkouaHistoThree";
 import AkouaHistoFour from "./components/Partenaire Omisify/AkouaHistoFour";
 import AkouaHistoFive from "./components/Partenaire Omisify/AkouaHistoFive";
+import AkouaHistoSix from "./components/Partenaire Omisify/AkouaHistoSix";
 
 import GbetindeEpiphane from "./Pages/Partenaire Omisify/GbetindeEpiphane";
 import GbetindeHome from "./Pages/Partenaire Omisify/GbetindeHome";
@@ -91,12 +87,6 @@ export default function App() {
         <Route path="/wilfried-all-histo" element={<WilfriedAllHisto />} />
         <Route path="/wilfried-menu" element={<WilfriedNavMenu />} />
 
-        <Route path="/oyona" element={<OyonaLyse />} />
-        <Route path="/oyona-home" element={<OyonaHome />} />
-        <Route path="/oyona-historical" element={<OyonaHistorical />} />
-        <Route path="/oyona-menu" element={<OyonaNavMenu />} />
-        <Route path="/oyona-contact" element={<OyonaContact />} />
-
         <Route path="/laminou" element={<LaminouAkram />} />
         <Route path="/laminou-home" element={<LaminouHome />} />
         <Route path="/laminou-menu" element={<LaminouNavMenu />} />
@@ -132,6 +122,7 @@ export default function App() {
         <Route path="/akoua-histo-three" element={<AkouaHistoThree />} />
         <Route path="/akoua-histo-four" element={<AkouaHistoFour />} />
         <Route path="/akoua-histo-five" element={<AkouaHistoFive />} />
+        <Route path="/akoua-histo-six" element={<AkouaHistoSix />} />
 
         <Route path="/gbetinde" element={<GbetindeEpiphane />} />
         <Route path="/gbetinde-home" element={<GbetindeHome />} />
