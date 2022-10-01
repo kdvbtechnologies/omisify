@@ -16,6 +16,7 @@ import WilfriedTrans from "./components/Partenaire Omisify/WilfriedTrans";
 import WilfriedHistoOne from "./components/Partenaire Omisify/WilfriedHistoOne";
 import WilfriedHistoTwo from "./components/Partenaire Omisify/WilfriedHistoTwo";
 import WilfriedHistoThree from "./components/Partenaire Omisify/WilfriedHistoThree";
+import WilfriedHistoFour from "./components/Partenaire Omisify/WilfriedHistoFour";
 
 import LaminouAkram from "./Pages/Partenaire Omisify/LaminouAkram";
 import LaminouHome from "./Pages/Partenaire Omisify/LaminouHome";
@@ -84,6 +85,7 @@ export default function App() {
         <Route path="/wilfried-histo-one" element={<WilfriedHistoOne />} />
         <Route path="/wilfried-histo-two" element={<WilfriedHistoTwo />} />
         <Route path="/wilfried-histo-three" element={<WilfriedHistoThree />} />
+        <Route path="/wilfried-histo-four" element={<WilfriedHistoFour />} />
         <Route path="/wilfried-all-histo" element={<WilfriedAllHisto />} />
         <Route path="/wilfried-menu" element={<WilfriedNavMenu />} />
 
