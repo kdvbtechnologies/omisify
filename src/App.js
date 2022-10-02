@@ -18,13 +18,6 @@ import WilfriedHistoTwo from "./components/Partenaire Omisify/WilfriedHistoTwo";
 import WilfriedHistoThree from "./components/Partenaire Omisify/WilfriedHistoThree";
 import WilfriedHistoFour from "./components/Partenaire Omisify/WilfriedHistoFour";
 
-import LaminouAkram from "./Pages/Partenaire Omisify/LaminouAkram";
-import LaminouHome from "./Pages/Partenaire Omisify/LaminouHome";
-import LaminouNavMenu from "./components/Partenaire Omisify/LaminouNavMenu";
-import LaminouTrans from "./components/Partenaire Omisify/LaminouTrans";
-import LaminouContactAction from "./components/Partenaire Omisify/LaminouContactAction";
-import LaminouHistoricalAction from "./components/Partenaire Omisify/LaminouHistoricalAction";
-
 import KisaDjata from "./Pages/Partenaire Omisify/KisaDjata";
 import KisaHome from "./Pages/Partenaire Omisify/KisaHome";
 import KisaNavMenu from "./components/Partenaire Omisify/KisaNavMenu";
@@ -51,6 +44,7 @@ import AkouaHistoThree from "./components/Partenaire Omisify/AkouaHistoThree";
 import AkouaHistoFour from "./components/Partenaire Omisify/AkouaHistoFour";
 import AkouaHistoFive from "./components/Partenaire Omisify/AkouaHistoFive";
 import AkouaHistoSix from "./components/Partenaire Omisify/AkouaHistoSix";
+import AkouaHistoSeven from "./components/Partenaire Omisify/AkouaHistoSeven";
 
 import GbetindeEpiphane from "./Pages/Partenaire Omisify/GbetindeEpiphane";
 import GbetindeHome from "./Pages/Partenaire Omisify/GbetindeHome";
@@ -89,16 +83,6 @@ export default function App() {
         <Route path="/wilfried-all-histo" element={<WilfriedAllHisto />} />
         <Route path="/wilfried-menu" element={<WilfriedNavMenu />} />
 
-        <Route path="/laminou" element={<LaminouAkram />} />
-        <Route path="/laminou-home" element={<LaminouHome />} />
-        <Route path="/laminou-menu" element={<LaminouNavMenu />} />
-        <Route
-          path="/laminou-historical"
-          element={<LaminouHistoricalAction />}
-        />
-        <Route path="/laminou-trans" element={<LaminouTrans />} />
-        <Route path="/laminou-contact" element={<LaminouContactAction />} />
-
         <Route path="/karim" element={<KarimZenab />} />
         <Route path="/karim-home" element={<KarimHome />} />
         <Route path="/karim-menu" element={<KarimNavMenu />} />
@@ -125,6 +109,7 @@ export default function App() {
         <Route path="/akoua-histo-four" element={<AkouaHistoFour />} />
         <Route path="/akoua-histo-five" element={<AkouaHistoFive />} />
         <Route path="/akoua-histo-six" element={<AkouaHistoSix />} />
+        <Route path="/akoua-histo-seven" element={<AkouaHistoSeven />} />
 
         <Route path="/gbetinde" element={<GbetindeEpiphane />} />
         <Route path="/gbetinde-home" element={<GbetindeHome />} />
