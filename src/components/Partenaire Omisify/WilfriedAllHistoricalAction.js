@@ -17,10 +17,22 @@ export default function WilfriedAllHistoricalAction() {
 
         <NavLink
           className="one-historical-text-decoration"
+          to="/wilfried-histo-five"
+        >
+          <div className="one-historical">
+            <p>[Nouveau] 13 commentaires..</p>
+          </div>
+        </NavLink>
+        <div className="hr">
+          <hr />
+        </div>
+
+        <NavLink
+          className="one-historical-text-decoration"
           to="/wilfried-histo-four"
         >
           <div className="one-historical">
-            <p>[Nouveau] 12 commentaires face..</p>
+            <p>12 commentaires face..</p>
           </div>
         </NavLink>
         <div className="hr">
