@@ -17,9 +17,9 @@ export default function AkouaHistoSeven() {
         <div className="historic-active">
           <div className="historic-title">
             <p>
-              1 nouvelle publication du programme d'affiliation Devenir
-              Partenaire Omisify et Création de Site Internet, 1 message
-              Whatsapp, 51 commentaires et 7 messages Facebook
+              1 publication du programme d'affiliation Devenir Partenaire
+              Omisify et Création de Site Internet, 1 message Whatsapp, 51
+              commentaires et 7 messages Facebook
             </p>
           </div>
           <div className="less-important">
