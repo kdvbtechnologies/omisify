@@ -17,6 +17,7 @@ import WilfriedHistoOne from "./components/Partenaire Omisify/WilfriedHistoOne";
 import WilfriedHistoTwo from "./components/Partenaire Omisify/WilfriedHistoTwo";
 import WilfriedHistoThree from "./components/Partenaire Omisify/WilfriedHistoThree";
 import WilfriedHistoFour from "./components/Partenaire Omisify/WilfriedHistoFour";
+import WilfriedHistoFive from "./components/Partenaire Omisify/WilfriedHistoFive";
 
 import KisaDjata from "./Pages/Partenaire Omisify/KisaDjata";
 import KisaHome from "./Pages/Partenaire Omisify/KisaHome";
@@ -46,6 +47,7 @@ import AkouaHistoFive from "./components/Partenaire Omisify/AkouaHistoFive";
 import AkouaHistoSix from "./components/Partenaire Omisify/AkouaHistoSix";
 import AkouaHistoSeven from "./components/Partenaire Omisify/AkouaHistoSeven";
 import AkouaHistoEight from "./components/Partenaire Omisify/AkouaHistoEight";
+import AkouaHistoNine from "./components/Partenaire Omisify/AkouaHistoNine";
 
 import GbetindeEpiphane from "./Pages/Partenaire Omisify/GbetindeEpiphane";
 import GbetindeHome from "./Pages/Partenaire Omisify/GbetindeHome";
@@ -61,6 +63,14 @@ import YetcheHome from "./components/Partenaire Omisify/YetcheHome";
 import YetcheContact from "./components/Partenaire Omisify/YetcheContact";
 import YetcheTrans from "./components/Partenaire Omisify/YetcheTrans";
 import YetcheHistorical from "./components/Partenaire Omisify/YetcheHistorical";
+
+import ClaudiaEsperanceAction from "./components/Partenaire Omisify/ClaudiaEsperanceAction";
+import ClaudiaHome from "./components/Partenaire Omisify/ClaudiaHome";
+import ClaudiaContact from "./components/Partenaire Omisify/ClaudiaContact";
+import ClaudiaNavMenu from "./components/Partenaire Omisify/ClaudiaNavMenu";
+import ClaudiaAllHisto from "./components/Partenaire Omisify/ClaudiaAllHisto";
+import ClaudiaTrans from "./components/Partenaire Omisify/ClaudiaTrans";
+import ClaudiaHistoOne from "./components/Partenaire Omisify/ClaudiaHistoOne";
 
 export default function App() {
   return (
@@ -81,6 +91,7 @@ export default function App() {
         <Route path="/wilfried-histo-two" element={<WilfriedHistoTwo />} />
         <Route path="/wilfried-histo-three" element={<WilfriedHistoThree />} />
         <Route path="/wilfried-histo-four" element={<WilfriedHistoFour />} />
+        <Route path="/wilfried-histo-five" element={<WilfriedHistoFive />} />
         <Route path="/wilfried-all-histo" element={<WilfriedAllHisto />} />
         <Route path="/wilfried-menu" element={<WilfriedNavMenu />} />
 
@@ -112,6 +123,7 @@ export default function App() {
         <Route path="/akoua-histo-six" element={<AkouaHistoSix />} />
         <Route path="/akoua-histo-seven" element={<AkouaHistoSeven />} />
         <Route path="/akoua-histo-eight" element={<AkouaHistoEight />} />
+        <Route path="/akoua-histo-nine" element={<AkouaHistoNine />} />
 
         <Route path="/gbetinde" element={<GbetindeEpiphane />} />
         <Route path="/gbetinde-home" element={<GbetindeHome />} />
@@ -130,6 +142,14 @@ export default function App() {
         <Route path="/yetche-contact" element={<YetcheContact />} />
         <Route path="/yetche-trans" element={<YetcheTrans />} />
         <Route path="/yetche-historical" element={<YetcheHistorical />} />
+
+        <Route path="/claudia" element={<ClaudiaEsperanceAction />} />
+        <Route path="/claudia-menu" element={<ClaudiaNavMenu />} />
+        <Route path="/claudia-home" element={<ClaudiaHome />} />
+        <Route path="/claudia-contact" element={<ClaudiaContact />} />
+        <Route path="/claudia-all-histo" element={<ClaudiaAllHisto />} />
+        <Route path="/claudia-trans" element={<ClaudiaTrans />} />
+        <Route path="/claudia-histo-one" element={<ClaudiaHistoOne />} />
       </Routes>
     </BrowserRouter>
   );
