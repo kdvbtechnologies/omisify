@@ -66,11 +66,18 @@ import YetcheHistorical from "./components/Partenaire Omisify/YetcheHistorical";
 
 import ClaudiaEsperanceAction from "./components/Partenaire Omisify/ClaudiaEsperanceAction";
 import ClaudiaHome from "./components/Partenaire Omisify/ClaudiaHome";
-import ClaudiaContact from "./components/Partenaire Omisify/ClaudiaContact";
 import ClaudiaNavMenu from "./components/Partenaire Omisify/ClaudiaNavMenu";
 import ClaudiaAllHisto from "./components/Partenaire Omisify/ClaudiaAllHisto";
 import ClaudiaTrans from "./components/Partenaire Omisify/ClaudiaTrans";
+import ClaudiaContact from "./components/Partenaire Omisify/ClaudiaContact";
 import ClaudiaHistoOne from "./components/Partenaire Omisify/ClaudiaHistoOne";
+
+import SimoRandy from "./components/Partenaire Omisify/SimoRandy";
+import SimoNavMenu from "./components/Partenaire Omisify/SimoNavMenu";
+import SimoContact from "./components/Partenaire Omisify/SimoContact";
+import SimoHistorical from "./components/Partenaire Omisify/SimoHistorical";
+import SimoTrans from "./components/Partenaire Omisify/SimoTrans";
+import SimoHome from "./components/Partenaire Omisify/SimoHome";
 
 export default function App() {
   return (
@@ -150,6 +157,13 @@ export default function App() {
         <Route path="/claudia-all-histo" element={<ClaudiaAllHisto />} />
         <Route path="/claudia-trans" element={<ClaudiaTrans />} />
         <Route path="/claudia-histo-one" element={<ClaudiaHistoOne />} />
+
+        <Route path="/simo" element={<SimoRandy />} />
+        <Route path="/simo-menu" element={<SimoNavMenu />} />
+        <Route path="/simo-historical" element={<SimoHistorical />} />
+        <Route path="/simo-contact" element={<SimoContact />} />
+        <Route path="/simo-trans" element={<SimoTrans />} />
+        <Route path="/simo-home" element={<SimoHome />} />
       </Routes>
     </BrowserRouter>
   );
