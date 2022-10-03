@@ -24,7 +24,7 @@ export default function ClaudiaTrans() {
           <p>Date de création : 03/10/2022</p>
           <div className="b">
             <p>
-              Dernière mise à jour de la page : 03/10/2022, 12:06 (Heure de
+              Dernière mise à jour de la page : 03/10/2022, 12:20 (Heure de
               Brasilia)
             </p>
           </div>
