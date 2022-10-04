@@ -22,10 +22,22 @@ export default function AkouaAllHisto() {
 
         <NavLink
           className="one-historical-text-decoration"
+          to="/akoua-histo-eleven"
+        >
+          <div className="one-historical">
+            <p>[Nouveau] 8 messages whatsapp, 130 messa..</p>
+          </div>
+        </NavLink>
+        <div className="hr">
+          <hr />
+        </div>
+
+        <NavLink
+          className="one-historical-text-decoration"
           to="/akoua-histo-ten"
         >
           <div className="one-historical">
-            <p>[Nouveau] 45 messages et 6 commentai..</p>
+            <p>45 messages et 6 commentai..</p>
           </div>
         </NavLink>
         <div className="hr">
