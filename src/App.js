@@ -48,6 +48,7 @@ import AkouaHistoSix from "./components/Partenaire Omisify/AkouaHistoSix";
 import AkouaHistoSeven from "./components/Partenaire Omisify/AkouaHistoSeven";
 import AkouaHistoEight from "./components/Partenaire Omisify/AkouaHistoEight";
 import AkouaHistoNine from "./components/Partenaire Omisify/AkouaHistoNine";
+import AkouaHistoTen from "./components/Partenaire Omisify/AkouaHistoTen";
 
 import GbetindeEpiphane from "./Pages/Partenaire Omisify/GbetindeEpiphane";
 import GbetindeHome from "./Pages/Partenaire Omisify/GbetindeHome";
@@ -131,6 +132,7 @@ export default function App() {
         <Route path="/akoua-histo-seven" element={<AkouaHistoSeven />} />
         <Route path="/akoua-histo-eight" element={<AkouaHistoEight />} />
         <Route path="/akoua-histo-nine" element={<AkouaHistoNine />} />
+        <Route path="/akoua-histo-ten" element={<AkouaHistoTen />} />
 
         <Route path="/gbetinde" element={<GbetindeEpiphane />} />
         <Route path="/gbetinde-home" element={<GbetindeHome />} />

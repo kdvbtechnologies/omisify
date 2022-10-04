@@ -22,10 +22,22 @@ export default function AkouaAllHisto() {
 
         <NavLink
           className="one-historical-text-decoration"
+          to="/akoua-histo-ten"
+        >
+          <div className="one-historical">
+            <p>[Nouveau] 45 messages et 6 commentai..</p>
+          </div>
+        </NavLink>
+        <div className="hr">
+          <hr />
+        </div>
+
+        <NavLink
+          className="one-historical-text-decoration"
           to="/akoua-histo-nine"
         >
           <div className="one-historical">
-            <p>[Nouveau] 1 personne c'est inscrite avec le Code Bo..</p>
+            <p>1 personne c'est inscrite avec le Code Bo..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -37,9 +49,7 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-eight"
         >
           <div className="one-historical">
-            <p>
-              [Nouveau] 1 nouveau like d'une publication récente, 99 messa..
-            </p>
+            <p>1 like d'une publication récente, 99 messa..</p>
           </div>
         </NavLink>
         <div className="hr">
