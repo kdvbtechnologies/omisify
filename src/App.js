@@ -33,24 +33,6 @@ import KarimTrans from "./components/Partenaire Omisify/KarimTrans";
 import KarimContactAction from "./components/Partenaire Omisify/KarimContactAction";
 import KarimHistoricalAction from "./components/Partenaire Omisify/KarimHistoricalAction";
 
-import AkouaDjenebou from "./Pages/Partenaire Omisify/AkouaDjenebou";
-import AkouaHome from "./Pages/Partenaire Omisify/AkouaHome";
-import AkouaNavMenu from "./components/Partenaire Omisify/AkouaNavMenu";
-import AkouaTrans from "./components/Partenaire Omisify/AkouaTrans";
-import AkouaContactAction from "./components/Partenaire Omisify/AkouaContactAction";
-import AkouaAllHisto from "./components/Partenaire Omisify/AkouaAllHisto";
-import AkouaHistoOne from "./components/Partenaire Omisify/AkouaHistoOne";
-import AkouaHistoTwo from "./components/Partenaire Omisify/AkouaHistoTwo";
-import AkouaHistoThree from "./components/Partenaire Omisify/AkouaHistoThree";
-import AkouaHistoFour from "./components/Partenaire Omisify/AkouaHistoFour";
-import AkouaHistoFive from "./components/Partenaire Omisify/AkouaHistoFive";
-import AkouaHistoSix from "./components/Partenaire Omisify/AkouaHistoSix";
-import AkouaHistoSeven from "./components/Partenaire Omisify/AkouaHistoSeven";
-import AkouaHistoEight from "./components/Partenaire Omisify/AkouaHistoEight";
-import AkouaHistoNine from "./components/Partenaire Omisify/AkouaHistoNine";
-import AkouaHistoTen from "./components/Partenaire Omisify/AkouaHistoTen";
-import AkouaHistoEleven from "./components/Partenaire Omisify/AkouaHistoEleven";
-
 import GbetindeEpiphane from "./Pages/Partenaire Omisify/GbetindeEpiphane";
 import GbetindeHome from "./Pages/Partenaire Omisify/GbetindeHome";
 import GbetindeNavMenu from "./components/Partenaire Omisify/GbetindeNavMenu";
@@ -80,6 +62,26 @@ import SimoContact from "./components/Partenaire Omisify/SimoContact";
 import SimoHistorical from "./components/Partenaire Omisify/SimoHistorical";
 import SimoTrans from "./components/Partenaire Omisify/SimoTrans";
 import SimoHome from "./components/Partenaire Omisify/SimoHome";
+
+import AkouaDjenebou from "./Pages/Partenaire Omisify/AkouaDjenebou";
+import AkouaHome from "./Pages/Partenaire Omisify/AkouaHome";
+import AkouaNavMenu from "./components/Partenaire Omisify/AkouaNavMenu";
+import AkouaTrans from "./components/Partenaire Omisify/AkouaTrans";
+import AkouaContactAction from "./components/Partenaire Omisify/AkouaContactAction";
+import AkouaAllHisto from "./components/Partenaire Omisify/AkouaAllHisto";
+import AkouaHistoOne from "./components/Partenaire Omisify/AkouaHistoOne";
+import AkouaHistoTwo from "./components/Partenaire Omisify/AkouaHistoTwo";
+import AkouaHistoThree from "./components/Partenaire Omisify/AkouaHistoThree";
+import AkouaHistoFour from "./components/Partenaire Omisify/AkouaHistoFour";
+import AkouaHistoFive from "./components/Partenaire Omisify/AkouaHistoFive";
+import AkouaHistoSix from "./components/Partenaire Omisify/AkouaHistoSix";
+import AkouaHistoSeven from "./components/Partenaire Omisify/AkouaHistoSeven";
+import AkouaHistoEight from "./components/Partenaire Omisify/AkouaHistoEight";
+import AkouaHistoNine from "./components/Partenaire Omisify/AkouaHistoNine";
+import AkouaHistoTen from "./components/Partenaire Omisify/AkouaHistoTen";
+import AkouaHistoEleven from "./components/Partenaire Omisify/AkouaHistoEleven";
+import AkouaHistoTwelve from "./components/Partenaire Omisify/AkouaHistoTwelve";
+import AkouaStats from "./components/Partenaire Omisify/AkouaStats";
 
 export default function App() {
   return (
@@ -135,6 +137,8 @@ export default function App() {
         <Route path="/akoua-histo-nine" element={<AkouaHistoNine />} />
         <Route path="/akoua-histo-ten" element={<AkouaHistoTen />} />
         <Route path="/akoua-histo-eleven" element={<AkouaHistoEleven />} />
+        <Route path="/akoua-histo-twelve" element={<AkouaHistoTwelve />} />
+        <Route path="/akoua-stats" element={<AkouaStats />} />
 
         <Route path="/gbetinde" element={<GbetindeEpiphane />} />
         <Route path="/gbetinde-home" element={<GbetindeHome />} />
