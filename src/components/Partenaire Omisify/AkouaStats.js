@@ -24,11 +24,11 @@ export default function AkouaStats() {
             </div>
             <div className="stats-cards">
               <div className="a">
-                <p>01/10/2022 || 61 points • 2 L</p>
+                <p>01/10/2022 || 61 points • 2 l</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>02/10/2022 || 103 points • 1 L</p>
+                <p>02/10/2022 || 103 points • 1 l</p>
                 <div className="hr">
                   <hr />
                 </div>
@@ -40,7 +40,7 @@ export default function AkouaStats() {
                 <div className="hr">
                   <hr />
                 </div>
-                <p>05/10/2022 || 385 points • 5 L</p>
+                <p>05/10/2022 || 385 points • 5 l</p>
                 <div className="hr">
                   <hr />
                 </div>
@@ -148,7 +148,7 @@ export default function AkouaStats() {
               </div>
             </div>
             <div className="total">
-              <p>912 points • 8 L</p>
+              <p>912 points • 8 likes</p>
             </div>
           </div>
         </div>
@@ -165,16 +165,16 @@ export default function AkouaStats() {
                 <div className="hr">
                   <hr />
                 </div>
-                <p>29/09/2022 || 94 points • 2 L</p>
+                <p>29/09/2022 || 94 points • 2 l</p>
 
                 <div className="hr">
                   <hr />
                 </div>
-                <p>30/09/2022 || 124 points • 2 L</p>
+                <p>30/09/2022 || 124 points • 2 l</p>
               </div>
             </div>
             <div className="total">
-              <p>318 points • 4 L</p>
+              <p>318 points • 4 likes</p>
             </div>
           </div>
         </div>
