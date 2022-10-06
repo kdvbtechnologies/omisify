@@ -24,153 +24,123 @@ export default function AkouaStats() {
             </div>
             <div className="stats-cards">
               <div className="a">
-                <p>01/10/2022 || 103 points</p>
-
+                <p>01/10/2022 || 61 points • 2 likes</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>02/10/2022 || 44 points</p>
-
+                <p>02/10/2022 || 103 points • 1 like</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>03/10/2022 || 16 points</p>
-
+                <p>03/10/2022 || 53 points</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>04/10/2022 || 22 points</p>
-
+                <p>04/10/2022 || 152 points</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>05/10/2022 || 385 points</p>
-
+                <p>05/10/2022 || 385 points • 5 likes</p>
                 <div className="hr">
                   <hr />
                 </div>
                 <p>06/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>07/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>08/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>09/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>10/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>11/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>12/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>13/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>14/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>15/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>16/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>17/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>18/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>19/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>20/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>21/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>22/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>23/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>24/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>25/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>26/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>27/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>28/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>29/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
                 <p>30/10/2022 ||</p>
-
                 <div className="hr">
                   <hr />
                 </div>
@@ -178,7 +148,7 @@ export default function AkouaStats() {
               </div>
             </div>
             <div className="total">
-              <p>1000 point(s)</p>
+              <p>754 points • 8 likes</p>
             </div>
           </div>
         </div>
@@ -195,21 +165,16 @@ export default function AkouaStats() {
                 <div className="hr">
                   <hr />
                 </div>
-                <p>29/09/2022 || 94 points</p>
+                <p>29/09/2022 || 94 points • 2 likes</p>
 
                 <div className="hr">
                   <hr />
                 </div>
-                <p>30/09/2022 ||</p>
-
-                <div className="hr">
-                  <hr />
-                </div>
-                <p>31/09/2022 ||</p>
+                <p>30/09/2022 || 124 points • 2 likes</p>
               </div>
             </div>
             <div className="total">
-              <p>53 point(s)</p>
+              <p>318 points • 4 likes</p>
             </div>
           </div>
         </div>

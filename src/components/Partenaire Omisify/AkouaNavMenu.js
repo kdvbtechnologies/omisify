@@ -26,7 +26,9 @@ export default function AkouaNavMenu() {
         <NavLink className="li" to="/akoua-contact">
           <li>Contact</li>
         </NavLink>
-
+        <NavLink className="li" to="/akoua-stats">
+          <li>Statistiques Détaillés</li>
+        </NavLink>
         <div className="omisify-copy">
           <div className="omisify-copyright">
             <p>© 2022 Omisify</p>
