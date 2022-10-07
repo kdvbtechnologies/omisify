@@ -51,7 +51,9 @@ export default function Partner() {
             <h1>Rémunération</h1>
             <li>1 Commentaire = 1 point</li>
             <li>1 Message = 1 point</li>
-            <li>1 Publication = 1 point</li>
+			<li>1 Message Watsapp ou Telegram = 2 points</li>
+			<li>1 E-mail = 2 points</li>
+            <li>1 Publication = 3 points</li>
             <li>1000 Points = 1€</li>
             <li>10 000 Likes = 1€</li>
             <p>
