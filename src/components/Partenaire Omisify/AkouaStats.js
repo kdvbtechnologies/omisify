@@ -48,7 +48,7 @@ export default function AkouaStats() {
                 <div className="hr">
                   <hr />
                 </div>
-                <p>07/10/2022 ||</p>
+                <p>07/10/2022 || 268 points • 4 l</p>
                 <div className="hr">
                   <hr />
                 </div>
@@ -148,7 +148,7 @@ export default function AkouaStats() {
               </div>
             </div>
             <div className="total">
-              <p>983 points • 21 likes</p>
+              <p>1251 points • 25 likes</p>
             </div>
           </div>
         </div>
