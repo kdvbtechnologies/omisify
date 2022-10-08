@@ -18,6 +18,7 @@ import WilfriedHistoTwo from "./components/Partenaire Omisify/WilfriedHistoTwo";
 import WilfriedHistoThree from "./components/Partenaire Omisify/WilfriedHistoThree";
 import WilfriedHistoFour from "./components/Partenaire Omisify/WilfriedHistoFour";
 import WilfriedHistoFive from "./components/Partenaire Omisify/WilfriedHistoFive";
+import WilfriedHistoSix from "./components/Partenaire Omisify/WilfriedHistoSix";
 
 import KisaDjata from "./Pages/Partenaire Omisify/KisaDjata";
 import KisaHome from "./Pages/Partenaire Omisify/KisaHome";
@@ -107,6 +108,7 @@ export default function App() {
         <Route path="/wilfried-histo-three" element={<WilfriedHistoThree />} />
         <Route path="/wilfried-histo-four" element={<WilfriedHistoFour />} />
         <Route path="/wilfried-histo-five" element={<WilfriedHistoFive />} />
+        <Route path="/wilfried-histo-six" element={<WilfriedHistoSix />} />
         <Route path="/wilfried-all-histo" element={<WilfriedAllHisto />} />
         <Route path="/wilfried-menu" element={<WilfriedNavMenu />} />
 
