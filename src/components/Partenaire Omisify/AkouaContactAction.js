@@ -1,6 +1,8 @@
-import AkouaNav from "./AkouaNav";
+import { useNavigate } from "react-router-dom";
 
 export default function AkouaContactAction() {
+  const navigate = useNavigate();
+
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -8,7 +10,9 @@ export default function AkouaContactAction() {
 
   return (
     <div style={family}>
-      <AkouaNav />
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>Retour</button>
+      </div>
       <div className="contact">
         <div className="contact-title">
           <h1>Contactez-Nous</h1>

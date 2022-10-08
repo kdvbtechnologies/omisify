@@ -1,9 +1,13 @@
-import WilfriedNav from "./WilfriedNav";
+import { useNavigate } from "react-router-dom";
 
 export default function WilfriedContactAction() {
+  const navigate = useNavigate();
+
   return (
     <>
-      <WilfriedNav />
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>Retour</button>
+      </div>
       <div className="contact">
         <div className="contact-title">
           <h1>Contactez-Nous</h1>
