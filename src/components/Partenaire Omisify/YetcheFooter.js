@@ -7,7 +7,7 @@ export default function YetcheFooter() {
 
   useEffect(() => {
     axios
-      .get("https://api-adoony.herokuapp.com/omisify/api/post")
+      .get("https://api-adoony.herokuapp.com/omisify/api/post/")
       .then((res) => console.log(res));
   }, []);
   return (
