@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import axios from "axios";
 
 export default function YetcheFooter() {
+  //const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://api-adoony.herokuapp.com/omisify/api/post")
+      .then((res) => console.log(res));
+  }, []);
   return (
     <>
       <div>
@@ -23,6 +32,7 @@ export default function YetcheFooter() {
           <button>Demander ma rémunération</button>
         </NavLink>
       </div>
+      <div>cons</div>
     </>
   );
 }
