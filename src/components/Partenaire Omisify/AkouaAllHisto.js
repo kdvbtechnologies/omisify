@@ -22,10 +22,25 @@ export default function AkouaAllHisto() {
 
         <NavLink
           className="one-historical-text-decoration"
+          to="/akoua-histo-fifteen"
+        >
+          <div className="one-historical">
+            <p>
+              [Nouveau] 07/10/2022 - 234 messages, 28 commentaires et 2
+              publications du Progra..
+            </p>
+          </div>
+        </NavLink>
+        <div className="hr">
+          <hr />
+        </div>
+
+        <NavLink
+          className="one-historical-text-decoration"
           to="/akoua-histo-fourteen"
         >
           <div className="one-historical">
-            <p>[Nouveau] 49 messages, 21 commentaires et 1 pu..</p>
+            <p>06/10/2022 - 49 messages, 21 commentaires et 1 pu..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -37,7 +52,7 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-thirty"
         >
           <div className="one-historical">
-            <p>[Nouveau] 138 messages et 20 commentaires publi..</p>
+            <p>06/10/2022 - 138 messages et 20 commentaires publi..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -49,7 +64,10 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-twelve"
         >
           <div className="one-historical">
-            <p>353 messages, 31 commentaires et 1 publication du Pro..</p>
+            <p>
+              05/10/2022 - 353 messages, 31 commentaires et 1 publication du
+              Pro..
+            </p>
           </div>
         </NavLink>
         <div className="hr">
@@ -61,7 +79,7 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-eleven"
         >
           <div className="one-historical">
-            <p>8 messages whatsapp, 130 messa..</p>
+            <p>04/10/2022 - 8 messages whatsapp, 130 messa..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -73,7 +91,7 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-ten"
         >
           <div className="one-historical">
-            <p>45 messages et 6 commentai..</p>
+            <p>03/10/2022 - 45 messages et 6 commentai..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -85,7 +103,7 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-nine"
         >
           <div className="one-historical">
-            <p>1 personne c'est inscrite avec le Code Bo..</p>
+            <p>03/10/2022 - 1 personne c'est inscrite avec le Code Bo..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -97,7 +115,7 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-eight"
         >
           <div className="one-historical">
-            <p>1 like d'une publication récente, 99 messa..</p>
+            <p>02/10/2022 - 1 like d'une publication récente, 99 messa..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -109,7 +127,10 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-seven"
         >
           <div className="one-historical">
-            <p>1 publication du programme d'affiliation Devenir Parte..</p>
+            <p>
+              01/10/2022 - 1 publication du programme d'affiliation Devenir
+              Parte..
+            </p>
           </div>
         </NavLink>
         <div className="hr">
@@ -121,7 +142,7 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-six"
         >
           <div className="one-historical">
-            <p>34 commentaires Face..</p>
+            <p>30/09/2022 - 34 commentaires Face..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -133,7 +154,7 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-five"
         >
           <div className="one-historical">
-            <p>89 Commentaires et 1 Publica..</p>
+            <p>30/09/2022 - 89 Commentaires et 1 Publica..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -145,7 +166,7 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-four"
         >
           <div className="one-historical">
-            <p>Première Publication du Programme d'Affilia..</p>
+            <p>29/09/2022 - Première Publication du Programme d'Affilia..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -157,7 +178,10 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-three"
         >
           <div className="one-historical">
-            <p>Commentaires Faceboook, Messages et Publications Cha..</p>
+            <p>
+              29/09/2022 - Commentaires Faceboook, Messages et Publications
+              Cha..
+            </p>
           </div>
         </NavLink>
         <div className="hr">
@@ -169,7 +193,7 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-two"
         >
           <div className="one-historical">
-            <p>Première Pub de Omisi..</p>
+            <p>29/09/2022 - Première Pub de Omisi..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -182,7 +206,9 @@ export default function AkouaAllHisto() {
             to="/akoua-histo-one"
           >
             <div className="one-historical">
-              <p>Le Code Bonus Les_chroniques_de_josi a été appli..</p>
+              <p>
+                28/09/2022 - Le Code Bonus Les_chroniques_de_josi a été appli..
+              </p>
             </div>
           </NavLink>
           <div className="hr">
