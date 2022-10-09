@@ -12,7 +12,8 @@ export const accordionData = [
       "Gain : Chaque commentaire publier est équivaut à 1 point et 1 point est équivaut à 0.001€",
     message:
       "Envoyer un message dans lequel vous insérer votre lien d'affiliation",
-    messageG: "Gain : Chaque message envoyé est équivaut à 1 point; les messages Whatsapp, Telegram et Signal sont équivaut à 2 points",
+    messageG:
+      "Gain : Chaque message envoyé est équivaut à 1 point; les messages Whatsapp, Telegram et Signal sont équivaut à 2 points",
     publication:
       "Publier une publication dans lequel vous insérer votre lien d'affiliation",
     publicationG:
@@ -30,12 +31,13 @@ export const accordionData = [
       "Gain : Chaque commentaire publier est équivaut à 1 point et 1 point est équivaut à 0.001€",
     message:
       "Envoyer un message dans lequel vous insérer votre lien d'affiliation",
-	messageG: "Gain : Chaque message envoyé est équivaut à 1 point; les messages Whatsapp, Telegram et Signal sont équivaut à 2 points",
+    messageG:
+      "Gain : Chaque message envoyé est équivaut à 1 point; les messages Whatsapp, Telegram et Signal sont équivaut à 2 points",
 
     publication:
       "Publier une publication dans lequel vous insérer votre lien d'affiliation",
     publicationG:
-      "Gain : Chaque publication est équivaut à 3 points et chaque clic externe sur le lien d'affiliation est équivaut à 0.004€",
+      "Gain : Chaque publication est équivaut à 5 points et chaque clic externe sur le lien d'affiliation est équivaut à 0.004€",
   },
   /*
   {
