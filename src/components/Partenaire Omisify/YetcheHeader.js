@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import YetcheContact from "./YetcheContact";
 //import { useDispatch, useSelector } from "react-redux";
 //import { setPosts } from "../../feature/posts.slice";
 import YetcheFooter from "./YetcheFooter";
@@ -56,7 +55,6 @@ export default function YetcheHeader() {
           <h1>{post.desc}</h1>
         </div>
       ))}
-      <YetcheContact post={posts} />
     </>
   );
 }
