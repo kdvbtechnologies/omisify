@@ -1,16 +1,7 @@
-import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import axios from "axios";
 import AddPost from "./AddPost";
 
 export default function YetcheFooter() {
-  //const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://famous-peplum-dove.cyclic.app/")
-      .then((res) => console.log(res));
-  }, []);
   return (
     <>
       <div>

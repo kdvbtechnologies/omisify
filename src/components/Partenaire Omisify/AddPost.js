@@ -10,7 +10,7 @@ export default function AddPost() {
     e.preventDefault();
     await axios({
       method: "post",
-      url: "",
+      url: "https://famous-peplum-dove.cyclic.app/api/post/add",
       data: {
         userId,
         username,
