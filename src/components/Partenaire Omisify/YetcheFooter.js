@@ -32,7 +32,10 @@ export default function YetcheFooter() {
           <button>Demander ma rémunération</button>
         </NavLink>
       </div>
-      <div>cons</div>
+      <input type="text" placeholder="userId" />
+      <input type="text" placeholder="username" />
+      <input type="text" placeholder="desc" />
+      <button>Valider</button>
     </>
   );
 }
