@@ -54,9 +54,9 @@ export default function YetcheHeader() {
       {posts.map((post, id) => (
         <div key={post.id}>
           <h1>{post.desc}</h1>
-          <YetcheContact post={post} />
         </div>
       ))}
+      <YetcheContact post={posts} />
     </>
   );
 }
