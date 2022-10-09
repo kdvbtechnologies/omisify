@@ -6,11 +6,12 @@ import { setPosts } from "../../feature/posts.slice";
 export default function PostProps() {
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.posts.posts);
-  const id = "634340e0476255949f2992a3";
 
   async function GetPost() {
     await axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/post/${id}`)
+      .get(
+        `https://famous-peplum-dove.cyclic.app/api/post/634340e0476255949f2992a3`
+      )
       .then((res) => dispatch(setPosts(res.data)));
   }
   GetPost();
