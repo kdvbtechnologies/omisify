@@ -1,17 +1,19 @@
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
-import { setPosts } from "../../feature/posts.slice";
+import { useEffect, useState } from "react";
+//import { useDispatch, useSelector } from "react-redux";
+//import { setPosts } from "../../feature/posts.slice";
 import YetcheFooter from "./YetcheFooter";
 
 export default function YetcheHeader() {
-  const dispatch = useDispatch();
-  const posts = useSelector((state) => state.posts.posts);
+  const [posts] = useState([]);
   const id = "634340e0476255949f2992a3";
 
   async function GetPost() {
-    await axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/post/${id}`)
-      .then((res) => dispatch(setPosts(res.data)));
+    useEffect(() => {
+      axios
+        .get(`https://famous-peplum-dove.cyclic.app/api/post/${id}`)
+        .then((res) => console.log(res));
+    }, []);
   }
   GetPost();
 
