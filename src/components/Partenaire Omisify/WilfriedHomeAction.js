@@ -50,12 +50,13 @@ export default function WilfriedHomeAction() {
           <div className="post">
             <h1>Rémunération</h1>
             <li>1 Commentaire = 1 point</li>
-            <li>1 Message = 1 point</li>
-			<li>1 Message Watsapp ou Telegram = 2 points</li>
-			<li>1 E-mail = 2 points</li>
-            <li>1 Publication = 3 points</li>
+            <li>1 E-mail = 1 point</li>
+            <li>1 Publication = 1 point</li>
+            <li>1 Message = 0.1 point</li>
+            <li>1 Like = 0.1 point</li>
             <li>1000 Points = 1€</li>
-            <li>10 000 Likes = 1€</li>
+            <li>1 Publication (PWI) = 5 points</li>
+            <li>1 Message Whatsapp ou Telegram (MWI) = 5 points</li>
             <p>
               N.B : Les Gains sont mis à jour tout les jours sur la page de
               chaque Partenaire Omisify.
