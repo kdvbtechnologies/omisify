@@ -1,6 +1,6 @@
 import YetcheFooter from "./YetcheFooter";
 
-export default function YetcheHeader() {
+export default function YetcheHeader({ post }) {
   return (
     <>
       <div className="profil">
@@ -16,8 +16,8 @@ export default function YetcheHeader() {
             </div>
 
             <div className="partner-info">
-              <p>Noms de naissance : Yetche Siegomnou Aldo</p>
-              <p>Sexe : Homme</p>
+              <p>Noms de naissance : {post.username}</p>
+              <p>Sexe : {post.desc}</p>
               <p>Pays : Cameroun</p>
               <p>Age : 32 ans</p>
               <p>Compte Facebook : Yetche Siegomnou Aldo</p>
