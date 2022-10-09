@@ -52,8 +52,8 @@ export default function AkouaHomeAction() {
             <li>1 Commentaire = 1 point</li>
             <li>1 E-mail = 1 point</li>
             <li>1 Publication = 1 point</li>
-            <li>1 Message = 0.01 point</li>
-            <li>1 Like = 0.1 point</li>
+            <li>1 Message = 0.1 point</li>
+            <li>1 Like = 0.01 point</li>
             <li>1000 Points = 1€</li>
             <li>1 Publication (PWI) = 5 points</li>
             <li>1 Message Whatsapp ou Telegram (MWI) = 5 points</li>
