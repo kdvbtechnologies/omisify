@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
+import AddPost from "./AddPost";
 
 export default function YetcheFooter() {
   //const [posts, setPosts] = useState([]);
@@ -32,10 +33,7 @@ export default function YetcheFooter() {
           <button>Demander ma rémunération</button>
         </NavLink>
       </div>
-      <input type="text" placeholder="userId" />
-      <input type="text" placeholder="username" />
-      <input type="text" placeholder="desc" />
-      <button>Valider</button>
+      <AddPost />
     </>
   );
 }
