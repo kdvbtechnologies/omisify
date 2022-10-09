@@ -50,13 +50,11 @@ export default function YetcheHeader() {
         </div>
       </div>
 
-      {posts?.map(function (post, id) {
-        return (
-          <div key={post.id}>
-            <h1>{post.desc}</h1>
-          </div>
-        );
-      })}
+      {posts.map((post, id) => (
+        <div key={post.id}>
+          <h1>{post.desc}</h1>
+        </div>
+      ))}
     </>
   );
 }
