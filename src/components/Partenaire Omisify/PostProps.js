@@ -14,6 +14,7 @@ export default function PostProps() {
       .then((res) => dispatch(setPosts(res.data)));
   }
   GetPost();
+  console.log(posts);
 
   return (
     <>
