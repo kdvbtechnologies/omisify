@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import YetcheFooter from "./YetcheFooter";
-import YetcheContact from "./YetcheContact";
 
 export default function YetcheHeader() {
   const [posts, setPosts] = useState([]);
@@ -28,7 +27,7 @@ export default function YetcheHeader() {
             </div>
 
             <div className="partner-info">
-              <p>Noms de naissance : ..</p>
+              <p>Noms de naissance : {posts.username}</p>
               <p>Sexe : ..</p>
               <p>Pays : Cameroun</p>
               <p>Age : 32 ans</p>
@@ -45,9 +44,6 @@ export default function YetcheHeader() {
           </div>
         </div>
       </div>
-
-      <p>{posts.desc}</p>
-      <YetcheContact posts={posts} />
     </>
   );
 }
