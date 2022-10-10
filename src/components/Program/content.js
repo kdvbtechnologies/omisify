@@ -18,7 +18,7 @@ export const accordionData = [
     publication:
       "Publier une publication dans lequel vous insérer votre lien d'affiliation",
     publicationG:
-      "Gain : Chaque publication est équivaut à 1 point. La publication avec interaction(PWI) vaut 5 points.",
+      "Gain : Chaque publication est équivaut à 1 point. La publication avec interaction(PWI) vaut 5 points",
   },
   {
     title: "Programme 2",
@@ -38,7 +38,7 @@ export const accordionData = [
     publication:
       "Publier une publication dans lequel vous insérer votre lien d'affiliation",
     publicationG:
-      "Gain : Chaque publication est équivaut à 1 point. La publication avec interaction(PWI) vaut 5 points.",
+      "Gain : Chaque publication est équivaut à 1 point. La publication avec interaction(PWI) vaut 5 points",
   },
   /*
   {
