@@ -7,16 +7,20 @@ export default function AkouaFooter() {
         <div className="partner-stats">
           <p>Statistiques </p>
           <li>Bonus de Bienvenue : 100 points</li>
-          <li>Commentaires : 315 point(s)</li>
-          <li>Publications : 12 point(s)</li>
-          <li>Messages & PCA : 1388 point(s)</li>
+          <li>Commentaires : 321 point(s)</li>
+          <li>Like-Commentaires : 0 point(s)</li>
+          <li>Publications : 20 point(s)</li>
+          <li>PWI : 0 point(s)</li>
+          <li>Messages : 1400 point(s)</li>
+          <li>MWI : 40 point(s)</li>
+          <li>E-mail : 0 point(s)</li>
           <li>Code Bonus : 2 point(s)</li>
-          <li>Total des Points : 1818 point(s)</li>
-          <li>Valeur des Points : 1.818€</li>
+          <li>Total des Points : 1884 point(s)</li>
+          <li>Valeur des Points : 1.884€</li>
           <li>Likes : 0.00029€</li>
         </div>
         <div className="partner-money">
-          <p>Gains : 1.81829€</p>
+          <p>Gains : 1.88429€</p>
         </div>
       </div>
       <div className="request-money">

@@ -22,12 +22,25 @@ export default function AkouaAllHisto() {
 
         <NavLink
           className="one-historical-text-decoration"
-          to="/akoua-histo-sixteen"
+          to="/akoua-histo-seventeen"
         >
           <div className="one-historical">
             <p>
-              [Nouveau] 08/10/2022 - Samedi 08 Octobre • 244 messages et 5 co..
+              [Nouveau] 09/10/2022 - 2e Dimanche du mois d'Octobre • 8 messages
+              avec interaction (MWI), 120 me..
             </p>
+          </div>
+        </NavLink>
+        <div className="hr">
+          <hr />
+        </div>
+
+        <NavLink
+          className="one-historical-text-decoration"
+          to="/akoua-histo-sixteen"
+        >
+          <div className="one-historical">
+            <p>08/10/2022 - Samedi 08 Octobre • 244 messages et 5 co..</p>
           </div>
         </NavLink>
         <div className="hr">
