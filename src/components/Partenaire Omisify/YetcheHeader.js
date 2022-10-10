@@ -6,7 +6,8 @@ import YetcheFooter from "./YetcheFooter";
 
 export default function YetcheHeader() {
   const [posts, setPosts] = useState([]);
-  const id = "634340e0476255949f2992a3";
+  const [id, setId] = useState("");
+  //const id = "634340e0476255949f2992a3";
   //const dispatch = useDispatch();
   //const posts = useSelector((state) => state.posts.posts);
 
@@ -30,6 +31,14 @@ export default function YetcheHeader() {
 
   return (
     <>
+      <input
+        type="text"
+        placeholder="Entrer votre code partenaire"
+        value={id}
+        name="id"
+        onChange={(e) => setId(e.target.value)}
+      />
+
       <div className="profil">
         <div className="partner-profil">
           <div className="profil-desc">
