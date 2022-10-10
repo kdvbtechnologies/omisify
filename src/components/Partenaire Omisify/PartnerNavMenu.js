@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import YetcheNav from "./YetcheNav";
+import PartnerNav from "./PartnerNav";
 
-export default function YetcheNavMenu() {
+export default function PartnerNavMenu() {
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -9,7 +9,7 @@ export default function YetcheNavMenu() {
 
   return (
     <div style={family}>
-      <YetcheNav />
+      <PartnerNav />
       <div className="menu-navigation">
         <div className="menu-navigation-title">
           <p>Menu</p>
@@ -17,13 +17,13 @@ export default function YetcheNavMenu() {
         <NavLink className="li" to="/program">
           <li>Programme</li>
         </NavLink>
-        <NavLink className="li" to="/yetche-historical">
+        <NavLink className="li" to="/partner-historical">
           <li>Historique</li>
         </NavLink>
-        <NavLink className="li" to="/yetche-trans">
+        <NavLink className="li" to="/partner-trans">
           <li>Transparence</li>
         </NavLink>
-        <NavLink className="li" to="/yetche-contact">
+        <NavLink className="li" to="/partner-contact">
           <li>Contact</li>
         </NavLink>
         <NavLink className="li" to="/stats">

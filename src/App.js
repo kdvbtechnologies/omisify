@@ -3,9 +3,15 @@ import "./darkmode.css";
 import Politique from "./Pages/Politique";
 import Conditions from "./Pages/Conditions";
 import Mentions from "./Pages/Mentions";
-import Partner from "./components/Partner";
+import Home from "./components/Home";
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
+import Partner from "./components/Partenaire Omisify/Partner";
+import PartnerNavMenu from "./components/Partenaire Omisify/PartnerNavMenu";
+import PartnerHome from "./components/Partenaire Omisify/PartnerHome";
+import PartnerContact from "./components/Partenaire Omisify/PartnerContact";
+import PartnerTrans from "./components/Partenaire Omisify/PartnerTrans";
+import PartnerHistorical from "./components/Partenaire Omisify/PartnerHistorical";
 
 import WilfriedMboundja from "./Pages/Partenaire Omisify/WilfriedMboundja";
 import WilfriedContact from "./Pages/Partenaire Omisify/WilfriedContact";
@@ -19,13 +25,6 @@ import WilfriedHistoThree from "./components/Partenaire Omisify/WilfriedHistoThr
 import WilfriedHistoFour from "./components/Partenaire Omisify/WilfriedHistoFour";
 import WilfriedHistoFive from "./components/Partenaire Omisify/WilfriedHistoFive";
 import WilfriedHistoSix from "./components/Partenaire Omisify/WilfriedHistoSix";
-
-import YetcheAldo from "./Pages/Partenaire Omisify/YetcheAldo";
-import YetcheNavMenu from "./components/Partenaire Omisify/YetcheNavMenu";
-import YetcheHome from "./components/Partenaire Omisify/YetcheHome";
-import YetcheContact from "./components/Partenaire Omisify/YetcheContact";
-import YetcheTrans from "./components/Partenaire Omisify/YetcheTrans";
-import YetcheHistorical from "./components/Partenaire Omisify/YetcheHistorical";
 
 import SimoRandy from "./components/Partenaire Omisify/SimoRandy";
 import SimoNavMenu from "./components/Partenaire Omisify/SimoNavMenu";
@@ -65,8 +64,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="*" element={<Partner />} />
-        <Route path="/" element={<Partner />} />
+        <Route path="*" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/program" element={<Program />} />
         <Route path="/contact" element={<ContactPartner />} />
         <Route path="/conditions" element={<Conditions />} />
@@ -113,12 +112,12 @@ export default function App() {
         />
         <Route path="/akoua-stats" element={<AkouaStats />} />
 
-        <Route path="/yetche" element={<YetcheAldo />} />
-        <Route path="/yetche-home" element={<YetcheHome />} />
-        <Route path="/yetche-menu" element={<YetcheNavMenu />} />
-        <Route path="/yetche-contact" element={<YetcheContact />} />
-        <Route path="/yetche-trans" element={<YetcheTrans />} />
-        <Route path="/yetche-historical" element={<YetcheHistorical />} />
+        <Route path="/partner-home" element={<PartnerHome />} />
+        <Route path="/partner-menu" element={<PartnerNavMenu />} />
+        <Route path="/partner-contact" element={<PartnerContact />} />
+        <Route path="/partner-trans" element={<PartnerTrans />} />
+        <Route path="/partner-historical" element={<PartnerHistorical />} />
+        <Route path="/partner" element={<Partner />} />
         <Route path="/stats" element={<Stats />} />
         <Route path="/connexion" element={<Connexion />} />
 

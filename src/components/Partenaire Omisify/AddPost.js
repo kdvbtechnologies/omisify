@@ -52,11 +52,6 @@ export default function AddPost() {
       />
 
       <button onClick={AddThePost}>Valider</button>
-      <p>jour 1: points</p>
-      <p>jour 2: points</p>
-      <p>jour 3: points</p>
-      <p>jour 4: points</p>
-      <p>jour 5: points</p>
     </>
   );
 }

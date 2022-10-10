@@ -1,8 +1,8 @@
+import PartnerNavigation from "./Partner-Navigation";
 import { NavLink } from "react-router-dom";
-import YetcheMillions from "./YetcheMillions";
-import YetcheNav from "./YetcheNav";
+import Millions from "./Partner/Millions";
 
-export default function YetcheHome() {
+export default function Home() {
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -10,13 +10,13 @@ export default function YetcheHome() {
 
   return (
     <div className="introduce" style={family}>
-      <YetcheNav />
+      <PartnerNavigation />
       <div className="introduce-title">
         <p>
           Omisify est une plateforme qui proprose des programmes d'affiliation.
           Vous pourrez augmenter vos revenus en devenant Partenaire Omisify.
         </p>
-        <NavLink to="/yetche">
+        <NavLink to="/contact">
           <button>Devenir Partenaire Omisify</button>
         </NavLink>
       </div>
@@ -42,18 +42,21 @@ export default function YetcheHome() {
           Avec Omisify vous pourrez gagner de l'argent même lorsque vous dormez.
           Omisify est gratuit et rémunère toujours ses partenaires !
         </p>
-        <NavLink to="/yetche">
+        <NavLink to="/contact">
           <button>Devenez Partenaire Omisify !</button>
         </NavLink>
 
         <div className="posts">
           <div className="post">
             <h1>Rémunération</h1>
+            <li>1 E-mail = 1 point</li>
             <li>1 Commentaire = 1 point</li>
-            <li>1 Message = 1 point</li>
             <li>1 Publication = 1 point</li>
+            <li>1 Like (publication ou commentaire) = 0.01 point</li>
+            <li>1 Publication (PWI) = 5 points</li>
+            <li>1 Message = 0.1 point</li>
+            <li>1 Message Whatsapp ou Telegram (MWI) = 5 points</li>
             <li>1000 Points = 1€</li>
-            <li>10 000 Likes = 1€</li>
             <p>
               N.B : Les Gains sont mis à jour tout les jours sur la page de
               chaque Partenaire Omisify.
@@ -65,7 +68,7 @@ export default function YetcheHome() {
           </div>
         </div>
       </div>
-      <YetcheMillions />
+      <Millions />
     </div>
   );
 }

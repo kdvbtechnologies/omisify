@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function YetcheHistorical() {
+export default function PartnerHistorical() {
   const navigate = useNavigate();
   const family = {
     fontFamily:

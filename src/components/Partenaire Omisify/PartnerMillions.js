@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Footer from "../Footer";
 
-export default function YetcheMillions() {
+export default function PartnerMillions() {
   return (
     <>
       <div className="millions">
@@ -16,7 +16,7 @@ export default function YetcheMillions() {
         </div>
         <hr />
         <div className="button">
-          <NavLink to="/yetche">
+          <NavLink to="/partner">
             <button>Devenir Partenaire Omisify </button>
           </NavLink>
         </div>

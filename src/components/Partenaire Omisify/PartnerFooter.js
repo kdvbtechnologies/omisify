@@ -1,26 +1,26 @@
 import { NavLink } from "react-router-dom";
 import AddPost from "./AddPost";
 
-export default function YetcheFooter() {
+export default function PartnerFooter() {
   return (
     <>
       <div>
         <div className="partner-stats">
           <p>Statistiques </p>
-          <li>Commentaires : 0 point(s)</li>
-          <li>Publications : 0 point(s)</li>
-          <li>Messages & PCA : 0 point(s)</li>
-          <li>Code Bonus : 0 point(s)</li>
-          <li>Total des Points : 0 point(s)</li>
-          <li>Valeur des Points : 0€</li>
-          <li>Likes : 0€</li>
+          <li>Commentaires : _ _ _</li>
+          <li>Publications : _ _ _</li>
+          <li>Messages & PCA : _ _ _</li>
+          <li>Code Bonus : _ _ _</li>
+          <li>Total des Points : _ _ _</li>
+          <li>Valeur des Points : _ _ _</li>
+          <li>Likes : _ _ _</li>
         </div>
         <div className="partner-money">
-          <p>Gains : 0€</p>
+          <p>Gains : _ _ _</p>
         </div>
       </div>
       <div className="request-money">
-        <NavLink to="/yetche-contact">
+        <NavLink to="/partner-contact">
           <button>Demander ma rémunération</button>
         </NavLink>
       </div>

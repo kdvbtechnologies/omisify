@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function YetcheTrans() {
+export default function PartnerTrans() {
   const navigate = useNavigate();
   const family = {
     fontFamily:
@@ -18,15 +18,12 @@ export default function YetcheTrans() {
         </div>
         <div className="transparence-desc">
           <div className="a">
-            <p>Administrateur : Yetche Aldo</p>
+            <p>Administrateur : _ _ _</p>
           </div>
           <p>E-mail : _ _ _</p>
-          <p>Date de création : 30/09/2022</p>
+          <p>Date de création : _ _ _</p>
           <div className="b">
-            <p>
-              Dernière mise à jour de la page : 30/09/2022, 15:04 (Heure de
-              Brasilia)
-            </p>
+            <p>Dernière mise à jour de la page : _ _ _</p>
           </div>
         </div>
       </div>

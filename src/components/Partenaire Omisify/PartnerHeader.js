@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useState } from "react";
-import YetcheFooter from "./YetcheFooter";
+import PartnerFooter from "./PartnerFooter";
 //import { useDispatch, useSelector } from "react-redux";
 //import { setPosts } from "../../feature/posts.slice";
 
-export default function YetcheHeader() {
+export default function PartnerHeader() {
   const [posts, setPosts] = useState([]);
   const [id, setId] = useState("");
   //const id = "634340e0476255949f2992a3";
@@ -44,7 +44,7 @@ export default function YetcheHeader() {
           <div className="profil-desc">
             <div className="profil-name-role">
               <div className="partner-name">
-                <p>@Yetche Aldo</p>
+                <p>@ _ _ _</p>
               </div>
               <div className="partner-role">
                 <i>Partenaire Omisify</i>
@@ -53,18 +53,18 @@ export default function YetcheHeader() {
 
             <div className="partner-info">
               <p>Noms de naissance : {posts.username}</p>
-              <p>Sexe : ..</p>
-              <p>Pays : Cameroun</p>
-              <p>Age : 32 ans</p>
-              <p>Compte Facebook : Yetche Siegomnou Aldo</p>
-              <p>Code de Bienvenue : Crypto90</p>
-              <p>Catégorie : Non-Influenceur</p>
+              <p>Sexe : _ _ _</p>
+              <p>Pays : _ _ _</p>
+              <p>Age : _ _ _</p>
+              <p>Compte Facebook : _ _ _</p>
+              <p>Code de Bienvenue : _ _ _</p>
+              <p>Catégorie : _ _ _</p>
               <p>Méthode de Paiement préféré : _ _ _</p>
               <div className="profil-hr">
                 <hr />
                 <hr />
               </div>
-              <YetcheFooter />
+              <PartnerFooter />
             </div>
           </div>
         </div>
