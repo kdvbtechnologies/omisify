@@ -87,6 +87,7 @@ import AkouaHistoFourteen from "./components/Partenaire Omisify/AkouaHistoFourte
 import AkouaHistoFifteen from "./components/Partenaire Omisify/AkouaHistoFifteen";
 import AkouaHistoSixteen from "./components/Partenaire Omisify/AkouaHistoSixteen";
 import AkouaStats from "./components/Partenaire Omisify/AkouaStats";
+import Stats from "./components/Partenaire Omisify/Stats";
 
 export default function App() {
   return (
@@ -167,6 +168,7 @@ export default function App() {
         <Route path="/yetche-contact" element={<YetcheContact />} />
         <Route path="/yetche-trans" element={<YetcheTrans />} />
         <Route path="/yetche-historical" element={<YetcheHistorical />} />
+        <Route path="/stats" element={<Stats />} />
 
         <Route path="/claudia" element={<ClaudiaEsperanceAction />} />
         <Route path="/claudia-menu" element={<ClaudiaNavMenu />} />

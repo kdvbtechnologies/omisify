@@ -26,6 +26,9 @@ export default function YetcheNavMenu() {
         <NavLink className="li" to="/yetche-contact">
           <li>Contact</li>
         </NavLink>
+        <NavLink className="li" to="/stats">
+          <li>Statistiques Détaillés</li>
+        </NavLink>
         <div className="omisify-copy">
           <div className="omisify-copyright">
             <p>© 2022 Omisify</p>
