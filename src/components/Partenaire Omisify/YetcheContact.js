@@ -1,6 +1,6 @@
 import YetcheNav from "./YetcheNav";
 
-export default function YetcheContact() {
+export default function YetcheContact({ posts }) {
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -14,6 +14,7 @@ export default function YetcheContact() {
           <h1>Contactez-Nous</h1>
           <p>E-mail : contact@omisify.com</p>
           <p>Whatsapp : +5514991550021</p>
+          <p>{posts.username}</p>
         </div>
       </div>
     </div>
