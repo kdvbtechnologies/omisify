@@ -4,7 +4,7 @@ export const accordionData = [
     program: "Programme d'Affiliation : Devenir Partenaire Omisify",
     programLink: "Lien d'Affiliation : https://omisify.com",
     programDesc: `Omisify est une plateforme qui proprose des programmes d'affiliation. Vous pourrez augmenter vos revenus en devenant Partenaire Omisify. Omisify est gratuit et rémunère toujours ses partenaires quelque soit le pays dans lequel vous vous trouver et quelque soit la situation de votre pays. Avec Omisify vous pourrez retirer votre rémunération à tout moment que vous le souhaiterez. Gagnez de l'argent avec Omisify !`,
-    points: "Bonus CDB : 2 points",
+    points: "Bonus CDB : 10 points",
     consignes: "Consignes :",
     comment:
       "Commentaire : Publier un commentaire dans lequel vous insérez votre lien d'affiliation",

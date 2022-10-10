@@ -56,7 +56,6 @@ export default function WilfriedHomeAction() {
             <li>1 Publication (PWI) = 5 points</li>
             <li>1 Message = 0.1 point</li>
             <li>1 Message Whatsapp ou Telegram (MWI) = 5 points</li>
-            <li>1 Code Bonus = 10 points</li>
             <li>1000 Points = 1€</li>
             <p>
               N.B : Les Gains sont mis à jour tout les jours sur la page de
