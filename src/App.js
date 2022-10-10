@@ -20,42 +20,12 @@ import WilfriedHistoFour from "./components/Partenaire Omisify/WilfriedHistoFour
 import WilfriedHistoFive from "./components/Partenaire Omisify/WilfriedHistoFive";
 import WilfriedHistoSix from "./components/Partenaire Omisify/WilfriedHistoSix";
 
-import KisaDjata from "./Pages/Partenaire Omisify/KisaDjata";
-import KisaHome from "./Pages/Partenaire Omisify/KisaHome";
-import KisaNavMenu from "./components/Partenaire Omisify/KisaNavMenu";
-import KisaTrans from "./components/Partenaire Omisify/KisaTrans";
-import KisaContactAction from "./components/Partenaire Omisify/KisaContactAction";
-import KisaHistoricalAction from "./components/Partenaire Omisify/KisaHistoricalAction";
-
-import KarimZenab from "./Pages/Partenaire Omisify/KarimZenab";
-import KarimHome from "./Pages/Partenaire Omisify/KarimHome";
-import KarimNavMenu from "./components/Partenaire Omisify/KarimNavMenu";
-import KarimTrans from "./components/Partenaire Omisify/KarimTrans";
-import KarimContactAction from "./components/Partenaire Omisify/KarimContactAction";
-import KarimHistoricalAction from "./components/Partenaire Omisify/KarimHistoricalAction";
-
-import GbetindeEpiphane from "./Pages/Partenaire Omisify/GbetindeEpiphane";
-import GbetindeHome from "./Pages/Partenaire Omisify/GbetindeHome";
-import GbetindeNavMenu from "./components/Partenaire Omisify/GbetindeNavMenu";
-import GbetindeTrans from "./components/Partenaire Omisify/GbetindeTrans";
-import GbetindeContactAction from "./components/Partenaire Omisify/GbetindeContactAction";
-import GbetindeAllHistorical from "./components/Partenaire Omisify/GbetindeAllHistorical";
-import GbetindeHistoOne from "./components/Partenaire Omisify/GbetindeHistoOne";
-
 import YetcheAldo from "./Pages/Partenaire Omisify/YetcheAldo";
 import YetcheNavMenu from "./components/Partenaire Omisify/YetcheNavMenu";
 import YetcheHome from "./components/Partenaire Omisify/YetcheHome";
 import YetcheContact from "./components/Partenaire Omisify/YetcheContact";
 import YetcheTrans from "./components/Partenaire Omisify/YetcheTrans";
 import YetcheHistorical from "./components/Partenaire Omisify/YetcheHistorical";
-
-import ClaudiaEsperanceAction from "./components/Partenaire Omisify/ClaudiaEsperanceAction";
-import ClaudiaHome from "./components/Partenaire Omisify/ClaudiaHome";
-import ClaudiaNavMenu from "./components/Partenaire Omisify/ClaudiaNavMenu";
-import ClaudiaAllHisto from "./components/Partenaire Omisify/ClaudiaAllHisto";
-import ClaudiaTrans from "./components/Partenaire Omisify/ClaudiaTrans";
-import ClaudiaContact from "./components/Partenaire Omisify/ClaudiaContact";
-import ClaudiaHistoOne from "./components/Partenaire Omisify/ClaudiaHistoOne";
 
 import SimoRandy from "./components/Partenaire Omisify/SimoRandy";
 import SimoNavMenu from "./components/Partenaire Omisify/SimoNavMenu";
@@ -89,6 +59,7 @@ import AkouaHistoSixteen from "./components/Partenaire Omisify/AkouaHistoSixteen
 import AkouaHistoSeventeen from "./components/Partenaire Omisify/AkouaHistoSeventeen";
 import AkouaStats from "./components/Partenaire Omisify/AkouaStats";
 import Stats from "./components/Partenaire Omisify/Stats";
+import Connexion from "./components/Connexion";
 
 export default function App() {
   return (
@@ -113,20 +84,6 @@ export default function App() {
         <Route path="/wilfried-histo-six" element={<WilfriedHistoSix />} />
         <Route path="/wilfried-all-histo" element={<WilfriedAllHisto />} />
         <Route path="/wilfried-menu" element={<WilfriedNavMenu />} />
-
-        <Route path="/karim" element={<KarimZenab />} />
-        <Route path="/karim-home" element={<KarimHome />} />
-        <Route path="/karim-menu" element={<KarimNavMenu />} />
-        <Route path="/karim-historical" element={<KarimHistoricalAction />} />
-        <Route path="/karim-trans" element={<KarimTrans />} />
-        <Route path="/karim-contact" element={<KarimContactAction />} />
-
-        <Route path="/kisa" element={<KisaDjata />} />
-        <Route path="/kisa-home" element={<KisaHome />} />
-        <Route path="/kisa-menu" element={<KisaNavMenu />} />
-        <Route path="/kisa-historical" element={<KisaHistoricalAction />} />
-        <Route path="/kisa-trans" element={<KisaTrans />} />
-        <Route path="/kisa-contact" element={<KisaContactAction />} />
 
         <Route path="/akoua" element={<AkouaDjenebou />} />
         <Route path="/akoua-home" element={<AkouaHome />} />
@@ -156,17 +113,6 @@ export default function App() {
         />
         <Route path="/akoua-stats" element={<AkouaStats />} />
 
-        <Route path="/gbetinde" element={<GbetindeEpiphane />} />
-        <Route path="/gbetinde-home" element={<GbetindeHome />} />
-        <Route path="/gbetinde-menu" element={<GbetindeNavMenu />} />
-        <Route
-          path="/gbetinde-all-historical"
-          element={<GbetindeAllHistorical />}
-        />
-        <Route path="/gbetinde-contact" element={<GbetindeContactAction />} />
-        <Route path="/gbetinde-trans" element={<GbetindeTrans />} />
-        <Route path="/gbetinde-histo-one" element={<GbetindeHistoOne />} />
-
         <Route path="/yetche" element={<YetcheAldo />} />
         <Route path="/yetche-home" element={<YetcheHome />} />
         <Route path="/yetche-menu" element={<YetcheNavMenu />} />
@@ -174,14 +120,7 @@ export default function App() {
         <Route path="/yetche-trans" element={<YetcheTrans />} />
         <Route path="/yetche-historical" element={<YetcheHistorical />} />
         <Route path="/stats" element={<Stats />} />
-
-        <Route path="/claudia" element={<ClaudiaEsperanceAction />} />
-        <Route path="/claudia-menu" element={<ClaudiaNavMenu />} />
-        <Route path="/claudia-home" element={<ClaudiaHome />} />
-        <Route path="/claudia-contact" element={<ClaudiaContact />} />
-        <Route path="/claudia-all-histo" element={<ClaudiaAllHisto />} />
-        <Route path="/claudia-trans" element={<ClaudiaTrans />} />
-        <Route path="/claudia-histo-one" element={<ClaudiaHistoOne />} />
+        <Route path="/connexion" element={<Connexion />} />
 
         <Route path="/simo" element={<SimoRandy />} />
         <Route path="/simo-menu" element={<SimoNavMenu />} />

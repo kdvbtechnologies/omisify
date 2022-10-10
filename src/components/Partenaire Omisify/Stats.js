@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export default function Stats() {
   const navigate = useNavigate();
@@ -6,6 +7,13 @@ export default function Stats() {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
+
+  async function MyPosts() {
+    await axios
+      .get(`https://famous-peplum-dove.cyclic.app/api/post/5678910`)
+      .then((res) => console.log(res));
+  }
+  MyPosts();
 
   return (
     <div style={family}>
@@ -20,39 +28,39 @@ export default function Stats() {
         <div className="stats">
           <div>
             <div className="stats-title">
-              <p>Octobre 2022</p>
+              <p>Oct</p>
             </div>
             <div className="stats-cards">
               <div className="a">
-                <p>01/10/2022 || 61 points • 2 l</p>
+                <p> ||</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>02/10/2022 || 103 points • 1 l</p>
+                <p> ||</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>03/10/2022 || 53 points</p>
+                <p> ||</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>04/10/2022 || 152 points</p>
+                <p> ||</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>05/10/2022 || 229 points • 5 l</p>
+                <p> ||</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>06/10/2022 || 158 points • 13 l</p>
+                <p> ||</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>07/10/2022 || 268 points • 4 l</p>
+                <p>07/10/2022 ||</p>
                 <div className="hr">
                   <hr />
                 </div>
-                <p>08/10/2022 || 249 points</p>
+                <p>08/10/2022 ||</p>
                 <div className="hr">
                   <hr />
                 </div>
