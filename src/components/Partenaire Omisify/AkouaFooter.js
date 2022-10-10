@@ -8,8 +8,9 @@ export default function AkouaFooter() {
           <p>Statistiques </p>
           <li>Bonus de Bienvenue : 100 points</li>
           <li>Commentaires : 321 point(s)</li>
-          <li>Like-Commentaires : 0 point(s)</li>
+          <li>Likes (commentaire) : 0 point(s)</li>
           <li>Publications : 20 point(s)</li>
+          <li>Likes (publication) : 0.00029€</li>
           <li>PWI : 0 point(s)</li>
           <li>Messages : 1400 point(s)</li>
           <li>MWI : 40 point(s)</li>
@@ -17,7 +18,6 @@ export default function AkouaFooter() {
           <li>Code Bonus : 2 point(s)</li>
           <li>Total des Points : 1884 point(s)</li>
           <li>Valeur des Points : 1.884€</li>
-          <li>Likes : 0.00029€</li>
         </div>
         <div className="partner-money">
           <p>Gains : 1.88429€</p>
