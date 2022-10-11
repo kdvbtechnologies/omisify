@@ -10,14 +10,14 @@ export default function Stats() {
   };
 
   // month
-  const [month, setMonth] = useState([]);
+  /*const [month, setMonth] = useState([]);
 
   useEffect(() => {
     axios
       .get(`https://famous-peplum-dove.cyclic.app/api/month/`)
       .then((res) => setMonth(res.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, []);*/
 
   // point
   const [point, setPoint] = useState([]);
@@ -42,9 +42,7 @@ export default function Stats() {
         <div className="stats">
           <div>
             <div className="stats-title">
-              {month.map((month) => (
-                <p>{month.month}</p>
-              ))}
+              <p></p>
             </div>
             <div className="stats-cards">
               <div className="a">
