@@ -13,7 +13,7 @@ export default function PartnerHeader() {
 
   async function MyPosts() {
     await axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/post/${id}`)
+      .get(`https://famous-peplum-dove.cyclic.app/api/user/${id}`)
       .then((res) => setPosts(res.data));
   }
   MyPosts();
