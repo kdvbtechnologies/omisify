@@ -53,9 +53,6 @@ export default function Stats() {
                     {point.date} || {point.pcomments} points
                   </p>
                 ))}
-                <div className="hr">
-                  <hr />
-                </div>
               </div>
             </div>
             <div className="total">
