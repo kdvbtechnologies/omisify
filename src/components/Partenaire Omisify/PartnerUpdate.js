@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import PartnerNewMonth from "./PartnerNewMonth";
 
 export default function PartnerUpdate() {
   const navigate = useNavigate();
@@ -11,8 +10,10 @@ export default function PartnerUpdate() {
   };
 
   const userId = "6344c8869e261cca2e3cde7b";
-  const [pcomments, setPcomments] = useState("");
-  const [date, setDate] = useState("");
+  const [cSeptember2022, setCSeptember2022] = useState("");
+  const [dSeptember2022, setDSeptember2022] = useState("");
+  const [cOctober2022, setCOctober2022] = useState("");
+  const [dOctober2022, setDOctober2022] = useState("");
 
   async function AddPoint(e) {
     e.preventDefault();
@@ -21,8 +22,10 @@ export default function PartnerUpdate() {
       url: "https://famous-peplum-dove.cyclic.app/api/point/add",
       data: {
         userId,
-        pcomments,
-        date,
+        cSeptember2022,
+        dSeptember2022,
+        cOctober2022,
+        dOctober2022,
       },
     })
       .then((res) => console.log(res))
@@ -49,8 +52,8 @@ export default function PartnerUpdate() {
       <input
         type="text"
         placeholder="Nombre des commentaires"
-        value={pcomments}
-        onChange={(e) => setPcomments(e.target.value)}
+        value={cSeptember2022}
+        onChange={(e) => setCSeptember2022(e.target.value)}
         name="pcomments"
       />
 
@@ -58,12 +61,30 @@ export default function PartnerUpdate() {
       <input
         type="text"
         placeholder="Date d'aujourd'hui"
-        value={date}
-        onChange={(e) => setDate(e.target.value)}
+        value={dSeptember2022}
+        onChange={(e) => setDSeptember2022(e.target.value)}
         name="date"
       />
       <button onClick={AddPoint}>valider</button>
-      <PartnerNewMonth />
+
+      <p>partie Octobre</p>
+      <p>Entrer le nombre des commentaires</p>
+      <input
+        type="text"
+        placeholder="Nombre des commentaires"
+        value={cOctober2022}
+        onChange={(e) => setCOctober2022(e.target.value)}
+        name="pcomments"
+      />
+
+      <p>Entrer la date d'aujourd'hui</p>
+      <input
+        type="text"
+        placeholder="Date d'aujourd'hui"
+        value={dOctober2022}
+        onChange={(e) => setDOctober2022(e.target.value)}
+        name="date"
+      />
     </div>
   );
 }
