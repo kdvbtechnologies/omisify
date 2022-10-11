@@ -10,12 +10,12 @@ export default function Stats() {
   };
 
   // month
-  const [month, setMonth] = useState([]);
+  const [month] = useState([]);
 
   useEffect(() => {
     axios
       .get(`https://famous-peplum-dove.cyclic.app/api/month/`)
-      .then((res) => setMonth(res.data))
+      .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   }, []);
 
