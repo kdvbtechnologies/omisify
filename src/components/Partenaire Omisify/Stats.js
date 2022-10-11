@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Stats() {
   const navigate = useNavigate();
@@ -12,24 +12,22 @@ export default function Stats() {
   // month
   const [month, setMonth] = useState([]);
 
-  async function AllMonth() {
-    await axios
+  useEffect(() => {
+    axios
       .get(`https://famous-peplum-dove.cyclic.app/api/month/`)
       .then((res) => setMonth(res.data))
       .catch((err) => console.log(err));
-  }
-  AllMonth();
+  }, []);
 
   // point
   const [point, setPoint] = useState([]);
 
-  async function AllPoint() {
-    await axios
+  useEffect(() => {
+    axios
       .get(`https://famous-peplum-dove.cyclic.app/api/point/`)
       .then((res) => setPoint(res.data))
       .catch((err) => console.log(err));
-  }
-  AllPoint();
+  }, []);
 
   return (
     <div style={family}>
