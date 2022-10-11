@@ -11,7 +11,7 @@ export default function PartnerUpdate() {
   };
 
   const userId = "6344c8869e261cca2e3cde7b";
-  const monthId = "6345870f39a1b2e27757aa65";
+  const monthId = "6345a7c32804d94699234589";
   const [pcomments, setPcomments] = useState("");
   const [date, setDate] = useState("");
 
