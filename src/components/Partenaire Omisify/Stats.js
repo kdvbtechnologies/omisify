@@ -48,9 +48,11 @@ export default function Stats() {
             </div>
             <div className="stats-cards">
               <div className="a">
-                <p>
-                  {point.date} || {point.pcomments} points
-                </p>
+                {point.map((point) => (
+                  <p>
+                    {point.date} || {point.pcomments} points
+                  </p>
+                ))}
                 <div className="hr">
                   <hr />
                 </div>
