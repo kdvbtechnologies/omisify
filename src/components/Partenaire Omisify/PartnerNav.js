@@ -5,9 +5,11 @@ import { useState } from "react";
 export default function PartnerNav() {
   const [user, setUser] = useState([]);
 
-  async function User() {
-    await axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/user/6344c8869e261cca2e3cde7b`)
+  function User() {
+    axios
+      .get(
+        `https://famous-peplum-dove.cyclic.app/api/user/6344c8869e261cca2e3cde7b`
+      )
       .then((res) => setUser(res.data))
       .catch((err) => console.log(err));
   }
