@@ -11,7 +11,6 @@ export default function PartnerUpdate() {
   };
 
   const userId = "6344c8869e261cca2e3cde7b";
-  const monthId = "6345a7c32804d94699234589";
   const [pcomments, setPcomments] = useState("");
   const [date, setDate] = useState("");
 
@@ -22,7 +21,6 @@ export default function PartnerUpdate() {
       url: "https://famous-peplum-dove.cyclic.app/api/point/add",
       data: {
         userId,
-        monthId,
         pcomments,
         date,
       },
