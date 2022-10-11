@@ -49,7 +49,7 @@ export default function Stats() {
             <div className="stats-cards">
               <div className="a">
                 <p>
-                  {point.date} || {point.pcomments}
+                  {point.date} || {point.pcomments} points
                 </p>
                 <div className="hr">
                   <hr />
