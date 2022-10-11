@@ -44,7 +44,7 @@ export default function PartnerHeader() {
           <div className="profil-desc">
             <div className="profil-name-role">
               <div className="partner-name">
-                <p>@{posts.shortname}</p>
+                <p>@{posts.partnername}</p>
               </div>
               <div className="partner-role">
                 <i>Partenaire Omisify</i>
