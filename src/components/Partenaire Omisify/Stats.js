@@ -16,6 +16,14 @@ export default function Stats() {
   }
   AllMonth();
 
+  async function AllPoint() {
+    await axios
+      .get(`https://famous-peplum-dove.cyclic.app/api/point/`)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }
+  AllPoint();
+
   return (
     <div style={family}>
       <div className="back-btn">
