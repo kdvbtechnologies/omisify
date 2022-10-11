@@ -58,9 +58,7 @@ export default function Stats() {
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="flex-stats">
         <div className="stats">
           <div>
             <div className="stats-title">
@@ -80,9 +78,7 @@ export default function Stats() {
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="flex-stats">
         <div className="stats">
           <div>
             <div className="stats-title">
@@ -102,9 +98,7 @@ export default function Stats() {
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="flex-stats">
         <div className="stats">
           <div>
             <div className="stats-title">
@@ -124,9 +118,7 @@ export default function Stats() {
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="flex-stats">
         <div className="stats">
           <div>
             <div className="stats-title">
@@ -146,9 +138,7 @@ export default function Stats() {
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="flex-stats">
         <div className="stats">
           <div>
             <div className="stats-title">
