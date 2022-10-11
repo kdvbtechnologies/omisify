@@ -8,12 +8,13 @@ export default function Stats() {
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
 
-  async function MyPosts() {
+  async function AllMonth() {
     await axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/post/5678910`)
-      .then((res) => console.log(res));
+      .get(`https://famous-peplum-dove.cyclic.app/api/month/`)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   }
-  MyPosts();
+  AllMonth();
 
   return (
     <div style={family}>
