@@ -22,6 +22,15 @@ export default function PartnerTrans() {
           </div>
           <p>E-mail : _ _ _</p>
           <p>Date de création : _ _ _</p>
+          <p>Compte Facebook : _ _ _</p>
+          <p>Instagram : _ _ _</p>
+          <p>Page Facebook : _ _ _</p>
+          <p>Chaine Youtube : _ _ _</p>
+          <p>Tik Tok : _ _ _</p>
+          <p>Whatsapp : _ _ _</p>
+          <p>Telegram : _ _ _</p>
+          <p>Mentor : _ _ _</p>
+          <p>Catégorie : _ _ _</p>
           <div className="b">
             <p>Dernière mise à jour de la page : _ _ _</p>
           </div>

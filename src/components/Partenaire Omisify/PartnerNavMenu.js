@@ -26,8 +26,14 @@ export default function PartnerNavMenu() {
         <NavLink className="li" to="/partner-contact">
           <li>Contact</li>
         </NavLink>
+        <NavLink className="li" to="/settings">
+          <li>Paramètres</li>
+        </NavLink>
         <NavLink className="li" to="/stats">
-          <li>Statistiques Détaillés</li>
+          <li>Statistiques</li>
+        </NavLink>
+        <NavLink className="li" to="/update">
+          <li>Actualiser</li>
         </NavLink>
         <div className="omisify-copy">
           <div className="omisify-copyright">

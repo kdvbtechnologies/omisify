@@ -59,6 +59,8 @@ import AkouaHistoSeventeen from "./components/Partenaire Omisify/AkouaHistoSeven
 import AkouaStats from "./components/Partenaire Omisify/AkouaStats";
 import Stats from "./components/Partenaire Omisify/Stats";
 import Connexion from "./components/Connexion";
+import PartnerUpdate from "./components/Partenaire Omisify/PartnerUpdate";
+import PartnerSettings from "./components/Partenaire Omisify/PartnerSettings";
 
 export default function App() {
   return (
@@ -118,6 +120,8 @@ export default function App() {
         <Route path="/partner-trans" element={<PartnerTrans />} />
         <Route path="/partner-historical" element={<PartnerHistorical />} />
         <Route path="/partner" element={<Partner />} />
+        <Route path="/update" element={<PartnerUpdate />} />
+        <Route path="/settings" element={<PartnerSettings />} />
         <Route path="/stats" element={<Stats />} />
         <Route path="/connexion" element={<Connexion />} />
 
