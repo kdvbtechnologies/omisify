@@ -56,23 +56,6 @@ export default function Stats() {
                 <div className="hr">
                   <hr />
                 </div>
-                <p> ||</p>
-                <div className="hr">
-                  <hr />
-                </div>
-                <p> ||</p>
-                <div className="hr">
-                  <hr />
-                </div>
-                <p> ||</p>
-                <div className="hr">
-                  <hr />
-                </div>
-                <p> ||</p>
-                <div className="hr">
-                  <hr />
-                </div>
-                <p> ||</p>
               </div>
             </div>
             <div className="total">
