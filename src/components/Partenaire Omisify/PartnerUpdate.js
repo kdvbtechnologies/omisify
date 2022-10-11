@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import PartnerNewMonth from "./PartnerNewMonth";
 
 export default function PartnerUpdate() {
   const navigate = useNavigate();
@@ -9,7 +10,7 @@ export default function PartnerUpdate() {
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
 
-  const userId = "234567";
+  const userId = "6344c8869e261cca2e3cde7b";
   const monthId = "12345";
   const [pcomments, setPcomments] = useState("");
   const [date, setDate] = useState("");
@@ -30,23 +31,6 @@ export default function PartnerUpdate() {
       .catch((err) => console.log(err));
   }
 
-  //month
-  const [month, setMonth] = useState("");
-
-  async function NewMonth(e) {
-    e.preventDefault();
-    await axios({
-      method: "post",
-      url: "https://famous-peplum-dove.cyclic.app/api/month/add",
-      data: {
-        userId,
-        month,
-      },
-    })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
-  }
-
   return (
     <div style={family}>
       <div className="back-btn">
@@ -59,7 +43,7 @@ export default function PartnerUpdate() {
         Entrer la date à laquelle vous avez faite la publication ou envoyer le
         message
       </p>
-      <input type="text" placeholder="Date de creation" />
+      <input type="text" placeholder="Date" />
       <p>Entrer le nombre des messages</p>
       <input type="text" placeholder="Nombre des messages" />
 
@@ -81,17 +65,7 @@ export default function PartnerUpdate() {
         name="date"
       />
       <button onClick={AddPoint}>valider</button>
-
-      <h1>Nouveau mois</h1>
-      <p>Commencer avec un nouveau mois</p>
-      <input
-        type="text"
-        placeholder="Entrer le nouveau mois"
-        value={month}
-        onChange={(e) => setMonth(e.target.value)}
-        name="month"
-      />
-      <button onClick={NewMonth}>Commencer</button>
+      <PartnerNewMonth />
     </div>
   );
 }
