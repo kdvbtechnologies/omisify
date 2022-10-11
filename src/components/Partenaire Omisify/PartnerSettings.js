@@ -15,6 +15,9 @@ export default function PartnerSettings() {
       <div className="stats-big-title">
         <p>Paramètres</p>
       </div>
+      <h1>Informations personelles</h1>
+      <P>Modifier</P>
+      <p></p>
     </div>
   );
 }
