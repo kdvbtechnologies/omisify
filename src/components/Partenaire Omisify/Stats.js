@@ -9,23 +9,33 @@ export default function Stats() {
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
 
-  // month
-  /*const [month, setMonth] = useState([]);
+  // september
+  const [sept, setSept] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/month/`)
-      .then((res) => setMonth(res.data))
+      .get(`https://famous-peplum-dove.cyclic.app/api/point/all/september`)
+      .then((res) => setSept(res.data))
       .catch((err) => console.log(err));
-  }, []);*/
+  }, []);
 
-  // point
-  const [point, setPoint] = useState([]);
+  // october
+  const [oct, setOct] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/point/`)
-      .then((res) => setPoint(res.data))
+      .get(`https://famous-peplum-dove.cyclic.app/api/point/all/october`)
+      .then((res) => setOct(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  // november
+  const [nov, setNov] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`https://famous-peplum-dove.cyclic.app/api/point/all/november`)
+      .then((res) => setNov(res.data))
       .catch((err) => console.log(err));
   }, []);
 
@@ -46,9 +56,9 @@ export default function Stats() {
             </div>
             <div className="stats-cards">
               <div className="a">
-                {point.map((point) => (
+                {sept.map((point) => (
                   <p>
-                    {point.dSeptember2022} || {point.cSeptember2022} points
+                    {point.dSeptember} || {point.cSeptember} points
                   </p>
                 ))}
               </div>
@@ -66,9 +76,9 @@ export default function Stats() {
             </div>
             <div className="stats-cards">
               <div className="a">
-                {point.map((point) => (
+                {oct.map((point) => (
                   <p>
-                    {point.dOctober2022} || {point.cOctober2022} points
+                    {point.dOctober} || {point.cOctober} points
                   </p>
                 ))}
               </div>
@@ -86,9 +96,9 @@ export default function Stats() {
             </div>
             <div className="stats-cards">
               <div className="a">
-                {point.map((point) => (
+                {nov.map((point) => (
                   <p>
-                    {point.dNovember2022} || {point.cNovember2022} points
+                    {point.dNovember} || {point.cNovember} points
                   </p>
                 ))}
               </div>
@@ -98,8 +108,13 @@ export default function Stats() {
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  );
+}
 
-        <div className="stats">
+/*
+  <div className="stats">
           <div>
             <div className="stats-title">
               <p>Décembre 2022</p>
@@ -158,7 +173,5 @@ export default function Stats() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  );
-}
+
+  */

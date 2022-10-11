@@ -15,15 +15,28 @@ export default function PartnerUpdate() {
   const [cOctober2022, setCOctober2022] = useState("");
   const [dOctober2022, setDOctober2022] = useState("");
 
-  async function AddPoint(e) {
+  async function AddSeptember(e) {
     e.preventDefault();
     await axios({
       method: "post",
-      url: "https://famous-peplum-dove.cyclic.app/api/point/add",
+      url: "https://famous-peplum-dove.cyclic.app/api/point/add/september",
       data: {
         userId,
         cSeptember2022,
         dSeptember2022,
+      },
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }
+
+  async function AddOctober(e) {
+    e.preventDefault();
+    await axios({
+      method: "post",
+      url: "https://famous-peplum-dove.cyclic.app/api/point/add/october",
+      data: {
+        userId,
         cOctober2022,
         dOctober2022,
       },
@@ -65,7 +78,7 @@ export default function PartnerUpdate() {
         onChange={(e) => setDSeptember2022(e.target.value)}
         name="date"
       />
-      <button onClick={AddPoint}>valider</button>
+      <button onClick={AddSeptember}>valider</button>
 
       <p>partie Octobre</p>
       <p>Entrer le nombre des commentaires</p>
@@ -85,6 +98,7 @@ export default function PartnerUpdate() {
         onChange={(e) => setDOctober2022(e.target.value)}
         name="date"
       />
+      <button onClick={AddOctober}>valider</button>
     </div>
   );
 }
