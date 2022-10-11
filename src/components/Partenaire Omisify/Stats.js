@@ -10,6 +10,8 @@ export default function Stats() {
   };
 
   // september
+  // september
+  // september
   const [sept, setSept] = useState([]);
 
   useEffect(() => {
@@ -20,6 +22,8 @@ export default function Stats() {
   }, []);
 
   // october
+  // october
+  // october
   const [oct, setOct] = useState([]);
 
   useEffect(() => {
@@ -29,6 +33,8 @@ export default function Stats() {
       .catch((err) => console.log(err));
   }, []);
 
+  // november
+  // november
   // november
   const [nov, setNov] = useState([]);
 

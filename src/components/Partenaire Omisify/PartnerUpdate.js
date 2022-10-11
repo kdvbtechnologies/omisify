@@ -10,10 +10,10 @@ export default function PartnerUpdate() {
   };
 
   const userId = "6344c8869e261cca2e3cde7b";
-  const [cSeptember2022, setCSeptember2022] = useState("");
-  const [dSeptember2022, setDSeptember2022] = useState("");
-  const [cOctober2022, setCOctober2022] = useState("");
-  const [dOctober2022, setDOctober2022] = useState("");
+  const [cSeptember, setCSeptember] = useState("");
+  const [dSeptember, setDSeptember] = useState("");
+  const [cOctober, setCOctober] = useState("");
+  const [dOctober, setDOctober] = useState("");
 
   async function AddSeptember(e) {
     e.preventDefault();
@@ -22,8 +22,8 @@ export default function PartnerUpdate() {
       url: "https://famous-peplum-dove.cyclic.app/api/point/add/september",
       data: {
         userId,
-        cSeptember2022,
-        dSeptember2022,
+        cSeptember,
+        dSeptember,
       },
     })
       .then((res) => console.log(res))
@@ -37,8 +37,8 @@ export default function PartnerUpdate() {
       url: "https://famous-peplum-dove.cyclic.app/api/point/add/october",
       data: {
         userId,
-        cOctober2022,
-        dOctober2022,
+        cOctober,
+        dOctober,
       },
     })
       .then((res) => console.log(res))
@@ -65,8 +65,8 @@ export default function PartnerUpdate() {
       <input
         type="text"
         placeholder="Nombre des commentaires"
-        value={cSeptember2022}
-        onChange={(e) => setCSeptember2022(e.target.value)}
+        value={cSeptember}
+        onChange={(e) => setCSeptember(e.target.value)}
         name="pcomments"
       />
 
@@ -74,8 +74,8 @@ export default function PartnerUpdate() {
       <input
         type="text"
         placeholder="Date d'aujourd'hui"
-        value={dSeptember2022}
-        onChange={(e) => setDSeptember2022(e.target.value)}
+        value={dSeptember}
+        onChange={(e) => setDSeptember(e.target.value)}
         name="date"
       />
       <button onClick={AddSeptember}>valider</button>
@@ -85,8 +85,8 @@ export default function PartnerUpdate() {
       <input
         type="text"
         placeholder="Nombre des commentaires"
-        value={cOctober2022}
-        onChange={(e) => setCOctober2022(e.target.value)}
+        value={cOctober}
+        onChange={(e) => setCOctober(e.target.value)}
         name="pcomments"
       />
 
@@ -94,8 +94,8 @@ export default function PartnerUpdate() {
       <input
         type="text"
         placeholder="Date d'aujourd'hui"
-        value={dOctober2022}
-        onChange={(e) => setDOctober2022(e.target.value)}
+        value={dOctober}
+        onChange={(e) => setDOctober(e.target.value)}
         name="date"
       />
       <button onClick={AddOctober}>valider</button>
