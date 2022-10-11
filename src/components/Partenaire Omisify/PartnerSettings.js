@@ -17,7 +17,9 @@ export default function PartnerSettings() {
       </div>
       <h1>Informations personelles</h1>
       <P>Modifier</P>
-      <p></p>
+      <p>Noms de naissance : </p>
+      <p>Noms principal : </p>
+      <p>Noms court : </p>
     </div>
   );
 }
