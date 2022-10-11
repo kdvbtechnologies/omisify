@@ -1,3 +1,5 @@
+import axios from "axios";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function PartnerUpdate() {
@@ -6,6 +8,44 @@ export default function PartnerUpdate() {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
+
+  const userId = "234567";
+  const monthId = "12345";
+  const [pcomments, setPcomments] = useState("");
+  const [date, setDate] = useState("");
+
+  async function AddPoint(e) {
+    e.preventDefault();
+    await axios({
+      method: "post",
+      url: "https://famous-peplum-dove.cyclic.app/api/point/add",
+      data: {
+        userId,
+        monthId,
+        pcomments,
+        date,
+      },
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }
+
+  //month
+  const [month, setMonth] = useState("");
+
+  async function NewMonth(e) {
+    e.preventDefault();
+    await axios({
+      method: "post",
+      url: "https://famous-peplum-dove.cyclic.app/api/month/add",
+      data: {
+        userId,
+        month,
+      },
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }
 
   return (
     <div style={family}>
@@ -20,20 +60,38 @@ export default function PartnerUpdate() {
         message
       </p>
       <input type="text" placeholder="Date de creation" />
-      <p>Entrer le nombre de points de messages</p>
-      <input type="text" placeholder="Nombre de points de messages" />
+      <p>Entrer le nombre des messages</p>
+      <input type="text" placeholder="Nombre des messages" />
 
-      <p>Entrer le nombre de points de likes</p>
-      <input type="text" placeholder="Nombre de points de likes" />
+      <p>Entrer le nombre des commentaires</p>
+      <input
+        type="text"
+        placeholder="Nombre des commentaires"
+        value={pcomments}
+        onChange={(e) => setPcomments(e.target.value)}
+        name="pcomments"
+      />
 
       <p>Entrer la date d'aujourd'hui</p>
-      <input type="text" placeholder="Date d'aujourd'hui" />
-      <button>valider</button>
+      <input
+        type="text"
+        placeholder="Date d'aujourd'hui"
+        value={date}
+        onChange={(e) => setDate(e.target.value)}
+        name="date"
+      />
+      <button onClick={AddPoint}>valider</button>
 
       <h1>Nouveau mois</h1>
       <p>Commencer avec un nouveau mois</p>
-      <input type="text" placeholder="Entrer le nouveau mois" />
-      <button>commencer</button>
+      <input
+        type="text"
+        placeholder="Entrer le nouveau mois"
+        value={month}
+        onChange={(e) => setMonth(e.target.value)}
+        name="month"
+      />
+      <button onClick={NewMonth}>Commencer</button>
     </div>
   );
 }
