@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useState } from "react";
 
 export default function Stats() {
   const navigate = useNavigate();
@@ -8,18 +9,24 @@ export default function Stats() {
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
 
+  // month
+  const [month, setMonth] = useState([]);
+
   async function AllMonth() {
     await axios
       .get(`https://famous-peplum-dove.cyclic.app/api/month/`)
-      .then((res) => console.log(res))
+      .then((res) => setMonth(res.data))
       .catch((err) => console.log(err));
   }
   AllMonth();
 
+  // point
+  const [point, setPoint] = useState([]);
+
   async function AllPoint() {
     await axios
       .get(`https://famous-peplum-dove.cyclic.app/api/point/`)
-      .then((res) => console.log(res))
+      .then((res) => setPoint(res.data))
       .catch((err) => console.log(err));
   }
   AllPoint();
@@ -37,11 +44,13 @@ export default function Stats() {
         <div className="stats">
           <div>
             <div className="stats-title">
-              <p> _ _ _</p>
+              <p>{month.month}</p>
             </div>
             <div className="stats-cards">
               <div className="a">
-                <p> ||</p>
+                <p>
+                  {point.date} || {point.pcomments}
+                </p>
                 <div className="hr">
                   <hr />
                 </div>
