@@ -7,7 +7,7 @@ export default function PartnerNav() {
 
   async function User() {
     await axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/user/`)
+      .get(`https://famous-peplum-dove.cyclic.app/api/user/6344c8869e261cca2e3cde7b`)
       .then((res) => setUser(res.data))
       .catch((err) => console.log(err));
   }
