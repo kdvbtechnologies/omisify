@@ -16,11 +16,11 @@ export default function AkouaFooter() {
           <li>MWI : 40 point(s)</li>
           <li>E-mail : 0 point(s)</li>
           <li>Code Bonus : 2 point(s)</li>
-          <li>Total des Points : 1884 point(s)</li>
-          <li>Valeur des Points : 1.884€</li>
+          <li>Total des Points : 1989.2 point(s)</li>
+          <li>Valeur des Points : 1.9892€</li>
         </div>
         <div className="partner-money">
-          <p>Gains : 1.88429€</p>
+          <p>Gains : 1.98949€</p>
         </div>
       </div>
       <div className="request-money">
