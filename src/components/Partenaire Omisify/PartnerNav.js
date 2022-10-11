@@ -1,6 +1,18 @@
+import axios from "axios";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 export default function PartnerNav() {
+  const [user, setUser] = useState([]);
+
+  async function User() {
+    await axios
+      .get(`https://famous-peplum-dove.cyclic.app/api/user/`)
+      .then((res) => setUser(res.data))
+      .catch((err) => console.log(err));
+  }
+  User();
+
   return (
     <>
       <div className="navigation">
@@ -11,7 +23,7 @@ export default function PartnerNav() {
         </div>
         <div className="right-navigation">
           <NavLink className="navlink" to="/partner">
-            <li> _ _ _</li>
+            <li>{user.shortname}</li>
           </NavLink>
           <NavLink className="navlink" to="/partner-menu">
             <li>Menu</li>
