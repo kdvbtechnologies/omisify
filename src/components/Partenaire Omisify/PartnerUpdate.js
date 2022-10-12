@@ -30,14 +30,14 @@ export default function PartnerUpdate() {
 
   const [number1, setNumber1] = useState("");
   const [number2, setNumber2] = useState("");
-  const [total, setTotal] = useState(number1 + number2);
+  const [total, setTotal] = useState("");
   /*const a = 5;
   const b = 10;
   const total = a + b;*/
 
   function Calculate(e) {
     e.preventDefault();
-    setTotal(!total);
+    setTotal(number1 + number2);
   }
 
   async function AddSeptember(e) {
