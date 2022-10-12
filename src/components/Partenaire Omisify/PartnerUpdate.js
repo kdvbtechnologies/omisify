@@ -26,6 +26,7 @@ export default function PartnerUpdate() {
   }, []);
 
   const ancien = `${tsept.total}`;
+
   const total = ancien + cSeptember;
   console.log(total);
 
@@ -55,7 +56,7 @@ export default function PartnerUpdate() {
       .catch((err) => console.log(err));
   }
 
-  // update sept
+  // update total sept
   async function UpdateSeptember(e) {
     e.preventDefault();
     await axios({
@@ -136,7 +137,9 @@ export default function PartnerUpdate() {
         name="date"
       />
       <button onClick={AddSeptember}>valider</button>
-      <button onClick={UpdateSeptember}>valider</button>
+      <button onClick={UpdateSeptember}>Update</button>
+      <h1>{total}</h1>
+      <button onClick={total}>Update</button>
 
       <p>partie Octobre</p>
       <p>Entrer le nombre des commentaires</p>
