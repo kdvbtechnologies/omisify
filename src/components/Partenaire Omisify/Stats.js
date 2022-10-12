@@ -45,28 +45,9 @@ export default function Stats() {
       .catch((err) => console.log(err));
   }, []);
 
-  /*
-  let totalLikeCount = 0;
-  const total = sept.forEach((post) => {
-    totalLikeCount = totalLikeCount + post.cSeptember;
-  });*/
-
-  let totalLikeCount = 0;
-  const totall = sept.map((point) => {
-    return (totalLikeCount = totalLikeCount + point.cSeptember);
-  });
-  console.log(totall);
-
-  /*
-  function PostList({ posts }) {
-    const [totalLikeCount, setTotalLikeCount] = useState(
-      getTotalLikeCount(posts),
-    );
-    useEffect(() => {
-      const newTotalLikeCount = getTotalLikeCount(posts);
-      setTotalLikeCount(newTotalLikeCount);
-    }, [posts]);
-    */
+  const ancien = 20;
+  const nouveau = 50;
+  const total = ancien + nouveau;
 
   return (
     <div style={family}>
@@ -93,7 +74,7 @@ export default function Stats() {
               </div>
             </div>
             <div className="total">
-              <p>{totall}points • likes</p>
+              <p>{total}points • likes</p>
             </div>
           </div>
         </div>
