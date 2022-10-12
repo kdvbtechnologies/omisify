@@ -15,6 +15,7 @@ export default function PartnerUpdate() {
   const [cSeptember, setCSeptember] = useState("");
   const [dSeptember, setDSeptember] = useState("");
   const [tsept, settsept] = useState([]);
+  const [total, setTotal] = useState();
 
   useEffect(() => {
     axios
@@ -31,8 +32,11 @@ export default function PartnerUpdate() {
   const getStoragecSeptember = `${localStorage.getItem("cSeptember")}`;
   const getStorageTotalSept = `${localStorage.getItem("total")}`;
 
-  const total = getStorageTotalSept + getStoragecSeptember;
-  console.log(total);
+  function Total() {
+    const totall = getStorageTotalSept + getStoragecSeptember;
+    setTotal(!total);
+    console.log(totall);
+  }
 
   async function AddSeptember(e) {
     e.preventDefault();
@@ -147,7 +151,7 @@ export default function PartnerUpdate() {
         {getStorageTotalSept} + {getStoragecSeptember}
       </p>
 
-      <button onClick={total}>calculer</button>
+      <button onClick={Total}>calculer</button>
 
       <p>partie Octobre</p>
       <p>Entrer le nombre des commentaires</p>
