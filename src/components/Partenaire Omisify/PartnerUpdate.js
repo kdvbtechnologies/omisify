@@ -15,6 +15,10 @@ export default function PartnerUpdate() {
   const [cOctober, setCOctober] = useState("");
   const [dOctober, setDOctober] = useState("");
 
+  const ancien = 55;
+  const total = ancien + cSeptember;
+  console.log(total);
+
   async function AddSeptember(e) {
     e.preventDefault();
     await axios({

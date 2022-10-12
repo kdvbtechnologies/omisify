@@ -45,10 +45,6 @@ export default function Stats() {
       .catch((err) => console.log(err));
   }, []);
 
-  const ancien = 20;
-  const nouveau = 50;
-  const total = ancien + nouveau;
-
   return (
     <div style={family}>
       <div className="back-btn">
@@ -74,7 +70,7 @@ export default function Stats() {
               </div>
             </div>
             <div className="total">
-              <p>{total}points • likes</p>
+              <p>points • likes</p>
             </div>
           </div>
         </div>
