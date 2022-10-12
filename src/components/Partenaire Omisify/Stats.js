@@ -52,7 +52,7 @@ export default function Stats() {
   });*/
 
   let totalLikeCount = 0;
-  const totall = sept.map.forEach((point) => {
+  const totall = sept.forEach((point) => {
     return (totalLikeCount = totalLikeCount + point.cSeptember);
   });
   console.log(totall);
