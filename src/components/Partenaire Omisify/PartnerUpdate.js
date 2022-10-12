@@ -28,8 +28,8 @@ export default function PartnerUpdate() {
   const ancien = `${tsept.total}`;
   localStorage.setItem("total", ancien);
   localStorage.setItem("cSeptember", cSeptember);
-  const getStoragecSeptember = localStorage.getItem("cSeptember");
-  const getStorageTotalSept = localStorage.getItem("total");
+  const getStoragecSeptember = `${localStorage.getItem("cSeptember")}`;
+  const getStorageTotalSept = `${localStorage.getItem("total")}`;
 
   const total = getStorageTotalSept + getStoragecSeptember;
   console.log(total);
@@ -143,7 +143,7 @@ export default function PartnerUpdate() {
       <button onClick={AddSeptember}>valider</button>
       <button onClick={UpdateSeptember}>Update</button>
       <h1>{total}</h1>
-      <button onClick={total}>Update</button>
+      <button onClick={total}>calculer</button>
 
       <p>partie Octobre</p>
       <p>Entrer le nombre des commentaires</p>
