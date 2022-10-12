@@ -18,12 +18,16 @@ export default function PartnerUpdate() {
 
   useEffect(() => {
     axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/`)
+      .get(
+        `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/6347554eaea9fa10a5931d7a`
+      )
       .then((res) => settsept(res.data))
       .catch((err) => console.log(err));
   }, []);
 
-  const ancien = `${tsept.total}`;
+  // const ancien = `${tsept.total}`;
+  const ancien = 10;
+  console.log(tsept);
 
   //const [number1, setNumber1] = useState("");
   //const [number2, setNumber2] = useState("");
@@ -66,7 +70,7 @@ export default function PartnerUpdate() {
     e.preventDefault();
     await axios({
       method: "post",
-      url: "https://famous-peplum-dove.cyclic.app/api/point/add/september/",
+      url: "https://famous-peplum-dove.cyclic.app/api/point/add/september/6347554eaea9fa10a5931d7a",
       data: {
         userId,
         cSeptember,
