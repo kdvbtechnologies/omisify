@@ -28,6 +28,16 @@ export default function PartnerUpdate() {
         userId,
         cSeptember,
         dSeptember,
+      },
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+
+    await axios({
+      method: "post",
+      url: "https://famous-peplum-dove.cyclic.app/api/point/add/tseptember",
+      data: {
+        userId,
         total,
       },
     })
