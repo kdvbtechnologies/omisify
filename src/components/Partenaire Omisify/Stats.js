@@ -25,7 +25,7 @@ export default function Stats() {
   useEffect(() => {
     axios
       .get(
-        `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/634675a1e6427358b4b58e64`
+        `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/6344c8869e261cca2e3cde7b`
       )
       .then((res) => settsept(res.data))
       .catch((err) => console.log(err));
