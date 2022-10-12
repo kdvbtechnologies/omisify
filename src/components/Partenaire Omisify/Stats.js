@@ -45,6 +45,22 @@ export default function Stats() {
       .catch((err) => console.log(err));
   }, []);
 
+  let totalLikeCount = 0;
+  const total = sept.forEach((post) => {
+    totalLikeCount = totalLikeCount + post.cSeptember;
+  });
+
+  /*
+  function PostList({ posts }) {
+    const [totalLikeCount, setTotalLikeCount] = useState(
+      getTotalLikeCount(posts),
+    );
+    useEffect(() => {
+      const newTotalLikeCount = getTotalLikeCount(posts);
+      setTotalLikeCount(newTotalLikeCount);
+    }, [posts]);
+    */
+
   return (
     <div style={family}>
       <div className="back-btn">
@@ -70,7 +86,7 @@ export default function Stats() {
               </div>
             </div>
             <div className="total">
-              <p>points • likes</p>
+              <p>{total}points • likes</p>
             </div>
           </div>
         </div>
