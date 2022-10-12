@@ -167,6 +167,7 @@ export default function PartnerUpdate() {
       <button onClick={AddOctober}>valider</button>
 
       <p>calcul ici</p>
+      <p>{ancien}</p>
       <p>{total}</p>
     </div>
   );
