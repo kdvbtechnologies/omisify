@@ -80,7 +80,7 @@ export default function Stats() {
               </div>
             </div>
             <div className="total">
-              <p>{tsept} points</p>
+              <p>{tsept.total} points</p>
             </div>
           </div>
         </div>
