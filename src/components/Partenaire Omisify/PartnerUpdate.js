@@ -142,7 +142,11 @@ export default function PartnerUpdate() {
       />
       <button onClick={AddSeptember}>valider</button>
       <button onClick={UpdateSeptember}>Update</button>
-      <h1>{total}</h1>
+      <p>{total} =</p>
+      <p>
+        {getStorageTotalSept} + {getStoragecSeptember}
+      </p>
+
       <button onClick={total}>calculer</button>
 
       <p>partie Octobre</p>
