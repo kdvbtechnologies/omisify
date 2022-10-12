@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function PartnerUpdate() {
@@ -10,12 +10,22 @@ export default function PartnerUpdate() {
   };
 
   const userId = "6344c8869e261cca2e3cde7b";
+
+  // september
   const [cSeptember, setCSeptember] = useState("");
   const [dSeptember, setDSeptember] = useState("");
-  const [cOctober, setCOctober] = useState("");
-  const [dOctober, setDOctober] = useState("");
+  const [tsept, settsept] = useState([]);
 
-  const ancien = 55;
+  useEffect(() => {
+    axios
+      .get(
+        `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/634675a1e6427358b4b58e64`
+      )
+      .then((res) => settsept(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  const ancien = `${tsept.total}`;
   const total = ancien + cSeptember;
   console.log(total);
 
@@ -44,6 +54,37 @@ export default function PartnerUpdate() {
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   }
+
+  // update sept
+  async function UpdateSeptember(e) {
+    e.preventDefault();
+    await axios({
+      method: "post",
+      url: "https://famous-peplum-dove.cyclic.app/api/point/add/september/",
+      data: {
+        userId,
+        cSeptember,
+        dSeptember,
+      },
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+
+    await axios({
+      method: "put",
+      url: "https://famous-peplum-dove.cyclic.app/api/point/update/tseptember/634675a1e6427358b4b58e64",
+      data: {
+        userId,
+        total,
+      },
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }
+
+  // october
+  const [cOctober, setCOctober] = useState("");
+  const [dOctober, setDOctober] = useState("");
 
   async function AddOctober(e) {
     e.preventDefault();
@@ -95,6 +136,7 @@ export default function PartnerUpdate() {
         name="date"
       />
       <button onClick={AddSeptember}>valider</button>
+      <button onClick={UpdateSeptember}>valider</button>
 
       <p>partie Octobre</p>
       <p>Entrer le nombre des commentaires</p>
