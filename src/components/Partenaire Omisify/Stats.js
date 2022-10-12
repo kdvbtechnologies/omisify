@@ -45,10 +45,16 @@ export default function Stats() {
       .catch((err) => console.log(err));
   }, []);
 
+  /*
   let totalLikeCount = 0;
   const total = sept.forEach((post) => {
     totalLikeCount = totalLikeCount + post.cSeptember;
+  });*/
+
+  const totall = sept.map((point) => {
+    return point.cSeptember;
   });
+  console.log(totall);
 
   /*
   function PostList({ posts }) {
@@ -86,7 +92,7 @@ export default function Stats() {
               </div>
             </div>
             <div className="total">
-              <p>{total}points • likes</p>
+              <p>{totall}points • likes</p>
             </div>
           </div>
         </div>
