@@ -25,7 +25,7 @@ export default function PartnerUpdate() {
       .catch((err) => console.log(err));
   }, []);
 
-  const ancien = `${tsept.total}`;
+  const ancien = `${tsept.total}` + parseInt(0);
 
   //const [number1, setNumber1] = useState("");
   //const [number2, setNumber2] = useState("");
