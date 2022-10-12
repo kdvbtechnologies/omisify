@@ -13,11 +13,21 @@ export default function Stats() {
   // september
   // september
   const [sept, setSept] = useState([]);
+  const [tsept, settsept] = useState([]);
 
   useEffect(() => {
     axios
       .get(`https://famous-peplum-dove.cyclic.app/api/point/all/september`)
       .then((res) => setSept(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/634675a1e6427358b4b58e64`
+      )
+      .then((res) => settsept(res.data))
       .catch((err) => console.log(err));
   }, []);
 
@@ -70,7 +80,7 @@ export default function Stats() {
               </div>
             </div>
             <div className="total">
-              <p>points • likes</p>
+              <p>{tsept} points</p>
             </div>
           </div>
         </div>
