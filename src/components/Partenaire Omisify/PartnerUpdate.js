@@ -28,9 +28,9 @@ export default function PartnerUpdate() {
   const ancien = `${tsept.total}`;
   console.log(ancien);
 
-  const [number1, setNumber1] = useState("");
-  const [number2, setNumber2] = useState("");
-  const [total, setTotal] = useState();
+  const [number1, setNumber1] = useState(3);
+  const [number2, setNumber2] = useState(2);
+  const [total, setTotal] = useState("");
   /*const a = 5;
   const b = 10;
   const total = a + b;*/
