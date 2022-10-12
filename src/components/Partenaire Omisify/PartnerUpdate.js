@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import PartnerCalculator from "./PartnerCalculator";
 
 export default function PartnerUpdate() {
   const navigate = useNavigate();
@@ -189,6 +190,7 @@ export default function PartnerUpdate() {
         onChange={(e) => setNumber2(e.target.value)}
       />
       <button onClick={Calculate}>calculate</button>
+      <PartnerCalculator />
     </div>
   );
 }
