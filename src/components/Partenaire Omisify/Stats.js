@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import Total from "./Total";
 
 export default function Stats() {
   const navigate = useNavigate();
@@ -71,7 +70,7 @@ export default function Stats() {
               </div>
             </div>
             <div className="total">
-              <Total parts={sept.cSeptember} />
+              <p> points • likes</p>
             </div>
           </div>
         </div>
