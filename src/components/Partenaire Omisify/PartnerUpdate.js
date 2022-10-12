@@ -18,9 +18,7 @@ export default function PartnerUpdate() {
 
   useEffect(() => {
     axios
-      .get(
-        `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/6344c8869e261cca2e3cde7b`
-      )
+      .get(`https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/`)
       .then((res) => settsept(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -80,7 +78,7 @@ export default function PartnerUpdate() {
 
     await axios({
       method: "put",
-      url: "https://famous-peplum-dove.cyclic.app/api/point/update/tseptember/6344c8869e261cca2e3cde7b",
+      url: "https://famous-peplum-dove.cyclic.app/api/point/update/tseptember/",
       data: {
         userId,
         total,
