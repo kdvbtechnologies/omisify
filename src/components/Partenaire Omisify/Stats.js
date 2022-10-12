@@ -100,7 +100,7 @@ export default function Stats() {
               </div>
             </div>
             <div className="total">
-              <p> points • likes</p>
+              <p> points</p>
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function Stats() {
               </div>
             </div>
             <div className="total">
-              <p> points • likes</p>
+              <p> points</p>
             </div>
           </div>
         </div>
