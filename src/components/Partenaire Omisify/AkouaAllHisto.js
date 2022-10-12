@@ -22,6 +22,21 @@ export default function AkouaAllHisto() {
 
         <NavLink
           className="one-historical-text-decoration"
+          to="/akoua-histo-nineteen"
+        >
+          <div className="one-historical">
+            <p>
+              [Nouveau] 11/10/2022 - 31 commentaires, 7 messages avec
+              interaction (MWI), 252 mess..
+            </p>
+          </div>
+        </NavLink>
+        <div className="hr">
+          <hr />
+        </div>
+
+        <NavLink
+          className="one-historical-text-decoration"
           to="/akoua-histo-eighteen"
         >
           <div className="one-historical">

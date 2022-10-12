@@ -56,12 +56,13 @@ import AkouaHistoFourteen from "./components/Partenaire Omisify/AkouaHistoFourte
 import AkouaHistoFifteen from "./components/Partenaire Omisify/AkouaHistoFifteen";
 import AkouaHistoSixteen from "./components/Partenaire Omisify/AkouaHistoSixteen";
 import AkouaHistoSeventeen from "./components/Partenaire Omisify/AkouaHistoSeventeen";
+import AkouaHistoEighteen from "./components/Partenaire Omisify/AkouaHistoEighteen";
+import AkouaHistoNineteen from "./components/Partenaire Omisify/AkouaHistoNineteen";
 import AkouaStats from "./components/Partenaire Omisify/AkouaStats";
 import Stats from "./components/Partenaire Omisify/Stats";
 import Connexion from "./components/Connexion";
 import PartnerUpdate from "./components/Partenaire Omisify/PartnerUpdate";
 import PartnerSettings from "./components/Partenaire Omisify/PartnerSettings";
-import AkouaHistoEighteen from "./components/Partenaire Omisify/AkouaHistoEighteen";
 
 export default function App() {
   return (
@@ -110,6 +111,7 @@ export default function App() {
         <Route path="/akoua-histo-fifteen" element={<AkouaHistoFifteen />} />
         <Route path="/akoua-histo-sixteen" element={<AkouaHistoSixteen />} />
         <Route path="/akoua-histo-eighteen" element={<AkouaHistoEighteen />} />
+        <Route path="/akoua-histo-nineteen" element={<AkouaHistoNineteen />} />
         <Route
           path="/akoua-histo-seventeen"
           element={<AkouaHistoSeventeen />}
