@@ -51,8 +51,9 @@ export default function Stats() {
     totalLikeCount = totalLikeCount + post.cSeptember;
   });*/
 
-  const totall = sept.map((point) => {
-    return point.cSeptember;
+  let totalLikeCount = 0;
+  const totall = sept.map.forEach((point) => {
+    return (totalLikeCount = totalLikeCount + point.cSeptember);
   });
   console.log(totall);
 
