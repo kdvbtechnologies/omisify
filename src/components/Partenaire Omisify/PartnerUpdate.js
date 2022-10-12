@@ -170,7 +170,10 @@ export default function PartnerUpdate() {
       <button onClick={AddOctober}>valider</button>
 
       <p>calcul ici</p>
-      <p>{total}</p>
+      <p>{total} =</p>
+      <p>
+        {number1}+{number2}
+      </p>
       <input
         type="text"
         placeholder="enter the number 1"
