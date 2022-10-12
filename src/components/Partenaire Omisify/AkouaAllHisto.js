@@ -25,10 +25,7 @@ export default function AkouaAllHisto() {
           to="/akoua-histo-nineteen"
         >
           <div className="one-historical">
-            <p>
-              [Nouveau] 11/10/2022 - 31 commentaires, 7 messages avec
-              interaction (MWI), 252 mess..
-            </p>
+            <p>[Nouveau] 11/10/2022 - 8 MWI, 11 commentaires et 7 me..</p>
           </div>
         </NavLink>
         <div className="hr">
@@ -41,8 +38,8 @@ export default function AkouaAllHisto() {
         >
           <div className="one-historical">
             <p>
-              [Nouveau] 10/10/2022 - 31 commentaires, 7 messages avec
-              interaction (MWI), 252 mess..
+              10/10/2022 - 31 commentaires, 7 messages avec interaction (MWI),
+              252 mess..
             </p>
           </div>
         </NavLink>

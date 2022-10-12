@@ -16,11 +16,7 @@ export default function AkouaHistoNineteen() {
       <div className="historical-active">
         <div className="historic-active">
           <div className="historic-title">
-            <p>
-              {" "}
-              31 commentaires, 7 messages avec interaction (MWI), 252 messages
-              et 14 publications
-            </p>
+            <p> 8 MWI, 11 commentaires et 7 messages</p>
           </div>
           <div className="less-important">
             <p>
@@ -36,17 +32,16 @@ export default function AkouaHistoNineteen() {
                 <p>Gains :</p>
               </div>
               <div className="b">
-                <p>252 messages : 25.2 point(s)</p>
-                <p>7 MWI : 35 point(s)</p>
-                <p>31 commentaires : 31 point(s)</p>
-                <p>14 publications : 14 points</p>
+                <p>7 messages : 0.7 point(s)</p>
+                <p>8 MWI : 40 point(s)</p>
+                <p>11 commentaires : 11 point(s)</p>
               </div>
             </div>
           </div>
 
           <div className="recap">
             <p>
-              Dernière mise à jour du récapitulatif : 12/10/2022, 04:49 (Heure
+              Dernière mise à jour du récapitulatif : 12/10/2022, 05:28 (Heure
               de Brasilia)
             </p>
           </div>
