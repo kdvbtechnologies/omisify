@@ -26,8 +26,10 @@ export default function PartnerUpdate() {
   }, []);
 
   const ancien = `${tsept.total}`;
+  localStorage.setItem("total", ancien);
 
-  const total = ancien + cSeptember;
+  const totalStoragesept = localStorage.getItem("total");
+  const total = totalStoragesept + cSeptember;
   console.log(total);
 
   async function AddSeptember(e) {
