@@ -1,3 +1,5 @@
+import React from "react";
+
 const initialValue = 0;
 const Total = (props) => {
   const total = props.parts.reduce(
