@@ -1,12 +1,9 @@
-import React from "react";
-
-const initialValue = 0;
 const Total = (props) => {
-  const total = props.parts.reduce(
-    (prevValue, currentValue) => prevValue + currentValue.exercises,
-    initialValue
-  );
-  return <p>{total}</p>;
+  let total2 = 0;
+  for (let i = 0; i < props.parts.length; i++) {
+    total2 += props.parts[i].exercises;
+  }
+  return total2;
 };
 
 export default Total;
