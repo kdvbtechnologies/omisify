@@ -26,20 +26,17 @@ export default function PartnerUpdate() {
   }, []);
 
   const ancien = `${tsept.total}`;
-  console.log(ancien);
 
-  const [number1, setNumber1] = useState(3);
-  const [number2, setNumber2] = useState("");
-  const [total, setTotal] = useState("");
-  /*const a = 5;
-  const b = 10;
-  const total = a + b;*/
+  //const [number1, setNumber1] = useState("");
+  //const [number2, setNumber2] = useState("");
+  const total = parseInt(ancien) + parseInt(cSeptember);
+  console.log(total);
 
-  function Calculate(e) {
-    e.preventDefault();
-    setTotal(number1 + number2);
+  /*
+  function Calculate() {
+      setTotal(number2 + number1);
   }
-
+*/
   async function AddSeptember(e) {
     e.preventDefault();
     await axios({
@@ -170,25 +167,7 @@ export default function PartnerUpdate() {
       <button onClick={AddOctober}>valider</button>
 
       <p>calcul ici</p>
-      <p>{total} =</p>
-      <p>
-        {number1}+{number2}
-      </p>
-      <input
-        type="text"
-        placeholder="enter the number 1"
-        name="num1"
-        value={number1}
-        onChange={(e) => setNumber1(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="enter the number 2"
-        name="num2"
-        value={number2}
-        onChange={(e) => setNumber2(e.target.value)}
-      />
-      <button onClick={Calculate}>calculate</button>
+      <p>{total}</p>
     </div>
   );
 }
