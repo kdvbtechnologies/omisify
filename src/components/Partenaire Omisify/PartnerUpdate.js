@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import PartnerCalculator from "./PartnerCalculator";
 
 export default function PartnerUpdate() {
   const navigate = useNavigate();
@@ -30,7 +29,7 @@ export default function PartnerUpdate() {
   console.log(ancien);
 
   const [number1, setNumber1] = useState(3);
-  const [number2, setNumber2] = useState(2);
+  const [number2, setNumber2] = useState("");
   const [total, setTotal] = useState("");
   /*const a = 5;
   const b = 10;
@@ -190,7 +189,6 @@ export default function PartnerUpdate() {
         onChange={(e) => setNumber2(e.target.value)}
       />
       <button onClick={Calculate}>calculate</button>
-      <PartnerCalculator />
     </div>
   );
 }
