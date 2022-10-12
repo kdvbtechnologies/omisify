@@ -70,6 +70,7 @@ export default function Stats() {
               </div>
             </div>
             <div className="total">
+              {sept.reduce((total, v) => (total = total + v.cSeptember), 0)}
               <p> points • likes</p>
             </div>
           </div>
