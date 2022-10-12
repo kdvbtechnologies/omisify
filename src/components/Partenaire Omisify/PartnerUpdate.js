@@ -28,6 +28,7 @@ export default function PartnerUpdate() {
         userId,
         cSeptember,
         dSeptember,
+        total,
       },
     })
       .then((res) => console.log(res))
@@ -43,6 +44,7 @@ export default function PartnerUpdate() {
         userId,
         cOctober,
         dOctober,
+        total,
       },
     })
       .then((res) => console.log(res))
