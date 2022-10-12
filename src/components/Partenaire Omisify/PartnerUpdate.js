@@ -26,10 +26,19 @@ export default function PartnerUpdate() {
   }, []);
 
   const ancien = `${tsept.total}`;
-  const a = 5;
-  const b = 10;
-  const total = a + b;
   console.log(ancien);
+
+  const [number1, setNumber1] = useState("");
+  const [number2, setNumber2] = useState("");
+  const [total, setTotal] = useState(number1 + number2);
+  /*const a = 5;
+  const b = 10;
+  const total = a + b;*/
+
+  function Calculate(e) {
+    e.preventDefault();
+    setTotal(!total);
+  }
 
   async function AddSeptember(e) {
     e.preventDefault();
@@ -140,9 +149,6 @@ export default function PartnerUpdate() {
       <button onClick={AddSeptember}>valider</button>
       <button onClick={UpdateSeptember}>Update</button>
 
-      <p>{total}</p>
-      <button>calculer</button>
-
       <p>partie Octobre</p>
       <p>Entrer le nombre des commentaires</p>
       <input
@@ -162,6 +168,24 @@ export default function PartnerUpdate() {
         name="date"
       />
       <button onClick={AddOctober}>valider</button>
+
+      <p>calcul ici</p>
+      <p>{total}</p>
+      <input
+        type="text"
+        placeholder="enter the number 1"
+        name="num1"
+        value={number1}
+        onChange={(e) => setNumber1(e.target.value)}
+      />
+      <input
+        type="text"
+        placeholder="enter the number 2"
+        name="num2"
+        value={number2}
+        onChange={(e) => setNumber2(e.target.value)}
+      />
+      <button onClick={Calculate}>calculate</button>
     </div>
   );
 }
