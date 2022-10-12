@@ -45,12 +45,6 @@ export default function Stats() {
       .catch((err) => console.log(err));
   }, []);
 
-  const initialValue = 0;
-  const total = sept.cSeptember.reduce(
-    (previousValue, currentValue) => previousValue + currentValue,
-    initialValue
-  );
-
   return (
     <div style={family}>
       <div className="back-btn">
@@ -76,7 +70,7 @@ export default function Stats() {
               </div>
             </div>
             <div className="total">
-              <p>{total} points • likes</p>
+              <p>points • likes</p>
             </div>
           </div>
         </div>
