@@ -46,9 +46,22 @@ export default function AddSeptember() {
       .catch((err) => console.log(err));
   }
 
+  function Next() {
+    // update total id
+    axios({
+      method: "put",
+      url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
+      data: {
+        idtsept,
+      },
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }
+
   return (
     <>
-      <h1>Add September</h1>
+      <button onClick={Next}>Continuer</button>
     </>
   );
 }

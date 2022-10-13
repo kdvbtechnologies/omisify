@@ -46,17 +46,6 @@ export default function UpdateSeptember() {
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-
-    // update total id
-    axios({
-      method: "put",
-      url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
-      data: {
-        idtotal,
-      },
-    })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
   }
 
   return (
