@@ -13,7 +13,7 @@ export default function AddSeptember() {
         const idtsept = res.data.idtsept2022;
         const idtoct = res.data.idtoct;
         const idtnov = res.data.idtnov;
-        if (idtnov || idtoct || idtnov) {
+        if (idtsept || idtoct || idtnov) {
           localStorage.setItem("https://omisify.com/idtnov", idtnov);
           localStorage.setItem("https://omisify.com/idtsept", idtsept);
           localStorage.setItem("https://omisify.com/idtoct", idtoct);
