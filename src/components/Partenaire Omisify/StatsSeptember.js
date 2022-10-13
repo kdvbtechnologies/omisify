@@ -33,7 +33,7 @@ export default function StatsSeptember() {
           <div className="stats-title">
             <p>Septembre 2022</p>
           </div>
-          {!isLoading ? (
+          {isLoading ? (
             <Loader />
           ) : (
             <>
