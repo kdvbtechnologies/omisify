@@ -6,7 +6,7 @@ export default function UpdateSeptember() {
   const [cSeptember, setCSeptember] = useState("");
   const [dSeptember, setDSeptember] = useState("");
   const [tsept, settsept] = useState([]);
-  const idtsept = "6347554eaea9fa10a5931d7a";
+  const idtsept = "634777f3d469d81e78edf3ef";
 
   useEffect(() => {
     axios
