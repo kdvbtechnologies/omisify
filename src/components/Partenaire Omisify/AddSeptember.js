@@ -48,11 +48,12 @@ export default function AddSeptember() {
 
   function Next() {
     // update total id
+    const idtsept2022 = localStorage.getItem("https://omisify.com/idtsept");
     axios({
       method: "put",
       url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
       data: {
-        idtsept2022: idtsept,
+        idtsept2022,
       },
     })
       .then((res) => console.log(res))
