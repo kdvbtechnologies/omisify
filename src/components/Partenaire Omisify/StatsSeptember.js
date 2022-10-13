@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Loader from "./Loader";
-import StatsSeptProps from "./StatsSeptProps";
 
 export default function StatsSeptember() {
   const [sept, setSept] = useState([]);
@@ -44,7 +43,20 @@ export default function StatsSeptember() {
           {isLoading ? (
             <Loader />
           ) : (
-            <StatsSeptProps sept={sept} tsept={tsept} />
+            <>
+              <div className="stats-cards">
+                <div className="a">
+                  {sept.map((point) => (
+                    <p>
+                      {point.dSeptember} || {point.cSeptember} points
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <div className="total">
+                <p>{tsept.total} points</p>
+              </div>
+            </>
           )}
         </div>
       </div>
