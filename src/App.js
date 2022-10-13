@@ -63,6 +63,7 @@ import Stats from "./components/Partenaire Omisify/Stats";
 import Connexion from "./components/Connexion";
 import PartnerUpdate from "./components/Partenaire Omisify/PartnerUpdate";
 import PartnerSettings from "./components/Partenaire Omisify/PartnerSettings";
+import UpdateSeptember from "./components/Partenaire Omisify/UpdateSeptember";
 
 export default function App() {
   return (
@@ -118,13 +119,14 @@ export default function App() {
         />
         <Route path="/akoua-stats" element={<AkouaStats />} />
 
+        <Route path="/update" element={<UpdateSeptember />} />
         <Route path="/partner-home" element={<PartnerHome />} />
         <Route path="/partner-menu" element={<PartnerNavMenu />} />
         <Route path="/partner-contact" element={<PartnerContact />} />
         <Route path="/partner-trans" element={<PartnerTrans />} />
         <Route path="/partner-historical" element={<PartnerHistorical />} />
         <Route path="/partner" element={<Partner />} />
-        <Route path="/update" element={<PartnerUpdate />} />
+        <Route path="/update-now" element={<PartnerUpdate />} />
         <Route path="/settings" element={<PartnerSettings />} />
         <Route path="/stats" element={<Stats />} />
         <Route path="/connexion" element={<Connexion />} />
