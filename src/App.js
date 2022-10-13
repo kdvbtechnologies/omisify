@@ -61,9 +61,9 @@ import AkouaHistoNineteen from "./components/Partenaire Omisify/AkouaHistoNinete
 import AkouaHistoTwenty from "./components/Partenaire Omisify/AkouaHistoTwenty";
 import AkouaStats from "./components/Partenaire Omisify/AkouaStats";
 import Stats from "./components/Partenaire Omisify/Stats";
-import Connexion from "./components/Connexion";
 import PartnerUpdate from "./components/Partenaire Omisify/PartnerUpdate";
 import PartnerSettings from "./components/Partenaire Omisify/PartnerSettings";
+import Auth from "./components/Auth";
 
 export default function App() {
   return (
@@ -129,7 +129,7 @@ export default function App() {
         <Route path="/update" element={<PartnerUpdate />} />
         <Route path="/settings" element={<PartnerSettings />} />
         <Route path="/stats" element={<Stats />} />
-        <Route path="/connexion" element={<Connexion />} />
+        <Route path="/auth" element={<Auth />} />
 
         <Route path="/simo" element={<SimoRandy />} />
         <Route path="/simo-menu" element={<SimoNavMenu />} />
