@@ -16,7 +16,7 @@ export default function Login() {
       },
     })
       .then((res) => {
-        console.log(res), (window.location = "/partner");
+        window.location = "/partner";
       })
       .catch((err) => console.log(err));
   }
