@@ -1,59 +1,14 @@
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
-import { useState, useEffect } from "react";
+import EmptyStats from "./EmptyStats";
+import StatsSeptember from "./StatsSeptember";
 
 export default function Stats() {
+  const idtotal = "";
   const navigate = useNavigate();
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
-
-  // september
-  // september
-  // september
-  const [sept, setSept] = useState([]);
-  const [tsept, settsept] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/point/all/september`)
-      .then((res) => setSept(res.data))
-      .catch((err) => console.log(err));
-  }, []);
-
-  useEffect(() => {
-    axios
-      .get(
-        `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/63475f99b5efe146559f0ede`
-      )
-      .then((res) => settsept(res.data))
-      .catch((err) => console.log(err));
-  }, []);
-
-  // october
-  // october
-  // october
-  const [oct, setOct] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/point/all/october`)
-      .then((res) => setOct(res.data))
-      .catch((err) => console.log(err));
-  }, []);
-
-  // november
-  // november
-  // november
-  const [nov, setNov] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/point/all/november`)
-      .then((res) => setNov(res.data))
-      .catch((err) => console.log(err));
-  }, []);
 
   return (
     <div style={family}>
@@ -65,65 +20,7 @@ export default function Stats() {
       </div>
 
       <div className="flex-stats">
-        <div className="stats">
-          <div>
-            <div className="stats-title">
-              <p>Septembre 2022</p>
-            </div>
-            <div className="stats-cards">
-              <div className="a">
-                {sept.map((point) => (
-                  <p>
-                    {point.dSeptember} || {point.cSeptember} points
-                  </p>
-                ))}
-              </div>
-            </div>
-            <div className="total">
-              <p>{tsept.total} points</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="stats">
-          <div>
-            <div className="stats-title">
-              <p>Octobre 2022</p>
-            </div>
-            <div className="stats-cards">
-              <div className="a">
-                {oct.map((point) => (
-                  <p>
-                    {point.dOctober} || {point.cOctober} points
-                  </p>
-                ))}
-              </div>
-            </div>
-            <div className="total">
-              <p> points</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="stats">
-          <div>
-            <div className="stats-title">
-              <p>Novembre 2022</p>
-            </div>
-            <div className="stats-cards">
-              <div className="a">
-                {nov.map((point) => (
-                  <p>
-                    {point.dNovember} || {point.cNovember} points
-                  </p>
-                ))}
-              </div>
-            </div>
-            <div className="total">
-              <p> points</p>
-            </div>
-          </div>
-        </div>
+        {idtotal ? <StatsSeptember /> : <EmptyStats />}
       </div>
     </div>
   );
