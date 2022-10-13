@@ -3,6 +3,7 @@ import axios from "axios";
 
 export default function AddSeptember() {
   const userId = "6344c8869e261cca2e3cde7b";
+  const getidtsept = localStorage.getItem("https://omisify.com/idtsept");
   const [cSeptember, setCSeptember] = useState("");
   const [dSeptember, setDSeptember] = useState("");
 
@@ -20,7 +21,11 @@ export default function AddSeptember() {
         dSeptember,
       },
     })
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res);
+        const idtsept = res.data.message;
+        localStorage.setItem("https://omisify.com/idtsept", idtsept);
+      })
       .catch((err) => console.log(err));
 
     await axios({
@@ -34,16 +39,15 @@ export default function AddSeptember() {
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
 
-    /*
-      await axios({
-        method: "put",
-        url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
-        data: {
-          idtsept,
-        },
-      })
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err));*/
+    await axios({
+      method: "put",
+      url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
+      data: {
+        idtsept: getidtsept,
+      },
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   }
 
   return (
