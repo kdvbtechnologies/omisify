@@ -14,7 +14,7 @@ export default function StatsSeptember() {
       .get(`https://famous-peplum-dove.cyclic.app/api/point/all/september`)
       .then((res) => setSept(res.data))
       .catch((err) => console.log(err));
-    setLoading(false);
+    setLoading(true);
   }, []);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function StatsSeptember() {
       )
       .then((res) => settsept(res.data))
       .catch((err) => console.log(err));
-    setLoading(false);
+    setLoading(true);
   }, [idtotal]);
 
   return (
@@ -34,7 +34,7 @@ export default function StatsSeptember() {
           <div className="stats-title">
             <p>Septembre 2022</p>
           </div>
-          {!sept ? (
+          {!isLoading ? (
             <Loader />
           ) : (
             <>
