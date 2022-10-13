@@ -15,7 +15,11 @@ export default function Login() {
         password,
       },
     })
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res.data.id);
+        const userId = res.data.id;
+        localStorage.setItem("https://omisify.com/userId", userId);
+      })
       .catch((err) => console.log(err));
     window.location.reload();
   }
