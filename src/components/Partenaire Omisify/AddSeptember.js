@@ -52,11 +52,12 @@ export default function AddSeptember() {
       method: "put",
       url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
       data: {
-        idtsept,
+        idtsept2022: idtsept,
       },
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
+      window.location.reload();
   }
 
   return (
