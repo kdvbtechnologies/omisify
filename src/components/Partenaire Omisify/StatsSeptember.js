@@ -5,7 +5,7 @@ import Loader from "./Loader";
 export default function StatsSeptember() {
   const [sept, setSept] = useState([]);
   const [tsept, settsept] = useState([]);
-  const idtotal = localStorage.getItem("https://omisify.com/idtotal");
+  const idtsept = localStorage.getItem("https://omisify.com/idtsept");
   const [isLoading, setLoading] = useState(true);
   console.log(isLoading);
 
@@ -13,7 +13,10 @@ export default function StatsSeptember() {
     async function get() {
       await axios
         .get(`https://famous-peplum-dove.cyclic.app/api/point/all/september`)
-        .then((res) => setSept(res.data))
+        .then((res) => {
+          console.log(res);
+          setSept(res.data);
+        })
         .catch((err) => console.log(err));
       setLoading(false);
     }
@@ -24,14 +27,17 @@ export default function StatsSeptember() {
     async function get() {
       await axios
         .get(
-          `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/${idtotal}`
+          `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/${idtsept}`
         )
-        .then((res) => settsept(res.data))
+        .then((res) => {
+          console.log(res);
+          settsept(res.data);
+        })
         .catch((err) => console.log(err));
       setLoading(false);
     }
     get();
-  }, [idtotal]);
+  }, [idtsept]);
 
   return (
     <>
