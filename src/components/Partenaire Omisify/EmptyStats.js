@@ -1,7 +1,4 @@
-import { useNavigate } from "react-router-dom";
-
 export default function EmptyStats() {
-  const navigate = useNavigate();
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -9,12 +6,9 @@ export default function EmptyStats() {
 
   return (
     <div style={family}>
-      <div className="back-btn">
-        <button onClick={() => navigate(-1)}>Retour</button>
-      </div>
       <div className="historical">
         <div className="historic">
-          <p>Aucune activité !</p>
+          <p>Aucun Statistique !</p>
         </div>
       </div>
     </div>
