@@ -9,7 +9,7 @@ export default function PartnerUpdate() {
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
 
-  const idtotal = "6347554eaea9fa10a5931d7a";
+  const idtotal = "";
 
   return (
     <div style={family}>
