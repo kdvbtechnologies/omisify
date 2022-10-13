@@ -9,7 +9,7 @@ export default function PartnerUpdate() {
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
 
-  const idtsept = localStorage.getItem("https://omisify.com/idtsept");
+  const idtotal = localStorage.getItem("https://omisify.com/idtotal");
 
   return (
     <div style={family}>
@@ -19,7 +19,7 @@ export default function PartnerUpdate() {
       <div className="stats-big-title">
         <p>Actualiser mes points</p>
       </div>
-      {idtsept ? <UpdateSeptember /> : <AddSeptember />}
+      {idtotal ? <UpdateSeptember /> : <AddSeptember />}
     </div>
   );
 }
