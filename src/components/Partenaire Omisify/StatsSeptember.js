@@ -7,6 +7,7 @@ export default function StatsSeptember() {
   const [tsept, settsept] = useState([]);
   const idtotal = localStorage.getItem("https://omisify.com/idtotal");
   const [isLoading, setLoading] = useState(true);
+  console.log(isLoading);
 
   useEffect(() => {
     axios
@@ -33,7 +34,7 @@ export default function StatsSeptember() {
           <div className="stats-title">
             <p>Septembre 2022</p>
           </div>
-          {!isLoading ? (
+          {!sept ? (
             <Loader />
           ) : (
             <>
