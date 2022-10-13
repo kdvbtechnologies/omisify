@@ -11,7 +11,7 @@ export default function Signup() {
   async function Button(e) {
     e.preventDefault();
     await axios({
-      method: post,
+      method: "post",
       url: "https://famous-peplum-dove.cyclic.app/api/user/signin",
       data: {
         shortname,

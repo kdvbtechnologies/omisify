@@ -8,7 +8,7 @@ export default function Login() {
   async function Button(e) {
     e.preventDefault();
     await axios({
-      method: post,
+      method: "post",
       url: "https://famous-peplum-dove.cyclic.app/api/user/login",
       data: {
         email,
