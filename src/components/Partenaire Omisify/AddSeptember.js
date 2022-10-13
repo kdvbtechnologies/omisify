@@ -33,6 +33,17 @@ export default function AddSeptember() {
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
+
+    /*
+      await axios({
+        method: "put",
+        url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
+        data: {
+          idtsept,
+        },
+      })
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));*/
   }
 
   return (
