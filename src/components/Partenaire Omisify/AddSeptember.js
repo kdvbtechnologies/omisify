@@ -57,7 +57,7 @@ export default function AddSeptember() {
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-      window.location.reload();
+    //window.location.reload();
   }
 
   return (
