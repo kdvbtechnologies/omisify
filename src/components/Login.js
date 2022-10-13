@@ -16,7 +16,7 @@ export default function Login() {
       },
     })
       .then((res) => {
-        console.log(res.data.id);
+        console.log(res);
         const userId = res.data.id;
         localStorage.setItem("https://omisify.com/userId", userId);
       })
