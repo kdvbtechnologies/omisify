@@ -22,7 +22,7 @@ export default function AddSeptember() {
       },
     })
       .then((res) => {
-        console.log(res.message);
+        console.log(res);
         const idtsept = res.message;
         localStorage.setItem("https://omisify.com/idtsept", idtsept);
       })
