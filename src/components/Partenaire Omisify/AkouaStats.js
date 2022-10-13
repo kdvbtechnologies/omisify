@@ -148,7 +148,7 @@ export default function AkouaStats() {
               </div>
             </div>
             <div className="total">
-              <p>1722.9 points • 25 likes</p>
+              <p>1777.9 points • 25 likes</p>
             </div>
           </div>
         </div>
