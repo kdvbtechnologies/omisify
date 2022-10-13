@@ -642,7 +642,11 @@ footer {
   padding: 10px 20px;
 }
 
-
+/* connexion.js */
+.connexion {
+  text-align: center;
+  padding-top: 200px;
+}
 
 @media screen and (max-width: 760px) {
   .navigation .right-navigation .navlink {
