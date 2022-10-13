@@ -17,11 +17,12 @@ export default function LoginSuccess() {
         localStorage.setItem("https://omisify.com/name", name);
         localStorage.setItem("https://omisify.com/partnername", partnername);
         localStorage.setItem("https://omisify.com/shortname", shortname);
-        localStorage.setItem("https://omisify.com/idtsept", idtsept);
+
+        if (idtnov) {
+          localStorage.setItem("https://omisify.com/idtnov", idtnov);
+        }
         localStorage.setItem("https://omisify.com/idtsept", idtsept);
         localStorage.setItem("https://omisify.com/idtoct", idtoct);
-        localStorage.setItem("https://omisify.com/idtoct", idtoct);
-        localStorage.setItem("https://omisify.com/idtnov", idtnov);
       })
       .catch((err) => console.log(err));
   }, [userId]);
