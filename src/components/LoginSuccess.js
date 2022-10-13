@@ -11,9 +11,17 @@ export default function LoginSuccess() {
         const name = res.data.name;
         const partnername = res.data.partnername;
         const shortname = res.data.shortname;
+        const idtsept = res.data.idtsept;
+        const idtoct = res.data.idtoct;
+        const idtnov = res.data.idtnov;
         localStorage.setItem("https://omisify.com/name", name);
         localStorage.setItem("https://omisify.com/partnername", partnername);
         localStorage.setItem("https://omisify.com/shortname", shortname);
+        localStorage.setItem("https://omisify.com/idtsept", idtsept);
+        localStorage.setItem("https://omisify.com/idtsept", idtsept);
+        localStorage.setItem("https://omisify.com/idtoct", idtoct);
+        localStorage.setItem("https://omisify.com/idtoct", idtoct);
+        localStorage.setItem("https://omisify.com/idtnov", idtnov);
       })
       .catch((err) => console.log(err));
   }, [userId]);
