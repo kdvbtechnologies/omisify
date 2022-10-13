@@ -6,14 +6,14 @@ export default function StatsSeptember() {
   const [sept, setSept] = useState([]);
   const [tsept, settsept] = useState([]);
   const idtotal = localStorage.getItem("https://omisify.com/idtotal");
-  //const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     axios
       .get(`https://famous-peplum-dove.cyclic.app/api/point/all/september`)
       .then((res) => setSept(res.data))
       .catch((err) => console.log(err));
-    //setLoading(false);
+    setLoading(false);
   }, []);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function StatsSeptember() {
       )
       .then((res) => settsept(res.data))
       .catch((err) => console.log(err));
-    //setLoading(false);
+    setLoading(false);
   }, [idtotal]);
 
   return (
@@ -33,21 +33,26 @@ export default function StatsSeptember() {
           <div className="stats-title">
             <p>Septembre 2022</p>
           </div>
-          <div className="stats-cards">
-            <div className="a">
-              {sept.map((point) => (
-                <p>
-                  {point.dSeptember} || {point.cSeptember} points
-                </p>
-              ))}
-            </div>
-          </div>
-          <div className="total">
-            <p>{tsept.total} points</p>
-          </div>
+          {isLoading ? (
+            <Loader />
+          ) : (
+            <>
+              <div className="stats-cards">
+                <div className="a">
+                  {sept.map((point) => (
+                    <p>
+                      {point.dSeptember} || {point.cSeptember} points
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <div className="total">
+                <p>{tsept.total} points</p>
+              </div>
+            </>
+          )}
         </div>
       </div>
-      <Loader />
     </>
   );
 }
