@@ -18,6 +18,17 @@ export default function LoginSuccess() {
       .catch((err) => console.log(err));
   }, [userId]);
 
+  /*
+  useEffect(() => {
+    axios
+      .get(`https://famous-peplum-dove.cyclic.app/api/point/${userId}`)
+      .then((res) => {
+        //const tsept = res.data.tsept;
+        //localStorage.setItem("https://omisify.com/tsept", tsept);
+      })
+      .catch((err) => console.log(err));
+  }, [userId]);*/
+
   function Success() {
     window.location = "/partner";
   }
