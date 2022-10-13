@@ -1,4 +1,5 @@
 import axios from "axios";
+import { NavLink } from "react-router-dom";
 
 export default function AddSeptember() {
   const userId = "6344c8869e261cca2e3cde7b";
@@ -27,8 +28,9 @@ export default function AddSeptember() {
   return (
     <>
       <p>Cliquer sur commencer pour commencer à actualiser vos points</p>
-
-      <button onClick={AddSeptember}>Commencer</button>
+      <NavLink to="/update">
+        <button onClick={AddSeptember}>Commencer</button>
+      </NavLink>
     </>
   );
 }
