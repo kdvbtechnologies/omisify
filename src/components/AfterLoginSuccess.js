@@ -1,7 +1,7 @@
-import Login from "./Login";
+import Auth from "./Auth";
 import Partner from "./Partenaire Omisify/Partner";
 
 export default function AfterLoginSuccess() {
   const idtotal = localStorage.getItem("https://omisify.com/idtotal");
-  return <>{idtotal ? <Partner /> : <Login />}</>;
+  return <>{idtotal ? <Partner /> : <Auth />}</>;
 }

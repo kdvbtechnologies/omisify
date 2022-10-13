@@ -1,7 +1,7 @@
-import Login from "./Login";
+import Auth from "./Auth";
 import LoginSuccess from "./LoginSuccess";
 
 export default function AfterLogin() {
   const userId = localStorage.getItem("https://omisify.com/userId");
-  return <>{userId ? <LoginSuccess /> : <Login />}</>;
+  return <>{userId ? <LoginSuccess /> : <Auth />}</>;
 }

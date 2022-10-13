@@ -132,7 +132,7 @@ export default function App() {
         <Route path="/stats" element={<Stats />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/after-login" element={<AfterLogin />} />
-        <Route path="/after-login-success" element={<AfterLoginSuccess />} />
+        <Route path="/partner" element={<AfterLoginSuccess />} />
 
         <Route path="/simo" element={<SimoRandy />} />
         <Route path="/simo-menu" element={<SimoNavMenu />} />
