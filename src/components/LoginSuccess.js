@@ -18,11 +18,11 @@ export default function LoginSuccess() {
         localStorage.setItem("https://omisify.com/partnername", partnername);
         localStorage.setItem("https://omisify.com/shortname", shortname);
 
-        if (idtnov) {
+        if (idtnov || idtoct || idtnov) {
           localStorage.setItem("https://omisify.com/idtnov", idtnov);
+          localStorage.setItem("https://omisify.com/idtsept", idtsept);
+          localStorage.setItem("https://omisify.com/idtoct", idtoct);
         }
-        localStorage.setItem("https://omisify.com/idtsept", idtsept);
-        localStorage.setItem("https://omisify.com/idtoct", idtoct);
       })
       .catch((err) => console.log(err));
   }, [userId]);
