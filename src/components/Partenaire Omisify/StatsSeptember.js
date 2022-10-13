@@ -22,12 +22,16 @@ export default function StatsSeptember() {
   }, []);
 
   useEffect(() => {
-    axios
-      .get(
-        `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/${idtotal}`
-      )
-      .then((res) => settsept(res.data))
-      .catch((err) => console.log(err));
+    async function get() {
+      await axios
+        .get(
+          `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/${idtotal}`
+        )
+        .then((res) => settsept(res.data))
+        .catch((err) => console.log(err));
+      setLoading(false);
+    }
+    get();
   }, [idtotal]);
 
   return (
