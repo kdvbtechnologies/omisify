@@ -21,11 +21,7 @@ export default function AddSeptember() {
         dSeptember,
       },
     })
-      .then((res) => {
-        console.log(res);
-        const idtsept = res.message;
-        localStorage.setItem("https://omisify.com/idtsept", idtsept);
-      })
+      .then((res) => console.log(res))
       .catch((err) => console.log(err));
 
     await axios({
@@ -36,7 +32,11 @@ export default function AddSeptember() {
         total,
       },
     })
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res.data.message);
+        const idtsept = res.data.message;
+        localStorage.setItem("https://omisify.com/idtsept", idtsept);
+      })
       .catch((err) => console.log(err));
 
     await axios({
