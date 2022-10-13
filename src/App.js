@@ -6,7 +6,7 @@ import Mentions from "./Pages/Mentions";
 import Home from "./components/Home";
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
-import Partner from "./components/Partenaire Omisify/Partner";
+//import Partner from "./components/Partenaire Omisify/Partner";
 import PartnerNavMenu from "./components/Partenaire Omisify/PartnerNavMenu";
 import PartnerHome from "./components/Partenaire Omisify/PartnerHome";
 import PartnerContact from "./components/Partenaire Omisify/PartnerContact";
@@ -65,6 +65,7 @@ import PartnerUpdate from "./components/Partenaire Omisify/PartnerUpdate";
 import PartnerSettings from "./components/Partenaire Omisify/PartnerSettings";
 import Auth from "./components/Auth";
 import AfterLogin from "./components/AfterLogin";
+import AfterLoginSuccess from "./components/AfterLoginSuccess";
 
 export default function App() {
   return (
@@ -126,12 +127,12 @@ export default function App() {
         <Route path="/partner-contact" element={<PartnerContact />} />
         <Route path="/partner-trans" element={<PartnerTrans />} />
         <Route path="/partner-historical" element={<PartnerHistorical />} />
-        <Route path="/partner" element={<Partner />} />
         <Route path="/update" element={<PartnerUpdate />} />
         <Route path="/settings" element={<PartnerSettings />} />
         <Route path="/stats" element={<Stats />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/after-login" element={<AfterLogin />} />
+        <Route path="/after-login-success" element={<AfterLoginSuccess />} />
 
         <Route path="/simo" element={<SimoRandy />} />
         <Route path="/simo-menu" element={<SimoNavMenu />} />
