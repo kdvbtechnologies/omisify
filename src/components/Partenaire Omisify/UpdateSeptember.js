@@ -6,7 +6,7 @@ export default function UpdateSeptember() {
   const [cSeptember, setCSeptember] = useState("");
   const [dSeptember, setDSeptember] = useState("");
   const [tsept, settsept] = useState([]);
-  const idtsept = "634777f3d469d81e78edf3ef";
+  const idtsept = localStorage.getItem("https://omisify.com/idtsept");
 
   useEffect(() => {
     axios
@@ -15,12 +15,12 @@ export default function UpdateSeptember() {
       )
       .then((res) => settsept(res.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [idtsept]);
 
   const ancien = `${tsept.total}`;
   const total = parseInt(ancien) + parseInt(cSeptember);
 
-  // update total sept
+  // add point
   async function UpdateSeptember(e) {
     e.preventDefault();
     await axios({
@@ -35,12 +35,24 @@ export default function UpdateSeptember() {
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
 
+    // update total
     await axios({
       method: "put",
       url: `https://famous-peplum-dove.cyclic.app/api/point/update/tseptember/${idtsept}`,
       data: {
         userId,
         total,
+      },
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+
+    // update total id
+    axios({
+      method: "put",
+      url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
+      data: {
+        idtsept,
       },
     })
       .then((res) => console.log(res))
