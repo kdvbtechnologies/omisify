@@ -2,40 +2,23 @@ import { useEffect } from "react";
 import axios from "axios";
 
 export default function LoginSuccess() {
-  const total = 0;
+  const userId = localStorage.getItem("https://omisify.com/userId");
 
-  async function Success() {
-    const userId = localStorage.getItem("https://omisify.com/userId");
-
-    await axios({
-      method: "post",
-      url: "https://famous-peplum-dove.cyclic.app/api/point/add/tseptember",
-      data: {
-        userId,
-        total,
-      },
-    })
+  useEffect(() => {
+    axios
+      .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
       .then((res) => {
-        console.log(res.data.message);
-        const idtotal = res.data.message;
-        localStorage.setItem("https://omisify.com/idtotal", idtotal);
+        const name = res.data.name;
+        const partnername = res.data.partnername;
+        const shortname = res.data.shortname;
+        localStorage.setItem("https://omisify.com/name", name);
+        localStorage.setItem("https://omisify.com/partnername", partnername);
+        localStorage.setItem("https://omisify.com/shortname", shortname);
       })
       .catch((err) => console.log(err));
+  }, [userId]);
 
-    useEffect(() => {
-      axios
-        .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
-        .then((res) => {
-          const name = res.data.name;
-          const partnername = res.data.partnername;
-          const shortname = res.data.shortname;
-          localStorage.setItem("https://omisify.com/name", name);
-          localStorage.setItem("https://omisify.com/partnername", partnername);
-          localStorage.setItem("https://omisify.com/shortname", shortname);
-        })
-        .catch((err) => console.log(err));
-    }, [userId]);
-
+  function Success() {
     window.location = "/partner";
   }
 
