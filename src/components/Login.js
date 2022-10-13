@@ -15,10 +15,9 @@ export default function Login() {
         password,
       },
     })
-      .then((res) => {
-        window.location = "/partner";
-      })
+      .then((res) => console.log(res))
       .catch((err) => console.log(err));
+    window.location.reload();
   }
 
   return (
