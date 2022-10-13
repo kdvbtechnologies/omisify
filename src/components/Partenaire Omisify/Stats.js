@@ -3,7 +3,8 @@ import EmptyStats from "./EmptyStats";
 import StatsSeptember from "./StatsSeptember";
 
 export default function Stats() {
-  const idtotal = "634777f3d469d81e78edf3ef";
+  const idtotal = localStorage.getItem("https://omisify.com/idtotal");
+
   const navigate = useNavigate();
   const family = {
     fontFamily:

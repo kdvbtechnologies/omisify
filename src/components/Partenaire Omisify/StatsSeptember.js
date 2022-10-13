@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 export default function StatsSeptember() {
   const [sept, setSept] = useState([]);
   const [tsept, settsept] = useState([]);
-  const idtotal = "634777f3d469d81e78edf3ef";
+  const idtotal = localStorage.getItem("https://omisify.com/idtotal");
 
   useEffect(() => {
     axios
@@ -20,7 +20,7 @@ export default function StatsSeptember() {
       )
       .then((res) => settsept(res.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [idtotal]);
 
   return (
     <>
