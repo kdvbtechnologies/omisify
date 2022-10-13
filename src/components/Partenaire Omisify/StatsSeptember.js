@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 export default function StatsSeptember() {
   const [sept, setSept] = useState([]);
   const [tsept, settsept] = useState([]);
-  const idtotal = "63475f99b5efe146559f0ede";
+  const idtotal = "634777f3d469d81e78edf3ef";
 
   useEffect(() => {
     axios
