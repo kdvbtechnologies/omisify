@@ -38,8 +38,10 @@ export default function AddSeptember() {
         localStorage.setItem("https://omisify.com/idtsept", idtsept);
       })
       .catch((err) => console.log(err));
+  }
 
-    await axios({
+  if (getidtsept) {
+    axios({
       method: "put",
       url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
       data: {
