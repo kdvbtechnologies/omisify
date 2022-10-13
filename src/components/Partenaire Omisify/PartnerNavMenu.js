@@ -32,7 +32,7 @@ export default function PartnerNavMenu() {
         <NavLink className="li" to="/stats">
           <li>Statistiques</li>
         </NavLink>
-        <NavLink className="li" to="/update-now">
+        <NavLink className="li" to="/update">
           <li>Actualiser</li>
         </NavLink>
         <div className="omisify-copy">
