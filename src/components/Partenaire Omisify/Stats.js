@@ -3,7 +3,7 @@ import EmptyStats from "./EmptyStats";
 import StatsSeptember from "./StatsSeptember";
 
 export default function Stats() {
-  const idtotal = localStorage.getItem("https://omisify.com/idtotal");
+  const idtsept = localStorage.getItem("https://omisify.com/idtotal");
 
   const navigate = useNavigate();
   const family = {
@@ -21,7 +21,7 @@ export default function Stats() {
       </div>
 
       <div className="flex-stats">
-        {idtotal ? <StatsSeptember /> : <EmptyStats />}
+        {idtsept ? <StatsSeptember /> : <EmptyStats />}
       </div>
     </div>
   );
