@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import AddPost from "./AddPost";
 
 export default function PartnerFooter() {
   return (
@@ -29,7 +28,6 @@ export default function PartnerFooter() {
           <button>Demander ma rémunération</button>
         </NavLink>
       </div>
-      <AddPost />
     </>
   );
 }

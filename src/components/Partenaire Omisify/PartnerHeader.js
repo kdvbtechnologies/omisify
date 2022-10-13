@@ -1,35 +1,17 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PartnerFooter from "./PartnerFooter";
-//import { useDispatch, useSelector } from "react-redux";
-//import { setPosts } from "../../feature/posts.slice";
 
 export default function PartnerHeader() {
-  const [posts, setPosts] = useState([]);
-  //const id = "634340e0476255949f2992a3";
-  //const dispatch = useDispatch();
-  //const posts = useSelector((state) => state.posts.posts);
+  const [user, setUser] = useState([]);
+  const userId = localStorage.getItem("https://omisify.com/userId");
 
-  async function MyPosts() {
-    await axios
-      .get(
-        `https://famous-peplum-dove.cyclic.app/api/user/6344c8869e261cca2e3cde7b`
-      )
-      .then((res) => setPosts(res.data))
+  useEffect(() => {
+    axios
+      .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
+      .then((res) => setUser(res.data))
       .catch((err) => console.log(err));
-  }
-  MyPosts();
-
-  /*
-  async function MyPosts() {
-    await axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/post/${id}`)
-      .then((res) => dispatch(setPosts(res.data)))
-      .catch((err) => {
-        console.log(err);
-      });
-  }
-  MyPosts();*/
+  }, [userId]);
 
   return (
     <>
@@ -38,7 +20,7 @@ export default function PartnerHeader() {
           <div className="profil-desc">
             <div className="profil-name-role">
               <div className="partner-name">
-                <p>@{posts.partnername}</p>
+                <p>@{user.partnername}</p>
               </div>
               <div className="partner-role">
                 <i>Partenaire Omisify</i>
@@ -46,7 +28,7 @@ export default function PartnerHeader() {
             </div>
 
             <div className="partner-info">
-              <p>Noms de naissance : {posts.name}</p>
+              <p>Noms de naissance : {user.name}</p>
               <p>Sexe : _ _ _</p>
               <p>Pays : _ _ _</p>
               <p>Age : _ _ _</p>
