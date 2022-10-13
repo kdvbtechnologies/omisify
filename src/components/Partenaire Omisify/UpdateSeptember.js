@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function UpdateSeptember() {
-  const userId = "6344c8869e261cca2e3cde7b";
+  const userId = localStorage.getItem("https://omisify.com/userId");
   const [cSeptember, setCSeptember] = useState("");
   const [dSeptember, setDSeptember] = useState("");
   const [tsept, settsept] = useState([]);
