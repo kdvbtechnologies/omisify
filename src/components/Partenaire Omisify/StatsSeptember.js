@@ -1,16 +1,19 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Loader from "./Loader";
 
 export default function StatsSeptember() {
   const [sept, setSept] = useState([]);
   const [tsept, settsept] = useState([]);
   const idtotal = localStorage.getItem("https://omisify.com/idtotal");
+  //const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     axios
       .get(`https://famous-peplum-dove.cyclic.app/api/point/all/september`)
       .then((res) => setSept(res.data))
       .catch((err) => console.log(err));
+    //setLoading(false);
   }, []);
 
   useEffect(() => {
@@ -20,6 +23,7 @@ export default function StatsSeptember() {
       )
       .then((res) => settsept(res.data))
       .catch((err) => console.log(err));
+    //setLoading(false);
   }, [idtotal]);
 
   return (
@@ -43,6 +47,7 @@ export default function StatsSeptember() {
           </div>
         </div>
       </div>
+      <Loader />
     </>
   );
 }
