@@ -1,19 +1,7 @@
-import axios from "axios";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 
 export default function PartnerNav() {
-  const [user, setUser] = useState([]);
-
-  function User() {
-    axios
-      .get(
-        `https://famous-peplum-dove.cyclic.app/api/user/6344c8869e261cca2e3cde7b`
-      )
-      .then((res) => setUser(res.data))
-      .catch((err) => console.log(err));
-  }
-  User();
+  const shortname = localStorage.getItem("https://omisify.com/shortname");
 
   return (
     <>
@@ -25,7 +13,7 @@ export default function PartnerNav() {
         </div>
         <div className="right-navigation">
           <NavLink className="navlink" to="/partner">
-            <li>{user.shortname}</li>
+            <li>{shortname}</li>
           </NavLink>
           <NavLink className="navlink" to="/partner-menu">
             <li>Menu</li>

@@ -1,10 +1,25 @@
+import { useEffect } from "react";
 import axios from "axios";
 
 export default function LoginSuccess() {
-  const userId = localStorage.getItem("https://omisify.com/userId");
   const total = 0;
 
   async function Success() {
+    const userId = localStorage.getItem("https://omisify.com/userId");
+    useEffect(() => {
+      axios
+        .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
+        .then((res) => {
+          const name = res.data.name;
+          const partnername = res.data.partnername;
+          const shortname = res.data.shortname;
+          localStorage.setItem("https://omisify.com/name", name);
+          localStorage.setItem("https://omisify.com/partnername", partnername);
+          localStorage.setItem("https://omisify.com/shortname", shortname);
+        })
+        .catch((err) => console.log(err));
+    }, [userId]);
+
     await axios({
       method: "post",
       url: "https://famous-peplum-dove.cyclic.app/api/point/add/tseptember",
