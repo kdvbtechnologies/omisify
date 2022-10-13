@@ -9,7 +9,7 @@ export default function AddSeptember() {
     axios
       .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
       .then((res) => {
-        const idtsept = res.data.idtsept;
+        const idtsept = res.data.idtsept2022;
         const idtoct = res.data.idtoct;
         const idtnov = res.data.idtnov;
         if (idtnov || idtoct || idtnov) {
