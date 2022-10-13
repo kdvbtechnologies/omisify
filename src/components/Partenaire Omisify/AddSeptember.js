@@ -5,9 +5,7 @@ export default function AddSeptember() {
 
   const total = 0;
 
-  async function AddSeptember(e) {
-    e.preventDefault();
-
+  async function AddSeptember() {
     await axios({
       method: "post",
       url: "https://famous-peplum-dove.cyclic.app/api/point/add/tseptember",
