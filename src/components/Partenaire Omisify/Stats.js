@@ -3,7 +3,7 @@ import EmptyStats from "./EmptyStats";
 import StatsSeptember from "./StatsSeptember";
 
 export default function Stats() {
-  const idtsept = localStorage.getItem("https://omisify.com/idtotal");
+  const idtsept = localStorage.getItem("https://omisify.com/idtsept");
 
   const navigate = useNavigate();
   const family = {
