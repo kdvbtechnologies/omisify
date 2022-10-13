@@ -25,6 +25,8 @@ export default function AddSeptember() {
 
   return (
     <>
+      <h1>Septembre</h1>
+      <button>Choisir un nouveau mois</button>
       <p>Cliquer sur commencer pour commencer à actualiser vos points</p>
       <button onClick={AddSeptember}>Commencer</button>
     </>
