@@ -38,18 +38,18 @@ export default function AddSeptember() {
         localStorage.setItem("https://omisify.com/idtsept", idtsept);
       })
       .catch((err) => console.log(err));
-  }
 
-  if (getidtsept) {
-    axios({
-      method: "put",
-      url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
-      data: {
-        idtsept: getidtsept,
-      },
-    })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+    if (getidtsept) {
+      axios({
+        method: "put",
+        url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
+        data: {
+          idtsept: getidtsept,
+        },
+      })
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
+    }
   }
 
   return (
