@@ -19,7 +19,7 @@ export default function LoginSuccess() {
         localStorage.setItem("https://omisify.com/idtotal", idtotal);
       })
       .catch((err) => console.log(err));
-    window.location.reload();
+    window.location = "/after-login-success";
   }
 
   return (
