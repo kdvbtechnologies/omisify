@@ -10,13 +10,13 @@ export default function Auth() {
         onClick={() => setSignup(true)}
         style={{ color: signup ? "blue" : "black" }}
       >
-        Login
+        Connexion
       </button>
       <button
         onClick={() => setSignup(false)}
         style={{ color: signup ? "black" : "blue" }}
       >
-        Signup
+        Inscription
       </button>
       {signup ? <Login /> : <Signup />}
     </>
