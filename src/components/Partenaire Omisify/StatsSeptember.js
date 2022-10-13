@@ -11,11 +11,14 @@ export default function StatsSeptember() {
   console.log(isLoading);
 
   useEffect(() => {
-    axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/point/all/september`)
-      .then((res) => setSept(res.data))
-      .catch((err) => console.log(err));
-    setLoading(false);
+    async function get() {
+      await axios
+        .get(`https://famous-peplum-dove.cyclic.app/api/point/all/september`)
+        .then((res) => setSept(res.data))
+        .catch((err) => console.log(err));
+      setLoading(false);
+    }
+    get();
   }, []);
 
   useEffect(() => {
@@ -34,7 +37,7 @@ export default function StatsSeptember() {
           <div className="stats-title">
             <p>Septembre 2022</p>
           </div>
-          {!isLoading ? (
+          {isLoading ? (
             <Loader />
           ) : (
             <StatsSeptProps sept={sept} tsept={tsept} />
