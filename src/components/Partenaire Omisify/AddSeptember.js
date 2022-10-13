@@ -20,14 +20,13 @@ export default function AddSeptember() {
         localStorage.setItem("https://omisify.com/idtotal", idtotal);
       })
       .catch((err) => console.log(err));
+    window.location.reload();
   }
 
   return (
     <>
       <p>Cliquer sur commencer pour commencer à actualiser vos points</p>
-      <a href="https://omisify.com/update">
-        <button onClick={AddSeptember}>Commencer</button>
-      </a>
+      <button onClick={AddSeptember}>Commencer</button>
     </>
   );
 }
