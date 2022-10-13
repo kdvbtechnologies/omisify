@@ -6,16 +6,16 @@ export default function UpdateSeptember() {
   const [cSeptember, setCSeptember] = useState("");
   const [dSeptember, setDSeptember] = useState("");
   const [tsept, settsept] = useState([]);
-  const idtotal = localStorage.getItem("https://omisify.com/idtotal");
+  const idtsept = localStorage.getItem("https://omisify.com/idtsept");
 
   useEffect(() => {
     axios
       .get(
-        `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/${idtotal}`
+        `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/${idtsept}`
       )
       .then((res) => settsept(res.data))
       .catch((err) => console.log(err));
-  }, [idtotal]);
+  }, [idtsept]);
 
   const ancien = `${tsept.total}`;
   const total = parseInt(ancien) + parseInt(cSeptember);
@@ -38,7 +38,7 @@ export default function UpdateSeptember() {
     // update total
     await axios({
       method: "put",
-      url: `https://famous-peplum-dove.cyclic.app/api/point/update/tseptember/${idtotal}`,
+      url: `https://famous-peplum-dove.cyclic.app/api/point/update/tseptember/${idtsept}`,
       data: {
         userId,
         total,
