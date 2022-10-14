@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "./Loader";
+import { useNavigate } from "react-router-dom";
 
 export default function UpdateSeptember() {
+  const navigate = useNavigate();
   const userId = localStorage.getItem("https://omisify.com/userId");
   const [cSeptember, setCSeptember] = useState("");
   const [dSeptember, setDSeptember] = useState("");
@@ -52,7 +54,7 @@ export default function UpdateSeptember() {
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-      setIsLoading(false)
+    setIsLoading(false);
   }
 
   return (
@@ -61,6 +63,12 @@ export default function UpdateSeptember() {
         <Loader />
       ) : (
         <>
+          <div className="back-btn">
+            <button onClick={() => navigate(-1)}>Retour</button>
+          </div>
+          <div className="stats-big-title">
+            <p>Actualiser mes points</p>
+          </div>
           <p>Entrer le nombre des commentaires</p>
           <input
             type="text"

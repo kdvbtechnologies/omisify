@@ -1,8 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Loader from "./Loader";
+import { useNavigate } from "react-router-dom";
 
 export default function AddSeptember() {
+  const navigate = useNavigate();
   const [isLoading, setLoading] = useState(true);
 
   const total = 0;
@@ -63,6 +65,12 @@ export default function AddSeptember() {
 
   return (
     <>
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>Retour</button>
+      </div>
+      <div className="stats-big-title">
+        <p>Actualiser mes points</p>
+      </div>
       {isLoading ? (
         <Loader />
       ) : (
