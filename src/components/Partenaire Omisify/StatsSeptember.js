@@ -4,9 +4,9 @@ import Loader from "./Loader";
 
 export default function StatsSeptember() {
   const [sept, setSept] = useState([]);
-  const [tsept, settsept] = useState([]);
+  //Sconst [settsept] = useState([]);
   const idtsept = localStorage.getItem("https://omisify.com/idtsept");
-  //const userId = localStorage.getItem("https://omisify.com/userId");
+  const userId = localStorage.getItem("https://omisify.com/userId");
   const [isLoading, setLoading] = useState(true);
   console.log(isLoading);
 
@@ -32,7 +32,7 @@ export default function StatsSeptember() {
         )
         .then((res) => {
           console.log(res);
-          settsept(res.data);
+          // settsept(res.data);
         })
         .catch((err) => console.log(err));
       setLoading(false);
@@ -40,6 +40,7 @@ export default function StatsSeptember() {
     get();
   }, [idtsept]);
 
+  // <p>{tsept.total} points</p>
   return (
     <>
       <div className="stats">
@@ -53,16 +54,16 @@ export default function StatsSeptember() {
             <>
               <div className="stats-cards">
                 <div className="a">
-                  {sept.map((point) => (
-                    <p>
-                      {point.dSeptember} || {point.cSeptember} points
-                    </p>
-                  ))}
+                  {sept
+                    .filter((country) => country.includes(`${userId}`))
+                    .map((point) => (
+                      <p>
+                        {point.dSeptember} || {point.cSeptember} points
+                      </p>
+                    ))}
                 </div>
               </div>
-              <div className="total">
-                <p>{tsept.total} points</p>
-              </div>
+              <div className="total"></div>
             </>
           )}
         </div>
