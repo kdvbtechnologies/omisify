@@ -16,7 +16,7 @@ export default function PartnerSettings() {
         <p>Paramètres</p>
       </div>
       <h1 style={{ color: "red" }}>
-        Cette fonctionnalité est en cours de développement
+        Attention !! Cette fonctionnalité est en cours de développement
       </h1>
       <h3>Informations personelles</h3>
       <p>Modifier</p>
