@@ -30,6 +30,7 @@ export default function Signup() {
         localStorage.setItem("https://omisify.com/userId", userId);
       })
       .catch((err) => console.log(err));
+    window.location = "/after-signup";
   }
 
   return (
