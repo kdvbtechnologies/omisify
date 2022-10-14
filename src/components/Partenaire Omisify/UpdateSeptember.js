@@ -52,6 +52,7 @@ export default function UpdateSeptember() {
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
+      setIsLoading(false)
   }
 
   return (
