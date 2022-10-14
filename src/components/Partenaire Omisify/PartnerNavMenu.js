@@ -24,7 +24,7 @@ export default function PartnerNavMenu() {
           <li>Transparence</li>
         </NavLink>
         <NavLink className="li" to="/partner-contact">
-          <li>Contact</li>
+          <li>Service</li>
         </NavLink>
 
         <div className="omisify-copy">
