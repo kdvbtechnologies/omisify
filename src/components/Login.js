@@ -26,6 +26,7 @@ export default function Login() {
     setIsLoading(false);
     window.location = "/after-login";
   }
+  console.log(isLoading);
 
   return (
     <>
@@ -48,7 +49,7 @@ export default function Login() {
               name="password"
               onChange={(e) => setPassword(e.target.value)}
             />
-            {isLoading ? (
+            {Button ? (
               <Loader />
             ) : (
               <>
