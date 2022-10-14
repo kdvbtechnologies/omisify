@@ -27,25 +27,18 @@ export default function LoginSuccess() {
       .catch((err) => console.log(err));
   }, [userId]);
 
-  /*
-  useEffect(() => {
-    axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/point/${userId}`)
-      .then((res) => {
-        //const tsept = res.data.tsept;
-        //localStorage.setItem("https://omisify.com/tsept", tsept);
-      })
-      .catch((err) => console.log(err));
-  }, [userId]);*/
-
   function Success() {
     window.location = "/partner";
   }
 
   return (
     <>
-      <h1>Connexion réussie !</h1>
-      <button onClick={Success}>Continuer</button>
+      <div className="login-success">
+        <h1>Connexion réussie !</h1>
+        <div className="button">
+          <button onClick={Success}>Continuer</button>
+        </div>
+      </div>
     </>
   );
 }

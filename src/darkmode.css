@@ -719,6 +719,30 @@ display: flex;
   font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+/* src - components - login success.js */
+.login-success {
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
+  flex-direction: column;
+}
+.login-success .button {
+  padding: 50px 0px;
+}
+
+.login-success button {
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 760px) {
   .navigation .right-navigation .navlink {

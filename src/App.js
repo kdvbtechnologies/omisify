@@ -66,6 +66,7 @@ import PartnerSettings from "./components/Partenaire Omisify/PartnerSettings";
 import Auth from "./components/Auth";
 import AfterLogin from "./components/AfterLogin";
 import AfterLoginSuccess from "./components/AfterLoginSuccess";
+import LoginSuccess from "./components/LoginSuccess";
 
 export default function App() {
   return (
@@ -133,6 +134,7 @@ export default function App() {
         <Route path="/auth" element={<Auth />} />
         <Route path="/after-login" element={<AfterLogin />} />
         <Route path="/partner" element={<AfterLoginSuccess />} />
+        <Route path="/login-success" element={<LoginSuccess />} />
 
         <Route path="/simo" element={<SimoRandy />} />
         <Route path="/simo-menu" element={<SimoNavMenu />} />
