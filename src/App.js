@@ -6,7 +6,6 @@ import Mentions from "./Pages/Mentions";
 import Home from "./components/Home";
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
-//import Partner from "./components/Partenaire Omisify/Partner";
 import PartnerNavMenu from "./components/Partenaire Omisify/PartnerNavMenu";
 import PartnerHome from "./components/Partenaire Omisify/PartnerHome";
 import PartnerContact from "./components/Partenaire Omisify/PartnerContact";
@@ -25,13 +24,6 @@ import WilfriedHistoThree from "./components/Partenaire Omisify/WilfriedHistoThr
 import WilfriedHistoFour from "./components/Partenaire Omisify/WilfriedHistoFour";
 import WilfriedHistoFive from "./components/Partenaire Omisify/WilfriedHistoFive";
 import WilfriedHistoSix from "./components/Partenaire Omisify/WilfriedHistoSix";
-
-import SimoRandy from "./components/Partenaire Omisify/SimoRandy";
-import SimoNavMenu from "./components/Partenaire Omisify/SimoNavMenu";
-import SimoContact from "./components/Partenaire Omisify/SimoContact";
-import SimoHistorical from "./components/Partenaire Omisify/SimoHistorical";
-import SimoTrans from "./components/Partenaire Omisify/SimoTrans";
-import SimoHome from "./components/Partenaire Omisify/SimoHome";
 
 import AkouaDjenebou from "./Pages/Partenaire Omisify/AkouaDjenebou";
 import AkouaHome from "./Pages/Partenaire Omisify/AkouaHome";
@@ -135,13 +127,6 @@ export default function App() {
         <Route path="/after-login" element={<AfterLogin />} />
         <Route path="/after-signup" element={<AfterSignup />} />
         <Route path="/partner" element={<AfterLoginSuccess />} />
-
-        <Route path="/simo" element={<SimoRandy />} />
-        <Route path="/simo-menu" element={<SimoNavMenu />} />
-        <Route path="/simo-historical" element={<SimoHistorical />} />
-        <Route path="/simo-contact" element={<SimoContact />} />
-        <Route path="/simo-trans" element={<SimoTrans />} />
-        <Route path="/simo-home" element={<SimoHome />} />
       </Routes>
     </BrowserRouter>
   );

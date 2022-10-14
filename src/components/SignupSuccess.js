@@ -1,6 +1,6 @@
 export default function SignupSuccess() {
   function Success() {
-    window.location = "/partner";
+    window.location = "/auth";
   }
 
   return (
