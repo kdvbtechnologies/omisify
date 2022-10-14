@@ -53,7 +53,7 @@ export default function StatsSeptember() {
               <div className="stats-cards">
                 <div className="a">
                   {sept
-                    .filter((country) => country.userId)
+                    .filter((country) => country.userId[0])
                     .map((point) => (
                       <p>
                         {point.dSeptember} || {point.cSeptember} points
