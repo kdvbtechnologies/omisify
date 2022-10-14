@@ -1,9 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
+import Loader from "./Partenaire Omisify/Loader";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   async function Button(e) {
     e.preventDefault();
@@ -21,6 +23,7 @@ export default function Login() {
         localStorage.setItem("https://omisify.com/userId", userId);
       })
       .catch((err) => console.log(err));
+    setIsLoading(false);
     window.location = "/after-login";
   }
 
@@ -45,7 +48,13 @@ export default function Login() {
               name="password"
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button onClick={Button}>Se connecter</button>
+            {isLoading ? (
+              <Loader />
+            ) : (
+              <>
+                <button onClick={Button}>Se connecter</button>
+              </>
+            )}
           </div>
         </div>
       </div>
