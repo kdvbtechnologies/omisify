@@ -59,7 +59,6 @@ export default function AddSeptember() {
         window.location = "/update";
       })
       .catch((err) => console.log(err));
-    setLoading(false);
   }
 
   return (
