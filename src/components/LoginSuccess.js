@@ -4,7 +4,7 @@ import Loader from "./Partenaire Omisify/Loader";
 
 export default function LoginSuccess() {
   const userId = localStorage.getItem("https://omisify.com/userId");
-  //const shortname = localStorage.getItem("https://omisify.com/shortname");
+  const shortname = localStorage.getItem("https://omisify.com/shortname");
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -46,9 +46,11 @@ export default function LoginSuccess() {
           <Loader />
         ) : (
           <>
-            <div className="button">
-              <button onClick={Success}>Continuer</button>
-            </div>
+            {shortname && (
+              <div className="button">
+                <button onClick={Success}>Continuer</button>
+              </div>
+            )}
           </>
         )}
       </div>
