@@ -21,7 +21,7 @@ export default function Login() {
         localStorage.setItem("https://omisify.com/userId", userId);
       })
       .catch((err) => console.log(err));
-    window.location = "/after-login";
+    // window.location = "/after-login";
   }
 
   return (
