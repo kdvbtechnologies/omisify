@@ -20,7 +20,7 @@ export default function AddSeptember() {
   }, [userId]);
 
   // le bouton s'affichera s'il n'y a pas idtsept dans le localstorage
-  //const idtsept = localStorage.getItem("https://omisify.com/idtsept");
+  const idtsept = localStorage.getItem("https://omisify.com/idtsept");
 
   function Next() {
     // first step : post
@@ -53,9 +53,5 @@ export default function AddSeptember() {
       .catch((err) => console.log(err));
   }
 
-  return (
-    <>
-      <button onClick={Next}>Continuer</button>
-    </>
-  );
+  return <>{!idtsept && <button onClick={Next}>Continuer</button>}</>;
 }
