@@ -1,30 +1,38 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Loader from "./Loader";
 
 export default function AddSeptember() {
+  const [isLoading, setLoading] = useState(true);
+
   const total = 0;
 
   const userId = localStorage.getItem("https://omisify.com/userId");
+
   useEffect(() => {
-    axios
-      .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
-      .then((res) => {
-        console.log(res);
-        const idtsept = res.data.idtsept2022;
-        if (idtsept) {
-          localStorage.setItem("https://omisify.com/idtsept", idtsept);
-          window.location = "/update";
-        }
-      })
-      .catch((err) => console.log(err));
+    async function get() {
+      await axios
+        .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
+        .then((res) => {
+          console.log(res);
+          const idtsept = res.data.idtsept2022;
+          if (idtsept) {
+            localStorage.setItem("https://omisify.com/idtsept", idtsept);
+            window.location = "/update";
+          }
+        })
+        .catch((err) => console.log(err));
+      setLoading(false);
+    }
+    get();
   }, [userId]);
 
   // le bouton s'affichera s'il n'y a pas idtsept dans le localstorage
   const idtsept = localStorage.getItem("https://omisify.com/idtsept");
 
-  function Next() {
+  async function Next() {
     // first step : post
-    axios({
+    await axios({
       method: "post",
       url: "https://famous-peplum-dove.cyclic.app/api/point/add/tseptember",
       data: {
@@ -51,7 +59,16 @@ export default function AddSeptember() {
         window.location = "/update";
       })
       .catch((err) => console.log(err));
+    setLoading(false);
   }
 
-  return <>{!idtsept && <button onClick={Next}>Continuer</button>}</>;
+  return (
+    <>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>{!idtsept && <button onClick={Next}>Continuer</button>}</>
+      )}
+    </>
+  );
 }

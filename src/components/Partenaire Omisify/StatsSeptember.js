@@ -8,7 +8,6 @@ export default function StatsSeptember() {
   const idtsept = localStorage.getItem("https://omisify.com/idtsept");
   //const userId = localStorage.getItem("https://omisify.com/userId");
   const [isLoading, setLoading] = useState(true);
-  console.log(isLoading);
 
   useEffect(() => {
     async function get() {
