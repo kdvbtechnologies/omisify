@@ -27,9 +27,6 @@ export default function PartnerNavMenu() {
           <li>Contact</li>
         </NavLink>
 
-        <NavLink className="li" to="/update">
-          <li>Actualiser</li>
-        </NavLink>
         <div className="omisify-copy">
           <div className="omisify-copyright">
             <p>© 2022 Omisify</p>
