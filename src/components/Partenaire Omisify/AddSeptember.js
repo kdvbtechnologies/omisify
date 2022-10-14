@@ -11,30 +11,12 @@ export default function AddSeptember() {
       .then((res) => {
         console.log(res);
         const idtsept = res.data.idtsept2022;
-
-        if (idtsept) {
+        const idtoct = res.data.idtoct;
+        const idtnov = res.data.idtnov;
+        if (idtsept || idtoct || idtnov) {
+          localStorage.setItem("https://omisify.com/idtnov", idtnov);
           localStorage.setItem("https://omisify.com/idtsept", idtsept);
-        }
-
-        const idtseptt = localStorage.getItem("https://omisify.com/idtsept");
-
-        if (idtseptt) {
-          console.log(idtsept);
-        } else {
-          axios({
-            method: "post",
-            url: "https://famous-peplum-dove.cyclic.app/api/point/add/tseptember",
-            data: {
-              userId,
-              total,
-            },
-          })
-            .then((res) => {
-              console.log(res.data.message);
-              const idtsept = res.data.message;
-              localStorage.setItem("https://omisify.com/idtsept", idtsept);
-            })
-            .catch((err) => console.log(err));
+          localStorage.setItem("https://omisify.com/idtoct", idtoct);
         }
       })
       .catch((err) => console.log(err));
@@ -53,6 +35,31 @@ export default function AddSeptember() {
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
     window.location.reload();
+  }
+
+  const idtsept = localStorage.getItem("https://omisify.com/idtsept");
+  const idtoct = localStorage.getItem("https://omisify.com/idtoct");
+  const idtnov = localStorage.getItem("https://omisify.com/idtnov");
+
+  if (idtsept || idtoct || idtnov) {
+    console.log(idtsept);
+    console.log(idtoct);
+    console.log(idtnov);
+  } else {
+    axios({
+      method: "post",
+      url: "https://famous-peplum-dove.cyclic.app/api/point/add/tseptember",
+      data: {
+        userId,
+        total,
+      },
+    })
+      .then((res) => {
+        console.log(res);
+        const idtsept = res.data.message;
+        localStorage.setItem("https://omisify.com/idtsept", idtsept);
+      })
+      .catch((err) => console.log(err));
   }
 
   return (
