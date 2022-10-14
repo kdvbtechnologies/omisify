@@ -15,7 +15,10 @@ export default function PartnerSettings() {
       <div className="stats-big-title">
         <p>Paramètres</p>
       </div>
-      <h1>Informations personelles</h1>
+      <h1 style={{ color: "red" }}>
+        Cette fonctionnalité est en cours de développement
+      </h1>
+      <h3>Informations personelles</h3>
       <p>Modifier</p>
       <p>Noms de naissance : </p>
       <p>Noms principal : </p>
