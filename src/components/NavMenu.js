@@ -18,8 +18,8 @@ export default function NavMenu() {
           <li>Service</li>
         </NavLink>
 
-        <NavLink className="li" to="/auth">
-          <li>Connexion</li>
+        <NavLink className="li" to="/program">
+          <li>Programme</li>
         </NavLink>
 
         <div className="omisify-copy">
