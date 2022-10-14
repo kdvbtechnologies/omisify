@@ -11,41 +11,19 @@ export default function AddSeptember() {
       .then((res) => {
         console.log(res);
         const idtsept = res.data.idtsept2022;
-        const idtoct = res.data.idtoct;
-        const idtnov = res.data.idtnov;
-        if (idtsept || idtoct || idtnov) {
-          localStorage.setItem("https://omisify.com/idtnov", idtnov);
+        if (idtsept) {
           localStorage.setItem("https://omisify.com/idtsept", idtsept);
-          localStorage.setItem("https://omisify.com/idtoct", idtoct);
+          window.location = "/update";
         }
       })
       .catch((err) => console.log(err));
   }, [userId]);
 
+  // le bouton s'affichera s'il n'y a pas idtsept dans le localstorage
+  //const idtsept = localStorage.getItem("https://omisify.com/idtsept");
+
   function Next() {
-    // update total id
-    const idtsept2022 = localStorage.getItem("https://omisify.com/idtsept");
-    axios({
-      method: "put",
-      url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
-      data: {
-        idtsept2022,
-      },
-    })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
-    window.location.reload();
-  }
-
-  const idtsept = localStorage.getItem("https://omisify.com/idtsept");
-  const idtoct = localStorage.getItem("https://omisify.com/idtoct");
-  const idtnov = localStorage.getItem("https://omisify.com/idtnov");
-
-  if (idtsept || idtoct || idtnov) {
-    console.log(idtsept);
-    console.log(idtoct);
-    console.log(idtnov);
-  } else {
+    // first step : post
     axios({
       method: "post",
       url: "https://famous-peplum-dove.cyclic.app/api/point/add/tseptember",
@@ -58,6 +36,19 @@ export default function AddSeptember() {
         console.log(res);
         const idtsept = res.data.message;
         localStorage.setItem("https://omisify.com/idtsept", idtsept);
+
+        // second step : put
+        const idtsept2022 = localStorage.getItem("https://omisify.com/idtsept");
+        axios({
+          method: "put",
+          url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
+          data: {
+            idtsept2022,
+          },
+        })
+          .then((res) => console.log(res))
+          .catch((err) => console.log(err));
+        window.location = "/update";
       })
       .catch((err) => console.log(err));
   }
