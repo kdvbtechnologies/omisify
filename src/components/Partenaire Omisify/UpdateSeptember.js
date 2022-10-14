@@ -59,16 +59,16 @@ export default function UpdateSeptember() {
 
   return (
     <>
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>Retour</button>
+      </div>
+      <div className="stats-big-title">
+        <p>Actualiser mes points</p>
+      </div>
       {isLoading ? (
         <Loader />
       ) : (
         <>
-          <div className="back-btn">
-            <button onClick={() => navigate(-1)}>Retour</button>
-          </div>
-          <div className="stats-big-title">
-            <p>Actualiser mes points</p>
-          </div>
           <p>Entrer le nombre des commentaires</p>
           <input
             type="text"
