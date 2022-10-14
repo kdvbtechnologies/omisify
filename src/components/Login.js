@@ -26,24 +26,28 @@ export default function Login() {
 
   return (
     <>
-      <div className="connexion">
-        <p>Portail des Partenaires Omisify</p>
-        <h1>Connexion</h1>
-        <input
-          type="text"
-          placeholder="E-mail"
-          value={email}
-          name="email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Mot de passe"
-          value={password}
-          name="password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button onClick={Button}>Se connecter</button>
+      <div className="login-border">
+        <div>
+          <p>Portail des Partenaires Omisify</p>
+          <div className="input">
+            <h1>Connexion</h1>
+            <input
+              type="text"
+              placeholder="E-mail"
+              value={email}
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="text"
+              placeholder="Mot de passe"
+              value={password}
+              name="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button onClick={Button}>Se connecter</button>
+          </div>
+        </div>
       </div>
     </>
   );

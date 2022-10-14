@@ -642,11 +642,83 @@ footer {
   padding: 10px 20px;
 }
 
-/* connexion.js */
-.connexion {
+/*
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .historical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
   text-align: center;
-  padding-top: 200px;
 }
+
+.historical .historic {
+  border: 3px solid #eee;
+  border-radius: 10px;
+  padding: 50px 70px;
+  font-size: 17px;
+  color: #444;
+}
+
+*/
+
+/* connexion.js */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
+  text-align: center;
+}
+
+.login button {
+  padding: 10px 20px;
+  background-color: #eee;
+  border-color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.login-border {
+  border: 3px solid #eee;
+  border-radius: 5px;
+  padding: 50px 70px;
+  font-size: 17px;
+}
+
+.login-border p {
+  padding-bottom: 40px;
+}
+
+.login-border .input {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-border .input input[type=text] {
+  padding: 10px ;
+  margin: 10px 0px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.input button {
+  color: white;
+  background-color: red;
+  border: none;
+  margin-top: 10px;
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 
 @media screen and (max-width: 760px) {
   .navigation .right-navigation .navlink {
@@ -819,7 +891,13 @@ footer {
       margin-top: 40px;
       font-size: 14px;
     }
-    
+
+    .login-border {
+      border: 3px solid #eee;
+      border-radius: 5px;
+      padding: 50px 30px;
+      font-size: 17px;
+    }   
 }
 
 
