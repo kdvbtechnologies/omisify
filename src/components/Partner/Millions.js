@@ -16,7 +16,7 @@ export default function Millions() {
         </div>
         <hr />
         <div className="button">
-          <NavLink to="/contact">
+          <NavLink to="/partner">
             <button>Devenir Partenaire Omisify </button>
           </NavLink>
         </div>
