@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Loader from "./Loader";
 
 export default function UpdateSeptember() {
   const userId = localStorage.getItem("https://omisify.com/userId");
@@ -7,14 +8,19 @@ export default function UpdateSeptember() {
   const [dSeptember, setDSeptember] = useState("");
   const [tsept, settsept] = useState([]);
   const idtsept = localStorage.getItem("https://omisify.com/idtsept");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios
-      .get(
-        `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/${idtsept}`
-      )
-      .then((res) => settsept(res.data))
-      .catch((err) => console.log(err));
+    async function get() {
+      await axios
+        .get(
+          `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/${idtsept}`
+        )
+        .then((res) => settsept(res.data))
+        .catch((err) => console.log(err));
+      setIsLoading(false);
+    }
+    get();
   }, [idtsept]);
 
   const ancien = `${tsept.total}`;
@@ -50,24 +56,30 @@ export default function UpdateSeptember() {
 
   return (
     <>
-      <p>Entrer le nombre des commentaires</p>
-      <input
-        type="text"
-        placeholder="Nombre des commentaires"
-        value={cSeptember}
-        onChange={(e) => setCSeptember(e.target.value)}
-        name="pcomments"
-      />
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <p>Entrer le nombre des commentaires</p>
+          <input
+            type="text"
+            placeholder="Nombre des commentaires"
+            value={cSeptember}
+            onChange={(e) => setCSeptember(e.target.value)}
+            name="pcomments"
+          />
 
-      <p>Entrer la date d'aujourd'hui</p>
-      <input
-        type="text"
-        placeholder="Date d'aujourd'hui"
-        value={dSeptember}
-        onChange={(e) => setDSeptember(e.target.value)}
-        name="date"
-      />
-      <button onClick={UpdateSeptember}>Update</button>
+          <p>Entrer la date d'aujourd'hui</p>
+          <input
+            type="text"
+            placeholder="Date d'aujourd'hui"
+            value={dSeptember}
+            onChange={(e) => setDSeptember(e.target.value)}
+            name="date"
+          />
+          <button onClick={UpdateSeptember}>Update</button>
+        </>
+      )}
     </>
   );
 }
