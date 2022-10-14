@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import AddSeptember from "./AddSeptember";
 import UpdateSeptember from "./UpdateSeptember";
+import Auth from "../Auth";
 
 export default function PartnerUpdate() {
   const navigate = useNavigate();
@@ -10,6 +11,7 @@ export default function PartnerUpdate() {
   };
 
   const idtsept = localStorage.getItem("https://omisify.com/idtsept");
+  const userId = localStorage.getItem("https://omisify.com/userId");
 
   return (
     <div style={family}>
@@ -19,7 +21,11 @@ export default function PartnerUpdate() {
       <div className="stats-big-title">
         <p>Actualiser mes points</p>
       </div>
-      {idtsept ? <UpdateSeptember /> : <AddSeptember />}
+      {userId ? (
+        <>{idtsept ? <UpdateSeptember /> : <AddSeptember />}</>
+      ) : (
+        <Auth />
+      )}
     </div>
   );
 }
