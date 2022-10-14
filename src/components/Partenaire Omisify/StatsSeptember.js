@@ -52,11 +52,13 @@ export default function StatsSeptember() {
             <>
               <div className="stats-cards">
                 <div className="a">
-                  {sept.map((point) => (
-                    <p>
-                      {point.dSeptember} || {point.cSeptember} points
-                    </p>
-                  ))}
+                  {sept
+                    .filter((country) => country.userId)
+                    .map((point) => (
+                      <p>
+                        {point.dSeptember} || {point.cSeptember} points
+                      </p>
+                    ))}
                 </div>
               </div>
               <div className="total">
