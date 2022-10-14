@@ -14,12 +14,13 @@ export default function NavMenu() {
         <div className="menu-navigation-title">
           <p>Menu</p>
         </div>
-        <NavLink className="li" to="/contact">
-          <li>Service</li>
-        </NavLink>
 
         <NavLink className="li" to="/program">
           <li>Programme</li>
+        </NavLink>
+
+        <NavLink className="li" to="/contact">
+          <li>Service</li>
         </NavLink>
 
         <div className="omisify-copy">
