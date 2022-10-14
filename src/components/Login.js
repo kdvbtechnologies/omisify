@@ -5,7 +5,7 @@ import Loader from "./Partenaire Omisify/Loader";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   async function Button(e) {
     e.preventDefault();
@@ -23,7 +23,7 @@ export default function Login() {
         localStorage.setItem("https://omisify.com/userId", userId);
       })
       .catch((err) => console.log(err));
-    setIsLoading(false);
+    setIsLoading(true);
     window.location = "/after-login";
   }
   console.log(isLoading);
@@ -49,7 +49,7 @@ export default function Login() {
               name="password"
               onChange={(e) => setPassword(e.target.value)}
             />
-            {Button ? (
+            {isLoading ? (
               <Loader />
             ) : (
               <>
