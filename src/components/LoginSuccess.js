@@ -29,9 +29,9 @@ export default function LoginSuccess() {
           }
         })
         .catch((err) => console.log(err));
+      setIsLoading(false);
     }
     get();
-    setIsLoading(false);
   }, [userId]);
 
   function Success() {
