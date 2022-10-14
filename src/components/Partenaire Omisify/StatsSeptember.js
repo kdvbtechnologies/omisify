@@ -6,6 +6,7 @@ export default function StatsSeptember() {
   const [sept, setSept] = useState([]);
   const [tsept, settsept] = useState([]);
   const idtsept = localStorage.getItem("https://omisify.com/idtsept");
+  const userId = localStorage.getItem("https://omisify.com/userId");
   const [isLoading, setLoading] = useState(true);
   console.log(isLoading);
 
@@ -53,7 +54,7 @@ export default function StatsSeptember() {
               <div className="stats-cards">
                 <div className="a">
                   {sept
-                    .filter((country) => country.userId[0])
+                    .filter((country) => country.includes(`${userId}`))
                     .map((point) => (
                       <p>
                         {point.dSeptember} || {point.cSeptember} points
