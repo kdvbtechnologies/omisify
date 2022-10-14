@@ -24,7 +24,11 @@ export default function Signup() {
         password,
       },
     })
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res);
+        const userId = res.data.id;
+        localStorage.setItem("https://omisify.com/userId", userId);
+      })
       .catch((err) => console.log(err));
   }
 

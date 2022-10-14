@@ -27,9 +27,6 @@ export default function PartnerNavMenu() {
           <li>Contact</li>
         </NavLink>
 
-        <NavLink className="li" to="/stats">
-          <li>Statistiques</li>
-        </NavLink>
         <NavLink className="li" to="/update">
           <li>Actualiser</li>
         </NavLink>
