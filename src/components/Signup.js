@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import Loader from "./Partenaire Omisify/Loader";
 
 export default function Signup() {
   const [shortname, setShortname] = useState("");
@@ -7,8 +8,10 @@ export default function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   async function Button(e) {
+    setIsLoading(true);
     e.preventDefault();
     await axios({
       method: "post",
@@ -67,7 +70,13 @@ export default function Signup() {
               name="password"
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button onClick={Button}>S'inscrire</button>
+            {isLoading ? (
+              <Loader />
+            ) : (
+              <>
+                <button onClick={Button}>S'inscrire</button>
+              </>
+            )}
           </div>
         </div>
       </div>
