@@ -13,8 +13,8 @@ export default function PartnerNavigation() {
           <NavLink className="navlink" to="/program">
             <li>Programme</li>
           </NavLink>
-          <NavLink className="navlink" to="/contact">
-            <li>Contact</li>
+          <NavLink className="navlink" to="/menu">
+            <li>Menu</li>
           </NavLink>
         </div>
       </div>

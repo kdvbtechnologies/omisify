@@ -59,6 +59,7 @@ import Auth from "./components/Auth";
 import AfterLogin from "./components/AfterLogin";
 import AfterLoginSuccess from "./components/AfterLoginSuccess";
 import AfterSignup from "./components/AfterSignup";
+import NavMenu from "./components/NavMenu";
 
 export default function App() {
   return (
@@ -127,6 +128,7 @@ export default function App() {
         <Route path="/after-login" element={<AfterLogin />} />
         <Route path="/after-signup" element={<AfterSignup />} />
         <Route path="/partner" element={<AfterLoginSuccess />} />
+        <Route path="/menu" element={<NavMenu />} />
       </Routes>
     </BrowserRouter>
   );
