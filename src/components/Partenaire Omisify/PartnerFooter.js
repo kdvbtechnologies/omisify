@@ -3,6 +3,9 @@ import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function PartnerFooter() {
+  const getoldnumbertcommentlife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertcommentlife"
+  );
   const userId = localStorage.getItem("https://omisify.com/userId");
   const getoldgaintlife = localStorage.getItem(
     "https://omisify.com/getoldgaintlife"
@@ -13,6 +16,14 @@ export default function PartnerFooter() {
       axios
         .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
         .then((res) => {
+          const getoldnumbertcommentlife = res.data.numbertcommentlife;
+          if (getoldnumbertcommentlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertcommentlife",
+              getoldnumbertcommentlife
+            );
+          }
+
           const getoldgaintlife = res.data.gaintlife;
           if (getoldgaintlife) {
             localStorage.setItem(
@@ -26,13 +37,24 @@ export default function PartnerFooter() {
     get();
   });
 
+  /* {getoldnumbertcommentlife ? (<></>) : (<></>)} */
   return (
     <>
       <div>
         <div className="partner-stats">
           <p>Statistiques </p>
           <li>Bonus de Bienvenue : _ _ _</li>
-          <li>Commentaires : _ _ _</li>
+
+          {getoldnumbertcommentlife ? (
+            <>
+              <li>Commentaires : {getoldnumbertcommentlife} points</li>
+            </>
+          ) : (
+            <>
+              <li>Commentaires : _ _ _</li>
+            </>
+          )}
+
           <li>Likes (commentaire) : _ _ _</li>
           <li>Publications : _ _ _</li>
           <li>Likes (publication) : _ _ _</li>
@@ -45,7 +67,7 @@ export default function PartnerFooter() {
           <li>Valeur des Points : _ _ _</li>
         </div>
         <div className="partner-money">
-          <p>Gains : {getoldgaintlife} €</p>
+          <p>Gains : {getoldgaintlife}€</p>
         </div>
       </div>
       <div className="request-money">
