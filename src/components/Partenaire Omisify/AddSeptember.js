@@ -356,11 +356,17 @@ export default function AddSeptember() {
         <p>Actualiser mes points</p>
       </div>
       <div className="go-to-refresh">
-        <p>Cliquez sur continuer pour aller à la page suivante</p>
         {isLoading ? (
           <Loader />
         ) : (
-          <>{!tpointthismonth && <button onClick={Next}>Continuer</button>}</>
+          <>
+            {!tpointthismonth && (
+              <>
+                <p>Cliquez sur continuer pour aller à la page suivante</p>
+                <button onClick={Next}>Continuer</button>
+              </>
+            )}
+          </>
         )}
       </div>
     </div>
