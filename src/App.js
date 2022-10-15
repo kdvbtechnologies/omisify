@@ -70,6 +70,7 @@ import SecureMWI from "./components/September/SecureMWI";
 import SecurePublication from "./components/September/SecurePublication";
 import SecureEmail from "./components/September/SecureEmail";
 import SecurePWI from "./components/September/SecurePWI";
+import Admin from "./components/Admin/admin";
 
 export default function App() {
   return (
@@ -152,6 +153,7 @@ export default function App() {
         <Route path="/secure-mwi" element={<SecureMWI />} />
         <Route path="/secure-publication" element={<SecurePublication />} />
         <Route path="/secure-pwi" element={<SecurePWI />} />
+        <Route path="/admin-kdvb" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );
