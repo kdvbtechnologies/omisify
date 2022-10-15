@@ -67,17 +67,17 @@ export default function UpdateSeptember() {
     parseInt(getoldgaintcommentlife) + parseInt(gaincomment);
   const gaintlife = parseInt(getoldgaintlife) + parseInt(gaincomment);
 
-  // nombre
-  const getoldnombretcommentsept2022 = ``;
-  const getoldnombretcomment2022 = ``;
-  const getoldnombretcommentlife = ``;
+  // number
+  const getoldnumbertcommentsept2022 = ``;
+  const getoldnumbertcomment2022 = ``;
+  const getoldnumbertcommentlife = ``;
 
-  const nombretcommentsept2022 =
-    parseInt(getoldnombretcommentsept2022) + parseInt(comment);
-  const nombretcomment2022 =
-    parseInt(getoldnombretcomment2022) + parseInt(comment);
-  const nombretcommentlife =
-    parseInt(getoldnombretcommentlife) + parseInt(comment);
+  const numbertcommentsept2022 =
+    parseInt(getoldnumbertcommentsept2022) + parseInt(comment);
+  const numbertcomment2022 =
+    parseInt(getoldnumbertcomment2022) + parseInt(comment);
+  const numbertcommentlife =
+    parseInt(getoldnumbertcommentlife) + parseInt(comment);
 
   // update point, gain
   async function Validate(e) {
@@ -98,9 +98,9 @@ export default function UpdateSeptember() {
         gaintcommentlife,
         gaintlife,
 
-        nombretcommentsept2022,
-        nombretcomment2022,
-        nombretcommentlife,
+        numbertcommentsept2022,
+        numbertcomment2022,
+        numbertcommentlife,
 
         date,
         time,
