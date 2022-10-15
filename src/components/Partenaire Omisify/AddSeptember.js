@@ -341,20 +341,28 @@ export default function AddSeptember() {
       })
       .catch((err) => console.log(err));
   }
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
 
   return (
-    <>
+    <div style={family}>
       <div className="back-btn">
         <button onClick={() => navigate(-1)}>Retour</button>
       </div>
+
       <div className="stats-big-title">
         <p>Actualiser mes points</p>
       </div>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>{!tpointthismonth && <button onClick={Next}>Continuer</button>}</>
-      )}
-    </>
+      <div className="go-to-refresh">
+        <p>Cliquez sur continuer pour aller à la page suivante</p>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>{!tpointthismonth && <button onClick={Next}>Continuer</button>}</>
+        )}
+      </div>
+    </div>
   );
 }
