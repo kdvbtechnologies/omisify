@@ -12,7 +12,7 @@ export default function UpdateSeptember() {
       <PartnerNav />
       <div className="update">
         <div className="update-title">
-          <p>Actualisez vos points</p>
+          <p>Actualisez mes points</p>
         </div>
         <p>Choisissez et cliquez sur ce que vous voulez actualiser :</p>
         <NavLink className="navlink" to="/secure-comment">
