@@ -38,7 +38,7 @@ export default function AddSeptember() {
               "https://omisify.com/tpointthismonth",
               tpointthismonth
             );
-            //window.location = "/update";
+            window.location.reload();
           }
         })
         .catch((err) => console.log(err));
