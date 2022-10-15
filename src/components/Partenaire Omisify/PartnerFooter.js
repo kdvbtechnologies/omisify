@@ -4,6 +4,27 @@ import { NavLink } from "react-router-dom";
 
 export default function PartnerFooter() {
   const userId = localStorage.getItem("https://omisify.com/userId");
+
+  const getoldpointtlife = localStorage.getItem(
+    "https://omisify.com/getoldpointtlife"
+  );
+
+  const getoldnumbertemaillife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertemaillife"
+  );
+
+  const getoldnumbertmwilife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertmwilife"
+  );
+
+  const getoldnumbertmessagelife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertmessagelife"
+  );
+
+  const getoldnumbertpwilife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertpwilife"
+  );
+
   const getoldnumbertpublicationlife = localStorage.getItem(
     "https://omisify.com/getoldnumbertpublicationlife"
   );
@@ -28,6 +49,46 @@ export default function PartnerFooter() {
       axios
         .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
         .then((res) => {
+          const getoldpointtlife = res.data.pointtlife;
+          if (getoldpointtlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldpointtlife",
+              getoldpointtlife
+            );
+          }
+
+          const getoldnumbertemaillife = res.data.numbertemaillife;
+          if (getoldnumbertemaillife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertemaillife",
+              getoldnumbertemaillife
+            );
+          }
+
+          const getoldnumbertmwilife = res.data.numbertmwilife;
+          if (getoldnumbertmwilife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertmwilife",
+              getoldnumbertmwilife
+            );
+          }
+
+          const getoldnumbertmessagelife = res.data.numbertmessagelife;
+          if (getoldnumbertmessagelife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertmessagelife",
+              getoldnumbertmessagelife
+            );
+          }
+
+          const getoldnumbertpwilife = res.data.numbertpwilife;
+          if (getoldnumbertpwilife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertpwilife",
+              getoldnumbertpwilife
+            );
+          }
+
           const getoldnumbertpublicationlife = res.data.numbertpublicationlife;
           if (getoldnumbertpublicationlife) {
             localStorage.setItem(
@@ -127,13 +188,57 @@ export default function PartnerFooter() {
             </>
           )}
 
-          <li>PWI : _ _ _</li>
-          <li>Messages : _ _ _</li>
-          <li>MWI : _ _ _</li>
-          <li>E-mail : _ _ _</li>
+          {getoldnumbertpwilife ? (
+            <>
+              <li>PWI : {getoldnumbertpwilife} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>PWI : 0 point(s)</li>
+            </>
+          )}
+
+          {getoldnumbertmessagelife ? (
+            <>
+              <li>Messages : {getoldnumbertmessagelife} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>Messages : 0 point(s)</li>
+            </>
+          )}
+
+          {getoldnumbertmwilife ? (
+            <>
+              <li>MWI : {getoldnumbertmwilife} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>MWI : 0 point(s)</li>
+            </>
+          )}
+
+          {getoldnumbertemaillife ? (
+            <>
+              <li>E-mail : {getoldnumbertemaillife} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>E-mail : 0 point(s)</li>
+            </>
+          )}
+
           <li>Code Bonus : _ _ _</li>
-          <li>Total des Points : _ _ _</li>
-          <li>Valeur des Points : _ _ _</li>
+
+          {getoldpointtlife ? (
+            <>
+              <li>Total des Points : {getoldpointtlife} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>Total des Points : 0 point(s)</li>
+            </>
+          )}
         </div>
 
         <div className="partner-money">
