@@ -31,7 +31,8 @@ export default function UpdateSeptember() {
   // comment
   // comment
   const pointcomment = parseInt(comment) * 1;
-  const gaincomment = parseInt(comment) * 0.001;
+  const gaincomment = parseInt(comment) * 5;
+  console.log(gaincomment);
 
   // point
   const getoldpointtcommentsept2022 = `${api.pointtcommentsept2022}`;
