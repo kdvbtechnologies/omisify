@@ -18,7 +18,6 @@ export default function NavMenu() {
         <NavLink className="li" to="/program">
           <li>Programme</li>
         </NavLink>
-
         <NavLink className="li" to="/contact">
           <li>Service</li>
         </NavLink>

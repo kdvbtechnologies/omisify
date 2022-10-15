@@ -8,13 +8,14 @@ export default function PartnerUpdate() {
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
 
-  const idtsept = localStorage.getItem("https://omisify.com/idtsept");
   const userId = localStorage.getItem("https://omisify.com/userId");
+  const shortname = localStorage.getItem("https://omisify.com/shortname");
+  //const idpointtcommentsept2022 = localStorage.getItem("https://omisify.com/idpointtcommentsept2022");
 
   return (
     <div style={family}>
       {userId ? (
-        <>{idtsept ? <UpdateSeptember /> : <AddSeptember />}</>
+        <>{shortname ? <UpdateSeptember /> : <AddSeptember />}</>
       ) : (
         <Auth />
       )}

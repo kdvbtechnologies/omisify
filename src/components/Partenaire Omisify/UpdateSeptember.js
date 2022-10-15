@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import Loader from "./Loader";
 import { useNavigate } from "react-router-dom";
@@ -6,55 +7,108 @@ import { useNavigate } from "react-router-dom";
 export default function UpdateSeptember() {
   const navigate = useNavigate();
   const userId = localStorage.getItem("https://omisify.com/userId");
-  const [cSeptember, setCSeptember] = useState("");
-  const [dSeptember, setDSeptember] = useState("");
-  const [tsept, settsept] = useState([]);
-  const idtsept = localStorage.getItem("https://omisify.com/idtsept");
   const [isLoading, setIsLoading] = useState(true);
+  const [isLoading2, setIsLoading2] = useState(false);
+  const [comment, setComment] = useState("");
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  //const [api, setApi] = useState([]);
 
+  console.log(setIsLoading);
+  /*
   useEffect(() => {
     async function get() {
       await axios
         .get(
           `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/${idtsept}`
         )
-        .then((res) => settsept(res.data))
+        .then((res) => setApi(res.data))
         .catch((err) => console.log(err));
       setIsLoading(false);
     }
     get();
   }, [idtsept]);
+  */
 
-  const ancien = `${tsept.total}`;
-  const total = parseInt(ancien) + parseInt(cSeptember);
+  // const ancien = `${tsept.total}`;
+  // const total = parseInt(ancien) + parseInt(cSeptember);
 
-  // add point
-  async function UpdateSeptember(e) {
+  // comment
+  // comment
+  // comment
+  const pointcomment = parseInt(comment) * 1;
+  const gaincomment = parseInt(comment) * 0.001;
+
+  // point
+  const getoldpointtcommentsept2022 = ``;
+  const getoldpointtcomment2022 = ``;
+  const getoldpointtcommentlife = ``;
+  const getoldpointtlife = ``;
+
+  const pointtcommentsept2022 =
+    parseInt(getoldpointtcommentsept2022) + parseInt(pointcomment);
+  const pointtcomment2022 =
+    parseInt(getoldpointtcomment2022) + parseInt(pointcomment);
+  const pointtcommentlife =
+    parseInt(getoldpointtcommentlife) + parseInt(pointcomment);
+  const pointtlife = parseInt(getoldpointtlife) + parseInt(pointcomment);
+
+  // gain
+  const getoldgaintcommentsept2022 = ``;
+  const getoldgaintcomment2022 = ``;
+  const getoldgaintcommentlife = ``;
+  const getoldgaintlife = ``;
+
+  const gaintcommentsept2022 =
+    parseInt(getoldgaintcommentsept2022) + parseInt(gaincomment);
+  const gaintcomment2022 =
+    parseInt(getoldgaintcomment2022) + parseInt(gaincomment);
+  const gaintcommentlife =
+    parseInt(getoldgaintcommentlife) + parseInt(gaincomment);
+  const gaintlife = parseInt(getoldgaintlife) + parseInt(gaincomment);
+
+  // nombre
+  const getoldnombretcommentsept2022 = ``;
+  const getoldnombretcomment2022 = ``;
+  const getoldnombretcommentlife = ``;
+
+  const nombretcommentsept2022 =
+    parseInt(getoldnombretcommentsept2022) + parseInt(comment);
+  const nombretcomment2022 =
+    parseInt(getoldnombretcomment2022) + parseInt(comment);
+  const nombretcommentlife =
+    parseInt(getoldnombretcommentlife) + parseInt(comment);
+
+  // update point, gain
+  async function Validate(e) {
+    setIsLoading2(true);
     e.preventDefault();
     await axios({
-      method: "post",
-      url: "https://famous-peplum-dove.cyclic.app/api/point/add/september",
-      data: {
-        userId,
-        cSeptember,
-        dSeptember,
-      },
-    })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
-
-    // update total
-    await axios({
       method: "put",
-      url: `https://famous-peplum-dove.cyclic.app/api/point/update/tseptember/${idtsept}`,
+      url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
       data: {
-        userId,
-        total,
+        // data comment
+        pointtcommentsept2022,
+        pointtcomment2022,
+        pointtcommentlife,
+        pointtlife,
+
+        gaintcommentsept2022,
+        gaintcomment2022,
+        gaintcommentlife,
+        gaintlife,
+
+        nombretcommentsept2022,
+        nombretcomment2022,
+        nombretcommentlife,
+
+        date,
+        time,
+        commentrecent: comment,
       },
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-    setIsLoading(false);
   }
 
   return (
@@ -69,24 +123,40 @@ export default function UpdateSeptember() {
         <Loader />
       ) : (
         <>
+          <h1>Septembre</h1>
           <p>Entrer le nombre des commentaires</p>
           <input
             type="text"
             placeholder="Nombre des commentaires"
-            value={cSeptember}
-            onChange={(e) => setCSeptember(e.target.value)}
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
             name="pcomments"
           />
 
           <p>Entrer la date d'aujourd'hui</p>
           <input
             type="text"
-            placeholder="Date d'aujourd'hui"
-            value={dSeptember}
-            onChange={(e) => setDSeptember(e.target.value)}
+            placeholder="Date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
             name="date"
           />
-          <button onClick={UpdateSeptember}>Update</button>
+
+          <p>Entrer l'heure actuelle'</p>
+          <input
+            type="text"
+            placeholder="Heure"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+            name="time"
+          />
+          {isLoading2 ? (
+            <Loader />
+          ) : (
+            <>
+              <button onClick={Validate}>Valider</button>
+            </>
+          )}
         </>
       )}
     </>
