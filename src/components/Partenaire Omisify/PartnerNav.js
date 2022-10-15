@@ -7,7 +7,7 @@ export default function PartnerNav() {
     <>
       <div className="navigation">
         <div className="left-navigation">
-          <NavLink className="navlink" to="/partner-home">
+          <NavLink className="navlink" to="/">
             <li>Omisify</li>
           </NavLink>
         </div>
