@@ -744,6 +744,30 @@ display: flex;
   cursor: pointer;
 }
 
+/* update september*/
+.update {
+  text-align: center;
+  padding: 70px 0px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.update-title {
+  padding: 30px 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.update .navlink {
+  text-decoration: none;
+  color: #551a8b;
+}
+
+.update .navlink p{
+  padding: 20px 0px;
+  
+}
+
 @media screen and (max-width: 760px) {
   .navigation .right-navigation .navlink {
     text-decoration: none;
