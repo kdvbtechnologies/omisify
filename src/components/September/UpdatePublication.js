@@ -272,9 +272,9 @@ export default function UpdatePublication() {
         numbertpublication2022,
         numbertpublicationlife,
 
+        publicationrecent: publication,
         date,
         time,
-        publicationrecent: publication,
       },
     })
       .then((res) => console.log(res))

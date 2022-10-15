@@ -259,9 +259,9 @@ export default function UpdatePWI() {
         numbertpwi2022,
         numbertpwilife,
 
+        pwirecent: pwi,
         date,
         time,
-        pwirecent: pwi,
       },
     })
       .then((res) => console.log(res))

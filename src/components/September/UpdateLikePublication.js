@@ -281,9 +281,9 @@ export default function UpdateLikePublication() {
         numbertlikepublication2022,
         numbertlikepublicationlife,
 
+        likepublicationrecent: likepublication,
         date,
         time,
-        likepublicationrecent: likepublication,
       },
     })
       .then((res) => console.log(res))

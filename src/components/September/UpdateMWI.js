@@ -259,9 +259,9 @@ export default function UpdateMWI() {
         numbertmwi2022,
         numbertmwilife,
 
+        mwirecent: mwi,
         date,
         time,
-        mwirecent: mwi,
       },
     })
       .then((res) => console.log(res))

@@ -268,9 +268,9 @@ export default function UpdateMessage() {
         numbertmessage2022,
         numbertmessagelife,
 
+        messagerecent: message,
         date,
         time,
-        messagerecent: message,
       },
     })
       .then((res) => console.log(res))

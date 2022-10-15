@@ -272,9 +272,9 @@ export default function UpdateLikeComment() {
         numbertlikecomment2022,
         numbertlikecommentlife,
 
+        likecommentrecent: likecomment,
         date,
         time,
-        likecommentrecent: likecomment,
       },
     })
       .then((res) => console.log(res))

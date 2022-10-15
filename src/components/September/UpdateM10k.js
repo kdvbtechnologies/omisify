@@ -261,9 +261,9 @@ export default function UpdateM10k() {
         numbertm10k2022,
         numbertm10klife,
 
+        m10krecent: m10k,
         date,
         time,
-        m10krecent: m10k,
       },
     })
       .then((res) => console.log(res))
