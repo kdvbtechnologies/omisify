@@ -270,8 +270,13 @@ export default function UpdateM10k() {
       .catch((err) => console.log(err));
   }
 
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
+
   return (
-    <>
+    <div style={family}>
       <div className="back-btn">
         <button onClick={() => navigate(-1)}>Retour</button>
       </div>
@@ -282,46 +287,56 @@ export default function UpdateM10k() {
         <Loader />
       ) : (
         <>
-          <h3>Septembre</h3>
-          <h1>M10k</h1>
-          <p>
-            Entrer le nombre de message(s) envoyé(s) au(x) compte(s) ayant plus
-            de 10k d'abonnés (M10k)
-          </p>
-          <input
-            type="text"
-            placeholder="Nombre de M10k"
-            value={m10k}
-            onChange={(e) => setM10k(e.target.value)}
-            name="m10k"
-          />
+          <div className="update-comment">
+            <p>Mois de : Septembre 2022</p>
+            <div className="title">
+              <p>M10k (Message aux 10k+)</p>
+            </div>
+            <div className="a">
+              <p>
+                Entrer le nombre de message(s) envoyé(s) au(x) compte(s) ayant
+                plus de 10k d'abonnés (M10k)
+              </p>
+              <input
+                type="text"
+                placeholder="Nombre de M10k"
+                value={m10k}
+                onChange={(e) => setM10k(e.target.value)}
+                name="m10k"
+              />
+            </div>
 
-          <p>Entrer la date d'aujourd'hui</p>
-          <input
-            type="text"
-            placeholder="Date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            name="date"
-          />
+            <div className="a">
+              <p>Entrer la date d'aujourd'hui</p>
+              <input
+                type="text"
+                placeholder="Date"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+                name="date"
+              />
+            </div>
 
-          <p>Entrer l'heure actuelle</p>
-          <input
-            type="text"
-            placeholder="Heure"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-            name="time"
-          />
-          {isLoading2 ? (
-            <Loader />
-          ) : (
-            <>
-              <button onClick={Validate}>Valider</button>
-            </>
-          )}
+            <div className="a">
+              <p>Entrer l'heure actuelle</p>
+              <input
+                type="text"
+                placeholder="Heure"
+                value={time}
+                onChange={(e) => setTime(e.target.value)}
+                name="time"
+              />
+            </div>
+            {isLoading2 ? (
+              <Loader />
+            ) : (
+              <>
+                <button onClick={Validate}>Valider</button>
+              </>
+            )}
+          </div>
         </>
       )}
-    </>
+    </div>
   );
 }

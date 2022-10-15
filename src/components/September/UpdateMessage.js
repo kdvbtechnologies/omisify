@@ -277,8 +277,13 @@ export default function UpdateMessage() {
       .catch((err) => console.log(err));
   }
 
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
+
   return (
-    <>
+    <div style={family}>
       <div className="back-btn">
         <button onClick={() => navigate(-1)}>Retour</button>
       </div>
@@ -289,43 +294,53 @@ export default function UpdateMessage() {
         <Loader />
       ) : (
         <>
-          <h3>Septembre</h3>
-          <h1>Message</h1>
-          <p>Entrer le nombre de message(s) envoyé(s)</p>
-          <input
-            type="text"
-            placeholder="Nombre de message(s)"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            name="message"
-          />
+          <div className="update-comment">
+            <p>Mois de : Septembre 2022</p>
+            <div className="title">
+              <p>Message</p>
+            </div>
+            <div className="a">
+              <p>Entrer le nombre de message(s) envoyé(s)</p>
+              <input
+                type="text"
+                placeholder="Nombre de message(s)"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                name="message"
+              />
+            </div>
 
-          <p>Entrer la date d'aujourd'hui</p>
-          <input
-            type="text"
-            placeholder="Date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            name="date"
-          />
+            <div className="a">
+              <p>Entrer la date d'aujourd'hui</p>
+              <input
+                type="text"
+                placeholder="Date"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+                name="date"
+              />
+            </div>
 
-          <p>Entrer l'heure actuelle</p>
-          <input
-            type="text"
-            placeholder="Heure"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-            name="time"
-          />
-          {isLoading2 ? (
-            <Loader />
-          ) : (
-            <>
-              <button onClick={Validate}>Valider</button>
-            </>
-          )}
+            <div className="a">
+              <p>Entrer l'heure actuelle</p>
+              <input
+                type="text"
+                placeholder="Heure"
+                value={time}
+                onChange={(e) => setTime(e.target.value)}
+                name="time"
+              />
+            </div>
+            {isLoading2 ? (
+              <Loader />
+            ) : (
+              <>
+                <button onClick={Validate}>Valider</button>
+              </>
+            )}
+          </div>
         </>
       )}
-    </>
+    </div>
   );
 }
