@@ -175,7 +175,7 @@ export default function UpdateSeptember() {
     "https://omisify.com/getoldpointtlifesept2022"
   );
   const getoldpointtlife2022 = localStorage.getItem(
-    "https://omisify.com/ getoldpointtlife2022"
+    "https://omisify.com/getoldpointtlife2022"
   );
   const getoldpointtlife = localStorage.getItem(
     "https://omisify.com/getoldpointtlife"
