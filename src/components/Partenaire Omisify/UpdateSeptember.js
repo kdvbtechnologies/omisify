@@ -40,10 +40,10 @@ export default function UpdateSeptember() {
   const gaincomment = parseInt(comment) * 0.001;
 
   // point
-  const getoldpointtcommentsept2022 = ``;
-  const getoldpointtcomment2022 = ``;
-  const getoldpointtcommentlife = ``;
-  const getoldpointtlife = ``;
+  const getoldpointtcommentsept2022 = 10;
+  const getoldpointtcomment2022 = 10;
+  const getoldpointtcommentlife = 10;
+  const getoldpointtlife = 10;
 
   const pointtcommentsept2022 =
     parseInt(getoldpointtcommentsept2022) + parseInt(pointcomment);
@@ -54,10 +54,10 @@ export default function UpdateSeptember() {
   const pointtlife = parseInt(getoldpointtlife) + parseInt(pointcomment);
 
   // gain
-  const getoldgaintcommentsept2022 = ``;
-  const getoldgaintcomment2022 = ``;
-  const getoldgaintcommentlife = ``;
-  const getoldgaintlife = ``;
+  const getoldgaintcommentsept2022 = 10;
+  const getoldgaintcomment2022 = 10;
+  const getoldgaintcommentlife = 10;
+  const getoldgaintlife = 10;
 
   const gaintcommentsept2022 =
     parseInt(getoldgaintcommentsept2022) + parseInt(gaincomment);
@@ -68,9 +68,9 @@ export default function UpdateSeptember() {
   const gaintlife = parseInt(getoldgaintlife) + parseInt(gaincomment);
 
   // number
-  const getoldnumbertcommentsept2022 = ``;
-  const getoldnumbertcomment2022 = ``;
-  const getoldnumbertcommentlife = ``;
+  const getoldnumbertcommentsept2022 = 10;
+  const getoldnumbertcomment2022 = 10;
+  const getoldnumbertcommentlife = 10;
 
   const numbertcommentsept2022 =
     parseInt(getoldnumbertcommentsept2022) + parseInt(comment);
