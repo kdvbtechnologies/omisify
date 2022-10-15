@@ -1,7 +1,8 @@
+import Auth from "../Auth";
+import UpdateComment from "./UpdateComment";
+
 export default function SecureComment() {
-  return (
-    <>
-      <h1>Secure Comment</h1>
-    </>
-  );
+  const userId = localStorage.getItem("https://omisify.com/userId");
+  const shortname = localStorage.getItem("https://omisify.com/shortname");
+  return <>{userId && shortname ? <UpdateComment /> : <Auth />}</>;
 }

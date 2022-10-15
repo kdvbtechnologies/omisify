@@ -3,7 +3,7 @@ import axios from "axios";
 import Loader from "../Partenaire Omisify/Loader";
 import { useNavigate } from "react-router-dom";
 
-export default function UpdateCommentSeptember() {
+export default function UpdateLike() {
   const navigate = useNavigate();
   const userId = localStorage.getItem("https://omisify.com/userId");
   const [isLoading, setIsLoading] = useState(true);
