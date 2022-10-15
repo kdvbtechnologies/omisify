@@ -4,6 +4,14 @@ import { NavLink } from "react-router-dom";
 
 export default function PartnerFooter() {
   const userId = localStorage.getItem("https://omisify.com/userId");
+  const getoldnumbertpublicationlife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertpublicationlife"
+  );
+
+  const getoldnumbertlikepublicationlife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertlikepublicationlife"
+  );
+
   const getoldnumbertlikecommentlife = localStorage.getItem(
     "https://omisify.com/getoldnumbertlikecommentlife"
   );
@@ -20,6 +28,23 @@ export default function PartnerFooter() {
       axios
         .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
         .then((res) => {
+          const getoldnumbertpublicationlife = res.data.numbertpublicationlife;
+          if (getoldnumbertpublicationlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertpublicationlife",
+              getoldnumbertpublicationlife
+            );
+          }
+
+          const getoldnumbertlikepublicationlife =
+            res.data.numbertlikepublicationlife;
+          if (getoldnumbertlikepublicationlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertlikepublicationlife",
+              getoldnumbertlikepublicationlife
+            );
+          }
+
           const getoldnumbertcommentlife = res.data.numbertcommentlife;
           if (getoldnumbertcommentlife) {
             localStorage.setItem(
@@ -69,7 +94,9 @@ export default function PartnerFooter() {
 
           {getoldnumbertlikecommentlife ? (
             <>
-              <li>Likes (commentaire) : {getoldnumbertlikecommentlife}</li>
+              <li>
+                Likes (commentaire) : {getoldnumbertlikecommentlife} point(s)
+              </li>
             </>
           ) : (
             <>
@@ -77,9 +104,29 @@ export default function PartnerFooter() {
             </>
           )}
 
-          <li>Likes (commentaire) : _ _ _</li>
-          <li>Publications : _ _ _</li>
-          <li>Likes (publication) : _ _ _</li>
+          {getoldnumbertpublicationlife ? (
+            <>
+              <li>Publications : {getoldnumbertpublicationlife} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>Publications : 0 point(s)</li>
+            </>
+          )}
+
+          {getoldnumbertlikepublicationlife ? (
+            <>
+              <li>
+                Likes (publication) : {getoldnumbertlikepublicationlife}{" "}
+                point(s)
+              </li>
+            </>
+          ) : (
+            <>
+              <li>Likes (publication) : 0 point(s)</li>
+            </>
+          )}
+
           <li>PWI : _ _ _</li>
           <li>Messages : _ _ _</li>
           <li>MWI : _ _ _</li>
