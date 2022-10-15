@@ -10,7 +10,7 @@ export default function PartnerNavigation() {
           </NavLink>
         </div>
         <div className="right-navigation">
-          <NavLink className="navlink" to="/auth">
+          <NavLink className="navlink" to="/partner">
             <li>Connexion</li>
           </NavLink>
           <NavLink className="navlink" to="/menu">
