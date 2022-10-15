@@ -45,7 +45,7 @@ export default function PartnerFooter() {
           <li>Valeur des Points : _ _ _</li>
         </div>
         <div className="partner-money">
-          <p>Gains :{getoldgaintlife}</p>
+          <p>Gains : {getoldgaintlife} €</p>
         </div>
       </div>
       <div className="request-money">
