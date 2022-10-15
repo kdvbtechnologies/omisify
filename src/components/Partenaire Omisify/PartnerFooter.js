@@ -4,12 +4,23 @@ import { NavLink } from "react-router-dom";
 
 export default function PartnerFooter() {
   const userId = localStorage.getItem("https://omisify.com/userId");
+  const getoldgaintlife = localStorage.getItem(
+    "https://omisify.com/getoldgaintlife"
+  );
 
   useEffect(() => {
     async function get() {
       axios
         .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
-        .then((res) => console.log(res.data))
+        .then((res) => {
+          const getoldgaintlife = res.data.gaintlife;
+          if (getoldgaintlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldgaintlife",
+              getoldgaintlife
+            );
+          }
+        })
         .catch((err) => console.log(err));
     }
     get();
@@ -34,7 +45,7 @@ export default function PartnerFooter() {
           <li>Valeur des Points : _ _ _</li>
         </div>
         <div className="partner-money">
-          <p>Gains : _ _ _</p>
+          <p>Gains :{getoldgaintlife}</p>
         </div>
       </div>
       <div className="request-money">
