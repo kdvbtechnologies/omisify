@@ -60,6 +60,9 @@ import AfterLogin from "./components/AfterLogin";
 import AfterLoginSuccess from "./components/AfterLoginSuccess";
 import AfterSignup from "./components/AfterSignup";
 import NavMenu from "./components/NavMenu";
+import SecureComment from "./components/September/SecureComment";
+import SecureLike from "./components/September/SecureLike";
+import SecureMessage from "./components/September/SecureMessage";
 
 export default function App() {
   return (
@@ -129,6 +132,9 @@ export default function App() {
         <Route path="/after-signup" element={<AfterSignup />} />
         <Route path="/partner" element={<AfterLoginSuccess />} />
         <Route path="/menu" element={<NavMenu />} />
+        <Route path="/secure-comment" element={<SecureComment />} />
+        <Route path="/secure-like" element={<SecureLike />} />
+        <Route path="/secure-message" element={<SecureMessage />} />
       </Routes>
     </BrowserRouter>
   );
