@@ -142,7 +142,7 @@ export default function UpdateSeptember() {
             name="date"
           />
 
-          <p>Entrer l'heure actuelle'</p>
+          <p>Entrer l'heure actuelle</p>
           <input
             type="text"
             placeholder="Heure"
