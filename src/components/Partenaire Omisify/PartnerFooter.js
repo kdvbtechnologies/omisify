@@ -1,6 +1,20 @@
+import axios from "axios";
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function PartnerFooter() {
+  const userId = localStorage.getItem("https://omisify.com/userId");
+
+  useEffect(() => {
+    async function get() {
+      axios
+        .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
+        .then((res) => console.log(res.data))
+        .catch((err) => console.log(err));
+    }
+    get();
+  });
+
   return (
     <>
       <div>
