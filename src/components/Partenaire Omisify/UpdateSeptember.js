@@ -13,8 +13,6 @@ export default function UpdateSeptember() {
   const [time, setTime] = useState("");
   const [api, setApi] = useState([]);
 
-  console.log(api);
-
   useEffect(() => {
     async function get() {
       await axios
@@ -36,12 +34,12 @@ export default function UpdateSeptember() {
   const gaincomment = parseInt(comment) * 0.001;
 
   // point
-  const getoldpointtcommentsept2022 = 10;
-  const getoldpointtcomment2022 = 10;
-  const getoldpointtcommentlife = 10;
-  const getoldpointtlifesept2022 = 10;
-  const getoldpointtlife2022 = 10;
-  const getoldpointtlife = 10;
+  const getoldpointtcommentsept2022 = `${api.pointtcommentsept2022}`;
+  const getoldpointtcomment2022 = `${api.pointtcomment2022}`;
+  const getoldpointtcommentlife = `${api.pointtcommentlife}`;
+  const getoldpointtlifesept2022 = `${api.pointtlifesept2022}`;
+  const getoldpointtlife2022 = `${api.pointtlife2022}`;
+  const getoldpointtlife = `${api.pointtlife}`;
 
   const pointtcommentsept2022 =
     parseInt(getoldpointtcommentsept2022) + parseInt(pointcomment);
@@ -56,12 +54,12 @@ export default function UpdateSeptember() {
   const pointtlife = parseInt(getoldpointtlife) + parseInt(pointcomment);
 
   // gain
-  const getoldgaintcommentsept2022 = 10;
-  const getoldgaintcomment2022 = 10;
-  const getoldgaintcommentlife = 10;
-  const getoldgaintlifesept2022 = 10;
-  const getoldgaintlife2022 = 10;
-  const getoldgaintlife = 10;
+  const getoldgaintcommentsept2022 = `${api.gaintcommentsept2022}`;
+  const getoldgaintcomment2022 = `${api.gaintcomment2022}`;
+  const getoldgaintcommentlife = `${api.gaintcommentlife}`;
+  const getoldgaintlifesept2022 = `${api.gaintlifesept2022}`;
+  const getoldgaintlife2022 = `${api.gaintlife2022}`;
+  const getoldgaintlife = `${api.gaintlife}`;
 
   const gaintcommentsept2022 =
     parseInt(getoldgaintcommentsept2022) + parseInt(gaincomment);
@@ -75,9 +73,9 @@ export default function UpdateSeptember() {
   const gaintlife = parseInt(getoldgaintlife) + parseInt(gaincomment);
 
   // number
-  const getoldnumbertcommentsept2022 = 10;
-  const getoldnumbertcomment2022 = 10;
-  const getoldnumbertcommentlife = 10;
+  const getoldnumbertcommentsept2022 = `${api.numbertcommentsept2022}`;
+  const getoldnumbertcomment2022 = `${api.numbertcomment2022}`;
+  const getoldnumbertcommentlife = `${api.numbertcommentlife}`;
 
   const numbertcommentsept2022 =
     parseInt(getoldnumbertcommentsept2022) + parseInt(comment);
