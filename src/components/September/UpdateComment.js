@@ -296,12 +296,14 @@ export default function UpdateComment() {
         <>
           <div className="update-comment">
             <p>Mois de : Septembre 2022</p>
-            <h1>Commentaire</h1>
+            <div className="title">
+              <p>Commentaire</p>
+            </div>
             <div className="a">
-              <p>Entrer le nombre des commentaire(s)</p>
+              <p>Entrer le nombre de commentaire(s)</p>
               <input
                 type="text"
-                placeholder="Nombre des commentaire(s)"
+                placeholder="Nombre de commentaire(s)"
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
                 name="comment"

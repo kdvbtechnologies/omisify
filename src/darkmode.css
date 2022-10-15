@@ -795,9 +795,11 @@ display: flex;
   padding-bottom: 30px;
 }
 
-.update-comment h1 {
+.update-comment .title {
   color: blue;
   padding: 20px 0px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .update-comment .a {
