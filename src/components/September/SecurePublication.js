@@ -1,8 +1,8 @@
 import Auth from "../Auth";
-import UpdateLike from "./UpdateLike";
+import UpdatePublication from "./UpdatePublication";
 
-export default function SecureLike() {
+export default function SecurePublication() {
   const userId = localStorage.getItem("https://omisify.com/userId");
   const shortname = localStorage.getItem("https://omisify.com/shortname");
-  return <>{userId && shortname ? <UpdateLike /> : <Auth />}</>;
+  return <>{userId && shortname ? <UpdatePublication /> : <Auth />}</>;
 }

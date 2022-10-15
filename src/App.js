@@ -61,8 +61,15 @@ import AfterLoginSuccess from "./components/AfterLoginSuccess";
 import AfterSignup from "./components/AfterSignup";
 import NavMenu from "./components/NavMenu";
 import SecureComment from "./components/September/SecureComment";
-import SecureLike from "./components/September/SecureLike";
+import SecureLike from "./components/September/SecureLikePublication";
 import SecureMessage from "./components/September/SecureMessage";
+import SecureLikePublication from "./components/September/SecureLikePublication";
+import SecureLikeComment from "./components/September/SecureLikeComment";
+import SecureM10k from "./components/September/SecureM10k";
+import SecureMWI from "./components/September/SecureMWI";
+import SecurePublication from "./components/September/SecurePublication";
+import SecureEmail from "./components/September/SecureEmail";
+import SecurePWI from "./components/September/SecurePWI";
 
 export default function App() {
   return (
@@ -134,7 +141,17 @@ export default function App() {
         <Route path="/menu" element={<NavMenu />} />
         <Route path="/secure-comment" element={<SecureComment />} />
         <Route path="/secure-like" element={<SecureLike />} />
+        <Route path="/secure-email" element={<SecureEmail />} />
+        <Route
+          path="/secure-like-publication"
+          element={<SecureLikePublication />}
+        />
+        <Route path="/secure-like-comment" element={<SecureLikeComment />} />
+        <Route path="/secure-m10k" element={<SecureM10k />} />
         <Route path="/secure-message" element={<SecureMessage />} />
+        <Route path="/secure-mwi" element={<SecureMWI />} />
+        <Route path="/secure-publication" element={<SecurePublication />} />
+        <Route path="/secure-pwi" element={<SecurePWI />} />
       </Routes>
     </BrowserRouter>
   );
