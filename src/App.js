@@ -70,7 +70,7 @@ import SecureMWI from "./components/September/SecureMWI";
 import SecurePublication from "./components/September/SecurePublication";
 import SecureEmail from "./components/September/SecureEmail";
 import SecurePWI from "./components/September/SecurePWI";
-import AddSeptember from "./components/Partenaire Omisify/AddSeptember";
+import UpdateComment from "./components/September/UpdateComment";
 
 export default function App() {
   return (
@@ -153,7 +153,7 @@ export default function App() {
         <Route path="/secure-mwi" element={<SecureMWI />} />
         <Route path="/secure-publication" element={<SecurePublication />} />
         <Route path="/secure-pwi" element={<SecurePWI />} />
-        <Route path="/add-sept" element={<AddSeptember />} />
+        <Route path="/update-comment" element={<UpdateComment />} />
       </Routes>
     </BrowserRouter>
   );

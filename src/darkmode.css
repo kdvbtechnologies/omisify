@@ -784,6 +784,45 @@ display: flex;
   font-size: 14px;
 }
 
+/* src - components - september - update comment */
+
+.update-comment {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.update-comment h1 {
+  color: blue;
+  padding: 20px 0px;
+}
+
+.update-comment .a {
+  margin: 20px 0px;
+}
+
+.update-comment input[type=text] {
+  background-color: transparent;
+  padding: 20px 30px;
+  border: 1px solid black;
+}
+
+.update-comment button {
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: blue;
+  background-color: transparent;
+  border: 1px solid blue;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+
+
+
 @media screen and (max-width: 760px) {
   .navigation .right-navigation .navlink {
     text-decoration: none;
