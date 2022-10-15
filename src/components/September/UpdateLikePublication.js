@@ -164,8 +164,8 @@ export default function UpdateLikePublication() {
   // likepublication
   // likepublication
   // likepublication
-  const pointlikepublication = parseInt(likepublication) * 1;
-  const gainlikepublication = parseInt(likepublication) * 5;
+  const pointlikepublication = parseInt(likepublication) * 0.01;
+  const gainlikepublication = parseInt(likepublication) * 0.00001;
   console.log(gainlikepublication);
 
   // point

@@ -158,8 +158,8 @@ export default function UpdateLikeComment() {
   // likecomment
   // likecomment
   // likecomment
-  const pointlikecomment = parseInt(likecomment) * 1;
-  const gainlikecomment = parseInt(likecomment) * 5;
+  const pointlikecomment = parseInt(likecomment) * 0.01;
+  const gainlikecomment = parseInt(likecomment) * 0.00001;
   console.log(gainlikecomment);
 
   // point

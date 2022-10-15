@@ -156,7 +156,7 @@ export default function UpdateEmail() {
   // email
   // email
   const pointemail = parseInt(email) * 1;
-  const gainemail = parseInt(email) * 5;
+  const gainemail = parseInt(email) * 0.001;
   console.log(gainemail);
 
   // point

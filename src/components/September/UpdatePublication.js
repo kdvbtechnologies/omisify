@@ -159,7 +159,7 @@ export default function UpdatePublication() {
   // publication
   // publication
   const pointpublication = parseInt(publication) * 1;
-  const gainpublication = parseInt(publication) * 5;
+  const gainpublication = parseInt(publication) * 0.001;
   console.log(gainpublication);
 
   // point

@@ -155,8 +155,8 @@ export default function UpdateMessage() {
   // message
   // message
   // message
-  const pointmessage = parseInt(message) * 1;
-  const gainmessage = parseInt(message) * 5;
+  const pointmessage = parseInt(message) * 0.1;
+  const gainmessage = parseInt(message) * 0.0001;
   console.log(gainmessage);
 
   // point

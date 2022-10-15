@@ -155,8 +155,8 @@ export default function UpdatePWI() {
   // pwi
   // pwi
   // pwi
-  const pointpwi = parseInt(pwi) * 1;
-  const gainpwi = parseInt(pwi) * 5;
+  const pointpwi = parseInt(pwi) * 5;
+  const gainpwi = parseInt(pwi) * 0.005;
   console.log(gainpwi);
 
   // point

@@ -155,8 +155,8 @@ export default function UpdateMWI() {
   // mwi
   // mwi
   // mwi
-  const pointmwi = parseInt(mwi) * 1;
-  const gainmwi = parseInt(mwi) * 5;
+  const pointmwi = parseInt(mwi) * 5;
+  const gainmwi = parseInt(mwi) * 0.005;
   console.log(gainmwi);
 
   // point

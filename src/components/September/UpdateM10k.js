@@ -156,7 +156,7 @@ export default function UpdateM10k() {
   // m10k
   // m10k
   const pointm10k = parseInt(m10k) * 1;
-  const gainm10k = parseInt(m10k) * 5;
+  const gainm10k = parseInt(m10k) * 0.001;
   console.log(gainm10k);
 
   // point
