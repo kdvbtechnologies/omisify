@@ -11,13 +11,138 @@ export default function UpdateSeptember() {
   const [comment, setComment] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [api, setApi] = useState([]);
+  //const [api, setApi] = useState([]);
 
   useEffect(() => {
     async function get() {
       await axios
         .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
-        .then((res) => setApi(res.data))
+        .then((res) => {
+          console.log(res);
+
+          // point
+          const getoldpointtcommentsept2022 = res.data.pointtcommentsept2022;
+          if (getoldpointtcommentsept2022) {
+            localStorage.setItem(
+              "https://omisify.com/getoldpointtcommentsept2022",
+              getoldpointtcommentsept2022
+            );
+          }
+
+          const getoldpointtcomment2022 = res.data.pointtcomment2022;
+          if (getoldpointtcomment2022) {
+            localStorage.setItem(
+              "https://omisify.com/getoldpointtcomment2022",
+              getoldpointtcomment2022
+            );
+          }
+
+          const getoldpointtcommentlife = res.data.pointtcommentlife;
+          if (getoldpointtcommentlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldpointtcommentlife",
+              getoldpointtcommentlife
+            );
+          }
+
+          const getoldpointtlifesept2022 = res.data.pointtlifesept2022;
+          if (getoldpointtlifesept2022) {
+            localStorage.setItem(
+              "https://omisify.com/getoldpointtlifesept2022",
+              getoldpointtlifesept2022
+            );
+          }
+
+          const getoldpointtlife2022 = res.data.pointtlife2022;
+          if (getoldpointtlife2022) {
+            localStorage.setItem(
+              "https://omisify.com/getoldpointtlife2022",
+              getoldpointtlife2022
+            );
+          }
+
+          const getoldpointtlife = res.data.pointtlife;
+          if (getoldpointtlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldpointtlife",
+              getoldpointtlife
+            );
+          }
+
+          // gain
+          const getoldgaintcommentsept2022 = res.data.gaintcommentsept2022;
+          if (getoldgaintcommentsept2022) {
+            localStorage.setItem(
+              "https://omisify.com/getoldgaintcommentsept2022",
+              getoldgaintcommentsept2022
+            );
+          }
+
+          const getoldgaintcomment2022 = res.data.gaintcomment2022;
+          if (getoldgaintcomment2022) {
+            localStorage.setItem(
+              "https://omisify.com/getoldgaintcomment2022",
+              getoldgaintcomment2022
+            );
+          }
+
+          const getoldgaintcommentlife = res.data.gaintcommentlife;
+          if (getoldgaintcommentlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldgaintcommentlife",
+              getoldgaintcommentlife
+            );
+          }
+
+          const getoldgaintlifesept2022 = res.data.gaintlifesept2022;
+          if (getoldgaintlifesept2022) {
+            localStorage.setItem(
+              "https://omisify.com/getoldgaintlifesept2022",
+              getoldgaintlifesept2022
+            );
+          }
+
+          const getoldgaintlife2022 = res.data.gaintlife2022;
+          if (getoldgaintlife2022) {
+            localStorage.setItem(
+              "https://omisify.com/getoldgaintlife2022",
+              getoldgaintlife2022
+            );
+          }
+
+          const getoldgaintlife = res.data.gaintlife;
+          if (getoldgaintlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldgaintlife",
+              getoldgaintlife
+            );
+          }
+
+          // number
+          const getoldnumbertcommentsept2022 = res.data.numbertcommentsept2022;
+          if (getoldnumbertcommentsept2022) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertcommentsept2022",
+              getoldnumbertcommentsept2022
+            );
+          }
+
+          const getoldnumbertcomment2022 = res.data.numbertcomment2022;
+          if (getoldnumbertcomment2022) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertcomment2022",
+              getoldnumbertcomment2022
+            );
+          }
+
+          const getoldnumbertcommentlife = res.data.numbertcommentlife;
+          if (getoldnumbertcommentlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertcommentlife",
+              getoldnumbertcommentlife
+            );
+          }
+        })
         .catch((err) => console.log(err));
       setIsLoading(false);
     }
@@ -35,12 +160,25 @@ export default function UpdateSeptember() {
   console.log(gaincomment);
 
   // point
-  const getoldpointtcommentsept2022 = `${api.pointtcommentsept2022}`;
-  const getoldpointtcomment2022 = `${api.pointtcomment2022}`;
-  const getoldpointtcommentlife = `${api.pointtcommentlife}`;
-  const getoldpointtlifesept2022 = `${api.pointtlifesept2022}`;
-  const getoldpointtlife2022 = `${api.pointtlife2022}`;
-  const getoldpointtlife = `${api.pointtlife}`;
+  const getoldpointtcommentsept2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtcommentsept2022"
+  );
+
+  const getoldpointtcomment2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtcomment2022"
+  );
+  const getoldpointtcommentlife = localStorage.getItem(
+    "https://omisify.com/getoldpointtcommentlife"
+  );
+  const getoldpointtlifesept2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtlifesept2022"
+  );
+  const getoldpointtlife2022 = localStorage.getItem(
+    "https://omisify.com/ getoldpointtlife2022"
+  );
+  const getoldpointtlife = localStorage.getItem(
+    "https://omisify.com/getoldpointtlife"
+  );
 
   const pointtcommentsept2022 =
     parseInt(getoldpointtcommentsept2022) + parseInt(pointcomment);
@@ -55,12 +193,24 @@ export default function UpdateSeptember() {
   const pointtlife = parseInt(getoldpointtlife) + parseInt(pointcomment);
 
   // gain
-  const getoldgaintcommentsept2022 = `${api.gaintcommentsept2022}`;
-  const getoldgaintcomment2022 = `${api.gaintcomment2022}`;
-  const getoldgaintcommentlife = `${api.gaintcommentlife}`;
-  const getoldgaintlifesept2022 = `${api.gaintlifesept2022}`;
-  const getoldgaintlife2022 = `${api.gaintlife2022}`;
-  const getoldgaintlife = `${api.gaintlife}`;
+  const getoldgaintcommentsept2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintcommentsept2022"
+  );
+  const getoldgaintcomment2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintcomment2022"
+  );
+  const getoldgaintcommentlife = localStorage.getItem(
+    "https://omisify.com/getoldgaintcommentlife"
+  );
+  const getoldgaintlifesept2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintlifesept2022"
+  );
+  const getoldgaintlife2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintlife2022"
+  );
+  const getoldgaintlife = localStorage.getItem(
+    "https://omisify.com/getoldgaintlife"
+  );
 
   const gaintcommentsept2022 =
     parseInt(getoldgaintcommentsept2022) + parseInt(gaincomment);
@@ -74,9 +224,15 @@ export default function UpdateSeptember() {
   const gaintlife = parseInt(getoldgaintlife) + parseInt(gaincomment);
 
   // number
-  const getoldnumbertcommentsept2022 = `${api.numbertcommentsept2022}`;
-  const getoldnumbertcomment2022 = `${api.numbertcomment2022}`;
-  const getoldnumbertcommentlife = `${api.numbertcommentlife}`;
+  const getoldnumbertcommentsept2022 = localStorage.getItem(
+    "https://omisify.com/getoldnumbertcommentsept2022"
+  );
+  const getoldnumbertcomment2022 = localStorage.getItem(
+    "https://omisify.com/getoldnumbertcomment2022"
+  );
+  const getoldnumbertcommentlife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertcommentlife"
+  );
 
   const numbertcommentsept2022 =
     parseInt(getoldnumbertcommentsept2022) + parseInt(comment);
