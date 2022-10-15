@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import PartnerNavigation from "../Partner-Navigation";
+import PartnerNav from "./PartnerNav";
 
 export default function UpdateSeptember() {
   const family = {
@@ -9,7 +9,7 @@ export default function UpdateSeptember() {
 
   return (
     <div style={family}>
-      <PartnerNavigation />
+      <PartnerNav />
       <div className="update">
         <div className="update-title">
           <p>Actualisez vos points</p>
