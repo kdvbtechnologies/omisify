@@ -6,8 +6,23 @@ import { useNavigate } from "react-router-dom";
 export default function AddSeptember() {
   const navigate = useNavigate();
   const [isLoading, setLoading] = useState(true);
+  const pointtcommentsept2022 = 0;
+  const pointtcomment2022 = 0;
+  const pointtcommentlife = 0;
+  const pointtlifesept2022 = 0;
+  const pointtlife2022 = 0;
+  const pointtlife = 0;
 
-  const total = 0;
+  const gaintcommentsept2022 = 0;
+  const gaintcomment2022 = 0;
+  const gaintcommentlife = 0;
+  const gaintlifesept2022 = 0;
+  const gaintlife2022 = 0;
+  const gaintlife = 0;
+
+  const numbertcommentsept2022 = 0;
+  const numbertcomment2022 = 0;
+  const numbertcommentlife = 0;
 
   const userId = localStorage.getItem("https://omisify.com/userId");
 
@@ -17,9 +32,12 @@ export default function AddSeptember() {
         .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
         .then((res) => {
           console.log(res);
-          const idtsept = res.data.idtsept2022;
-          if (idtsept) {
-            localStorage.setItem("https://omisify.com/idtsept", idtsept);
+          const tpointthismonth = res.data.pointtlifesept2022;
+          if (tpointthismonth) {
+            localStorage.setItem(
+              "https://omisify.com/tpointthismonth",
+              tpointthismonth
+            );
             window.location = "/update";
           }
         })
@@ -29,24 +47,45 @@ export default function AddSeptember() {
     get();
   }, [userId]);
 
-  // le bouton s'affichera s'il n'y a pas idtsept dans le localstorage
-  const idtsept = localStorage.getItem("https://omisify.com/idtsept");
+  // le bouton s'affichera s'il n'y a pas tpointthismonth dans le localstorage
+  const tpointthismonth = localStorage.getItem(
+    "https://omisify.com/tpointthismonth"
+  );
 
   async function Next() {
     // first step : post
     await axios({
-      method: "post",
-      url: "https://famous-peplum-dove.cyclic.app/api/point/add/tseptember",
+      method: "put",
+      url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
       data: {
-        userId,
-        total,
+        pointtcommentsept2022,
+        pointtcomment2022,
+        pointtcommentlife,
+        pointtlifesept2022,
+        pointtlife2022,
+        pointtlife,
+
+        gaintcommentsept2022,
+        gaintcomment2022,
+        gaintcommentlife,
+        gaintlifesept2022,
+        gaintlife2022,
+        gaintlife,
+
+        numbertcommentsept2022,
+        numbertcomment2022,
+        numbertcommentlife,
       },
     })
       .then((res) => {
         console.log(res);
-        const idtsept = res.data.message;
-        localStorage.setItem("https://omisify.com/idtsept", idtsept);
+        const tpointthismonth = res.data.pointtlifesept2022;
+        localStorage.setItem(
+          "https://omisify.com/tpointthismonth",
+          tpointthismonth
+        );
 
+        /*
         // second step : put
         const idtsept2022 = localStorage.getItem("https://omisify.com/idtsept");
         axios({
@@ -57,7 +96,7 @@ export default function AddSeptember() {
           },
         })
           .then((res) => console.log(res))
-          .catch((err) => console.log(err));
+          .catch((err) => console.log(err));*/
         window.location = "/update";
       })
       .catch((err) => console.log(err));
@@ -74,7 +113,7 @@ export default function AddSeptember() {
       {isLoading ? (
         <Loader />
       ) : (
-        <>{!idtsept && <button onClick={Next}>Continuer</button>}</>
+        <>{!tpointthismonth && <button onClick={Next}>Continuer</button>}</>
       )}
     </>
   );
