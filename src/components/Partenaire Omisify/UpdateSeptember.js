@@ -1,5 +1,4 @@
-//import { useEffect, useState } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "./Loader";
 import { useNavigate } from "react-router-dom";
@@ -12,23 +11,20 @@ export default function UpdateSeptember() {
   const [comment, setComment] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  //const [api, setApi] = useState([]);
+  const [api, setApi] = useState([]);
 
-  console.log(setIsLoading);
-  /*
+  console.log(api);
+
   useEffect(() => {
     async function get() {
       await axios
-        .get(
-          `https://famous-peplum-dove.cyclic.app/api/point/all/tseptember/${idtsept}`
-        )
+        .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
         .then((res) => setApi(res.data))
         .catch((err) => console.log(err));
       setIsLoading(false);
     }
     get();
-  }, [idtsept]);
-  */
+  }, [userId]);
 
   // const ancien = `${tsept.total}`;
   // const total = parseInt(ancien) + parseInt(cSeptember);
