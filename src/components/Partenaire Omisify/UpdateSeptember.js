@@ -19,6 +19,7 @@ export default function UpdateSeptember() {
         .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
         .then((res) => {
           console.log(res);
+          console.log(res.data.pointtlife2022);
 
           // point
           const getoldpointtcommentsept2022 = res.data.pointtcommentsept2022;
