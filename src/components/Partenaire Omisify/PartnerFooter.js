@@ -3,10 +3,14 @@ import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function PartnerFooter() {
+  const userId = localStorage.getItem("https://omisify.com/userId");
+  const getoldnumbertlikecommentlife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertlikecommentlife"
+  );
+
   const getoldnumbertcommentlife = localStorage.getItem(
     "https://omisify.com/getoldnumbertcommentlife"
   );
-  const userId = localStorage.getItem("https://omisify.com/userId");
   const getoldgaintlife = localStorage.getItem(
     "https://omisify.com/getoldgaintlife"
   );
@@ -31,6 +35,14 @@ export default function PartnerFooter() {
               getoldgaintlife
             );
           }
+
+          const getoldnumbertlikecommentlife = res.data.numbertlikecommentlife;
+          if (getoldnumbertlikecommentlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertlikecommentlife",
+              getoldnumbertlikecommentlife
+            );
+          }
         })
         .catch((err) => console.log(err));
     }
@@ -52,6 +64,16 @@ export default function PartnerFooter() {
           ) : (
             <>
               <li>Commentaires : 0 point(s)</li>
+            </>
+          )}
+
+          {getoldnumbertlikecommentlife ? (
+            <>
+              <li>Likes (commentaire) : {getoldnumbertlikecommentlife}</li>
+            </>
+          ) : (
+            <>
+              <li>Likes (commentaire) : 0 point(s)</li>
             </>
           )}
 
