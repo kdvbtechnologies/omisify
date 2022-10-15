@@ -37,7 +37,7 @@ export default function PartnerFooter() {
     get();
   });
 
-  /* {getoldnumbertcommentlife ? (<></>) : (<></>)} */
+  /* {aa ? (<></>) : (<></>)} */
   return (
     <>
       <div>
@@ -51,7 +51,7 @@ export default function PartnerFooter() {
             </>
           ) : (
             <>
-              <li>Commentaires : _ _ _</li>
+              <li>Commentaires : 0 point(s)</li>
             </>
           )}
 
@@ -66,8 +66,17 @@ export default function PartnerFooter() {
           <li>Total des Points : _ _ _</li>
           <li>Valeur des Points : _ _ _</li>
         </div>
+
         <div className="partner-money">
-          <p>Gains : {getoldgaintlife}€</p>
+          {getoldgaintlife ? (
+            <>
+              <p>Gains : {getoldgaintlife}€</p>
+            </>
+          ) : (
+            <>
+              <p>Gains : 0€</p>
+            </>
+          )}
         </div>
       </div>
       <div className="request-money">
