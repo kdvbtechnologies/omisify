@@ -8,7 +8,7 @@ export default function UpdateLikeComment() {
   const userId = localStorage.getItem("https://omisify.com/userId");
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(false);
-  const [comment, setComment] = useState("");
+  const [likecomment, setLikeComment] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
 
@@ -21,27 +21,28 @@ export default function UpdateLikeComment() {
           console.log(res.data.pointtlife2022);
 
           // point
-          const getoldpointtcommentsept2022 = res.data.pointtcommentsept2022;
-          if (getoldpointtcommentsept2022) {
+          const getoldpointtlikecommentsept2022 =
+            res.data.pointtlikecommentsept2022;
+          if (getoldpointtlikecommentsept2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtcommentsept2022",
-              getoldpointtcommentsept2022
+              "https://omisify.com/getoldpointtlikecommentsept2022",
+              getoldpointtlikecommentsept2022
             );
           }
 
-          const getoldpointtcomment2022 = res.data.pointtcomment2022;
-          if (getoldpointtcomment2022) {
+          const getoldpointtlikecomment2022 = res.data.pointtlikecomment2022;
+          if (getoldpointtlikecomment2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtcomment2022",
-              getoldpointtcomment2022
+              "https://omisify.com/getoldpointtlikecomment2022",
+              getoldpointtlikecomment2022
             );
           }
 
-          const getoldpointtcommentlife = res.data.pointtcommentlife;
-          if (getoldpointtcommentlife) {
+          const getoldpointtlikecommentlife = res.data.pointtlikecommentlife;
+          if (getoldpointtlikecommentlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtcommentlife",
-              getoldpointtcommentlife
+              "https://omisify.com/getoldpointtlikecommentlife",
+              getoldpointtlikecommentlife
             );
           }
 
@@ -70,27 +71,28 @@ export default function UpdateLikeComment() {
           }
 
           // gain
-          const getoldgaintcommentsept2022 = res.data.gaintcommentsept2022;
-          if (getoldgaintcommentsept2022) {
+          const getoldgaintlikecommentsept2022 =
+            res.data.gaintlikecommentsept2022;
+          if (getoldgaintlikecommentsept2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintcommentsept2022",
-              getoldgaintcommentsept2022
+              "https://omisify.com/getoldgaintlikecommentsept2022",
+              getoldgaintlikecommentsept2022
             );
           }
 
-          const getoldgaintcomment2022 = res.data.gaintcomment2022;
-          if (getoldgaintcomment2022) {
+          const getoldgaintlikecomment2022 = res.data.gaintlikecomment2022;
+          if (getoldgaintlikecomment2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintcomment2022",
-              getoldgaintcomment2022
+              "https://omisify.com/getoldgaintlikecomment2022",
+              getoldgaintlikecomment2022
             );
           }
 
-          const getoldgaintcommentlife = res.data.gaintcommentlife;
-          if (getoldgaintcommentlife) {
+          const getoldgaintlikecommentlife = res.data.gaintlikecommentlife;
+          if (getoldgaintlikecommentlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintcommentlife",
-              getoldgaintcommentlife
+              "https://omisify.com/getoldgaintlikecommentlife",
+              getoldgaintlikecommentlife
             );
           }
 
@@ -119,27 +121,28 @@ export default function UpdateLikeComment() {
           }
 
           // number
-          const getoldnumbertcommentsept2022 = res.data.numbertcommentsept2022;
-          if (getoldnumbertcommentsept2022) {
+          const getoldnumbertlikecommentsept2022 =
+            res.data.numbertlikecommentsept2022;
+          if (getoldnumbertlikecommentsept2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertcommentsept2022",
-              getoldnumbertcommentsept2022
+              "https://omisify.com/getoldnumbertlikecommentsept2022",
+              getoldnumbertlikecommentsept2022
             );
           }
 
-          const getoldnumbertcomment2022 = res.data.numbertcomment2022;
-          if (getoldnumbertcomment2022) {
+          const getoldnumbertlikecomment2022 = res.data.numbertlikecomment2022;
+          if (getoldnumbertlikecomment2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertcomment2022",
-              getoldnumbertcomment2022
+              "https://omisify.com/getoldnumbertlikecomment2022",
+              getoldnumbertlikecomment2022
             );
           }
 
-          const getoldnumbertcommentlife = res.data.numbertcommentlife;
-          if (getoldnumbertcommentlife) {
+          const getoldnumbertlikecommentlife = res.data.numbertlikecommentlife;
+          if (getoldnumbertlikecommentlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertcommentlife",
-              getoldnumbertcommentlife
+              "https://omisify.com/getoldnumbertlikecommentlife",
+              getoldnumbertlikecommentlife
             );
           }
         })
@@ -152,23 +155,23 @@ export default function UpdateLikeComment() {
   // const ancien = `${tsept.total}`;
   // const total = parseInt(ancien) + parseInt(cSeptember);
 
-  // comment
-  // comment
-  // comment
-  const pointcomment = parseInt(comment) * 1;
-  const gaincomment = parseInt(comment) * 5;
-  console.log(gaincomment);
+  // likecomment
+  // likecomment
+  // likecomment
+  const pointlikecomment = parseInt(likecomment) * 1;
+  const gainlikecomment = parseInt(likecomment) * 5;
+  console.log(gainlikecomment);
 
   // point
-  const getoldpointtcommentsept2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtcommentsept2022"
+  const getoldpointtlikecommentsept2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtlikecommentsept2022"
   );
 
-  const getoldpointtcomment2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtcomment2022"
+  const getoldpointtlikecomment2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtlikecomment2022"
   );
-  const getoldpointtcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldpointtcommentlife"
+  const getoldpointtlikecommentlife = localStorage.getItem(
+    "https://omisify.com/getoldpointtlikecommentlife"
   );
   const getoldpointtlifesept2022 = localStorage.getItem(
     "https://omisify.com/getoldpointtlifesept2022"
@@ -180,27 +183,27 @@ export default function UpdateLikeComment() {
     "https://omisify.com/getoldpointtlife"
   );
 
-  const pointtcommentsept2022 =
-    parseInt(getoldpointtcommentsept2022) + parseInt(pointcomment);
-  const pointtcomment2022 =
-    parseInt(getoldpointtcomment2022) + parseInt(pointcomment);
-  const pointtcommentlife =
-    parseInt(getoldpointtcommentlife) + parseInt(pointcomment);
+  const pointtlikecommentsept2022 =
+    parseInt(getoldpointtlikecommentsept2022) + parseInt(pointlikecomment);
+  const pointtlikecomment2022 =
+    parseInt(getoldpointtlikecomment2022) + parseInt(pointlikecomment);
+  const pointtlikecommentlife =
+    parseInt(getoldpointtlikecommentlife) + parseInt(pointlikecomment);
   const pointtlifesept2022 =
-    parseInt(getoldpointtlifesept2022) + parseInt(pointcomment);
+    parseInt(getoldpointtlifesept2022) + parseInt(pointlikecomment);
   const pointtlife2022 =
-    parseInt(getoldpointtlife2022) + parseInt(pointcomment);
-  const pointtlife = parseInt(getoldpointtlife) + parseInt(pointcomment);
+    parseInt(getoldpointtlife2022) + parseInt(pointlikecomment);
+  const pointtlife = parseInt(getoldpointtlife) + parseInt(pointlikecomment);
 
   // gain
-  const getoldgaintcommentsept2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintcommentsept2022"
+  const getoldgaintlikecommentsept2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintlikecommentsept2022"
   );
-  const getoldgaintcomment2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintcomment2022"
+  const getoldgaintlikecomment2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintlikecomment2022"
   );
-  const getoldgaintcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldgaintcommentlife"
+  const getoldgaintlikecommentlife = localStorage.getItem(
+    "https://omisify.com/getoldgaintlikecommentlife"
   );
   const getoldgaintlifesept2022 = localStorage.getItem(
     "https://omisify.com/getoldgaintlifesept2022"
@@ -212,34 +215,35 @@ export default function UpdateLikeComment() {
     "https://omisify.com/getoldgaintlife"
   );
 
-  const gaintcommentsept2022 =
-    parseInt(getoldgaintcommentsept2022) + parseInt(gaincomment);
-  const gaintcomment2022 =
-    parseInt(getoldgaintcomment2022) + parseInt(gaincomment);
-  const gaintcommentlife =
-    parseInt(getoldgaintcommentlife) + parseInt(gaincomment);
+  const gaintlikecommentsept2022 =
+    parseInt(getoldgaintlikecommentsept2022) + parseInt(gainlikecomment);
+  const gaintlikecomment2022 =
+    parseInt(getoldgaintlikecomment2022) + parseInt(gainlikecomment);
+  const gaintlikecommentlife =
+    parseInt(getoldgaintlikecommentlife) + parseInt(gainlikecomment);
   const gaintlifesept2022 =
-    parseInt(getoldgaintlifesept2022) + parseInt(gaincomment);
-  const gaintlife2022 = parseInt(getoldgaintlife2022) + parseInt(gaincomment);
-  const gaintlife = parseInt(getoldgaintlife) + parseInt(gaincomment);
+    parseInt(getoldgaintlifesept2022) + parseInt(gainlikecomment);
+  const gaintlife2022 =
+    parseInt(getoldgaintlife2022) + parseInt(gainlikecomment);
+  const gaintlife = parseInt(getoldgaintlife) + parseInt(gainlikecomment);
 
   // number
-  const getoldnumbertcommentsept2022 = localStorage.getItem(
-    "https://omisify.com/getoldnumbertcommentsept2022"
+  const getoldnumbertlikecommentsept2022 = localStorage.getItem(
+    "https://omisify.com/getoldnumbertlikecommentsept2022"
   );
-  const getoldnumbertcomment2022 = localStorage.getItem(
-    "https://omisify.com/getoldnumbertcomment2022"
+  const getoldnumbertlikecomment2022 = localStorage.getItem(
+    "https://omisify.com/getoldnumbertlikecomment2022"
   );
-  const getoldnumbertcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertcommentlife"
+  const getoldnumbertlikecommentlife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertlikecommentlife"
   );
 
-  const numbertcommentsept2022 =
-    parseInt(getoldnumbertcommentsept2022) + parseInt(comment);
-  const numbertcomment2022 =
-    parseInt(getoldnumbertcomment2022) + parseInt(comment);
-  const numbertcommentlife =
-    parseInt(getoldnumbertcommentlife) + parseInt(comment);
+  const numbertlikecommentsept2022 =
+    parseInt(getoldnumbertlikecommentsept2022) + parseInt(likecomment);
+  const numbertlikecomment2022 =
+    parseInt(getoldnumbertlikecomment2022) + parseInt(likecomment);
+  const numbertlikecommentlife =
+    parseInt(getoldnumbertlikecommentlife) + parseInt(likecomment);
 
   // update point, gain
   async function Validate(e) {
@@ -249,28 +253,28 @@ export default function UpdateLikeComment() {
       method: "put",
       url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
       data: {
-        // data comment
-        pointtcommentsept2022,
-        pointtcomment2022,
-        pointtcommentlife,
+        // data likecomment
+        pointtlikecommentsept2022,
+        pointtlikecomment2022,
+        pointtlikecommentlife,
         pointtlifesept2022,
         pointtlife2022,
         pointtlife,
 
-        gaintcommentsept2022,
-        gaintcomment2022,
-        gaintcommentlife,
+        gaintlikecommentsept2022,
+        gaintlikecomment2022,
+        gaintlikecommentlife,
         gaintlifesept2022,
         gaintlife2022,
         gaintlife,
 
-        numbertcommentsept2022,
-        numbertcomment2022,
-        numbertcommentlife,
+        numbertlikecommentsept2022,
+        numbertlikecomment2022,
+        numbertlikecommentlife,
 
         date,
         time,
-        commentrecent: comment,
+        likecommentrecent: likecomment,
       },
     })
       .then((res) => console.log(res))
@@ -289,14 +293,15 @@ export default function UpdateLikeComment() {
         <Loader />
       ) : (
         <>
-          <h1>Septembre</h1>
-          <p>Entrer le nombre des commentaires</p>
+          <h3>Septembre</h3>
+          <h1>Likes (commentaire)</h1>
+          <p>Entrer le nombre de like(s) (commentaire)</p>
           <input
             type="text"
-            placeholder="Nombre des commentaires"
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
-            name="pcomments"
+            placeholder="Nombre de like(s) (commentaire)"
+            value={likecomment}
+            onChange={(e) => setLikeComment(e.target.value)}
+            name="likecomment"
           />
 
           <p>Entrer la date d'aujourd'hui</p>

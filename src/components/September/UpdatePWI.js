@@ -8,7 +8,7 @@ export default function UpdatePWI() {
   const userId = localStorage.getItem("https://omisify.com/userId");
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(false);
-  const [comment, setComment] = useState("");
+  const [pwi, setPwi] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
 
@@ -21,27 +21,27 @@ export default function UpdatePWI() {
           console.log(res.data.pointtlife2022);
 
           // point
-          const getoldpointtcommentsept2022 = res.data.pointtcommentsept2022;
-          if (getoldpointtcommentsept2022) {
+          const getoldpointtpwisept2022 = res.data.pointtpwisept2022;
+          if (getoldpointtpwisept2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtcommentsept2022",
-              getoldpointtcommentsept2022
+              "https://omisify.com/getoldpointtpwisept2022",
+              getoldpointtpwisept2022
             );
           }
 
-          const getoldpointtcomment2022 = res.data.pointtcomment2022;
-          if (getoldpointtcomment2022) {
+          const getoldpointtpwi2022 = res.data.pointtpwi2022;
+          if (getoldpointtpwi2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtcomment2022",
-              getoldpointtcomment2022
+              "https://omisify.com/getoldpointtpwi2022",
+              getoldpointtpwi2022
             );
           }
 
-          const getoldpointtcommentlife = res.data.pointtcommentlife;
-          if (getoldpointtcommentlife) {
+          const getoldpointtpwilife = res.data.pointtpwilife;
+          if (getoldpointtpwilife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtcommentlife",
-              getoldpointtcommentlife
+              "https://omisify.com/getoldpointtpwilife",
+              getoldpointtpwilife
             );
           }
 
@@ -70,27 +70,27 @@ export default function UpdatePWI() {
           }
 
           // gain
-          const getoldgaintcommentsept2022 = res.data.gaintcommentsept2022;
-          if (getoldgaintcommentsept2022) {
+          const getoldgaintpwisept2022 = res.data.gaintpwisept2022;
+          if (getoldgaintpwisept2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintcommentsept2022",
-              getoldgaintcommentsept2022
+              "https://omisify.com/getoldgaintpwisept2022",
+              getoldgaintpwisept2022
             );
           }
 
-          const getoldgaintcomment2022 = res.data.gaintcomment2022;
-          if (getoldgaintcomment2022) {
+          const getoldgaintpwi2022 = res.data.gaintpwi2022;
+          if (getoldgaintpwi2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintcomment2022",
-              getoldgaintcomment2022
+              "https://omisify.com/getoldgaintpwi2022",
+              getoldgaintpwi2022
             );
           }
 
-          const getoldgaintcommentlife = res.data.gaintcommentlife;
-          if (getoldgaintcommentlife) {
+          const getoldgaintpwilife = res.data.gaintpwilife;
+          if (getoldgaintpwilife) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintcommentlife",
-              getoldgaintcommentlife
+              "https://omisify.com/getoldgaintpwilife",
+              getoldgaintpwilife
             );
           }
 
@@ -119,27 +119,27 @@ export default function UpdatePWI() {
           }
 
           // number
-          const getoldnumbertcommentsept2022 = res.data.numbertcommentsept2022;
-          if (getoldnumbertcommentsept2022) {
+          const getoldnumbertpwisept2022 = res.data.numbertpwisept2022;
+          if (getoldnumbertpwisept2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertcommentsept2022",
-              getoldnumbertcommentsept2022
+              "https://omisify.com/getoldnumbertpwisept2022",
+              getoldnumbertpwisept2022
             );
           }
 
-          const getoldnumbertcomment2022 = res.data.numbertcomment2022;
-          if (getoldnumbertcomment2022) {
+          const getoldnumbertpwi2022 = res.data.numbertpwi2022;
+          if (getoldnumbertpwi2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertcomment2022",
-              getoldnumbertcomment2022
+              "https://omisify.com/getoldnumbertpwi2022",
+              getoldnumbertpwi2022
             );
           }
 
-          const getoldnumbertcommentlife = res.data.numbertcommentlife;
-          if (getoldnumbertcommentlife) {
+          const getoldnumbertpwilife = res.data.numbertpwilife;
+          if (getoldnumbertpwilife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertcommentlife",
-              getoldnumbertcommentlife
+              "https://omisify.com/getoldnumbertpwilife",
+              getoldnumbertpwilife
             );
           }
         })
@@ -152,23 +152,23 @@ export default function UpdatePWI() {
   // const ancien = `${tsept.total}`;
   // const total = parseInt(ancien) + parseInt(cSeptember);
 
-  // comment
-  // comment
-  // comment
-  const pointcomment = parseInt(comment) * 1;
-  const gaincomment = parseInt(comment) * 5;
-  console.log(gaincomment);
+  // pwi
+  // pwi
+  // pwi
+  const pointpwi = parseInt(pwi) * 1;
+  const gainpwi = parseInt(pwi) * 5;
+  console.log(gainpwi);
 
   // point
-  const getoldpointtcommentsept2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtcommentsept2022"
+  const getoldpointtpwisept2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtpwisept2022"
   );
 
-  const getoldpointtcomment2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtcomment2022"
+  const getoldpointtpwi2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtpwi2022"
   );
-  const getoldpointtcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldpointtcommentlife"
+  const getoldpointtpwilife = localStorage.getItem(
+    "https://omisify.com/getoldpointtpwilife"
   );
   const getoldpointtlifesept2022 = localStorage.getItem(
     "https://omisify.com/getoldpointtlifesept2022"
@@ -180,27 +180,24 @@ export default function UpdatePWI() {
     "https://omisify.com/getoldpointtlife"
   );
 
-  const pointtcommentsept2022 =
-    parseInt(getoldpointtcommentsept2022) + parseInt(pointcomment);
-  const pointtcomment2022 =
-    parseInt(getoldpointtcomment2022) + parseInt(pointcomment);
-  const pointtcommentlife =
-    parseInt(getoldpointtcommentlife) + parseInt(pointcomment);
+  const pointtpwisept2022 =
+    parseInt(getoldpointtpwisept2022) + parseInt(pointpwi);
+  const pointtpwi2022 = parseInt(getoldpointtpwi2022) + parseInt(pointpwi);
+  const pointtpwilife = parseInt(getoldpointtpwilife) + parseInt(pointpwi);
   const pointtlifesept2022 =
-    parseInt(getoldpointtlifesept2022) + parseInt(pointcomment);
-  const pointtlife2022 =
-    parseInt(getoldpointtlife2022) + parseInt(pointcomment);
-  const pointtlife = parseInt(getoldpointtlife) + parseInt(pointcomment);
+    parseInt(getoldpointtlifesept2022) + parseInt(pointpwi);
+  const pointtlife2022 = parseInt(getoldpointtlife2022) + parseInt(pointpwi);
+  const pointtlife = parseInt(getoldpointtlife) + parseInt(pointpwi);
 
   // gain
-  const getoldgaintcommentsept2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintcommentsept2022"
+  const getoldgaintpwisept2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintpwisept2022"
   );
-  const getoldgaintcomment2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintcomment2022"
+  const getoldgaintpwi2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintpwi2022"
   );
-  const getoldgaintcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldgaintcommentlife"
+  const getoldgaintpwilife = localStorage.getItem(
+    "https://omisify.com/getoldgaintpwilife"
   );
   const getoldgaintlifesept2022 = localStorage.getItem(
     "https://omisify.com/getoldgaintlifesept2022"
@@ -212,34 +209,28 @@ export default function UpdatePWI() {
     "https://omisify.com/getoldgaintlife"
   );
 
-  const gaintcommentsept2022 =
-    parseInt(getoldgaintcommentsept2022) + parseInt(gaincomment);
-  const gaintcomment2022 =
-    parseInt(getoldgaintcomment2022) + parseInt(gaincomment);
-  const gaintcommentlife =
-    parseInt(getoldgaintcommentlife) + parseInt(gaincomment);
+  const gaintpwisept2022 = parseInt(getoldgaintpwisept2022) + parseInt(gainpwi);
+  const gaintpwi2022 = parseInt(getoldgaintpwi2022) + parseInt(gainpwi);
+  const gaintpwilife = parseInt(getoldgaintpwilife) + parseInt(gainpwi);
   const gaintlifesept2022 =
-    parseInt(getoldgaintlifesept2022) + parseInt(gaincomment);
-  const gaintlife2022 = parseInt(getoldgaintlife2022) + parseInt(gaincomment);
-  const gaintlife = parseInt(getoldgaintlife) + parseInt(gaincomment);
+    parseInt(getoldgaintlifesept2022) + parseInt(gainpwi);
+  const gaintlife2022 = parseInt(getoldgaintlife2022) + parseInt(gainpwi);
+  const gaintlife = parseInt(getoldgaintlife) + parseInt(gainpwi);
 
   // number
-  const getoldnumbertcommentsept2022 = localStorage.getItem(
-    "https://omisify.com/getoldnumbertcommentsept2022"
+  const getoldnumbertpwisept2022 = localStorage.getItem(
+    "https://omisify.com/getoldnumbertpwisept2022"
   );
-  const getoldnumbertcomment2022 = localStorage.getItem(
-    "https://omisify.com/getoldnumbertcomment2022"
+  const getoldnumbertpwi2022 = localStorage.getItem(
+    "https://omisify.com/getoldnumbertpwi2022"
   );
-  const getoldnumbertcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertcommentlife"
+  const getoldnumbertpwilife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertpwilife"
   );
 
-  const numbertcommentsept2022 =
-    parseInt(getoldnumbertcommentsept2022) + parseInt(comment);
-  const numbertcomment2022 =
-    parseInt(getoldnumbertcomment2022) + parseInt(comment);
-  const numbertcommentlife =
-    parseInt(getoldnumbertcommentlife) + parseInt(comment);
+  const numbertpwisept2022 = parseInt(getoldnumbertpwisept2022) + parseInt(pwi);
+  const numbertpwi2022 = parseInt(getoldnumbertpwi2022) + parseInt(pwi);
+  const numbertpwilife = parseInt(getoldnumbertpwilife) + parseInt(pwi);
 
   // update point, gain
   async function Validate(e) {
@@ -249,28 +240,28 @@ export default function UpdatePWI() {
       method: "put",
       url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
       data: {
-        // data comment
-        pointtcommentsept2022,
-        pointtcomment2022,
-        pointtcommentlife,
+        // data pwi
+        pointtpwisept2022,
+        pointtpwi2022,
+        pointtpwilife,
         pointtlifesept2022,
         pointtlife2022,
         pointtlife,
 
-        gaintcommentsept2022,
-        gaintcomment2022,
-        gaintcommentlife,
+        gaintpwisept2022,
+        gaintpwi2022,
+        gaintpwilife,
         gaintlifesept2022,
         gaintlife2022,
         gaintlife,
 
-        numbertcommentsept2022,
-        numbertcomment2022,
-        numbertcommentlife,
+        numbertpwisept2022,
+        numbertpwi2022,
+        numbertpwilife,
 
         date,
         time,
-        commentrecent: comment,
+        pwirecent: pwi,
       },
     })
       .then((res) => console.log(res))
@@ -289,14 +280,17 @@ export default function UpdatePWI() {
         <Loader />
       ) : (
         <>
-          <h1>Septembre</h1>
-          <p>Entrer le nombre des commentaires</p>
+          <h3>Septembre</h3>
+          <h1>PWI</h1>
+          <p>
+            Entrer le nombre de publication(s) avec interaction publiée(s) PWI)
+          </p>
           <input
             type="text"
-            placeholder="Nombre des commentaires"
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
-            name="pcomments"
+            placeholder="Nombre de PWI"
+            value={pwi}
+            onChange={(e) => setPwi(e.target.value)}
+            name="pwi"
           />
 
           <p>Entrer la date d'aujourd'hui</p>

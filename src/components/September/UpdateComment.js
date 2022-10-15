@@ -289,14 +289,15 @@ export default function UpdateComment() {
         <Loader />
       ) : (
         <>
-          <h1>Septembre</h1>
-          <p>Entrer le nombre des commentaires</p>
+          <h3>Septembre</h3>
+          <h1>Commentaire</h1>
+          <p>Entrer le nombre des commentaire(s)</p>
           <input
             type="text"
-            placeholder="Nombre des commentaires"
+            placeholder="Nombre des commentaire(s)"
             value={comment}
             onChange={(e) => setComment(e.target.value)}
-            name="pcomments"
+            name="comment"
           />
 
           <p>Entrer la date d'aujourd'hui</p>

@@ -8,7 +8,7 @@ export default function UpdateM10k() {
   const userId = localStorage.getItem("https://omisify.com/userId");
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(false);
-  const [comment, setComment] = useState("");
+  const [m10k, setM10k] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
 
@@ -21,27 +21,27 @@ export default function UpdateM10k() {
           console.log(res.data.pointtlife2022);
 
           // point
-          const getoldpointtcommentsept2022 = res.data.pointtcommentsept2022;
-          if (getoldpointtcommentsept2022) {
+          const getoldpointtm10ksept2022 = res.data.pointtm10ksept2022;
+          if (getoldpointtm10ksept2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtcommentsept2022",
-              getoldpointtcommentsept2022
+              "https://omisify.com/getoldpointtm10ksept2022",
+              getoldpointtm10ksept2022
             );
           }
 
-          const getoldpointtcomment2022 = res.data.pointtcomment2022;
-          if (getoldpointtcomment2022) {
+          const getoldpointtm10k2022 = res.data.pointtm10k2022;
+          if (getoldpointtm10k2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtcomment2022",
-              getoldpointtcomment2022
+              "https://omisify.com/getoldpointtm10k2022",
+              getoldpointtm10k2022
             );
           }
 
-          const getoldpointtcommentlife = res.data.pointtcommentlife;
-          if (getoldpointtcommentlife) {
+          const getoldpointtm10klife = res.data.pointtm10klife;
+          if (getoldpointtm10klife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtcommentlife",
-              getoldpointtcommentlife
+              "https://omisify.com/getoldpointtm10klife",
+              getoldpointtm10klife
             );
           }
 
@@ -70,27 +70,27 @@ export default function UpdateM10k() {
           }
 
           // gain
-          const getoldgaintcommentsept2022 = res.data.gaintcommentsept2022;
-          if (getoldgaintcommentsept2022) {
+          const getoldgaintm10ksept2022 = res.data.gaintm10ksept2022;
+          if (getoldgaintm10ksept2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintcommentsept2022",
-              getoldgaintcommentsept2022
+              "https://omisify.com/getoldgaintm10ksept2022",
+              getoldgaintm10ksept2022
             );
           }
 
-          const getoldgaintcomment2022 = res.data.gaintcomment2022;
-          if (getoldgaintcomment2022) {
+          const getoldgaintm10k2022 = res.data.gaintm10k2022;
+          if (getoldgaintm10k2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintcomment2022",
-              getoldgaintcomment2022
+              "https://omisify.com/getoldgaintm10k2022",
+              getoldgaintm10k2022
             );
           }
 
-          const getoldgaintcommentlife = res.data.gaintcommentlife;
-          if (getoldgaintcommentlife) {
+          const getoldgaintm10klife = res.data.gaintm10klife;
+          if (getoldgaintm10klife) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintcommentlife",
-              getoldgaintcommentlife
+              "https://omisify.com/getoldgaintm10klife",
+              getoldgaintm10klife
             );
           }
 
@@ -119,27 +119,27 @@ export default function UpdateM10k() {
           }
 
           // number
-          const getoldnumbertcommentsept2022 = res.data.numbertcommentsept2022;
-          if (getoldnumbertcommentsept2022) {
+          const getoldnumbertm10ksept2022 = res.data.numbertm10ksept2022;
+          if (getoldnumbertm10ksept2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertcommentsept2022",
-              getoldnumbertcommentsept2022
+              "https://omisify.com/getoldnumbertm10ksept2022",
+              getoldnumbertm10ksept2022
             );
           }
 
-          const getoldnumbertcomment2022 = res.data.numbertcomment2022;
-          if (getoldnumbertcomment2022) {
+          const getoldnumbertm10k2022 = res.data.numbertm10k2022;
+          if (getoldnumbertm10k2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertcomment2022",
-              getoldnumbertcomment2022
+              "https://omisify.com/getoldnumbertm10k2022",
+              getoldnumbertm10k2022
             );
           }
 
-          const getoldnumbertcommentlife = res.data.numbertcommentlife;
-          if (getoldnumbertcommentlife) {
+          const getoldnumbertm10klife = res.data.numbertm10klife;
+          if (getoldnumbertm10klife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertcommentlife",
-              getoldnumbertcommentlife
+              "https://omisify.com/getoldnumbertm10klife",
+              getoldnumbertm10klife
             );
           }
         })
@@ -152,23 +152,23 @@ export default function UpdateM10k() {
   // const ancien = `${tsept.total}`;
   // const total = parseInt(ancien) + parseInt(cSeptember);
 
-  // comment
-  // comment
-  // comment
-  const pointcomment = parseInt(comment) * 1;
-  const gaincomment = parseInt(comment) * 5;
-  console.log(gaincomment);
+  // m10k
+  // m10k
+  // m10k
+  const pointm10k = parseInt(m10k) * 1;
+  const gainm10k = parseInt(m10k) * 5;
+  console.log(gainm10k);
 
   // point
-  const getoldpointtcommentsept2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtcommentsept2022"
+  const getoldpointtm10ksept2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtm10ksept2022"
   );
 
-  const getoldpointtcomment2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtcomment2022"
+  const getoldpointtm10k2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtm10k2022"
   );
-  const getoldpointtcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldpointtcommentlife"
+  const getoldpointtm10klife = localStorage.getItem(
+    "https://omisify.com/getoldpointtm10klife"
   );
   const getoldpointtlifesept2022 = localStorage.getItem(
     "https://omisify.com/getoldpointtlifesept2022"
@@ -180,27 +180,24 @@ export default function UpdateM10k() {
     "https://omisify.com/getoldpointtlife"
   );
 
-  const pointtcommentsept2022 =
-    parseInt(getoldpointtcommentsept2022) + parseInt(pointcomment);
-  const pointtcomment2022 =
-    parseInt(getoldpointtcomment2022) + parseInt(pointcomment);
-  const pointtcommentlife =
-    parseInt(getoldpointtcommentlife) + parseInt(pointcomment);
+  const pointtm10ksept2022 =
+    parseInt(getoldpointtm10ksept2022) + parseInt(pointm10k);
+  const pointtm10k2022 = parseInt(getoldpointtm10k2022) + parseInt(pointm10k);
+  const pointtm10klife = parseInt(getoldpointtm10klife) + parseInt(pointm10k);
   const pointtlifesept2022 =
-    parseInt(getoldpointtlifesept2022) + parseInt(pointcomment);
-  const pointtlife2022 =
-    parseInt(getoldpointtlife2022) + parseInt(pointcomment);
-  const pointtlife = parseInt(getoldpointtlife) + parseInt(pointcomment);
+    parseInt(getoldpointtlifesept2022) + parseInt(pointm10k);
+  const pointtlife2022 = parseInt(getoldpointtlife2022) + parseInt(pointm10k);
+  const pointtlife = parseInt(getoldpointtlife) + parseInt(pointm10k);
 
   // gain
-  const getoldgaintcommentsept2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintcommentsept2022"
+  const getoldgaintm10ksept2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintm10ksept2022"
   );
-  const getoldgaintcomment2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintcomment2022"
+  const getoldgaintm10k2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintm10k2022"
   );
-  const getoldgaintcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldgaintcommentlife"
+  const getoldgaintm10klife = localStorage.getItem(
+    "https://omisify.com/getoldgaintm10klife"
   );
   const getoldgaintlifesept2022 = localStorage.getItem(
     "https://omisify.com/getoldgaintlifesept2022"
@@ -212,34 +209,30 @@ export default function UpdateM10k() {
     "https://omisify.com/getoldgaintlife"
   );
 
-  const gaintcommentsept2022 =
-    parseInt(getoldgaintcommentsept2022) + parseInt(gaincomment);
-  const gaintcomment2022 =
-    parseInt(getoldgaintcomment2022) + parseInt(gaincomment);
-  const gaintcommentlife =
-    parseInt(getoldgaintcommentlife) + parseInt(gaincomment);
+  const gaintm10ksept2022 =
+    parseInt(getoldgaintm10ksept2022) + parseInt(gainm10k);
+  const gaintm10k2022 = parseInt(getoldgaintm10k2022) + parseInt(gainm10k);
+  const gaintm10klife = parseInt(getoldgaintm10klife) + parseInt(gainm10k);
   const gaintlifesept2022 =
-    parseInt(getoldgaintlifesept2022) + parseInt(gaincomment);
-  const gaintlife2022 = parseInt(getoldgaintlife2022) + parseInt(gaincomment);
-  const gaintlife = parseInt(getoldgaintlife) + parseInt(gaincomment);
+    parseInt(getoldgaintlifesept2022) + parseInt(gainm10k);
+  const gaintlife2022 = parseInt(getoldgaintlife2022) + parseInt(gainm10k);
+  const gaintlife = parseInt(getoldgaintlife) + parseInt(gainm10k);
 
   // number
-  const getoldnumbertcommentsept2022 = localStorage.getItem(
-    "https://omisify.com/getoldnumbertcommentsept2022"
+  const getoldnumbertm10ksept2022 = localStorage.getItem(
+    "https://omisify.com/getoldnumbertm10ksept2022"
   );
-  const getoldnumbertcomment2022 = localStorage.getItem(
-    "https://omisify.com/getoldnumbertcomment2022"
+  const getoldnumbertm10k2022 = localStorage.getItem(
+    "https://omisify.com/getoldnumbertm10k2022"
   );
-  const getoldnumbertcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertcommentlife"
+  const getoldnumbertm10klife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertm10klife"
   );
 
-  const numbertcommentsept2022 =
-    parseInt(getoldnumbertcommentsept2022) + parseInt(comment);
-  const numbertcomment2022 =
-    parseInt(getoldnumbertcomment2022) + parseInt(comment);
-  const numbertcommentlife =
-    parseInt(getoldnumbertcommentlife) + parseInt(comment);
+  const numbertm10ksept2022 =
+    parseInt(getoldnumbertm10ksept2022) + parseInt(m10k);
+  const numbertm10k2022 = parseInt(getoldnumbertm10k2022) + parseInt(m10k);
+  const numbertm10klife = parseInt(getoldnumbertm10klife) + parseInt(m10k);
 
   // update point, gain
   async function Validate(e) {
@@ -249,28 +242,28 @@ export default function UpdateM10k() {
       method: "put",
       url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
       data: {
-        // data comment
-        pointtcommentsept2022,
-        pointtcomment2022,
-        pointtcommentlife,
+        // data m10k
+        pointtm10ksept2022,
+        pointtm10k2022,
+        pointtm10klife,
         pointtlifesept2022,
         pointtlife2022,
         pointtlife,
 
-        gaintcommentsept2022,
-        gaintcomment2022,
-        gaintcommentlife,
+        gaintm10ksept2022,
+        gaintm10k2022,
+        gaintm10klife,
         gaintlifesept2022,
         gaintlife2022,
         gaintlife,
 
-        numbertcommentsept2022,
-        numbertcomment2022,
-        numbertcommentlife,
+        numbertm10ksept2022,
+        numbertm10k2022,
+        numbertm10klife,
 
         date,
         time,
-        commentrecent: comment,
+        m10krecent: m10k,
       },
     })
       .then((res) => console.log(res))
@@ -289,14 +282,18 @@ export default function UpdateM10k() {
         <Loader />
       ) : (
         <>
-          <h1>Septembre</h1>
-          <p>Entrer le nombre des commentaires</p>
+          <h3>Septembre</h3>
+          <h1>M10k</h1>
+          <p>
+            Entrer le nombre de message(s) envoyé(s) au(x) compte(s) ayant plus
+            de 10k d'abonnés (M10k)
+          </p>
           <input
             type="text"
-            placeholder="Nombre des commentaires"
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
-            name="pcomments"
+            placeholder="Nombre de M10k"
+            value={m10k}
+            onChange={(e) => setM10k(e.target.value)}
+            name="m10k"
           />
 
           <p>Entrer la date d'aujourd'hui</p>
