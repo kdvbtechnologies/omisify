@@ -648,7 +648,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0px;
+  padding: 70px 0px;
   text-align: center;
 }
 
@@ -702,7 +702,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0px;
+  padding: 70px 0px;
   flex-direction: column;
 }
 .login-success .button {
