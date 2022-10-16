@@ -5,7 +5,7 @@ export default function ResetPassword() {
 
   function Button(e) {
     e.preventDefault();
-    localStorage.setItem("https://omisfy.com/userId", userId);
+    localStorage.setItem("https://omisify.com/userId", userId);
     window.location = "/secure-reset-password";
   }
 
