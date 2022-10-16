@@ -158,12 +158,12 @@ export default function App() {
         <Route path="/secure-mwi" element={<SecureMWI />} />
         <Route path="/secure-publication" element={<SecurePublication />} />
         <Route path="/secure-pwi" element={<SecurePWI />} />
-        <Route path="/panel-kdvb" element={<Panel />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/secure-reset-password" element={<SecureNewPassword />} />
         <Route path="/after-new-password" element={<AfterNewPassword />} />
         <Route path="/reset-success" element={<ResetSuccess />} />
         <Route path="/update" element={<Update />} />
+        <Route path="/panel-kdvb" element={<Panel />} />
       </Routes>
     </BrowserRouter>
   );
