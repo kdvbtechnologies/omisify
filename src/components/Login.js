@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import Loader from "./Partenaire Omisify/Loader";
+import { NavLink } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -67,6 +68,11 @@ export default function Login() {
               </>
             )}
           </div>
+          <NavLink className="navlink" to="/reset-password">
+            <div className="forgot-password">
+              <p>Mot de pass oublié</p>
+            </div>
+          </NavLink>
         </div>
       </div>
     </>

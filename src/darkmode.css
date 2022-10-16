@@ -695,6 +695,16 @@ footer {
   font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+.login-border .navlink {
+  text-decoration: none;
+}
+
+.forgot-password {
+  
+  color: #444;
+  padding-top: 70px;
+}
+
 /* src - components - login success.js */
 .login-success {
   font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -856,6 +866,38 @@ footer {
   border: 1px solid red;
 }
 
+.reset-success {
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0px;
+  flex-direction: column;
+}
+
+.reset-success .title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.reset-success p {
+  padding: 10px;
+}
+
+.reset-success .button {
+  padding: 50px 0px;
+}
+
+.reset-success button {
+  cursor: pointer;
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 10px 20px;
+}
 
 @media screen and (max-width: 760px) {
   .navigation .right-navigation .navlink {

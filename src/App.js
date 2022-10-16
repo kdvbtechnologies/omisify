@@ -74,6 +74,7 @@ import Panel from "./components/Admin/Panel";
 import SecureNewPassword from "./components/Reset-Password/SecureNewPassword";
 import ResetPassword from "./components/Reset-Password/ResetPassword";
 import AfterNewPassword from "./components/Reset-Password/AfterNewPassword";
+import ResetSuccess from "./components/Reset-Password/ResetSuccess";
 
 export default function App() {
   return (
@@ -160,6 +161,7 @@ export default function App() {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/secure-reset-password" element={<SecureNewPassword />} />
         <Route path="/after-new-password" element={<AfterNewPassword />} />
+        <Route path="/reset-success" element={<ResetSuccess />} />
       </Routes>
     </BrowserRouter>
   );

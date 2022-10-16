@@ -3,5 +3,6 @@ import Partner from "./Partenaire Omisify/Partner";
 
 export default function AfterLoginSuccess() {
   const userId = localStorage.getItem("https://omisify.com/userId");
-  return <>{userId ? <Partner /> : <Auth />}</>;
+  const shortname = localStorage.getItem("https://omisify.com/shortname");
+  return <>{userId && shortname ? <Partner /> : <Auth />}</>;
 }
