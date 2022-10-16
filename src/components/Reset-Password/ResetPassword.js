@@ -5,7 +5,7 @@ export default function ResetPassword() {
   const [userId, setUserId] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  async function Button(e) {
+  async function Validate(e) {
     setIsLoading(true);
     e.preventDefault();
     localStorage.setItem("https://omisify.com/userId", userId);
@@ -29,7 +29,7 @@ export default function ResetPassword() {
         <Loader />
       ) : (
         <>
-          <button onClick={Button}>Valider</button>
+          <button onClick={Validate}>Valider</button>
         </>
       )}
     </>
