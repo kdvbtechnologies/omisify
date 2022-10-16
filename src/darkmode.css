@@ -761,6 +761,7 @@ footer {
 }
 
 .go-to-refresh button {
+  cursor: pointer;
   color: red;
   padding: 10px 20px;
   background-color: transparent;
