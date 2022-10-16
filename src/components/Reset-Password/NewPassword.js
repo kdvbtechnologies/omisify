@@ -29,24 +29,28 @@ export default function NewPassword() {
   return (
     <>
       <LoginNav />
-      <h1>Créer un nouveau mot de passe</h1>
-      <p>Entrer un nouveau mot de passe et cliquez sur créer</p>
-      <input
-        type="text"
-        placeholder="Nouveau mot de passe"
-        onChange={(e) => setPassword(e.target.value)}
-        value={password}
-        name="password"
-        required
-      />
+      <div className="reset-password">
+        <div className="title">
+          <p>Créer un nouveau mot de passe</p>
+        </div>
+        <p>Entrer un nouveau mot de passe et cliquez sur créer</p>
+        <input
+          type="text"
+          placeholder="Nouveau mot de passe"
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
+          name="password"
+          required
+        />
 
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <button onClick={Create}>Créer</button>
-        </>
-      )}
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>
+            <button onClick={Create}>Créer</button>
+          </>
+        )}
+      </div>
     </>
   );
 }

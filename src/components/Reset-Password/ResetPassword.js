@@ -16,24 +16,28 @@ export default function ResetPassword() {
   return (
     <>
       <LoginNav />
-      <h1>Réinitialiser votre mot de passe</h1>
-      <p>Entrer votre adresse e-mail ou votre id</p>
-      <input
-        type="email"
-        placeholder="E-mail ou Id"
-        value={userId}
-        onChange={(e) => setUserId(e.target.value)}
-        name="userId"
-        required
-      />
+      <div className="reset-password">
+        <div className="title">
+          <p>Réinitialiser votre mot de passe</p>
+        </div>
+        <p>Entrer votre adresse e-mail ou votre id</p>
+        <input
+          type="email"
+          placeholder="E-mail ou Id"
+          value={userId}
+          onChange={(e) => setUserId(e.target.value)}
+          name="userId"
+          required
+        />
 
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <button onClick={Validate}>Valider</button>
-        </>
-      )}
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>
+            <button onClick={Validate}>Valider</button>
+          </>
+        )}
+      </div>
     </>
   );
 }

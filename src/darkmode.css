@@ -642,30 +642,6 @@ footer {
   padding: 10px 20px;
 }
 
-/*
-
-display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  .historical {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 100px;
-  text-align: center;
-}
-
-.historical .historic {
-  border: 3px solid #eee;
-  border-radius: 10px;
-  padding: 50px 70px;
-  font-size: 17px;
-  color: #444;
-}
-
-*/
 
 /* login.js */
 .login {
@@ -841,7 +817,44 @@ display: flex;
   width: 100px
 }
 
+/* src - component - reset-password - reset password.js */
+.reset-password {
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0px;
+}
 
+.reset-password p {
+  padding: 10px;
+  font-size: 17px;
+}
+
+.reset-password input[type=email], input[type=text] {
+  background-color: transparent;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.reset-password .title {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+
+.reset-password button {
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: red;
+  background-color: transparent;
+  padding: 10px 20px;
+  margin: 25px 0px;
+  border-radius: 12px;
+  border: 1px solid red;
+}
 
 
 @media screen and (max-width: 760px) {
@@ -1031,7 +1044,6 @@ display: flex;
     .navigation-login-nav .left-navigation .navlink li img {
       width: 60px
     }
-    
 }
 
 
