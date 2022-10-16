@@ -75,6 +75,7 @@ import SecureNewPassword from "./components/Reset-Password/SecureNewPassword";
 import ResetPassword from "./components/Reset-Password/ResetPassword";
 import AfterNewPassword from "./components/Reset-Password/AfterNewPassword";
 import ResetSuccess from "./components/Reset-Password/ResetSuccess";
+import Update from "./components/Update/Update";
 
 export default function App() {
   return (
@@ -136,7 +137,7 @@ export default function App() {
         <Route path="/partner-contact" element={<PartnerContact />} />
         <Route path="/partner-trans" element={<PartnerTrans />} />
         <Route path="/partner-historical" element={<PartnerHistorical />} />
-        <Route path="/update" element={<PartnerUpdate />} />
+        <Route path="/update-point" element={<PartnerUpdate />} />
         <Route path="/settings" element={<PartnerSettings />} />
         <Route path="/stats" element={<Stats />} />
         <Route path="/auth" element={<Auth />} />
@@ -162,6 +163,7 @@ export default function App() {
         <Route path="/secure-reset-password" element={<SecureNewPassword />} />
         <Route path="/after-new-password" element={<AfterNewPassword />} />
         <Route path="/reset-success" element={<ResetSuccess />} />
+        <Route path="/update" element={<Update />} />
       </Routes>
     </BrowserRouter>
   );
