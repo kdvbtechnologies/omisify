@@ -339,7 +339,7 @@ export default function AddSeptember() {
           .catch((err) => console.log(err));*/
       })
       .catch((err) => console.log(err));
-    window.location.reload();
+    //window.location.reload();
   }
 
   const family = {
