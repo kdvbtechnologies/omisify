@@ -1,9 +1,12 @@
+import axios from "axios";
+import { useState } from "react";
+
 export default function PasswordNew() {
   const userId = localStorage.getItem("htpps://omisfy.com/userId");
   const [password, setPassword] = useState("");
 
   axios({
-    method: put,
+    method: "put",
     url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
     data: {
       password,
