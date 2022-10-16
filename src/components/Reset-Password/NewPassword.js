@@ -4,12 +4,12 @@ import LoginNav from "../Auth/LoginNav";
 import Loader from "../Partenaire Omisify/Loader";
 
 export default function NewPassword() {
-  const userId = localStorage.getItem("https://omisfy.com/userId");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   async function Create() {
     setIsLoading(true);
+    const userId = localStorage.getItem("https://omisfy.com/userId");
     await axios({
       method: "put",
       url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
