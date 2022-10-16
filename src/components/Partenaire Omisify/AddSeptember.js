@@ -149,7 +149,7 @@ export default function AddSeptember() {
   useEffect(() => {
     async function get() {
       await axios
-        .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
+        .get(`https://omisify-api.onrender.com/api/user/${userId}`)
         .then((res) => {
           console.log(res);
           const tpointthismonth = res.data.pointtlifesept2022;
@@ -176,7 +176,7 @@ export default function AddSeptember() {
     // first step : post
     await axios({
       method: "put",
-      url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
+      url: `https://omisify-api.onrender.com/api/user/update/${userId}`,
       data: {
         pointtcommentsept2022,
         pointtcomment2022,
