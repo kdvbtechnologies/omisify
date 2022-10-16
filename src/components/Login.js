@@ -33,7 +33,7 @@ export default function Login() {
       })
       .catch((err) => console.log(err));
 
-    //window.location = "/after-login";
+    window.location = "/after-login";
   }
   console.log(isLoading);
 

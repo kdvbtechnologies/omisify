@@ -277,7 +277,7 @@ export default function UpdateComment() {
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-    window.location = "/update-point";
+    //window.location = "/update-point";
   }
 
   const family = {
