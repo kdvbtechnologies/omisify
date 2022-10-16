@@ -1,12 +1,17 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Panel() {
+  const [api, setApi] = useState([]);
+
   useEffect(() => {
     async function get() {
       await axios
-        .get("https://famous-peplum-dove.cyclic.app/api/panel/")
-        .then((res) => console.log(res))
+        .get("https://famous-peplum-dove.cyclic.app/api/panel")
+        .then((res) => {
+          console.log(res);
+          setApi(res.data);
+        })
         .catch((err) => console.log(err));
     }
     get();
@@ -14,6 +19,11 @@ export default function Panel() {
   return (
     <>
       <p>Panneau d'administration</p>
+      <p>User :</p>
+      <p>Nombre de commentaires : {api.commentrecent}</p>
+      <p>Nombre total de commentaires : {api.numbertcommentlife}</p>
+      <p>Point total depuis le début : {api.pointtlife}</p>
+      <p>Gain : {api.gaintlife}</p>
     </>
   );
 }
