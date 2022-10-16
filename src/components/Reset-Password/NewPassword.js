@@ -10,20 +10,22 @@ export default function NewPassword() {
   async function Create() {
     setIsLoading(true);
     const userId = localStorage.getItem("https://omisfy.com/userId");
-    await axios({
-      method: "put",
-      url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
-      data: {
-        password,
-      },
-    })
-      .then((res) => {
-        console.log(res);
-        const name = res.data.name;
-        localStorage.setItem("https://omisify.com/name", name);
+    if (userId) {
+      await axios({
+        method: "put",
+        url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
+        data: {
+          password,
+        },
       })
-      .catch((err) => console.log(err));
-    // window.location = "/after-new-password";
+        .then((res) => {
+          console.log(res);
+          const name = res.data.name;
+          localStorage.setItem("https://omisify.com/name", name);
+        })
+        .catch((err) => console.log(err));
+      // window.location = "/after-new-password";
+    }
   }
 
   return (
