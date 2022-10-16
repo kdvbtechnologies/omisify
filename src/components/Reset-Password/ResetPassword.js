@@ -1,9 +1,12 @@
 import { useState } from "react";
+import Loader from "../Partenaire Omisify/Loader";
 
 export default function ResetPassword() {
   const [userId, setUserId] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  function Button(e) {
+  async function Button(e) {
+    setIsLoading(true);
     e.preventDefault();
     localStorage.setItem("https://omisify.com/userId", userId);
     window.location = "/secure-reset-password";
@@ -22,7 +25,13 @@ export default function ResetPassword() {
         required
       />
 
-      <button onClick={Button}>Valider</button>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <button onClick={Button}>Valider</button>
+        </>
+      )}
     </>
   );
 }
