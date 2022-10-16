@@ -24,6 +24,7 @@ export default function PasswordNew() {
         onChange={(e) => setPassword(e.target.value)}
         value={password}
         name="password"
+        required
       />
       <button>Valider</button>
     </>

@@ -37,11 +37,12 @@ export default function Login() {
           <div className="input">
             <h1>Connexion</h1>
             <input
-              type="text"
+              type="email"
               placeholder="E-mail"
               value={email}
               name="email"
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
             <input
               type="text"
@@ -49,6 +50,7 @@ export default function Login() {
               value={password}
               name="password"
               onChange={(e) => setPassword(e.target.value)}
+              required
             />
             {isLoading ? (
               <Loader />

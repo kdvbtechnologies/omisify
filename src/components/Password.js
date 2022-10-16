@@ -3,10 +3,11 @@ export default function Password() {
     e.preventDefault();
     window.location = "/reset-password";
   }
+
   return (
     <>
       <h1>Réinitialiser votre mot de passe</h1>
-      <input type="text" placeholder="Entrer votre adresse email" />
+      <input type="email" placeholder="Entrer votre adresse email" />
       <button onClick={Button}>Valider</button>
     </>
   );

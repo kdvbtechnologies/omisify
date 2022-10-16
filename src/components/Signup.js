@@ -46,6 +46,7 @@ export default function Signup() {
               value={name}
               name="name"
               onChange={(e) => setName(e.target.value)}
+              required
             />
             <input
               type="text"
@@ -53,6 +54,7 @@ export default function Signup() {
               value={partnername}
               name="partnername"
               onChange={(e) => setPartnername(e.target.value)}
+              required
             />
             <input
               type="text"
@@ -60,13 +62,15 @@ export default function Signup() {
               value={shortname}
               name="shortname"
               onChange={(e) => setShortname(e.target.value)}
+              required
             />
             <input
-              type="text"
+              type="email"
               placeholder="E-mail"
               value={email}
               name="email"
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
             <input
               type="text"
@@ -74,7 +78,9 @@ export default function Signup() {
               value={password}
               name="password"
               onChange={(e) => setPassword(e.target.value)}
+              required
             />
+
             {isLoading ? (
               <Loader />
             ) : (
