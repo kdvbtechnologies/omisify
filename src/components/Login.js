@@ -21,7 +21,9 @@ export default function Login() {
       .then((res) => {
         console.log(res);
         const userId = res.data.id;
+        const shortname = res.data.shortname;
         localStorage.setItem("https://omisify.com/userId", userId);
+        localStorage.setItem("https://omisify.com/shortname", shortname);
       })
       .catch((err) => console.log(err));
 

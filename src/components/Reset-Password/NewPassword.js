@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useState } from "react";
 
-export default function PasswordNew() {
-  const userId = localStorage.getItem("htpps://omisfy.com/userId");
+export default function NewPassword() {
+  const userId = localStorage.getItem("https://omisfy.com/userId");
   const [password, setPassword] = useState("");
 
   axios({
@@ -20,12 +20,13 @@ export default function PasswordNew() {
       <h1>Créer un nouveau mot de passe</h1>
       <input
         type="text"
-        placeholder="Nouveau mot de passe"
+        placeholder="Entrer un nouveau mot de passe"
         onChange={(e) => setPassword(e.target.value)}
         value={password}
         name="password"
         required
       />
+
       <button>Valider</button>
     </>
   );
