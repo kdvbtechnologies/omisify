@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LoginNav from "../Auth/LoginNav";
 import Loader from "../Partenaire Omisify/Loader";
 
 export default function ResetPassword() {
@@ -14,6 +15,7 @@ export default function ResetPassword() {
 
   return (
     <>
+      <LoginNav />
       <h1>Réinitialiser votre mot de passe</h1>
       <p>Entrer votre adresse e-mail ou votre id</p>
       <input

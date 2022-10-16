@@ -823,6 +823,25 @@ display: flex;
   border-radius: 10px;
 }
 
+/* src - component - auth - login nav */
+.navigation-login-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 20px;
+}
+
+.navigation-login-nav .left-navigation .navlink li {
+  list-style: none;
+  padding: 0px 10px;
+}
+
+.navigation-login-nav .left-navigation .navlink li img {
+  width: 100px
+}
+
+
 
 
 @media screen and (max-width: 760px) {
@@ -1003,6 +1022,16 @@ display: flex;
       padding: 50px 30px;
       font-size: 17px;
     }   
+
+    .navigation-login-nav .left-navigation .navlink li {
+      list-style: none;
+      padding: 0px 10px;
+    }
+    
+    .navigation-login-nav .left-navigation .navlink li img {
+      width: 60px
+    }
+    
 }
 
 

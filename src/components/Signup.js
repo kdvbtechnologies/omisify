@@ -46,7 +46,6 @@ export default function Signup() {
               value={name}
               name="name"
               onChange={(e) => setName(e.target.value)}
-              required
             />
             <input
               type="text"
