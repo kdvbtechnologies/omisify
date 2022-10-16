@@ -1,7 +1,7 @@
 import Auth from "../Auth";
-import ResetPassword from "./ResetPassword";
+import NewPassword from "./NewPassword";
 
 export default function SecureNewPassword() {
   const userId = localStorage.getItem("https://omisify.com/userId");
-  return <>{userId ? <ResetPassword /> : <Auth />}</>;
+  return <>{userId ? <NewPassword /> : <Auth />}</>;
 }
