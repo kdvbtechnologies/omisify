@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function UpdateComment() {
   const navigate = useNavigate();
-  //const userId = localStorage.getItem("https://omisify.com/userId");
+  const userId = localStorage.getItem("https://omisify.com/userId");
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(false);
   const [comment, setComment] = useState("");
