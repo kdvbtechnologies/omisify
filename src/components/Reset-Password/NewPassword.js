@@ -23,7 +23,7 @@ export default function NewPassword() {
         localStorage.setItem("https://omisify.com/name", name);
       })
       .catch((err) => console.log(err));
-    window.location = "/after-new-password";
+    // window.location = "/after-new-password";
   }
 
   return (
