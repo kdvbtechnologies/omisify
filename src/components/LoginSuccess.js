@@ -15,18 +15,101 @@ export default function LoginSuccess() {
           const name = res.data.name;
           const partnername = res.data.partnername;
           const shortname = res.data.shortname;
-          const idtsept = res.data.idtsept;
-          const idtoct = res.data.idtoct;
-          const idtnov = res.data.idtnov;
+
+          const getoldpointtlife = res.data.pointtlife;
+          if (getoldpointtlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldpointtlife",
+              getoldpointtlife
+            );
+          }
+
+          const getoldnumbertemaillife = res.data.numbertemaillife;
+          if (getoldnumbertemaillife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertemaillife",
+              getoldnumbertemaillife
+            );
+          }
+
+          const getoldnumbertmwilife = res.data.numbertmwilife;
+          if (getoldnumbertmwilife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertmwilife",
+              getoldnumbertmwilife
+            );
+          }
+
+          const getoldnumbertmessagelife = res.data.numbertmessagelife;
+          if (getoldnumbertmessagelife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertmessagelife",
+              getoldnumbertmessagelife
+            );
+          }
+
+          const getoldnumbertpwilife = res.data.numbertpwilife;
+          if (getoldnumbertpwilife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertpwilife",
+              getoldnumbertpwilife
+            );
+          }
+
+          const getoldnumbertpublicationlife = res.data.numbertpublicationlife;
+          if (getoldnumbertpublicationlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertpublicationlife",
+              getoldnumbertpublicationlife
+            );
+          }
+
+          const getoldnumbertlikepublicationlife =
+            res.data.numbertlikepublicationlife;
+          if (getoldnumbertlikepublicationlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertlikepublicationlife",
+              getoldnumbertlikepublicationlife
+            );
+          }
+
+          const getoldnumbertcommentlife = res.data.numbertcommentlife;
+          if (getoldnumbertcommentlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertcommentlife",
+              getoldnumbertcommentlife
+            );
+          }
+
+          const getoldgaintlife = res.data.gaintlife;
+          if (getoldgaintlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldgaintlife",
+              getoldgaintlife
+            );
+          }
+
+          const getoldnumbertlikecommentlife = res.data.numbertlikecommentlife;
+          if (getoldnumbertlikecommentlife) {
+            localStorage.setItem(
+              "https://omisify.com/getoldnumbertlikecommentlife",
+              getoldnumbertlikecommentlife
+            );
+          }
+
           localStorage.setItem("https://omisify.com/name", name);
           localStorage.setItem("https://omisify.com/partnername", partnername);
           localStorage.setItem("https://omisify.com/shortname", shortname);
 
-          if (idtnov || idtoct || idtnov) {
+          /* const idtsept = res.data.idtsept;
+          const idtoct = res.data.idtoct;
+          const idtnov = res.data.idtnov; */
+
+          /*if (idtnov || idtoct || idtnov) {
             localStorage.setItem("https://omisify.com/idtnov", idtnov);
             localStorage.setItem("https://omisify.com/idtsept", idtsept);
             localStorage.setItem("https://omisify.com/idtoct", idtoct);
-          }
+          }*/
         })
         .catch((err) => console.log(err));
       setIsLoading(false);

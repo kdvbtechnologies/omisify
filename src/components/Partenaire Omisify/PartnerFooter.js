@@ -1,10 +1,6 @@
-import axios from "axios";
-import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function PartnerFooter() {
-  const userId = localStorage.getItem("https://omisify.com/userId");
-
   const getoldpointtlife = localStorage.getItem(
     "https://omisify.com/getoldpointtlife"
   );
@@ -43,97 +39,6 @@ export default function PartnerFooter() {
   const getoldgaintlife = localStorage.getItem(
     "https://omisify.com/getoldgaintlife"
   );
-
-  useEffect(() => {
-    async function get() {
-      axios
-        .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
-        .then((res) => {
-          const getoldpointtlife = res.data.pointtlife;
-          if (getoldpointtlife) {
-            localStorage.setItem(
-              "https://omisify.com/getoldpointtlife",
-              getoldpointtlife
-            );
-          }
-
-          const getoldnumbertemaillife = res.data.numbertemaillife;
-          if (getoldnumbertemaillife) {
-            localStorage.setItem(
-              "https://omisify.com/getoldnumbertemaillife",
-              getoldnumbertemaillife
-            );
-          }
-
-          const getoldnumbertmwilife = res.data.numbertmwilife;
-          if (getoldnumbertmwilife) {
-            localStorage.setItem(
-              "https://omisify.com/getoldnumbertmwilife",
-              getoldnumbertmwilife
-            );
-          }
-
-          const getoldnumbertmessagelife = res.data.numbertmessagelife;
-          if (getoldnumbertmessagelife) {
-            localStorage.setItem(
-              "https://omisify.com/getoldnumbertmessagelife",
-              getoldnumbertmessagelife
-            );
-          }
-
-          const getoldnumbertpwilife = res.data.numbertpwilife;
-          if (getoldnumbertpwilife) {
-            localStorage.setItem(
-              "https://omisify.com/getoldnumbertpwilife",
-              getoldnumbertpwilife
-            );
-          }
-
-          const getoldnumbertpublicationlife = res.data.numbertpublicationlife;
-          if (getoldnumbertpublicationlife) {
-            localStorage.setItem(
-              "https://omisify.com/getoldnumbertpublicationlife",
-              getoldnumbertpublicationlife
-            );
-          }
-
-          const getoldnumbertlikepublicationlife =
-            res.data.numbertlikepublicationlife;
-          if (getoldnumbertlikepublicationlife) {
-            localStorage.setItem(
-              "https://omisify.com/getoldnumbertlikepublicationlife",
-              getoldnumbertlikepublicationlife
-            );
-          }
-
-          const getoldnumbertcommentlife = res.data.numbertcommentlife;
-          if (getoldnumbertcommentlife) {
-            localStorage.setItem(
-              "https://omisify.com/getoldnumbertcommentlife",
-              getoldnumbertcommentlife
-            );
-          }
-
-          const getoldgaintlife = res.data.gaintlife;
-          if (getoldgaintlife) {
-            localStorage.setItem(
-              "https://omisify.com/getoldgaintlife",
-              getoldgaintlife
-            );
-          }
-
-          const getoldnumbertlikecommentlife = res.data.numbertlikecommentlife;
-          if (getoldnumbertlikecommentlife) {
-            localStorage.setItem(
-              "https://omisify.com/getoldnumbertlikecommentlife",
-              getoldnumbertlikecommentlife
-            );
-          }
-        })
-        .catch((err) => console.log(err));
-    }
-    get();
-  });
 
   /* {aa ? (<></>) : (<></>)} */
   return (
