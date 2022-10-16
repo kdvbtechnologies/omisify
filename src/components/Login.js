@@ -70,7 +70,7 @@ export default function Login() {
           </div>
           <NavLink className="navlink" to="/reset-password">
             <div className="forgot-password">
-              <p>Mot de pass oublié</p>
+              <p>Mot de passe oublié</p>
             </div>
           </NavLink>
         </div>
