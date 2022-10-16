@@ -7,7 +7,7 @@ export default function NewPassword() {
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  async function Validate() {
+  async function Create() {
     setIsLoading(true);
     await axios({
       method: "put",
@@ -28,9 +28,10 @@ export default function NewPassword() {
   return (
     <>
       <h1>Créer un nouveau mot de passe</h1>
+      <p>Entrer un nouveau mot de passe et cliquez sur créer</p>
       <input
         type="text"
-        placeholder="Entrer un nouveau mot de passe"
+        placeholder="Nouveau mot de passe"
         onChange={(e) => setPassword(e.target.value)}
         value={password}
         name="password"
@@ -41,7 +42,7 @@ export default function NewPassword() {
         <Loader />
       ) : (
         <>
-          <button onClick={Validate}>Valider</button>
+          <button onClick={Create}>Créer</button>
         </>
       )}
     </>
