@@ -9,7 +9,7 @@ export default function NewPassword() {
 
   async function Create() {
     setIsLoading(true);
-    const userId = localStorage.getItem("https://omisfy.com/userId");
+    const userId = localStorage.getItem("https://omisify.com/userId");
     if (userId) {
       await axios({
         method: "put",
