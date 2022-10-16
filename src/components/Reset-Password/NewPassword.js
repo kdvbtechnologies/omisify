@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import LoginNav from "../Auth/LoginNav";
 import Loader from "../Partenaire Omisify/Loader";
 
 export default function NewPassword() {
@@ -27,6 +28,7 @@ export default function NewPassword() {
 
   return (
     <>
+      <LoginNav />
       <h1>Créer un nouveau mot de passe</h1>
       <p>Entrer un nouveau mot de passe et cliquez sur créer</p>
       <input
