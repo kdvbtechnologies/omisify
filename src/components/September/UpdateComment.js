@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function UpdateComment() {
   const navigate = useNavigate();
-  const userId = localStorage.getItem("https://omisify.com/userId");
+  //const userId = localStorage.getItem("https://omisify.com/userId");
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(false);
   const [comment, setComment] = useState("");
@@ -246,8 +246,10 @@ export default function UpdateComment() {
     setIsLoading2(true);
     e.preventDefault();
     await axios({
-      method: "put",
-      url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
+      //method: "put",
+      //url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
+      method: "post",
+      url: `https://famous-peplum-dove.cyclic.app/api/panel/add`,
       data: {
         // data comment
         pointtcommentsept2022,
@@ -275,6 +277,7 @@ export default function UpdateComment() {
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
+    window.location = "/update-point";
   }
 
   const family = {
