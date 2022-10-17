@@ -5,7 +5,7 @@ import { addPosts } from "../../feature/posts.slice";
 
 export default function Welcome() {
   const [codewelcome, setCodeWelcome] = useState("");
-  const userId = localStorage.getItem("https://omisify.com/userId");
+  //const userId = localStorage.getItem("https://omisify.com/userId");
   const dispatch = useDispatch();
 
   async function Validate(e) {
