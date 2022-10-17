@@ -2,8 +2,12 @@ import { NavLink } from "react-router-dom";
 import LoginNav from "../Auth/LoginNav";
 
 export default function UpdateSuccess() {
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
   return (
-    <>
+    <div style={family}>
       <LoginNav />
       <div className="update-success">
         <div className="title">
@@ -17,6 +21,6 @@ export default function UpdateSuccess() {
           </NavLink>
         </div>
       </div>
-    </>
+    </div>
   );
 }
