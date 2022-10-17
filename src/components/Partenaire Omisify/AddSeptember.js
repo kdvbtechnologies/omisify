@@ -174,6 +174,7 @@ export default function AddSeptember() {
 
   async function Next() {
     // first step : post
+    const userId = localStorage.getItem("https://omisify.com/userId");
     await axios({
       method: "put",
       url: `https://omisify-api.onrender.com/api/user/update/${userId}`,
