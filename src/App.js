@@ -80,7 +80,7 @@ import SecureNavigation from "./components/Navigation/SecureNavigation";
 import UpdateSuccess from "./components/Update/UpdateSuccess";
 import Logout from "./components/Logout/Logout";
 import AfterLogout from "./components/Logout/AfterLogout";
-import LogoutConfirm from "./components/Logout/LogoutConfirm";
+import SecureLogoutConfirm from "./components/Logout/SecureLogoutConfirm";
 
 export default function App() {
   return (
@@ -172,7 +172,10 @@ export default function App() {
         <Route path="/secure-menu" element={<SecureNavigation />} />
         <Route path="/panel-kdvb" element={<Panel />} />
         <Route path="/logout" element={<Logout />} />
-        <Route path="/logout-confirm" element={<LogoutConfirm />} />
+        <Route
+          path="/secure-logout-confirm"
+          element={<SecureLogoutConfirm />}
+        />
         <Route path="/after-logout" element={<AfterLogout />} />
       </Routes>
     </BrowserRouter>

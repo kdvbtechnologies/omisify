@@ -13,14 +13,26 @@ export default function LogoutConfirm() {
     window.location = "/partner";
   }
 
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
+
   return (
-    <>
+    <div style={family}>
       <LoginNav />
-      <p>
-        Partenaire {shortname}, Souhaitez-vous vraiment vous quitter Omisify ?
-      </p>
-      <button onClick={No}>Non, je suis toujours là</button>
-      <button onClick={Yes}>Oui, je reviens bientot</button>
-    </>
+      <div className="logout-confirm">
+        <p>Partenaire {shortname}, Souhaitez-vous vraiment quitter Omisify ?</p>
+        <div className="button">
+          <div className="no">
+            <button onClick={No}>Non, je suis toujours là</button>
+          </div>
+
+          <div className="yes">
+            <button onClick={Yes}>Oui, je reviens bientot</button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

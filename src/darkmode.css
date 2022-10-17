@@ -969,6 +969,104 @@ footer {
   font-size: 16px;
 }
 
+/* src - components - logout - logout confirm.js */
+.logout-confirm {
+  text-align: center;
+  padding: 70px 0px;
+}
+
+.logout-confirm p {
+  padding: 0px 10px;
+  font-size: 17px;
+}
+
+.logout-confirm .button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+.logout-confirm button {
+  font-family: Roboto, Arial, sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 10px;
+  padding: 5px 20px;
+}
+
+.logout-confirm .yes button {
+  border: 1px solid #ccc;
+  color: #ccc
+}
+
+.logout-confirm .yes button:hover {
+  background-color: #444;
+  color: #ccc
+}
+
+.logout-confirm .no button {
+  border: none;
+  background-color: blue;
+  color: white;
+}
+
+.logout-confirm .no button:hover {
+  border: none;
+  background-color: rgb(121, 145, 255);
+  color: #eee;
+}
+
+
+
+/* src - components - logout - logout.js */
+.logout {
+  text-align: center;
+  padding: 70px 0px;
+}
+
+.logout p {
+  padding: 0px 10px;
+  font-size: 17px;
+}
+
+.logout .button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+.logout button{
+  font-family: Roboto, Arial, sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: transparent;
+  margin: 0px 10px;
+  padding: 5px 20px;
+  font-size: 15px;
+}
+
+.logout .yes button{
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+.logout .yes button:hover{
+  background-color: #444;
+  color: #eee;
+}
+
+.logout .no button{
+  border: 1px solid blue;
+  color: blue;
+}
+
+.logout .no button:hover{
+  background-color: blue;
+  color: white;
+}
 
 
 @media screen and (max-width: 760px) {
