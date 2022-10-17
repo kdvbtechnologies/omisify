@@ -28,6 +28,10 @@ export default function PartnerNavMenu() {
           <li>Service</li>
         </NavLink>
 
+        <NavLink className="li" to="/logout">
+          <li>Déconnexion</li>
+        </NavLink>
+
         <div className="omisify-copy">
           <div className="omisify-copyright">
             <p>© 2022 Omisify</p>
