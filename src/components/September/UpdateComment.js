@@ -15,7 +15,7 @@ export default function UpdateComment() {
   useEffect(() => {
     async function get() {
       await axios
-        .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
+        .get(`https://omisify-api.onrender.com/api/user/${userId}`)
         .then((res) => {
           console.log(res);
           console.log(res.data.pointtlife2022);
@@ -249,7 +249,7 @@ export default function UpdateComment() {
       //method: "put",
       //url: `https://famous-peplum-dove.cyclic.app/api/user/update/${userId}`,
       method: "post",
-      url: `https://famous-peplum-dove.cyclic.app/api/panel/add`,
+      url: `https://omisify-api.onrender.com/api/panel/add`,
       data: {
         // data comment
         pointtcommentsept2022,
