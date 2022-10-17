@@ -7,7 +7,6 @@ export default function Update() {
 
   async function Download() {
     setIsLoading(true);
-    window.location.reload();
     window.location = "/update-success";
   }
 
