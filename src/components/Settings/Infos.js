@@ -1,4 +1,17 @@
+import axios from "axios";
+import { useEffect } from "react";
+
 export default function Infos() {
+  useEffect(() => {
+    async function get() {
+      await axios
+        .get("https://omisify-api.onrender.com/api/point/all/september")
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
+    }
+    get();
+  }, []);
+
   return (
     <>
       <div className="title">
