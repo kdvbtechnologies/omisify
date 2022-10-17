@@ -2,15 +2,6 @@ import { NavLink } from "react-router-dom";
 import LoginNav from "../Auth/LoginNav";
 
 export default function Logout() {
-  /*
-  function Yes() {
-    window.location = "/secure-logout-confirm";
-  }
-
-  function No() {
-    window.location = "/partner";
-  }
-*/
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',

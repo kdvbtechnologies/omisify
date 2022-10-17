@@ -10,11 +10,6 @@ export default function LogoutConfirm() {
     window.location = "/after-logout";
   }
 
-  /*
-  function No() {
-    window.location = "/partner";
-  }*/
-
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
