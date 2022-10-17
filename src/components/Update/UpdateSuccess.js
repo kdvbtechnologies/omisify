@@ -5,11 +5,18 @@ export default function UpdateSuccess() {
   return (
     <>
       <LoginNav />
-      <p>Terminé !</p>
-      <p>Le téléchargement de la dernière mise à jour à réussi</p>
-      <NavLink to="/partner">
-        <button>Retourner sur la page d'accueil</button>
-      </NavLink>
+      <div className="update-success">
+        <div className="title">
+          <p>Terminé !</p>
+        </div>
+
+        <div className="a">
+          <p>Le téléchargement de la dernière mise à jour à réussi</p>
+          <NavLink to="/partner">
+            <button>Retourner sur la page d'accueil</button>
+          </NavLink>
+        </div>
+      </div>
     </>
   );
 }

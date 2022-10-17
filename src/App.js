@@ -77,6 +77,7 @@ import AfterNewPassword from "./components/Reset-Password/AfterNewPassword";
 import ResetSuccess from "./components/Reset-Password/ResetSuccess";
 import Update from "./components/Update/Update";
 import SecureUpdate from "./components/Update/SecureUpdate";
+import SecureNavigation from "./components/Navigation/SecureNavigation";
 
 export default function App() {
   return (
@@ -165,6 +166,7 @@ export default function App() {
         <Route path="/reset-success" element={<ResetSuccess />} />
         <Route path="/update" element={<Update />} />
         <Route path="/secure-update" element={<SecureUpdate />} />
+        <Route path="/secure-nav" element={<SecureNavigation />} />
         <Route path="/panel-kdvb" element={<Panel />} />
       </Routes>
     </BrowserRouter>
