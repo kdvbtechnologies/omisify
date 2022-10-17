@@ -62,7 +62,7 @@ export default function C1() {
     const userId = localStorage.getItem("https://omisify.com/userId");
     axios({
       method: "put",
-      url: `https://omisify-api.onrender.com/api/user/update/${userId}`,
+      url: `https://omisify-api.onrender.com/api/user/update-comment/${userId}`,
       data: {
         // total life
         pointtlifesept2022,
