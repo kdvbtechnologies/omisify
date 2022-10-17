@@ -117,15 +117,14 @@ export default function UpdateSuccess() {
   return (
     <div style={family}>
       <LoginNav />
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <div className="update-success">
-            <div className="title">
-              <p>Terminé !</p>
-            </div>
-
+      <div className="update-success">
+        <div className="title">
+          <p>Terminé !</p>
+        </div>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>
             {shortname && (
               <div className="a">
                 <p>Le téléchargement de la dernière mise à jour à réussi</p>
@@ -134,9 +133,9 @@ export default function UpdateSuccess() {
                 </NavLink>
               </div>
             )}
-          </div>
-        </>
-      )}
+          </>
+        )}
+      </div>
     </div>
   );
 }
