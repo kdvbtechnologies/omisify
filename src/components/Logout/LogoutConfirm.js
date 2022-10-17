@@ -1,3 +1,5 @@
+import LoginNav from "../Auth/LoginNav";
+
 export default function LogoutConfirm() {
   const shortname = localStorage.getItem("https://omisify.com/shortname");
 
@@ -13,6 +15,7 @@ export default function LogoutConfirm() {
 
   return (
     <>
+      <LoginNav />
       <p>
         Partenaire {shortname}, Souhaitez-vous vraiment vous quitter Omisify ?
       </p>
