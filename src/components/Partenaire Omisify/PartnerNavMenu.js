@@ -20,9 +20,7 @@ export default function PartnerNavMenu() {
         <NavLink className="li" to="/partner-historical">
           <li>Historique</li>
         </NavLink>
-        <NavLink className="li" to="/partner-trans">
-          <li>Transparence</li>
-        </NavLink>
+
         <NavLink className="li" to="/partner-contact">
           <li>Service</li>
         </NavLink>
