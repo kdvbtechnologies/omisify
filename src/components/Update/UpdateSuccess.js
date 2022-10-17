@@ -12,7 +12,7 @@ export default function UpdateSuccess() {
   useEffect(() => {
     async function get() {
       await axios
-        .get(`https://famous-peplum-dove.cyclic.app/api/user/${userId}`)
+        .get(`https://omisify-api.onrender.com/api/user/${userId}`)
         .then((res) => {
           const name = res.data.name;
           const partnername = res.data.partnername;
