@@ -15,7 +15,7 @@ export default function PartnerNav() {
           <NavLink className="navlink" to="/partner">
             <li>{shortname}</li>
           </NavLink>
-          <NavLink className="navlink" to="/secure-nav-menu">
+          <NavLink className="navlink" to="/secure-menu">
             <li>Menu</li>
           </NavLink>
         </div>
