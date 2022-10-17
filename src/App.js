@@ -83,6 +83,7 @@ import AfterLogout from "./components/Logout/AfterLogout";
 import SecureLogoutConfirm from "./components/Logout/SecureLogoutConfirm";
 import Infos from "./components/Settings/Infos";
 import Welcome from "./components/Bonus/Welcome";
+import SecureInfosUpdate from "./components/Settings/SecureInfosUpdate";
 
 export default function App() {
   return (
@@ -181,6 +182,7 @@ export default function App() {
         <Route path="/after-logout" element={<AfterLogout />} />
         <Route path="/infos" element={<Infos />} />
         <Route path="/welcome" element={<Welcome />} />
+        <Route path="/secure-infos-update" element={<SecureInfosUpdate />} />
       </Routes>
     </BrowserRouter>
   );

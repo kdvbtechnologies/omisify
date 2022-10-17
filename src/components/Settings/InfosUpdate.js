@@ -1,8 +1,8 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-export default function Infos() {
-  //const [api, setApi] = useState([]);
+export default function InfosUpdate() {
+  const [name, setName] = useState("");
 
   useEffect(() => {
     async function get() {
@@ -18,11 +18,20 @@ export default function Infos() {
     <>
       <div className="title">
         <p>Informations personnelles</p>
-        <button>Modifier</button>
       </div>
 
-      <p>Noms de naissance : </p>
-      <p>Genre : </p>
+      <p>Noms de naissance</p>
+      <input
+        type="text"
+        placeholder="Noms de naissance"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        name="name"
+      />
+
+      <p>Genre</p>
+      <input type="text" placeholder="Genre" />
+
       <p>Age : </p>
       <p>Pays actuel : </p>
       <p>Pays de naissance : </p>
@@ -34,6 +43,7 @@ export default function Infos() {
       <p>Groupe Whatsapp : </p>
       <p>Numéro Telegram : </p>
       <p>Numéro Telegram : </p>
+      <button>Valider</button>
     </>
   );
 }

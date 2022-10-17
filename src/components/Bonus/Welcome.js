@@ -16,7 +16,10 @@ export default function Welcome() {
     };
 
     await axios
-      .put(`https://omisify-api.onrender.com/api/user/updatecomment/${userId}`, data)
+      .put(
+        `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
+        data
+      )
       .then((res) => {
         console.log(res);
         dispatch(addPosts(data));
