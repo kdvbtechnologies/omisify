@@ -6,19 +6,24 @@ import { useNavigate } from "react-router-dom";
 export default function AddSeptember() {
   const navigate = useNavigate();
   const [isLoading, setLoading] = useState(true);
-  const pointtcommentsept2022 = 0;
-  const pointtcomment2022 = 0;
-  const pointtcommentlife = 0;
+
+  // total life
   const pointtlifesept2022 = 0;
   const pointtlife2022 = 0;
   const pointtlife = 0;
 
-  const gaintcommentsept2022 = 0;
-  const gaintcomment2022 = 0;
-  const gaintcommentlife = 0;
   const gaintlifesept2022 = 0;
   const gaintlife2022 = 0;
   const gaintlife = 0;
+
+  // comment
+  const pointtcommentsept2022 = 0;
+  const pointtcomment2022 = 0;
+  const pointtcommentlife = 0;
+
+  const gaintcommentsept2022 = 0;
+  const gaintcomment2022 = 0;
+  const gaintcommentlife = 0;
 
   const numbertcommentsept2022 = 0;
   const numbertcomment2022 = 0;
@@ -179,19 +184,23 @@ export default function AddSeptember() {
       method: "put",
       url: `https://omisify-api.onrender.com/api/user/update/${userId}`,
       data: {
-        pointtcommentsept2022,
-        pointtcomment2022,
-        pointtcommentlife,
+        // total life
         pointtlifesept2022,
         pointtlife2022,
         pointtlife,
 
-        gaintcommentsept2022,
-        gaintcomment2022,
-        gaintcommentlife,
         gaintlifesept2022,
         gaintlife2022,
         gaintlife,
+
+        // comment
+        pointtcommentsept2022,
+        pointtcomment2022,
+        pointtcommentlife,
+
+        gaintcommentsept2022,
+        gaintcomment2022,
+        gaintcommentlife,
 
         numbertcommentsept2022,
         numbertcomment2022,
