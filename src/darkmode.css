@@ -919,6 +919,7 @@ footer {
   padding: 20px 10px;
 }
 .update .a button {
+  cursor: pointer;
   font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
   background-color: transparent;
   border: 1px solid red;
