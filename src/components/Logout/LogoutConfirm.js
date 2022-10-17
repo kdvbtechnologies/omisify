@@ -26,9 +26,11 @@ export default function LogoutConfirm() {
       <div className="logout-confirm">
         <p>Partenaire {shortname}, Souhaitez-vous vraiment quitter Omisify ?</p>
         <div className="button">
-          <NavLink to="/partner">
-            <button>Non, je suis toujours là</button>
-          </NavLink>
+          <div className="no">
+            <NavLink to="/partner">
+              <button>Non, je suis toujours là</button>
+            </NavLink>
+          </div>
 
           <div className="yes">
             <button onClick={Yes}>Oui, je reviens bientot</button>
