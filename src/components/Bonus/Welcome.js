@@ -16,8 +16,9 @@ export default function Welcome() {
     };
 
     await axios
-      .put(
-        `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
+      .post(
+        //`${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
+        `${process.env.REACT_APP_OMISIFY_API}/api/panel/add`,
         data
       )
       .then((res) => {
