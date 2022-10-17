@@ -14,6 +14,9 @@ export default function PartnerNavMenu() {
         <div className="menu-navigation-title">
           <p>Menu</p>
         </div>
+        <NavLink className="li" to="/update">
+          <li>Mise à jour</li>
+        </NavLink>
         <NavLink className="li" to="/program">
           <li>Programme</li>
         </NavLink>
