@@ -1,6 +1,8 @@
+import { NavLink } from "react-router-dom";
 import LoginNav from "../Auth/LoginNav";
 
 export default function Logout() {
+  /*
   function Yes() {
     window.location = "/secure-logout-confirm";
   }
@@ -8,7 +10,7 @@ export default function Logout() {
   function No() {
     window.location = "/partner";
   }
-
+*/
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -22,11 +24,15 @@ export default function Logout() {
 
         <div className="button">
           <div className="yes">
-            <button onClick={Yes}>Oui</button>
+            <NavLink to="/secure-logout-confirm">
+              <button>Oui</button>
+            </NavLink>
           </div>
 
           <div className="no">
-            <button onClick={No}>Non</button>
+            <NavLink to="/partner">
+              <button>Non</button>
+            </NavLink>
           </div>
         </div>
       </div>

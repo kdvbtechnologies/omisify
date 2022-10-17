@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import LoginNav from "../Auth/LoginNav";
 
 export default function LogoutConfirm() {
@@ -9,9 +10,10 @@ export default function LogoutConfirm() {
     window.location = "/after-logout";
   }
 
+  /*
   function No() {
     window.location = "/partner";
-  }
+  }*/
 
   const family = {
     fontFamily:
@@ -24,9 +26,9 @@ export default function LogoutConfirm() {
       <div className="logout-confirm">
         <p>Partenaire {shortname}, Souhaitez-vous vraiment quitter Omisify ?</p>
         <div className="button">
-          <div className="no">
-            <button onClick={No}>Non, je suis toujours là</button>
-          </div>
+          <NavLink to="/partner">
+            <button>Non, je suis toujours là</button>
+          </NavLink>
 
           <div className="yes">
             <button onClick={Yes}>Oui, je reviens bientot</button>
