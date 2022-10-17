@@ -1,21 +1,29 @@
 import axios from "axios";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addPosts } from "../../feature/posts.slice";
 
 export default function Welcome() {
   const [codewelcome, setCodeWelcome] = useState("");
   const userId = localStorage.getItem("https://omisify.com/userId");
+  const dispatch = useDispatch();
 
-  async function Validate() {
-    await axios({
-      method: "put",
-      url: `https://omisify-api.onrender.com/api/user/update/${userId}`,
-      data: {
-        codewelcome,
-      },
-    })
-      .then((res) => console.log(res))
+  async function Validate(e) {
+    e.preventDefault();
+
+    const data = {
+      codewelcome: codewelcome,
+    };
+
+    await axios
+      .put(`https://omisify-api.onrender.com/api/user/update/${userId}`, data)
+      .then((res) => {
+        console.log(res);
+        dispatch(addPosts(data));
+      })
       .catch((err) => console.log(err));
   }
+
   return (
     <>
       <p>Bonus de Bienvenue</p>

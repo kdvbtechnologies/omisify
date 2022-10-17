@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect } from "react";
 
 export default function Infos() {
+  //const [api, setApi] = useState([]);
+
   useEffect(() => {
     async function get() {
       await axios
@@ -11,6 +13,14 @@ export default function Infos() {
     }
     get();
   }, []);
+
+  /*function filterResult() {
+    const result = api.filter((post) => {
+      return post.userId === cSeptember;
+    });
+    setApi(result);
+  }
+  filterResult();*/
 
   return (
     <>
