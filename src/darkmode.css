@@ -731,7 +731,7 @@ footer {
 }
 
 /* src - components - partenaire omisify -  update september*/
-.update {
+.update-point {
   text-align: center;
   padding: 70px 0px;
   font-size: 17px;
@@ -900,7 +900,64 @@ footer {
   padding: 10px 20px;
 }
 
+/* update */
+.update {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.update .title {
+  color: white;
+  font-size: 20px;
+}
+
+.update .a {
+  padding: 70px 0px;
+}
+
+.update .a p {
+  padding: 20px 10px;
+}
+.update .a button {
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.update .title p {
+  background-color: red;
+  margin: 0px 500px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.update p {
+  padding: 10px 0px;
+}
+
+
 @media screen and (max-width: 760px) {
+  
+
+  .update .title {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .update .title p {
+    background-color: red;
+    margin: 0px 80px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* en ecris en haut pour le responsive */
+  /* en ecris en haut pour le responsive */
+  /* en ecris en haut pour le responsive */
   .navigation .right-navigation .navlink {
     text-decoration: none;
 }

@@ -10,7 +10,7 @@ export default function UpdateSeptember() {
   return (
     <div style={family}>
       <PartnerNav />
-      <div className="update">
+      <div className="update-point">
         <div className="update-title">
           <p>Actualiser vos points</p>
         </div>

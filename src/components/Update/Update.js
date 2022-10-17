@@ -10,18 +10,30 @@ export default function Update() {
     window.location.reload();
   }
 
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
+
   return (
-    <>
+    <div style={family}>
       <LoginNav />
-      <p>Mise à jour</p>
-      <p>Obtenir la dernière mise à jour</p>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <button onClick={Download}>Télécharger</button>
-        </>
-      )}
-    </>
+      <div className="update">
+        <div className="title">
+          <p>Mise à jour</p>
+        </div>
+
+        <div className="a">
+          <p>Cliquer sur Télécharger pour obtenir la dernière mise à jour</p>
+          {isLoading ? (
+            <Loader />
+          ) : (
+            <>
+              <button onClick={Download}>Télécharger</button>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
