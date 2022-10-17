@@ -10,14 +10,11 @@ export default function PartnerUpdate() {
 
   const userId = localStorage.getItem("https://omisify.com/userId");
   const shortname = localStorage.getItem("https://omisify.com/shortname");
-  const tpointthismonth = localStorage.getItem(
-    "https://omisify.com/tpointthismonth"
-  );
 
   return (
     <div style={family}>
       {userId && shortname ? (
-        <>{tpointthismonth ? <UpdateSeptember /> : <AddSeptember />}</>
+        <>{shortname ? <UpdateSeptember /> : <AddSeptember />}</>
       ) : (
         <Auth />
       )}
