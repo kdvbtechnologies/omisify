@@ -4,7 +4,6 @@ import LoginNav from "../Auth/LoginNav";
 
 export default function Panel() {
   const [api, setApi] = useState([]);
-  const welcomebonus = 100;
 
   useEffect(() => {
     async function get() {
@@ -19,6 +18,7 @@ export default function Panel() {
     get();
   }, []);
 
+  const welcomebonus = 100;
   const userId = `${api.userId}`;
   const codewelcomementor = `${api.codewelcomementor}`;
 
@@ -34,6 +34,7 @@ export default function Panel() {
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   }
+
   return (
     <>
       <LoginNav />
@@ -53,6 +54,7 @@ export default function Panel() {
           <p>Noms du demandeur : {api.partnername}</p>
           <p>Noms court du demandeur : {api.shortname}</p>
           <p>Code de Bienvenue du mentor : {api.codewelcomementor}</p>
+          <p>Bonus de Bienvenue à ajouter : {welcomebonus}</p>
           <button onClick={Validate}>Valider</button>
         </>
       ))}
