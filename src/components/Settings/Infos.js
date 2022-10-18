@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Infos() {
   const [api, setApi] = useState([]);
@@ -18,7 +19,9 @@ export default function Infos() {
     <>
       <div className="title">
         <p>Informations personnelles</p>
-        <button>Modifier</button>
+        <NavLink to="/infos-update">
+          <button>Modifier</button>
+        </NavLink>
       </div>
 
       {api.map((api) => (
