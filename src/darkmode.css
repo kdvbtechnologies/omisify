@@ -1114,6 +1114,12 @@ footer {
 }
 
 /* admin - navigation - navigation.js */
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .panel-nav {
   text-align: center;
   display: flex;
