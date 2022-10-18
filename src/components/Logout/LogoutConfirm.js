@@ -7,6 +7,7 @@ export default function LogoutConfirm() {
   function Yes() {
     localStorage.removeItem("https://omisify.com/userId");
     localStorage.removeItem("https://omisify.com/shortname");
+    localStorage.removeItem("https://omisify.com/welcomebonus");
     window.location = "/after-logout";
   }
 
