@@ -19,6 +19,40 @@ export default function InfosUpdate() {
   const [numbertelegram, setnumbertelegram] = useState("");
   const navigate = useNavigate();
 
+  const getname = localstorage.getItem("https://omisify.com/name");
+  const getshortname = localstorage.getItem("https://omisify.com/shortname");
+  const getpartnername = localstorage.getItem(
+    "https://omisify.com/partnername"
+  );
+  const getgenre = localstorage.getItem("https://omisify.com/genre");
+  const getage = localstorage.getItem("https://omisify.com/age");
+  const getcountry = localstorage.getItem("https://omisify.com/country");
+  const getbirthcountry = localstorage.getItem(
+    "https://omisify.com/birthcountry"
+  );
+  const getdateofbirth = localstorage.getItem(
+    "https://omisify.com/dateofbirth"
+  );
+  const getpaymentmethod = localstorage.getItem(
+    "https://omisify.com/paymentmethod"
+  );
+  const getemail = localstorage.getItem("https://omisify.com/email");
+  const getcodewelcome = localstorage.getItem(
+    "https://omisify.com/codewelcome"
+  );
+  const getgroupwhatsapp = localstorage.getItem(
+    "https://omisify.com/groupwhatsapp"
+  );
+  const getgrouptelegram = localstorage.getItem(
+    "https://omisify.com/grouptelegram"
+  );
+  const getnumberwhatsapp = localstorage.getItem(
+    "https://omisify.com/numberwhatsapp"
+  );
+  const getnumbertelegram = localstorage.getItem(
+    "https://omisify.com/numbertelegram"
+  );
+
   async function Validate() {
     //
   }
@@ -39,140 +73,365 @@ export default function InfosUpdate() {
         </div>
 
         <div className="a">
-          <p>Noms de naissance</p>
-          <input
-            type="text"
-            placeholder="Noms de naissance"
-            value={name}
-            onChange={(e) => setname(e.target.value)}
-            name="name"
-          />
+          {getname ? (
+            <>
+              <p>Noms de naissance</p>
+              <input
+                type="text"
+                placeholder="Noms de naissance"
+                value={getname}
+                onChange={(e) => setname(e.target.value)}
+                name="name"
+              />
+            </>
+          ) : (
+            <>
+              <p>Noms de naissance</p>
+              <input
+                type="text"
+                placeholder="Noms de naissance"
+                value={name}
+                onChange={(e) => setname(e.target.value)}
+                name="name"
+              />
+            </>
+          )}
 
-          <p>Noms principal</p>
-          <input
-            type="text"
-            placeholder="Noms principal"
-            value={partnername}
-            onChange={(e) => setpartnername(e.target.value)}
-            name="partnername"
-          />
+          {getpartnername ? (
+            <>
+              <p>Noms principal</p>
+              <input
+                type="text"
+                placeholder={partnername}
+                value={partnername}
+                onChange={(e) => setpartnername(e.target.value)}
+                name="partnername"
+              />
+            </>
+          ) : (
+            <>
+              <p>Noms principal</p>
+              <input
+                type="text"
+                placeholder="Noms principal"
+                value={partnername}
+                onChange={(e) => setpartnername(e.target.value)}
+                name="partnername"
+              />
+            </>
+          )}
 
-          <p>Noms court</p>
-          <input
-            type="text"
-            placeholder="Noms court"
-            value={shortname}
-            onChange={(e) => setshortname(e.target.value)}
-            name="shortname"
-          />
+          {getshortname ? (
+            <>
+              <p>Noms court</p>
+              <input
+                type="text"
+                placeholder={shortname}
+                value={shortname}
+                onChange={(e) => setshortname(e.target.value)}
+                name="shortname"
+              />
+            </>
+          ) : (
+            <>
+              <p>Noms court</p>
+              <input
+                type="text"
+                placeholder="Noms court"
+                value={shortname}
+                onChange={(e) => setshortname(e.target.value)}
+                name="shortname"
+              />
+            </>
+          )}
 
-          <p>Genre</p>
-          <input
-            type="text"
-            placeholder="Genre"
-            value={genre}
-            onChange={(e) => setgenre(e.target.value)}
-            name="genre"
-          />
+          {getgenre ? (
+            <>
+              <p>Genre</p>
+              <input
+                type="text"
+                placeholder={genre}
+                value={genre}
+                onChange={(e) => setgenre(e.target.value)}
+                name="genre"
+              />
+            </>
+          ) : (
+            <>
+              <p>Genre</p>
+              <input
+                type="text"
+                placeholder="Genre"
+                value={genre}
+                onChange={(e) => setgenre(e.target.value)}
+                name="genre"
+              />
+            </>
+          )}
 
-          <p>Age</p>
-          <input
-            type="text"
-            placeholder="Age"
-            value={age}
-            onChange={(e) => setage(e.target.value)}
-            name="age"
-          />
+          {getage ? (
+            <>
+              <p>Age</p>
+              <input
+                type="text"
+                placeholder={age}
+                value={age}
+                onChange={(e) => setage(e.target.value)}
+                name="age"
+              />
+            </>
+          ) : (
+            <>
+              <p>Age</p>
+              <input
+                type="text"
+                placeholder="Age"
+                value={age}
+                onChange={(e) => setage(e.target.value)}
+                name="age"
+              />
+            </>
+          )}
 
-          <p>Pays actuel</p>
-          <input
-            type="text"
-            placeholder="Pays actuel"
-            value={country}
-            onChange={(e) => setcountry(e.target.value)}
-            name="country"
-          />
+          {getcountry ? (
+            <>
+              <p>Pays actuel</p>
+              <input
+                type="text"
+                placeholder="Pays actuel"
+                value={country}
+                onChange={(e) => setcountry(e.target.value)}
+                name="country"
+              />
+            </>
+          ) : (
+            <>
+              <p>Pays actuel</p>
+              <input
+                type="text"
+                placeholder="Pays actuel"
+                value={country}
+                onChange={(e) => setcountry(e.target.value)}
+                name="country"
+              />
+            </>
+          )}
 
-          <p>Pays de naissance</p>
-          <input
-            type="text"
-            placeholder="Pays de naissance"
-            value={birthcountry}
-            onChange={(e) => setbirthcountry(e.target.value)}
-            name="birthcountry"
-          />
+          {getbirthcountry ? (
+            <>
+              <p>Pays de naissance</p>
+              <input
+                type="text"
+                placeholder="Pays de naissance"
+                value={birthcountry}
+                onChange={(e) => setbirthcountry(e.target.value)}
+                name="birthcountry"
+              />
+            </>
+          ) : (
+            <>
+              <p>Pays de naissance</p>
+              <input
+                type="text"
+                placeholder="Pays de naissance"
+                value={birthcountry}
+                onChange={(e) => setbirthcountry(e.target.value)}
+                name="birthcountry"
+              />
+            </>
+          )}
 
-          <p>Date de naissance</p>
-          <input
-            type="text"
-            placeholder="Date de naissance"
-            value={dateofbirth}
-            onChange={(e) => setdateofbirth(e.target.value)}
-            name="dateofbirth"
-          />
+          {getdateofbirth ? (
+            <>
+              <p>Date de naissance</p>
+              <input
+                type="text"
+                placeholder="Date de naissance"
+                value={dateofbirth}
+                onChange={(e) => setdateofbirth(e.target.value)}
+                name="dateofbirth"
+              />
+            </>
+          ) : (
+            <>
+              <p>Date de naissance</p>
+              <input
+                type="text"
+                placeholder="Date de naissance"
+                value={dateofbirth}
+                onChange={(e) => setdateofbirth(e.target.value)}
+                name="dateofbirth"
+              />
+            </>
+          )}
 
-          <p>Email</p>
-          <input
-            type="email"
-            placeholder="E-mail"
-            value={email}
-            onChange={(e) => setemail(e.target.value)}
-            name="email"
-          />
+          {getemail ? (
+            <>
+              <p>Email</p>
+              <input
+                type="email"
+                placeholder={email}
+                value={email}
+                onChange={(e) => setemail(e.target.value)}
+                name="email"
+              />
+            </>
+          ) : (
+            <>
+              <p>Email</p>
+              <input
+                type="email"
+                placeholder="E-mail"
+                value={email}
+                onChange={(e) => setemail(e.target.value)}
+                name="email"
+              />
+            </>
+          )}
 
-          <p>Méthode de paiement préféré</p>
-          <input
-            type="text"
-            placeholder="Méthode de paiement préféré"
-            value={paymentmethod}
-            onChange={(e) => setpaymentmethod(e.target.value)}
-            name="paymentmethod"
-          />
+          {getpaymentmethod ? (
+            <>
+              <p>Méthode de paiement préféré</p>
+              <input
+                type="text"
+                placeholder={paymentmethod}
+                value={paymentmethod}
+                onChange={(e) => setpaymentmethod(e.target.value)}
+                name="paymentmethod"
+              />
+            </>
+          ) : (
+            <>
+              <p>Méthode de paiement préféré</p>
+              <input
+                type="text"
+                placeholder="Méthode de paiement préféré"
+                value={paymentmethod}
+                onChange={(e) => setpaymentmethod(e.target.value)}
+                name="paymentmethod"
+              />
+            </>
+          )}
 
-          <p>Code de Bienvenue</p>
-          <input
-            type="text"
-            placeholder="Code de Bienvenue"
-            value={codewelcome}
-            onChange={(e) => setcodewelcome(e.target.value)}
-            name="codewelcome"
-          />
+          {getcodewelcome ? (
+            <>
+              <p>Code de Bienvenue</p>
+              <input
+                type="text"
+                placeholder={codewelcome}
+                value={codewelcome}
+                onChange={(e) => setcodewelcome(e.target.value)}
+                name="codewelcome"
+              />
+            </>
+          ) : (
+            <>
+              <p>Code de Bienvenue</p>
+              <input
+                type="text"
+                placeholder="Code de Bienvenue"
+                value={codewelcome}
+                onChange={(e) => setcodewelcome(e.target.value)}
+                name="codewelcome"
+              />
+            </>
+          )}
 
-          <p>Groupe Whatsapp</p>
-          <input
-            type="text"
-            placeholder="Groupe Whatsapp"
-            value={groupwhatsapp}
-            onChange={(e) => setgroupwhatsapp(e.target.value)}
-            name="groupwhatsapp"
-          />
+          {getgroupwhatsapp ? (
+            <>
+              <p>Groupe Whatsapp</p>
+              <input
+                type="text"
+                placeholder={groupwhatsapp}
+                value={groupwhatsapp}
+                onChange={(e) => setgroupwhatsapp(e.target.value)}
+                name="groupwhatsapp"
+              />
+            </>
+          ) : (
+            <>
+              <p>Groupe Whatsapp</p>
+              <input
+                type="text"
+                placeholder="Groupe Whatsapp"
+                value={groupwhatsapp}
+                onChange={(e) => setgroupwhatsapp(e.target.value)}
+                name="groupwhatsapp"
+              />
+            </>
+          )}
 
-          <p>Groupe Telegram</p>
-          <input
-            type="text"
-            placeholder="Groupe Telegram"
-            value={grouptelegram}
-            onChange={(e) => setgrouptelegram(e.target.value)}
-            name="grouptelegram"
-          />
+          {getgrouptelegram ? (
+            <>
+              <p>Groupe Telegram</p>
+              <input
+                type="text"
+                placeholder={grouptelegram}
+                value={grouptelegram}
+                onChange={(e) => setgrouptelegram(e.target.value)}
+                name="grouptelegram"
+              />
+            </>
+          ) : (
+            <>
+              <p>Groupe Telegram</p>
+              <input
+                type="text"
+                placeholder="Groupe Telegram"
+                value={grouptelegram}
+                onChange={(e) => setgrouptelegram(e.target.value)}
+                name="grouptelegram"
+              />
+            </>
+          )}
 
-          <p>Numéro Whatsapp</p>
-          <input
-            type="text"
-            placeholder="Numéro Whatsapp"
-            value={numberwhatsapp}
-            onChange={(e) => setnumberwhatsapp(e.target.value)}
-            name="numberwhatsapp"
-          />
+          {getnumberwhatsapp ? (
+            <>
+              <p>Numéro Whatsapp</p>
+              <input
+                type="text"
+                placeholder={numberwhatsapp}
+                value={numberwhatsapp}
+                onChange={(e) => setnumberwhatsapp(e.target.value)}
+                name="numberwhatsapp"
+              />
+            </>
+          ) : (
+            <>
+              <p>Numéro Whatsapp</p>
+              <input
+                type="text"
+                placeholder="Numéro Whatsapp"
+                value={numberwhatsapp}
+                onChange={(e) => setnumberwhatsapp(e.target.value)}
+                name="numberwhatsapp"
+              />
+            </>
+          )}
 
-          <p>Numéro Telegram</p>
-          <input
-            type="text"
-            placeholder="Numéro Telegram"
-            value={numbertelegram}
-            onChange={(e) => setnumbertelegram(e.target.value)}
-            name="numbertelegram"
-          />
+          {getnumbertelegram ? (
+            <>
+              <p>Numéro Telegram</p>
+              <input
+                type="text"
+                placeholder={numbertelegram}
+                value={numbertelegram}
+                onChange={(e) => setnumbertelegram(e.target.value)}
+                name="numbertelegram"
+              />
+            </>
+          ) : (
+            <>
+              <p>Numéro Telegram</p>
+              <input
+                type="text"
+                placeholder="Numéro Telegram"
+                value={numbertelegram}
+                onChange={(e) => setnumbertelegram(e.target.value)}
+                name="numbertelegram"
+              />
+            </>
+          )}
 
           <button onClick={Validate}>Valider</button>
         </div>
