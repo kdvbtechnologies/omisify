@@ -54,7 +54,7 @@ export default function Panel() {
           <p>Noms du demandeur : {api.partnername}</p>
           <p>Noms court du demandeur : {api.shortname}</p>
           <p>Code de Bienvenue du mentor : {api.codewelcomementor}</p>
-          <p>Bonus de Bienvenue à ajouter : {welcomebonus}</p>
+          <p>Bonus de Bienvenue à ajouter : {welcomebonus} points</p>
           <button onClick={Validate}>Valider</button>
         </>
       ))}
