@@ -33,7 +33,7 @@ export default function Panel() {
       {api.map((api) => (
         <>
           <p>Code de Bienvenue</p>
-          <p>Noms du demandeur : {api.name}</p>
+          <p>Noms du demandeur : {api.partnername}</p>
           <p>Noms court du demandeur : {api.shortname}</p>
           <p>Code de Bienvenue du mentor : {api.codewelcomementor}</p>
         </>
