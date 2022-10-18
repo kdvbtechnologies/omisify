@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import LoginNav from "../Auth/LoginNav";
+import PanelNav from "./Navigation/PanelNav";
 
 export default function Panel() {
   const [api, setApi] = useState([]);
@@ -38,6 +39,7 @@ export default function Panel() {
   return (
     <>
       <LoginNav />
+      <PanelNav />
       {api.map((api) => (
         <>
           <h1>Code de Bienvenue</h1>
