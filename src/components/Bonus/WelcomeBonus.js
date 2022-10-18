@@ -1,11 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addPosts } from "../../feature/posts.slice";
-import LoginNav from "../Auth/LoginNav";
 import Loader from "../Partenaire Omisify/Loader";
 
 export default function WelcomeBonus() {
+  const navigate = useNavigate();
   const [codewelcomementor, setcodewelcomementor] = useState("");
   const userId = localStorage.getItem("https://omisify.com/userId");
   const shortname = localStorage.getItem("https://omisify.com/shortname");
@@ -35,6 +36,7 @@ export default function WelcomeBonus() {
         dispatch(addPosts(data));
       })
       .catch((err) => console.log(err));
+    window.location = "/after-welcome-bonus";
   }
 
   const family = {
@@ -44,7 +46,9 @@ export default function WelcomeBonus() {
 
   return (
     <div style={family}>
-      <LoginNav />
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>Retour</button>
+      </div>
       <div className="welcome-bonus">
         <div className="title">
           <li>Bonus de Bienvenue</li>
