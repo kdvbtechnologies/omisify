@@ -107,6 +107,91 @@ export default function UpdateSuccess() {
             );
           }
 
+          // infos of user
+          const getgenre = res.data.genre;
+          if (getgenre) {
+            localStorage.setItem("https://omisify.com/genre", getgenre);
+          }
+
+          const getage = res.data.age;
+          if (getage) {
+            localStorage.setItem("https://omisify.com/age", getage);
+          }
+
+          const getcountry = res.data.country;
+          if (getcountry) {
+            localStorage.setItem("https://omisify.com/country", getcountry);
+          }
+
+          const getbirthcountry = res.data.birthcountry;
+          if (getbirthcountry) {
+            localStorage.getItem(
+              "https://omisify.com/birthcountry",
+              getbirthcountry
+            );
+          }
+
+          const getdateofbirth = res.data.dateofbirth;
+          if (getdateofbirth) {
+            localStorage.setItem(
+              "https://omisify.com/dateofbirth",
+              getdateofbirth
+            );
+          }
+
+          const getpaymentmethod = res.data.paymentmethod;
+          if (getpaymentmethod) {
+            localStorage.setItem(
+              "https://omisify.com/paymentmethod",
+              getpaymentmethod
+            );
+          }
+
+          const getemail = res.data.email;
+          if (getemail) {
+            localStorage.setItem("https://omisify.com/email", getemail);
+          }
+
+          const getcodewelcome = res.data.codewelcome;
+          if (getcodewelcome) {
+            localStorage.setItem(
+              "https://omisify.com/codewelcome",
+              getcodewelcome
+            );
+          }
+
+          const getgroupwhatsapp = res.data.groupwhatsapp;
+          if (getgroupwhatsapp) {
+            localStorage.setItem(
+              "https://omisify.com/groupwhatsapp",
+              getgroupwhatsapp
+            );
+          }
+
+          const getgrouptelegram = res.data.grouptelegram;
+          if (getgrouptelegram) {
+            localStorage.setItem(
+              "https://omisify.com/grouptelegram",
+              getgrouptelegram
+            );
+          }
+
+          const getnumberwhatsapp = res.data.numberwhatsapp;
+          if (getnumberwhatsapp) {
+            localStorage.setItem(
+              "https://omisify.com/numberwhatsapp",
+              getnumberwhatsapp
+            );
+          }
+
+          const getnumbertelegram = res.data.numbertelegram;
+          if (getnumbertelegram) {
+            localStorage.setItem(
+              "https://omisify.com/numbertelegram",
+              getnumbertelegram
+            );
+          }
+
           localStorage.setItem("https://omisify.com/name", name);
           localStorage.setItem("https://omisify.com/partnername", partnername);
           localStorage.setItem("https://omisify.com/shortname", shortname);
