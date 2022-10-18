@@ -5,15 +5,20 @@ import { addPosts } from "../../feature/posts.slice";
 import LoginNav from "../Auth/LoginNav";
 
 export default function WelcomeBonus() {
-  const [codewelcome, setCodeWelcome] = useState("");
-  //const userId = localStorage.getItem("https://omisify.com/userId");
+  const [codewelcomementor, setcodewelcomementor] = useState("");
+  const userId = localStorage.getItem("https://omisify.com/userId");
+  const shortname = localStorage.getItem("https://omisify.com/shortname");
+  const partnername = localStorage.getItem("https://omisify.com/partnername");
   const dispatch = useDispatch();
 
   async function Validate(e) {
     e.preventDefault();
 
     const data = {
-      codewelcome: codewelcome,
+      codewelcomementor,
+      userId,
+      shortname,
+      partnername,
     };
 
     await axios
@@ -51,9 +56,9 @@ export default function WelcomeBonus() {
           <input
             type="text"
             placeholder="Code du mentor"
-            value={codewelcome}
-            onChange={(e) => setCodeWelcome(e.target.value)}
-            name="codewelcome"
+            value={codewelcomementor}
+            onChange={(e) => setcodewelcomementor(e.target.value)}
+            name="codewelcomementor"
           />
         </div>
         <button onClick={Validate}>Demander le Bonus de Bienvenue</button>
