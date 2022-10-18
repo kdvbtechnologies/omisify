@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addPosts } from "../../feature/posts.slice";
 import LoginNav from "../Auth/LoginNav";
+import Loader from "../Partenaire Omisify/Loader";
 
 export default function WelcomeBonus() {
   const [codewelcomementor, setcodewelcomementor] = useState("");
@@ -10,8 +11,10 @@ export default function WelcomeBonus() {
   const shortname = localStorage.getItem("https://omisify.com/shortname");
   const partnername = localStorage.getItem("https://omisify.com/partnername");
   const dispatch = useDispatch();
+  const [isLoading, setIsLoading] = useState(false);
 
   async function Validate(e) {
+    setIsLoading(true);
     e.preventDefault();
 
     const data = {
@@ -61,7 +64,13 @@ export default function WelcomeBonus() {
             name="codewelcomementor"
           />
         </div>
-        <button onClick={Validate}>Demander le Bonus de Bienvenue</button>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>
+            <button onClick={Validate}>Demander le Bonus de Bienvenue</button>
+          </>
+        )}
       </div>
     </div>
   );
