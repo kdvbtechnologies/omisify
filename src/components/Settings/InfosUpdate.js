@@ -79,7 +79,8 @@ export default function InfosUpdate() {
               <input
                 type="text"
                 placeholder="Noms de naissance"
-                value={getname && name}
+                value={name}
+                defaultValue={getname}
                 onChange={(e) => setname(e.target.value)}
                 name="name"
               />
