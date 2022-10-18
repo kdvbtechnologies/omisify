@@ -187,3 +187,9 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+/* 
+
+REACT_APP_OMISIFY_API = https://omisify-api.onrender.com
+
+ */

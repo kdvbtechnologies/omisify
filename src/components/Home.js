@@ -33,10 +33,10 @@ export default function Home() {
           votre pays.
         </p>
         <p>
-          Avec Omisify vous pourrez retirer votre rémunération à tout moment que
-          vous le souhaiterez. Avec Omisify, votre rémunération est à porter de
-          vos mains. Nous utilisons tout les moyens de paiement disponible pour
-          permettre à tout nos partenaires d'être toujours rémunérer.
+          Avec Omisify vous pourrez retirer votre rémunération à n'importe quel
+          moment. Avec Omisify, votre rémunération est à porter de vos mains.
+          Nous utilisons tout les moyens de paiement disponible pour permettre à
+          tout nos partenaires d'être toujours rémunérer.
         </p>
         <p>
           Avec Omisify vous pourrez gagner de l'argent même lorsque vous dormez.
