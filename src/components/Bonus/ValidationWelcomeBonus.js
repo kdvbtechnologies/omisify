@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function WelcomeBonusSuccess() {
+export default function ValidationWelcomeBonus() {
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -10,10 +10,16 @@ export default function WelcomeBonusSuccess() {
     <div style={family}>
       <div className="welcome-bonus">
         <div className="title">
-          <p>Demande envoyé !</p>
+          <p>Demande envoyé (en attente)</p>
         </div>
 
-        <NavLink to="/secure-menu">
+        <div className="a">
+          <p>
+            La demande du Bonus de Bienvenue que vous avez faites est en attente
+            de validation
+          </p>
+        </div>
+        <NavLink to="/partner">
           <button>Terminé</button>
         </NavLink>
       </div>
