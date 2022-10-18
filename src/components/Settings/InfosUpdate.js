@@ -3,23 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 export default function InfosUpdate() {
   const getname = localStorage.getItem("https://omisify.com/name");
-  const [name, setname] = useState(getname);
-  const [shortname, setshortname] = useState("");
-  const [partnername, setpartnername] = useState("");
-  const [genre, setgenre] = useState("");
-  const [age, setage] = useState("");
-  const [country, setcountry] = useState("");
-  const [birthcountry, setbirthcountry] = useState("");
-  const [dateofbirth, setdateofbirth] = useState("");
-  const [paymentmethod, setpaymentmethod] = useState("");
-  const [email, setemail] = useState("");
-  const [codewelcome, setcodewelcome] = useState("");
-  const [groupwhatsapp, setgroupwhatsapp] = useState("");
-  const [numberwhatsapp, setnumberwhatsapp] = useState("");
-  const [grouptelegram, setgrouptelegram] = useState("");
-  const [numbertelegram, setnumbertelegram] = useState("");
-  const navigate = useNavigate();
-
   const getshortname = localStorage.getItem("https://omisify.com/shortname");
   const getpartnername = localStorage.getItem(
     "https://omisify.com/partnername"
@@ -52,6 +35,23 @@ export default function InfosUpdate() {
   const getnumbertelegram = localStorage.getItem(
     "https://omisify.com/numbertelegram"
   );
+
+  const [name, setname] = useState(getname);
+  const [shortname, setshortname] = useState(getshortname);
+  const [partnername, setpartnername] = useState(getpartnername);
+  const [genre, setgenre] = useState(getgenre);
+  const [age, setage] = useState(getage);
+  const [country, setcountry] = useState(getcountry);
+  const [birthcountry, setbirthcountry] = useState(getbirthcountry);
+  const [dateofbirth, setdateofbirth] = useState(getdateofbirth);
+  const [paymentmethod, setpaymentmethod] = useState(getpaymentmethod);
+  const [email, setemail] = useState(getemail);
+  const [codewelcome, setcodewelcome] = useState(getcodewelcome);
+  const [groupwhatsapp, setgroupwhatsapp] = useState(getgroupwhatsapp);
+  const [numberwhatsapp, setnumberwhatsapp] = useState(getnumberwhatsapp);
+  const [grouptelegram, setgrouptelegram] = useState(getgrouptelegram);
+  const [numbertelegram, setnumbertelegram] = useState(getnumbertelegram);
+  const navigate = useNavigate();
 
   async function Validate() {
     //
@@ -102,7 +102,7 @@ export default function InfosUpdate() {
               <p>Noms principal</p>
               <input
                 type="text"
-                placeholder={partnername}
+                placeholder="Noms principal"
                 value={partnername}
                 onChange={(e) => setpartnername(e.target.value)}
                 name="partnername"
@@ -126,7 +126,7 @@ export default function InfosUpdate() {
               <p>Noms court</p>
               <input
                 type="text"
-                placeholder={shortname}
+                placeholder="Noms court"
                 value={shortname}
                 onChange={(e) => setshortname(e.target.value)}
                 name="shortname"
@@ -150,7 +150,7 @@ export default function InfosUpdate() {
               <p>Genre</p>
               <input
                 type="text"
-                placeholder={genre}
+                placeholder="Genre"
                 value={genre}
                 onChange={(e) => setgenre(e.target.value)}
                 name="genre"
@@ -174,7 +174,7 @@ export default function InfosUpdate() {
               <p>Age</p>
               <input
                 type="text"
-                placeholder={age}
+                placeholder="Age"
                 value={age}
                 onChange={(e) => setage(e.target.value)}
                 name="age"
@@ -270,7 +270,7 @@ export default function InfosUpdate() {
               <p>Email</p>
               <input
                 type="email"
-                placeholder={email}
+                placeholder="E-mail"
                 value={email}
                 onChange={(e) => setemail(e.target.value)}
                 name="email"
@@ -294,7 +294,7 @@ export default function InfosUpdate() {
               <p>Méthode de paiement préféré</p>
               <input
                 type="text"
-                placeholder={paymentmethod}
+                placeholder="Méthode de paiement préféré"
                 value={paymentmethod}
                 onChange={(e) => setpaymentmethod(e.target.value)}
                 name="paymentmethod"
@@ -318,7 +318,7 @@ export default function InfosUpdate() {
               <p>Code de Bienvenue</p>
               <input
                 type="text"
-                placeholder={codewelcome}
+                placeholder="Code de Bienvenue"
                 value={codewelcome}
                 onChange={(e) => setcodewelcome(e.target.value)}
                 name="codewelcome"
@@ -342,7 +342,7 @@ export default function InfosUpdate() {
               <p>Groupe Whatsapp</p>
               <input
                 type="text"
-                placeholder={groupwhatsapp}
+                placeholder="Groupe Whatsapp"
                 value={groupwhatsapp}
                 onChange={(e) => setgroupwhatsapp(e.target.value)}
                 name="groupwhatsapp"
@@ -366,7 +366,7 @@ export default function InfosUpdate() {
               <p>Groupe Telegram</p>
               <input
                 type="text"
-                placeholder={grouptelegram}
+                placeholder="Groupe Telegram"
                 value={grouptelegram}
                 onChange={(e) => setgrouptelegram(e.target.value)}
                 name="grouptelegram"
@@ -390,7 +390,7 @@ export default function InfosUpdate() {
               <p>Numéro Whatsapp</p>
               <input
                 type="text"
-                placeholder={numberwhatsapp}
+                placeholder="Numéro Whatsapp"
                 value={numberwhatsapp}
                 onChange={(e) => setnumberwhatsapp(e.target.value)}
                 name="numberwhatsapp"
@@ -414,7 +414,7 @@ export default function InfosUpdate() {
               <p>Numéro Telegram</p>
               <input
                 type="text"
-                placeholder={numbertelegram}
+                placeholder="Numéro Telegram"
                 value={numbertelegram}
                 onChange={(e) => setnumbertelegram(e.target.value)}
                 name="numbertelegram"
