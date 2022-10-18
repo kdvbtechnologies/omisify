@@ -1,3 +1,4 @@
+import LoginNav from "../Auth/LoginNav";
 import PanelNav from "./Navigation/PanelNav";
 
 export default function HomePanel() {
@@ -8,6 +9,7 @@ export default function HomePanel() {
 
   return (
     <div style={family}>
+      <LoginNav />
       <PanelNav />
       <h3>Bienvenue sur le panneau d'administration d'Omisify</h3>
     </div>

@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import LoginNav from "../../Auth/LoginNav";
+import PanelNav from "../Navigation/PanelNav";
 
 export default function User() {
   const [api, setApi] = useState([]);
@@ -21,6 +23,8 @@ export default function User() {
 
   return (
     <div style={family}>
+      <LoginNav />
+      <PanelNav />
       <h3>Listes des Partenaires et leurs infos</h3>
       {api.map((api) => (
         <>
