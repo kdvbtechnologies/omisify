@@ -19,37 +19,37 @@ export default function InfosUpdate() {
   const [numbertelegram, setnumbertelegram] = useState("");
   const navigate = useNavigate();
 
-  const getname = localstorage.getItem("https://omisify.com/name");
-  const getshortname = localstorage.getItem("https://omisify.com/shortname");
-  const getpartnername = localstorage.getItem(
+  const getname = localStorage.getItem("https://omisify.com/name");
+  const getshortname = localStorage.getItem("https://omisify.com/shortname");
+  const getpartnername = localStorage.getItem(
     "https://omisify.com/partnername"
   );
-  const getgenre = localstorage.getItem("https://omisify.com/genre");
-  const getage = localstorage.getItem("https://omisify.com/age");
-  const getcountry = localstorage.getItem("https://omisify.com/country");
-  const getbirthcountry = localstorage.getItem(
+  const getgenre = localStorage.getItem("https://omisify.com/genre");
+  const getage = localStorage.getItem("https://omisify.com/age");
+  const getcountry = localStorage.getItem("https://omisify.com/country");
+  const getbirthcountry = localStorage.getItem(
     "https://omisify.com/birthcountry"
   );
-  const getdateofbirth = localstorage.getItem(
+  const getdateofbirth = localStorage.getItem(
     "https://omisify.com/dateofbirth"
   );
-  const getpaymentmethod = localstorage.getItem(
+  const getpaymentmethod = localStorage.getItem(
     "https://omisify.com/paymentmethod"
   );
-  const getemail = localstorage.getItem("https://omisify.com/email");
-  const getcodewelcome = localstorage.getItem(
+  const getemail = localStorage.getItem("https://omisify.com/email");
+  const getcodewelcome = localStorage.getItem(
     "https://omisify.com/codewelcome"
   );
-  const getgroupwhatsapp = localstorage.getItem(
+  const getgroupwhatsapp = localStorage.getItem(
     "https://omisify.com/groupwhatsapp"
   );
-  const getgrouptelegram = localstorage.getItem(
+  const getgrouptelegram = localStorage.getItem(
     "https://omisify.com/grouptelegram"
   );
-  const getnumberwhatsapp = localstorage.getItem(
+  const getnumberwhatsapp = localStorage.getItem(
     "https://omisify.com/numberwhatsapp"
   );
-  const getnumbertelegram = localstorage.getItem(
+  const getnumbertelegram = localStorage.getItem(
     "https://omisify.com/numbertelegram"
   );
 
