@@ -15,7 +15,7 @@ export default function WelcomeBonusSuccess() {
 
         <div className="b">
           <NavLink to="/secure-menu">
-            <button onClick={Finish}>Terminé</button>
+            <button>Terminé</button>
           </NavLink>
         </div>
       </div>
