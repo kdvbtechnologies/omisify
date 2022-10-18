@@ -80,7 +80,6 @@ export default function InfosUpdate() {
                 type="text"
                 placeholder="Noms de naissance"
                 value={name}
-                defaultValue={getname}
                 onChange={(e) => setname(e.target.value)}
                 name="name"
               />
