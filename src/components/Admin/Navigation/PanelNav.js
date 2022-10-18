@@ -8,7 +8,7 @@ export default function PanelNav() {
           <h3>Accueil</h3>
         </NavLink>
         <NavLink to="/panel-kdvb-user">
-          <h3>Listes des utilisateurs</h3>
+          <h3>Partenaires</h3>
         </NavLink>
       </div>
     </>

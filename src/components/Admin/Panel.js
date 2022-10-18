@@ -42,7 +42,7 @@ export default function Panel() {
       <PanelNav />
       {api.map((api) => (
         <>
-          <h1>Code de Bienvenue</h1>
+          <h4>Code de Bienvenue</h4>
           <p>Noms du demandeur : {api.partnername}</p>
           <p>Noms court du demandeur : {api.shortname}</p>
           <p>Code de Bienvenue du mentor : {api.codewelcomementor}</p>
