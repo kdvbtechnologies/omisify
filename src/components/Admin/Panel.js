@@ -18,6 +18,7 @@ export default function Panel() {
   }, []);
   return (
     <>
+      <LoginNav />
       {api.map((api) => (
         <>
           <p>Panneau d'administration</p>
@@ -31,9 +32,9 @@ export default function Panel() {
       {api.map((api) => (
         <>
           <p>Code de Bienvenue</p>
-          <p>{api.shortname}</p>
-          <p>{api.name}</p>
-          <p>{api.codewelcomementor}</p>
+          <p>Noms du demandeur : {api.name}</p>
+          <p>Noms court du demandeur : {api.shortname}</p>
+          <p>Code de Bienvenue du mentor : {api.codewelcomementor}</p>
         </>
       ))}
     </>
