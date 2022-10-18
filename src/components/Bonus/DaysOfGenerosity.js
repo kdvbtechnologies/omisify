@@ -3,8 +3,8 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addPosts } from "../../feature/posts.slice";
 
-export default function Welcome() {
-  const [codewelcome, setCodeWelcome] = useState("");
+export default function DaysOfGenerosity() {
+  const [monthattendancebonus, setmonthattendancebonus] = useState("");
   //const userId = localStorage.getItem("https://omisify.com/userId");
   const dispatch = useDispatch();
 
@@ -30,20 +30,21 @@ export default function Welcome() {
 
   return (
     <>
-      <p>Bonus de Bienvenue</p>
+      <p>Les Journées de Générosité</p>
       <p>
-        Le Bonus de Bienvenue de 100 points est offert une seule fois à chaque
-        nouveau arivant après avoir entrer le Code de Bienvenue de son mentor
+        Les Journées de Générosité concernent 2 jours dans chaque semaine. Les
+        points que le Partenaire gagnent pendant les Journées de Générosité sont
+        multipliés par 10
       </p>
-      <p>Entrer le Code de Bienvenue de votre mentor</p>
+      <p>Entrer vos jours de générosité</p>
       <input
         type="text"
-        placeholder="Code de Bienvenue du mentor"
-        value={codewelcome}
-        onChange={(e) => setCodeWelcome(e.target.value)}
-        name="codewelcome"
+        placeholder="Jours de générosité"
+        value={monthattendancebonus}
+        onChange={(e) => setmonthattendancebonus(e.target.value)}
+        name="monthattendancebonus"
       />
-      <button onClick={Validate}>Demander le Bonus de Bienvenue</button>
+      <button onClick={Validate}>Valider</button>
     </>
   );
 }
