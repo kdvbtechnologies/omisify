@@ -1,8 +1,9 @@
 import { useState } from "react";
-import LoginNav from "../Auth/LoginNav";
 import Loader from "../Partenaire Omisify/Loader";
+import { useNavigate } from "react-router-dom";
 
 export default function Update() {
+  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
   async function Download() {
@@ -17,7 +18,10 @@ export default function Update() {
 
   return (
     <div style={family}>
-      <LoginNav />
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>Retour</button>
+      </div>
+
       <div className="update">
         <div className="title">
           <p>Mise à jour</p>
