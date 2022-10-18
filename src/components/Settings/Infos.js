@@ -2,6 +2,39 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Infos() {
   const navigate = useNavigate();
+  const getname = localStorage.getItem("https://omisify.com/name");
+  const getshortname = localStorage.getItem("https://omisify.com/shortname");
+  const getpartnername = localStorage.getItem(
+    "https://omisify.com/partnername"
+  );
+  const getgenre = localStorage.getItem("https://omisify.com/genre");
+  const getage = localStorage.getItem("https://omisify.com/age");
+  const getcountry = localStorage.getItem("https://omisify.com/country");
+  const getbirthcountry = localStorage.getItem(
+    "https://omisify.com/birthcountry"
+  );
+  const getdateofbirth = localStorage.getItem(
+    "https://omisify.com/dateofbirth"
+  );
+  const getpaymentmethod = localStorage.getItem(
+    "https://omisify.com/paymentmethod"
+  );
+  const getemail = localStorage.getItem("https://omisify.com/email");
+  const getcodewelcome = localStorage.getItem(
+    "https://omisify.com/codewelcome"
+  );
+  const getgroupwhatsapp = localStorage.getItem(
+    "https://omisify.com/groupwhatsapp"
+  );
+  const getgrouptelegram = localStorage.getItem(
+    "https://omisify.com/grouptelegram"
+  );
+  const getnumberwhatsapp = localStorage.getItem(
+    "https://omisify.com/numberwhatsapp"
+  );
+  const getnumbertelegram = localStorage.getItem(
+    "https://omisify.com/numbertelegram"
+  );
 
   const family = {
     fontFamily:
@@ -24,19 +57,21 @@ export default function Infos() {
           </div>
         </div>
 
-        <p>Noms de naissance : Kilendo Dingha Veil Brillant</p>
-        <p>Genre : Homme</p>
-        <p>Age : 22 ans</p>
-        <p>Pays actuel : Brésil</p>
-        <p>Pays de naissance : Congo</p>
-        <p>Date de naissance : 10/02/2000</p>
-        <p>Email : kilendodingha@gmail.com</p>
-        <p>Méthode de paiement préféré : Western Union</p>
-        <p>Code de Bienvenue : KDVB</p>
-        <p>Groupe Whatsapp : https://</p>
-        <p>Groupe Telegram : https://</p>
-        <p>Numéro Whatsapp : +55122244555555</p>
-        <p>Numéro Telegram : +55122244555555</p>
+        <p>Noms de naissance : {getname}</p>
+        <p>Noms principal : {getshortname}</p>
+        <p>Noms court : {getpartnername}</p>
+        <p>Genre : {getgenre}</p>
+        <p>Age : {getage}</p>
+        <p>Pays actuel :{getcountry}</p>
+        <p>Pays de naissance : {getbirthcountry}</p>
+        <p>Date de naissance : {getdateofbirth}</p>
+        <p>Email : {getemail}</p>
+        <p>Méthode de paiement préféré : {getpaymentmethod}</p>
+        <p>Code de Bienvenue : {getcodewelcome}</p>
+        <p>Groupe Whatsapp : {getgroupwhatsapp}</p>
+        <p>Groupe Telegram : {getgrouptelegram}</p>
+        <p>Numéro Whatsapp : {getnumberwhatsapp}</p>
+        <p>Numéro Telegram : {getnumbertelegram}</p>
       </div>
     </div>
   );

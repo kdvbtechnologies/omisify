@@ -1187,6 +1187,7 @@ footer {
 }
 
 .infos-update .a button {
+  cursor: pointer;
   font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
   color: blue;
   background-color: transparent;
