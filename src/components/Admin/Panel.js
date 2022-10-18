@@ -36,8 +36,13 @@ export default function Panel() {
       .catch((err) => console.log(err));
   }*/
 
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
+
   return (
-    <>
+    <div style={family}>
       <LoginNav />
       <PanelNav />
       {api.map((api) => (
@@ -51,6 +56,6 @@ export default function Panel() {
           <p>________________________________</p>
         </>
       ))}
-    </>
+    </div>
   );
 }

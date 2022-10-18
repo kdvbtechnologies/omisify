@@ -13,8 +13,14 @@ export default function User() {
     }
     get();
   }, []);
+
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
+
   return (
-    <>
+    <div style={family}>
       <h3>Listes des Partenaires et leurs infos</h3>
       {api.map((api) => (
         <>
@@ -25,6 +31,6 @@ export default function User() {
           <hr />
         </>
       ))}
-    </>
+    </div>
   );
 }
