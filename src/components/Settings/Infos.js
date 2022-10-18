@@ -1,14 +1,14 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Infos() {
-  //const [api, setApi] = useState([]);
+  const [api, setApi] = useState([]);
 
   useEffect(() => {
     async function get() {
       await axios
-        .get("https://omisify-api.onrender.com/api/point/all/september")
-        .then((res) => console.log(res))
+        .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/`)
+        .then((res) => setApi(res.data))
         .catch((err) => console.log(err));
     }
     get();
@@ -21,19 +21,23 @@ export default function Infos() {
         <button>Modifier</button>
       </div>
 
-      <p>Noms de naissance : </p>
-      <p>Genre : </p>
-      <p>Age : </p>
-      <p>Pays actuel : </p>
-      <p>Pays de naissance : </p>
-      <p>Date de naissance : </p>
-      <p>Email : </p>
-      <p>Méthode de paiement préféré :</p>
-      <p>Code de Bienvenue : </p>
-      <p>Groupe Whatsapp : </p>
-      <p>Groupe Whatsapp : </p>
-      <p>Numéro Telegram : </p>
-      <p>Numéro Telegram : </p>
+      {api.map((api) => (
+        <>
+          <p>Noms de naissance : {api.name}</p>
+          <p>Genre : {api.genre}</p>
+          <p>Age : {api.age}</p>
+          <p>Pays actuel : {api.country}</p>
+          <p>Pays de naissance : {api.birthcountry}</p>
+          <p>Date de naissance : {api.dateofbirth}</p>
+          <p>Email : {api.email}</p>
+          <p>Méthode de paiement préféré :{api.paymentmethod}</p>
+          <p>Code de Bienvenue : {api.codewelcome}</p>
+          <p>Groupe Whatsapp : {api.groupwhatsapp}</p>
+          <p>Groupe Telegram : {api.grouptelegram}</p>
+          <p>Numéro Whatsapp : {api.numberwhatsapp}</p>
+          <p>Numéro Telegram : {api.numbertelegram}</p>
+        </>
+      ))}
     </>
   );
 }
