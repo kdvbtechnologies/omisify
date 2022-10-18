@@ -7,7 +7,7 @@ export default function Panel() {
   useEffect(() => {
     async function get() {
       await axios
-        .get("https://famous-peplum-dove.cyclic.app/api/panel")
+        .get("https://famous-peplum-dove/api/panel")
         .then((res) => {
           console.log(res);
           setApi(res.data);
@@ -26,6 +26,14 @@ export default function Panel() {
           <p>Nombre total de commentaires : {api.numbertcommentlife}</p>
           <p>Point total depuis le début : {api.pointtlife}</p>
           <p>Gain : {api.gaintlife}</p>
+        </>
+      ))}
+      {api.map((api) => (
+        <>
+          <p>Code de Bienvenue</p>
+          <p>{api.shortname}</p>
+          <p>{api.name}</p>
+          <p>{api.codewelcomementor}</p>
         </>
       ))}
     </>
