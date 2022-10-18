@@ -70,7 +70,6 @@ import SecureMWI from "./components/September/SecureMWI";
 import SecurePublication from "./components/September/SecurePublication";
 import SecureEmail from "./components/September/SecureEmail";
 import SecurePWI from "./components/September/SecurePWI";
-import Panel from "./components/Admin/Panel";
 import SecureNewPassword from "./components/Reset-Password/SecureNewPassword";
 import ResetPassword from "./components/Reset-Password/ResetPassword";
 import AfterNewPassword from "./components/Reset-Password/AfterNewPassword";
@@ -85,6 +84,8 @@ import Infos from "./components/Settings/Infos";
 import WelcomeBonus from "./components/Bonus/WelcomeBonus";
 import SecureInfosUpdate from "./components/Settings/SecureInfosUpdate";
 import User from "./components/Admin/User/User";
+import HomePanel from "./components/Admin/HomePanel";
+import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
 
 export default function App() {
   return (
@@ -183,8 +184,12 @@ export default function App() {
         <Route path="/infos" element={<Infos />} />
         <Route path="/welcome-bonus" element={<WelcomeBonus />} />
         <Route path="/secure-infos-update" element={<SecureInfosUpdate />} />
-        <Route path="/panel-kdvb" element={<Panel />} />
+        <Route path="/panel-kdvb-home" element={<HomePanel />} />
         <Route path="/panel-kdvb-user" element={<User />} />
+        <Route
+          path="/panel-kdvb-welcome-bonus"
+          element={<WelcomeBonusPanel />}
+        />
       </Routes>
     </BrowserRouter>
   );

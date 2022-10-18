@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import LoginNav from "../Auth/LoginNav";
-import PanelNav from "./Navigation/PanelNav";
+import LoginNav from "../../Auth/LoginNav";
+import PanelNav from "../Navigation/PanelNav";
 
-export default function Panel() {
+export default function WelcomeBonusPanel() {
   const [api, setApi] = useState([]);
 
   useEffect(() => {
