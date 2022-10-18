@@ -3,16 +3,19 @@ import { NavLink } from "react-router-dom";
 export default function PanelNav() {
   return (
     <>
-      <div className="panel">
-        <NavLink to="/panel-kdvb-home">
-          <h3>Accueil</h3>
-        </NavLink>
-        <NavLink to="/panel-kdvb-user">
-          <h3>Partenaires</h3>
-        </NavLink>
-        <NavLink to="/panel-kdvb-welcome-bonus">
-          <h3>Bonus de Bienvenue</h3>
-        </NavLink>
+      <div className="panel-nav">
+        <div className="a">
+          <NavLink className=".navlink" to="/panel-kdvb-home">
+            <li>Accueil</li>
+          </NavLink>
+
+          <NavLink className=".navlink" to="/panel-kdvb-user">
+            <li>Partenaires</li>
+          </NavLink>
+          <NavLink className=".navlink" to="/panel-kdvb-welcome-bonus">
+            <li>Bonus de Bienvenue</li>
+          </NavLink>
+        </div>
       </div>
     </>
   );

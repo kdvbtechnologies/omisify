@@ -1113,6 +1113,22 @@ footer {
   background-color: white;
 }
 
+/* admin - navigation - navigation.js */
+.panel-nav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.panel-nav .a .navlink {
+  text-decoration: none;
+}
+
+.panel-nav .a .navlink li {
+  color: red;
+  list-style: none;
+}
+
 
 @media screen and (max-width: 760px) {
   
