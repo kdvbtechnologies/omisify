@@ -7,7 +7,7 @@ export default function Panel() {
   useEffect(() => {
     async function get() {
       await axios
-        .get("https://famous-peplum-dove/api/panel")
+        .get(`${process.env.REACT_APP_OMISIFY_API}/api/panel/`)
         .then((res) => {
           console.log(res);
           setApi(res.data);
