@@ -1122,6 +1122,82 @@ footer {
   color: white;
 }
 
+/* src - component -settings - infos.js */
+.infos {
+  padding-bottom: 70px;
+}
+.infos p {
+  padding: 20px;
+  font-size: 17px;
+}
+
+.infos .title-main .title {
+  display: flex;
+  align-items: center;
+}
+
+.infos .title {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  padding: 0px;
+  margin-bottom: 40px;
+  
+}
+
+.infos .title button {
+  background-color: transparent;
+  margin: 0px 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  color: #eee;
+}
+
+/* src - component -settings - infos update.js */
+.infos-update .title {
+  background-color: #444;
+  color: #eee;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.infos-update .a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.infos-update .a p {
+  padding-top: 20px;
+  font-size: 17px;
+}
+
+.infos-update .a input[type="text"], input[type="email"] {
+  font-family: Roboto, Arial, sans-serif;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.infos-update .a button {
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: blue;
+  background-color: transparent;
+  padding: 10px 20px;
+  margin: 50px 0px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+
 /* admin - navigation - navigation.js */
 
 .panel-main {
