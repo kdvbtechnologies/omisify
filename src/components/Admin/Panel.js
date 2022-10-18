@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import LoginNav from "../Auth/LoginNav";
 
 export default function Panel() {
   const [api, setApi] = useState([]);
