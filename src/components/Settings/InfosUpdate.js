@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function InfosUpdate() {
-  const [name, setname] = useState("");
+  const getname = localStorage.getItem("https://omisify.com/name");
+  const [name, setname] = useState(getname);
   const [shortname, setshortname] = useState("");
   const [partnername, setpartnername] = useState("");
   const [genre, setgenre] = useState("");
@@ -19,7 +20,6 @@ export default function InfosUpdate() {
   const [numbertelegram, setnumbertelegram] = useState("");
   const navigate = useNavigate();
 
-  const getname = localStorage.getItem("https://omisify.com/name");
   const getshortname = localStorage.getItem("https://omisify.com/shortname");
   const getpartnername = localStorage.getItem(
     "https://omisify.com/partnername"
