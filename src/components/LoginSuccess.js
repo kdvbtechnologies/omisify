@@ -10,7 +10,7 @@ export default function LoginSuccess() {
   useEffect(() => {
     async function get() {
       await axios
-        .get(`https://omisify-api.onrender.com/api/user/${userId}`)
+        .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/${userId}`)
         .then((res) => {
           const name = res.data.name;
           const partnername = res.data.partnername;
