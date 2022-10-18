@@ -99,6 +99,14 @@ export default function UpdateSuccess() {
             );
           }
 
+          const getwelcomebonus = res.data.welcomebonus;
+          if (getwelcomebonus) {
+            localStorage.setItem(
+              "https://omisify.com/welcomebonus",
+              getwelcomebonus
+            );
+          }
+
           localStorage.setItem("https://omisify.com/name", name);
           localStorage.setItem("https://omisify.com/partnername", partnername);
           localStorage.setItem("https://omisify.com/shortname", shortname);

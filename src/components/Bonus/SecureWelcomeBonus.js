@@ -1,4 +1,5 @@
-import WelcomeBonus from "../../Bonus/WelcomeBonus";
+import WelcomeBonus from "./WelcomeBonus";
+import WelcomeBonusSuccess from "./WelcomeBonusSuccess";
 
 export default function SecureWelcomeBonus() {
   //const userId = localStorage.getItem("https://omisify.com/userId");

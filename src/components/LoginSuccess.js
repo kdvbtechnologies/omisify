@@ -97,6 +97,14 @@ export default function LoginSuccess() {
             );
           }
 
+          const getwelcomebonus = res.data.welcomebonus;
+          if (getwelcomebonus) {
+            localStorage.setItem(
+              "https://omisify.com/welcomebonus",
+              getwelcomebonus
+            );
+          }
+
           localStorage.setItem("https://omisify.com/name", name);
           localStorage.setItem("https://omisify.com/partnername", partnername);
           localStorage.setItem("https://omisify.com/shortname", shortname);
