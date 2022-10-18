@@ -1113,6 +1113,15 @@ footer {
   background-color: white;
 }
 
+.welcome-bonus .b button {
+  background-color: gray;
+  border: 1px solid gray;
+}
+
+.welcome-bonus .b button:hover {
+  color: white;
+}
+
 /* admin - navigation - navigation.js */
 
 .panel-main {

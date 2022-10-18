@@ -86,6 +86,7 @@ import SecureInfosUpdate from "./components/Settings/SecureInfosUpdate";
 import User from "./components/Admin/User/User";
 import HomePanel from "./components/Admin/HomePanel";
 import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
+import WelcomeBonusSuccess from "./components/Admin/Bonus/WelcomeBonusSuccess";
 
 export default function App() {
   return (
@@ -183,6 +184,10 @@ export default function App() {
         <Route path="/after-logout" element={<AfterLogout />} />
         <Route path="/infos" element={<Infos />} />
         <Route path="/welcome-bonus" element={<WelcomeBonus />} />
+        <Route
+          path="/welcome-bonus-success"
+          element={<WelcomeBonusSuccess />}
+        />
         <Route path="/secure-infos-update" element={<SecureInfosUpdate />} />
         <Route path="/panel-kdvb-home" element={<HomePanel />} />
         <Route path="/panel-kdvb-user" element={<User />} />
