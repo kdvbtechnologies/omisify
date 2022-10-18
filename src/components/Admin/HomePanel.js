@@ -11,8 +11,10 @@ export default function HomePanel() {
     <div style={family}>
       <LoginNav />
       <PanelNav />
-      <div className="panel">
-        <h3>Bienvenue sur le panneau d'administration d'Omisify</h3>
+      <div className="panel-main">
+        <div className="panel">
+          <h3>Bienvenue sur le panneau d'administration d'Omisify</h3>
+        </div>
       </div>
     </div>
   );
