@@ -17,7 +17,7 @@ export default function UpdatePoint() {
           <p>Actualisation des points</p>
         </div>
         <p>Choisir une option :</p>
-        <NavLink className="navlink" to="/update-comment">
+        <NavLink className="navlink" to="/secure-update-comment">
           <p>Commentaire</p>
         </NavLink>
         <NavLink className="navlink" to="/secure-email">
