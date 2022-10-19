@@ -1,13 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import LoginNav from "../../../../Auth/LoginNav";
 import Loader from "../../../../Partenaire Omisify/Loader";
-import { useDispatch, useSelector } from "react-redux";
-import setApi from "../../../../../feature/panel/panelcomment.slice";
+import PanelNav from "../../../Navigation/PanelNav";
 
 export default function PanelCommentOctober() {
   const [isLoading, setIsLoading] = useState(true);
-  const dispatch = useDispatch();
-  const api = useSelector((state) => state.panelcomment.panelcomment);
+  const [api, setApi] = useState([]);
 
   useEffect(() => {
     async function get() {
@@ -15,21 +14,23 @@ export default function PanelCommentOctober() {
         .get(`${process.env.REACT_APP_OMISIFY_API}/api/panel/october/comment/`)
         .then((res) => {
           console.log(res);
-          dispatch(setApi(res.data));
+          setApi(res.data);
         })
         .catch((err) => console.log(err));
       setIsLoading(false);
     }
     get();
-  });
+  }, []);
 
   return (
     <>
+      <LoginNav />
+      <PanelNav />
       {isLoading ? (
         <Loader />
       ) : (
         <>
-          {api?.map((api) => (
+          {api.map((api) => (
             <>
               <h3>Nombre de commentaires: {api.commentrecent}</h3>
               <p>Heure: {api.time}</p>
