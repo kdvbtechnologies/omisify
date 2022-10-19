@@ -6,6 +6,7 @@ export default function PartnerHeader() {
   const age = localStorage.getItem("https://omisify.com/age");
   const country = localStorage.getItem("https://omisify.com/country");
   const codewelcome = localStorage.getItem("https://omisify.com/codewelcome");
+  const genre = localStorage.getItem("https://omisify.com/genre");
   const paymentmethod = localStorage.getItem(
     "https://omisify.com/paymentmethod"
   );
