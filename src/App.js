@@ -227,8 +227,8 @@ export default function App() {
           element={<SecureUpdateComment />}
         />
         <Route path="/initialize" element={<InitializeNewPointComment />} />
+        <Route path="/generosity" element={<DaysOfGenerosity />} />
       </Routes>
-      <Route path="/generosity" element={<DaysOfGenerosity />} />
     </BrowserRouter>
   );
 }
