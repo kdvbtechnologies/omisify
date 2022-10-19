@@ -63,7 +63,7 @@ export default function Infos() {
         <p>Noms court : {getpartnername}</p>
         <p>Genre : {getgenre}</p>
         <p>Age : {getage}</p>
-        <p>Pays actuel :{getcountry}</p>
+        <p>Pays actuel : {getcountry}</p>
         <p>Pays de naissance : {getbirthcountry}</p>
         <p>Date de naissance : {getdateofbirth}</p>
         <p>Email : {getemail}</p>

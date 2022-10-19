@@ -53,7 +53,6 @@ import AkouaHistoNineteen from "./components/Partenaire Omisify/AkouaHistoNinete
 import AkouaHistoTwenty from "./components/Partenaire Omisify/AkouaHistoTwenty";
 import AkouaStats from "./components/Partenaire Omisify/AkouaStats";
 import Stats from "./components/Partenaire Omisify/Stats";
-import PartnerUpdate from "./components/Partenaire Omisify/PartnerUpdate";
 import PartnerSettings from "./components/Partenaire Omisify/PartnerSettings";
 import Auth from "./components/Auth";
 import AfterLogin from "./components/AfterLogin";
@@ -90,6 +89,15 @@ import SecureWelcomeBonus from "./components/Bonus/SecureWelcomeBonus";
 import AfterWelcomeBonus from "./components/Bonus/AfterWelcomeBonus";
 import InfosUpdate from "./components/Settings/InfosUpdate";
 import InfosUpdateSuccess from "./components/Settings/InfosUpdateSuccess";
+// update point
+// update point
+import UpdatePoint from "./components/UpdatePoint/UpdatePoint";
+// october
+// october
+import UpdateComment from "./components/October/Comment/UpdateComment";
+
+// panel comment october
+import PanelCommentOctober from "./components/Admin/2022/October/Comment/PanelCommentOctober";
 
 export default function App() {
   return (
@@ -151,7 +159,7 @@ export default function App() {
         <Route path="/partner-contact" element={<PartnerContact />} />
         <Route path="/partner-trans" element={<PartnerTrans />} />
         <Route path="/partner-historical" element={<PartnerHistorical />} />
-        <Route path="/update-point" element={<PartnerUpdate />} />
+
         <Route path="/settings" element={<PartnerSettings />} />
         <Route path="/stats" element={<Stats />} />
         <Route path="/auth" element={<Auth />} />
@@ -196,9 +204,15 @@ export default function App() {
         <Route path="/panel-kdvb-home" element={<HomePanel />} />
         <Route path="/panel-kdvb-user" element={<User />} />
         <Route
+          path="/panel-kdvb-comment-october"
+          element={<PanelCommentOctober />}
+        />
+        <Route
           path="/panel-kdvb-welcome-bonus"
           element={<WelcomeBonusPanel />}
         />
+        <Route path="/update-point" element={<UpdatePoint />} />
+        <Route path="/update-comment" element={<UpdateComment />} />
       </Routes>
     </BrowserRouter>
   );

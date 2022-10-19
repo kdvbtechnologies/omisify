@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import LoginNav from "../Auth/LoginNav";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "../Partenaire Omisify/Loader";
@@ -209,7 +208,6 @@ export default function UpdateSuccess() {
 
   return (
     <div style={family}>
-      <LoginNav />
       <div className="update-success">
         <div className="title">
           <p>Terminé !</p>
