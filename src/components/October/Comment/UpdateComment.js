@@ -304,7 +304,7 @@ export default function UpdateComment() {
         dispatch(addComment(data));
       })
       .catch((err) => console.log(err));
-    //window.location = "/update-point"
+    window.location = "/update-point-success";
   }
 
   const family = {

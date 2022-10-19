@@ -89,10 +89,11 @@ import SecureWelcomeBonus from "./components/Bonus/SecureWelcomeBonus";
 import AfterWelcomeBonus from "./components/Bonus/AfterWelcomeBonus";
 import InfosUpdate from "./components/Settings/InfosUpdate";
 import InfosUpdateSuccess from "./components/Settings/InfosUpdateSuccess";
-// update point
+
 // update point
 import UpdatePoint from "./components/UpdatePoint/UpdatePoint";
-// october
+import UpdatePointSuccess from "./components/UpdatePoint/UpdatePointSuccess";
+
 // october
 import UpdateComment from "./components/October/Comment/UpdateComment";
 
@@ -212,6 +213,7 @@ export default function App() {
           element={<WelcomeBonusPanel />}
         />
         <Route path="/update-point" element={<UpdatePoint />} />
+        <Route path="/update-point-success" element={<UpdatePointSuccess />} />
         <Route path="/update-comment" element={<UpdateComment />} />
       </Routes>
     </BrowserRouter>
