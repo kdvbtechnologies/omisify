@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Loader from "../../Partenaire Omisify/Loader";
 import { useNavigate } from "react-router-dom";
-import { addComment } from "../../../feature/comment.slice";
 import { useDispatch } from "react-redux";
+import Loader from "../../../Partenaire Omisify/Loader";
+import addComment from "../../../../feature/comment.slice";
 
 export default function UpdateComment() {
   const dispatch = useDispatch();

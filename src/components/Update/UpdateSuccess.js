@@ -11,7 +11,7 @@ export default function UpdateSuccess() {
   useEffect(() => {
     async function get() {
       await axios
-        .get(`https://omisify-api.onrender.com/api/user/${userId}`)
+        .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/${userId}`)
         .then((res) => {
           const name = res.data.name;
           const partnername = res.data.partnername;
@@ -189,6 +189,11 @@ export default function UpdateSuccess() {
               "https://omisify.com/numbertelegram",
               getnumbertelegram
             );
+          }
+
+          const getdate = res.data.date;
+          if (getdate) {
+            localStorage.setItem("https://omisify.com/date", getdate);
           }
 
           localStorage.setItem("https://omisify.com/name", name);

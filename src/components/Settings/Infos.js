@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 export default function Infos() {
+  const date = localStorage.getItem("https://omisify.com/date");
   const getname = localStorage.getItem("https://omisify.com/name");
   const getshortname = localStorage.getItem("https://omisify.com/shortname");
   const getpartnername = localStorage.getItem(
@@ -59,8 +60,8 @@ export default function Infos() {
         </div>
 
         <p>Noms de naissance : {getname}</p>
-        <p>Noms principal : {getshortname}</p>
-        <p>Noms court : {getpartnername}</p>
+        <p>Noms principal : {getpartnername}</p>
+        <p>Noms court : {getshortname}</p>
         <p>Genre : {getgenre}</p>
         <p>Age : {getage}</p>
         <p>Pays actuel : {getcountry}</p>
@@ -73,6 +74,12 @@ export default function Infos() {
         <p>Groupe Whatsapp : {getgroupwhatsapp}</p>
         <p>Numéro Telegram : {getnumbertelegram}</p>
         <p>Numéro Whatsapp : {getnumberwhatsapp}</p>
+
+        {date && (
+          <>
+            <p>Dernière actualisation des points : {date}</p>
+          </>
+        )}
       </div>
     </div>
   );

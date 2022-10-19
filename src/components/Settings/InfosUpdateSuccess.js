@@ -110,6 +110,11 @@ export default function InfosUpdateSuccess() {
             );
           }
 
+          const getdate = res.data.date;
+          if (getdate) {
+            localStorage.setItem("https://omisify.com/date", getdate);
+          }
+
           const name = res.data.name;
           const partnername = res.data.partnername;
           const shortname = res.data.shortname;

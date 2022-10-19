@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { updateInfos } from "../../../feature/infos.slice";
-import Loader from "../../Partenaire Omisify/Loader";
 import { useDispatch } from "react-redux";
+import { updateInfos } from "../../../../feature/infos.slice";
+import Loader from "../../../Partenaire Omisify/Loader";
 
 export default function InitializeNewPointComment() {
   const dispatch = useDispatch();

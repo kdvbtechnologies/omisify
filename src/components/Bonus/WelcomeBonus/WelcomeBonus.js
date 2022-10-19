@@ -2,8 +2,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addPosts } from "../../feature/posts.slice";
-import Loader from "../Partenaire Omisify/Loader";
+import { addPosts } from "../../../feature/posts.slice";
+import Loader from "../../Partenaire Omisify/Loader";
 
 export default function WelcomeBonus() {
   const navigate = useNavigate();

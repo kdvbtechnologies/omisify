@@ -80,25 +80,31 @@ import Logout from "./components/Logout/Logout";
 import AfterLogout from "./components/Logout/AfterLogout";
 import SecureLogoutConfirm from "./components/Logout/SecureLogoutConfirm";
 import Infos from "./components/Settings/Infos";
-import WelcomeBonus from "./components/Bonus/WelcomeBonus";
+
 import SecureInfosUpdate from "./components/Settings/SecureInfosUpdate";
 import User from "./components/Admin/User/User";
 import HomePanel from "./components/Admin/HomePanel";
-import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
-import SecureWelcomeBonus from "./components/Bonus/SecureWelcomeBonus";
-import AfterWelcomeBonus from "./components/Bonus/AfterWelcomeBonus";
+
 import InfosUpdate from "./components/Settings/InfosUpdate";
 import InfosUpdateSuccess from "./components/Settings/InfosUpdateSuccess";
+
+// bonus
+import WelcomeBonus from "./components/Bonus/WelcomeBonus/WelcomeBonus";
+import SecureWelcomeBonus from "./components/Bonus/WelcomeBonus/SecureWelcomeBonus";
+import AfterWelcomeBonus from "./components/Bonus/WelcomeBonus/AfterWelcomeBonus";
 
 // update point
 import UpdatePoint from "./components/UpdatePoint/UpdatePoint";
 import UpdatePointSuccess from "./components/UpdatePoint/UpdatePointSuccess";
+import SecureUpdateComment from "./components/UpdatePoint/October/Comment/SecureUpdateComment";
 
 // october
-import UpdateComment from "./components/October/Comment/UpdateComment";
 
 // panel comment october
 import PanelCommentOctober from "./components/Admin/2022/October/Comment/PanelCommentOctober";
+
+// panel welcome bonus
+import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
 
 export default function App() {
   return (
@@ -214,7 +220,10 @@ export default function App() {
         />
         <Route path="/update-point" element={<UpdatePoint />} />
         <Route path="/update-point-success" element={<UpdatePointSuccess />} />
-        <Route path="/update-comment" element={<UpdateComment />} />
+        <Route
+          path="/secure-update-comment"
+          element={<SecureUpdateComment />}
+        />
       </Routes>
     </BrowserRouter>
   );

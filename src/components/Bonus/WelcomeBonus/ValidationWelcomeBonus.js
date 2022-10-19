@@ -10,7 +10,7 @@ export default function ValidationWelcomeBonus() {
     <div style={family}>
       <div className="welcome-bonus">
         <div className="title">
-          <p>Demande envoyé (en attente)</p>
+          <p>Demande envoyé !</p>
         </div>
 
         <div className="a">

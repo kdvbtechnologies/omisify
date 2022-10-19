@@ -1,4 +1,4 @@
-import LoginNav from "../Auth/LoginNav";
+import LoginNav from "../../Auth/LoginNav";
 
 export default function WelcomeBonusSuccess() {
   const family = {
