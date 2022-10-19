@@ -376,30 +376,6 @@ export default function InfosUpdate() {
             </>
           )}
 
-          {getgroupwhatsapp ? (
-            <>
-              <p>Groupe Whatsapp</p>
-              <input
-                type="text"
-                placeholder="Groupe Whatsapp"
-                value={groupwhatsapp}
-                onChange={(e) => setgroupwhatsapp(e.target.value)}
-                name="groupwhatsapp"
-              />
-            </>
-          ) : (
-            <>
-              <p>Groupe Whatsapp</p>
-              <input
-                type="text"
-                placeholder="Groupe Whatsapp"
-                value={groupwhatsapp}
-                onChange={(e) => setgroupwhatsapp(e.target.value)}
-                name="groupwhatsapp"
-              />
-            </>
-          )}
-
           {getgrouptelegram ? (
             <>
               <p>Groupe Telegram</p>
@@ -424,26 +400,26 @@ export default function InfosUpdate() {
             </>
           )}
 
-          {getnumberwhatsapp ? (
+          {getgroupwhatsapp ? (
             <>
-              <p>Numéro Whatsapp</p>
+              <p>Groupe Whatsapp</p>
               <input
                 type="text"
-                placeholder="Numéro Whatsapp"
-                value={numberwhatsapp}
-                onChange={(e) => setnumberwhatsapp(e.target.value)}
-                name="numberwhatsapp"
+                placeholder="Groupe Whatsapp"
+                value={groupwhatsapp}
+                onChange={(e) => setgroupwhatsapp(e.target.value)}
+                name="groupwhatsapp"
               />
             </>
           ) : (
             <>
-              <p>Numéro Whatsapp</p>
+              <p>Groupe Whatsapp</p>
               <input
                 type="text"
-                placeholder="Numéro Whatsapp"
-                value={numberwhatsapp}
-                onChange={(e) => setnumberwhatsapp(e.target.value)}
-                name="numberwhatsapp"
+                placeholder="Groupe Whatsapp"
+                value={groupwhatsapp}
+                onChange={(e) => setgroupwhatsapp(e.target.value)}
+                name="groupwhatsapp"
               />
             </>
           )}
@@ -468,6 +444,30 @@ export default function InfosUpdate() {
                 value={numbertelegram}
                 onChange={(e) => setnumbertelegram(e.target.value)}
                 name="numbertelegram"
+              />
+            </>
+          )}
+
+          {getnumberwhatsapp ? (
+            <>
+              <p>Numéro Whatsapp</p>
+              <input
+                type="text"
+                placeholder="Numéro Whatsapp"
+                value={numberwhatsapp}
+                onChange={(e) => setnumberwhatsapp(e.target.value)}
+                name="numberwhatsapp"
+              />
+            </>
+          ) : (
+            <>
+              <p>Numéro Whatsapp</p>
+              <input
+                type="text"
+                placeholder="Numéro Whatsapp"
+                value={numberwhatsapp}
+                onChange={(e) => setnumberwhatsapp(e.target.value)}
+                name="numberwhatsapp"
               />
             </>
           )}

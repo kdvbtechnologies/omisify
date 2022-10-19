@@ -68,10 +68,10 @@ export default function Infos() {
         <p>Email : {getemail}</p>
         <p>Méthode de paiement préféré : {getpaymentmethod}</p>
         <p>Code de Bienvenue : {getcodewelcome}</p>
-        <p>Groupe Whatsapp : {getgroupwhatsapp}</p>
         <p>Groupe Telegram : {getgrouptelegram}</p>
-        <p>Numéro Whatsapp : {getnumberwhatsapp}</p>
+        <p>Groupe Whatsapp : {getgroupwhatsapp}</p>
         <p>Numéro Telegram : {getnumbertelegram}</p>
+        <p>Numéro Whatsapp : {getnumberwhatsapp}</p>
       </div>
     </div>
   );
