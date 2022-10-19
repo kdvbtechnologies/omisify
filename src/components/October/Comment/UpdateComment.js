@@ -295,7 +295,7 @@ export default function UpdateComment() {
     };
 
     await axios
-      .put(
+      .post(
         `${process.env.REACT_APP_OMISIFY_API}/api/panel/october/comment/add`,
         data
       )
