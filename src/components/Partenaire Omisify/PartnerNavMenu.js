@@ -32,6 +32,10 @@ export default function PartnerNavMenu() {
           <li>Informations</li>
         </NavLink>
 
+        <NavLink className="li" to="/update-point">
+          <li>Actualisation</li>
+        </NavLink>
+
         <NavLink className="li" to="/secure-welcome-bonus">
           <li>Bonus de Bienvenue</li>
         </NavLink>
