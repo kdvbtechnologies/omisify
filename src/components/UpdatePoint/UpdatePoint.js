@@ -37,7 +37,7 @@ export default function UpdatePoint() {
 
   return (
     <div style={family}>
-      <NavLink to="/update-point">
+      <NavLink to="/secure-menu">
         <div className="back-btn">
           <button>Retour</button>
         </div>
