@@ -22,8 +22,13 @@ export default function PanelCommentOctober() {
     get();
   }, []);
 
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
+
   return (
-    <>
+    <div style={family}>
       <LoginNav />
       <PanelNav />
       {isLoading ? (
@@ -54,6 +59,6 @@ export default function PanelCommentOctober() {
           ))}
         </>
       )}
-    </>
+    </div>
   );
 }

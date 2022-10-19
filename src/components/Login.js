@@ -45,7 +45,7 @@ export default function Login() {
           <div className="input">
             <h1>Connexion</h1>
             <input
-              type="email"
+              type="text"
               placeholder="E-mail"
               value={email}
               name="email"

@@ -123,7 +123,7 @@ export default function InitializeNewPointComment() {
       <div className="initiatlize"></div>
       {isLoading && (
         <p style={{ textAlign: "center", fontSize: "17px" }}>
-          Chargement des données... Octobre 2022
+          Chargement des données...
         </p>
       )}
 

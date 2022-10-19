@@ -64,7 +64,7 @@ export default function Signup() {
               required
             />
             <input
-              type="email"
+              type="text"
               placeholder="E-mail"
               value={email}
               name="email"

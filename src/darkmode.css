@@ -680,7 +680,7 @@ footer {
   flex-direction: column;
 }
 
-.login-border .input input[type=text], input[type=email] {
+.login-border .input input[type="text"]{
   padding: 10px ;
   margin: 10px 0px;
   background-color: transparent;
@@ -688,7 +688,7 @@ footer {
   border: 1px solid black;
 }
 
-.input button {
+.login-border .input button {
   color: white;
   background-color: red;
   border: none;
