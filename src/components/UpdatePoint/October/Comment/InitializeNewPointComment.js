@@ -107,7 +107,7 @@ export default function InitializeNewPointComment() {
         );
       })
       .catch((err) => console.log(err));
-    //window.location.reload();
+    window.location.reload();
   }
 
   const family = {
