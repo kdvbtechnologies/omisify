@@ -1,8 +1,6 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function UpdatePoint() {
-  const navigate = useNavigate();
-
   /*
   
   <NavLink className="navlink" to="/secure-email">
@@ -39,9 +37,11 @@ export default function UpdatePoint() {
 
   return (
     <div style={family}>
-      <div className="back-btn">
-        <button onClick={() => navigate(-1)}>Retour</button>
-      </div>
+      <NavLink to="/update-point">
+        <div className="back-btn">
+          <button>Retour</button>
+        </div>
+      </NavLink>
       <div className="update-point">
         <div className="update-title">
           <p>Actualisation des points</p>
