@@ -85,7 +85,7 @@ export default function InfosUpdate() {
 
     await axios
       .put(
-        `${process.env.REACT_APP_OMISIFY_API}/api/user/updateothers/${userId}`,
+        `${process.env.REACT_APP_OMISIFY_API}/api/user/updateuserinfos/${userId}`,
         data
       )
       .then((res) => {
