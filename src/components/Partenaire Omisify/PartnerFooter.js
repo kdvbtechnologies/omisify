@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 
 export default function PartnerFooter() {
+  const welcomebonus = localStorage.getItem("https://omisify.com/welcomebonus");
+
   const getoldpointtlife = localStorage.getItem(
     "https://omisify.com/getoldpointtlife"
   );
@@ -46,7 +48,16 @@ export default function PartnerFooter() {
       <div>
         <div className="partner-stats">
           <p>Statistiques </p>
-          <li>Bonus de Bienvenue : _ _ _</li>
+
+          {welcomebonus ? (
+            <>
+              <li>Bonus de Bienvenue : {welcomebonus} points</li>
+            </>
+          ) : (
+            <>
+              <li>Bonus de Bienvenue : 0 point(s)</li>
+            </>
+          )}
 
           {getoldnumbertcommentlife ? (
             <>
@@ -132,8 +143,6 @@ export default function PartnerFooter() {
               <li>E-mail : 0 point(s)</li>
             </>
           )}
-
-          <li>Code Bonus : _ _ _</li>
 
           {getoldpointtlife ? (
             <>

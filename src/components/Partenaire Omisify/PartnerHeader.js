@@ -3,6 +3,12 @@ import PartnerFooter from "./PartnerFooter";
 export default function PartnerHeader() {
   const name = localStorage.getItem("https://omisify.com/name");
   const partnername = localStorage.getItem("https://omisify.com/partnername");
+  const age = localStorage.getItem("https://omisify.com/age");
+  const country = localStorage.getItem("https://omisify.com/country");
+  const codewelcome = localStorage.getItem("https://omisify.com/codewelcome");
+  const paymentmethod = localStorage.getItem(
+    "https://omisify.com/paymentmethod"
+  );
 
   return (
     <>
@@ -20,11 +26,11 @@ export default function PartnerHeader() {
 
             <div className="partner-info">
               <p>Noms de naissance : {name}</p>
-              <p>Sexe : _ _ _</p>
-              <p>Pays : _ _ _</p>
-              <p>Age : _ _ _</p>
-              <p>Code de Bienvenue : _ _ _</p>
-              <p>Méthode de Paiement préféré : _ _ _</p>
+              <p>Genre : {genre}</p>
+              <p>Pays : {country}</p>
+              <p>Age : {age}</p>
+              <p>Code de Bienvenue : {codewelcome}</p>
+              <p>Méthode de Paiement préféré : {paymentmethod}</p>
               <div className="profil-hr">
                 <hr />
                 <hr />
