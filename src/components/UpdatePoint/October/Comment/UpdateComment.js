@@ -253,7 +253,7 @@ export default function UpdateComment() {
     parseInt(getoldnumbertcommentlife) + parseInt(comment);
 
   // update point, gain
-  async function Validate(e) {
+  async function Send(e) {
     setIsLoading2(true);
     e.preventDefault();
 
@@ -365,7 +365,7 @@ export default function UpdateComment() {
               <Loader />
             ) : (
               <>
-                <button onClick={Validate}>Valider</button>
+                <button onClick={Send}>Envoyer</button>
               </>
             )}
           </div>

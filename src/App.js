@@ -105,6 +105,7 @@ import PanelCommentOctober from "./components/Admin/2022/October/Comment/PanelCo
 
 // panel welcome bonus
 import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
+import InitializeNewPointComment from "./components/UpdatePoint/October/Comment/InitializeNewPointComment";
 
 export default function App() {
   return (
@@ -224,6 +225,7 @@ export default function App() {
           path="/secure-update-comment"
           element={<SecureUpdateComment />}
         />
+        <Route path="/initialize" element={<InitializeNewPointComment />} />
       </Routes>
     </BrowserRouter>
   );

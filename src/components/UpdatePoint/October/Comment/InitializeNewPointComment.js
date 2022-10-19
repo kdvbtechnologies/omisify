@@ -110,9 +110,23 @@ export default function InitializeNewPointComment() {
     //window.location.reload();
   }
 
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
+
   return (
-    <>
-      <p>Chargement des données... Octobre 2022</p>
+    <div style={family}>
+      <div className="stats-big-title">
+        <p>Actualisation des points</p>
+      </div>
+      <div className="initiatlize"></div>
+      {isLoading && (
+        <p style={{ textAlign: "center", fontSize: "17px" }}>
+          Chargement des données... Octobre 2022
+        </p>
+      )}
+
       <div className="go-to-refresh">
         {isLoading ? (
           <Loader />
@@ -136,6 +150,6 @@ export default function InitializeNewPointComment() {
           </>
         )}
       </div>
-    </>
+    </div>
   );
 }
