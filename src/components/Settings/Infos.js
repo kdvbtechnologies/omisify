@@ -1,7 +1,6 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Infos() {
-  const navigate = useNavigate();
   const getname = localStorage.getItem("https://omisify.com/name");
   const getshortname = localStorage.getItem("https://omisify.com/shortname");
   const getpartnername = localStorage.getItem(
@@ -44,7 +43,9 @@ export default function Infos() {
   return (
     <div style={family}>
       <div className="back-btn">
-        <button onClick={() => navigate(-1)}>Retour</button>
+        <NavLink to="/secure-menu">
+          <button>Retour</button>
+        </NavLink>
       </div>
       <div className="infos">
         <div className="title-main">
