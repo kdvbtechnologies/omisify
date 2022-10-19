@@ -40,6 +40,7 @@ export default function PanelCommentOctober() {
               <h3>Nombre de commentaires: {api.commentrecent}</h3>
               <p>Heure: {api.time}</p>
               <p>Date: {api.date}</p>
+              <h4>Nombres</h4>
               <p>
                 Nombre total des commentaires dans la vie :{" "}
                 {api.numbertcommentlife}
@@ -52,6 +53,43 @@ export default function PanelCommentOctober() {
                 Nombre total des commentaires en Octobre 2022 :{" "}
                 {api.numbertcommentoct2022}
               </p>
+              <h4>Points</h4>
+              <p>
+                Points total des commentaires dans la vie :{" "}
+                {api.pointtcommentlife}
+              </p>
+              <p>
+                Points total des commentaires dans l'année 2022 :{" "}
+                {api.pointtcomment2022}
+              </p>
+              <p>
+                Points total des commentaires en Octobre 2022 :{" "}
+                {api.pointtcommentoct2022}
+              </p>
+              <h4>Gain</h4>
+              <p>
+                Gain total des commentaires dans la vie : {api.gaintcommentlife}
+              </p>
+              <p>
+                Gain total des commentaires dans l'année 2022 :{" "}
+                {api.gaintcomment2022}
+              </p>
+              <p>
+                Gain total des commentaires en Octobre 2022 :{" "}
+                {api.gaintcommentoct2022}
+              </p>
+              <h4>life</h4>
+              <p>points</p>
+              <p>
+                Points total cummulés depuis l'inscription (dans la vie) :{" "}
+                {api.pointtlife}
+              </p>
+              <p>Points total cummulés dans l'année 2022 : {api.pointt2022}</p>
+              <p>Points total cummulés en Octobre 2022 : {api.pointtoct2022}</p>
+              <p>Gains</p>
+              <p>Gain total dans la vie : {api.gaintlife}</p>
+              <p>Gain total cummulés dans l'année 2022 : {api.gaint2022}</p>
+              <p>Gain total cummulés en Octobre 2022 : {api.gaintoct2022}</p>
               <p>Noms Principal: {api.partnername}</p>
               <p>Noms Court: {api.shortname}</p>
               <p>Noms de naissance: {api.name}</p>
