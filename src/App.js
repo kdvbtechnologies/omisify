@@ -89,6 +89,7 @@ import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
 import SecureWelcomeBonus from "./components/Bonus/SecureWelcomeBonus";
 import AfterWelcomeBonus from "./components/Bonus/AfterWelcomeBonus";
 import InfosUpdate from "./components/Settings/InfosUpdate";
+import InfosUpdateSuccess from "./components/Settings/InfosUpdateSuccess";
 
 export default function App() {
   return (
@@ -186,6 +187,7 @@ export default function App() {
         <Route path="/after-logout" element={<AfterLogout />} />
         <Route path="/infos" element={<Infos />} />
         <Route path="/infos-update" element={<InfosUpdate />} />
+        <Route path="/infos-update-success" element={<InfosUpdateSuccess />} />
         <Route path="/welcome-bonus" element={<WelcomeBonus />} />
         <Route path="/after-welcome-bonus" element={<AfterWelcomeBonus />} />
         <Route path="/secure-welcome-bonus" element={<SecureWelcomeBonus />} />

@@ -1,9 +1,16 @@
+import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { updateInfos } from "../../feature/infos.slice";
+import Loader from "../Partenaire Omisify/Loader";
+import { useDispatch } from "react-redux";
 
 export default function InfosUpdate() {
   const getname = localStorage.getItem("https://omisify.com/name");
   const getshortname = localStorage.getItem("https://omisify.com/shortname");
+  const userId = localStorage.getItem("https://omisify.com/userId");
+  const dispatch = useDispatch();
+
   const getpartnername = localStorage.getItem(
     "https://omisify.com/partnername"
   );
@@ -52,9 +59,41 @@ export default function InfosUpdate() {
   const [grouptelegram, setgrouptelegram] = useState(getgrouptelegram);
   const [numbertelegram, setnumbertelegram] = useState(getnumbertelegram);
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
 
-  async function Validate() {
-    //
+  async function Validate(e) {
+    setIsLoading(true);
+    e.preventDefault();
+
+    const data = {
+      name,
+      shortname,
+      partnername,
+      genre,
+      age,
+      country,
+      birthcountry,
+      dateofbirth,
+      paymentmethod,
+      email,
+      codewelcome,
+      groupwhatsapp,
+      grouptelegram,
+      numbertelegram,
+      numberwhatsapp,
+    };
+
+    await axios
+      .put(
+        `${process.env.REACT_APP_OMISIFY_API}/api/user/updateothers/${userId}`,
+        data
+      )
+      .then((res) => {
+        console.log(res);
+        dispatch(updateInfos(data));
+      })
+      .catch((err) => console.log(err));
+    window.location = "/infos-update-success";
   }
 
   const family = {
@@ -433,7 +472,13 @@ export default function InfosUpdate() {
             </>
           )}
 
-          <button onClick={Validate}>Valider</button>
+          {isLoading ? (
+            <Loader />
+          ) : (
+            <>
+              <button onClick={Validate}>Valider</button>
+            </>
+          )}
         </div>
       </div>
     </div>
