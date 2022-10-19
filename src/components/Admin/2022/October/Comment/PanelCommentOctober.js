@@ -7,7 +7,7 @@ import setApi from "../../../../../feature/panel/panelcomment.slice";
 export default function PanelCommentOctober() {
   const [isLoading, setIsLoading] = useState(true);
   const dispatch = useDispatch();
-  const api = useSelector((state) => state.api.api);
+  const api = useSelector((state) => state.panelcomment.panelcomment);
 
   useEffect(() => {
     async function get() {
