@@ -92,6 +92,7 @@ import InfosUpdateSuccess from "./components/Settings/InfosUpdateSuccess";
 import WelcomeBonus from "./components/Bonus/WelcomeBonus/WelcomeBonus";
 import SecureWelcomeBonus from "./components/Bonus/WelcomeBonus/SecureWelcomeBonus";
 import AfterWelcomeBonus from "./components/Bonus/WelcomeBonus/AfterWelcomeBonus";
+import DaysOfGenerosity from "./components/Bonus/DaysOfGenerosity/DaysOfGenerosity";
 
 // update point
 import UpdatePoint from "./components/UpdatePoint/UpdatePoint";
@@ -227,6 +228,7 @@ export default function App() {
         />
         <Route path="/initialize" element={<InitializeNewPointComment />} />
       </Routes>
+      <Route path="/generosity" element={<DaysOfGenerosity />} />
     </BrowserRouter>
   );
 }

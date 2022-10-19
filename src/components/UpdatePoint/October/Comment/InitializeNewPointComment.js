@@ -93,7 +93,7 @@ export default function InitializeNewPointComment() {
 
     await axios
       .put(
-        `${process.env.REACT_APP_OMISIFY_API}/api/user/updateuserinfos/${userId}`,
+        `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
         data
       )
       .then((res) => {
