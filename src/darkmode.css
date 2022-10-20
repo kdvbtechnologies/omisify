@@ -1056,7 +1056,9 @@ footer {
 /* src - component -settings - infos.js */
 .infos {
   padding-bottom: 70px;
+  
 }
+
 .infos p {
   padding: 20px;
   font-size: 17px;
@@ -1065,13 +1067,13 @@ footer {
 .infos .title-main .title {
   display: flex;
   align-items: center;
+   
 }
 
 .infos .title {
   background-color: red;
   color: white;
   font-size: 18px;
-  padding: 0px;
   margin-bottom: 40px;
   
 }
@@ -1079,7 +1081,7 @@ footer {
 .infos .title button {
   cursor: pointer;
   background-color: transparent;
-  margin: 0px 5px;
+  margin: 0px -10px;
   padding: 5px 10px;
   font-size: 15px;
   border-radius: 20px;
