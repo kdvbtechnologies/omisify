@@ -6,7 +6,8 @@ import Loader from "../../Partenaire Omisify/Loader";
 export default function DaysOfGenerosity() {
   const userId = localStorage.getItem("https://omisify.com/userId");
   const navigate = useNavigate();
-  const [generositydays, setGenerosityDays] = useState("");
+  const getgenerositydays = "Lundi et Mardi";
+  const [generositydays, setGenerosityDays] = useState(getgenerositydays);
   const [isLoading, setIsLoading] = useState(false);
 
   async function Save() {
