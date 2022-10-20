@@ -29,7 +29,7 @@ export default function DaysOfGenerosity() {
         }
       })
       .catch((err) => console.log(err));
-    window.location = "/days-of-generosity-success";
+    //window.location = "/days-of-generosity-success";
   }
 
   const family = {
