@@ -207,7 +207,7 @@ export default function UpdateSuccess() {
           const birthcountry = res.data.birthcountry;
           if (birthcountry) {
             localStorage.setItem(
-              "https://omisify.com/generositydays",
+              "https://omisify.com/birthcountry",
               birthcountry
             );
           }

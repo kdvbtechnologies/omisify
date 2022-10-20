@@ -204,6 +204,14 @@ export default function LoginSuccess() {
             );
           }
 
+          const birthcountry = res.data.birthcountry;
+          if (birthcountry) {
+            localStorage.setItem(
+              "https://omisify.com/birthcountry",
+              birthcountry
+            );
+          }
+
           localStorage.setItem("https://omisify.com/name", name);
           localStorage.setItem("https://omisify.com/partnername", partnername);
           localStorage.setItem("https://omisify.com/shortname", shortname);
