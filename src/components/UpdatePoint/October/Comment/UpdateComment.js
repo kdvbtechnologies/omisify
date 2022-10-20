@@ -237,10 +237,9 @@ export default function UpdateComment() {
     parseInt(getoldgaintlifeoct2022) + parseInt(gaincomment);
   const gaintlife2022 = parseInt(getoldgaintlife2022) + parseInt(gaincomment);
 
-  const gaintlife =
-    parseInt(getoldgaintlife) + parseInt(gaincomment).toFixed(2);
+  const gaintlife = parseInt(getoldgaintlife) + parseInt(gaincomment);
 
-  //const gaintlife = gaincomment;
+  // il faut verifier .toFixed(2) in react , for decimal number
 
   // number
   const getoldnumbertcommentoct2022 = localStorage.getItem(
