@@ -196,6 +196,11 @@ export default function UpdateSuccess() {
             localStorage.setItem("https://omisify.com/date", getdate);
           }
 
+          const generositydays = res.data.generositydays;
+          if (generositydays) {
+            localStorage.setItem("https://omisify.com/generositydays");
+          }
+
           localStorage.setItem("https://omisify.com/name", name);
           localStorage.setItem("https://omisify.com/partnername", partnername);
           localStorage.setItem("https://omisify.com/shortname", shortname);

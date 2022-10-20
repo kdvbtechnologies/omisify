@@ -1,6 +1,7 @@
-import LoginNav from "../../Auth/LoginNav";
+import { useNavigate } from "react-router-dom";
 
 export default function WelcomeBonusSuccess() {
+  const navigate = useNavigate();
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -8,7 +9,9 @@ export default function WelcomeBonusSuccess() {
 
   return (
     <div style={family}>
-      <LoginNav />
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>Retour</button>
+      </div>
       <div className="welcome-bonus">
         <div className="title">
           <li>Bonus de Bienvenue</li>

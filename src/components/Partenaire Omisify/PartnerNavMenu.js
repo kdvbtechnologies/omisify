@@ -14,14 +14,13 @@ export default function PartnerNavMenu() {
         <div className="menu-navigation-title">
           <p>Menu</p>
         </div>
+
         <NavLink className="li" to="/update">
           <li>Mise à jour</li>
         </NavLink>
+
         <NavLink className="li" to="/program">
           <li>Programme</li>
-        </NavLink>
-        <NavLink className="li" to="/partner-historical">
-          <li>Historique</li>
         </NavLink>
 
         <NavLink className="li" to="/partner-contact">
@@ -36,8 +35,8 @@ export default function PartnerNavMenu() {
           <li>Actualisation</li>
         </NavLink>
 
-        <NavLink className="li" to="/secure-welcome-bonus">
-          <li>Bonus de Bienvenue</li>
+        <NavLink className="li" to="/bonus">
+          <li>Bonus</li>
         </NavLink>
 
         <NavLink className="li" to="/logout">

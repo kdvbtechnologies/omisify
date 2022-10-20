@@ -1,9 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { addPosts } from "../../feature/posts.slice";
 
 export default function AttendanceBonus() {
+  const navigate = useNavigate;
   const [monthattendancebonus, setmonthattendancebonus] = useState("");
   //const userId = localStorage.getItem("https://omisify.com/userId");
   const dispatch = useDispatch();
@@ -30,6 +32,9 @@ export default function AttendanceBonus() {
 
   return (
     <>
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>Retour</button>
+      </div>
       <p>Bonus de Présence</p>
       <p>
         Le Bonus de Présence de 30 points est offert chaque mois à chaque

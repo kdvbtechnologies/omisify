@@ -996,7 +996,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 30px 0px;
+  padding: 10px 0px;
 }
 
 .welcome-bonus .title {
@@ -1209,6 +1209,29 @@ footer {
   margin: 20px 0px;
   border-radius: 10px;
 }
+
+.bonus-title {
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: red;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.bonus {
+  padding: 20px 10px;
+}
+
+.bonus .li {
+ text-decoration: none;
+}
+
+.bonus .li li {
+  list-style: none;
+  padding: 15px 10px ;
+  font-size: 17px;
+}
+
 
 /* admin - navigation - navigation.js */
 

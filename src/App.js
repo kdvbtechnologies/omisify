@@ -92,7 +92,8 @@ import InfosUpdateSuccess from "./components/Settings/InfosUpdateSuccess";
 import WelcomeBonus from "./components/Bonus/WelcomeBonus/WelcomeBonus";
 import SecureWelcomeBonus from "./components/Bonus/WelcomeBonus/SecureWelcomeBonus";
 import AfterWelcomeBonus from "./components/Bonus/WelcomeBonus/AfterWelcomeBonus";
-import DaysOfGenerosity from "./components/Bonus/DaysOfGenerosity/DaysOfGenerosity";
+import Bonus from "./components/Bonus/Bonus";
+import SecureDaysOfGenerosity from "./components/Bonus/DaysOfGenerosity/SecureDaysOfGenerosity";
 
 // update point
 import UpdatePoint from "./components/UpdatePoint/UpdatePoint";
@@ -106,7 +107,7 @@ import PanelCommentOctober from "./components/Admin/2022/October/Comment/PanelCo
 
 // panel welcome bonus
 import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
-import InitializeNewPointComment from "./components/UpdatePoint/October/Comment/InitializeNewPointComment";
+import DaysOfGenerositySuccess from "./components/Bonus/DaysOfGenerosity/DaysOfGenerositySuccess";
 
 export default function App() {
   return (
@@ -226,8 +227,16 @@ export default function App() {
           path="/secure-update-comment"
           element={<SecureUpdateComment />}
         />
-        <Route path="/initialize" element={<InitializeNewPointComment />} />
-        <Route path="/generosity" element={<DaysOfGenerosity />} />
+        <Route
+          path="/generosity-days-success"
+          element={<DaysOfGenerositySuccess />}
+        />
+
+        <Route
+          path="/secure-days-of-generosity"
+          element={<SecureDaysOfGenerosity />}
+        />
+        <Route path="/bonus" element={<Bonus />} />
       </Routes>
     </BrowserRouter>
   );

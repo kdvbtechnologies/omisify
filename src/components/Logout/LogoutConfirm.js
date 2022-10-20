@@ -9,6 +9,7 @@ export default function LogoutConfirm() {
     localStorage.removeItem("https://omisify.com/shortname");
     localStorage.removeItem("https://omisify.com/welcomebonus");
     localStorage.removeItem("https://omisify.com/pointtcommentlife");
+    localStorage.removeItem("https://omisify.com/generositydays");
     window.location = "/after-logout";
   }
 

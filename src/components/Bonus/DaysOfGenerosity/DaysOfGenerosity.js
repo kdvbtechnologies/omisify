@@ -18,9 +18,15 @@ export default function DaysOfGenerosity() {
         generositydays,
       },
     })
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res);
+        const generositydays = res.data.generositydays;
+        if (generositydays) {
+          localStorage.setItem("https://omisify.com/generositydays");
+        }
+      })
       .catch((err) => console.log(err));
-    //window.location = "/daysofgenerosity-success";
+    window.location = "/days-of-generosity-success";
   }
 
   const family = {
@@ -35,12 +41,12 @@ export default function DaysOfGenerosity() {
       </div>
       <div className="welcome-bonus">
         <div className="title">
-          <li>Les Journées de Générosité</li>
+          <li>Journées de Générosité</li>
         </div>
 
         <div className="a">
           <p>
-            Les Journées de Générosité sont une forme de Bonus qui concernent 2
+            Les journées de générosité sont une forme de bonus qui concernent 2
             jours dans la semaine. Les points que le Partenaire gagnent pendant
             les journées de générosité sont multipliés par 10
           </p>
