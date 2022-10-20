@@ -40,6 +40,25 @@ export default function PanelCommentOctober() {
               <h3>Nombre de commentaires: {api.commentrecent}</h3>
               <p>Heure: {api.time}</p>
               <p>Date: {api.date}</p>
+              <p>Récapitulatif :</p>
+              <h4>
+                Points total des commentaires dans la vie :{" "}
+                {api.pointtcommentlife}
+              </h4>
+              <h4>Points total cummulés dans la vie : {api.pointtlife}</h4>
+              <h4>
+                G : {api.resultgaincomment} (Gain total des commentaires
+                d'aujourd'hui)
+              </h4>
+              <h4>A : {api.gaintlife} (Ancien Gain total dans la vie)</h4>
+              <hr />
+              <p>[Opération] Nouveau Gain total dans la vie = G + A</p>
+              <p>Seul le Nouveau Gain total dans la vie qu'on va calculer.</p>
+              <p>
+                Les Points total des commentaires dans la vie et les Points
+                total cummulés dans la vie ont déjà été calculé automatiquement.
+              </p>
+              <hr />
               <h4>Nombres</h4>
               <p>
                 Nombre total des commentaires dans la vie :{" "}
