@@ -222,9 +222,9 @@ export default function UpdateComment() {
   const getoldgaintlife2022 = localStorage.getItem(
     "https://omisify.com/getoldgaintlife2022"
   );
-  /* const getoldgaintlife = localStorage.getItem(
+  const getoldgaintlife = localStorage.getItem(
     "https://omisify.com/getoldgaintlife"
-  );*/
+  );
 
   const gaintcommentoct2022 =
     parseInt(getoldgaintcommentoct2022) + parseInt(gaincomment);
@@ -237,11 +237,11 @@ export default function UpdateComment() {
     parseInt(getoldgaintlifeoct2022) + parseInt(gaincomment);
   const gaintlife2022 = parseInt(getoldgaintlife2022) + parseInt(gaincomment);
 
-  /*const gaintlife = (parseInt(getoldgaintlife) + parseInt(gaincomment)).toFixed(
-    2
-  );*/
+  const gaintlife = (
+    parseInt(getoldgaintlife) + parseInt(gaincomment).toFixed(2)
+  ).toFixed(2);
 
-  const gaintlife = gaincomment;
+  //const gaintlife = gaincomment;
 
   // number
   const getoldnumbertcommentoct2022 = localStorage.getItem(
