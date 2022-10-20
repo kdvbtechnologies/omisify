@@ -166,7 +166,7 @@ export default function UpdateComment() {
   // comment
   const pointcomment = parseInt(comment) * 1;
   const calcul = parseInt(comment) * 0.001;
-  const gaincomment = calcul;
+  const gaincomment = (calcul).toFixed(2);
   console.log(gaincomment);
 
   // point
