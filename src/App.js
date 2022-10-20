@@ -93,6 +93,7 @@ import SecureWelcomeBonus from "./components/Bonus/WelcomeBonus/SecureWelcomeBon
 import AfterWelcomeBonus from "./components/Bonus/WelcomeBonus/AfterWelcomeBonus";
 import Bonus from "./components/Bonus/Bonus";
 import SecureDaysOfGenerosity from "./components/Bonus/DaysOfGenerosity/SecureDaysOfGenerosity";
+import DaysOfGenerositySuccess from "./components/Bonus/DaysOfGenerosity/DaysOfGenerositySuccess";
 
 // update point
 import UpdatePoint from "./components/UpdatePoint/UpdatePoint";
@@ -106,7 +107,7 @@ import PanelCommentOctober from "./components/Admin/2022/October/Comment/PanelCo
 
 // panel welcome bonus
 import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
-import DaysOfGenerositySuccess from "./components/Bonus/DaysOfGenerosity/DaysOfGenerositySuccess";
+import UpdateCommentPanel from "./components/Admin/UpdatePoint/Comment/UpdateCommentPanel";
 
 export default function App() {
   return (
@@ -218,6 +219,10 @@ export default function App() {
         <Route
           path="/panel-kdvb-welcome-bonus"
           element={<WelcomeBonusPanel />}
+        />
+        <Route
+          path="/panel-kdvb-update-comment"
+          element={<UpdateCommentPanel />}
         />
         <Route path="/update-point" element={<UpdatePoint />} />
         <Route path="/update-point-success" element={<UpdatePointSuccess />} />

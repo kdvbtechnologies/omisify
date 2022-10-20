@@ -19,6 +19,10 @@ export default function PanelNav() {
           <NavLink className=".navlink" to="/panel-kdvb-comment-october">
             <li>Commentaires Octobre 2022</li>
           </NavLink>
+
+          <NavLink className=".navlink" to="/panel-kdvb-update-comment">
+            <li>Ajouter les points des commentaires</li>
+          </NavLink>
         </div>
       </div>
     </>
