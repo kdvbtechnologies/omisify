@@ -15,7 +15,7 @@ export default function Signup() {
     e.preventDefault();
     await axios({
       method: "post",
-      url: "https://famous-peplum-dove.cyclic.app/api/user/signup",
+      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/signup`,
       data: {
         shortname,
         partnername,

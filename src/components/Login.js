@@ -13,7 +13,7 @@ export default function Login() {
     e.preventDefault();
     await axios({
       method: "post",
-      url: "https://famous-peplum-dove.cyclic.app/api/user/login",
+      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/login`,
       data: {
         email,
         password,
