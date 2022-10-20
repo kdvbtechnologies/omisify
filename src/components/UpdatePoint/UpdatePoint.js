@@ -50,6 +50,46 @@ export default function UpdatePoint() {
         <NavLink className="navlink" to="/secure-update-comment">
           <p>Commentaire</p>
         </NavLink>
+
+        <NavLink className="navlink" to="/secure-update-e10k">
+          <p>E10k</p>
+        </NavLink>
+
+        <NavLink className="navlink" to="/secure-update-email">
+          <p>Email</p>
+        </NavLink>
+
+        <NavLink className="navlink" to="/secure-update-likecomment">
+          <p>Likes (commentaire)</p>
+        </NavLink>
+
+        <NavLink className="navlink" to="/secure-update-likepublication">
+          <p>Likes (publication)</p>
+        </NavLink>
+
+        <NavLink className="navlink" to="/secure-update-m10k">
+          <p>M10k</p>
+        </NavLink>
+
+        <NavLink className="navlink" to="/secure-update-message">
+          <p>Message</p>
+        </NavLink>
+
+        <NavLink className="navlink" to="/secure-update-mwi">
+          <p>MWI</p>
+        </NavLink>
+
+        <NavLink className="navlink" to="/secure-update-publication">
+          <p>Publication</p>
+        </NavLink>
+
+        <NavLink className="navlink" to="/secure-update-pwi">
+          <p>PWI</p>
+        </NavLink>
+
+        <NavLink className="navlink" to="/secure-update-pwp">
+          <p>PWP</p>
+        </NavLink>
       </div>
     </div>
   );
