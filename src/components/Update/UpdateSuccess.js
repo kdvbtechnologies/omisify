@@ -204,6 +204,14 @@ export default function UpdateSuccess() {
             );
           }
 
+          const birthcountry = res.data.birthcountry;
+          if (birthcountry) {
+            localStorage.setItem(
+              "https://omisify.com/generositydays",
+              birthcountry
+            );
+          }
+
           localStorage.setItem("https://omisify.com/name", name);
           localStorage.setItem("https://omisify.com/partnername", partnername);
           localStorage.setItem("https://omisify.com/shortname", shortname);
