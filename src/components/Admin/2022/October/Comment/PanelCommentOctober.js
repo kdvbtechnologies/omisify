@@ -84,8 +84,12 @@ export default function PanelCommentOctober() {
                 Points total cummulés depuis l'inscription (dans la vie) :{" "}
                 {api.pointtlife}
               </p>
-              <p>Points total cummulés dans l'année 2022 : {api.pointt2022}</p>
-              <p>Points total cummulés en Octobre 2022 : {api.pointtoct2022}</p>
+              <p>
+                Points total cummulés dans l'année 2022 : {api.pointtlife2022}
+              </p>
+              <p>
+                Points total cummulés en Octobre 2022 : {api.pointtlifeoct2022}
+              </p>
               <p>Gains</p>
               <p>Gain total dans la vie : {api.gaintlife}</p>
               <p>Gain total cummulés dans l'année 2022 : {api.gaintlife2022}</p>
