@@ -38,12 +38,12 @@ export default function User() {
               <h3>Listes des Partenaires et leurs infos</h3>
               {api.map((api) => (
                 <>
-                  <p>Noms de naissance : {api._id}</p>
+                  <p>userId : {api._id}</p>
                   <p>Noms de naissance : {api.name}</p>
                   <p>Noms principal : {api.partnername}</p>
                   <p>Noms court : {api.shortname}</p>
                   <p>Bonus de Bienvenue recu : {api.welcomebonus} point(s)</p>
-
+                  <p>Journées de générosité : {api.generositydays}</p>
                   <hr />
                   <hr />
                 </>
