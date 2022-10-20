@@ -191,14 +191,19 @@ export default function UpdateComment() {
 
   const pointtcommentoct2022 =
     parseInt(getoldpointtcommentoct2022) + parseInt(pointcomment);
+
   const pointtcomment2022 =
     parseInt(getoldpointtcomment2022) + parseInt(pointcomment);
+
   const pointtcommentlife =
     parseInt(getoldpointtcommentlife) + parseInt(pointcomment);
+
   const pointtlifeoct2022 =
     parseInt(getoldpointtlifeoct2022) + parseInt(pointcomment);
+
   const pointtlife2022 =
     parseInt(getoldpointtlife2022) + parseInt(pointcomment);
+
   const pointtlife = parseInt(getoldpointtlife) + parseInt(pointcomment);
 
   // gain
@@ -302,7 +307,7 @@ export default function UpdateComment() {
         dispatch(addComment(data));
       })
       .catch((err) => console.log(err));
-    window.location = "/update-point-success";
+    //window.location = "/update-point-success";
   }
 
   const family = {
