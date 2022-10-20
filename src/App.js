@@ -226,7 +226,7 @@ export default function App() {
           element={<SecureUpdateComment />}
         />
         <Route
-          path="/generosity-days-success"
+          path="/days-of-generosity-success"
           element={<DaysOfGenerositySuccess />}
         />
 
