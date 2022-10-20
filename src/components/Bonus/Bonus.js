@@ -19,7 +19,7 @@ export default function Bonus() {
       </div>
 
       <div className="bonus">
-        <NavLink className="li" to="/welcome-bonus">
+        <NavLink className="li" to="/secure-welcome-bonus">
           <li>Bonus de Bienvenue</li>
         </NavLink>
 

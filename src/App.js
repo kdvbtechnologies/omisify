@@ -89,7 +89,6 @@ import InfosUpdate from "./components/Settings/InfosUpdate";
 import InfosUpdateSuccess from "./components/Settings/InfosUpdateSuccess";
 
 // bonus
-import WelcomeBonus from "./components/Bonus/WelcomeBonus/WelcomeBonus";
 import SecureWelcomeBonus from "./components/Bonus/WelcomeBonus/SecureWelcomeBonus";
 import AfterWelcomeBonus from "./components/Bonus/WelcomeBonus/AfterWelcomeBonus";
 import Bonus from "./components/Bonus/Bonus";
@@ -206,7 +205,6 @@ export default function App() {
         <Route path="/infos" element={<Infos />} />
         <Route path="/infos-update" element={<InfosUpdate />} />
         <Route path="/infos-update-success" element={<InfosUpdateSuccess />} />
-        <Route path="/welcome-bonus" element={<WelcomeBonus />} />
         <Route path="/after-welcome-bonus" element={<AfterWelcomeBonus />} />
         <Route path="/secure-welcome-bonus" element={<SecureWelcomeBonus />} />
 
