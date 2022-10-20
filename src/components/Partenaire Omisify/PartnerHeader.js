@@ -10,6 +10,9 @@ export default function PartnerHeader() {
   const paymentmethod = localStorage.getItem(
     "https://omisify.com/paymentmethod"
   );
+  const generositydays = localStorage.getItem(
+    "https://omisify.com/generositydays"
+  );
 
   return (
     <>
@@ -32,6 +35,7 @@ export default function PartnerHeader() {
               <p>Age : {age}</p>
               <p>Code de Bienvenue : {codewelcome}</p>
               <p>Méthode de Paiement préféré : {paymentmethod}</p>
+              <p>Journées de générosité : {generositydays}</p>
               <div className="profil-hr">
                 <hr />
                 <hr />
