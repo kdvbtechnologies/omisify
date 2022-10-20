@@ -156,8 +156,6 @@ export default function UpdateComment() {
   // const total = parseInt(ancien) + parseInt(coctember);
 
   //user infos
-  //user infos
-  //user infos
   //const userId = localStorage.getItem("https://omisify.com/userId");
   const name = localStorage.getItem("https://omisify.com/name");
   const partnername = localStorage.getItem("https://omisify.com/partnername");

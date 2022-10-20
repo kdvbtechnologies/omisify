@@ -2,10 +2,12 @@ import InitializeNewPointComment from "./InitializeNewPointComment";
 import UpdateComment from "./UpdateComment";
 
 export default function SecureUpdateComment() {
-  const pointtcommentlife = localStorage.getItem(
-    "https://omisify.com/pointtcommentlife"
+  const pointtcommentoct2022 = localStorage.getItem(
+    "https://omisify.com/pointtcommentoct2022"
   );
   return (
-    <>{pointtcommentlife ? <UpdateComment /> : <InitializeNewPointComment />}</>
+    <>
+      {pointtcommentoct2022 ? <UpdateComment /> : <InitializeNewPointComment />}
+    </>
   );
 }
