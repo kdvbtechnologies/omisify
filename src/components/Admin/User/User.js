@@ -38,7 +38,7 @@ export default function User() {
               <h3>Listes des Partenaires et leurs infos</h3>
               {api.map((api) => (
                 <>
-                  <p>Noms de naissance : {api.userId}</p>
+                  <p>Noms de naissance : {api._id}</p>
                   <p>Noms de naissance : {api.name}</p>
                   <p>Noms principal : {api.partnername}</p>
                   <p>Noms court : {api.shortname}</p>
