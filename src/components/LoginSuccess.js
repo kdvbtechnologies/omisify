@@ -12,6 +12,7 @@ export default function LoginSuccess() {
       await axios
         .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/${userId}`)
         .then((res) => {
+          console.log(res);
           const name = res.data.name;
           const partnername = res.data.partnername;
           const shortname = res.data.shortname;
