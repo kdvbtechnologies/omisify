@@ -41,6 +41,8 @@ export default function User() {
                   <p>Noms de naissance : {api.name}</p>
                   <p>Noms principal : {api.partnername}</p>
                   <p>Noms court : {api.shortname}</p>
+                  <p>Bonus de Bienvenue recu : {api.welcomebonus} point(s)</p>
+
                   <hr />
                   <hr />
                 </>

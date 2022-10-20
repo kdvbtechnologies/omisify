@@ -70,7 +70,6 @@ export default function WelcomeBonusPanel() {
                   <p>Noms court du demandeur : {api.shortname}</p>
                   <p>Code de Bienvenue du mentor : {api.codewelcomementor}</p>
                   <p>- - -- - -- - -- - -- - -- - -- - -</p>
-                  <p>Bonus de Bienvenue recu : {api.welcomebonus} point(s)</p>
                   <hr />
                   <hr />
                 </>
