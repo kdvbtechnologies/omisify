@@ -28,7 +28,7 @@ export default function WelcomeBonusPanel() {
     e.preventDefault();
     await axios({
       method: "put",
-      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/update/${userId}`,
+      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updateuserinfos/${userId}`,
       data: {
         welcomebonus,
       },
