@@ -7,6 +7,8 @@ import PanelNav from "../Navigation/PanelNav";
 export default function WelcomeBonusPanel() {
   const [api, setApi] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [userId, setUserId] = useState("");
+  const welcomebonus = 100;
 
   useEffect(() => {
     async function get() {
@@ -21,23 +23,19 @@ export default function WelcomeBonusPanel() {
     }
     get();
   }, []);
-  /*
-  const welcomebonus = 100;
-  const userId = `${api.userId}`;
-  const codewelcomementor = `${api.codewelcomementor}`;*/
-  /*
-  async function Validate() {
+
+  async function AddWelcomeBonus(e) {
+    e.preventDefault();
     await axios({
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/update/${userId}`,
       data: {
-        codewelcomementor,
         welcomebonus,
       },
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-  }*/
+  }
 
   const family = {
     fontFamily:
@@ -48,6 +46,16 @@ export default function WelcomeBonusPanel() {
     <div style={family}>
       <LoginNav />
       <PanelNav />
+      <p>Ajouter le bonus de Bienvenue</p>
+      <input
+        type="text"
+        placeholder="userId"
+        value={userId}
+        onChange={(e) => setUserId(e.target.value)}
+      />
+
+      <button onClick={AddWelcomeBonus}>Ajouter</button>
+
       {isLoading ? (
         <Loader />
       ) : (
@@ -57,6 +65,7 @@ export default function WelcomeBonusPanel() {
               <h3>Code de Bienvenue</h3>
               {api.map((api) => (
                 <>
+                  <p>userId: {api.userId}</p>
                   <p>Noms du demandeur : {api.partnername}</p>
                   <p>Noms court du demandeur : {api.shortname}</p>
                   <p>Code de Bienvenue du mentor : {api.codewelcomementor}</p>

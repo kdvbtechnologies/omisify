@@ -15,7 +15,7 @@ export default function Bonus() {
       </div>
 
       <div className="bonus-title">
-        <p>Différends types de Bonus</p>
+        <p>Différents types de Bonus</p>
       </div>
 
       <div className="bonus">
