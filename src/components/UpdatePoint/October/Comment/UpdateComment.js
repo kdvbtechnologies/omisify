@@ -237,9 +237,8 @@ export default function UpdateComment() {
     parseInt(getoldgaintlifeoct2022) + parseInt(gaincomment);
   const gaintlife2022 = parseInt(getoldgaintlife2022) + parseInt(gaincomment);
 
-  const gaintlife = (
-    parseInt(getoldgaintlife) + parseInt(gaincomment).toFixed(2)
-  ).toFixed(2);
+  const gaintlife =
+    parseInt(getoldgaintlife) + parseInt(gaincomment).toFixed(2);
 
   //const gaintlife = gaincomment;
 
