@@ -34,8 +34,8 @@ export default function PartnerHeader() {
               <p>Pays : {country}</p>
               <p>Age : {age}</p>
               <p>Code de Bienvenue : {codewelcome}</p>
-              <p>Méthode de Paiement préféré : {paymentmethod}</p>
               <p>Journées de générosité : {generositydays}</p>
+              <p>Méthode de Paiement préféré : {paymentmethod}</p>
               <div className="profil-hr">
                 <hr />
                 <hr />

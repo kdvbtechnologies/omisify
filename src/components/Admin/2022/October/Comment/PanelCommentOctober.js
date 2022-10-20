@@ -37,26 +37,37 @@ export default function PanelCommentOctober() {
         <>
           {api.map((api) => (
             <>
-              <h3>Nombre de commentaires: {api.commentrecent}</h3>
+              <h3>Nombres de commentaires: {api.commentrecent}</h3>
               <p>Heure: {api.time}</p>
               <p>Date: {api.date}</p>
               <p>Récapitulatif :</p>
+
               <h4>
-                Points total des commentaires dans la vie :{" "}
-                {api.pointtcommentlife}
-              </h4>
-              <h4>Points total cummulés dans la vie : {api.pointtlife}</h4>
-              <h4>
-                G : {api.resultgaincomment} (Gain total des commentaires
+                P : {api.resultpointcomment} (points total des commentaires
                 d'aujourd'hui)
               </h4>
-              <h4>A : {api.gaintlife} (Ancien Gain total dans la vie)</h4>
+              <h4>
+                G : {api.resultgaincomment} (gain total des commentaires
+                d'aujourd'hui)
+              </h4>
               <hr />
-              <p>[Opération] Nouveau Gain total dans la vie = G + A</p>
-              <p>Seul le Nouveau Gain total dans la vie qu'on va calculer.</p>
               <p>
-                Les Points total des commentaires dans la vie et les Points
-                total cummulés dans la vie ont déjà été calculé automatiquement.
+                [Opération] Commentaires = (P) points total des commentaires
+                d'aujourd'hui + Ancien points Commentaires (ce qui est sur sa
+                page d'accueil){" "}
+              </p>
+              <p>
+                [Opération] Points total = (P) points total des commentaires
+                d'aujourd'hui + Ancien Points Total (ce qui est sur sa page
+                d'accueil)
+              </p>
+              <p>
+                [Opération] Gain = (G) gain total des commentaires d'aujourd'hui
+                + Ancien Gain (ce qui est sur sa page d'accueil)
+              </p>
+              <p>
+                N.B: Avant d'actualiser les points il faut d'abord vérifier si
+                l'utilisateur à des Bonus
               </p>
               <hr />
               <h4>Nombres</h4>

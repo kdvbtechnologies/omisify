@@ -240,6 +240,7 @@ export default function UpdateComment() {
   const gaintlife = parseInt(getoldgaintlife) + parseInt(gaincomment);
 
   const resultgaincomment = gaincomment;
+  const resultpointcomment = pointcomment;
   // il faut verifier .toFixed(2) in react , for decimal number
 
   // number
@@ -298,6 +299,7 @@ export default function UpdateComment() {
 
       // others
       resultgaincomment,
+      resultpointcomment,
       commentrecent: comment,
       date,
       time,

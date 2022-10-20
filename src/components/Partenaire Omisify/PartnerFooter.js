@@ -81,16 +81,6 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertpublicationlife ? (
-            <>
-              <li>Publications : {getoldnumbertpublicationlife} point(s)</li>
-            </>
-          ) : (
-            <>
-              <li>Publications : 0 point(s)</li>
-            </>
-          )}
-
           {getoldnumbertlikepublicationlife ? (
             <>
               <li>
@@ -101,6 +91,16 @@ export default function PartnerFooter() {
           ) : (
             <>
               <li>Likes (publication) : 0 point(s)</li>
+            </>
+          )}
+
+          {getoldnumbertpublicationlife ? (
+            <>
+              <li>Publications : {getoldnumbertpublicationlife} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>Publications : 0 point(s)</li>
             </>
           )}
 
