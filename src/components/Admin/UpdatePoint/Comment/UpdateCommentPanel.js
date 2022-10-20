@@ -8,6 +8,7 @@ export default function UpdateCommentPanel() {
   const [numbertcommentlife, setNumbertcommentlife] = useState("");
   const [pointtlife, setPointtlife] = useState("");
   const [gaintlife, setGaintlife] = useState("");
+  const [date, setDate] = useState("");
 
   async function Validate() {
     await axios({
@@ -17,6 +18,7 @@ export default function UpdateCommentPanel() {
         numbertcommentlife,
         pointtlife,
         gaintlife,
+        date,
       },
     })
       .then((res) => console.log(res))
@@ -67,6 +69,15 @@ export default function UpdateCommentPanel() {
         value={gaintlife}
         onChange={(e) => setGaintlife(e.target.value)}
         name="gaintlife"
+      />
+
+      <p>Entrer la date de l'utilisateur</p>
+      <input
+        type="text"
+        placeholder="Date de l'utilisateur"
+        value={date}
+        onChange={(e) => setDate(e.target.value)}
+        name="date"
       />
       <button onClick={Validate}>Valider</button>
     </div>

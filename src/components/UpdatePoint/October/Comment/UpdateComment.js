@@ -242,6 +242,7 @@ export default function UpdateComment() {
   const resultgaincomment = gaincomment;
   const resultpointcomment = pointcomment;
   // il faut verifier .toFixed(2) in react , for decimal number
+  console.log(resultpointcomment);
 
   // number
   const getoldnumbertcommentoct2022 = localStorage.getItem(
