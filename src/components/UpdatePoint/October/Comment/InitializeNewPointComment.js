@@ -41,11 +41,11 @@ export default function InitializeNewPointComment() {
         .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/${userId}`)
         .then((res) => {
           console.log(res);
-          const pointtcommentoct2022 = res.data.pointtcommentoct2022;
-          if (pointtcommentoct2022) {
+          const getoldpointtcommentoct2022 = res.data.pointtcommentoct2022;
+          if (getoldpointtcommentoct2022) {
             localStorage.setItem(
-              "https://omisify.com/pointtcommentoct2022",
-              pointtcommentoct2022
+              "https://omisify.com/getoldpointtcommentoct2022",
+              getoldpointtcommentoct2022
             );
             window.location.reload();
           }
@@ -56,9 +56,9 @@ export default function InitializeNewPointComment() {
     get();
   }, [userId]);
 
-  // le bouton s'affichera s'il n'y a pas pointtcommentoct2022 dans le localstorage
-  const getpointtcommentoct2022 = localStorage.getItem(
-    "https://omisify.com/pointtcommentoct2022"
+  // le bouton s'affichera s'il n'y a pas getoldpointtcommentoct2022 dans le localstorage
+  const getoldpointtcommentoct2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtcommentoct2022"
   );
 
   async function Next(e) {
@@ -100,10 +100,10 @@ export default function InitializeNewPointComment() {
         console.log(res);
         dispatch(updateInfos(data));
 
-        const pointtcommentoct2022 = res.data.pointtcommentoct2022;
+        const getoldpointtcommentoct2022 = res.data.pointtcommentoct2022;
         localStorage.setItem(
-          "https://omisify.com/pointtcommentoct2022",
-          pointtcommentoct2022
+          "https://omisify.com/getoldpointtcommentoct2022",
+          getoldpointtcommentoct2022
         );
       })
       .catch((err) => console.log(err));
@@ -132,7 +132,7 @@ export default function InitializeNewPointComment() {
           <Loader />
         ) : (
           <>
-            {!getpointtcommentoct2022 && (
+            {!getoldpointtcommentoct2022 && (
               <>
                 <p>
                   Cliquez sur Continuer pour aller sur la page d'actualisation
