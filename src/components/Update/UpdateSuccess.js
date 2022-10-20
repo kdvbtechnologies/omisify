@@ -198,7 +198,10 @@ export default function UpdateSuccess() {
 
           const generositydays = res.data.generositydays;
           if (generositydays) {
-            localStorage.setItem("https://omisify.com/generositydays");
+            localStorage.setItem(
+              "https://omisify.com/generositydays",
+              generositydays
+            );
           }
 
           localStorage.setItem("https://omisify.com/name", name);

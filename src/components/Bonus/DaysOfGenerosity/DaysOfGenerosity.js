@@ -22,7 +22,10 @@ export default function DaysOfGenerosity() {
         console.log(res);
         const generositydays = res.data.generositydays;
         if (generositydays) {
-          localStorage.setItem("https://omisify.com/generositydays");
+          localStorage.setItem(
+            "https://omisify.com/generositydays",
+            generositydays
+          );
         }
       })
       .catch((err) => console.log(err));
