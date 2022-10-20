@@ -165,8 +165,7 @@ export default function UpdateComment() {
   // comment
   // comment
   const pointcomment = parseInt(comment) * 1;
-  const calcul = parseInt(comment) * 0.001;
-  const gaincomment = (calcul).toFixed(2);
+  const gaincomment = parseInt(comment) * 0.001;
   console.log(gaincomment);
 
   // point
@@ -229,6 +228,7 @@ export default function UpdateComment() {
 
   const gaintcommentoct2022 =
     parseInt(getoldgaintcommentoct2022) + parseInt(gaincomment);
+
   const gaintcomment2022 =
     parseInt(getoldgaintcomment2022) + parseInt(gaincomment);
   const gaintcommentlife =
@@ -236,7 +236,10 @@ export default function UpdateComment() {
   const gaintlifeoct2022 =
     parseInt(getoldgaintlifeoct2022) + parseInt(gaincomment);
   const gaintlife2022 = parseInt(getoldgaintlife2022) + parseInt(gaincomment);
-  const gaintlife = parseInt(getoldgaintlife) + parseInt(gaincomment);
+
+  const gaintlife = (parseInt(getoldgaintlife) + parseInt(gaincomment)).toFixed(
+    2
+  );
 
   // number
   const getoldnumbertcommentoct2022 = localStorage.getItem(
