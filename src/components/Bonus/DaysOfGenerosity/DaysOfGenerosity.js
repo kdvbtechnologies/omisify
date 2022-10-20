@@ -6,7 +6,7 @@ import Loader from "../../Partenaire Omisify/Loader";
 export default function DaysOfGenerosity() {
   const userId = localStorage.getItem("https://omisify.com/userId");
   const navigate = useNavigate();
-  const getgenerositydays = "Lundi et Mardi";
+  const getgenerositydays = "Lundi et Jeudi";
   const [generositydays, setGenerosityDays] = useState(getgenerositydays);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -30,7 +30,7 @@ export default function DaysOfGenerosity() {
         }
       })
       .catch((err) => console.log(err));
-    //window.location = "/days-of-generosity-success";
+    window.location = "/days-of-generosity-success";
   }
 
   const family = {
