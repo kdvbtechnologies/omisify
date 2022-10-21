@@ -164,8 +164,8 @@ export default function UpdateE10k() {
   // e10k
   // e10k
   // e10k
-  const pointe10k = parseInt(e10k) * 1;
-  const gaine10k = parseInt(e10k) * 0.001;
+  const pointe10k = parseInt(e10k) * 3;
+  const gaine10k = parseInt(e10k) * 0.003;
   console.log(gaine10k);
 
   // point
@@ -332,13 +332,17 @@ export default function UpdateE10k() {
           <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>E10k (Email aux 10k+)</p>
+              <p>E10k</p>
             </div>
             <div className="a">
               <p>
-                Entrer le nombre d'e-mail(s) envoyé(s) au(x) compte(s) ayant
-                plus de 10000 abonnés (E10k)
+                Les E10k (E-mails aux 10k) concerne les e-mails envoyés aux
+                comptes ayant entre 10000 abonnés et moins de 1 millions
+                d'abonnés
               </p>
+              <p>1 M10k : 3 points = 0.003€</p>
+              <p>Envoyer le résultat de votre travail</p>
+              <p>Entrer le nombre d'E10k</p>
               <input
                 type="text"
                 placeholder="Nombre d'e-mail(s)"

@@ -31,7 +31,7 @@ export default function LogoutConfirm() {
           </div>
 
           <div className="yes">
-            <button onClick={Yes}>Oui, je reviens bientot</button>
+            <button onClick={Yes}>Oui, je reviens bientôt</button>
           </div>
         </div>
       </div>

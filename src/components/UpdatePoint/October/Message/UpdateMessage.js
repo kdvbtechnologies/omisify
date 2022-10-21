@@ -164,8 +164,8 @@ export default function UpdateMessage() {
   // message
   // message
   // message
-  const pointmessage = parseInt(message) * 1;
-  const gainmessage = parseInt(message) * 0.001;
+  const pointmessage = parseInt(message) * 0.1;
+  const gainmessage = parseInt(message) * 0.0001;
   console.log(gainmessage);
 
   // point
@@ -342,6 +342,11 @@ export default function UpdateMessage() {
               <p>Message</p>
             </div>
             <div className="a">
+              L'option Message concerne les messages envoyés avec la partie
+              présentation et le lien d'affiliation à ses amis ou à ses abonnés
+              sur les réseaux sociaux
+              <p>1 Message : 0.1 point = 0.0001€</p>
+              <p>Envoyer le résultat de votre travail</p>
               <p>Entrer le nombre de message(s) envoyé(s)</p>
               <input
                 type="text"

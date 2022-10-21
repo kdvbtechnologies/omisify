@@ -169,8 +169,8 @@ export default function UpdateLikeslikescomment() {
   // likescomment
   // likescomment
   // likescomment
-  const pointlikescomment = parseInt(likescomment) * 1;
-  const gainlikescomment = parseInt(likescomment) * 0.001;
+  const pointlikescomment = parseInt(likescomment) * 0.01;
+  const gainlikescomment = parseInt(likescomment) * 0.00001;
   console.log(gainlikescomment);
 
   // point
@@ -348,6 +348,14 @@ export default function UpdateLikeslikescomment() {
               <p>Likes (commentaire)</p>
             </div>
             <div className="a">
+              <p>
+                L'option Likes (commentaire) concerne les likes que des
+                personnes ont laissés sur le commentaire que le Partenaire a
+                publié sur les réseaux sociaux concernant un produit ou une
+                entreprise
+              </p>
+              <p>1 likes (commentaire) : 0.01 point = 0.00001€</p>
+              <p>Envoyer le résultat de votre travail</p>
               <p>Entrer le nombre de likes (commentaire)</p>
               <input
                 type="text"

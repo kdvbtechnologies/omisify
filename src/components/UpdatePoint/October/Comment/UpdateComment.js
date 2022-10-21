@@ -342,6 +342,13 @@ export default function UpdateComment() {
               <p>Commentaire</p>
             </div>
             <div className="a">
+              <p>
+                L'option Commentaire concerne les commentaires que le Partenaire
+                a publié sur la publication d'une personne ou sur sa propre
+                publication concernant un produit ou une entreprise
+              </p>
+              <p>1 likes (publication) : 1 point = 0.001€</p>
+              <p>Envoyer le résultat de votre travail</p>
               <p>Entrer le nombre de commentaire(s)</p>
               <input
                 type="text"

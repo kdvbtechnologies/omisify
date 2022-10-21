@@ -164,8 +164,8 @@ export default function UpdateMWI() {
   // mwi
   // mwi
   // mwi
-  const pointmwi = parseInt(mwi) * 1;
-  const gainmwi = parseInt(mwi) * 0.001;
+  const pointmwi = parseInt(mwi) * 5;
+  const gainmwi = parseInt(mwi) * 0.005;
   console.log(gainmwi);
 
   // point
@@ -329,9 +329,17 @@ export default function UpdateMWI() {
           <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>MWI (Message With Interaction)</p>
+              <p>MWI</p>
             </div>
             <div className="a">
+              <p>
+                Les MWI (Message With Interaction) en français Message avec
+                interaction concerne les messages dans lesqueslles Le Partenaire
+                recommande un produit ou une entreprise lors de ces
+                conversations avec ses proches
+              </p>
+              <p>1 MWI : 5 point = 0.005€</p>
+              <p>Envoyer le résultat de votre travail</p>
               <p>
                 Entrer le nombre de message(s) avec interaction envoyé(s) (MWI)
               </p>

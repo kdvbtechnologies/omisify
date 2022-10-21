@@ -164,8 +164,8 @@ export default function UpdatePWI() {
   // pwi
   // pwi
   // pwi
-  const pointpwi = parseInt(pwi) * 1;
-  const gainpwi = parseInt(pwi) * 0.001;
+  const pointpwi = parseInt(pwi) * 5;
+  const gainpwi = parseInt(pwi) * 0.005;
   console.log(gainpwi);
 
   // point
@@ -332,6 +332,16 @@ export default function UpdatePWI() {
               <p>PWI (Publication With Interaction)</p>
             </div>
             <div className="a">
+              <p>
+                Les PWI (Publication With Interaction) en français Publication
+                avec interaction concerne les publications dans lesqueslles des
+                personnes poses des questions en commentaire concernant le
+                produit ou concernant l'entreprise qui est sur l'affiche de la
+                publication et le Partenaire réponds à la question posé en
+                commentaire
+              </p>
+              <p>1 PWI : 5 point = 0.005€</p>
+              <p>Envoyer le résultat de votre travail</p>
               <p>
                 Entrer le nombre de publication(s) avec interaction publiée(s)
                 (PWI)

@@ -164,8 +164,8 @@ export default function UpdateEmail() {
   // email
   // email
   // email
-  const pointemail = parseInt(email) * 1;
-  const gainemail = parseInt(email) * 0.001;
+  const pointemail = parseInt(email) * 2;
+  const gainemail = parseInt(email) * 0.002;
   console.log(gainemail);
 
   // point
@@ -334,9 +334,14 @@ export default function UpdateEmail() {
           <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>Email</p>
+              <p>E-mail</p>
             </div>
             <div className="a">
+              L'option E-mail concerne les e-mails envoyés avec la partie
+              présentation et le lien d'affiliation à un influenceur ou à une
+              entreprise
+              <p>1 E-mail : 2 points = 0.002€</p>
+              <p>Envoyer le résultat de votre travail</p>
               <p>Entrer le nombre d'e-mail(s)</p>
               <input
                 type="text"
