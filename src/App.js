@@ -99,8 +99,16 @@ import DaysOfGenerositySuccess from "./components/Bonus/DaysOfGenerosity/DaysOfG
 import UpdatePoint from "./components/UpdatePoint/UpdatePoint";
 import UpdatePointSuccess from "./components/UpdatePoint/UpdatePointSuccess";
 import SecureUpdateComment from "./components/UpdatePoint/October/Comment/SecureUpdateComment";
-
-// october
+import SecureUpdateE10k from "./components/UpdatePoint/October/E10k/SecureUpdateE10k";
+import SecureUpdateEmail from "./components/UpdatePoint/October/Email/SecureUpdateEmail";
+import SecureUpdateLikesComment from "./components/UpdatePoint/October/LikesComment/SecureUpdateLikesComment";
+import SecureUpdateLikesPublication from "./components/UpdatePoint/October/LikesPublication/SecureUpdateLikesPublication";
+import SecureUpdateM10k from "./components/UpdatePoint/October/M10k/SecureUpdateM10k";
+import SecureUpdateMessage from "./components/UpdatePoint/October/Message/SecureUpdateMessage";
+import SecureUpdateMWI from "./components/UpdatePoint/October/MWI/SecureUpdateMWI";
+import SecureUpdatePublication from "./components/UpdatePoint/October/Publication/SecureUpdatePublication";
+import SecureUpdatePWI from "./components/UpdatePoint/October/PWI/SecureUpdatePWI";
+import SecureUpdatePWP from "./components/UpdatePoint/October/PWP/SecureUpdatePWP";
 
 // panel comment october
 import PanelCommentOctober from "./components/Admin/2022/October/Comment/PanelCommentOctober";
@@ -230,6 +238,39 @@ export default function App() {
           path="/secure-update-comment"
           element={<SecureUpdateComment />}
         />
+
+        <Route path="/secure-update-e10k" element={<SecureUpdateE10k />} />
+
+        <Route path="/secure-update-email" element={<SecureUpdateEmail />} />
+
+        <Route
+          path="/secure-likescomment"
+          element={<SecureUpdateLikesComment />}
+        />
+
+        <Route
+          path="/secure-update-likespublication"
+          element={<SecureUpdateLikesPublication />}
+        />
+
+        <Route path="/secure-update-m10k" element={<SecureUpdateM10k />} />
+
+        <Route
+          path="/secure-update-message"
+          element={<SecureUpdateMessage />}
+        />
+
+        <Route path="/secure-update-mwi" element={<SecureUpdateMWI />} />
+
+        <Route
+          path="/secure-update-publication"
+          element={<SecureUpdatePublication />}
+        />
+
+        <Route path="/secure-update-pwi" element={<SecureUpdatePWI />} />
+
+        <Route path="/secure-update-pwp" element={<SecureUpdatePWP />} />
+
         <Route
           path="/days-of-generosity-success"
           element={<DaysOfGenerositySuccess />}

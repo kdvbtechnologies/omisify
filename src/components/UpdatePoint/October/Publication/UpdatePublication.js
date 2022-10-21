@@ -3,15 +3,15 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import Loader from "../../../Partenaire Omisify/Loader";
-import addemail from "../../../../feature/email.slice";
+import addpublication from "../../../../feature/publication.slice";
 
-export default function UpdateEmail() {
+export default function UpdatePublication() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const userId = localStorage.getItem("https://omisify.com/userId");
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(false);
-  const [email, setemail] = useState("");
+  const [publication, setpublication] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
 
@@ -24,27 +24,28 @@ export default function UpdateEmail() {
           console.log(res.data.pointtlife2022);
 
           // point
-          const getoldpointtemailoct2022 = res.data.pointtemailoct2022;
-          if (getoldpointtemailoct2022) {
+          const getoldpointtpublicationoct2022 =
+            res.data.pointtpublicationoct2022;
+          if (getoldpointtpublicationoct2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtemailoct2022",
-              getoldpointtemailoct2022
+              "https://omisify.com/getoldpointtpublicationoct2022",
+              getoldpointtpublicationoct2022
             );
           }
 
-          const getoldpointtemail2022 = res.data.pointtemail2022;
-          if (getoldpointtemail2022) {
+          const getoldpointtpublication2022 = res.data.pointtpublication2022;
+          if (getoldpointtpublication2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtemail2022",
-              getoldpointtemail2022
+              "https://omisify.com/getoldpointtpublication2022",
+              getoldpointtpublication2022
             );
           }
 
-          const getoldpointtemaillife = res.data.pointtemaillife;
-          if (getoldpointtemaillife) {
+          const getoldpointtpublicationlife = res.data.pointtpublicationlife;
+          if (getoldpointtpublicationlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtemaillife",
-              getoldpointtemaillife
+              "https://omisify.com/getoldpointtpublicationlife",
+              getoldpointtpublicationlife
             );
           }
 
@@ -73,27 +74,28 @@ export default function UpdateEmail() {
           }
 
           // gain
-          const getoldgaintemailoct2022 = res.data.gaintemailoct2022;
-          if (getoldgaintemailoct2022) {
+          const getoldgaintpublicationoct2022 =
+            res.data.gaintpublicationoct2022;
+          if (getoldgaintpublicationoct2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintemailoct2022",
-              getoldgaintemailoct2022
+              "https://omisify.com/getoldgaintpublicationoct2022",
+              getoldgaintpublicationoct2022
             );
           }
 
-          const getoldgaintemail2022 = res.data.gaintemail2022;
-          if (getoldgaintemail2022) {
+          const getoldgaintpublication2022 = res.data.gaintpublication2022;
+          if (getoldgaintpublication2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintemail2022",
-              getoldgaintemail2022
+              "https://omisify.com/getoldgaintpublication2022",
+              getoldgaintpublication2022
             );
           }
 
-          const getoldgaintemaillife = res.data.gaintemaillife;
-          if (getoldgaintemaillife) {
+          const getoldgaintpublicationlife = res.data.gaintpublicationlife;
+          if (getoldgaintpublicationlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintemaillife",
-              getoldgaintemaillife
+              "https://omisify.com/getoldgaintpublicationlife",
+              getoldgaintpublicationlife
             );
           }
 
@@ -122,27 +124,28 @@ export default function UpdateEmail() {
           }
 
           // number
-          const getoldnumbertemailoct2022 = res.data.numbertemailoct2022;
-          if (getoldnumbertemailoct2022) {
+          const getoldnumbertpublicationoct2022 =
+            res.data.numbertpublicationoct2022;
+          if (getoldnumbertpublicationoct2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertemailoct2022",
-              getoldnumbertemailoct2022
+              "https://omisify.com/getoldnumbertpublicationoct2022",
+              getoldnumbertpublicationoct2022
             );
           }
 
-          const getoldnumbertemail2022 = res.data.numbertemail2022;
-          if (getoldnumbertemail2022) {
+          const getoldnumbertpublication2022 = res.data.numbertpublication2022;
+          if (getoldnumbertpublication2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertemail2022",
-              getoldnumbertemail2022
+              "https://omisify.com/getoldnumbertpublication2022",
+              getoldnumbertpublication2022
             );
           }
 
-          const getoldnumbertemaillife = res.data.numbertemaillife;
-          if (getoldnumbertemaillife) {
+          const getoldnumbertpublicationlife = res.data.numbertpublicationlife;
+          if (getoldnumbertpublicationlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertemaillife",
-              getoldnumbertemaillife
+              "https://omisify.com/getoldnumbertpublicationlife",
+              getoldnumbertpublicationlife
             );
           }
         })
@@ -161,23 +164,23 @@ export default function UpdateEmail() {
   const partnername = localStorage.getItem("https://omisify.com/partnername");
   const shortname = localStorage.getItem("https://omisify.com/shortname");
 
-  // email
-  // email
-  // email
-  const pointemail = parseInt(email) * 1;
-  const gainemail = parseInt(email) * 0.001;
-  console.log(gainemail);
+  // publication
+  // publication
+  // publication
+  const pointpublication = parseInt(publication) * 1;
+  const gainpublication = parseInt(publication) * 0.001;
+  console.log(gainpublication);
 
   // point
-  const getoldpointtemailoct2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtemailoct2022"
+  const getoldpointtpublicationoct2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtpublicationoct2022"
   );
 
-  const getoldpointtemail2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtemail2022"
+  const getoldpointtpublication2022 = localStorage.getItem(
+    "https://omisify.com/getoldpointtpublication2022"
   );
-  const getoldpointtemaillife = localStorage.getItem(
-    "https://omisify.com/getoldpointtemaillife"
+  const getoldpointtpublicationlife = localStorage.getItem(
+    "https://omisify.com/getoldpointtpublicationlife"
   );
   const getoldpointtlifeoct2022 = localStorage.getItem(
     "https://omisify.com/getoldpointtlifeoct2022"
@@ -189,31 +192,32 @@ export default function UpdateEmail() {
     "https://omisify.com/getoldpointtlife"
   );
 
-  const pointtemailoct2022 =
-    parseInt(getoldpointtemailoct2022) + parseInt(pointemail);
+  const pointtpublicationoct2022 =
+    parseInt(getoldpointtpublicationoct2022) + parseInt(pointpublication);
 
-  const pointtemail2022 =
-    parseInt(getoldpointtemail2022) + parseInt(pointemail);
+  const pointtpublication2022 =
+    parseInt(getoldpointtpublication2022) + parseInt(pointpublication);
 
-  const pointtemaillife =
-    parseInt(getoldpointtemaillife) + parseInt(pointemail);
+  const pointtpublicationlife =
+    parseInt(getoldpointtpublicationlife) + parseInt(pointpublication);
 
   const pointtlifeoct2022 =
-    parseInt(getoldpointtlifeoct2022) + parseInt(pointemail);
+    parseInt(getoldpointtlifeoct2022) + parseInt(pointpublication);
 
-  const pointtlife2022 = parseInt(getoldpointtlife2022) + parseInt(pointemail);
+  const pointtlife2022 =
+    parseInt(getoldpointtlife2022) + parseInt(pointpublication);
 
-  const pointtlife = parseInt(getoldpointtlife) + parseInt(pointemail);
+  const pointtlife = parseInt(getoldpointtlife) + parseInt(pointpublication);
 
   // gain
-  const getoldgaintemailoct2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintemailoct2022"
+  const getoldgaintpublicationoct2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintpublicationoct2022"
   );
-  const getoldgaintemail2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintemail2022"
+  const getoldgaintpublication2022 = localStorage.getItem(
+    "https://omisify.com/getoldgaintpublication2022"
   );
-  const getoldgaintemaillife = localStorage.getItem(
-    "https://omisify.com/getoldgaintemaillife"
+  const getoldgaintpublicationlife = localStorage.getItem(
+    "https://omisify.com/getoldgaintpublicationlife"
   );
   const getoldgaintlifeoct2022 = localStorage.getItem(
     "https://omisify.com/getoldgaintlifeoct2022"
@@ -225,37 +229,42 @@ export default function UpdateEmail() {
     "https://omisify.com/getoldgaintlife"
   );
 
-  const gaintemailoct2022 =
-    parseInt(getoldgaintemailoct2022) + parseInt(gainemail);
+  const gaintpublicationoct2022 =
+    parseInt(getoldgaintpublicationoct2022) + parseInt(gainpublication);
 
-  const gaintemail2022 = parseInt(getoldgaintemail2022) + parseInt(gainemail);
-  const gaintemaillife = parseInt(getoldgaintemaillife) + parseInt(gainemail);
+  const gaintpublication2022 =
+    parseInt(getoldgaintpublication2022) + parseInt(gainpublication);
+  const gaintpublicationlife =
+    parseInt(getoldgaintpublicationlife) + parseInt(gainpublication);
   const gaintlifeoct2022 =
-    parseInt(getoldgaintlifeoct2022) + parseInt(gainemail);
-  const gaintlife2022 = parseInt(getoldgaintlife2022) + parseInt(gainemail);
+    parseInt(getoldgaintlifeoct2022) + parseInt(gainpublication);
+  const gaintlife2022 =
+    parseInt(getoldgaintlife2022) + parseInt(gainpublication);
 
-  const gaintlife = parseInt(getoldgaintlife) + parseInt(gainemail);
+  const gaintlife = parseInt(getoldgaintlife) + parseInt(gainpublication);
 
-  const resultgainemail = gainemail;
-  const resultpointemail = pointemail;
+  const resultgainpublication = gainpublication;
+  const resultpointpublication = pointpublication;
   // il faut verifier .toFixed(2) in react , for decimal number
-  console.log(resultpointemail);
+  console.log(resultpointpublication);
 
   // number
-  const getoldnumbertemailoct2022 = localStorage.getItem(
-    "https://omisify.com/getoldnumbertemailoct2022"
+  const getoldnumbertpublicationoct2022 = localStorage.getItem(
+    "https://omisify.com/getoldnumbertpublicationoct2022"
   );
-  const getoldnumbertemail2022 = localStorage.getItem(
-    "https://omisify.com/getoldnumbertemail2022"
+  const getoldnumbertpublication2022 = localStorage.getItem(
+    "https://omisify.com/getoldnumbertpublication2022"
   );
-  const getoldnumbertemaillife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertemaillife"
+  const getoldnumbertpublicationlife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertpublicationlife"
   );
 
-  const numbertemailoct2022 =
-    parseInt(getoldnumbertemailoct2022) + parseInt(email);
-  const numbertemail2022 = parseInt(getoldnumbertemail2022) + parseInt(email);
-  const numbertemaillife = parseInt(getoldnumbertemaillife) + parseInt(email);
+  const numbertpublicationoct2022 =
+    parseInt(getoldnumbertpublicationoct2022) + parseInt(publication);
+  const numbertpublication2022 =
+    parseInt(getoldnumbertpublication2022) + parseInt(publication);
+  const numbertpublicationlife =
+    parseInt(getoldnumbertpublicationlife) + parseInt(publication);
 
   // update point, gain
   async function Send(e) {
@@ -270,19 +279,19 @@ export default function UpdateEmail() {
       shortname,
 
       // number
-      numbertemaillife,
-      numbertemail2022,
-      numbertemailoct2022,
+      numbertpublicationlife,
+      numbertpublication2022,
+      numbertpublicationoct2022,
 
       // point
-      pointtemaillife,
-      pointtemail2022,
-      pointtemailoct2022,
+      pointtpublicationlife,
+      pointtpublication2022,
+      pointtpublicationoct2022,
 
       // gain
-      gaintemaillife,
-      gaintemail2022,
-      gaintemailoct2022,
+      gaintpublicationlife,
+      gaintpublication2022,
+      gaintpublicationoct2022,
 
       // life
       pointtlife,
@@ -294,21 +303,21 @@ export default function UpdateEmail() {
       gaintlifeoct2022,
 
       // others
-      resultgainemail,
-      resultpointemail,
-      emailrecent: email,
+      resultgainpublication,
+      resultpointpublication,
+      publicationrecent: publication,
       date,
       time,
     };
 
     await axios
       .post(
-        `${process.env.REACT_APP_OMISIFY_API}/api/panel/october/email/add`,
+        `${process.env.REACT_APP_OMISIFY_API}/api/panel/october/publication/add`,
         data
       )
       .then((res) => {
         console.log(res);
-        dispatch(addemail(data));
+        dispatch(addpublication(data));
       })
       .catch((err) => console.log(err));
     //window.location = "/update-point-success";
@@ -331,19 +340,19 @@ export default function UpdateEmail() {
         <Loader />
       ) : (
         <>
-          <div className="update-email">
+          <div className="update-publication">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>emailaire</p>
+              <p>publicationaire</p>
             </div>
             <div className="a">
-              <p>Entrer le nombre de emailaire(s)</p>
+              <p>Entrer le nombre de publicationaire(s)</p>
               <input
                 type="text"
-                placeholder="Nombre de emailaire(s)"
-                value={email}
-                onChange={(e) => setemail(e.target.value)}
-                name="email"
+                placeholder="Nombre de publicationaire(s)"
+                value={publication}
+                onChange={(e) => setpublication(e.target.value)}
+                name="publication"
               />
             </div>
 

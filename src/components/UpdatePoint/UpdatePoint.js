@@ -59,11 +59,11 @@ export default function UpdatePoint() {
           <p>Email</p>
         </NavLink>
 
-        <NavLink className="navlink" to="/secure-update-likecomment">
+        <NavLink className="navlink" to="/secure-update-likescomment">
           <p>Likes (commentaire)</p>
         </NavLink>
 
-        <NavLink className="navlink" to="/secure-update-likepublication">
+        <NavLink className="navlink" to="/secure-update-likespublication">
           <p>Likes (publication)</p>
         </NavLink>
 

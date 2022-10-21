@@ -38,6 +38,7 @@ export default function PanelCommentOctober() {
           {api.map((api) => (
             <>
               <h3>Nombres de commentaires: {api.commentrecent}</h3>
+              <p>Noms Principal: {api.partnername}</p>
               <p>Heure: {api.time}</p>
               <p>Date: {api.date}</p>
               <p>Récapitulatif :</p>
@@ -126,7 +127,7 @@ export default function PanelCommentOctober() {
               <p>
                 Gain total cummulés en Octobre 2022 : {api.gaintlifeoct2022}
               </p>
-              <p>Noms Principal: {api.partnername}</p>
+
               <p>Noms Court: {api.shortname}</p>
               <p>Noms de naissance: {api.name}</p>
             </>
