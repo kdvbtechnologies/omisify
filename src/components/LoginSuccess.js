@@ -204,6 +204,14 @@ export default function LoginSuccess() {
             );
           }
 
+          const bestpartnerbonus = res.data.bestpartnerbonus;
+          if (bestpartnerbonus) {
+            localStorage.setItem(
+              "https://omisify.com/bestpartnerbonus",
+              bestpartnerbonus
+            );
+          }
+
           const birthcountry = res.data.birthcountry;
           if (birthcountry) {
             localStorage.setItem(

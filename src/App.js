@@ -282,7 +282,7 @@ export default function App() {
           element={<WelcomeBonusPanel />}
         />
         <Route
-          path="/panel-kdvb-update-comment"
+          path="/panel-kdvb-update-comment-2022"
           element={<UpdateCommentPanel />}
         />
         <Route path="/update-point" element={<UpdatePoint />} />
