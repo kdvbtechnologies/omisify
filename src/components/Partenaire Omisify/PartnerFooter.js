@@ -93,7 +93,7 @@ export default function PartnerFooter() {
 
           {welcomebonus ? (
             <>
-              <li>Bonus de Bienvenue : {welcomebonus} points</li>
+              <li>Bonus de Bienvenue : {welcomebonus} point(s)</li>
             </>
           ) : (
             <>
@@ -104,7 +104,7 @@ export default function PartnerFooter() {
           {bestpartnerbonus ? (
             <>
               <li>
-                Bonus d'Excellent(e) Partenaire : {bestpartnerbonus} points
+                Bonus d'Excellent(e) Partenaire : {bestpartnerbonus} point(s)
               </li>
             </>
           ) : (
@@ -116,7 +116,8 @@ export default function PartnerFooter() {
           {generositydaysbonus ? (
             <>
               <li>
-                Bonus des journées de générosité : {generositydaysbonus} points
+                Bonus des journées de générosité : {generositydaysbonus}{" "}
+                point(s)
               </li>
             </>
           ) : (
@@ -127,7 +128,7 @@ export default function PartnerFooter() {
 
           {codewelcomebonus ? (
             <>
-              <li>Bonus du Code de Bienvenue : {codewelcomebonus} points</li>
+              <li>Bonus du Code de Bienvenue : {codewelcomebonus} point(s)</li>
             </>
           ) : (
             <>
@@ -137,7 +138,7 @@ export default function PartnerFooter() {
 
           {getoldpointtcommentlife ? (
             <>
-              <li>Commentaires : {getoldpointtcommentlife} points</li>
+              <li>Commentaires : {getoldpointtcommentlife} point(s)</li>
             </>
           ) : (
             <>

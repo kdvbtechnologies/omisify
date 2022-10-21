@@ -5,7 +5,7 @@ import PanelNav from "../../Navigation/PanelNav";
 
 export default function UpdatemessagePanel() {
   const [userId, setUserId] = useState("");
-  const [numbertmessagelife, setNumbertmessagelife] = useState("");
+  const [pointtmessagelife, setpointtmessagelife] = useState("");
   const [pointtlife, setPointtlife] = useState("");
   const [gaintlife, setGaintlife] = useState("");
   const [date, setDate] = useState("");
@@ -15,7 +15,7 @@ export default function UpdatemessagePanel() {
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatemessage/${userId}`,
       data: {
-        numbertmessagelife,
+        pointtmessagelife,
         pointtlife,
         gaintlife,
         date,
@@ -48,9 +48,9 @@ export default function UpdatemessagePanel() {
       <input
         type="text"
         placeholder="messageaires"
-        value={numbertmessagelife}
-        onChange={(e) => setNumbertmessagelife(e.target.value)}
-        name="numbertmessagelife"
+        value={pointtmessagelife}
+        onChange={(e) => setpointtmessagelife(e.target.value)}
+        name="pointtmessagelife"
       />
 
       <p>Entrer Points Total</p>
