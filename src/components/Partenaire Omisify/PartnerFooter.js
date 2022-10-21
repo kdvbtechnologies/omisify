@@ -1,43 +1,70 @@
 import { NavLink } from "react-router-dom";
 
 export default function PartnerFooter() {
+  // welcome bonus
   const welcomebonus = localStorage.getItem("https://omisify.com/welcomebonus");
 
-  const getoldpointtlife = localStorage.getItem(
-    "https://omisify.com/getoldpointtlife"
+  // comment
+  const getoldnumbertcommentlife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertcommentlife"
   );
 
+  // e10k
+  const getoldnumberte10klife = localStorage.getItem(
+    "https://omisify.com/getoldnumberte10klife"
+  );
+
+  // email
   const getoldnumbertemaillife = localStorage.getItem(
     "https://omisify.com/getoldnumbertemaillife"
   );
 
-  const getoldnumbertmwilife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertmwilife"
-  );
-
-  const getoldnumbertmessagelife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertmessagelife"
-  );
-
-  const getoldnumbertpwilife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertpwilife"
-  );
-
-  const getoldnumbertpublicationlife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertpublicationlife"
-  );
-
-  const getoldnumbertlikepublicationlife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertlikepublicationlife"
-  );
-
+  // likescomment
   const getoldnumbertlikecommentlife = localStorage.getItem(
     "https://omisify.com/getoldnumbertlikecommentlife"
   );
 
-  const getoldnumbertcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertcommentlife"
+  // likespublication
+  const getoldnumbertlikepublicationlife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertlikepublicationlife"
   );
+
+  // m10k
+  const getoldnumbertm10klife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertm10klife"
+  );
+
+  // message
+  const getoldnumbertmessagelife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertmessagelife"
+  );
+
+  // mwi
+  const getoldnumbertmwilife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertmwilife"
+  );
+
+  // publication
+  const getoldnumbertpublicationlife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertpublicationlife"
+  );
+
+  // pwi
+  const getoldnumbertpwilife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertpwilife"
+  );
+
+  // pwp
+  const getoldnumbertpwplife = localStorage.getItem(
+    "https://omisify.com/getoldnumbertpwplife"
+  );
+
+  // points total
+  const getoldpointtlife = localStorage.getItem(
+    "https://omisify.com/getoldpointtlife"
+  );
+
+  // gain total
   const getoldgaintlife = localStorage.getItem(
     "https://omisify.com/getoldgaintlife"
   );
@@ -69,6 +96,26 @@ export default function PartnerFooter() {
             </>
           )}
 
+          {getoldnumberte10klife ? (
+            <>
+              <li>E10k : {getoldnumberte10klife} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>E10k : 0 point(s)</li>
+            </>
+          )}
+
+          {getoldnumbertemaillife ? (
+            <>
+              <li>E-mail : {getoldnumbertemaillife} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>E-mail : 0 point(s)</li>
+            </>
+          )}
+
           {getoldnumbertlikecommentlife ? (
             <>
               <li>
@@ -94,23 +141,13 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertpublicationlife ? (
+          {getoldnumbertm10klife ? (
             <>
-              <li>Publications : {getoldnumbertpublicationlife} point(s)</li>
+              <li>M10k : {getoldnumbertm10klife} point(s)</li>
             </>
           ) : (
             <>
-              <li>Publications : 0 point(s)</li>
-            </>
-          )}
-
-          {getoldnumbertpwilife ? (
-            <>
-              <li>PWI : {getoldnumbertpwilife} point(s)</li>
-            </>
-          ) : (
-            <>
-              <li>PWI : 0 point(s)</li>
+              <li>M10k : 0 point(s)</li>
             </>
           )}
 
@@ -134,13 +171,33 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertemaillife ? (
+          {getoldnumbertpublicationlife ? (
             <>
-              <li>E-mail : {getoldnumbertemaillife} point(s)</li>
+              <li>Publications : {getoldnumbertpublicationlife} point(s)</li>
             </>
           ) : (
             <>
-              <li>E-mail : 0 point(s)</li>
+              <li>Publications : 0 point(s)</li>
+            </>
+          )}
+
+          {getoldnumbertpwilife ? (
+            <>
+              <li>PWI : {getoldnumbertpwilife} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>PWI : 0 point(s)</li>
+            </>
+          )}
+
+          {getoldnumbertpwplife ? (
+            <>
+              <li>PWP : {getoldnumbertpwplife} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>PWP : 0 point(s)</li>
             </>
           )}
 
