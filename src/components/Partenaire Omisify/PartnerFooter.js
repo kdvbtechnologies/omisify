@@ -9,64 +9,69 @@ export default function PartnerFooter() {
     "https://omisify.com/codewelcomebonus"
   );
 
-  // bestpartnerbonus
+  // best partner bonus
   const bestpartnerbonus = localStorage.getItem(
     "https://omisify.com/bestpartnerbonus"
   );
 
+  // generosity days bonus
+  const generositydaysbonus = localStorage.getItem(
+    "https://omisify.com/generositydaysbonus"
+  );
+
   // comment
-  const getoldnumbertcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertcommentlife"
+  const getoldpointtcommentlife = localStorage.getItem(
+    "https://omisify.com/getoldpointtcommentlife"
   );
 
   // e10k
-  const getoldnumberte10klife = localStorage.getItem(
-    "https://omisify.com/getoldnumberte10klife"
+  const getoldpointte10klife = localStorage.getItem(
+    "https://omisify.com/getoldpointte10klife"
   );
 
   // email
-  const getoldnumbertemaillife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertemaillife"
+  const getoldpointtemaillife = localStorage.getItem(
+    "https://omisify.com/getoldpointtemaillife"
   );
 
   // likescomment
-  const getoldnumbertlikecommentlife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertlikecommentlife"
+  const getoldpointtlikecommentlife = localStorage.getItem(
+    "https://omisify.com/getoldpointtlikecommentlife"
   );
 
   // likespublication
-  const getoldnumbertlikepublicationlife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertlikepublicationlife"
+  const getoldpointtlikepublicationlife = localStorage.getItem(
+    "https://omisify.com/getoldpointtlikepublicationlife"
   );
 
   // m10k
-  const getoldnumbertm10klife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertm10klife"
+  const getoldpointtm10klife = localStorage.getItem(
+    "https://omisify.com/getoldpointtm10klife"
   );
 
   // message
-  const getoldnumbertmessagelife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertmessagelife"
+  const getoldpointtmessagelife = localStorage.getItem(
+    "https://omisify.com/getoldpointtmessagelife"
   );
 
   // mwi
-  const getoldnumbertmwilife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertmwilife"
+  const getoldpointtmwilife = localStorage.getItem(
+    "https://omisify.com/getoldpointtmwilife"
   );
 
   // publication
-  const getoldnumbertpublicationlife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertpublicationlife"
+  const getoldpointtpublicationlife = localStorage.getItem(
+    "https://omisify.com/getoldpointtpublicationlife"
   );
 
   // pwi
-  const getoldnumbertpwilife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertpwilife"
+  const getoldpointtpwilife = localStorage.getItem(
+    "https://omisify.com/getoldpointtpwilife"
   );
 
   // pwp
-  const getoldnumbertpwplife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertpwplife"
+  const getoldpointtpwplife = localStorage.getItem(
+    "https://omisify.com/getoldpointtpwplife"
   );
 
   // points total
@@ -86,6 +91,16 @@ export default function PartnerFooter() {
         <div className="partner-stats">
           <p>Statistiques </p>
 
+          {welcomebonus ? (
+            <>
+              <li>Bonus de Bienvenue : {welcomebonus} points</li>
+            </>
+          ) : (
+            <>
+              <li>Bonus de Bienvenue : 0 point(s)</li>
+            </>
+          )}
+
           {bestpartnerbonus ? (
             <>
               <li>
@@ -97,13 +112,16 @@ export default function PartnerFooter() {
               <li>Bonus d'Excellent(e) Partenaire : 0 point(s)</li>
             </>
           )}
-          {welcomebonus ? (
+
+          {generositydaysbonus ? (
             <>
-              <li>Bonus de Bienvenue : {welcomebonus} points</li>
+              <li>
+                Bonus des journées de générosité : {generositydaysbonus} points
+              </li>
             </>
           ) : (
             <>
-              <li>Bonus de Bienvenue : 0 point(s)</li>
+              <li>Bonus des journées de générosité : 0 point(s)</li>
             </>
           )}
 
@@ -117,9 +135,9 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertcommentlife ? (
+          {getoldpointtcommentlife ? (
             <>
-              <li>Commentaires : {getoldnumbertcommentlife} points</li>
+              <li>Commentaires : {getoldpointtcommentlife} points</li>
             </>
           ) : (
             <>
@@ -127,9 +145,9 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumberte10klife ? (
+          {getoldpointte10klife ? (
             <>
-              <li>E10k : {getoldnumberte10klife} point(s)</li>
+              <li>E10k : {getoldpointte10klife} point(s)</li>
             </>
           ) : (
             <>
@@ -137,9 +155,9 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertemaillife ? (
+          {getoldpointtemaillife ? (
             <>
-              <li>E-mail : {getoldnumbertemaillife} point(s)</li>
+              <li>E-mail : {getoldpointtemaillife} point(s)</li>
             </>
           ) : (
             <>
@@ -147,10 +165,10 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertlikecommentlife ? (
+          {getoldpointtlikecommentlife ? (
             <>
               <li>
-                Likes (commentaire) : {getoldnumbertlikecommentlife} point(s)
+                Likes (commentaire) : {getoldpointtlikecommentlife} point(s)
               </li>
             </>
           ) : (
@@ -159,11 +177,10 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertlikepublicationlife ? (
+          {getoldpointtlikepublicationlife ? (
             <>
               <li>
-                Likes (publication) : {getoldnumbertlikepublicationlife}{" "}
-                point(s)
+                Likes (publication) : {getoldpointtlikepublicationlife} point(s)
               </li>
             </>
           ) : (
@@ -172,9 +189,9 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertm10klife ? (
+          {getoldpointtm10klife ? (
             <>
-              <li>M10k : {getoldnumbertm10klife} point(s)</li>
+              <li>M10k : {getoldpointtm10klife} point(s)</li>
             </>
           ) : (
             <>
@@ -182,9 +199,9 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertmessagelife ? (
+          {getoldpointtmessagelife ? (
             <>
-              <li>Messages : {getoldnumbertmessagelife} point(s)</li>
+              <li>Messages : {getoldpointtmessagelife} point(s)</li>
             </>
           ) : (
             <>
@@ -192,9 +209,9 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertmwilife ? (
+          {getoldpointtmwilife ? (
             <>
-              <li>MWI : {getoldnumbertmwilife} point(s)</li>
+              <li>MWI : {getoldpointtmwilife} point(s)</li>
             </>
           ) : (
             <>
@@ -202,9 +219,9 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertpublicationlife ? (
+          {getoldpointtpublicationlife ? (
             <>
-              <li>Publications : {getoldnumbertpublicationlife} point(s)</li>
+              <li>Publications : {getoldpointtpublicationlife} point(s)</li>
             </>
           ) : (
             <>
@@ -212,9 +229,9 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertpwilife ? (
+          {getoldpointtpwilife ? (
             <>
-              <li>PWI : {getoldnumbertpwilife} point(s)</li>
+              <li>PWI : {getoldpointtpwilife} point(s)</li>
             </>
           ) : (
             <>
@@ -222,9 +239,9 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldnumbertpwplife ? (
+          {getoldpointtpwplife ? (
             <>
-              <li>PWP : {getoldnumbertpwplife} point(s)</li>
+              <li>PWP : {getoldpointtpwplife} point(s)</li>
             </>
           ) : (
             <>

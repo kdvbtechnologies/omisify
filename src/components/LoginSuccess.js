@@ -25,60 +25,60 @@ export default function LoginSuccess() {
             );
           }
 
-          const getoldnumbertemaillife = res.data.numbertemaillife;
-          if (getoldnumbertemaillife) {
+          const getoldpointtemaillife = res.data.pointtemaillife;
+          if (getoldpointtemaillife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertemaillife",
-              getoldnumbertemaillife
+              "https://omisify.com/getoldpointtemaillife",
+              getoldpointtemaillife
             );
           }
 
-          const getoldnumbertmwilife = res.data.numbertmwilife;
-          if (getoldnumbertmwilife) {
+          const getoldpointtmwilife = res.data.pointtmwilife;
+          if (getoldpointtmwilife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertmwilife",
-              getoldnumbertmwilife
+              "https://omisify.com/getoldpointtmwilife",
+              getoldpointtmwilife
             );
           }
 
-          const getoldnumbertmessagelife = res.data.numbertmessagelife;
-          if (getoldnumbertmessagelife) {
+          const getoldpointtmessagelife = res.data.pointtmessagelife;
+          if (getoldpointtmessagelife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertmessagelife",
-              getoldnumbertmessagelife
+              "https://omisify.com/getoldpointtmessagelife",
+              getoldpointtmessagelife
             );
           }
 
-          const getoldnumbertpwilife = res.data.numbertpwilife;
-          if (getoldnumbertpwilife) {
+          const getoldpointtpwilife = res.data.pointtpwilife;
+          if (getoldpointtpwilife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertpwilife",
-              getoldnumbertpwilife
+              "https://omisify.com/getoldpointtpwilife",
+              getoldpointtpwilife
             );
           }
 
-          const getoldnumbertpublicationlife = res.data.numbertpublicationlife;
-          if (getoldnumbertpublicationlife) {
+          const getoldpointtpublicationlife = res.data.pointtpublicationlife;
+          if (getoldpointtpublicationlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertpublicationlife",
-              getoldnumbertpublicationlife
+              "https://omisify.com/getoldpointtpublicationlife",
+              getoldpointtpublicationlife
             );
           }
 
-          const getoldnumbertlikepublicationlife =
-            res.data.numbertlikepublicationlife;
-          if (getoldnumbertlikepublicationlife) {
+          const getoldpointtlikepublicationlife =
+            res.data.pointtlikepublicationlife;
+          if (getoldpointtlikepublicationlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertlikepublicationlife",
-              getoldnumbertlikepublicationlife
+              "https://omisify.com/getoldpointtlikepublicationlife",
+              getoldpointtlikepublicationlife
             );
           }
 
-          const getoldnumbertcommentlife = res.data.numbertcommentlife;
-          if (getoldnumbertcommentlife) {
+          const getoldpointtcommentlife = res.data.pointtcommentlife;
+          if (getoldpointtcommentlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertcommentlife",
-              getoldnumbertcommentlife
+              "https://omisify.com/getoldpointtcommentlife",
+              getoldpointtcommentlife
             );
           }
 
@@ -90,11 +90,11 @@ export default function LoginSuccess() {
             );
           }
 
-          const getoldnumbertlikecommentlife = res.data.numbertlikecommentlife;
-          if (getoldnumbertlikecommentlife) {
+          const getoldpointtlikecommentlife = res.data.pointtlikecommentlife;
+          if (getoldpointtlikecommentlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertlikecommentlife",
-              getoldnumbertlikecommentlife
+              "https://omisify.com/getoldpointtlikecommentlife",
+              getoldpointtlikecommentlife
             );
           }
 
@@ -175,19 +175,19 @@ export default function LoginSuccess() {
             );
           }
 
-          const getnumberwhatsapp = res.data.numberwhatsapp;
-          if (getnumberwhatsapp) {
+          const getpointwhatsapp = res.data.pointwhatsapp;
+          if (getpointwhatsapp) {
             localStorage.setItem(
-              "https://omisify.com/numberwhatsapp",
-              getnumberwhatsapp
+              "https://omisify.com/pointwhatsapp",
+              getpointwhatsapp
             );
           }
 
-          const getnumbertelegram = res.data.numbertelegram;
-          if (getnumbertelegram) {
+          const getpointtelegram = res.data.pointtelegram;
+          if (getpointtelegram) {
             localStorage.setItem(
-              "https://omisify.com/numbertelegram",
-              getnumbertelegram
+              "https://omisify.com/pointtelegram",
+              getpointtelegram
             );
           }
 
@@ -201,6 +201,14 @@ export default function LoginSuccess() {
             localStorage.setItem(
               "https://omisify.com/generositydays",
               generositydays
+            );
+          }
+
+          const generositydaysbonus = res.data.generositydaysbonus;
+          if (generositydaysbonus) {
+            localStorage.setItem(
+              "https://omisify.com/generositydaysbonus",
+              generositydaysbonus
             );
           }
 
