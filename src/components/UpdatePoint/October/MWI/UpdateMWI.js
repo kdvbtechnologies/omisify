@@ -332,14 +332,18 @@ export default function UpdateMWI() {
               <p>MWI</p>
             </div>
             <div className="a">
-              <p>
-                Les MWI (Message With Interaction) en français Message avec
-                interaction concerne les messages dans lesqueslles Le Partenaire
-                recommande un produit ou une entreprise lors de ces
-                conversations avec ses proches
-              </p>
-              <p>1 MWI : 5 point = 0.005€</p>
-              <p>Envoyer le résultat de votre travail</p>
+              <div className="b">
+                <p>
+                  Les MWI (Message With Interaction) en français Message avec
+                  interaction concerne les messages dans lesqueslles Le
+                  Partenaire recommande un produit ou une entreprise lors de ces
+                  conversations avec ses proches
+                </p>
+                <p>1 MWI : 5 point = 0.005€</p>
+                <div className="c">
+                  <p>Envoyer le résultat de votre travail</p>
+                </div>
+              </div>
               <p>
                 Entrer le nombre de message(s) avec interaction envoyé(s) (MWI)
               </p>

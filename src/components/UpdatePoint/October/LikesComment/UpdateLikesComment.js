@@ -348,14 +348,18 @@ export default function UpdateLikeslikescomment() {
               <p>Likes (commentaire)</p>
             </div>
             <div className="a">
-              <p>
-                L'option Likes (commentaire) concerne les likes que des
-                personnes ont laissés sur le commentaire que le Partenaire a
-                publié sur les réseaux sociaux concernant un produit ou une
-                entreprise
-              </p>
-              <p>1 likes (commentaire) : 0.01 point = 0.00001€</p>
-              <p>Envoyer le résultat de votre travail</p>
+              <div className="b">
+                <p>
+                  L'option Likes (commentaire) concerne les likes que des
+                  personnes ont laissés sur le commentaire que le Partenaire a
+                  publié sur les réseaux sociaux concernant un produit ou une
+                  entreprise
+                </p>
+                <p>1 likes (commentaire) : 0.01 point = 0.00001€</p>
+                <div className="c">
+                  <p>Envoyer le résultat de votre travail</p>
+                </div>
+              </div>
               <p>Entrer le nombre de likes (commentaire)</p>
               <input
                 type="text"

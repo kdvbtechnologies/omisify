@@ -110,12 +110,24 @@ import SecureUpdatePublication from "./components/UpdatePoint/October/Publicatio
 import SecureUpdatePWI from "./components/UpdatePoint/October/PWI/SecureUpdatePWI";
 import SecureUpdatePWP from "./components/UpdatePoint/October/PWP/SecureUpdatePWP";
 
-// panel comment october
-import PanelCommentOctober from "./components/Admin/2022/October/Comment/PanelCommentOctober";
-
 // panel welcome bonus
 import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
 import UpdateCommentPanel from "./components/Admin/UpdatePoint/Comment/UpdateCommentPanel";
+
+// panel comment october
+import PanelCommentOctober from "./components/Admin/2022/October/Comment/PanelCommentOctober";
+import Panele10kOctober from "./components/Admin/2022/October/E10k/PanelE10kOctober";
+import PanelemailOctober from "./components/Admin/2022/October/Email/PanelEmailOctober";
+import PanellikescommentOctober from "./components/Admin/2022/October/LikesComment/PanelLikesCommentOctober";
+import PanellikespublicationOctober from "./components/Admin/2022/October/LikesPublication/PanelLikesPublicationOctober";
+import Panelm10kOctober from "./components/Admin/2022/October/M10k/PanelM10kOctober";
+import PanelmessageOctober from "./components/Admin/2022/October/Message/PanelMessageOctober";
+import PanelmwiOctober from "./components/Admin/2022/October/MWI/PanelMWIOctober";
+import PanelpublicationOctober from "./components/Admin/2022/October/Publication/PanelPublicationOctober";
+import PanelpwiOctober from "./components/Admin/2022/October/PWI/PanelPWIOctober";
+import PanelpwpOctober from "./components/Admin/2022/October/PWP/PanelPWPOctober";
+import BestPartnerBonus from "./components/Bonus/BestPartnerBonus/BestPartnerBonus";
+import BestPartnerBonusSuccess from "./components/Bonus/BestPartnerBonus/BestPartnerBonusSuccess";
 
 export default function App() {
   return (
@@ -218,12 +230,53 @@ export default function App() {
         <Route path="/secure-welcome-bonus" element={<SecureWelcomeBonus />} />
 
         <Route path="/secure-infos-update" element={<SecureInfosUpdate />} />
-        <Route path="/panel-kdvb-home" element={<HomePanel />} />
+        <Route path="/panel-kdvb" element={<HomePanel />} />
         <Route path="/panel-kdvb-user" element={<User />} />
         <Route
-          path="/panel-kdvb-comment-october"
+          path="/panel-kdvb-comment-october-2022"
           element={<PanelCommentOctober />}
         />
+        <Route
+          path="/panel-kdvb-e10k-october-2022"
+          element={<Panele10kOctober />}
+        />
+        <Route
+          path="/panel-kdvb-email-october-2022"
+          element={<PanelemailOctober />}
+        />
+        <Route
+          path="/panel-kdvb-likescomment-october-2022"
+          element={<PanellikescommentOctober />}
+        />
+        <Route
+          path="/panel-kdvb-likespublication-october-2022"
+          element={<PanellikespublicationOctober />}
+        />
+        <Route
+          path="/panel-kdvb-m10k-october-2022"
+          element={<Panelm10kOctober />}
+        />
+        <Route
+          path="/panel-kdvb-message-october-2022"
+          element={<PanelmessageOctober />}
+        />
+        <Route
+          path="/panel-kdvb-mwi-october-2022"
+          element={<PanelmwiOctober />}
+        />
+        <Route
+          path="/panel-kdvb-publication-october-2022"
+          element={<PanelpublicationOctober />}
+        />
+        <Route
+          path="/panel-kdvb-pwi-october-2022"
+          element={<PanelpwiOctober />}
+        />
+        <Route
+          path="/panel-kdvb-pwp-october-2022"
+          element={<PanelpwpOctober />}
+        />
+
         <Route
           path="/panel-kdvb-welcome-bonus"
           element={<WelcomeBonusPanel />}
@@ -280,6 +333,14 @@ export default function App() {
           path="/secure-days-of-generosity"
           element={<SecureDaysOfGenerosity />}
         />
+
+        <Route path="/best-partner-bonus" element={<BestPartnerBonus />} />
+
+        <Route
+          path="/best-partner-bonus-success"
+          element={<BestPartnerBonusSuccess />}
+        />
+
         <Route path="/bonus" element={<Bonus />} />
       </Routes>
     </BrowserRouter>

@@ -337,11 +337,17 @@ export default function UpdateEmail() {
               <p>E-mail</p>
             </div>
             <div className="a">
-              L'option E-mail concerne les e-mails envoyés avec la partie
-              présentation et le lien d'affiliation à un influenceur ou à une
-              entreprise
-              <p>1 E-mail : 2 points = 0.002€</p>
-              <p>Envoyer le résultat de votre travail</p>
+              <div className="b">
+                <p>
+                  L'option E-mail concerne les e-mails envoyés avec la partie
+                  présentation et le lien d'affiliation à un influenceur ou à
+                  une entreprise
+                </p>
+                <p>1 E-mail : 2 points = 0.002€</p>
+                <div className="c">
+                  <p>Envoyer le résultat de votre travail</p>
+                </div>
+              </div>
               <p>Entrer le nombre d'e-mail(s)</p>
               <input
                 type="text"

@@ -342,11 +342,17 @@ export default function UpdateMessage() {
               <p>Message</p>
             </div>
             <div className="a">
-              L'option Message concerne les messages envoyés avec la partie
-              présentation et le lien d'affiliation à ses amis ou à ses abonnés
-              sur les réseaux sociaux
-              <p>1 Message : 0.1 point = 0.0001€</p>
-              <p>Envoyer le résultat de votre travail</p>
+              <div className="b">
+                <p>
+                  L'option Message concerne les messages envoyés avec la partie
+                  présentation et le lien d'affiliation à ses amis ou à ses
+                  abonnés sur les réseaux sociaux
+                </p>
+                <p>1 Message : 0.1 point = 0.0001€</p>
+                <div className="c">
+                  <p>Envoyer le résultat de votre travail</p>
+                </div>
+              </div>
               <p>Entrer le nombre de message(s) envoyé(s)</p>
               <input
                 type="text"

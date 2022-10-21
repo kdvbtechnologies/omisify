@@ -346,13 +346,17 @@ export default function UpdatePublication() {
               <p>Publication</p>
             </div>
             <div className="a">
-              <p>
-                L'option Publication concerne les publications publiées avec la
-                partie présentation, le lien d'affiliation et l'affiche du
-                produit ou de l'entreprise
-              </p>
-              <p>1 Publication : 1 point = 0.001€</p>
-              <p>Envoyer le résultat de votre travail</p>
+              <div className="b">
+                <p>
+                  L'option Publication concerne les publications publiées avec
+                  la partie présentation, le lien d'affiliation et l'affiche du
+                  produit ou de l'entreprise
+                </p>
+                <p>1 Publication : 1 point = 0.001€</p>
+                <div className="c">
+                  <p>Envoyer le résultat de votre travail</p>
+                </div>
+              </div>
               <p>Entrer le nombre de publication(s) publié(s)</p>
               <input
                 type="text"

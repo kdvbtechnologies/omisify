@@ -332,14 +332,18 @@ export default function UpdatePWP() {
               <p>PWP</p>
             </div>
             <div className="a">
-              <p>
-                Les PWP (Publication Without Presentation) en français
-                Publication sans Présentation concerne les publications qui ont
-                été publié sans la partie présentation de leur programme
-                d'affiliation
-              </p>
-              <p>1 PWP : 0.1 point = 0.0001€</p>
-              <p>Envoyer le résultat de votre travail</p>
+              <div className="b">
+                <p>
+                  Les PWP (Publication Without Presentation) en français
+                  Publication sans Présentation concerne les publications qui
+                  ont été publié sans la partie présentation de leur programme
+                  d'affiliation
+                </p>
+                <p>1 PWP : 0.1 point = 0.0001€</p>
+                <div className="c">
+                  <p>Envoyer le résultat de votre travail</p>
+                </div>
+              </div>
               <p>
                 Entrer le nombre de publication(s) sans présentation publiée(s)
                 (PWP)

@@ -357,13 +357,17 @@ export default function UpdateLikesPublication() {
               <p>Likes (publication)</p>
             </div>
             <div className="a">
-              <p>
-                L'option Likes (publication) concerne les likes que des
-                personnes ont laissés sur la publication que le Partenaire a
-                faites concernant un produit ou une entreprise
-              </p>
-              <p>1 likes (publication) : 0.01 point = 0.00001€</p>
-              <p>Envoyer le résultat de votre travail</p>
+              <div className="b">
+                <p>
+                  L'option Likes (publication) concerne les likes que des
+                  personnes ont laissés sur la publication que le Partenaire a
+                  faites concernant un produit ou une entreprise
+                </p>
+                <p>1 likes (publication) : 0.01 point = 0.00001€</p>
+                <div className="c">
+                  <p>Envoyer le résultat de votre travail</p>
+                </div>
+              </div>
               <p>Entrer le nombre de likes (publication)</p>
               <input
                 type="text"

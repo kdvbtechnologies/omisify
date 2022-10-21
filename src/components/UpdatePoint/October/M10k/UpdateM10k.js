@@ -335,13 +335,17 @@ export default function UpdateM10k() {
               <p>M10k (Message aux 10k+)</p>
             </div>
             <div className="a">
-              <p>
-                Les M10k (Message aux 10k) concerne les messages envoyés aux
-                comptes ayant entre 10000 abonnés et moins de 1 millions
-                d'abonnés
-              </p>
-              <p>1 M10k : 1 point = 0.001€</p>
-              <p>Envoyer le résultat de votre travail</p>
+              <div className="b">
+                <p>
+                  Les M10k (Message aux 10k) concerne les messages envoyés aux
+                  comptes ayant entre 10000 abonnés et moins de 1 millions
+                  d'abonnés
+                </p>
+                <p>1 M10k : 1 point = 0.001€</p>
+                <div className="c">
+                  <p>Envoyer le résultat de votre travail</p>
+                </div>
+              </div>
               <p>Entrer le nombre de M10k</p>
               <input
                 type="text"

@@ -1195,6 +1195,17 @@ footer {
   margin: 20px 0px;
 }
 
+.update-comment .a .b p {
+  padding: 10px 0px;
+  font-size: 17px;
+}
+
+.update-comment .a .c {
+  padding: 20px 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .update-comment input[type=text] {
   background-color: transparent;
   padding: 20px 30px;

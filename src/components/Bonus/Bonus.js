@@ -26,6 +26,10 @@ export default function Bonus() {
         <NavLink className="li" to="/secure-days-of-generosity">
           <li>Journées de générosité</li>
         </NavLink>
+
+        <NavLink className="li" to="/best-partner-bonus">
+          <li>Bonus d'Excellent Partenaire</li>
+        </NavLink>
       </div>
     </div>
   );
