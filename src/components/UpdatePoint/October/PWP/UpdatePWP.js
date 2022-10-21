@@ -306,7 +306,7 @@ export default function UpdatePWP() {
         dispatch(addpwp(data));
       })
       .catch((err) => console.log(err));
-    //window.location = "/update-point-success";
+    window.location = "/update-point-success";
   }
 
   const family = {
@@ -326,16 +326,19 @@ export default function UpdatePWP() {
         <Loader />
       ) : (
         <>
-          <div className="update-pwp">
+          <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>pwpaire</p>
+              <p>PWP (Publication Without Presentation)</p>
             </div>
             <div className="a">
-              <p>Entrer le nombre de pwpaire(s)</p>
+              <p>
+                Entrer le nombre de publication(s) sans présentation publiée(s)
+                (PWP)
+              </p>
               <input
                 type="text"
-                placeholder="Nombre de pwpaire(s)"
+                placeholder="Nombre de PWP"
                 value={pwp}
                 onChange={(e) => setpwp(e.target.value)}
                 name="pwp"

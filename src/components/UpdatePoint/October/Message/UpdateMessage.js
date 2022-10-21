@@ -316,7 +316,7 @@ export default function UpdateMessage() {
         dispatch(addmessage(data));
       })
       .catch((err) => console.log(err));
-    //window.location = "/update-point-success";
+    window.location = "/update-point-success";
   }
 
   const family = {
@@ -336,16 +336,16 @@ export default function UpdateMessage() {
         <Loader />
       ) : (
         <>
-          <div className="update-message">
+          <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>messageaire</p>
+              <p>Message</p>
             </div>
             <div className="a">
-              <p>Entrer le nombre de messageaire(s)</p>
+              <p>Entrer le nombre de message(s) envoyé(s)</p>
               <input
                 type="text"
-                placeholder="Nombre de messageaire(s)"
+                placeholder="Nombre de message(s)"
                 value={message}
                 onChange={(e) => setmessage(e.target.value)}
                 name="message"

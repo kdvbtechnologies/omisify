@@ -309,7 +309,7 @@ export default function UpdateM10k() {
         dispatch(addm10k(data));
       })
       .catch((err) => console.log(err));
-    //window.location = "/update-point-success";
+    window.location = "/update-point-success";
   }
 
   const family = {
@@ -329,16 +329,19 @@ export default function UpdateM10k() {
         <Loader />
       ) : (
         <>
-          <div className="update-m10k">
+          <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>m10kaire</p>
+              <p>M10k (Message aux 10k+)</p>
             </div>
             <div className="a">
-              <p>Entrer le nombre de m10kaire(s)</p>
+              <p>
+                Entrer le nombre de message(s) envoyé(s) au(x) compte(s) ayant
+                plus de 10k d'abonnés (M10k)
+              </p>
               <input
                 type="text"
-                placeholder="Nombre de m10kaire(s)"
+                placeholder="Nombre de M10k"
                 value={m10k}
                 onChange={(e) => setm10k(e.target.value)}
                 name="m10k"

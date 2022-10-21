@@ -306,7 +306,7 @@ export default function UpdatePWI() {
         dispatch(addpwi(data));
       })
       .catch((err) => console.log(err));
-    //window.location = "/update-point-success";
+    window.location = "/update-point-success";
   }
 
   const family = {
@@ -326,16 +326,19 @@ export default function UpdatePWI() {
         <Loader />
       ) : (
         <>
-          <div className="update-pwi">
+          <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>pwiaire</p>
+              <p>PWI (Publication With Interaction)</p>
             </div>
             <div className="a">
-              <p>Entrer le nombre de pwiaire(s)</p>
+              <p>
+                Entrer le nombre de publication(s) avec interaction publiée(s)
+                (PWI)
+              </p>
               <input
                 type="text"
-                placeholder="Nombre de pwiaire(s)"
+                placeholder="Nombre de PWI"
                 value={pwi}
                 onChange={(e) => setpwi(e.target.value)}
                 name="pwi"

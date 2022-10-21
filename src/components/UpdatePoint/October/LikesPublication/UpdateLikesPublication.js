@@ -331,7 +331,7 @@ export default function UpdateLikesPublication() {
         dispatch(addlikespublication(data));
       })
       .catch((err) => console.log(err));
-    //window.location = "/update-point-success";
+    window.location = "/update-point-success";
   }
 
   const family = {
@@ -351,16 +351,16 @@ export default function UpdateLikesPublication() {
         <Loader />
       ) : (
         <>
-          <div className="update-likespublication">
+          <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>likespublicationaire</p>
+              <p>Likes (publication)</p>
             </div>
             <div className="a">
-              <p>Entrer le nombre de likespublicationaire(s)</p>
+              <p>Entrer le nombre de likes (publication)</p>
               <input
                 type="text"
-                placeholder="Nombre de likespublicationaire(s)"
+                placeholder="Nombre de likes (publication)"
                 value={likespublication}
                 onChange={(e) => setlikespublication(e.target.value)}
                 name="likespublication"

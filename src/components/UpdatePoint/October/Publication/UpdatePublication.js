@@ -320,7 +320,7 @@ export default function UpdatePublication() {
         dispatch(addpublication(data));
       })
       .catch((err) => console.log(err));
-    //window.location = "/update-point-success";
+    window.location = "/update-point-success";
   }
 
   const family = {
@@ -340,16 +340,16 @@ export default function UpdatePublication() {
         <Loader />
       ) : (
         <>
-          <div className="update-publication">
+          <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>publicationaire</p>
+              <p>Publication</p>
             </div>
             <div className="a">
-              <p>Entrer le nombre de publicationaire(s)</p>
+              <p>Entrer le nombre de publication(s) publié(s)</p>
               <input
                 type="text"
-                placeholder="Nombre de publicationaire(s)"
+                placeholder="Nombre de publication(s)"
                 value={publication}
                 onChange={(e) => setpublication(e.target.value)}
                 name="publication"

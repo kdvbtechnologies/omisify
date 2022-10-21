@@ -311,7 +311,7 @@ export default function UpdateEmail() {
         dispatch(addemail(data));
       })
       .catch((err) => console.log(err));
-    //window.location = "/update-point-success";
+    window.location = "/update-point-success";
   }
 
   const family = {
@@ -331,16 +331,16 @@ export default function UpdateEmail() {
         <Loader />
       ) : (
         <>
-          <div className="update-email">
+          <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>emailaire</p>
+              <p>Email</p>
             </div>
             <div className="a">
-              <p>Entrer le nombre de emailaire(s)</p>
+              <p>Entrer le nombre d'e-mail(s)</p>
               <input
                 type="text"
-                placeholder="Nombre de emailaire(s)"
+                placeholder="Nombre d'e-mail"
                 value={email}
                 onChange={(e) => setemail(e.target.value)}
                 name="email"

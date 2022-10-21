@@ -306,7 +306,7 @@ export default function UpdateMWI() {
         dispatch(addmwi(data));
       })
       .catch((err) => console.log(err));
-    //window.location = "/update-point-success";
+    window.location = "/update-point-success";
   }
 
   const family = {
@@ -326,16 +326,18 @@ export default function UpdateMWI() {
         <Loader />
       ) : (
         <>
-          <div className="update-mwi">
+          <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>mwiaire</p>
+              <p>MWI (Message With Interaction)</p>
             </div>
             <div className="a">
-              <p>Entrer le nombre de mwiaire(s)</p>
+              <p>
+                Entrer le nombre de message(s) avec interaction envoyé(s) (MWI)
+              </p>
               <input
                 type="text"
-                placeholder="Nombre de mwiaire(s)"
+                placeholder="Nombre de MWI"
                 value={mwi}
                 onChange={(e) => setmwi(e.target.value)}
                 name="mwi"

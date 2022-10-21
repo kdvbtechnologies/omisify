@@ -322,7 +322,7 @@ export default function UpdateLikeslikescomment() {
         dispatch(addlikescomment(data));
       })
       .catch((err) => console.log(err));
-    //window.location = "/update-point-success";
+    window.location = "/update-point-success";
   }
 
   const family = {
@@ -342,16 +342,16 @@ export default function UpdateLikeslikescomment() {
         <Loader />
       ) : (
         <>
-          <div className="update-likescomment">
+          <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>likescommentaire</p>
+              <p>Likes (commentaire)</p>
             </div>
             <div className="a">
-              <p>Entrer le nombre de likescommentaire(s)</p>
+              <p>Entrer le nombre de likes (commentaire)</p>
               <input
                 type="text"
-                placeholder="Nombre de likescommentaire(s)"
+                placeholder="Nombre de likes (commentaire)"
                 value={likescomment}
                 onChange={(e) => setlikescomment(e.target.value)}
                 name="likescomment"
