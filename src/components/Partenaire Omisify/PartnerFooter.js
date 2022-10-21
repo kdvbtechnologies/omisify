@@ -4,6 +4,11 @@ export default function PartnerFooter() {
   // welcome bonus
   const welcomebonus = localStorage.getItem("https://omisify.com/welcomebonus");
 
+  // codewelcomebonus
+  const codewelcomebonus = localStorage.getItem(
+    "https://omisify.com/codewelcomebonus"
+  );
+
   // comment
   const getoldnumbertcommentlife = localStorage.getItem(
     "https://omisify.com/getoldnumbertcommentlife"
@@ -83,6 +88,16 @@ export default function PartnerFooter() {
           ) : (
             <>
               <li>Bonus de Bienvenue : 0 point(s)</li>
+            </>
+          )}
+
+          {codewelcomebonus ? (
+            <>
+              <li>Bonus du Code de Bienvenue : {codewelcomebonus} points</li>
+            </>
+          ) : (
+            <>
+              <li>Bonus du Code de Bienvenue : 0 point(s)</li>
             </>
           )}
 
