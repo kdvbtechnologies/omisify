@@ -136,7 +136,7 @@ export default function InitializeNewPointM10k() {
               <>
                 <p>
                   Cliquez sur Continuer pour aller sur la page d'actualisation
-                  des m10kaires
+                  des Messages aux 10k (M10k)
                 </p>
                 {isLoading2 ? (
                   <Loader />

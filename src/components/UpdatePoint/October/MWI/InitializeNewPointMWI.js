@@ -136,7 +136,7 @@ export default function InitializeNewPointMWI() {
               <>
                 <p>
                   Cliquez sur Continuer pour aller sur la page d'actualisation
-                  des mwiaires
+                  des Messages avec interaction (MWI)
                 </p>
                 {isLoading2 ? (
                   <Loader />

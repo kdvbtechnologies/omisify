@@ -138,7 +138,7 @@ export default function InitializeNewPointPublication() {
               <>
                 <p>
                   Cliquez sur Continuer pour aller sur la page d'actualisation
-                  des publicationaires
+                  des Publications
                 </p>
                 {isLoading2 ? (
                   <Loader />

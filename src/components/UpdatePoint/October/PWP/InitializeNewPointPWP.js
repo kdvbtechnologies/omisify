@@ -136,7 +136,7 @@ export default function InitializeNewPointPWP() {
               <>
                 <p>
                   Cliquez sur Continuer pour aller sur la page d'actualisation
-                  des pwpaires
+                  des Publications sans présentation (PWP)
                 </p>
                 {isLoading2 ? (
                   <Loader />

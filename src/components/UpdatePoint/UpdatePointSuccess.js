@@ -10,7 +10,7 @@ export default function UpdatePointSuccess() {
       <div style={family}>
         <div className="welcome-bonus">
           <div className="title">
-            <p>Envoi réussi !</p>
+            <p>Résultat(s) Envoyé !</p>
           </div>
           <p>(En attente de validation)</p>
 

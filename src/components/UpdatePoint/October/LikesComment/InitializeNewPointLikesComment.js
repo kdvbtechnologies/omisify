@@ -138,7 +138,7 @@ export default function InitializeNewPointLikeslikescomment() {
               <>
                 <p>
                   Cliquez sur Continuer pour aller sur la page d'actualisation
-                  des likescommentaires
+                  des Likes (commentaires)
                 </p>
                 {isLoading2 ? (
                   <Loader />

@@ -136,7 +136,7 @@ export default function InitializeNewPointComment() {
               <>
                 <p>
                   Cliquez sur Continuer pour aller sur la page d'actualisation
-                  des commentaires
+                  des Commentaires
                 </p>
                 {isLoading2 ? (
                   <Loader />

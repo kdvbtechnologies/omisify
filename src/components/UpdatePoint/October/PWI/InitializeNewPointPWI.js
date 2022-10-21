@@ -136,7 +136,7 @@ export default function InitializeNewPointPWI() {
               <>
                 <p>
                   Cliquez sur Continuer pour aller sur la page d'actualisation
-                  des pwiaires
+                  des Publications avec interaction (PWI)
                 </p>
                 {isLoading2 ? (
                   <Loader />

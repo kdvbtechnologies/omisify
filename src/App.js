@@ -244,7 +244,7 @@ export default function App() {
         <Route path="/secure-update-email" element={<SecureUpdateEmail />} />
 
         <Route
-          path="/secure-likescomment"
+          path="/secure-update-likescomment"
           element={<SecureUpdateLikesComment />}
         />
 

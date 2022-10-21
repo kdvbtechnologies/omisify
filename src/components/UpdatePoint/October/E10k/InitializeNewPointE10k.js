@@ -136,7 +136,7 @@ export default function InitializeNewPointE10k() {
               <>
                 <p>
                   Cliquez sur Continuer pour aller sur la page d'actualisation
-                  des e10kaires
+                  d'E-mail(s) aux 10k (E10k)
                 </p>
                 {isLoading2 ? (
                   <Loader />

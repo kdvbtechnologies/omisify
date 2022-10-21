@@ -136,7 +136,7 @@ export default function InitializeNewPointMessage() {
               <>
                 <p>
                   Cliquez sur Continuer pour aller sur la page d'actualisation
-                  des messageaires
+                  des Messages
                 </p>
                 {isLoading2 ? (
                   <Loader />

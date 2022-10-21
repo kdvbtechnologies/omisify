@@ -136,7 +136,7 @@ export default function InitializeNewPointEmail() {
               <>
                 <p>
                   Cliquez sur Continuer pour aller sur la page d'actualisation
-                  des emailaires
+                  d'E-mail(s)
                 </p>
                 {isLoading2 ? (
                   <Loader />

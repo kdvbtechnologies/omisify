@@ -337,11 +337,11 @@ export default function UpdateE10k() {
             <div className="a">
               <p>
                 Entrer le nombre d'e-mail(s) envoyé(s) au(x) compte(s) ayant
-                plus de 10k d'abonnés (E10k)
+                plus de 10000 abonnés (E10k)
               </p>
               <input
                 type="text"
-                placeholder="Nombre d'e-mail"
+                placeholder="Nombre d'e-mail(s)"
                 value={e10k}
                 onChange={(e) => sete10k(e.target.value)}
                 name="e10k"
