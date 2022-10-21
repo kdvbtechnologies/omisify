@@ -128,6 +128,16 @@ import PanelpwiOctober from "./components/Admin/2022/October/PWI/PanelPWIOctober
 import PanelpwpOctober from "./components/Admin/2022/October/PWP/PanelPWPOctober";
 import BestPartnerBonus from "./components/Bonus/BestPartnerBonus/BestPartnerBonus";
 import BestPartnerBonusSuccess from "./components/Bonus/BestPartnerBonus/BestPartnerBonusSuccess";
+import Updatee10kPanel from "./components/Admin/UpdatePoint/E10k/UpdateE10kPanel";
+import UpdateemailPanel from "./components/Admin/UpdatePoint/Email/UpdateEmailPanel";
+import UpdatelikescommentPanel from "./components/Admin/UpdatePoint/LikesComment/UpdateLikesCommentPanel";
+import Updatem10kPanel from "./components/Admin/UpdatePoint/M10k/UpdateM10kPanel";
+import UpdatemessagePanel from "./components/Admin/UpdatePoint/Message/UpdateMessagePanel";
+import UpdatemwiPanel from "./components/Admin/UpdatePoint/MWI/UpdateMWIPanel";
+import UpdatepublicationPanel from "./components/Admin/UpdatePoint/Publication/UpdatePublicationPanel";
+import UpdatelikespublicationPanel from "./components/Admin/UpdatePoint/LikesPublication/UpdateLikesPublicationPanel";
+import UpdatepwpPanel from "./components/Admin/UpdatePoint/PWP/UpdatePWPPanel";
+import UpdatepwiPanel from "./components/Admin/UpdatePoint/PWI/UpdatePWIPanel";
 
 export default function App() {
   return (
@@ -285,6 +295,57 @@ export default function App() {
           path="/panel-kdvb-update-comment-2022"
           element={<UpdateCommentPanel />}
         />
+
+        <Route
+          path="/panel-kdvb-update-e10k-2022"
+          element={<Updatee10kPanel />}
+        />
+
+        <Route
+          path="/panel-kdvb-update-email-2022"
+          element={<UpdateemailPanel />}
+        />
+
+        <Route
+          path="/panel-kdvb-update-likescomment-2022"
+          element={<UpdatelikescommentPanel />}
+        />
+
+        <Route
+          path="/panel-kdvb-update-likespublication-2022"
+          element={<UpdatelikespublicationPanel />}
+        />
+
+        <Route
+          path="/panel-kdvb-update-m10k-2022"
+          element={<Updatem10kPanel />}
+        />
+
+        <Route
+          path="/panel-kdvb-update-message-2022"
+          element={<UpdatemessagePanel />}
+        />
+
+        <Route
+          path="/panel-kdvb-update-mwi-2022"
+          element={<UpdatemwiPanel />}
+        />
+
+        <Route
+          path="/panel-kdvb-update-publication-2022"
+          element={<UpdatepublicationPanel />}
+        />
+
+        <Route
+          path="/panel-kdvb-update-pwi-2022"
+          element={<UpdatepwiPanel />}
+        />
+
+        <Route
+          path="/panel-kdvb-update-pwp-2022"
+          element={<UpdatepwpPanel />}
+        />
+
         <Route path="/update-point" element={<UpdatePoint />} />
         <Route path="/update-point-success" element={<UpdatePointSuccess />} />
         <Route

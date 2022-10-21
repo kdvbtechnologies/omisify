@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function UpdatelikescommentPanel() {
   const [userId, setUserId] = useState("");
-  const [numbertlikescommentlife, setNumbertlikescommentlife] = useState("");
+  const [pointtlikescommentlife, setpointtlikescommentlife] = useState("");
   const [pointtlife, setPointtlife] = useState("");
   const [gaintlife, setGaintlife] = useState("");
   const [date, setDate] = useState("");
@@ -13,7 +13,7 @@ export default function UpdatelikescommentPanel() {
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatelikescomment/${userId}`,
       data: {
-        numbertlikescommentlife,
+        pointtlikescommentlife,
         pointtlife,
         gaintlife,
         date,
@@ -46,9 +46,9 @@ export default function UpdatelikescommentPanel() {
       <input
         type="text"
         placeholder="likescommentaires"
-        value={numbertlikescommentlife}
-        onChange={(e) => setNumbertlikescommentlife(e.target.value)}
-        name="numbertlikescommentlife"
+        value={pointtlikescommentlife}
+        onChange={(e) => setpointtlikescommentlife(e.target.value)}
+        name="pointtlikescommentlife"
       />
 
       <p>Entrer Points Total</p>

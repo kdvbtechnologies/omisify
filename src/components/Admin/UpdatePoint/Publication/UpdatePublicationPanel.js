@@ -5,7 +5,7 @@ import PanelNav from "../../Navigation/PanelNav";
 
 export default function UpdatepublicationPanel() {
   const [userId, setUserId] = useState("");
-  const [numbertpublicationlife, setNumbertpublicationlife] = useState("");
+  const [pointtpublicationlife, setpointtpublicationlife] = useState("");
   const [pointtlife, setPointtlife] = useState("");
   const [gaintlife, setGaintlife] = useState("");
   const [date, setDate] = useState("");
@@ -15,7 +15,7 @@ export default function UpdatepublicationPanel() {
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatepublication/${userId}`,
       data: {
-        numbertpublicationlife,
+        pointtpublicationlife,
         pointtlife,
         gaintlife,
         date,
@@ -48,9 +48,9 @@ export default function UpdatepublicationPanel() {
       <input
         type="text"
         placeholder="publicationaires"
-        value={numbertpublicationlife}
-        onChange={(e) => setNumbertpublicationlife(e.target.value)}
-        name="numbertpublicationlife"
+        value={pointtpublicationlife}
+        onChange={(e) => setpointtpublicationlife(e.target.value)}
+        name="pointtpublicationlife"
       />
 
       <p>Entrer Points Total</p>

@@ -5,7 +5,7 @@ import PanelNav from "../../Navigation/PanelNav";
 
 export default function UpdatelikespublicationPanel() {
   const [userId, setUserId] = useState("");
-  const [numbertlikespublicationlife, setNumbertlikespublicationlife] =
+  const [pointtlikespublicationlife, setpointtlikespublicationlife] =
     useState("");
   const [pointtlife, setPointtlife] = useState("");
   const [gaintlife, setGaintlife] = useState("");
@@ -16,7 +16,7 @@ export default function UpdatelikespublicationPanel() {
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatelikespublication/${userId}`,
       data: {
-        numbertlikespublicationlife,
+        pointtlikespublicationlife,
         pointtlife,
         gaintlife,
         date,
@@ -49,9 +49,9 @@ export default function UpdatelikespublicationPanel() {
       <input
         type="text"
         placeholder="likespublicationaires"
-        value={numbertlikespublicationlife}
-        onChange={(e) => setNumbertlikespublicationlife(e.target.value)}
-        name="numbertlikespublicationlife"
+        value={pointtlikespublicationlife}
+        onChange={(e) => setpointtlikespublicationlife(e.target.value)}
+        name="pointtlikespublicationlife"
       />
 
       <p>Entrer Points Total</p>

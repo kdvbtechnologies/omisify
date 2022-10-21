@@ -5,7 +5,7 @@ import PanelNav from "../../Navigation/PanelNav";
 
 export default function UpdatepwiPanel() {
   const [userId, setUserId] = useState("");
-  const [numbertpwilife, setNumbertpwilife] = useState("");
+  const [pointtpwilife, setpointtpwilife] = useState("");
   const [pointtlife, setPointtlife] = useState("");
   const [gaintlife, setGaintlife] = useState("");
   const [date, setDate] = useState("");
@@ -15,7 +15,7 @@ export default function UpdatepwiPanel() {
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatepwi/${userId}`,
       data: {
-        numbertpwilife,
+        pointtpwilife,
         pointtlife,
         gaintlife,
         date,
@@ -48,9 +48,9 @@ export default function UpdatepwiPanel() {
       <input
         type="text"
         placeholder="pwiaires"
-        value={numbertpwilife}
-        onChange={(e) => setNumbertpwilife(e.target.value)}
-        name="numbertpwilife"
+        value={pointtpwilife}
+        onChange={(e) => setpointtpwilife(e.target.value)}
+        name="pointtpwilife"
       />
 
       <p>Entrer Points Total</p>

@@ -72,6 +72,55 @@ export default function PanelNav() {
           <NavLink className=".navlink" to="/panel-kdvb-update-comment-2022">
             <li>Ajouter les points des commentaires</li>
           </NavLink>
+
+          <NavLink className=".navlink" to="/panel-kdvb-update-e10k-2022">
+            <li>Ajouter les points des e10k</li>
+          </NavLink>
+
+          <NavLink className=".navlink" to="/panel-kdvb-update-email-2022">
+            <li>Ajouter les points des e-mails</li>
+          </NavLink>
+
+          <NavLink
+            className=".navlink"
+            to="/panel-kdvb-update-likescomment-2022"
+          >
+            <li>Ajouter les points des likes (commentaire)</li>
+          </NavLink>
+
+          <NavLink
+            className=".navlink"
+            to="/panel-kdvb-update-likespublication-2022"
+          >
+            <li>Ajouter les points des likes (publication)</li>
+          </NavLink>
+
+          <NavLink className=".navlink" to="/panel-kdvb-update-m10k-2022">
+            <li>Ajouter les points des m10k</li>
+          </NavLink>
+
+          <NavLink className=".navlink" to="/panel-kdvb-update-message-2022">
+            <li>Ajouter les points des messages</li>
+          </NavLink>
+
+          <NavLink className=".navlink" to="/panel-kdvb-update-mwi-2022">
+            <li>Ajouter les points des mwi</li>
+          </NavLink>
+
+          <NavLink
+            className=".navlink"
+            to="/panel-kdvb-update-publication-2022"
+          >
+            <li>Ajouter les points des publications</li>
+          </NavLink>
+
+          <NavLink className=".navlink" to="/panel-kdvb-update-pwi-2022">
+            <li>Ajouter les points des pwi</li>
+          </NavLink>
+
+          <NavLink className=".navlink" to="/panel-kdvb-update-pwp-2022">
+            <li>Ajouter les points des pwp</li>
+          </NavLink>
         </div>
       </div>
     </>

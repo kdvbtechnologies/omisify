@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Updatee10kPanel() {
   const [userId, setUserId] = useState("");
-  const [numberte10klife, setNumberte10klife] = useState("");
+  const [pointte10klife, setpointte10klife] = useState("");
   const [pointtlife, setPointtlife] = useState("");
   const [gaintlife, setGaintlife] = useState("");
   const [date, setDate] = useState("");
@@ -13,7 +13,7 @@ export default function Updatee10kPanel() {
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatee10k/${userId}`,
       data: {
-        numberte10klife,
+        pointte10klife,
         pointtlife,
         gaintlife,
         date,
@@ -44,9 +44,9 @@ export default function Updatee10kPanel() {
       <input
         type="text"
         placeholder="e10kaires"
-        value={numberte10klife}
-        onChange={(e) => setNumberte10klife(e.target.value)}
-        name="numberte10klife"
+        value={pointte10klife}
+        onChange={(e) => setpointte10klife(e.target.value)}
+        name="pointte10klife"
       />
 
       <p>Entrer Points Total</p>

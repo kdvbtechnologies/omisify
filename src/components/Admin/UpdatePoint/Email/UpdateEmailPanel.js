@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function UpdateemailPanel() {
   const [userId, setUserId] = useState("");
-  const [numbertemaillife, setNumbertemaillife] = useState("");
+  const [pointtemaillife, setpointtemaillife] = useState("");
   const [pointtlife, setPointtlife] = useState("");
   const [gaintlife, setGaintlife] = useState("");
   const [date, setDate] = useState("");
@@ -13,7 +13,7 @@ export default function UpdateemailPanel() {
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updateemail/${userId}`,
       data: {
-        numbertemaillife,
+        pointtemaillife,
         pointtlife,
         gaintlife,
         date,
@@ -44,9 +44,9 @@ export default function UpdateemailPanel() {
       <input
         type="text"
         placeholder="emailaires"
-        value={numbertemaillife}
-        onChange={(e) => setNumbertemaillife(e.target.value)}
-        name="numbertemaillife"
+        value={pointtemaillife}
+        onChange={(e) => setpointtemaillife(e.target.value)}
+        name="pointtemaillife"
       />
 
       <p>Entrer Points Total</p>
