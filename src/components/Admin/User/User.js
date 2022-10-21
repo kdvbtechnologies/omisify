@@ -50,19 +50,19 @@ export default function User() {
                   <p>Journées de générosité : {api.generositydays}</p>
                   <p>Méthode de Paiement préféré : {api.paymentmethod}</p>
                   <p>...</p>
-                  <p>Commentaires : {api.numbertcommentlife} point(s)</p>
+                  <p>Commentaires : {api.pointtcommentlife} point(s)</p>
                   <p>
-                    Likes (commentaire) :{api.numbertlikecommentlife} point(s)
+                    Likes (commentaire) :{api.pointtlikecommentlife} point(s)
                   </p>
                   <p>
-                    Likes (publication) : {api.numbertlikepublicationlife}{" "}
+                    Likes (publication) : {api.pointtlikepublicationlife}{" "}
                     point(s)
                   </p>
-                  <p>Publications : {api.numbertpublicationlife} point(s)</p>
-                  <p>PWI : {api.numbertpwilife} point(s)</p>
-                  <p>Messages : {api.numbertmessagelife} point(s)</p>
-                  <p>MWI : {api.numbertmwilife} point(s)</p>
-                  <p>E-mail : {api.numbertemaillife} point(s)</p>
+                  <p>Publications : {api.pointtpublicationlife} point(s)</p>
+                  <p>PWI : {api.pointtpwilife} point(s)</p>
+                  <p>Messages : {api.pointtmessagelife} point(s)</p>
+                  <p>MWI : {api.pointtmwilife} point(s)</p>
+                  <p>E-mail : {api.pointtemaillife} point(s)</p>
                   <p>Total des Points : {api.pointtlife} point(s)</p>
                   <p>Gains : {api.gaintlife}€</p>
                   <p>---</p>
@@ -75,8 +75,8 @@ export default function User() {
                   <p>Email : {api.email}</p>
                   <p>Groupe Telegram : {api.grouptelegram}</p>
                   <p>Groupe Whatsapp : {api.groupwhatsapp}</p>
-                  <p>Numéro Telegram : {api.numbertelegram}</p>
-                  <p>Numéro Whatsapp : {api.numberwhatsapp}</p>
+                  <p>Numéro Telegram : {api.pointtelegram}</p>
+                  <p>Numéro Whatsapp : {api.pointwhatsapp}</p>
                   <p>Dernière actualisation des points : {api.date}</p>
                   <hr />
                   <hr />
