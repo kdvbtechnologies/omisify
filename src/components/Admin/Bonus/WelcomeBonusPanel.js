@@ -3,15 +3,14 @@ import { useEffect, useState } from "react";
 import LoginNav from "../../Auth/LoginNav";
 import Loader from "../../Partenaire Omisify/Loader";
 import PanelNav from "../Navigation/PanelNav";
+import BestPartnerBonus from "./BestPartnerBonus";
+import GenerosityDaysBonus from "./GenerosityDaysBonus";
 
 export default function WelcomeBonusPanel() {
   const [api, setApi] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [userId, setUserId] = useState("");
   const welcomebonus = 100;
-  const [bestpartnerbonus, setBestpartnerbonus] = useState("");
-  const [gaintlife, setGaintlife] = useState("");
-  const [pointtlife, setPointtlife] = useState("");
 
   useEffect(() => {
     async function get() {
@@ -41,22 +40,6 @@ export default function WelcomeBonusPanel() {
       .catch((err) => console.log(err));
   }
 
-  // best partner bonus
-  async function AddBestPartnerBonus(e) {
-    e.preventDefault();
-    await axios({
-      method: "put",
-      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updateuserinfos/${userId}`,
-      data: {
-        bestpartnerbonus,
-        pointtlife,
-        gaintlife,
-      },
-    })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
-  }
-
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -77,49 +60,8 @@ export default function WelcomeBonusPanel() {
       <button onClick={AddWelcomeBonus}>Ajouter</button>
       <hr />
       <hr />
-      <hr />
-      <hr />
-
-      <h3>Ajouter le Bonus d'Excellent Partenaire</h3>
-      <p>Commencer entrer le userId</p>
-      <input
-        type="text"
-        placeholder="userId"
-        value={userId}
-        onChange={(e) => setUserId(e.target.value)}
-      />
-
-      <p>Entrer le Bonus d'excellent Partenaire</p>
-      <input
-        type="text"
-        placeholder="Bonus d'excellent Partenaire"
-        value={bestpartnerbonus}
-        onChange={(e) => setBestpartnerbonus(e.target.value)}
-        name="bestpartnerbonus"
-      />
-
-      <input
-        type="text"
-        placeholder="Nouveau Point Total"
-        value={pointtlife}
-        onChange={(e) => setPointtlife(e.target.value)}
-        name="pointtlife"
-      />
-
-      <input
-        type="text"
-        placeholder="Nouveau Gain (dans la vie)"
-        value={gaintlife}
-        onChange={(e) => setGaintlife(e.target.value)}
-        name="gaintlife"
-      />
-
-      <button onClick={AddBestPartnerBonus}>
-        Ajouter le Bonus d'Excellent Partenaire
-      </button>
-
-      <hr />
-      <hr />
+      <BestPartnerBonus />
+      <GenerosityDaysBonus />
 
       {isLoading ? (
         <Loader />

@@ -85,10 +85,10 @@ export default function UpdateCommentPanel() {
         name="pointtcommentlife"
       />
 
-      <p>Ajouter les points des e10kaires</p>
+      <p>Ajouter les points des E10k</p>
       <p>Entrer le userId</p>
       <p>
-        Entrer le nombre des points total des e-mails envoyés aux comptes ayant
+        Entrer le nombre des points total de E10k envoyés aux comptes ayant
         entre 10.000 et moins de 1 millions d'abonnés
       </p>
       <input
