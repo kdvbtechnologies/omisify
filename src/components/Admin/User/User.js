@@ -12,7 +12,10 @@ export default function User() {
     async function get() {
       await axios
         .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/`)
-        .then((res) => setApi(res.data))
+        .then((res) => {
+          console.log(res);
+          setApi(res.data);
+        })
         .catch((err) => console.log(err));
       setIsLoading(false);
     }
