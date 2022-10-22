@@ -161,25 +161,21 @@ export default function PartnerFooter() {
 
           {getoldpointtlikecommentlife ? (
             <>
-              <li>
-                Likes (commentaire) : {getoldpointtlikecommentlife} point(s)
-              </li>
+              <li>Likes C : {getoldpointtlikecommentlife} point(s)</li>
             </>
           ) : (
             <>
-              <li>Likes (commentaire) : 0 point(s)</li>
+              <li>Likes C : 0 point(s)</li>
             </>
           )}
 
           {getoldpointtlikepublicationlife ? (
             <>
-              <li>
-                Likes (publication) : {getoldpointtlikepublicationlife} point(s)
-              </li>
+              <li>Likes P : {getoldpointtlikepublicationlife} point(s)</li>
             </>
           ) : (
             <>
-              <li>Likes (publication) : 0 point(s)</li>
+              <li>Likes P : 0 point(s)</li>
             </>
           )}
 
