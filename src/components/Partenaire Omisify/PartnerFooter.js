@@ -251,7 +251,7 @@ export default function PartnerFooter() {
 
           {getoldgaintlife && (
             <>
-              <p>Valeur des points : {getoldgaintlife}€</p>
+              <li>Valeur des points : {getoldgaintlife}€</li>
             </>
           )}
         </div>
