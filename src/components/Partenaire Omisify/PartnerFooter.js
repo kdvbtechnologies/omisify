@@ -99,6 +99,16 @@ export default function PartnerFooter() {
             </>
           )}
 
+          {codewelcomebonus ? (
+            <>
+              <li>Bonus du Code de Bienvenue : {codewelcomebonus} point(s)</li>
+            </>
+          ) : (
+            <>
+              <li>Bonus du Code de Bienvenue : 0 point(s)</li>
+            </>
+          )}
+
           {bestpartnerbonus ? (
             <>
               <li>
@@ -121,16 +131,6 @@ export default function PartnerFooter() {
           ) : (
             <>
               <li>Bonus des journées de générosité : 0 point(s)</li>
-            </>
-          )}
-
-          {codewelcomebonus ? (
-            <>
-              <li>Bonus du Code de Bienvenue : {codewelcomebonus} point(s)</li>
-            </>
-          ) : (
-            <>
-              <li>Bonus du Code de Bienvenue : 0 point(s)</li>
             </>
           )}
 
