@@ -5,7 +5,7 @@ import PanelNav from "../../Navigation/PanelNav";
 
 export default function Updatem10kPanel() {
   const [userId, setUserId] = useState("");
-  const [numbertm10klife, setNumbertm10klife] = useState("");
+  const [pointtm10klife, setpointtm10klife] = useState("");
   const [pointtlife, setPointtlife] = useState("");
   const [gaintlife, setGaintlife] = useState("");
   const [date, setDate] = useState("");
@@ -15,7 +15,7 @@ export default function Updatem10kPanel() {
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/${userId}`,
       data: {
-        numbertm10klife,
+        pointtm10klife,
         pointtlife,
         gaintlife,
         date,
@@ -48,9 +48,9 @@ export default function Updatem10kPanel() {
       <input
         type="text"
         placeholder="m10kaires"
-        value={numbertm10klife}
-        onChange={(e) => setNumbertm10klife(e.target.value)}
-        name="numbertm10klife"
+        value={pointtm10klife}
+        onChange={(e) => setpointtm10klife(e.target.value)}
+        name="pointtm10klife"
       />
 
       <p>Entrer Points Total</p>
