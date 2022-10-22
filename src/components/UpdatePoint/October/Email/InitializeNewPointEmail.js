@@ -102,12 +102,12 @@ export default function InitializeNewPointEmail() {
 
         const getoldpointtemailoct2022 = res.data.pointtemailoct2022;
         localStorage.setItem(
-          "https://omisify.com/getoldpointtemailoct2022",
+          "https://omisify.com/pointtemailoct2022",
           getoldpointtemailoct2022
         );
       })
       .catch((err) => console.log(err));
-    //window.location.reload();
+    window.location.reload();
   }
 
   const family = {

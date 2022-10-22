@@ -164,8 +164,8 @@ export default function UpdateE10k() {
   // e10k
   // e10k
   // e10k
-  const pointe10k = parseInt(e10k) * 3;
-  const gaine10k = parseInt(e10k) * 0.003;
+  const pointe10k = parseInt(e10k) * 2;
+  const gaine10k = parseInt(e10k) * 0.002;
   console.log(gaine10k);
 
   // point
@@ -341,7 +341,7 @@ export default function UpdateE10k() {
                   comptes ayant entre 10000 abonnés et moins de 1 millions
                   d'abonnés
                 </p>
-                <p>1 M10k : 3 points = 0.003€</p>
+                <p>1 E10k : 2 points = 0.002€</p>
                 <div className="c">
                   <p>Envoyer le résultat de votre travail</p>
                 </div>

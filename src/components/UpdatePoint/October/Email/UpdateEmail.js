@@ -164,8 +164,8 @@ export default function UpdateEmail() {
   // email
   // email
   // email
-  const pointemail = parseInt(email) * 2;
-  const gainemail = parseInt(email) * 0.002;
+  const pointemail = parseInt(email) * 1;
+  const gainemail = parseInt(email) * 0.001;
   console.log(gainemail);
 
   // point
@@ -343,7 +343,7 @@ export default function UpdateEmail() {
                   présentation et le lien d'affiliation à un influenceur ou à
                   une entreprise
                 </p>
-                <p>1 E-mail : 2 points = 0.002€</p>
+                <p>1 E-mail : 1 points = 0.001€</p>
                 <div className="c">
                   <p>Envoyer le résultat de votre travail</p>
                 </div>

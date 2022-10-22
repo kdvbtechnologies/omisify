@@ -300,13 +300,13 @@ footer {
 
 .back-btn button{
   background-color: transparent;
-    color: black;
+    color: #444;
     text-align: center;
     font-size: 15px;
     padding: 10px 15px;
     border-radius: 20px;
     margin: px 20px;
-    border: 3px solid black;
+    border: 1px solid #444;
   cursor: pointer;
   }
 
@@ -1246,9 +1246,120 @@ footer {
   color: blue;
 }
 
+/* components - others - others.js */
+.others .title {
+  color: red;
+  text-align: center;
+  font-size: 18px;
+}
+
+.others .a {
+  padding: 20px 0px;
+}
+
+.others .a p{
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000;
+}
+
+.others .a .hr hr {
+ border: 1px solid #eee;
+}
+
+.others .a .navlink {
+  text-decoration: none;
+}
+
+
+/* others - guide - guide.js */
+.guide .align {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide .title {
+  width: 100px;
+  text-align: center;
+  color: red;
+}
+
+.guide .title .hr hr {
+  border: 1px solid red;
+}
+
+/* others - guide - guide.js */
+.guide-details {
+  padding: 0px 18px;
+}
+
+.guide-details .navlink {
+  padding: 0px 5px;
+  color: blue;
+}
+
+.guide-details .a p {
+  padding-top: 10px;
+  font-size: 17px;
+  color: #444;
+}
+
+.guide-details .a .b {
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.guide-details .header p {
+  color: #444;
+  padding-top: 10px;
+}
+
+.guide-details .footer {
+  text-align: center;
+  padding: 50px 0px;
+  font-size: 18px;
+}
+
+.vocabulary .align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vocabulary .title {
+  border: 1px solid #444;
+  padding: 10px 30px;
+  width: 100px;
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+}
+
+.vocabulary .a {
+  padding: 20px 0px;
+  font-size: 17px;
+  color: #444;
+}
+
+.vocabulary .a .b {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.vocabulary .header {
+  color: #444;
+  font-size: 17px;
+  padding: 20px 0px;
+}
+
+.vocabulary .go-down {
+  padding: 50px 20px;
+}
+
 
 /* admin - navigation - navigation.js */
-
 .panel-main {
   display: flex;
   justify-content: center;
@@ -1266,6 +1377,18 @@ footer {
 
 
 @media screen and (max-width: 760px) {
+
+  .vocabulary {
+    padding-top: 40px;
+  }
+
+  .others {
+    padding-top: 10px;
+  }
+
+  .guide {
+    padding-top: 10px;
+  }
   .update .title {
     color: white;
     font-size: 20px;

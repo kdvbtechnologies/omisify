@@ -10,7 +10,7 @@ export default function PartnerContact() {
       </div>
       <div className="contact">
         <div className="contact-title">
-          <h3>Service partenaire</h3>
+          <h3>Service Partenaire</h3>
           <p>E-mail : contact@omisify.com</p>
           <p>Whatsapp : +5514991550021</p>
           <p>Telegram : +5514991550021</p>

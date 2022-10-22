@@ -39,6 +39,10 @@ export default function PartnerNavMenu() {
           <li>Bonus</li>
         </NavLink>
 
+        <NavLink className="li" to="/others">
+          <li>Autres</li>
+        </NavLink>
+
         <NavLink className="li" to="/logout">
           <li>Déconnexion</li>
         </NavLink>

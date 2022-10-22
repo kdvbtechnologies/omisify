@@ -329,7 +329,7 @@ export default function UpdatePWI() {
           <div className="update-comment">
             <p>Mois d'Octobre 2022</p>
             <div className="title">
-              <p>PWI (Publication With Interaction)</p>
+              <p>PWI</p>
             </div>
             <div className="a">
               <div className="b">

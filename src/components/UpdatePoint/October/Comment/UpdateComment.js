@@ -348,7 +348,7 @@ export default function UpdateComment() {
                   produit ou une entreprise que le Partenaire a publié sur la
                   publication d'une personne ou sur sa propre publication
                 </p>
-                <p>1 likes (publication) : 1 point = 0.001€</p>
+                <p>1 commentaire : 1 point = 0.001€</p>
               </div>
 
               <div className="c">
