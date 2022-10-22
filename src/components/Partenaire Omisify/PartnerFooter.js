@@ -91,46 +91,41 @@ export default function PartnerFooter() {
 
           {welcomebonus ? (
             <>
-              <li>Bonus de Bienvenue : {welcomebonus} point(s)</li>
+              <li>Bonus B : {welcomebonus} point(s)</li>
             </>
           ) : (
             <>
-              <li>Bonus de Bienvenue : 0 point(s)</li>
+              <li>Bonus B : 0 point(s)</li>
             </>
           )}
 
           {codewelcomebonus ? (
             <>
-              <li>Bonus du Code de Bienvenue : {codewelcomebonus} point(s)</li>
+              <li>Bonus CB : {codewelcomebonus} point(s)</li>
             </>
           ) : (
             <>
-              <li>Bonus du Code de Bienvenue : 0 point(s)</li>
+              <li>Bonus CB : 0 point(s)</li>
             </>
           )}
 
           {bestpartnerbonus ? (
             <>
-              <li>
-                Bonus d'Excellent(e) Partenaire : {bestpartnerbonus} point(s)
-              </li>
+              <li>Bonus EP : {bestpartnerbonus} point(s)</li>
             </>
           ) : (
             <>
-              <li>Bonus d'Excellent(e) Partenaire : 0 point(s)</li>
+              <li>Bonus EP : 0 point(s)</li>
             </>
           )}
 
           {generositydaysbonus ? (
             <>
-              <li>
-                Bonus des journées de générosité : {generositydaysbonus}{" "}
-                point(s)
-              </li>
+              <li>Bonus JG : {generositydaysbonus} point(s)</li>
             </>
           ) : (
             <>
-              <li>Bonus des journées de générosité : 0 point(s)</li>
+              <li>Bonus JG : 0 point(s)</li>
             </>
           )}
 

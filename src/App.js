@@ -12,19 +12,6 @@ import PartnerContact from "./components/Partenaire Omisify/PartnerContact";
 import PartnerTrans from "./components/Partenaire Omisify/PartnerTrans";
 import PartnerHistorical from "./components/Partenaire Omisify/PartnerHistorical";
 
-import WilfriedMboundja from "./Pages/Partenaire Omisify/WilfriedMboundja";
-import WilfriedContact from "./Pages/Partenaire Omisify/WilfriedContact";
-import WilfriedHome from "./Pages/Partenaire Omisify/WilfriedHome";
-import WilfriedNavMenu from "./components/Partenaire Omisify/WilfriedNavMenu";
-import WilfriedAllHisto from "./Pages/Partenaire Omisify/WilfriedAllHisto";
-import WilfriedTrans from "./components/Partenaire Omisify/WilfriedTrans";
-import WilfriedHistoOne from "./components/Partenaire Omisify/WilfriedHistoOne";
-import WilfriedHistoTwo from "./components/Partenaire Omisify/WilfriedHistoTwo";
-import WilfriedHistoThree from "./components/Partenaire Omisify/WilfriedHistoThree";
-import WilfriedHistoFour from "./components/Partenaire Omisify/WilfriedHistoFour";
-import WilfriedHistoFive from "./components/Partenaire Omisify/WilfriedHistoFive";
-import WilfriedHistoSix from "./components/Partenaire Omisify/WilfriedHistoSix";
-
 import AkouaDjenebou from "./Pages/Partenaire Omisify/AkouaDjenebou";
 import AkouaHome from "./Pages/Partenaire Omisify/AkouaHome";
 import AkouaNavMenu from "./components/Partenaire Omisify/AkouaNavMenu";
@@ -150,18 +137,6 @@ export default function App() {
         <Route path="/conditions" element={<Conditions />} />
         <Route path="/mentions" element={<Mentions />} />
         <Route path="/politique" element={<Politique />} />
-        <Route path="/wilfried" element={<WilfriedMboundja />} />
-        <Route path="/wilfried-contact" element={<WilfriedContact />} />
-        <Route path="/wilfried-home" element={<WilfriedHome />} />
-        <Route path="/wilfried-trans" element={<WilfriedTrans />} />
-        <Route path="/wilfried-histo-one" element={<WilfriedHistoOne />} />
-        <Route path="/wilfried-histo-two" element={<WilfriedHistoTwo />} />
-        <Route path="/wilfried-histo-three" element={<WilfriedHistoThree />} />
-        <Route path="/wilfried-histo-four" element={<WilfriedHistoFour />} />
-        <Route path="/wilfried-histo-five" element={<WilfriedHistoFive />} />
-        <Route path="/wilfried-histo-six" element={<WilfriedHistoSix />} />
-        <Route path="/wilfried-all-histo" element={<WilfriedAllHisto />} />
-        <Route path="/wilfried-menu" element={<WilfriedNavMenu />} />
 
         <Route path="/akoua" element={<AkouaDjenebou />} />
         <Route path="/akoua-home" element={<AkouaHome />} />
