@@ -20,7 +20,7 @@ export default function LoginSuccess() {
           const getoldpointtlife = res.data.pointtlife;
           if (getoldpointtlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtlife",
+              "https://omisify.com/pointtlife",
               getoldpointtlife
             );
           }
@@ -28,7 +28,7 @@ export default function LoginSuccess() {
           const getoldpointtemaillife = res.data.pointtemaillife;
           if (getoldpointtemaillife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtemaillife",
+              "https://omisify.com/pointtemaillife",
               getoldpointtemaillife
             );
           }
@@ -36,7 +36,7 @@ export default function LoginSuccess() {
           const getoldpointtmwilife = res.data.pointtmwilife;
           if (getoldpointtmwilife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtmwilife",
+              "https://omisify.com/pointtmwilife",
               getoldpointtmwilife
             );
           }
@@ -44,7 +44,7 @@ export default function LoginSuccess() {
           const getoldpointtmessagelife = res.data.pointtmessagelife;
           if (getoldpointtmessagelife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtmessagelife",
+              "https://omisify.com/pointtmessagelife",
               getoldpointtmessagelife
             );
           }
@@ -52,7 +52,7 @@ export default function LoginSuccess() {
           const getoldpointtpwilife = res.data.pointtpwilife;
           if (getoldpointtpwilife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtpwilife",
+              "https://omisify.com/pointtpwilife",
               getoldpointtpwilife
             );
           }
@@ -60,7 +60,7 @@ export default function LoginSuccess() {
           const getoldpointtpublicationlife = res.data.pointtpublicationlife;
           if (getoldpointtpublicationlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtpublicationlife",
+              "https://omisify.com/pointtpublicationlife",
               getoldpointtpublicationlife
             );
           }
@@ -69,7 +69,7 @@ export default function LoginSuccess() {
             res.data.pointtlikepublicationlife;
           if (getoldpointtlikepublicationlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtlikepublicationlife",
+              "https://omisify.com/pointtlikepublicationlife",
               getoldpointtlikepublicationlife
             );
           }
@@ -77,7 +77,7 @@ export default function LoginSuccess() {
           const getoldpointtcommentlife = res.data.pointtcommentlife;
           if (getoldpointtcommentlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtcommentlife",
+              "https://omisify.com/pointtcommentlife",
               getoldpointtcommentlife
             );
           }
@@ -85,7 +85,7 @@ export default function LoginSuccess() {
           const getoldgaintlife = res.data.gaintlife;
           if (getoldgaintlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintlife",
+              "https://omisify.com/gaintlife",
               getoldgaintlife
             );
           }
@@ -93,7 +93,7 @@ export default function LoginSuccess() {
           const getoldpointtlikecommentlife = res.data.pointtlikecommentlife;
           if (getoldpointtlikecommentlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtlikecommentlife",
+              "https://omisify.com/pointtlikecommentlife",
               getoldpointtlikecommentlife
             );
           }

@@ -17,11 +17,11 @@ export default function UpdateSuccess() {
           const partnername = res.data.partnername;
           const shortname = res.data.shortname;
 
-          const getoldpointtlife = res.data.pointtlife;
-          if (getoldpointtlife) {
+          const getoldpointtcommentlife = res.data.pointtcommentlife;
+          if (getoldpointtcommentlife) {
             localStorage.setItem(
-              "https://omisify.com/pointtlife",
-              getoldpointtlife
+              "https://omisify.com/pointtcommentlife",
+              getoldpointtcommentlife
             );
           }
 
@@ -33,35 +33,11 @@ export default function UpdateSuccess() {
             );
           }
 
-          const getoldpointtmwilife = res.data.pointtmwilife;
-          if (getoldpointtmwilife) {
+          const getoldpointtlikecommentlife = res.data.pointtlikecommentlife;
+          if (getoldpointtlikecommentlife) {
             localStorage.setItem(
-              "https://omisify.com/pointtmwilife",
-              getoldpointtmwilife
-            );
-          }
-
-          const getoldpointtmessagelife = res.data.pointtmessagelife;
-          if (getoldpointtmessagelife) {
-            localStorage.setItem(
-              "https://omisify.com/pointtmessagelife",
-              getoldpointtmessagelife
-            );
-          }
-
-          const getoldpointtpwilife = res.data.pointtpwilife;
-          if (getoldpointtpwilife) {
-            localStorage.setItem(
-              "https://omisify.com/pointtpwilife",
-              getoldpointtpwilife
-            );
-          }
-
-          const getoldpointtpublicationlife = res.data.pointtpublicationlife;
-          if (getoldpointtpublicationlife) {
-            localStorage.setItem(
-              "https://omisify.com/pointtpublicationlife",
-              getoldpointtpublicationlife
+              "https://omisify.com/pointtlikecommentlife",
+              getoldpointtlikecommentlife
             );
           }
 
@@ -74,11 +50,51 @@ export default function UpdateSuccess() {
             );
           }
 
-          const getoldpointtcommentlife = res.data.pointtcommentlife;
-          if (getoldpointtcommentlife) {
+          const getoldpointtm10klife = res.data.pointtm10klife;
+          if (getoldpointtm10klife) {
             localStorage.setItem(
-              "https://omisify.com/pointtcommentlife",
-              getoldpointtcommentlife
+              "https://omisify.com/pointtm10klife",
+              getoldpointtm10klife
+            );
+          }
+
+          const getoldpointtmessagelife = res.data.pointtmessagelife;
+          if (getoldpointtmessagelife) {
+            localStorage.setItem(
+              "https://omisify.com/pointtmessagelife",
+              getoldpointtmessagelife
+            );
+          }
+
+          const getoldpointtmwilife = res.data.pointtmwilife;
+          if (getoldpointtmwilife) {
+            localStorage.setItem(
+              "https://omisify.com/pointtmwilife",
+              getoldpointtmwilife
+            );
+          }
+
+          const getoldpointtpublicationlife = res.data.pointtpublicationlife;
+          if (getoldpointtpublicationlife) {
+            localStorage.setItem(
+              "https://omisify.com/pointtpublicationlife",
+              getoldpointtpublicationlife
+            );
+          }
+
+          const getoldpointtpwilife = res.data.pointtpwilife;
+          if (getoldpointtpwilife) {
+            localStorage.setItem(
+              "https://omisify.com/pointtpwilife",
+              getoldpointtpwilife
+            );
+          }
+
+          const getoldpointtlife = res.data.pointtlife;
+          if (getoldpointtlife) {
+            localStorage.setItem(
+              "https://omisify.com/pointtlife",
+              getoldpointtlife
             );
           }
 
@@ -87,14 +103,6 @@ export default function UpdateSuccess() {
             localStorage.setItem(
               "https://omisify.com/gaintlife",
               getoldgaintlife
-            );
-          }
-
-          const getoldpointtlikecommentlife = res.data.pointtlikecommentlife;
-          if (getoldpointtlikecommentlife) {
-            localStorage.setItem(
-              "https://omisify.com/pointtlikecommentlife",
-              getoldpointtlikecommentlife
             );
           }
 
@@ -220,13 +228,14 @@ export default function UpdateSuccess() {
             );
           }
 
+          /*
           const birthcountry = res.data.birthcountry;
           if (birthcountry) {
             localStorage.setItem(
               "https://omisify.com/birthcountry",
               birthcountry
             );
-          }
+          }*/
 
           localStorage.setItem("https://omisify.com/name", name);
           localStorage.setItem("https://omisify.com/partnername", partnername);
