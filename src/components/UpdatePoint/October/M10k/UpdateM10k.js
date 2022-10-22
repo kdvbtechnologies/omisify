@@ -27,7 +27,7 @@ export default function UpdateM10k() {
           const getoldpointtm10koct2022 = res.data.pointtm10koct2022;
           if (getoldpointtm10koct2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtm10koct2022",
+              "https://omisify.com/pointtm10koct2022",
               getoldpointtm10koct2022
             );
           }
@@ -35,7 +35,7 @@ export default function UpdateM10k() {
           const getoldpointtm10k2022 = res.data.pointtm10k2022;
           if (getoldpointtm10k2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtm10k2022",
+              "https://omisify.com/pointtm10k2022",
               getoldpointtm10k2022
             );
           }
@@ -43,7 +43,7 @@ export default function UpdateM10k() {
           const getoldpointtm10klife = res.data.pointtm10klife;
           if (getoldpointtm10klife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtm10klife",
+              "https://omisify.com/pointtm10klife",
               getoldpointtm10klife
             );
           }
@@ -51,7 +51,7 @@ export default function UpdateM10k() {
           const getoldpointtlifeoct2022 = res.data.pointtlifeoct2022;
           if (getoldpointtlifeoct2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtlifeoct2022",
+              "https://omisify.com/pointtlifeoct2022",
               getoldpointtlifeoct2022
             );
           }
@@ -59,7 +59,7 @@ export default function UpdateM10k() {
           const getoldpointtlife2022 = res.data.pointtlife2022;
           if (getoldpointtlife2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtlife2022",
+              "https://omisify.com/pointtlife2022",
               getoldpointtlife2022
             );
           }
@@ -67,7 +67,7 @@ export default function UpdateM10k() {
           const getoldpointtlife = res.data.pointtlife;
           if (getoldpointtlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtlife",
+              "https://omisify.com/pointtlife",
               getoldpointtlife
             );
           }
@@ -76,7 +76,7 @@ export default function UpdateM10k() {
           const getoldgaintm10koct2022 = res.data.gaintm10koct2022;
           if (getoldgaintm10koct2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintm10koct2022",
+              "https://omisify.com/gaintm10koct2022",
               getoldgaintm10koct2022
             );
           }
@@ -84,7 +84,7 @@ export default function UpdateM10k() {
           const getoldgaintm10k2022 = res.data.gaintm10k2022;
           if (getoldgaintm10k2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintm10k2022",
+              "https://omisify.com/gaintm10k2022",
               getoldgaintm10k2022
             );
           }
@@ -92,7 +92,7 @@ export default function UpdateM10k() {
           const getoldgaintm10klife = res.data.gaintm10klife;
           if (getoldgaintm10klife) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintm10klife",
+              "https://omisify.com/gaintm10klife",
               getoldgaintm10klife
             );
           }
@@ -100,7 +100,7 @@ export default function UpdateM10k() {
           const getoldgaintlifeoct2022 = res.data.gaintlifeoct2022;
           if (getoldgaintlifeoct2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintlifeoct2022",
+              "https://omisify.com/gaintlifeoct2022",
               getoldgaintlifeoct2022
             );
           }
@@ -108,7 +108,7 @@ export default function UpdateM10k() {
           const getoldgaintlife2022 = res.data.gaintlife2022;
           if (getoldgaintlife2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintlife2022",
+              "https://omisify.com/gaintlife2022",
               getoldgaintlife2022
             );
           }
@@ -116,7 +116,7 @@ export default function UpdateM10k() {
           const getoldgaintlife = res.data.gaintlife;
           if (getoldgaintlife) {
             localStorage.setItem(
-              "https://omisify.com/getoldgaintlife",
+              "https://omisify.com/gaintlife",
               getoldgaintlife
             );
           }
@@ -125,7 +125,7 @@ export default function UpdateM10k() {
           const getoldnumbertm10koct2022 = res.data.numbertm10koct2022;
           if (getoldnumbertm10koct2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertm10koct2022",
+              "https://omisify.com/numbertm10koct2022",
               getoldnumbertm10koct2022
             );
           }
@@ -133,7 +133,7 @@ export default function UpdateM10k() {
           const getoldnumbertm10k2022 = res.data.numbertm10k2022;
           if (getoldnumbertm10k2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertm10k2022",
+              "https://omisify.com/numbertm10k2022",
               getoldnumbertm10k2022
             );
           }
@@ -141,7 +141,7 @@ export default function UpdateM10k() {
           const getoldnumbertm10klife = res.data.numbertm10klife;
           if (getoldnumbertm10klife) {
             localStorage.setItem(
-              "https://omisify.com/getoldnumbertm10klife",
+              "https://omisify.com/numbertm10klife",
               getoldnumbertm10klife
             );
           }
@@ -170,23 +170,23 @@ export default function UpdateM10k() {
 
   // point
   const getoldpointtm10koct2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtm10koct2022"
+    "https://omisify.com/pointtm10koct2022"
   );
 
   const getoldpointtm10k2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtm10k2022"
+    "https://omisify.com/pointtm10k2022"
   );
   const getoldpointtm10klife = localStorage.getItem(
-    "https://omisify.com/getoldpointtm10klife"
+    "https://omisify.com/pointtm10klife"
   );
   const getoldpointtlifeoct2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtlifeoct2022"
+    "https://omisify.com/pointtlifeoct2022"
   );
   const getoldpointtlife2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtlife2022"
+    "https://omisify.com/pointtlife2022"
   );
   const getoldpointtlife = localStorage.getItem(
-    "https://omisify.com/getoldpointtlife"
+    "https://omisify.com/pointtlife"
   );
 
   const pointtm10koct2022 =
@@ -205,23 +205,21 @@ export default function UpdateM10k() {
 
   // gain
   const getoldgaintm10koct2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintm10koct2022"
+    "https://omisify.com/gaintm10koct2022"
   );
   const getoldgaintm10k2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintm10k2022"
+    "https://omisify.com/gaintm10k2022"
   );
   const getoldgaintm10klife = localStorage.getItem(
-    "https://omisify.com/getoldgaintm10klife"
+    "https://omisify.com/gaintm10klife"
   );
   const getoldgaintlifeoct2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintlifeoct2022"
+    "https://omisify.com/gaintlifeoct2022"
   );
   const getoldgaintlife2022 = localStorage.getItem(
-    "https://omisify.com/getoldgaintlife2022"
+    "https://omisify.com/gaintlife2022"
   );
-  const getoldgaintlife = localStorage.getItem(
-    "https://omisify.com/getoldgaintlife"
-  );
+  const getoldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
 
   const gaintm10koct2022 =
     parseInt(getoldgaintm10koct2022) + parseInt(gainm10k);
@@ -241,13 +239,13 @@ export default function UpdateM10k() {
 
   // number
   const getoldnumbertm10koct2022 = localStorage.getItem(
-    "https://omisify.com/getoldnumbertm10koct2022"
+    "https://omisify.com/numbertm10koct2022"
   );
   const getoldnumbertm10k2022 = localStorage.getItem(
-    "https://omisify.com/getoldnumbertm10k2022"
+    "https://omisify.com/numbertm10k2022"
   );
   const getoldnumbertm10klife = localStorage.getItem(
-    "https://omisify.com/getoldnumbertm10klife"
+    "https://omisify.com/numbertm10klife"
   );
 
   const numbertm10koct2022 =
