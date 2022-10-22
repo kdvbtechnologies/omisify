@@ -100,20 +100,20 @@ export default function UpdateSuccess() {
             );
           }
 
-          const getoldpointtlikecommentlife = res.data.pointtlikecommentlife;
-          if (getoldpointtlikecommentlife) {
+          const getoldpointtlikescommentlife = res.data.pointtlikescommentlife;
+          if (getoldpointtlikescommentlife) {
             localStorage.setItem(
-              "https://omisify.com/pointtlikecommentlife",
-              getoldpointtlikecommentlife
+              "https://omisify.com/pointtlikescommentlife",
+              getoldpointtlikescommentlife
             );
           }
 
-          const getoldpointtlikepublicationlife =
-            res.data.pointtlikepublicationlife;
-          if (getoldpointtlikepublicationlife) {
+          const getoldpointtlikespublicationlife =
+            res.data.pointtlikespublicationlife;
+          if (getoldpointtlikespublicationlife) {
             localStorage.setItem(
-              "https://omisify.com/pointtlikepublicationlife",
-              getoldpointtlikepublicationlife
+              "https://omisify.com/pointtlikespublicationlife",
+              getoldpointtlikespublicationlife
             );
           }
 

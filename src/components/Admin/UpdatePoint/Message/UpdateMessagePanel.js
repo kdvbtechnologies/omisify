@@ -34,7 +34,7 @@ export default function UpdatemessagePanel() {
     <div style={family}>
       <LoginNav />
       <PanelNav />
-      <h3>Ajouter les points des messageaires</h3>
+      <h3>Ajouter les points des messages</h3>
       <p>Entrer le userId</p>
       <input
         type="text"
@@ -44,7 +44,7 @@ export default function UpdatemessagePanel() {
         name="userId"
       />
 
-      <p>Entrer le nombre des points total des messageaires</p>
+      <p>Entrer le nombre des points total des messages</p>
       <input
         type="text"
         placeholder="messageaires"

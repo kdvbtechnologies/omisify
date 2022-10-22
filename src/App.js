@@ -125,6 +125,7 @@ import UpdatepublicationPanel from "./components/Admin/UpdatePoint/Publication/U
 import UpdatelikespublicationPanel from "./components/Admin/UpdatePoint/LikesPublication/UpdateLikesPublicationPanel";
 import UpdatepwpPanel from "./components/Admin/UpdatePoint/PWP/UpdatePWPPanel";
 import UpdatepwiPanel from "./components/Admin/UpdatePoint/PWI/UpdatePWIPanel";
+import Vocabulary from "./components/Vocabulary/Vocabulary";
 
 export default function App() {
   return (
@@ -378,6 +379,7 @@ export default function App() {
         />
 
         <Route path="/bonus" element={<Bonus />} />
+        <Route path="/vocabulary" element={<Vocabulary />} />
       </Routes>
     </BrowserRouter>
   );

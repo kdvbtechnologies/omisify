@@ -35,13 +35,13 @@ export default function PartnerFooter() {
   );
 
   // likescomment
-  const getoldpointtlikecommentlife = localStorage.getItem(
-    "https://omisify.com/pointtlikecommentlife"
+  const getoldpointtlikescommentlife = localStorage.getItem(
+    "https://omisify.com/pointtlikescommentlife"
   );
 
   // likespublication
-  const getoldpointtlikepublicationlife = localStorage.getItem(
-    "https://omisify.com/pointtlikepublicationlife"
+  const getoldpointtlikespublicationlife = localStorage.getItem(
+    "https://omisify.com/pointtlikespublicationlife"
   );
 
   // m10k
@@ -159,9 +159,9 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldpointtlikecommentlife ? (
+          {getoldpointtlikescommentlife ? (
             <>
-              <li>Likes C : {getoldpointtlikecommentlife} point(s)</li>
+              <li>Likes C : {getoldpointtlikescommentlife} point(s)</li>
             </>
           ) : (
             <>
@@ -169,9 +169,9 @@ export default function PartnerFooter() {
             </>
           )}
 
-          {getoldpointtlikepublicationlife ? (
+          {getoldpointtlikespublicationlife ? (
             <>
-              <li>Likes P : {getoldpointtlikepublicationlife} point(s)</li>
+              <li>Likes P : {getoldpointtlikespublicationlife} point(s)</li>
             </>
           ) : (
             <>
