@@ -21,68 +21,66 @@ export default function PartnerFooter() {
 
   // comment
   const getoldpointtcommentlife = localStorage.getItem(
-    "https://omisify.com/getoldpointtcommentlife"
+    "https://omisify.com/pointtcommentlife"
   );
 
   // e10k
   const getoldpointte10klife = localStorage.getItem(
-    "https://omisify.com/getoldpointte10klife"
+    "https://omisify.com/pointte10klife"
   );
 
   // email
   const getoldpointtemaillife = localStorage.getItem(
-    "https://omisify.com/getoldpointtemaillife"
+    "https://omisify.com/pointtemaillife"
   );
 
   // likescomment
   const getoldpointtlikecommentlife = localStorage.getItem(
-    "https://omisify.com/getoldpointtlikecommentlife"
+    "https://omisify.com/pointtlikecommentlife"
   );
 
   // likespublication
   const getoldpointtlikepublicationlife = localStorage.getItem(
-    "https://omisify.com/getoldpointtlikepublicationlife"
+    "https://omisify.com/pointtlikepublicationlife"
   );
 
   // m10k
   const getoldpointtm10klife = localStorage.getItem(
-    "https://omisify.com/getoldpointtm10klife"
+    "https://omisify.com/pointtm10klife"
   );
 
   // message
   const getoldpointtmessagelife = localStorage.getItem(
-    "https://omisify.com/getoldpointtmessagelife"
+    "https://omisify.com/pointtmessagelife"
   );
 
   // mwi
   const getoldpointtmwilife = localStorage.getItem(
-    "https://omisify.com/getoldpointtmwilife"
+    "https://omisify.com/pointtmwilife"
   );
 
   // publication
   const getoldpointtpublicationlife = localStorage.getItem(
-    "https://omisify.com/getoldpointtpublicationlife"
+    "https://omisify.com/pointtpublicationlife"
   );
 
   // pwi
   const getoldpointtpwilife = localStorage.getItem(
-    "https://omisify.com/getoldpointtpwilife"
+    "https://omisify.com/pointtpwilife"
   );
 
   // pwp
   const getoldpointtpwplife = localStorage.getItem(
-    "https://omisify.com/getoldpointtpwplife"
+    "https://omisify.com/pointtpwplife"
   );
 
   // points total
   const getoldpointtlife = localStorage.getItem(
-    "https://omisify.com/getoldpointtlife"
+    "https://omisify.com/pointtlife"
   );
 
   // gain total
-  const getoldgaintlife = localStorage.getItem(
-    "https://omisify.com/getoldgaintlife"
-  );
+  const getoldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
 
   /* {aa ? (<></>) : (<></>)} */
   return (
