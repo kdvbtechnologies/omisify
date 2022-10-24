@@ -70,22 +70,24 @@ export default function WelcomeBonusPanel() {
           <div className="panel-main">
             <div className="panel">
               <h3>Code de Bienvenue</h3>
-              {api.map((api) => (
-                <>
-                  <p>userId: {api.userId}</p>
-                  <p>Noms du demandeur : {api.partnername}</p>
-                  <p>Noms court du demandeur : {api.shortname}</p>
-                  <p>Code de Bienvenue du mentor : {api.codewelcomementor}</p>
-                  <p>Bonus d'excellent Partenaire : {api.bestpartnerbonus}</p>
-                  <p>
-                    Demande d'Affiches pour le programme d'affiliation :{" "}
-                    {api.askposter}
-                  </p>
-                  <p>- - -- - -- - -- - -- - -- - -- - -</p>
-                  <hr />
-                  <hr />
-                </>
-              ))}
+              {api
+                .sort((a, b) => b.bestpartnerbonus - a.bestpartnerbonus)
+                .map((api) => (
+                  <>
+                    <p>userId: {api.userId}</p>
+                    <p>Noms du demandeur : {api.partnername}</p>
+                    <p>Noms court du demandeur : {api.shortname}</p>
+                    <p>Code de Bienvenue du mentor : {api.codewelcomementor}</p>
+                    <p>Bonus d'excellent Partenaire : {api.bestpartnerbonus}</p>
+                    <p>
+                      Demande d'Affiches pour le programme d'affiliation :{" "}
+                      {api.askposter}
+                    </p>
+                    <p>- - -- - -- - -- - -- - -- - -- - -</p>
+                    <hr />
+                    <hr />
+                  </>
+                ))}
             </div>
           </div>
         </>
