@@ -71,7 +71,7 @@ export default function WelcomeBonusPanel() {
             <div className="panel">
               <h3>Code de Bienvenue</h3>
               {api
-                .sort((a, b) => b.bestpartnerbonus - a.bestpartnerbonus)
+                .sort((a, b) => a.bestpartnerbonus - b.bestpartnerbonus)
                 .map((api) => (
                   <>
                     <p>userId: {api.userId}</p>
