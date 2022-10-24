@@ -39,40 +39,42 @@ export default function Login() {
 
   return (
     <>
-      <div className="login-border">
-        <div>
-          <p>Portail des Partenaires Omisify</p>
-          <div className="input">
-            <h1>Connexion</h1>
-            <input
-              type="text"
-              placeholder="E-mail"
-              value={email}
-              name="email"
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-            <input
-              type="text"
-              placeholder="Mot de passe"
-              value={password}
-              name="password"
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-            {isLoading ? (
-              <Loader />
-            ) : (
-              <>
-                <button onClick={Button}>Se connecter</button>
-              </>
-            )}
-          </div>
-          <NavLink className="navlink" to="/reset-password">
-            <div className="forgot-password">
-              <p>Mot de passe oublié</p>
+      <div className="signup-shrink">
+        <div className="login-border">
+          <div>
+            <p>Portail des Partenaires Omisify</p>
+            <div className="input">
+              <h1>Connexion</h1>
+              <input
+                type="text"
+                placeholder="E-mail"
+                value={email}
+                name="email"
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Mot de passe"
+                value={password}
+                name="password"
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+              {isLoading ? (
+                <Loader />
+              ) : (
+                <>
+                  <button onClick={Button}>Se connecter</button>
+                </>
+              )}
             </div>
-          </NavLink>
+            <NavLink className="navlink" to="/reset-password">
+              <div className="forgot-password">
+                <p>Mot de passe oublié</p>
+              </div>
+            </NavLink>
+          </div>
         </div>
       </div>
     </>

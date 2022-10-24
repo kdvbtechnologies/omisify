@@ -92,6 +92,16 @@ export default function GuideDetails() {
             demandez à votre Mentor comment faire pour obtenir des meilleurs
             résultats sur les réseaux sociaux que vous utilisez.
           </p>
+
+          <p>
+            Demandez à votre Mentor de vous expliquez comment faire pour obtenir
+            les liens des commentaires que vous ferez, des publications que vous
+            ferez et autres qui seront la preuve de votre travail ou encore
+            demander à votre Mentor de vous expliquer comment faire des captures
+            d'écrans que vous pourrez remplacer à la place des liens. Les
+            captures d'écrans seront aussi considérés comme la preuve de votre
+            travail.
+          </p>
           <p>
             Demandez à votre Mentor de vous expliquez comment faire pour envoyer
             les résultats de votre travail au Service Partenaire.

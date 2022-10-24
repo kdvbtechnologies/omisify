@@ -35,93 +35,405 @@
   padding: 0px 10px;
 }
 
-.introduce .introduce-title {
-  padding: 170px;
-  color: black;
-  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+/* src - components - home.js */
+/* A */
+/* A */
+/* A */
+/* A */
+/* A */
+/* A */
+.home .a {
   text-align: center;
-  font-size: 35px;
-}
-
-.introduce-title button {
-  color: white;
-  text-align: center;
-  background-color: blue;
-  cursor: pointer;
-  border: none;
-  padding: 10px 20px;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 20px;
-}
-
-.introduce-title p {
-  padding: 30px 0px;
-}
-
-.introduce .introduce-mytitle {
-  margin-bottom: 100px;
-  padding: 60px;
-  background: red;
-  color: white;
+  padding: 200px 30px;
   font-size: 25px;
 }
 
-.introduce .introduce-mytitle p {
+.home .a button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 60px 0px;
+  font-size: 16px;
+}
+
+
+/* B */
+/* B */
+/* B */
+/* B */
+/* B */
+/* B */
+/* B */
+/* B */
+.home .go-down .center {
+  text-align: center;
+  color: white;
+  background-color: red;
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  position: absolute;
+  padding: 90px 0px;
+  width: 100%;
+  font-size: 28px;
+}
+
+.home .go-down .center p {
+  padding: 0px 20px;
+}
+
+/* c */
+/* c */
+/* c */
+/* c */
+/* c */
+/* c */
+.home .go-down-part-c {
+  padding-top: 300px;
+}
+.home .align-part-c {
+  padding: 0px 400px;
+}
+
+.home .part-c p {
+  color: #444;
+  padding: 20px 0px;
+  font-size: 17px;
+}
+
+.home .part-c .align-button {
+  text-align: center;
+}
+
+.home .part-c button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* d */
+/* d */
+/* d */
+/* d */
+/* d */
+/* d */
+/* d */
+.home .align-part-d {
+  padding: 100px 400px;
+}
+
+.home .part-d {
+  border: 2px solid #ccc;
+  color: #444;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.home .part-d .title {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.home .part-d li {
+  padding: 20px 0px;
+}
+
+.home .part-d p {
   padding: 10px 0px;
 }
 
-/* Partner.js */
-    .div {
-      width: 100%;
-      text-align: center;
-      background-color: red;
-      font-size: 30px;
-      color: white;
-      padding: 90px 0;
-        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-        position: absolute;
-    }
+.home .go-down-i {
+  padding: 50px 0px;
+}
 
-    .p3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 20px;
-      padding: 400px 300px;
-    }
+.home .part-d i {
+  font-size: 14px;
+}
 
-    .p3 p {
-      font-size: 20px;
-      padding: 30px 0px;
-    }
+/* Home - LikeI.js */
+/* Home - LikeI.js */
+/* Home - LikeI.js */
+/* Home - LikeI.js */
+/* Home - LikeI.js */
+/* Home - LikeI.js */
+/* Home - LikeI.js */
+/* Home - LikeI.js */
+/* Home - LikeI.js */
+/* Home - LikeI.js */
+/* Home - LikeI.js */
+/* Home - LikeI.js */
 
-    .p3  button {
-      color: white;
-      text-align: center;
-      background-color: blue;
-      cursor: pointer;
-      border: none;
-      padding: 10px 20px;
-      font-size: 20px;
-      font-family: Roboto, Arial, sans-serif;
-    }
+.like-i .shrink {
+  padding: 100px 400px;
+}
 
-    .posts {
-      padding: 100px 0px;
-    }
+.like-i-a .hr {
+  padding: 1px 0px;
+}
+.like-i-a .hr hr {
+  border: 1px solid blue;
+}
 
+.home .like-i-a {
+  font-size: 32px;
+  text-align: center;
+  color: blue;
+}
 
-    .introduce .posts .post li { 
-      padding: 10px 0px;
-    }
+.home .like-i-b {
+  font-size: 14px;
+  padding: 20px 0px;
+}
+.home .like-i-c {
+  font-weight: bold;
+  font-size: 16px;
+}
 
-    .introduce .posts .post {
-      width: auto;
-      border: 2px solid #cdcdcd;
-      border-radius: 12px;
-      padding: 50px;
-    }
+.home .like-i .like-i-d p {
+  padding: 10px 0px;
+  font-size: 17px;
+  color: #444;
+}
+
+.home .like-i .like-i-d .align-button {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.home .like-i .like-i-d button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Home - CommentI.js */
+/* Home - CommentI.js */
+/* Home - CommentI.js */
+/* Home - CommentI.js */
+/* Home - CommentI.js */
+/* Home - CommentI.js */
+/* Home - CommentI.js */
+/* Home - CommentI.js */
+/* Home - CommentI.js */
+/* Home - CommentI.js */
+
+.home .comment-i-shrink {
+  padding: 100px 400px;
+}
+
+.home .comment-i-a {
+  font-size: 14px;
+  padding: 20px 0px;
+}
+
+.home .comment-i-b {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.home .comment-i-c p {
+  font-size: 17px;
+  padding: 10px 0px;
+  color: #444;
+}
+
+.home .comment-i-c .align-button {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.home .comment-i-c button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Home - commentN.js */
+/* Home - commentN.js */
+/* Home - commentN.js */
+/* Home - commentN.js */
+/* Home - commentN.js */
+/* Home - commentN.js */
+/* Home - commentN.js */
+/* Home - commentN.js */
+.home .comment-n-a .hr {
+  padding: 1px 0px;
+}
+
+.home .comment-n-a .hr hr {
+  border: 1px solid blue;
+}
+
+.home .comment-n-a {
+  font-size: 32px;
+  color: blue;
+  text-align: center;
+}
+
+.home .comment-n-b {
+  font-size: 14px;
+  padding: 20px 0px;
+}
+
+.home .comment-n-c {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.home .comment-n-d {
+  font-size: 17px;
+  padding: 10px 0px;
+  color: #444;
+}
+
+.home .comment-n .shrink {
+  padding: 50px 400px;
+}
+
+/* home - More - Email.js */
+/* home - More - Email.js */
+/* home - More - Email.js */
+/* home - More - Email.js */
+/* home - More - Email.js */
+/* home - More - Email.js */
+/* home - More - Email.js */
+/* home - More - Email.js */
+/* home - More - Email.js */
+/* home - More - Email.js */
+.home .email-a {
+  font-size: 14px;
+  padding: 20px 0px;
+}
+
+.home .email-b {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.home .email-c p{
+  padding: 10px 0px;
+  font-size: 17px;
+  color: #444;
+}
+
+.home .email-shrink {
+  padding: 50px 400px;
+}
+
+.home .email-c .align-button {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.email-c button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+/* src - home - After bonus - bonus - welcome bonus.js */
+/* src - home - After bonus - bonus - welcome bonus.js */
+/* src - home - After bonus - bonus - welcome bonus.js */
+/* src - home - After bonus - bonus - welcome bonus.js */
+/* src - home - After bonus - bonus - welcome bonus.js */
+/* src - home - After bonus - bonus - welcome bonus.js */
+/* src - home - After bonus - bonus - welcome bonus.js */
+/* src - home - After bonus - bonus - welcome bonus.js */
+/* src - home - After bonus - bonus - welcome bonus.js */
+/* src - home - After bonus - bonus - welcome bonus.js */
+.home .welcome-bonus-a {
+  padding: 0px 400px;
+}
+
+.home .welcome-bonus-a .align-welcome-bonus-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.home .welcome-bonus-a .align-welcome-bonus-b .welcome-bonus-b p {
+  width: 230px;
+  font-size: 23px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.home .welcome-bonus-a p {
+  font-size: 17px;
+  padding: 30px 0px;
+  color: #444;
+}
+
+.home .welcome-bonus-a .welcome-bonus-c {
+  font-weight: bold;
+}
+
+.home .welcome-bonus-a .welcome-bonus-c li{
+  font-weight: bold;
+  padding: 0px;
+}
+   
+/* src - home - code welcome bonus */
+/* src - home - code welcome bonus */
+/* src - home - code welcome bonus */
+/* src - home - code welcome bonus */
+/* src - home - code welcome bonus */
+/* src - home - code welcome bonus */
+/* src - home - code welcome bonus */
+/* src - home - code welcome bonus */
+.home .code-welcome-bonus-a {
+  padding: 100px 400px;
+}
+
+.home .align-code-welcome-bonus-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .code-welcome-bonus-b p {
+  text-align: center;
+  color: red;
+  font-size: 23px;
+  width: 320px;
+}
+
+.home .code-welcome-bonus-b .hr hr {
+  border: 1px solid red;
+}
+
+.home .code-welcome-bonus-c  {
+  padding: 30px 0px;
+  font-size: 17px;
+  color: #444;
+}
+
+.home .code-welcome-bonus-d {
+  font-weight: bold;
+  font-size: 16px;
+}
 
     .contact-title {
       width: 300px;
@@ -265,33 +577,7 @@ footer {
     padding: 20px 30px;
   }
 
-/* components - partner - millions.js */
 
-.millions {
-  margin: -300px 0px;
-}
-
-.million p {
-  color: black;
-  padding: 30px 20px;
-  font-size: 30px;
-}
-
-.millions .button {
-  text-align: center;
-  padding: 50px 0px;
-}
-
-.millions .button button {
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
-  cursor: pointer;
-  color: white;
-  background-color: blue;
-  border: none;
-  font-size: 20px;
-  padding: 20px 30px;
-  border-radius: 50px;
-}
 
 /* src - components - Program.js*/
 .back-btn {
@@ -366,16 +652,6 @@ footer {
 .accordion-consignes .accordion-con  .accordion-c li{
   padding: 10px 0px;
 }
-
-/*
-.profil {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 10px;
-  padding-bottom: 100px;
-}
-*/
 
 /* src - components - partenaire Omisify - ...Header.js */
 .profil {
@@ -701,9 +977,21 @@ footer {
 }
 
 .forgot-password {
-  
   color: #444;
   padding-top: 70px;
+}
+
+/* src - components - Signup.js */
+/* src - components - Signup.js */
+/* src - components - Signup.js */
+/* src - components - Signup.js */
+/* src - components - Signup.js */
+/* src - components - Signup.js */
+/* src - components - Signup.js */
+/* src - components - Signup.js */
+/* src - components - Signup.js */
+.signup-shrink {
+  padding: 0px 15px;
 }
 
 /* src - components - login success.js */
@@ -990,6 +1278,18 @@ footer {
   color: white;
 }
 
+/* src - component - bonus - welcome bonus.js */
+/* src - component - bonus - welcome bonus.js */
+/* src - component - bonus - welcome bonus.js */
+/* src - component - bonus - welcome bonus.js */
+/* src - component - bonus - welcome bonus.js */
+/* src - component - bonus - welcome bonus.js */
+/* src - component - bonus - welcome bonus.js */
+/* src - component - bonus - welcome bonus.js */
+/* src - component - bonus - welcome bonus.js */
+/* src - component - bonus - welcome bonus.js */
+/* src - component - bonus - welcome bonus.js */
+/* src - component - bonus - welcome bonus.js */
 /* src - component - bonus - welcome bonus.js */
 .welcome-bonus {
   text-align: center;
@@ -1358,6 +1658,100 @@ footer {
   padding: 50px 20px;
 }
 
+/* src - components - others - ask - askposter */
+/* src - components - others - ask - askposter */
+/* src - components - others - ask - askposter */
+/* src - components - others - ask - askposter */
+/* src - components - others - ask - askposter */
+/* src - components - others - ask - askposter */
+/* src - components - others - ask - askposter */
+/* src - components - others - ask - askposter */
+/* src - components - others - ask - askposter */
+/* src - components - others - ask - askposter */
+.ask-poster .title {
+  background-color: red;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+}
+
+.ask-poster .align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ask-poster .align-center p {
+  text-align: center;
+  padding: 20px 15px;
+}
+
+.ask-poster .align-center button {
+  margin: 60px 0px;
+  background-color: red;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+}
+
+.ask-poster .align-center #ask-poster {
+  font-family: Roboto, Arial, sans-serif;
+  border: 1px solid #ccc;
+  color: #444;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 30px 0px;
+  font-size: 15px;
+}
+
+
+/* src - components - others - ask - askposterSuccess */
+/* src - components - others - ask - askposterSuccess */
+/* src - components - others - ask - askposterSuccess */
+/* src - components - others - ask - askposterSuccess */
+/* src - components - others - ask - askposterSuccess */
+/* src - components - others - ask - askposterSuccess */
+/* src - components - others - ask - askposterSuccess */
+/* src - components - others - ask - askposterSuccess */
+/* src - components - others - ask - askposterSuccess */
+/* src - components - others - ask - askposterSuccess */
+/* src - components - others - ask - askposterSuccess */
+.ask-poster-success {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0px;
+}
+
+.ask-poster-success .title {
+  font-size: 20px;
+  padding: 30px 0px;
+  font-weight: bold;
+}
+
+.ask-poster-success button {
+  font-family: Roboto, Arial, sans-serif;
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 60px 0px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  padding: 10px 20px;
+}
+
+.ask-poster-success button:hover {
+  color: blue;
+  background-color: white;
+}
+
 
 /* admin - navigation - navigation.js */
 .panel-main {
@@ -1376,8 +1770,143 @@ footer {
 
 
 
-@media screen and (max-width: 760px) {
 
+
+@media screen and (max-width: 1250px) {
+  .home .code-welcome-bonus-a {
+    padding: 100px 300px;
+  }
+
+  .home .welcome-bonus-a {
+    padding: 0px 300px;
+  }
+
+  .home .email-shrink {
+    padding: 50px 300px;
+  }
+
+  .home .comment-n .shrink {
+    padding: 50px 300px;
+  }
+
+  .home .comment-i-shrink {
+    padding: 100px 300px;
+  }
+
+  .like-i .shrink {
+    padding: 100px 300px;
+  }  
+
+  .home .align-part-c {
+    padding: 0px 300px;
+  }
+
+  .home .align-part-d {
+    padding: 100px 300px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home .code-welcome-bonus-a {
+    padding: 100px 200px;
+  }
+
+  .home .welcome-bonus-a {
+    padding: 0px 200px;
+  }
+
+  .home .email-shrink {
+    padding: 50px 200px;
+  }
+
+  .home .comment-n .shrink {
+    padding: 50px 200px;
+  }
+  .home .comment-i-shrink {
+    padding: 100px 200px;
+  }
+
+  .like-i .shrink {
+    padding: 100px 200px;
+  }
+  
+  .home .align-part-c {
+    padding: 0px 200px;
+  }
+
+  .home .align-part-d {
+    padding: 100px 200px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .home .code-welcome-bonus-a {
+    padding: 100px 20px;
+  }
+
+  .home .code-welcome-bonus-b p {
+    font-size: 19px;
+    width: 270px;
+  }
+
+  .home .welcome-bonus-a {
+    padding: 0px 20px;
+  }
+
+  .home .welcome-bonus-a .align-welcome-bonus-b .welcome-bonus-b p {
+    font-size: 19px;
+    width: 190px;
+  }
+
+  .home .email-shrink {
+    padding: 50px 20px;
+  }
+
+  .home .comment-n .shrink {
+    padding: 50px 20px;
+  }
+
+  .home .comment-n-a {
+    font-size: 25px;
+  }
+
+  .home .comment-i-shrink {
+    padding: 100px 20px;
+  }
+
+  .like-i .shrink {
+    padding: 100px 20px;
+  }
+
+  .home .like-i-a {
+    font-size: 25px;
+  }
+
+  .home .align-part-d {
+    padding: 100px 15px;
+  }
+
+  .home .align-part-c {
+    padding: 0px 40px;
+  }
+
+  .home .part-c p {
+    font-size: 17px;
+  }
+
+.home .go-down .center { 
+  font-size: 19px;
+}
+
+  .home .a {
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 18px;
+  }
+
+  .home .a button {
+    margin: 30px 0px;
+  }
   .vocabulary {
     padding-top: 40px;
   }
@@ -1428,81 +1957,6 @@ footer {
   padding: 0px 10px;
 }
 
-.introduce .introduce-title {
-  padding: 70px 30px;
-  color: black;
-  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
-  text-align: center;
-  font-size: 21px;
-}
-
-.introduce-title button {
-  color: white;
-  text-align: center;
-  background-color: blue;
-  cursor: pointer;
-  border: none;
-  padding: 10px 15px;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-}
-
-    .div {
-      width: 100%;
-      text-align: center;
-      background-color: red;
-      font-size: 20px;
-      color: white;
-      padding: 90px 0;
-        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-        position: absolute;
-    }
-
-    .p3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 20px;
-      padding: 350px 50px;
-    }
-
-    .p3  button {
-      color: white;
-      text-align: center;
-      background-color: blue;
-      cursor: pointer;
-      border: none;
-      padding: 10px 20px;
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 16px;
-    }
-
-    .posts {
-      padding: 80px 0px;
-    }
-
-    .introduce .posts .post li { 
-      padding: 10px 0px;
-      font-size: 16px;
-      color: black;
-    }
-
-    .introduce .posts .post p { 
-      font-size: 16px;
-      padding: 10px 0px;
-    }
-
-    .introduce .posts .post h1 { 
-      font-size: 30px;
-    }
-
-    .introduce .posts .post {
-      width: auto;
-      border: 2px solid #cdcdcd;
-      border-radius: 12px;
-      padding: 40px 30px;
-    }
 
     .contact-title {
       width: 250px;
@@ -1512,42 +1966,6 @@ footer {
       border: 3px solid  #4e4e4e;
       margin-top: 100px;
       border-radius: 15px;
-    }
-
-    .introduce .introduce-mytitle {
-      margin-bottom: 100px;
-      padding: 60px;
-      background: red;
-      color: white;
-      font-size: 22px;
-    }
-    
-    .introduce .introduce-mytitle p {
-      padding: 10px 0px;
-    }
-
-    .million p {
-      color: black;
-      display: flex;
-      align-items: center;
-      justify-content: column;
-      padding: 30px 20px;
-      font-size: 21px;
-    }
-    
-    .millions .button {
-      text-align: center;
-      padding: 50px 0px;
-    }
-    
-    .millions .button button {
-      color: white;
-      background-color: blue;
-      border: none;
-      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
-      font-size: 18px;
-      padding: 10px 15px;
-      border-radius: 50px;
     }
 
     .accordion {

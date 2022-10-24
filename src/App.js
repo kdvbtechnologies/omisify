@@ -3,7 +3,7 @@ import "./darkmode.css";
 import Politique from "./Pages/Politique";
 import Conditions from "./Pages/Conditions";
 import Mentions from "./Pages/Mentions";
-import Home from "./components/Home";
+import Home from "./components/Home/Home";
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
 import PartnerNavMenu from "./components/Partenaire Omisify/PartnerNavMenu";
@@ -63,7 +63,9 @@ import Update from "./components/Update/Update";
 import SecureUpdate from "./components/Update/SecureUpdate";
 import SecureNavigation from "./components/Navigation/SecureNavigation";
 import UpdateSuccess from "./components/Update/UpdateSuccess";
+
 import Logout from "./components/Logout/Logout";
+
 import AfterLogout from "./components/Logout/AfterLogout";
 import SecureLogoutConfirm from "./components/Logout/SecureLogoutConfirm";
 import Infos from "./components/Settings/Infos";
@@ -130,6 +132,9 @@ import UpdatepwiPanel from "./components/Admin/UpdatePoint/PWI/UpdatePWIPanel";
 import Others from "./components/Others/Others";
 import Guide from "./components/Others/Guide/Guide";
 import Vocabulary from "./components/Others/Vocabulary/Vocabulary";
+import AuthSignup from "./components/AuthSignup";
+import AskPoster from "./components/Others/Ask/AskPoster";
+import AskPosterSuccess from "./components/Others/Ask/AskPosterSuccess";
 
 export default function App() {
   return (
@@ -386,6 +391,9 @@ export default function App() {
         <Route path="/vocabulary" element={<Vocabulary />} />
         <Route path="/others" element={<Others />} />
         <Route path="/guide" element={<Guide />} />
+        <Route path="/signup" element={<AuthSignup />} />
+        <Route path="/ask-poster" element={<AskPoster />} />
+        <Route path="/ask-poster-success" element={<AskPosterSuccess />} />
       </Routes>
     </BrowserRouter>
   );

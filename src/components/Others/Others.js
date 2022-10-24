@@ -21,6 +21,18 @@ export default function Others() {
           <div className="hr">
             <hr />
           </div>
+          <NavLink className="navlink" to="/guide">
+            <p>Guide</p>
+          </NavLink>
+          <div className="hr">
+            <hr />
+          </div>
+          <NavLink className="navlink" to="/ask-poster">
+            <p>Demande d'Affiches</p>
+          </NavLink>
+          <div className="hr">
+            <hr />
+          </div>
 
           <NavLink className="navlink" to="/vocabulary">
             <p>Vocabulaire</p>

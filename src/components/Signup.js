@@ -33,60 +33,69 @@ export default function Signup() {
     window.location = "/after-signup";
   }
 
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
+
   return (
     <>
-      <div className="login-border">
-        <div>
-          <p>Bienvenue sur le Portail des Partenaires Omisify</p>
-          <div className="input">
-            <h1>Inscription</h1>
-            <input
-              type="text"
-              placeholder="Nom de naissance"
-              value={name}
-              name="name"
-              onChange={(e) => setName(e.target.value)}
-            />
-            <input
-              type="text"
-              placeholder="Nom principal"
-              value={partnername}
-              name="partnername"
-              onChange={(e) => setPartnername(e.target.value)}
-              required
-            />
-            <input
-              type="text"
-              placeholder="Nom court"
-              value={shortname}
-              name="shortname"
-              onChange={(e) => setShortname(e.target.value)}
-              required
-            />
-            <input
-              type="text"
-              placeholder="E-mail"
-              value={email}
-              name="email"
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-            <input
-              type="text"
-              placeholder="Mot de passe"
-              value={password}
-              name="password"
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
+      <div style={family}>
+        <div className="signup-shrink">
+          <div className="login-border">
+            <div>
+              <p>Bienvenue sur le Portail des Partenaires Omisify</p>
+              <div className="input">
+                <h1>Inscription</h1>
+                <input
+                  type="text"
+                  placeholder="Nom de naissance"
+                  value={name}
+                  name="name"
+                  onChange={(e) => setName(e.target.value)}
+                />
+                <input
+                  type="text"
+                  placeholder="Nom principal"
+                  value={partnername}
+                  name="partnername"
+                  onChange={(e) => setPartnername(e.target.value)}
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Nom court"
+                  value={shortname}
+                  name="shortname"
+                  onChange={(e) => setShortname(e.target.value)}
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="E-mail"
+                  value={email}
+                  name="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Mot de passe"
+                  value={password}
+                  name="password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
 
-            {isLoading ? (
-              <Loader />
-            ) : (
-              <>
-                <button onClick={Button}>S'inscrire</button>
-              </>
-            )}
+                {isLoading ? (
+                  <Loader />
+                ) : (
+                  <>
+                    <button onClick={Button}>S'inscrire</button>
+                  </>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>

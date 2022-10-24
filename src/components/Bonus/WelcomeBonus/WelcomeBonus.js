@@ -57,12 +57,12 @@ export default function WelcomeBonus() {
           <p>
             Le Bonus de Bienvenue de 100 points est offert une seule fois à
             chaque nouveau arivant après avoir entrer le Code de Bienvenue de
-            son mentor
+            son Mentor
           </p>
-          <p>Entrer le Code de Bienvenue de votre mentor</p>
+          <p>Entrer le Code de Bienvenue de votre Mentor</p>
           <input
             type="text"
-            placeholder="Code du mentor"
+            placeholder="Code B du Mentor"
             value={codewelcomementor}
             onChange={(e) => setcodewelcomementor(e.target.value)}
             name="codewelcomementor"
