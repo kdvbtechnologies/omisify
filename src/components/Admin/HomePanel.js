@@ -1,5 +1,6 @@
 import LoginNav from "../Auth/LoginNav";
 import PanelNav from "./Navigation/PanelNav";
+import TotalPointPanel from "./UpdatePoint/TotalPointPanel";
 
 export default function HomePanel() {
   const family = {
@@ -14,6 +15,7 @@ export default function HomePanel() {
       <div className="panel-main">
         <div className="panel">
           <h3>Bienvenue sur le panneau d'administration d'Omisify</h3>
+          <TotalPointPanel />
         </div>
       </div>
     </div>
