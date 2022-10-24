@@ -30,8 +30,6 @@ export default function TotalPointPanel() {
 
   return (
     <div style={family}>
-      <LoginNav />
-      <PanelNav />
       <h3>Ajouter les Points Total et Gain </h3>
       <p>Entrer le userId</p>
       <input
