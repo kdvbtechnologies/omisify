@@ -31,7 +31,7 @@ export default function AskPoster() {
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-    window.location = "/askposter-success";
+    window.location = "/ask-poster-success";
   }
 
   return (
