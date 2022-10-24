@@ -6,9 +6,6 @@ import PanelNav from "../../Navigation/PanelNav";
 export default function UpdateCommentPanel() {
   const [userId, setUserId] = useState("");
   const [pointtcommentlife, setpointtcommentlife] = useState("");
-  const [pointtlife, setPointtlife] = useState("");
-  const [gaintlife, setGaintlife] = useState("");
-  const [date, setDate] = useState("");
 
   async function Validate() {
     await axios({
@@ -16,9 +13,6 @@ export default function UpdateCommentPanel() {
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
       data: {
         pointtcommentlife,
-        pointtlife,
-        gaintlife,
-        date,
       },
     })
       .then((res) => console.log(res))
@@ -54,32 +48,6 @@ export default function UpdateCommentPanel() {
         name="pointtcommentlife"
       />
 
-      <h4>Entrer Points Total</h4>
-      <input
-        type="text"
-        placeholder="Points Total"
-        value={pointtlife}
-        onChange={(e) => setPointtlife(e.target.value)}
-        name="pointtlife"
-      />
-
-      <h4>Entrer Gain</h4>
-      <input
-        type="text"
-        placeholder="Gain"
-        value={gaintlife}
-        onChange={(e) => setGaintlife(e.target.value)}
-        name="gaintlife"
-      />
-
-      <p>Entrer la date de l'utilisateur</p>
-      <input
-        type="text"
-        placeholder="Date de l'utilisateur"
-        value={date}
-        onChange={(e) => setDate(e.target.value)}
-        name="date"
-      />
       <button onClick={Validate}>Valider</button>
     </div>
   );
