@@ -1,7 +1,5 @@
 import axios from "axios";
 import { useState } from "react";
-import LoginNav from "../../Auth/LoginNav";
-import PanelNav from "../Navigation/PanelNav";
 
 export default function TotalPointPanel() {
   const [userId, setUserId] = useState("");
