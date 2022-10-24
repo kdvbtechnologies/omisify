@@ -23,10 +23,10 @@ export default function CommentI() {
           votre vidéo
         </p>
         <p>
-          Omisify donne la possibilité aux influenceurs de gagner de l'argent
-          lorsque leur abonnés commente leur publication, peu importe la nature
-          du commentaire, vous gagnerez de l'argent sur tout commentaires
-          laissés sur votre publication par vos abonnés
+          Omisify vous donne la possibilité de gagner de l'argent lorsque vos
+          abonnés commente votre publication, peu importe la nature du
+          commentaire, vous gagnez de l'argent sur tout commentaires laissés sur
+          votre publication par vos abonnés
         </p>
         <p>
           Avec Omisify toutes les conditions ont été réunies pour vous permettre
