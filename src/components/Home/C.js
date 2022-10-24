@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
 
 export default function C() {
+  const userId = localStorage.getItem("https://omisify.com/userId");
+  const partnername = localStorage.getItem("https://omisify.com/partnername");
+  const shortname = localStorage.getItem("https://omisify.com/shortname");
+  const name = localStorage.getItem("https://omisify.com/name");
+
   return (
     <div className="go-down-part-c">
       <div className="align-part-c">
@@ -21,9 +26,19 @@ export default function C() {
             Omisify est gratuit et rémunère toujours ses Partenaires
           </p>
           <div className="align-button">
-            <NavLink to="/signup">
-              <button>Devenir Partenaire Omisify</button>
-            </NavLink>
+            {userId && shortname && partnername && name ? (
+              <>
+                <NavLink to="/partner">
+                  <button>Devenir Partenaire Omisify</button>
+                </NavLink>
+              </>
+            ) : (
+              <>
+                <NavLink to="/signup">
+                  <button>Devenir Partenaire Omisify</button>
+                </NavLink>
+              </>
+            )}
           </div>
         </div>
       </div>
