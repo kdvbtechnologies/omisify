@@ -1111,6 +1111,15 @@ footer {
 }
 
 /*  src - components - update - update.js */
+/*  src - components - update - update.js */
+/*  src - components - update - update.js */
+/*  src - components - update - update.js */
+/*  src - components - update - update.js */
+/*  src - components - update - update.js */
+/*  src - components - update - update.js */
+/*  src - components - update - update.js */
+/*  src - components - update - update.js */
+/*  src - components - update - update.js */
 .update {
   padding: 50px 0px;
   text-align: center;
@@ -1119,6 +1128,9 @@ footer {
 .update .title {
   color: white;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .update .a {
@@ -1140,9 +1152,9 @@ footer {
 
 .update .title p {
   background-color: red;
-  margin: 0px 500px;
-  padding: 20px;
+  padding: 15px 20px;
   font-weight: bold;
+  width: 130px;
 }
 
 .update p {
