@@ -27,8 +27,9 @@ export default function CalculComment() {
   const oldpointtcommentlife = localStorage.getItem(
     "https://omisify.com/pointtcommentlife"
   );
-  const pointtcommentlife =
+  const calculpointtcommentlife =
     parseInt(newnumber) + parseInt(oldpointtcommentlife);
+  console.log(calculpointtcommentlife);
 
   function Save() {
     localStorage.setItem(
@@ -39,6 +40,9 @@ export default function CalculComment() {
   }
 
   const userId = localStorage.getItem("https://omisify.com/userId");
+  const pointtcommentlife = localStorage.getItem(
+    "https://omisify.com/pointtcommentlife"
+  );
 
   async function Send() {
     await axios({
