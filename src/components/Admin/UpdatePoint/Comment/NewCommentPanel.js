@@ -7,10 +7,17 @@ export default function NewCommentPanel() {
   const [numbercommententeradmin, setNumbercommententeradmin] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState("");
+  const getnumbercommententeradmin = localStorage.getItem(
+    "https://omisify.com/numbercommententeradmin"
+  );
 
   async function Validate(e) {
     setIsLoading(true);
     e.preventDefault();
+    localStorage.setItem(
+      "https://omisify.com/numbercommententeradmin",
+      numbercommententeradmin
+    );
     await axios({
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
@@ -22,7 +29,9 @@ export default function NewCommentPanel() {
         console.log(res);
         const name = res.data.name;
         if (name) {
-          setSuccess(`Nombre de commentaires ajouté avec succès à ${name}`);
+          setSuccess(
+            `${getnumbercommententeradmin} commentaire(s) ajouté avec succès à ${name}`
+          );
         }
       })
       .catch((err) => console.log(err));
