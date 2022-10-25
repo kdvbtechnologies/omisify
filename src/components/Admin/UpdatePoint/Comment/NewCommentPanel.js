@@ -7,9 +7,6 @@ export default function NewCommentPanel() {
   const [numbercommententeradmin, setNumbercommententeradmin] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState("");
-  const getnumbercommententeradmin = localStorage.getItem(
-    "https://omisify.com/numbercommententeradmin"
-  );
 
   async function Validate(e) {
     setIsLoading(true);
@@ -29,6 +26,9 @@ export default function NewCommentPanel() {
     })
       .then((res) => {
         console.log(res);
+        const getnumbercommententeradmin = localStorage.getItem(
+          "https://omisify.com/numbercommententeradmin"
+        );
         const name = res.data.name;
         if (name) {
           setSuccess(
