@@ -50,7 +50,7 @@ export default function CalculComment() {
     console.log("resultat sauvegarder dans le localstorage");
   }
 
-  const userId = localStorage.getItem("https://omisify.com/userId");
+  //const userId = localStorage.getItem("https://omisify.com/userId");
   const pointtcommentlife = localStorage.getItem(
     "https://omisify.com/resultpointtcommentlife"
   );
@@ -66,7 +66,7 @@ export default function CalculComment() {
     if (getnewnumber === numbercommententeradmin) {
       await axios({
         method: "put",
-        url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
+        url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/634c8ab0f59d4e9994f83884`,
         data: {
           pointtcommentlife,
         },
