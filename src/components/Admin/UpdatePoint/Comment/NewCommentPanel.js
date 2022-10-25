@@ -63,7 +63,9 @@ export default function NewCommentPanel() {
             onChange={(e) => setNumbercommententeradmin(e.target.value)}
             name="numbercommententeradmin"
           />
-          <p>{success}</p>
+          <div className="success">
+            <p>{success}</p>
+          </div>
           {isLoading ? (
             <Loader />
           ) : (

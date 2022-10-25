@@ -1824,6 +1824,12 @@ footer {
   padding-top: 30px;
 }
 
+.new-comment-panel .align .success {
+  color: blue;
+  font-size: 16px;
+  padding: 0px 20px;
+}
+
 .new-comment-panel .align p {
   padding: 10px 0px;
 }
@@ -1856,7 +1862,7 @@ footer {
   border: 1px solid red;
   font-size: 16px;
   padding: 10px 20px;
-  margin: 50px 0px;
+  margin: 15px 0px;
   border-radius: 20px;
 }
 
@@ -1933,7 +1939,7 @@ footer {
   }
 
   .new-comment-panel .align .a {
-    padding: 15px 0px;
+    padding: 10px 0px;
   }
   
 
