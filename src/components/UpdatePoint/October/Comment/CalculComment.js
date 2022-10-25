@@ -6,7 +6,7 @@ export default function CalculComment() {
     async function get() {
       await axios
         .get(
-          "https://famous-peplum-dove.cyclic.app/api/user/63485c34ed397bb2772262c3"
+          "https://famous-peplum-dove.cyclic.app/api/user/634c8ab0f59d4e9994f83884"
         )
         .then((res) => {
           console.log(res);
@@ -15,6 +15,14 @@ export default function CalculComment() {
             localStorage.setItem(
               "https://omisify.com/pointtcommentlife",
               getpointtcommentlife
+            );
+          }
+
+          const numbercommententeradmin = res.data.numbercommententeradmin;
+          if (numbercommententeradmin) {
+            localStorage.setItem(
+              "https://omisify.com/numbercommententeradmin",
+              numbercommententeradmin
             );
           }
         })
@@ -33,6 +41,8 @@ export default function CalculComment() {
   console.log(calculpointtcommentlife);
 
   function Save() {
+    localStorage.setItem("https://omisify.com/newnumber", newnumber);
+
     localStorage.setItem(
       "https://omisify.com/resultpointtcommentlife",
       calculpointtcommentlife
@@ -46,16 +56,29 @@ export default function CalculComment() {
   );
 
   async function Send() {
-    await axios({
-      method: "put",
-      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
-      data: {
-        pointtcommentlife,
-      },
-    })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+    const numbercommententeradmin = localStorage.getItem(
+      "https://omisify.com/numbercommententeradmin"
+    );
+
+    let getnewnumber = localStorage.getItem("https://omisify.com/newnumber");
+    console.log(getnewnumber);
+
+    if ((getnewnumber = numbercommententeradmin)) {
+      await axios({
+        method: "put",
+        url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
+        data: {
+          pointtcommentlife,
+        },
+      })
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
+    } else {
+      //window.location = "/partner"
+      console.log("Validation impossoble !");
+    }
   }
+
   return (
     <>
       <p>Ancien total des commentaires : {oldpointtcommentlife}</p>

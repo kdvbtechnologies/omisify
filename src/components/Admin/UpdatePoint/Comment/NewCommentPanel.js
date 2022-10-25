@@ -32,7 +32,7 @@ export default function NewCommentPanel() {
         const name = res.data.name;
         if (name) {
           setSuccess(
-            `${getnumbercommententeradmin} commentaire(s) ajouté avec succès à ${name}`
+            `${getnumbercommententeradmin} commentaire(s) ajouté(s) avec succès à ${name}`
           );
         }
       })
