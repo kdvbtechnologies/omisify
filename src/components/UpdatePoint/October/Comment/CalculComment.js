@@ -29,7 +29,7 @@ export default function CalculComment() {
   );
 
   const calculpointtcommentlife =
-    parseInt(newnumber) + parseInt(oldpointtcommentlife);
+    (parseInt(newnumber) + parseInt(oldpointtcommentlife)) * 0.01;
   console.log(calculpointtcommentlife);
 
   function Save() {
