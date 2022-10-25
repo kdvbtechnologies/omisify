@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 export default function CalculComment() {
+  const newnumbercommententeradmin = 0;
+  const statuscomment = "NO";
+
   useEffect(() => {
     async function get() {
       await axios
@@ -69,6 +72,8 @@ export default function CalculComment() {
         url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/634c8ab0f59d4e9994f83884`,
         data: {
           pointtcommentlife,
+          numbercommententeradmin: newnumbercommententeradmin,
+          statuscomment,
         },
       })
         .then((res) => console.log(res))
