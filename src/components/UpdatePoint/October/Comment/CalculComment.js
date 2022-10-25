@@ -24,13 +24,17 @@ export default function CalculComment() {
   }, []);
 
   const [newnumber, setNewnumber] = useState("");
-  const pointtcommentlife = localStorage.getItem(
+  const oldpointtcommentlife = localStorage.getItem(
     "https://omisify.com/pointtcommentlife"
   );
-  const result = parseInt(newnumber) + parseInt(pointtcommentlife);
+  const pointtcommentlife =
+    parseInt(newnumber) + parseInt(oldpointtcommentlife);
 
   function Save() {
-    localStorage.setItem("https://omisify.com/resultsave", result);
+    localStorage.setItem(
+      "https://omisify.com/pointtcommentlife",
+      pointtcommentlife
+    );
     console.log("resultat sauvegarder dans le localstorage");
   }
 
@@ -52,7 +56,7 @@ export default function CalculComment() {
       <p>Ancien total des commentaires : {pointtcommentlife}</p>
       <p>Opération</p>
       <p>
-        {newnumber} + {pointtcommentlife} = {result}
+        {newnumber} + {oldpointtcommentlife} = {pointtcommentlife}
       </p>
       <p>Nouveau nombre</p>
       <input
