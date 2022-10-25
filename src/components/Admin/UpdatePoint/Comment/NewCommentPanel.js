@@ -21,6 +21,7 @@ export default function NewCommentPanel() {
       .catch((err) => console.log(err));
     setIsLoading(false);
   }
+
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
