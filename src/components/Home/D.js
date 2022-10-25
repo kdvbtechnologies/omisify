@@ -6,12 +6,12 @@ export default function D() {
           <p>Rémunération</p>
         </div>
         <li>1 Commentaire = 1 point</li>
-        <li>1 E10k = 2 points</li>
-        <li>1 E-mail = 1 point</li>
+        <li>1 E10k = 0.7 point</li>
+        <li>1 E-mail = 0.3 point</li>
         <li>1 Like C = 0.01 point</li>
         <li>1 Like P = 0.01 point</li>
-        <li>1 M10k = 1 point</li>
-        <li>1 Message = 0.1 point</li>
+        <li>1 M10k = 0.7 point</li>
+        <li>1 Message = 0.3 point</li>
         <li>1 MWI = 5 points</li>
         <li>1 Publication = 1 point</li>
         <li>1 PWI = 5 points</li>
