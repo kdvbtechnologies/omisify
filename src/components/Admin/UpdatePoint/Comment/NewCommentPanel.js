@@ -14,10 +14,12 @@ export default function NewCommentPanel() {
   async function Validate(e) {
     setIsLoading(true);
     e.preventDefault();
-    localStorage.setItem(
+    const save = localStorage.setItem(
       "https://omisify.com/numbercommententeradmin",
       numbercommententeradmin
     );
+    console.log(save);
+
     await axios({
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
