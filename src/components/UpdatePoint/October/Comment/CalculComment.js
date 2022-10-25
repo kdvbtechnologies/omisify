@@ -63,7 +63,7 @@ export default function CalculComment() {
     let getnewnumber = localStorage.getItem("https://omisify.com/newnumber");
     console.log(getnewnumber);
 
-    if ((getnewnumber = numbercommententeradmin)) {
+    if (getnewnumber === numbercommententeradmin) {
       await axios({
         method: "put",
         url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
@@ -73,6 +73,7 @@ export default function CalculComment() {
       })
         .then((res) => console.log(res))
         .catch((err) => console.log(err));
+      console.log("Validation reussie !");
     } else {
       //window.location = "/partner"
       console.log("Validation impossoble !");
