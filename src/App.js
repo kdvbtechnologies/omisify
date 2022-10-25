@@ -136,6 +136,7 @@ import AuthSignup from "./components/AuthSignup";
 import AskPoster from "./components/Others/Ask/AskPoster";
 import AskPosterSuccess from "./components/Others/Ask/AskPosterSuccess";
 import CalculComment from "./components/UpdatePoint/October/Comment/CalculComment";
+import NewCommentPanel from "./components/Admin/UpdatePoint/Comment/NewCommentPanel";
 
 export default function App() {
   return (
@@ -396,6 +397,7 @@ export default function App() {
         <Route path="/ask-poster" element={<AskPoster />} />
         <Route path="/ask-poster-success" element={<AskPosterSuccess />} />
         <Route path="/calcul-comment" element={<CalculComment />} />
+        <Route path="/new-comment-panel" element={<NewCommentPanel />} />
       </Routes>
     </BrowserRouter>
   );

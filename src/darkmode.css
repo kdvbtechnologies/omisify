@@ -1773,6 +1773,16 @@ footer {
 
 
 /* admin - navigation - navigation.js */
+/* admin - navigation - navigation.js */
+/* admin - navigation - navigation.js */
+/* admin - navigation - navigation.js */
+/* admin - navigation - navigation.js */
+/* admin - navigation - navigation.js */
+/* admin - navigation - navigation.js */
+/* admin - navigation - navigation.js */
+/* admin - navigation - navigation.js */
+/* admin - navigation - navigation.js */
+/* admin - navigation - navigation.js */
 .panel-main {
   display: flex;
   justify-content: center;
@@ -1788,8 +1798,54 @@ footer {
 }
 
 
+/* comment - New Comment Panel.js */
+/* comment - New Comment Panel.js */
+/* comment - New Comment Panel.js */
+/* comment - New Comment Panel.js */
+/* comment - New Comment Panel.js */
+/* comment - New Comment Panel.js */
+/* comment - New Comment Panel.js */
+/* comment - New Comment Panel.js */
+/* comment - New Comment Panel.js */
 
+.new-comment-panel .title {
+  padding: 10px;
+  background-color: red;
+  font-size: 18px;
+  color: white;
+}
 
+.new-comment-panel .align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.new-comment-panel .align p {
+  padding: 20px 0px;
+}
+
+.new-comment-panel .align input[type="number"] {
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.new-comment-panel .align button {
+  cursor: pointer;
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: red;
+  border: 1px solid red;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 50px 0px;
+  border-radius: 20px;
+}
 
 @media screen and (max-width: 1250px) {
   .home .code-welcome-bonus-a {
