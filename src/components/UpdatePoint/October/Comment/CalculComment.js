@@ -10,11 +10,11 @@ export default function CalculComment() {
         )
         .then((res) => {
           console.log(res);
-          const pointtcommentlife = res.data.pointtcommentlife;
-          if (pointtcommentlife) {
+          const getpointtcommentlife = res.data.pointtcommentlife;
+          if (getpointtcommentlife) {
             localStorage.setItem(
               "https://omisify.com/pointtcommentlife",
-              pointtcommentlife
+              getpointtcommentlife
             );
           }
         })
@@ -27,6 +27,7 @@ export default function CalculComment() {
   const oldpointtcommentlife = localStorage.getItem(
     "https://omisify.com/pointtcommentlife"
   );
+
   const calculpointtcommentlife =
     parseInt(newnumber) + parseInt(oldpointtcommentlife);
   console.log(calculpointtcommentlife);
@@ -57,10 +58,10 @@ export default function CalculComment() {
   }
   return (
     <>
-      <p>Ancien total des commentaires : {pointtcommentlife}</p>
+      <p>Ancien total des commentaires : {oldpointtcommentlife}</p>
       <p>Opération</p>
       <p>
-        {newnumber} + {oldpointtcommentlife} = {pointtcommentlife}
+        {newnumber} + {oldpointtcommentlife} = {calculpointtcommentlife}
       </p>
       <p>Nouveau nombre</p>
       <input
