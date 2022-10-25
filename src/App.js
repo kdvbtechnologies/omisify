@@ -135,6 +135,7 @@ import Vocabulary from "./components/Others/Vocabulary/Vocabulary";
 import AuthSignup from "./components/AuthSignup";
 import AskPoster from "./components/Others/Ask/AskPoster";
 import AskPosterSuccess from "./components/Others/Ask/AskPosterSuccess";
+import CalculComment from "./components/UpdatePoint/October/Comment/CalculComment";
 
 export default function App() {
   return (
@@ -394,6 +395,7 @@ export default function App() {
         <Route path="/signup" element={<AuthSignup />} />
         <Route path="/ask-poster" element={<AskPoster />} />
         <Route path="/ask-poster-success" element={<AskPosterSuccess />} />
+        <Route path="/calcul-comment" element={<CalculComment />} />
       </Routes>
     </BrowserRouter>
   );
