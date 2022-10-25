@@ -48,7 +48,7 @@ export default function CalculComment() {
   async function Send() {
     await axios({
       method: "put",
-      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updateuserinfos/${userId}`,
+      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
       data: {
         pointtcommentlife,
       },
