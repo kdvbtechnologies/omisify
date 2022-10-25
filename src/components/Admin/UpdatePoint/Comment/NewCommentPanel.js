@@ -6,6 +6,7 @@ export default function NewCommentPanel() {
   const [userId, setUserId] = useState("");
   const [numbercommententeradmin, setNumbercommententeradmin] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [success, setSuccess] = useState("");
 
   async function Validate(e) {
     setIsLoading(true);
@@ -17,7 +18,13 @@ export default function NewCommentPanel() {
         numbercommententeradmin,
       },
     })
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res);
+        const name = res.data.name;
+        if (name) {
+          setSuccess(`Nombre de commentaires ajouté avec succès à ${name}`);
+        }
+      })
       .catch((err) => console.log(err));
     setIsLoading(false);
   }
@@ -56,6 +63,7 @@ export default function NewCommentPanel() {
             onChange={(e) => setNumbercommententeradmin(e.target.value)}
             name="numbercommententeradmin"
           />
+          <p>{success}</p>
           {isLoading ? (
             <Loader />
           ) : (
