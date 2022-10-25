@@ -33,6 +33,20 @@ export default function CalculComment() {
     localStorage.setItem("https://omisify.com/resultsave", result);
     console.log("resultat sauvegarder dans le localstorage");
   }
+
+  const userId = localStorage.getItem("https://omisify.com/userId");
+
+  async function Send() {
+    await axios({
+      method: "put",
+      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updateuserinfos/${userId}`,
+      data: {
+        pointtcommentlife,
+      },
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }
   return (
     <>
       <p>Ancien total des commentaires : {pointtcommentlife}</p>
@@ -48,6 +62,11 @@ export default function CalculComment() {
         name="newnumber"
       />
       <button onClick={Save}>Sauvegarder</button>
+      <p>
+        Cliquer sur le bouton Envoyer pour envoyer les résultats des
+        commentaires
+      </p>
+      <button onClick={Send}>Envoyer</button>
     </>
   );
 }
