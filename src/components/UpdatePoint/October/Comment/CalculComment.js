@@ -34,7 +34,7 @@ export default function CalculComment() {
   function Save() {
     localStorage.setItem(
       "https://omisify.com/pointtcommentlife",
-      pointtcommentlife
+      calculpointtcommentlife
     );
     console.log("resultat sauvegarder dans le localstorage");
   }
