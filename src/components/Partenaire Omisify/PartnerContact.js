@@ -1,12 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function PartnerContact() {
-  const navigate = useNavigate();
-
   return (
     <>
       <div className="back-btn">
-        <button onClick={() => navigate(-1)}>Retour</button>
+        <NavLink to="/secure-menu">
+          <button>Retour</button>
+        </NavLink>
       </div>
       <div className="contact">
         <div className="contact-title">

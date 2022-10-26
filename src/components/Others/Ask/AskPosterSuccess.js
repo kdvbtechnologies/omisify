@@ -12,10 +12,14 @@ export default function AskPosterSuccess() {
         <p>Demande Validé !</p>
       </div>
       <div className="a">
-        <p>Contacter le Service Partenaire pour le retrait de vos affiches</p>
+        <p>
+          Contacter le{" "}
+          <NavLink to="/partner-contact">Service Partenaire</NavLink> pour le
+          retrait de vos affiches
+        </p>
       </div>
-      <NavLink to="/others">
-        <button>Terminé</button>
+      <NavLink to="/partner-contact">
+        <button>Terminer</button>
       </NavLink>
     </div>
   );
