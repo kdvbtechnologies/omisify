@@ -52,10 +52,10 @@ export default function User() {
                   <p>...</p>
                   <p>Commentaires : {api.pointtcommentlife} point(s)</p>
                   <p>
-                    Likes (commentaire) :{api.pointtlikecommentlife} point(s)
+                    Likes (commentaire) :{api.pointtlikescommentlife} point(s)
                   </p>
                   <p>
-                    Likes (publication) : {api.pointtlikepublicationlife}{" "}
+                    Likes (publication) : {api.pointtlikespublicationlife}{" "}
                     point(s)
                   </p>
                   <p>Publications : {api.pointtpublicationlife} point(s)</p>
