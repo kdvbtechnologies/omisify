@@ -5,6 +5,7 @@ export default function PartnerNavigation() {
   const partnername = localStorage.getItem("https://omisify.com/partnername");
   const shortname = localStorage.getItem("https://omisify.com/shortname");
   const name = localStorage.getItem("https://omisify.com/name");
+  const welcomebonus = localStorage.getItem("https://omisify.com/welcomebonus");
 
   return (
     <>
@@ -31,9 +32,19 @@ export default function PartnerNavigation() {
 
           {userId && shortname && partnername && name ? (
             <>
-              <NavLink className="navlink" to="/secure-menu">
-                <li>Menu</li>
-              </NavLink>
+              {welcomebonus ? (
+                <>
+                  <NavLink className="navlink" to="/secure-menu">
+                    <li>Menu</li>
+                  </NavLink>
+                </>
+              ) : (
+                <>
+                  <NavLink className="navlink" to="/guides">
+                    <li>Menu</li>
+                  </NavLink>
+                </>
+              )}
             </>
           ) : (
             <>

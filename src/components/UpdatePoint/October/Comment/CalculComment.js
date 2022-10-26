@@ -6,7 +6,6 @@ import Loader from "../../../Partenaire Omisify/Loader";
 export default function CalculComment() {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
-  const [api, setApi] = useState([]);
 
   useEffect(() => {
     async function get() {
@@ -16,7 +15,6 @@ export default function CalculComment() {
         )
         .then((res) => {
           console.log(res);
-          setApi(res.data);
           const getpointtcommentlife = res.data.pointtcommentlife;
           if (getpointtcommentlife) {
             localStorage.setItem(
@@ -30,6 +28,14 @@ export default function CalculComment() {
             localStorage.setItem(
               "https://omisify.com/numbercommententeradmin",
               numbercommententeradmin
+            );
+          }
+
+          const statuscomment = res.data.statuscomment;
+          if (statuscomment) {
+            localStorage.setItem(
+              "https://omisify.com/statuscomment",
+              statuscomment
             );
           }
         })
@@ -59,6 +65,10 @@ export default function CalculComment() {
     console.log("resultat sauvegarder dans le localstorage");
     window.location = "/validate-calcul-comment";
   }
+
+  const statuscomment = localStorage.getItem(
+    "https://omisify.com/statuscomment"
+  );
 
   const family = {
     fontFamily:
@@ -91,10 +101,8 @@ export default function CalculComment() {
           <div className="c">
             <p>Calculer le résultat de votre travail</p>
           </div>
-          <div className="status-comment">
-            {api.map((api, id) => (
-              <p>Validation automatique : {api.statuscomment}</p>
-            ))}
+          <div className="validation-automatic">
+            {statuscomment && <p>Validation automatique : {statuscomment}</p>}
           </div>
         </div>
       </div>
