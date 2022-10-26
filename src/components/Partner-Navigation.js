@@ -40,7 +40,7 @@ export default function PartnerNavigation() {
                 </>
               ) : (
                 <>
-                  <NavLink className="navlink" to="/guides">
+                  <NavLink className="navlink" to="/guide">
                     <li>Menu</li>
                   </NavLink>
                 </>
