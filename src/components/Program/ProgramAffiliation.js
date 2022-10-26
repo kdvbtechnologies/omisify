@@ -49,6 +49,11 @@ export default function ProgramAffiliation() {
             <p>Pour les influenceurs</p>
             <p>Pour les Influenceurs Vidéos</p>
             <p>Pour les Non-Influenceurs</p>
+            <p>Mot(s) Clé(s) : Omisify, Argent, Gagner</p>
+            <p>
+              Terme(s) clé(s) : Gagnez de l'argent avec Omisify, Devenez
+              Partenaire Omisify, Augmentez vos revenus avec Omisify
+            </p>
           </div>
         )}
       </div>
