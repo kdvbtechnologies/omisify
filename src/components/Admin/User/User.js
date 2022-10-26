@@ -51,6 +51,7 @@ export default function User() {
                   <p>Méthode de Paiement préféré : {api.paymentmethod}</p>
                   <p>...</p>
                   <p>Commentaires : {api.pointtcommentlife} point(s)</p>
+                  <p>E10k : {api.pointte10klife} point(s)</p>
                   <p>
                     Likes (commentaire) :{api.pointtlikescommentlife} point(s)
                   </p>
@@ -60,6 +61,7 @@ export default function User() {
                   </p>
                   <p>Publications : {api.pointtpublicationlife} point(s)</p>
                   <p>PWI : {api.pointtpwilife} point(s)</p>
+                  <p>M10k : {api.pointtm10klife} point(s)</p>
                   <p>Messages : {api.pointtmessagelife} point(s)</p>
                   <p>MWI : {api.pointtmwilife} point(s)</p>
                   <p>E-mail : {api.pointtemaillife} point(s)</p>
