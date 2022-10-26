@@ -69,7 +69,9 @@ export default function ValidateCalculComment() {
       </div>
       <div className="calcul-comment">
         <div className="a">
-          <p>Commentaire(s) : {pointtcommentlife} points</p>
+          {pointtcommentlife && (
+            <p>Commentaire(s) : {pointtcommentlife} points</p>
+          )}
         </div>
 
         <div className="c">
