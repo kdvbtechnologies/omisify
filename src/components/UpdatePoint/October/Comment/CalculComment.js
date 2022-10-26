@@ -30,6 +30,14 @@ export default function CalculComment() {
               numbercommententeradmin
             );
           }
+
+          const statuscomment = res.data.statuscomment;
+          if (statuscomment) {
+            localStorage.setItem(
+              "https://omisify.com/statuscomment",
+              statuscomment
+            );
+          }
         })
         .catch((err) => console.log(err));
     }
@@ -57,6 +65,10 @@ export default function CalculComment() {
     console.log("resultat sauvegarder dans le localstorage");
     window.location = "/validate-calcul-comment";
   }
+
+  const statuscomment = localStorage.getItem(
+    "https://omisify.com/statuscomment"
+  );
 
   const family = {
     fontFamily:
@@ -88,6 +100,9 @@ export default function CalculComment() {
 
           <div className="c">
             <p>Calculer le résultat de votre travail</p>
+          </div>
+          <div className="validation-automatic">
+            {statuscomment && <p>Validation automatique : {statuscomment}</p>}
           </div>
         </div>
       </div>
