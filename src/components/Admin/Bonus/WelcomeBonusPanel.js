@@ -40,10 +40,10 @@ export default function WelcomeBonusPanel() {
           <Loader />
         ) : (
           <>
-            <div className="shrink">
-              <div className="a">
-                {api.map((api) => (
-                  <>
+            {api.map((api) => (
+              <>
+                <div className="shrink">
+                  <div className="a">
                     <div className="name">
                       <p>{api.partnername}</p>
                     </div>
@@ -58,10 +58,10 @@ export default function WelcomeBonusPanel() {
                     </div>
 
                     <p>userId : {api.userId}</p>
-                  </>
-                ))}
-              </div>
-            </div>
+                  </div>
+                </div>
+              </>
+            ))}
           </>
         )}
       </div>
