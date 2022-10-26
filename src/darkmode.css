@@ -1567,6 +1567,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 70px;
 }
 
 .calcul-comment .a {
@@ -1596,6 +1597,7 @@ footer {
 }
 
 .calcul-comment button {
+  cursor: pointer;
   font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
   color: white;
   background-color: blue;

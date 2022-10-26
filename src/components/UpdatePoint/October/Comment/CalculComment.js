@@ -95,10 +95,12 @@ export default function CalculComment() {
       <div className="calcul-comment">
         <div className="a">
           <p>Ancien total : {oldpointtcommentlife} point(s)</p>
-          <p>
-            ({newnumber} + {oldpointtcommentlife}) x 0.01 ={" "}
-            {calculpointtcommentlife} point(s)
-          </p>
+          {newnumber && oldpointtcommentlife && (
+            <p>
+              ({newnumber} + {oldpointtcommentlife}) x 0.01 ={" "}
+              {calculpointtcommentlife} point(s)
+            </p>
+          )}
         </div>
 
         <div className="a">
