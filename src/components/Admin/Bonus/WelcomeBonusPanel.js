@@ -57,6 +57,8 @@ export default function WelcomeBonusPanel() {
                       <p>PA : {api.askposter}</p>
                     </div>
 
+                    <p>Créé : {api.createdAt}</p>
+                    <p>Modifié : {api.updatedAt}</p>
                     <p>userId : {api.userId}</p>
                   </div>
                 </div>
