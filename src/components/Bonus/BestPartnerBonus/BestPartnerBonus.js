@@ -59,18 +59,24 @@ export default function BestPartnerBonus() {
             onChange={(e) => setbestpartnerbonus(e.target.value)}
           >
             <option value="">Choisir la date</option>
-            <option value="20/10/2022">20/10/2022</option>
-            <option value="21/10/2022">21/10/2022</option>
-            <option value="22/10/2022">22/10/2022</option>
-            <option value="23/10/2022">23/10/2022</option>
-            <option value="24/10/2022">24/10/2022</option>
-            <option value="25/10/2022">25/10/2022</option>
             <option value="26/10/2022">26/10/2022</option>
             <option value="27/10/2022">27/10/2022</option>
             <option value="28/10/2022">28/10/2022</option>
             <option value="29/10/2022">29/10/2022</option>
             <option value="30/10/2022">30/10/2022</option>
             <option value="31/10/2022">31/10/2022</option>
+            <option value="01/11/2022">01/11/2022</option>
+            <option value="02/11/2022">02/11/2022</option>
+            <option value="03/11/2022">03/11/2022</option>
+            <option value="04/11/2022">04/11/2022</option>
+            <option value="05/11/2022">05/11/2022</option>
+            <option value="06/11/2022">06/11/2022</option>
+            <option value="07/11/2022">07/11/2022</option>
+            <option value="08/11/2022">08/11/2022</option>
+            <option value="09/11/2022">09/11/2022</option>
+            <option value="10/11/2022">10/11/2022</option>
+            <option value="12/11/2022">12/11/2022</option>
+            <option value="13/11/2022">13/11/2022</option>
           </select>
         </div>
         {isLoading ? (

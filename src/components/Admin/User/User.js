@@ -8,6 +8,11 @@ export default function User() {
   const [api, setApi] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  const dateParser = (date) => {
+    let newDate = new Date(date).toLocaleDateString("fr-FR");
+    return newDate;
+  };
+
   useEffect(() => {
     async function get() {
       await axios
@@ -79,6 +84,8 @@ export default function User() {
                   <p>Groupe Whatsapp : {api.groupwhatsapp}</p>
                   <p>Numéro Telegram : {api.pointtelegram}</p>
                   <p>Numéro Whatsapp : {api.pointwhatsapp}</p>
+                  <p>Créé : {dateParser(api.createdAt)}</p>
+                  <p>Modifié : {dateParser(api.updatedAt)}</p>
                   <p>Dernière actualisation des points : {api.date}</p>
                   <hr />
                   <hr />
