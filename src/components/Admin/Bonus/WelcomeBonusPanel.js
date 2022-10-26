@@ -48,7 +48,7 @@ export default function WelcomeBonusPanel() {
                       <p>{api.partnername}</p>
                     </div>
 
-                    <p>Noms court : {api.shortname}</p>
+                    <p>Noms : {api.name}</p>
                     <p>Code BM : {api.codewelcomementor}</p>
                     <p>Bonus EP : {api.bestpartnerbonus}</p>
 
