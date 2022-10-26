@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import PartnerNav from "./PartnerNav";
 
 export default function PartnerNavMenu() {
+  const welcomebonus = localStorage.getItem("https://omisify.com/welcomebonus");
+
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -14,6 +16,14 @@ export default function PartnerNavMenu() {
         <div className="menu-navigation-title">
           <p>Menu</p>
         </div>
+
+        {!welcomebonus && (
+          <>
+            <NavLink className="navlink" to="/guide">
+              <li>Guide</li>
+            </NavLink>
+          </>
+        )}
 
         <NavLink className="li" to="/update">
           <li>Mise à jour</li>

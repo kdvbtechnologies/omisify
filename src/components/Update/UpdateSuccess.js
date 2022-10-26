@@ -308,6 +308,14 @@ export default function UpdateSuccess() {
             );
           }
 
+          const statuscomment = res.data.statuscomment;
+          if (statuscomment) {
+            localStorage.setItem(
+              "https://omisify.com/statuscomment",
+              statuscomment
+            );
+          }
+
           /*
           const birthcountry = res.data.birthcountry;
           if (birthcountry) {
