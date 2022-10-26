@@ -9,7 +9,11 @@ export default function User() {
   const [isLoading, setIsLoading] = useState(true);
 
   const dateParser = (date) => {
-    let newDate = new Date(date).toLocaleDateString("fr-FR");
+    let newDate = new Date(date).toLocaleDateString("fr-FR", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
     return newDate;
   };
 
