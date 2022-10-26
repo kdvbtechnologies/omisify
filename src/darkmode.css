@@ -4,6 +4,11 @@
     flex-wrap: wrap;
   }
 
+  .guide-color-blue-menu {
+    color: blue;
+    font-size: 17px;
+  }
+
   .navigation {
     display: flex;
     align-items: center;

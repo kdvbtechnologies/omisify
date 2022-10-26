@@ -19,7 +19,7 @@ export default function PartnerNavMenu() {
 
         {!welcomebonus && (
           <>
-            <NavLink className="navlink" to="/guide">
+            <NavLink className="guide-color-blue-menu" to="/guide">
               <li>Guide</li>
             </NavLink>
           </>
