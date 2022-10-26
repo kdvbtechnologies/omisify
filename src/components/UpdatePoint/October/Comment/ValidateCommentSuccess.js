@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function ValidateCommentSuccess() {
   const family = {
     fontFamily:
@@ -10,7 +12,9 @@ export default function ValidateCommentSuccess() {
         <div className="title">
           <p>Validation Réussie !</p>
         </div>
-        <button>Terminer</button>
+        <NavLink to="/update-point">
+          <button>Terminer</button>
+        </NavLink>
       </div>
     </div>
   );

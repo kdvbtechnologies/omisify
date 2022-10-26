@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function ValidateCommentError() {
   const family = {
     fontFamily:
@@ -10,7 +12,9 @@ export default function ValidateCommentError() {
         <div className="title">
           <p>Validation Impossible !</p>
         </div>
-        <button>Réessayer</button>
+        <NavLink to="/calcul-comment">
+          <button>Réessayer</button>
+        </NavLink>
       </div>
     </div>
   );
