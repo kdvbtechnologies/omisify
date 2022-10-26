@@ -143,6 +143,9 @@ import AuthSignup from "./components/AuthSignup";
 import AskPoster from "./components/Others/Ask/AskPoster";
 import AskPosterSuccess from "./components/Others/Ask/AskPosterSuccess";
 
+// program
+import ProgramAffiliation from "./components/Program/ProgramAffiliation";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -417,6 +420,7 @@ export default function App() {
         />
 
         <Route path="/others-panel" element={<OthersPanel />} />
+        <Route path="/program-affiliation" element={<ProgramAffiliation />} />
       </Routes>
     </BrowserRouter>
   );

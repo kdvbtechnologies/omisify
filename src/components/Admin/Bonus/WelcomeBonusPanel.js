@@ -8,6 +8,11 @@ export default function WelcomeBonusPanel() {
   const [api, setApi] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  const dateParser = (date) => {
+    let newDate = new Date(date).toLocaleDateString("fr-FR");
+    return newDate;
+  };
+
   useEffect(() => {
     async function get() {
       await axios
@@ -58,7 +63,7 @@ export default function WelcomeBonusPanel() {
                     </div>
 
                     <p>Créé : {api.createdAt}</p>
-                    <p>Modifié : {api.updatedAt}</p>
+                    <p>Modifié : {dateParser(api.updatedAt)}</p>
                     <p>userId : {api.userId}</p>
                   </div>
                 </div>
