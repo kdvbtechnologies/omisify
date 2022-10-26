@@ -4,9 +4,10 @@ import { useNavigate } from "react-router-dom";
 import Loader from "../../Partenaire Omisify/Loader";
 
 export default function AskPoster() {
+  const getaskposter = "Devenir Partenaire Omisify";
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
-  const [askposter, setAskposter] = useState("");
+  const [askposter, setAskposter] = useState(getaskposter);
   const userId = localStorage.getItem("https://omisify.com/userId");
   const name = localStorage.getItem("https://omisify.com/name");
   const partnername = localStorage.getItem("https://omisify.com/partnername");
@@ -61,8 +62,9 @@ export default function AskPoster() {
             <option value="Devenir Partenaire Omisify">
               Devenir Partenaire Omisify
             </option>
-            <option value="Création de Site internet">
-              Création de Site internet
+
+            <option value="Publicité gratuite chez Omisify Business">
+              Publicité gratuite chez Omisify Business
             </option>
           </select>
           {isLoading ? (
