@@ -9,7 +9,10 @@ export default function AskPosterSuccess() {
   return (
     <div style={family} className="ask-poster-success">
       <div className="title">
-        <p>Demande Envoyé !</p>
+        <p>Demande Validé !</p>
+      </div>
+      <div className="a">
+        <p>Contacter le Service Partenaire pour le retrait de vos affiches</p>
       </div>
       <NavLink to="/others">
         <button>Terminé</button>
