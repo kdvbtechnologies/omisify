@@ -45,32 +45,30 @@ export default function WelcomeBonusPanel() {
           <Loader />
         ) : (
           <>
-            {api
-              .sort((a, b) => a.updatedAt - b.updatedAt)
-              .map((api) => (
-                <>
-                  <div className="shrink">
-                    <div className="a">
-                      <div className="name">
-                        <p>{api.partnername}</p>
-                      </div>
-
-                      <p>Noms : {api.name}</p>
-                      <p>Code BM : {api.codewelcomementor}</p>
-                      <p>Bonus EP : {api.bestpartnerbonus}</p>
-
-                      <div className="b">
-                        <p>Demande d'Affiches</p>
-                        <p>PA : {api.askposter}</p>
-                      </div>
-
-                      <p>Créé : {dateParser(api.createdAt)}</p>
-                      <p>Modifié : {dateParser(api.updatedAt)}</p>
-                      <p>userId : {api.userId}</p>
+            {api.sort().map((api) => (
+              <>
+                <div className="shrink">
+                  <div className="a">
+                    <div className="name">
+                      <p>{api.partnername}</p>
                     </div>
+
+                    <p>Noms : {api.name}</p>
+                    <p>Code BM : {api.codewelcomementor}</p>
+                    <p>Bonus EP : {api.bestpartnerbonus}</p>
+
+                    <div className="b">
+                      <p>Demande d'Affiches</p>
+                      <p>PA : {api.askposter}</p>
+                    </div>
+
+                    <p>Créé : {dateParser(api.createdAt)}</p>
+                    <p>Modifié : {dateParser(api.updatedAt)}</p>
+                    <p>userId : {api.userId}</p>
                   </div>
-                </>
-              ))}
+                </div>
+              </>
+            ))}
           </>
         )}
       </div>
