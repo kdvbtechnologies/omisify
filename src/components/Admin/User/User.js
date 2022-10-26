@@ -13,6 +13,8 @@ export default function User() {
       year: "numeric",
       month: "long",
       day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
     });
     return newDate;
   };
