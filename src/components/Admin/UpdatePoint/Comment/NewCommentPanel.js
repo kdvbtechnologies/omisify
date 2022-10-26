@@ -9,6 +9,7 @@ export default function NewCommentPanel() {
   const [numbercommententeradmin, setNumbercommententeradmin] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState("");
+  const statuscomment = "YES";
 
   async function Validate(e) {
     setIsLoading(true);
@@ -24,6 +25,7 @@ export default function NewCommentPanel() {
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
       data: {
         numbercommententeradmin,
+        statuscomment,
       },
     })
       .then((res) => {

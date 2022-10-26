@@ -19,6 +19,16 @@ export default function ValidateCommentSuccess() {
               pointtcommentlife
             );
           }
+
+          const pointtlife = res.data.pointtlife;
+          if (pointtlife) {
+            localStorage.setItem("https://omisify.com/pointtlife", pointtlife);
+          }
+
+          const gaintlife = res.data.gaintlife;
+          if (gaintlife) {
+            localStorage.setItem("https://omisify.com/gaintlife", gaintlife);
+          }
         })
         .catch((err) => console.log(err));
       setIsLoading(false);
