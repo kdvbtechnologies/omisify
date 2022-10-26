@@ -414,6 +414,7 @@ export default function App() {
           path="/validate-comment-error"
           element={<ValidateCommentError />}
         />
+        <Route path="/partner-nav-menu" element={<PartnerNavMenu />} />
       </Routes>
     </BrowserRouter>
   );

@@ -4,9 +4,13 @@
     flex-wrap: wrap;
   }
 
+  .menu-navigation .guide-color-blue-menu {
+    color: blue;
+  }
+
   .menu-navigation .guide-color-blue-menu li {
     color: blue;
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .navigation {
