@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import Loader from "../../../Partenaire Omisify/Loader";
 
 export default function CalculComment() {
-  const newnumbercommententeradmin = 0;
-  const statuscomment = "NO";
+  const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     async function get() {
@@ -43,7 +45,9 @@ export default function CalculComment() {
     (parseInt(newnumber) + parseInt(oldpointtcommentlife)) * 0.01;
   console.log(calculpointtcommentlife);
 
-  function Save() {
+  function Save(e) {
+    setIsLoading(true);
+    e.preventDefault();
     localStorage.setItem("https://omisify.com/newnumber", newnumber);
 
     localStorage.setItem(
@@ -51,60 +55,70 @@ export default function CalculComment() {
       calculpointtcommentlife
     );
     console.log("resultat sauvegarder dans le localstorage");
+    window.location = "/validate-calcul-comment";
   }
 
-  //const userId = localStorage.getItem("https://omisify.com/userId");
-  const pointtcommentlife = localStorage.getItem(
-    "https://omisify.com/resultpointtcommentlife"
-  );
-
-  async function Send() {
-    const numbercommententeradmin = localStorage.getItem(
-      "https://omisify.com/numbercommententeradmin"
-    );
-
-    let getnewnumber = localStorage.getItem("https://omisify.com/newnumber");
-    console.log(getnewnumber);
-
-    if (getnewnumber === numbercommententeradmin) {
-      await axios({
-        method: "put",
-        url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/634c8ab0f59d4e9994f83884`,
-        data: {
-          pointtcommentlife,
-          numbercommententeradmin: newnumbercommententeradmin,
-          statuscomment,
-        },
-      })
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err));
-      console.log("Validation reussie !");
-    } else {
-      //window.location = "/partner"
-      console.log("Validation impossoble !");
-    }
-  }
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  };
 
   return (
-    <>
-      <p>Ancien total des commentaires : {oldpointtcommentlife}</p>
-      <p>Opération</p>
-      <p>
-        {newnumber} + {oldpointtcommentlife} = {calculpointtcommentlife}
-      </p>
-      <p>Nouveau nombre</p>
-      <input
-        type="text"
-        value={newnumber}
-        onChange={(e) => setNewnumber(e.target.value)}
-        name="newnumber"
-      />
-      <button onClick={Save}>Sauvegarder</button>
-      <p>
-        Cliquer sur le bouton Envoyer pour envoyer les résultats des
-        commentaires
-      </p>
-      <button onClick={Send}>Envoyer</button>
-    </>
+    <div style={family}>
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>Retour</button>
+      </div>
+      <div className="stats-big-title">
+        <p>Actualisation des points</p>
+      </div>
+      <div className="update-comment">
+        <div className="title">
+          <p>Commentaire</p>
+        </div>
+
+        <div className="a">
+          <div className="b">
+            <p>
+              L'option Commentaire s'agit d'un commentaire concernant un produit
+              ou une entreprise que le Partenaire a publié sur la publication
+              d'une personne ou sur sa propre publication
+            </p>
+            <p>1 commentaire : 1 point = 0.001€</p>
+          </div>
+
+          <div className="c">
+            <p>Calculer le résultat de votre travail</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="calcul-comment">
+        <div className="a">
+          <p>Ancien total : {oldpointtcommentlife} point(s)</p>
+          <p>
+            ({newnumber} + {oldpointtcommentlife}) x 0.01 ={" "}
+            {calculpointtcommentlife} point(s)
+          </p>
+        </div>
+
+        <div className="a">
+          <p>Entrer le nombre de commentaire(s)</p>
+        </div>
+        <input
+          type="number"
+          value={newnumber}
+          onChange={(e) => setNewnumber(e.target.value)}
+          name="newnumber"
+          placeholder="Nombre de commentaire(s)"
+        />
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>
+            <button onClick={Save}>Calcul terminé</button>
+          </>
+        )}
+      </div>
+    </div>
   );
 }

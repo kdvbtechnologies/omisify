@@ -99,6 +99,11 @@ import SecureUpdatePublication from "./components/UpdatePoint/October/Publicatio
 import SecureUpdatePWI from "./components/UpdatePoint/October/PWI/SecureUpdatePWI";
 import SecureUpdatePWP from "./components/UpdatePoint/October/PWP/SecureUpdatePWP";
 
+import CalculComment from "./components/UpdatePoint/October/Comment/CalculComment";
+import ValidateCalculComment from "./components/UpdatePoint/October/Comment/ValidateCalculComment";
+import ValidateCommentSuccess from "./components/UpdatePoint/October/Comment/ValidateCommentSuccess";
+import ValidateCommentError from "./components/UpdatePoint/October/Comment/ValidateCommentError";
+
 // panel welcome bonus
 import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
 import UpdateCommentPanel from "./components/Admin/UpdatePoint/Comment/UpdateCommentPanel";
@@ -127,6 +132,7 @@ import UpdatepublicationPanel from "./components/Admin/UpdatePoint/Publication/U
 import UpdatelikespublicationPanel from "./components/Admin/UpdatePoint/LikesPublication/UpdateLikesPublicationPanel";
 import UpdatepwpPanel from "./components/Admin/UpdatePoint/PWP/UpdatePWPPanel";
 import UpdatepwiPanel from "./components/Admin/UpdatePoint/PWI/UpdatePWIPanel";
+import NewCommentPanel from "./components/Admin/UpdatePoint/Comment/NewCommentPanel";
 
 // others
 import Others from "./components/Others/Others";
@@ -135,8 +141,6 @@ import Vocabulary from "./components/Others/Vocabulary/Vocabulary";
 import AuthSignup from "./components/AuthSignup";
 import AskPoster from "./components/Others/Ask/AskPoster";
 import AskPosterSuccess from "./components/Others/Ask/AskPosterSuccess";
-import CalculComment from "./components/UpdatePoint/October/Comment/CalculComment";
-import NewCommentPanel from "./components/Admin/UpdatePoint/Comment/NewCommentPanel";
 
 export default function App() {
   return (
@@ -398,6 +402,18 @@ export default function App() {
         <Route path="/ask-poster-success" element={<AskPosterSuccess />} />
         <Route path="/calcul-comment" element={<CalculComment />} />
         <Route path="/new-comment-panel" element={<NewCommentPanel />} />
+        <Route
+          path="/validate-calcul-comment"
+          element={<ValidateCalculComment />}
+        />
+        <Route
+          path="/validate-comment-success"
+          element={<ValidateCommentSuccess />}
+        />
+        <Route
+          path="/validate-comment-error"
+          element={<ValidateCommentError />}
+        />
       </Routes>
     </BrowserRouter>
   );

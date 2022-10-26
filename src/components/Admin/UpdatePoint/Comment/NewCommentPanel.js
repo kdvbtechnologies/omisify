@@ -1,8 +1,10 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Loader from "../../../Partenaire Omisify/Loader";
 
 export default function NewCommentPanel() {
+  const navigate = useNavigate();
   const [userId, setUserId] = useState("");
   const [numbercommententeradmin, setNumbercommententeradmin] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -48,7 +50,7 @@ export default function NewCommentPanel() {
   return (
     <>
       <div className="back-btn">
-        <button>Retour</button>
+        <button onClick={() => navigate(-1)}>Retour</button>
       </div>
       <div style={family} className="new-comment-panel">
         <div className="title">
