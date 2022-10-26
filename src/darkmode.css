@@ -2013,7 +2013,59 @@ footer {
   border-radius: 20px;
 }
 
+/* admin - welcome bonus panel.js */
+/* admin - welcome bonus panel.js */
+/* admin - welcome bonus panel.js */
+/* admin - welcome bonus panel.js */
+/* admin - welcome bonus panel.js */
+/* admin - welcome bonus panel.js */
+/* admin - welcome bonus panel.js */
+.welcome-bonus-panel .title {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.welcome-bonus-panel .shrink {
+  padding: 100px 500px;
+}
+
+.welcome-bonus-panel .a {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px 15px;
+  color: #444;
+}
+
+.welcome-bonus-panel .shrink .a p {
+  padding: 7px 0px;
+}
+
+.welcome-bonus-panel .shrink .a .name {
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.welcome-bonus-panel .shrink .a .b {
+  padding: 20px 0px;
+}
+
+.welcome-bonus-panel .shrink .a .b p {
+  font-size: 15px;
+  color: #444;
+}
+
 @media screen and (max-width: 1250px) {
+
+  .welcome-bonus-panel .shrink {
+    padding: 100px 420px;
+  }
+
   .home .code-welcome-bonus-a {
     padding: 100px 300px;
   }
@@ -2048,6 +2100,10 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+  .welcome-bonus-panel .shrink {
+    padding: 100px 320px;
+  }
+
   .home .code-welcome-bonus-a {
     padding: 100px 200px;
   }
@@ -2081,6 +2137,11 @@ footer {
 }
 
 @media screen and (max-width: 760px) {
+
+  .welcome-bonus-panel .shrink {
+    padding: 100px 20px;
+  }
+
   .new-comment-panel .align {
     padding-top: 0px;
   }

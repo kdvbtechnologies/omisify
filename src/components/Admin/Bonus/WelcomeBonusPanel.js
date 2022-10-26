@@ -1,16 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import LoginNav from "../../Auth/LoginNav";
+import { useNavigate } from "react-router-dom";
 import Loader from "../../Partenaire Omisify/Loader";
-import PanelNav from "../Navigation/PanelNav";
-import BestPartnerBonus from "./BestPartnerBonus";
-import GenerosityDaysBonus from "./GenerosityDaysBonus";
 
 export default function WelcomeBonusPanel() {
+  const navigate = useNavigate();
   const [api, setApi] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [userId, setUserId] = useState("");
-  const welcomebonus = 100;
 
   useEffect(() => {
     async function get() {
@@ -26,20 +22,6 @@ export default function WelcomeBonusPanel() {
     get();
   }, []);
 
-  // welcome bonus
-  async function AddWelcomeBonus(e) {
-    e.preventDefault();
-    await axios({
-      method: "put",
-      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updateuserinfos/${userId}`,
-      data: {
-        welcomebonus,
-      },
-    })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
-  }
-
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -47,51 +29,42 @@ export default function WelcomeBonusPanel() {
 
   return (
     <div style={family}>
-      <LoginNav />
-      <PanelNav />
-      <p>Ajouter le bonus de Bienvenue</p>
-      <input
-        type="text"
-        placeholder="userId"
-        value={userId}
-        onChange={(e) => setUserId(e.target.value)}
-      />
-
-      <button onClick={AddWelcomeBonus}>Ajouter</button>
-      <hr />
-      <hr />
-      <BestPartnerBonus />
-      <GenerosityDaysBonus />
-
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <div className="panel-main">
-            <div className="panel">
-              <h3>Code de Bienvenue</h3>
-              {api
-                .sort((a, b) => a.bestpartnerbonus - b.bestpartnerbonus)
-                .map((api) => (
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>Retour</button>
+      </div>
+      <div className="welcome-bonus-panel">
+        <div className="title">
+          <p>Demande du Bonus de Bienvenue</p>
+        </div>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>
+            <div className="shrink">
+              <div className="a">
+                {api.map((api) => (
                   <>
-                    <p>userId: {api.userId}</p>
-                    <p>Noms du demandeur : {api.partnername}</p>
-                    <p>Noms court du demandeur : {api.shortname}</p>
-                    <p>Code de Bienvenue du mentor : {api.codewelcomementor}</p>
-                    <p>Bonus d'excellent Partenaire : {api.bestpartnerbonus}</p>
-                    <p>
-                      Demande d'Affiches pour le programme d'affiliation :{" "}
-                      {api.askposter}
-                    </p>
-                    <p>- - -- - -- - -- - -- - -- - -- - -</p>
-                    <hr />
-                    <hr />
+                    <div className="name">
+                      <p>{api.partnername}</p>
+                    </div>
+
+                    <p>Noms court : {api.shortname}</p>
+                    <p>Code BM : {api.codewelcomementor}</p>
+                    <p>Bonus EP : {api.bestpartnerbonus}</p>
+
+                    <div className="b">
+                      <p>Demande d'Affiches</p>
+                      <p>PA : {api.askposter}</p>
+                    </div>
+
+                    <p>userId : {api.userId}</p>
                   </>
                 ))}
+              </div>
             </div>
-          </div>
-        </>
-      )}
+          </>
+        )}
+      </div>
     </div>
   );
 }
