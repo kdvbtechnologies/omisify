@@ -91,8 +91,8 @@ export default function CalculComment() {
           <div className="c">
             <p>Calculer le résultat de votre travail</p>
           </div>
-          <div className="validation-automatic">
-            {api.map((api) => (
+          <div className="status-comment">
+            {api.map((api, id) => (
               <p>Validation automatique : {api.statuscomment}</p>
             ))}
           </div>
