@@ -42,7 +42,7 @@ export default function CalculComment() {
   );
 
   const calculpointtcommentlife =
-    (parseInt(newnumber) + parseInt(oldpointtcommentlife)) * 0.01;
+    parseInt(newnumber) * 0.01 + parseInt(oldpointtcommentlife);
   console.log(calculpointtcommentlife);
 
   function Save(e) {
@@ -97,7 +97,7 @@ export default function CalculComment() {
           <p>Ancien total : {oldpointtcommentlife} point(s)</p>
           {newnumber && oldpointtcommentlife && (
             <p>
-              ({newnumber} + {oldpointtcommentlife}) x 0.01 ={" "}
+              ({newnumber} x 0.01 ) + {oldpointtcommentlife} ={" "}
               {calculpointtcommentlife} point(s)
             </p>
           )}
