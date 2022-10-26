@@ -46,7 +46,7 @@ export default function WelcomeBonusPanel() {
         ) : (
           <>
             {api
-              .sort((a, b) => a - b)
+              .sort((a, b) => b - a)
               .map((api) => (
                 <>
                   <div className="shrink">
