@@ -133,6 +133,7 @@ import UpdatelikespublicationPanel from "./components/Admin/UpdatePoint/LikesPub
 import UpdatepwpPanel from "./components/Admin/UpdatePoint/PWP/UpdatePWPPanel";
 import UpdatepwiPanel from "./components/Admin/UpdatePoint/PWI/UpdatePWIPanel";
 import NewCommentPanel from "./components/Admin/UpdatePoint/Comment/NewCommentPanel";
+import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 
 // others
 import Others from "./components/Others/Others";
@@ -414,6 +415,8 @@ export default function App() {
           path="/validate-comment-error"
           element={<ValidateCommentError />}
         />
+
+        <Route path="/others-panel" element={<OthersPanel />} />
       </Routes>
     </BrowserRouter>
   );
