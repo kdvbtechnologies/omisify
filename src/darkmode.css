@@ -4,7 +4,7 @@
     flex-wrap: wrap;
   }
 
-  .guide-color-blue-menu {
+  .guide-color-blue-menu li {
     color: blue;
     font-size: 17px;
   }
