@@ -105,7 +105,7 @@ export default function CalculComment() {
   on additionne le tout par le gaintlife qu'on avait recuperer dans le localStorage 
   */
 
-  const calculgaintlife = parseInt(newnumber) * 0.001 + parseInt(oldgaintlife);
+  const calculgaintlife = parseInt(oldgaintlife) + parseInt(newnumber) * 0.001;
   console.log(calculgaintlife);
 
   const calculpointtcommentlife =
