@@ -14,10 +14,6 @@ export default function CalculComment() {
     "https://omisify.com/resultpointtlife"
   );
 
-  const numbercommententeradmin = localStorage.getItem(
-    "https://omisify.com/numbercommententeradmin"
-  );
-
   /* 
   N.B : il faut commencer à lire la ou c'est ecrit premierement
 
@@ -201,9 +197,6 @@ export default function CalculComment() {
 
           <div className="status-comment">
             {statuscomment && <p>Validation automatique : {statuscomment}</p>}
-            {numbercommententeradmin && (
-              <p>{numbercommententeradmin} nouveau(x) commentaire(s)</p>
-            )}
           </div>
 
           <p>Ancien Total C : {oldpointtcommentlife} point(s)</p>
