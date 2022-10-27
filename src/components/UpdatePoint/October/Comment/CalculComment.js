@@ -135,10 +135,7 @@ export default function CalculComment() {
       calculpointtcommentlife
     );
 
-    localStorage.setItem(
-      "https://omisify.com/resultgaintlife",
-      calculgaintlife
-    );
+    localStorage.setItem("https://omisify.com/gaintlife", calculgaintlife);
 
     //window.location = "/validate-calcul-comment";
   }
