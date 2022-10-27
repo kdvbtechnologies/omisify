@@ -65,9 +65,9 @@ export default function CalculComment() {
           }
         })
         .catch((err) => console.log(err));
-      window.location.reload();
     }
     get();
+    window.location.reload();
   }, []);
 
   const [newnumber, setNewnumber] = useState("");
