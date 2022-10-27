@@ -110,7 +110,7 @@ export default function CalculComment() {
 
   const calculgaintlife =
     parseInt(newnumber) * parseInt(0.001) + parseInt(oldgaintlife);
-
+  console.log(calculgaintlife);
   /* quatriemement on sauvegarde calculpointtcommentlife (et les autres) dans le 
   localStorage, ensuite on sauvegarde aussi le nombre de comment (newnumber)
 
@@ -140,7 +140,7 @@ export default function CalculComment() {
       calculgaintlife
     );
 
-    window.location = "/validate-calcul-comment";
+    //window.location = "/validate-calcul-comment";
   }
 
   const family = {
