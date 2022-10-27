@@ -65,6 +65,7 @@ export default function CalculComment() {
           }
         })
         .catch((err) => console.log(err));
+      window.location.reload();
     }
     get();
   }, []);
