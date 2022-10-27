@@ -199,7 +199,7 @@ export default function CalculComment() {
             {statuscomment && <p>Validation automatique : {statuscomment}</p>}
           </div>
 
-          <p>Ancien total C : {oldpointtcommentlife} point(s)</p>
+          <p>Ancien Total C : {oldpointtcommentlife} point(s)</p>
 
           {newnumber && oldpointtcommentlife && (
             <p>
@@ -210,8 +210,8 @@ export default function CalculComment() {
 
           {resultgaintlife && (
             <div className="c">
-              <i>Point Total(s) : {resultpointtlife} point(s)</i>
-              <i>Gain : {resultgaintlife}€</i>
+              <i>Total des Points : {resultpointtlife} point(s)</i>
+              <i>Gains : {resultgaintlife}€</i>
             </div>
           )}
 

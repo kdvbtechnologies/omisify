@@ -1651,60 +1651,80 @@ padding-bottom: 70px;
   font-size: 14px;
 }
 
-/*
-.calcul-comment {
+/* update point - validate calcul comment.js */
+/* update point - validate calcul comment.js */
+/* update point - validate calcul comment.js */
+/* update point - validate calcul comment.js */
+/* update point - validate calcul comment.js */
+/* update point - validate calcul comment.js */
+
+
+.validate-calcul-comment {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   padding-bottom: 70px;
 }
 
-.calcul-comment .a {
-  padding-top: 20px;
-}
-
-.calcul-comment .a p {
-  padding: 10px 0px;
-}
-
-.calcul-comment .c {
-  font-size: 14px;
-  padding: 10px 20px;
-  color: #444;
-}
-
-.calcul-comment .c .navlink {
-  color: blue
-}
-
-.calcul-comment input[type="number"] {
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  background-color: transparent;
+.validate-calcul-comment .title {
+  color: blue;
+  font-size: 25px;
+  font-weight: bold;
   text-align: center;
 }
 
-.calcul-comment button {
-  cursor: pointer;
-  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: blue;
-  border: 1px solid blue;
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 50px 0px;
-  border-radius: 20px;
+.validate-calcul-comment .a p {
+  padding: 20px;
 }
 
-.status-comment {
-  color: #444;
-  font-size: 14px;
-}*/
+.validate-calcul-comment .a .shrink-border {
+  padding: 20px 200px;
+}
 
-/* update point - validate comment success */
-/* update point - validate comment success */
+.validate-calcul-comment .a .border {
+  padding: 35px 20px;
+  font-size: 16px;
+  border: 3px solid #eee;
+  border-radius: 10px;
+}
+
+.validate-calcul-comment .a .border p {
+  color: #444;
+  padding: 5px 0px;
+}
+
+.validate-calcul-comment .go-down-i {
+  padding-bottom: 20px;
+}
+
+.validate-calcul-comment .navlink {
+  color: blue;
+}
+
+.validate-calcul-comment .b {
+  font-size: 14px;
+  padding: 3px 15px;
+}
+
+.validate-calcul-comment .c p {
+  font-size: 15px;
+  padding-bottom: 40px;
+}
+
+.validate-calcul-comment button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: red;
+  font-size: 14px;
+}
+
+
+
 /* update point - validate comment success */
 /* update point - validate comment success */
 /* update point - validate comment success */
@@ -2152,6 +2172,14 @@ padding-bottom: 70px;
 /* 1250px */
 /* 1250px */
 @media screen and (max-width: 1250px) {
+  .validate-calcul-comment .a .shrink-border {
+    padding: 20px 200px;
+  }
+  
+  .validate-calcul-comment .a .border {
+    padding: 35px 20px;
+  }
+
   .calcul-comment .a p {
     padding: 2px 250px;
   }
@@ -2203,6 +2231,7 @@ padding-bottom: 70px;
 /* 1000px */
 /* 1000px */
 @media screen and (max-width: 1000px) {
+
   .calcul-comment .a p {
     padding: 2px 150px;
   }
@@ -2255,6 +2284,15 @@ padding-bottom: 70px;
 /* 760px */
 /* 760px */
 @media screen and (max-width: 760px) {
+
+  .validate-calcul-comment .a .shrink-border {
+    padding: 20px 120px;
+  }
+  
+  .validate-calcul-comment .a .border {
+    padding: 35px 20px;
+  }
+
   .calcul-comment .a p {
     padding: 2px 20px;
   }
@@ -2445,9 +2483,20 @@ padding-bottom: 70px;
 
 
 
+@media screen and (max-width: 700px) {
+  
+
+}
 
 @media screen and (max-width: 488px) {
- 
+  .validate-calcul-comment .a .shrink-border {
+    padding: 20px 25px;
+  }
+  
+  .validate-calcul-comment .a .border {
+    padding: 30px 15px;
+  }
+
   .flex-stats {
     display: flex;
     justify-content: center;

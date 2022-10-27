@@ -45,7 +45,7 @@ export default function ValidateCommentSuccess() {
     <div style={family}>
       <div className="validate-comment-success">
         <div className="title">
-          <p>Validation Réussie !</p>
+          <p>Résultats Validés !</p>
         </div>
         {isLoading ? (
           <Loader />

@@ -8,6 +8,10 @@ export default function ValidateCalculComment() {
   const newnumbercommententeradmin = 0;
   const statuscomment = "NO";
 
+  const resultpointtlife = localStorage.getItem(
+    "https://omisify.com/resultpointtlife"
+  );
+
   //const userId = localStorage.getItem("https://omisify.com/userId");
 
   /* premierement on recupere le pointtcommentlife (et les autres) qu'on avait sauvegardé 
@@ -78,50 +82,58 @@ export default function ValidateCalculComment() {
       <div className="stats-big-title">
         <p>Actualisation des points</p>
       </div>
-      <div className="update-comment">
+      <div className="validate-calcul-comment">
         <div className="title">
           <p>Résultats</p>
         </div>
 
         <div className="a">
-          <div className="b">
-            <p>Option : Commentaire</p>
-            <p>Cliquer sur Valider pour actualiser vos points</p>
+          <p>Option : Commentaire</p>
+
+          <div className="shrink-border">
+            <div className="border">
+              {pointtcommentlife && (
+                <>
+                  <p>Commentaire(s) : {pointtcommentlife} point(s)</p>
+                  <p>Total des Points : {resultpointtlife} point(s)</p>
+                  <p>Gains : {gaintlife}€</p>
+                </>
+              )}
+            </div>
+          </div>
+
+          <div className="go-down-i">
+            <div className="b">
+              <i>
+                Avant de cliquer sur Valider, vérifier que les résultats de
+                votre travail affichés sur cette page sont conformes à ce que
+                vous avez calculés
+              </i>
+            </div>
+
+            <div className="b">
+              <i>
+                Si les résultats ne sont pas correct, cliquer{" "}
+                <NavLink className="navlink" to="/before-calcul-comment">
+                  ici
+                </NavLink>{" "}
+                pour reprendre les calculs ou{" "}
+                <NavLink className="navlink" to="/partner-contact">
+                  contacter
+                </NavLink>{" "}
+                le service partenaire pour obtenir de l'aide
+              </i>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="calcul-comment">
-        <div className="a">
-          {pointtcommentlife && (
-            <p>Commentaire(s) : {pointtcommentlife} points</p>
-          )}
-        </div>
 
-        <div className="c">
-          <i>
-            Avant de cliquer sur Valider, vérifier que les résultats de votre
-            travail affichés sur cette page sont conformes à ce que vous avez
-            calculés
-          </i>
-        </div>
-
-        <div className="c">
-          <i>
-            Si les résultats ne sont pas correct, cliquer{" "}
-            <NavLink className="navlink" to="/before-calcul-comment">
-              ici
-            </NavLink>{" "}
-            pour reprendre les calculs ou{" "}
-            <NavLink className="navlink" to="/partner-contact">
-              contacter
-            </NavLink>{" "}
-            le service partenaire pour obtenir de l'aide
-          </i>
-        </div>
         {isLoading ? (
           <Loader />
         ) : (
           <>
+            <div className="c">
+              <p>Cliquer sur Valider pour actualiser vos points</p>
+            </div>
             <button onClick={Validate}>Valider</button>
           </>
         )}
