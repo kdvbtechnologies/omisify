@@ -108,7 +108,7 @@ export default function CalculComment() {
   */
 
   const getdate = new Date();
-  const date = getdate.toDateString();
+  const date = getdate.toLocaleDateString("fr-FR");
   console.log(date);
 
   let x = Math.floor(Math.random() * 10000 + 1);
