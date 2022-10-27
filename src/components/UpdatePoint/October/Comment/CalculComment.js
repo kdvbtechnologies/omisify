@@ -7,6 +7,21 @@ export default function CalculComment() {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
+  /* 
+  N.B : il faut commencer à lire la ou c'est ecrit premierement
+
+  on recupere le statutcomment pour savoir si la validation automatique est OPEN (ouverte)
+  ou CLOSE (fermer) 
+
+  lorsque lui il fera un put, il va modifier le statut a CLOSE
+  lorsque que nous on fera un put, on va modifier le Statut a OPEN (ouverte)
+  */
+  const statuscomment = localStorage.getItem(
+    "https://omisify.com/statuscomment"
+  );
+
+  /* premierement on recupere le pointtcommentlife, pointtlife, le gaintlife, 
+  statuscomment, numbercommententeradmin puis on sauvegarde dans le localStorage  */
   useEffect(() => {
     async function get() {
       await axios
@@ -15,11 +30,11 @@ export default function CalculComment() {
         )
         .then((res) => {
           console.log(res);
-          const getpointtcommentlife = res.data.pointtcommentlife;
-          if (getpointtcommentlife) {
+          const pointtcommentlife = res.data.pointtcommentlife;
+          if (pointtcommentlife) {
             localStorage.setItem(
               "https://omisify.com/pointtcommentlife",
-              getpointtcommentlife
+              pointtcommentlife
             );
           }
 
@@ -38,6 +53,16 @@ export default function CalculComment() {
               statuscomment
             );
           }
+
+          const pointtlife = res.data.pointtlife;
+          if (pointtlife) {
+            localStorage.setItem("https://omisify.com/pointtlife", pointtlife);
+          }
+
+          const gaintlife = res.data.gaintlife;
+          if (gaintlife) {
+            localStorage.setItem("https://omisify.com/gaintlife", gaintlife);
+          }
         })
         .catch((err) => console.log(err));
     }
@@ -45,13 +70,59 @@ export default function CalculComment() {
   }, []);
 
   const [newnumber, setNewnumber] = useState("");
+
+  /* deuxiemement on recupere le pointtcommentlife (et les autres elements) qu'on a 
+  sauvegarder dans le localStorage */
   const oldpointtcommentlife = localStorage.getItem(
     "https://omisify.com/pointtcommentlife"
   );
 
+  // const oldpointtlife = localStorage.getItem("https://omisify.com/pointtlife");
+
+  const oldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
+
+  /* 
+
+  troisiemement on effectue le calcul avec le pointtcommentlife qu'on
+  a recuperer.
+
+  Calcul a effectuer :
+
+  on prends le nombre de comment (newnumber) multiplié par la valeur
+  de 1 comment
+  1 comment = 1 point
+  
+
+  apres avoir multiplié, on additionne le tout par le pointtcommentlife qu'on avait
+  recuperer dans le localStorage 
+  
+  et ensuite le resultat de notre calcul est dans calculpointtcommentlife
+
+
+  pour les gains
+  1 comment = 0.001€
+  on prend le nombre de comment (newnumber) multiplié par le gain de 1 comment
+  on additionne le tout par le gaintlife qu'on avait recuperer dans le localStorage 
+  */
   const calculpointtcommentlife =
     parseInt(newnumber) * 1 + parseInt(oldpointtcommentlife);
   console.log(calculpointtcommentlife);
+
+  const calculgaintlife = parseInt(newnumber) * 0.001 + parseInt(oldgaintlife);
+
+  /* quatriemement on sauvegarde calculpointtcommentlife (et les autres) dans le 
+  localStorage, ensuite on sauvegarde aussi le nombre de comment (newnumber)
+
+  newnumber
+  calculpointtcommentlife
+
+  -- autres --
+  calculgaintlife
+
+  Apres la sauvegarde des elements, la page recharge et on est rediriger sur 
+  la page /validate-calcul-comment, cette page nous permet de put ( ou d'envoyer) le 
+  resultat total qui est sauvegarder dans le localStorage
+  */
 
   function Save(e) {
     setIsLoading(true);
@@ -62,13 +133,14 @@ export default function CalculComment() {
       "https://omisify.com/resultpointtcommentlife",
       calculpointtcommentlife
     );
-    console.log("resultat sauvegarder dans le localstorage");
+
+    localStorage.setItem(
+      "https://omisify.com/resultgaintlife",
+      calculgaintlife
+    );
+
     window.location = "/validate-calcul-comment";
   }
-
-  const statuscomment = localStorage.getItem(
-    "https://omisify.com/statuscomment"
-  );
 
   const family = {
     fontFamily:

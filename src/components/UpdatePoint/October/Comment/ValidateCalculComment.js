@@ -10,9 +10,26 @@ export default function ValidateCalculComment() {
   const statuscomment = "NO";
 
   //const userId = localStorage.getItem("https://omisify.com/userId");
+
+  /* premierement on recupere le pointtcommentlife (et les autres) qu'on avait sauvegardé 
+  dans le localStorage 
+
+  ensuite pour le pointtcommentlife
+  on effectue une verification, pour la validation automatique
+  si le nombre de comment qu'il a rentrer correspond au nombre de comment que l'admin
+  avait rentrer alors la validation sera reussie sinon la validation sera impossible
+  
+  validation reussie = total envoyé et mis a jour sur le profil de l'utilisateur
+
+  pour le gaintlife
+  on met directement gaintlife au niveau de data pour etre pret a envoyé
+
+  */
   const pointtcommentlife = localStorage.getItem(
     "https://omisify.com/resultpointtcommentlife"
   );
+
+  const gaintlife = localStorage.getItem("https://omisify.com/resultgaintlife");
 
   async function Validate(e) {
     setIsLoading(true);
@@ -32,12 +49,17 @@ export default function ValidateCalculComment() {
           pointtcommentlife,
           numbercommententeradmin: newnumbercommententeradmin,
           statuscomment,
+
+          gaintlife,
         },
       })
         .then((res) => console.log(res))
         .catch((err) => console.log(err));
+
+      // validation reussie
       window.location = "/validate-comment-success";
     } else {
+      // validation impossible
       window.location = "/validate-comment-error";
     }
   }

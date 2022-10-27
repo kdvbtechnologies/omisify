@@ -206,6 +206,16 @@ export default function Vocabulary() {
               d'une personne ou sur sa propre publication
             </p>
           </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Validation automatique</p>
+            </div>
+            <p>
+              Le statut YES signifie que la validation automatique est ouverte
+            </p>
+            <p>Le statut NO signifie que la validation automatique est fermé</p>
+          </div>
         </div>
       </div>
     </div>
