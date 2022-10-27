@@ -103,6 +103,7 @@ import CalculComment from "./components/UpdatePoint/October/Comment/CalculCommen
 import ValidateCalculComment from "./components/UpdatePoint/October/Comment/ValidateCalculComment";
 import ValidateCommentSuccess from "./components/UpdatePoint/October/Comment/ValidateCommentSuccess";
 import ValidateCommentError from "./components/UpdatePoint/October/Comment/ValidateCommentError";
+import BeforeCalculComment from "./components/UpdatePoint/October/Comment/BeforeCalculComment";
 
 // panel welcome bonus
 import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
@@ -421,6 +422,10 @@ export default function App() {
 
         <Route path="/others-panel" element={<OthersPanel />} />
         <Route path="/program-affiliation" element={<ProgramAffiliation />} />
+        <Route
+          path="/before-calcul-comment"
+          element={<BeforeCalculComment />}
+        />
       </Routes>
     </BrowserRouter>
   );

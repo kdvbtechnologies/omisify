@@ -216,6 +216,17 @@ export default function Vocabulary() {
             </p>
             <p>Le statut NO signifie que la validation automatique est fermé</p>
           </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Validation automatique</p>
+            </div>
+            <p>
+              Ancien Total des Commentaires abrégé en Ancien Total C s'agit du
+              total des points des commentaires qui ont été publiés depuis le
+              1er jour du travail
+            </p>
+          </div>
         </div>
       </div>
     </div>

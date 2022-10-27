@@ -1,11 +1,10 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import axios from "axios";
 import Loader from "../../../Partenaire Omisify/Loader";
 import { useState } from "react";
 
 export default function ValidateCalculComment() {
   const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate();
   const newnumbercommententeradmin = 0;
   const statuscomment = "NO";
 
@@ -72,7 +71,9 @@ export default function ValidateCalculComment() {
   return (
     <div style={family}>
       <div className="back-btn">
-        <button onClick={() => navigate(-1)}>Retour</button>
+        <NavLink to="/before-calcul-comment">
+          <button>Retour</button>
+        </NavLink>
       </div>
       <div className="stats-big-title">
         <p>Actualisation des points</p>
@@ -107,7 +108,7 @@ export default function ValidateCalculComment() {
         <div className="c">
           <i>
             Si les résultats ne sont pas correct, cliquer{" "}
-            <NavLink className="navlink" to="/calcul-comment">
+            <NavLink className="navlink" to="/before-calcul-comment">
               ici
             </NavLink>{" "}
             pour reprendre les calculs ou{" "}

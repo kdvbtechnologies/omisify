@@ -1584,6 +1584,75 @@ footer {
 /* update point - Calcul Comment */
 /* update point - Calcul Comment */
 .calcul-comment {
+padding-bottom: 70px;
+}
+
+.calcul-comment .title {
+  color: blue;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.calcul-comment .a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.calcul-comment .a p {
+  padding: 2px 20px;
+  color: #444;
+  font-size: 17px;
+}
+
+.calcul-comment .b p {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 0px;
+}
+
+.calcul-comment .status-comment p {
+  color: #444;
+  font-size: 14px;
+}
+
+.calcul-comment .c {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  color: #444;
+  font-size: 14px;
+  padding: 20px 0px;
+}
+
+.calcul-comment .d {
+  padding-bottom: 50px;
+}
+
+.calcul-comment .d input[type="number"] {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.calcul-comment button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  color: red;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid red;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+/*
+.calcul-comment {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1632,7 +1701,7 @@ footer {
 .status-comment {
   color: #444;
   font-size: 14px;
-}
+}*/
 
 /* update point - validate comment success */
 /* update point - validate comment success */
