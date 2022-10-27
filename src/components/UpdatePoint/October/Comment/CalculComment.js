@@ -79,7 +79,7 @@ export default function CalculComment() {
 
   // const oldpointtlife = localStorage.getItem("https://omisify.com/pointtlife");
 
-  const oldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
+  let oldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
 
   /* 
 
