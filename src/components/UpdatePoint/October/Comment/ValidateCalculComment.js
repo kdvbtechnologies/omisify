@@ -9,9 +9,6 @@ export default function ValidateCalculComment() {
   const newnumbercommententeradmin = 0;
   const statuscomment = "NO";
 
-  const date = new Date();
-  console.log(date);
-
   //const userId = localStorage.getItem("https://omisify.com/userId");
 
   /* premierement on recupere le pointtcommentlife (et les autres) qu'on avait sauvegardé 
@@ -54,7 +51,6 @@ export default function ValidateCalculComment() {
           statuscomment,
 
           gaintlife,
-          date,
         },
       })
         .then((res) => console.log(res))
