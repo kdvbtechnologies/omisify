@@ -109,6 +109,9 @@ export default function CalculComment() {
 
   console.log(calculgaintlife);
 
+  const d = new Date();
+  console.log(d);
+
   const calculpointtcommentlife =
     parseInt(newnumber) * 1 + parseInt(oldpointtcommentlife);
   console.log(calculpointtcommentlife);
