@@ -100,10 +100,10 @@ export default function InitializeNewPointComment() {
         console.log(res);
         dispatch(updateInfos(data));
 
-        const getoldpointtcommentoct2022 = res.data.pointtcommentoct2022;
+        const pointtcommentoct2022 = res.data.pointtcommentoct2022;
         localStorage.setItem(
-          "https://omisify.com/getoldpointtcommentoct2022",
-          getoldpointtcommentoct2022
+          "https://omisify.com/pointtcommentoct2022",
+          pointtcommentoct2022
         );
       })
       .catch((err) => console.log(err));

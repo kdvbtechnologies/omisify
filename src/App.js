@@ -236,6 +236,91 @@ export default function App() {
         <Route path="/secure-welcome-bonus" element={<SecureWelcomeBonus />} />
 
         <Route path="/secure-infos-update" element={<SecureInfosUpdate />} />
+
+        <Route path="/update-point" element={<UpdatePoint />} />
+        <Route path="/update-point-success" element={<UpdatePointSuccess />} />
+        <Route
+          path="/secure-update-comment"
+          element={<SecureUpdateComment />}
+        />
+
+        <Route path="/secure-update-e10k" element={<SecureUpdateE10k />} />
+
+        <Route path="/secure-update-email" element={<SecureUpdateEmail />} />
+
+        <Route
+          path="/secure-update-likescomment"
+          element={<SecureUpdateLikesComment />}
+        />
+
+        <Route
+          path="/secure-update-likespublication"
+          element={<SecureUpdateLikesPublication />}
+        />
+
+        <Route path="/secure-update-m10k" element={<SecureUpdateM10k />} />
+
+        <Route
+          path="/secure-update-message"
+          element={<SecureUpdateMessage />}
+        />
+
+        <Route path="/secure-update-mwi" element={<SecureUpdateMWI />} />
+
+        <Route
+          path="/secure-update-publication"
+          element={<SecureUpdatePublication />}
+        />
+
+        <Route path="/secure-update-pwi" element={<SecureUpdatePWI />} />
+
+        <Route path="/secure-update-pwp" element={<SecureUpdatePWP />} />
+
+        <Route
+          path="/days-of-generosity-success"
+          element={<DaysOfGenerositySuccess />}
+        />
+
+        <Route
+          path="/secure-days-of-generosity"
+          element={<SecureDaysOfGenerosity />}
+        />
+
+        <Route path="/best-partner-bonus" element={<BestPartnerBonus />} />
+
+        <Route
+          path="/best-partner-bonus-success"
+          element={<BestPartnerBonusSuccess />}
+        />
+
+        <Route path="/bonus" element={<Bonus />} />
+        <Route path="/vocabulary" element={<Vocabulary />} />
+        <Route path="/others" element={<Others />} />
+        <Route path="/guide" element={<Guide />} />
+        <Route path="/signup" element={<AuthSignup />} />
+        <Route path="/ask-poster" element={<AskPoster />} />
+        <Route path="/ask-poster-success" element={<AskPosterSuccess />} />
+        <Route path="/calcul-comment" element={<CalculComment />} />
+
+        <Route
+          path="/validate-calcul-comment"
+          element={<ValidateCalculComment />}
+        />
+        <Route
+          path="/validate-comment-success"
+          element={<ValidateCommentSuccess />}
+        />
+        <Route
+          path="/validate-comment-error"
+          element={<ValidateCommentError />}
+        />
+
+        <Route path="/program-affiliation" element={<ProgramAffiliation />} />
+        <Route
+          path="/before-calcul-comment"
+          element={<BeforeCalculComment />}
+        />
+
         <Route path="/panel-kdvb" element={<HomePanel />} />
         <Route path="/panel-kdvb-user" element={<User />} />
         <Route
@@ -342,90 +427,8 @@ export default function App() {
           element={<UpdatepwpPanel />}
         />
 
-        <Route path="/update-point" element={<UpdatePoint />} />
-        <Route path="/update-point-success" element={<UpdatePointSuccess />} />
-        <Route
-          path="/secure-update-comment"
-          element={<SecureUpdateComment />}
-        />
-
-        <Route path="/secure-update-e10k" element={<SecureUpdateE10k />} />
-
-        <Route path="/secure-update-email" element={<SecureUpdateEmail />} />
-
-        <Route
-          path="/secure-update-likescomment"
-          element={<SecureUpdateLikesComment />}
-        />
-
-        <Route
-          path="/secure-update-likespublication"
-          element={<SecureUpdateLikesPublication />}
-        />
-
-        <Route path="/secure-update-m10k" element={<SecureUpdateM10k />} />
-
-        <Route
-          path="/secure-update-message"
-          element={<SecureUpdateMessage />}
-        />
-
-        <Route path="/secure-update-mwi" element={<SecureUpdateMWI />} />
-
-        <Route
-          path="/secure-update-publication"
-          element={<SecureUpdatePublication />}
-        />
-
-        <Route path="/secure-update-pwi" element={<SecureUpdatePWI />} />
-
-        <Route path="/secure-update-pwp" element={<SecureUpdatePWP />} />
-
-        <Route
-          path="/days-of-generosity-success"
-          element={<DaysOfGenerositySuccess />}
-        />
-
-        <Route
-          path="/secure-days-of-generosity"
-          element={<SecureDaysOfGenerosity />}
-        />
-
-        <Route path="/best-partner-bonus" element={<BestPartnerBonus />} />
-
-        <Route
-          path="/best-partner-bonus-success"
-          element={<BestPartnerBonusSuccess />}
-        />
-
-        <Route path="/bonus" element={<Bonus />} />
-        <Route path="/vocabulary" element={<Vocabulary />} />
-        <Route path="/others" element={<Others />} />
-        <Route path="/guide" element={<Guide />} />
-        <Route path="/signup" element={<AuthSignup />} />
-        <Route path="/ask-poster" element={<AskPoster />} />
-        <Route path="/ask-poster-success" element={<AskPosterSuccess />} />
-        <Route path="/calcul-comment" element={<CalculComment />} />
-        <Route path="/new-comment-panel" element={<NewCommentPanel />} />
-        <Route
-          path="/validate-calcul-comment"
-          element={<ValidateCalculComment />}
-        />
-        <Route
-          path="/validate-comment-success"
-          element={<ValidateCommentSuccess />}
-        />
-        <Route
-          path="/validate-comment-error"
-          element={<ValidateCommentError />}
-        />
-
         <Route path="/others-panel" element={<OthersPanel />} />
-        <Route path="/program-affiliation" element={<ProgramAffiliation />} />
-        <Route
-          path="/before-calcul-comment"
-          element={<BeforeCalculComment />}
-        />
+        <Route path="/new-comment-panel" element={<NewCommentPanel />} />
       </Routes>
     </BrowserRouter>
   );

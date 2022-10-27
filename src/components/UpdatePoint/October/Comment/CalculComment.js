@@ -115,11 +115,6 @@ export default function CalculComment() {
   on additionne le tout par le gaintlife qu'on avait recuperer dans le localStorage 
   */
 
-  let min = 1001;
-  let max = 9999;
-  let x = Math.floor(Math.random() * (max - min) + min);
-  console.log(x);
-
   const calculpointtcommentlife =
     parseInt(newnumber) * 1 + parseInt(oldpointtcommentlife);
   console.log(calculpointtcommentlife);
