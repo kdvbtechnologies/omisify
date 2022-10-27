@@ -71,8 +71,6 @@ import SecureLogoutConfirm from "./components/Logout/SecureLogoutConfirm";
 import Infos from "./components/Settings/Infos";
 
 import SecureInfosUpdate from "./components/Settings/SecureInfosUpdate";
-import User from "./components/Admin/User/User";
-import HomePanel from "./components/Admin/HomePanel";
 
 import InfosUpdate from "./components/Settings/InfosUpdate";
 import InfosUpdateSuccess from "./components/Settings/InfosUpdateSuccess";
@@ -83,6 +81,17 @@ import AfterWelcomeBonus from "./components/Bonus/WelcomeBonus/AfterWelcomeBonus
 import Bonus from "./components/Bonus/Bonus";
 import SecureDaysOfGenerosity from "./components/Bonus/DaysOfGenerosity/SecureDaysOfGenerosity";
 import DaysOfGenerositySuccess from "./components/Bonus/DaysOfGenerosity/DaysOfGenerositySuccess";
+
+// others
+import Others from "./components/Others/Others";
+import Guide from "./components/Others/Guide/Guide";
+import Vocabulary from "./components/Others/Vocabulary/Vocabulary";
+import AuthSignup from "./components/AuthSignup";
+import AskPoster from "./components/Others/Ask/AskPoster";
+import AskPosterSuccess from "./components/Others/Ask/AskPosterSuccess";
+
+// program
+import ProgramAffiliation from "./components/Program/ProgramAffiliation";
 
 // update point
 import UpdatePoint from "./components/UpdatePoint/UpdatePoint";
@@ -104,6 +113,10 @@ import ValidateCalculComment from "./components/UpdatePoint/October/Comment/Vali
 import ValidateCommentSuccess from "./components/UpdatePoint/October/Comment/ValidateCommentSuccess";
 import ValidateCommentError from "./components/UpdatePoint/October/Comment/ValidateCommentError";
 import BeforeCalculComment from "./components/UpdatePoint/October/Comment/BeforeCalculComment";
+
+// panel
+import User from "./components/Admin/User/User";
+import HomePanel from "./components/Admin/HomePanel";
 
 // panel welcome bonus
 import WelcomeBonusPanel from "./components/Admin/Bonus/WelcomeBonusPanel";
@@ -136,16 +149,8 @@ import UpdatepwiPanel from "./components/Admin/UpdatePoint/PWI/UpdatePWIPanel";
 import NewCommentPanel from "./components/Admin/UpdatePoint/Comment/NewCommentPanel";
 import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 
-// others
-import Others from "./components/Others/Others";
-import Guide from "./components/Others/Guide/Guide";
-import Vocabulary from "./components/Others/Vocabulary/Vocabulary";
-import AuthSignup from "./components/AuthSignup";
-import AskPoster from "./components/Others/Ask/AskPoster";
-import AskPosterSuccess from "./components/Others/Ask/AskPosterSuccess";
-
-// program
-import ProgramAffiliation from "./components/Program/ProgramAffiliation";
+// Omisify Business
+import HomeB from "./components/Business/Home/HomeB";
 
 export default function App() {
   return (
@@ -429,6 +434,8 @@ export default function App() {
 
         <Route path="/others-panel" element={<OthersPanel />} />
         <Route path="/new-comment-panel" element={<NewCommentPanel />} />
+
+        <Route path="/business" element={<HomeB />} />
       </Routes>
     </BrowserRouter>
   );
