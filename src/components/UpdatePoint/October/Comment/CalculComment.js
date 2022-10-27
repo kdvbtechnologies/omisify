@@ -108,8 +108,9 @@ export default function CalculComment() {
     parseInt(newnumber) * 1 + parseInt(oldpointtcommentlife);
   console.log(calculpointtcommentlife);
 
-  const calculgaintlife =
-    parseInt(newnumber) * parseInt(0.001) + parseInt(oldgaintlife);
+  const avantgaintlife = parseInt(newnumber) * 0.001;
+
+  const calculgaintlife = parseInt(avantgaintlife) + parseInt(oldgaintlife);
   console.log(calculgaintlife);
   /* quatriemement on sauvegarde calculpointtcommentlife (et les autres) dans le 
   localStorage, ensuite on sauvegarde aussi le nombre de comment (newnumber)
