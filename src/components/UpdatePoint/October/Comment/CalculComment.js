@@ -79,7 +79,7 @@ export default function CalculComment() {
 
   // const oldpointtlife = localStorage.getItem("https://omisify.com/pointtlife");
 
-  const oldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
+  //const oldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
 
   /* 
 
@@ -108,11 +108,8 @@ export default function CalculComment() {
     parseInt(newnumber) * 1 + parseInt(oldpointtcommentlife);
   console.log(calculpointtcommentlife);
 
-  const avantgaintlife = parseInt(newnumber) * 0.001;
-
-  const calculgaintlife = parseInt(avantgaintlife) + parseInt(oldgaintlife);
+  const calculgaintlife = parseInt(newnumber) * 0.001;
   console.log(calculgaintlife);
-  localStorage.setItem("https://omisify.com/resultgaintlife", calculgaintlife);
   /* quatriemement on sauvegarde calculpointtcommentlife (et les autres) dans le 
   localStorage, ensuite on sauvegarde aussi le nombre de comment (newnumber)
 
