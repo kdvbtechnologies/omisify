@@ -9,6 +9,9 @@ export default function ValidateCalculComment() {
   const newnumbercommententeradmin = 0;
   const statuscomment = "NO";
 
+  const date = new Date();
+  console.log(date);
+
   //const userId = localStorage.getItem("https://omisify.com/userId");
 
   /* premierement on recupere le pointtcommentlife (et les autres) qu'on avait sauvegardé 
@@ -29,7 +32,7 @@ export default function ValidateCalculComment() {
     "https://omisify.com/resultpointtcommentlife"
   );
 
-  const gaintlife = localStorage.getItem("https://omisify.com/gaintlife");
+  const gaintlife = localStorage.getItem("https://omisify.com/resultgaintlife");
 
   async function Validate(e) {
     setIsLoading(true);
@@ -51,6 +54,7 @@ export default function ValidateCalculComment() {
           statuscomment,
 
           gaintlife,
+          date,
         },
       })
         .then((res) => console.log(res))
