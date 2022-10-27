@@ -44,10 +44,7 @@ export default function ValidateCalculComment() {
     let getnewnumber = localStorage.getItem("https://omisify.com/newnumber");
     console.log(getnewnumber);
 
-    if (numbercommententeradmin === 0) {
-      // validation impossible
-      window.location = "/validate-comment-error";
-    } else if (getnewnumber === numbercommententeradmin) {
+    if (getnewnumber === numbercommententeradmin) {
       await axios({
         method: "put",
         url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/634c8ab0f59d4e9994f83884`,
