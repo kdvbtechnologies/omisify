@@ -16,8 +16,8 @@ export default function CalculComment() {
   lorsque lui il fera un put, il va modifier le statut a CLOSE
   lorsque que nous on fera un put, on va modifier le Statut a OPEN (ouverte)
   */
-  const statuscomment = localStorage.getItem(
-    "https://omisify.com/statuscomment"
+  const [statuscomment, setstatuscomment] = useState(
+    localStorage.getItem("https://omisify.com/statuscomment")
   );
 
   /* premierement on recupere le pointtcommentlife, pointtlife, le gaintlife, 
@@ -66,9 +66,10 @@ export default function CalculComment() {
           }
         })
         .catch((err) => console.log(err));
+      setstatuscomment(!statuscomment);
     }
     get();
-  }, []);
+  }, [statuscomment]);
 
   const [newnumber, setNewnumber] = useState("");
 
