@@ -29,15 +29,7 @@ export default function ValidateCalculComment() {
     "https://omisify.com/resultpointtcommentlife"
   );
 
-  const resultgaintlife = localStorage.getItem(
-    "https://omisify.com/resultgaintlife"
-  );
-  const getgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
-
-  const calcul = parseInt(resultgaintlife) + parseInt(getgaintlife);
-  localStorage.setItem("https://omisify.com/newgaintlife", calcul);
-
-  const gaintlife = localStorage.getItem("https://omisify.com/newgaintlife");
+  const gaintlife = localStorage.getItem("https://omisify.com/gaintlife");
 
   async function Validate(e) {
     setIsLoading(true);
