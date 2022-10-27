@@ -58,7 +58,7 @@ export default function User() {
                   <p>Noms court : {api.shortname}</p>
                   <p>Code CB : {api.codewelcome}</p>
                   <p>Bonus B : {api.welcomebonus} point(s)</p>
-                  <p>Bonus EP : {api.bestpartnerbonus}</p>
+                  <p>Bonus EP : {api.bestpartnerbonus} point(s)</p>
                   <p>Bonus JG : {api.generositydaysbonus} point(s)</p>
                   <p>Journées de générosité : {api.generositydays} point(s)</p>
                   <p>Méthode de Paiement préféré : {api.paymentmethod}</p>

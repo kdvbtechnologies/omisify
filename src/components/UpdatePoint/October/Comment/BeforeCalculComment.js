@@ -50,7 +50,7 @@ export default function BeforeCalculComment() {
         })
         .catch((err) => console.log(err));
       window.location = "/calcul-comment";
-      setIsLoading(false);
+      setIsLoading(true);
     }
     get();
   }, []);
