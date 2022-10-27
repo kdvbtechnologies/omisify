@@ -107,6 +107,10 @@ export default function CalculComment() {
   on additionne le tout par le gaintlife qu'on avait recuperer dans le localStorage 
   */
 
+  const getdate = new Date();
+  const date = getdate.toDateString();
+  console.log(date);
+
   let x = Math.floor(Math.random() * 10000 + 1);
   console.log(x);
 
