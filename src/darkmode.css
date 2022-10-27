@@ -1604,7 +1604,7 @@ padding-bottom: 70px;
 }
 
 .calcul-comment .a p {
-  padding: 2px 20px;
+  padding: 2px 300px;
   color: #444;
   font-size: 17px;
 }
@@ -2141,7 +2141,20 @@ padding-bottom: 70px;
   color: #444;
 }
 
+/* 1250px */
+/* 1250px */
+/* 1250px */
+/* 1250px */
+/* 1250px */
+/* 1250px */
+/* 1250px */
+/* 1250px */
+/* 1250px */
+/* 1250px */
 @media screen and (max-width: 1250px) {
+  .calcul-comment .a p {
+    padding: 2px 250px;
+  }
 
   .welcome-bonus-panel .shrink {
     padding: 100px 420px;
@@ -2180,7 +2193,20 @@ padding-bottom: 70px;
   }
 }
 
+/* 1000px */
+/* 1000px */
+/* 1000px */
+/* 1000px */
+/* 1000px */
+/* 1000px */
+/* 1000px */
+/* 1000px */
+/* 1000px */
 @media screen and (max-width: 1000px) {
+  .calcul-comment .a p {
+    padding: 2px 150px;
+  }
+
   .welcome-bonus-panel .shrink {
     padding: 100px 320px;
   }
@@ -2217,7 +2243,21 @@ padding-bottom: 70px;
   }
 }
 
+/* 760px */
+/* 760px */
+/* 760px */
+/* 760px */
+/* 760px */
+/* 760px */
+/* 760px */
+/* 760px */
+/* 760px */
+/* 760px */
+/* 760px */
 @media screen and (max-width: 760px) {
+  .calcul-comment .a p {
+    padding: 2px 20px;
+  }
 
   .welcome-bonus-panel .shrink {
     padding: 100px 20px;

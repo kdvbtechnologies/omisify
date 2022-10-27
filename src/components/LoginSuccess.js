@@ -17,11 +17,78 @@ export default function LoginSuccess() {
           const partnername = res.data.partnername;
           const shortname = res.data.shortname;
 
-          const getoldpointtlife = res.data.pointtlife;
-          if (getoldpointtlife) {
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+          // bonus
+
+          const getwelcomebonus = res.data.welcomebonus;
+          if (getwelcomebonus) {
             localStorage.setItem(
-              "https://omisify.com/pointtlife",
-              getoldpointtlife
+              "https://omisify.com/welcomebonus",
+              getwelcomebonus
+            );
+          }
+
+          const bestpartnerbonus = res.data.bestpartnerbonus;
+          if (bestpartnerbonus) {
+            localStorage.setItem(
+              "https://omisify.com/bestpartnerbonus",
+              bestpartnerbonus
+            );
+          }
+
+          const generositydaysbonus = res.data.generositydaysbonus;
+          if (generositydaysbonus) {
+            localStorage.setItem(
+              "https://omisify.com/generositydaysbonus",
+              generositydaysbonus
+            );
+          }
+
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          // point total life
+          const getoldpointtcommentlife = res.data.pointtcommentlife;
+          if (getoldpointtcommentlife) {
+            localStorage.setItem(
+              "https://omisify.com/pointtcommentlife",
+              getoldpointtcommentlife
+            );
+          }
+
+          const getoldpointte10klife = res.data.pointte10klife;
+          if (getoldpointte10klife) {
+            localStorage.setItem(
+              "https://omisify.com/pointte10klife",
+              getoldpointte10klife
             );
           }
 
@@ -33,11 +100,28 @@ export default function LoginSuccess() {
             );
           }
 
-          const getoldpointtmwilife = res.data.pointtmwilife;
-          if (getoldpointtmwilife) {
+          const getoldpointtlikescommentlife = res.data.pointtlikescommentlife;
+          if (getoldpointtlikescommentlife) {
             localStorage.setItem(
-              "https://omisify.com/pointtmwilife",
-              getoldpointtmwilife
+              "https://omisify.com/pointtlikescommentlife",
+              getoldpointtlikescommentlife
+            );
+          }
+
+          const getoldpointtlikespublicationlife =
+            res.data.pointtlikespublicationlife;
+          if (getoldpointtlikespublicationlife) {
+            localStorage.setItem(
+              "https://omisify.com/pointtlikespublicationlife",
+              getoldpointtlikespublicationlife
+            );
+          }
+
+          const getoldpointtm10klife = res.data.pointtm10klife;
+          if (getoldpointtm10klife) {
+            localStorage.setItem(
+              "https://omisify.com/pointtm10klife",
+              getoldpointtm10klife
             );
           }
 
@@ -49,11 +133,11 @@ export default function LoginSuccess() {
             );
           }
 
-          const getoldpointtpwilife = res.data.pointtpwilife;
-          if (getoldpointtpwilife) {
+          const getoldpointtmwilife = res.data.pointtmwilife;
+          if (getoldpointtmwilife) {
             localStorage.setItem(
-              "https://omisify.com/pointtpwilife",
-              getoldpointtpwilife
+              "https://omisify.com/pointtmwilife",
+              getoldpointtmwilife
             );
           }
 
@@ -65,20 +149,27 @@ export default function LoginSuccess() {
             );
           }
 
-          const getoldpointtlikepublicationlife =
-            res.data.pointtlikepublicationlife;
-          if (getoldpointtlikepublicationlife) {
+          const getoldpointtpwilife = res.data.pointtpwilife;
+          if (getoldpointtpwilife) {
             localStorage.setItem(
-              "https://omisify.com/pointtlikepublicationlife",
-              getoldpointtlikepublicationlife
+              "https://omisify.com/pointtpwilife",
+              getoldpointtpwilife
             );
           }
 
-          const getoldpointtcommentlife = res.data.pointtcommentlife;
-          if (getoldpointtcommentlife) {
+          const getoldpointtpwplife = res.data.pointtpwplife;
+          if (getoldpointtpwplife) {
             localStorage.setItem(
-              "https://omisify.com/pointtcommentlife",
-              getoldpointtcommentlife
+              "https://omisify.com/pointtpwplife",
+              getoldpointtpwplife
+            );
+          }
+
+          const getoldpointtlife = res.data.pointtlife;
+          if (getoldpointtlife) {
+            localStorage.setItem(
+              "https://omisify.com/pointtlife",
+              getoldpointtlife
             );
           }
 
@@ -90,22 +181,17 @@ export default function LoginSuccess() {
             );
           }
 
-          const getoldpointtlikecommentlife = res.data.pointtlikecommentlife;
-          if (getoldpointtlikecommentlife) {
-            localStorage.setItem(
-              "https://omisify.com/pointtlikecommentlife",
-              getoldpointtlikecommentlife
-            );
-          }
-
-          const getwelcomebonus = res.data.welcomebonus;
-          if (getwelcomebonus) {
-            localStorage.setItem(
-              "https://omisify.com/welcomebonus",
-              getwelcomebonus
-            );
-          }
-
+          // infos of user
+          // infos of user
+          // infos of user
+          // infos of user
+          // infos of user
+          // infos of user
+          // infos of user
+          // infos of user
+          // infos of user
+          // infos of user
+          // infos of user
           // infos of user
           const getgenre = res.data.genre;
           if (getgenre) {
@@ -138,6 +224,11 @@ export default function LoginSuccess() {
             );
           }
 
+          const getemail = res.data.email;
+          if (getemail) {
+            localStorage.setItem("https://omisify.com/email", getemail);
+          }
+
           const getpaymentmethod = res.data.paymentmethod;
           if (getpaymentmethod) {
             localStorage.setItem(
@@ -146,24 +237,11 @@ export default function LoginSuccess() {
             );
           }
 
-          const getemail = res.data.email;
-          if (getemail) {
-            localStorage.setItem("https://omisify.com/email", getemail);
-          }
-
           const getcodewelcome = res.data.codewelcome;
           if (getcodewelcome) {
             localStorage.setItem(
               "https://omisify.com/codewelcome",
               getcodewelcome
-            );
-          }
-
-          const getgroupwhatsapp = res.data.groupwhatsapp;
-          if (getgroupwhatsapp) {
-            localStorage.setItem(
-              "https://omisify.com/groupwhatsapp",
-              getgroupwhatsapp
             );
           }
 
@@ -175,19 +253,27 @@ export default function LoginSuccess() {
             );
           }
 
-          const getpointwhatsapp = res.data.pointwhatsapp;
-          if (getpointwhatsapp) {
+          const getgroupwhatsapp = res.data.groupwhatsapp;
+          if (getgroupwhatsapp) {
             localStorage.setItem(
-              "https://omisify.com/pointwhatsapp",
-              getpointwhatsapp
+              "https://omisify.com/groupwhatsapp",
+              getgroupwhatsapp
             );
           }
 
-          const getpointtelegram = res.data.pointtelegram;
-          if (getpointtelegram) {
+          const getnumbertelegram = res.data.numbertelegram;
+          if (getnumbertelegram) {
             localStorage.setItem(
-              "https://omisify.com/pointtelegram",
-              getpointtelegram
+              "https://omisify.com/numbertelegram",
+              getnumbertelegram
+            );
+          }
+
+          const getnumberwhatsapp = res.data.numberwhatsapp;
+          if (getnumberwhatsapp) {
+            localStorage.setItem(
+              "https://omisify.com/numberwhatsapp",
+              getnumberwhatsapp
             );
           }
 
@@ -196,6 +282,23 @@ export default function LoginSuccess() {
             localStorage.setItem("https://omisify.com/date", getdate);
           }
 
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
+          // suite user infos
           const generositydays = res.data.generositydays;
           if (generositydays) {
             localStorage.setItem(
@@ -204,29 +307,22 @@ export default function LoginSuccess() {
             );
           }
 
-          const generositydaysbonus = res.data.generositydaysbonus;
-          if (generositydaysbonus) {
+          const statuscomment = res.data.statuscomment;
+          if (statuscomment) {
             localStorage.setItem(
-              "https://omisify.com/generositydaysbonus",
-              generositydaysbonus
+              "https://omisify.com/statuscomment",
+              statuscomment
             );
           }
 
-          const bestpartnerbonus = res.data.bestpartnerbonus;
-          if (bestpartnerbonus) {
-            localStorage.setItem(
-              "https://omisify.com/bestpartnerbonus",
-              bestpartnerbonus
-            );
-          }
-
+          /*
           const birthcountry = res.data.birthcountry;
           if (birthcountry) {
             localStorage.setItem(
               "https://omisify.com/birthcountry",
               birthcountry
             );
-          }
+          }*/
 
           localStorage.setItem("https://omisify.com/name", name);
           localStorage.setItem("https://omisify.com/partnername", partnername);
