@@ -41,11 +41,11 @@ export default function InitializeNewPointComment() {
         .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/${userId}`)
         .then((res) => {
           console.log(res);
-          const getoldpointtcommentoct2022 = res.data.pointtcommentoct2022;
-          if (getoldpointtcommentoct2022) {
+          const pointtcommentoct2022 = res.data.pointtcommentoct2022;
+          if (pointtcommentoct2022) {
             localStorage.setItem(
-              "https://omisify.com/getoldpointtcommentoct2022",
-              getoldpointtcommentoct2022
+              "https://omisify.com/pointtcommentoct2022",
+              pointtcommentoct2022
             );
             window.location.reload();
           }
@@ -58,7 +58,7 @@ export default function InitializeNewPointComment() {
 
   // le bouton s'affichera s'il n'y a pas getoldpointtcommentoct2022 dans le localstorage
   const getoldpointtcommentoct2022 = localStorage.getItem(
-    "https://omisify.com/getoldpointtcommentoct2022"
+    "https://omisify.com/pointtcommentoct2022"
   );
 
   async function Next(e) {
