@@ -61,6 +61,9 @@ export default function ValidateCalculComment() {
 
       // validation reussie
       window.location = "/validate-comment-success";
+    } else if (numbercommententeradmin === 0) {
+      // validation impossible
+      window.location = "/validate-comment-error";
     } else {
       // validation impossible
       window.location = "/validate-comment-error";
