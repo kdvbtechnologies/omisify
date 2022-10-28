@@ -219,7 +219,7 @@ export default function Vocabulary() {
 
           <div className="a">
             <div className="b">
-              <p>Validation automatique</p>
+              <p>Ancien Total C</p>
             </div>
             <p>
               Ancien Total des Commentaires abrégé en Ancien Total C s'agit du
