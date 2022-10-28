@@ -41,6 +41,7 @@ export default function WelcomeBonusPanel() {
         <div className="title">
           <p>Demande du Bonus de Bienvenue</p>
         </div>
+        {api.filter((u) => u.id === api?.userId)[0].username}
         {isLoading ? (
           <Loader />
         ) : (
