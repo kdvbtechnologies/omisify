@@ -55,12 +55,15 @@ export default function C() {
                 vous avez choisi
               </p>
               <p>
-                Les Partenaires Omisify parlent de votre produit ou de votre
-                entreprise aux personnes qui figurent dans leur liste des
-                Contacts de Confiance via des applications de messagerie ou par
-                appel téléphonique. Les Partenaires Omisify parleront de votre
-                produit uniquement aux Contacts de Confiance qui vivent dans le
-                pays que vous avez sélectionnés dans votre publicité
+                Les Partenaires Omisify Influenceurs et Non-Influenceurs parlent
+                de votre produit ou de votre entreprise aux personnes qui
+                figurent dans leur liste des Contacts de Confiance via des
+                applications de messagerie ou par appel téléphonique. Les
+                Partenaires Omisify parleront de votre produit uniquement aux
+                Contacts de Confiance qui vivent dans le pays que vous avez
+                sélectionné dans votre publicité en fonction de l'age et du
+                genre de personne pour permettre à votre publicité de toucher le
+                marché que vous cibler
               </p>
             </div>
 
