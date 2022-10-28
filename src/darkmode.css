@@ -2161,6 +2161,200 @@ padding-bottom: 70px;
   color: #444;
 }
 
+/* home - navbarb.js */
+/* home - navbarb.js */
+/* home - navbarb.js */
+/* home - navbarb.js */
+/* home - navbarb.js */
+/* home - navbarb.js */
+/* home - navbarb.js */
+/* home - navbarb.js */
+/* home - navbarb.js */
+/* home - navbarb.js */
+/* home - navbarb.js */
+/* home - navbarb.js */
+.navbarb {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  list-style: none;
+}
+
+.navlinkb {
+  text-decoration: none;
+}
+
+.navbarb .left-navigation li {
+  color: white;
+  font-size: 30px;
+}
+
+.navbarb .right-navigation {
+  display: flex;
+}
+
+.navbarb .right-navigation li {
+  color: white;
+  padding: 0px 10px;
+  font-size: 22px;
+}
+
+/* business - home - A.js */
+/* business - home - A.js */
+/* business - home - A.js */
+/* business - home - A.js */
+/* business - home - A.js */
+/* business - home - A.js */
+/* business - home - A.js */
+.homeb .a {
+  font-size: 25px;
+  text-align: center;
+  padding: 200px 30px;
+}
+
+.homeb .a button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin: 60px 0px;
+  font-size: 16px;
+} 
+
+/* business - home - B.js */
+/* business - home - B.js */
+/* business - home - B.js */
+/* business - home - B.js */
+/* business - home - B.js */
+/* business - home - B.js */
+/* business - home - B.js */
+.homeb .b {
+  background-color: red;
+  padding: 90px 0px;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+}
+
+.homeb .b p {
+  padding: 0px 20px;
+}
+
+/* business - home - C.js */
+/* business - home - C.js */
+/* business - home - C.js */
+/* business - home - C.js */
+/* business - home - C.js */
+/* business - home - C.js */
+/* business - home - C.js */
+/* business - home - C.js */
+/* business - home - C.js */
+/* business - home - C.js */
+.homeb .c .display-flex-svg-and-p {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.homeb .c .display-flex-svg-and-p p {
+  margin: 0px -10px
+}
+
+.homeb .c .display-flex-svg-and-p .svg svg {
+  fill: white;
+  width: 20px;
+  height: auto
+}
+
+
+.homeb .go-down-c {
+  padding-top: 300px;
+}
+
+.homeb .shrink-c {
+  padding: 0px 400px;
+}
+
+.homeb .c .box-shadow-c-title {
+  border: 3px solid red;
+  box-shadow: 5px 10px black;
+  background-color: red;
+  margin: 40px 0px;
+}
+
+.homeb .c .box-shadow-c-title p {
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+}
+
+.homeb .c .box-shadow-c {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 20px;
+  box-shadow: 5px 10px red;
+}
+
+.homeb .c .go-down-this {
+  padding-top: 100px;
+}
+
+.homeb .c .align-button {
+  text-align: center;
+}
+
+.homeb .c button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin: 10px 0px;
+  font-size: 16px;
+}
+
+.homeb .c p {
+  color: #444;
+  padding: 20px 0px;
+  font-size: 17px;
+}
+
+/* business - home - by message.js */
+/* business - home - by message.js */
+/* business - home - by message.js */
+/* business - home - by message.js */
+/* business - home - by message.js */
+/* business - home - by message.js */
+/* business - home - by message.js */
+/* business - home - by message.js */
+.homeb .shrink-bymessage-box-shadow {
+  padding: 20px 400px;
+}
+
+.homeb .bymessage-box-shadow {
+  border: 3px solid red;
+  padding: 90px 20px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 5px 10px black;
+}
+
+
+
+
+
+
+
 /* 1250px */
 /* 1250px */
 /* 1250px */
@@ -2172,6 +2366,10 @@ padding-bottom: 70px;
 /* 1250px */
 /* 1250px */
 @media screen and (max-width: 1250px) {
+  .homeb .shrink-c {
+    padding: 0px 300px;
+  }
+  
   .validate-calcul-comment .a .shrink-border {
     padding: 20px 200px;
   }
@@ -2231,6 +2429,9 @@ padding-bottom: 70px;
 /* 1000px */
 /* 1000px */
 @media screen and (max-width: 1000px) {
+  .homeb .shrink-c {
+    padding: 0px 200px;
+  }
 
   .calcul-comment .a p {
     padding: 2px 150px;
@@ -2284,6 +2485,61 @@ padding-bottom: 70px;
 /* 760px */
 /* 760px */
 @media screen and (max-width: 760px) {
+  .homeb .c .display-flex-svg-and-p {
+    padding: 0px 10px;
+  }
+
+  .homeb .c .display-flex-svg-and-p p {
+    margin: 0px -10px
+  }
+
+
+
+  .homeb .c .box-shadow-c-title {
+    border: 3px solid red;
+    box-shadow: 5px 10px black;
+    background-color: red;
+    margin: 40px -20px;
+  }
+
+  .homeb .c .box-shadow-c-title p {
+    font-size: 16px;
+  }
+
+  .homeb .c button {
+    margin: 10px -12px;
+    padding: 15px 8px;
+  }
+  
+  .homeb .shrink-c {
+    padding: 0px 35px;
+  }
+
+  .homeb .b {
+    font-size: 19px;
+  }
+
+  .homeb .a {
+    font-size: 18px;
+    padding: 100px 20px;
+  }
+
+  .homeb .a button {
+    margin: 30px 0px;
+  }
+
+  .navbarb {
+    padding: 20px 15px;
+  }
+
+  .navbarb .left-navigation li {
+    font-size: 22px;
+  }
+
+  .navbarb .right-navigation li {
+    padding: 0px 5px;
+    font-size: 18px;
+  }
 
   .validate-calcul-comment .a .shrink-border {
     padding: 20px 120px;
