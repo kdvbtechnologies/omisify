@@ -153,15 +153,12 @@ import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 import HomeB from "./components/Business/Home/HomeB";
 import AdsB from "./components/Business/Home/Ads/AdsB";
 import MenuB from "./components/Business/Home/Navigation/MenuB";
-import ByMessage from "./components/Business/Home/More/ByMessage";
-import C from "./components/Business/Home/C";
+import CreateaAds from "./components/Business/Ads/CreateaAds";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/c" element={<C />} />
-        <Route path="/bymessage" element={<ByMessage />} />
         <Route path="*" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/program" element={<Program />} />
@@ -444,6 +441,7 @@ export default function App() {
         <Route path="/business" element={<HomeB />} />
         <Route path="/ads" element={<AdsB />} />
         <Route path="/omisify-b-menu" element={<MenuB />} />
+        <Route path="/create-a-ads" element={<CreateaAds />} />
       </Routes>
     </BrowserRouter>
   );

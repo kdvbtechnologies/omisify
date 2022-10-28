@@ -5,6 +5,14 @@ export default function NavbarB() {
     fontFamily:
       ' "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif ',
   };
+
+  /*
+  
+  <NavLink className="navlinkb" to="/ads">
+            <li>Publicité</li>
+          </NavLink>
+          
+  */
   return (
     <div style={family}>
       <div className="navbarb">
@@ -15,12 +23,8 @@ export default function NavbarB() {
         </div>
 
         <div className="right-navigation">
-          <NavLink className="navlinkb" to="/ads">
-            <li>Publicité</li>
-          </NavLink>
-
-          <NavLink className="navlinkb" to="/omisify-b-menu">
-            <li>Menu</li>
+          <NavLink className="navlinkb" to="/create-a-ads">
+            <li>Créer une publicité</li>
           </NavLink>
         </div>
       </div>
