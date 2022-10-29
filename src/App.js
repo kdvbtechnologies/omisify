@@ -164,19 +164,17 @@ import Incomplete from "./components/Others/Dev/Incomplete";
 // AccessCode
 import ValidateAccessCode from "./components/Others/AccessCode/ValidateAccessCode";
 import ErrorAccessCode from "./components/Others/AccessCode/ErrorAccessCode";
-import AccessCode from "./components/Others/AccessCode/AccessCode";
 import AfterAccessCode from "./components/Others/AccessCode/AfterAccessCode";
-import AccessCodeSuccess from "./components/Others/AccessCode/AccessCodeSuccess";
+import SecureAccessCode from "./components/Others/AccessCode/SecureAccessCode";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/access-code-success" element={<AccessCodeSuccess />} />
         <Route path="/validate-access-code" element={<ValidateAccessCode />} />
         <Route path="/error-access-code" element={<ErrorAccessCode />} />
         <Route path="/after-access-code" element={<AfterAccessCode />} />
-        <Route path="/access-code" element={<AccessCode />} />
+        <Route path="/secure-access-code" element={<SecureAccessCode />} />
 
         <Route path="/incomplete" element={<Incomplete />} />
         <Route path="/complete" element={<Complete />} />
