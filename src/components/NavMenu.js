@@ -15,9 +15,18 @@ export default function NavMenu() {
           <p>Menu</p>
         </div>
 
-        <NavLink className="li" to="/program">
-          <li>Programme</li>
+        <NavLink className="li" to="/influencer">
+          <li>Influenceur</li>
         </NavLink>
+
+        <NavLink className="li" to="/no-influencer">
+          <li>Non-Influenceur</li>
+        </NavLink>
+
+        <NavLink className="li" to="/home-bonus">
+          <li>Bonus</li>
+        </NavLink>
+
         <NavLink className="li" to="/contact">
           <li>Service</li>
         </NavLink>
