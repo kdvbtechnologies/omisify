@@ -13,9 +13,14 @@ import Finish from "./More/Finish";
 import ShareN from "./More/ShareN";
 import Footer from "../Footer";
 import { NavLink } from "react-router-dom";
+import Loader from "../Partenaire Omisify/Loader";
+import { useState } from "react";
 
 export default function NoInfluencer() {
+  const [isLoading, setIsLoading] = useState(false);
+
   async function Next(e) {
+    setIsLoading(true);
     e.preventDefault();
     window.location = "/home-bonus";
   }
@@ -49,7 +54,13 @@ export default function NoInfluencer() {
         <Finish />
 
         <div className="see-more">
-          <button onClick={Next}>Voir plus</button>
+          {isLoading ? (
+            <Loader />
+          ) : (
+            <>
+              <button onClick={Next}>Voir plus</button>
+            </>
+          )}
         </div>
 
         <Footer />

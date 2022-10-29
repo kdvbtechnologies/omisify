@@ -1,13 +1,17 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Loader from "../../Partenaire Omisify/Loader";
 
 export default function AfterShareI() {
   const userId = localStorage.getItem("https://omisify.com/userId");
   const partnername = localStorage.getItem("https://omisify.com/partnername");
   const shortname = localStorage.getItem("https://omisify.com/shortname");
   const name = localStorage.getItem("https://omisify.com/name");
+  const [isLoading, setIsLoading] = useState(false);
 
-  async function Next() {
-    // e.preventDefault();
+  async function Next(e) {
+    setIsLoading(true);
+    e.preventDefault();
     window.location = "/no-influencer";
   }
 
@@ -40,7 +44,13 @@ export default function AfterShareI() {
       </div>
 
       <div className="see-more">
-        <button onClick={Next}>Voir plus</button>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>
+            <button onClick={Next}>Voir plus</button>
+          </>
+        )}
       </div>
     </>
   );
