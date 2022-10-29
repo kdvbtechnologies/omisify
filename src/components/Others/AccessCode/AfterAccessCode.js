@@ -25,12 +25,17 @@ export default function AfterAccessCode() {
       setIsLoading(false);
     }
     get();
-  }, []);
+  }, [userId]);
+
+  const family = {
+    fontFamily:
+      '"Source Sans Pro", "Helvetica Neue", Arial, Helvetica, sans-serif',
+  };
 
   return (
-    <>
+    <div style={family} className="after-access-code">
       <p align="center">Patienter un instant..</p>
       {isLoading && <Loader />}
-    </>
+    </div>
   );
 }

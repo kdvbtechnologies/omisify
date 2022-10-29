@@ -60,9 +60,7 @@ export default function Dev() {
             Partenaire pour l'obtention d'un code d'accès
           </i>
         </div>
-        <p>
-          Entrer votre code d'accès au fonctionnalité en cours de développement
-        </p>
+        <p>Entrer votre code d'accès</p>
         <input
           type="number"
           placeholder="__ __ __ __"

@@ -85,6 +85,7 @@
   background-color: transparent;
   border: 1px solid #ccc;
   margin: 15px 0px;
+  text-align: center;
 }
 
 .dev button {
@@ -99,6 +100,147 @@
   font-size: 15px;
 }
 
+/* Access code.js */
+/* Access code.js */
+/* Access code.js */
+/* Access code.js */
+/* Access code.js */
+/* Access code.js */
+/* Access code.js */
+.access-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.access-code p {
+  padding-top: 20px;
+}
+.access-code .title {
+  color: red;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.access-code input[type="number"] {
+  padding: 10px;
+  text-align: center;
+  margin: 5px 0px;
+  background-color: transparent;
+  border: 1px solid #444;
+}
+
+.access-code button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 30px 0px;
+  font-size: 16px;
+}
+
+/* After access code.js */
+/* After access code.js */
+/* After access code.js */
+/* After access code.js */
+/* After access code.js */
+.after-access-code {
+  padding-top: 70px;
+  font-size: 17px;
+}
+
+/* validate access code.js */
+/* validate access code.js */
+/* validate access code.js */
+/* validate access code.js */
+/* validate access code.js */
+.validate-access-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+.validate-access-code .title {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.validate-access-code p {
+  font-size: 16px;
+  padding-top: 20px;
+  margin: 0px 15px;
+}
+
+.validate-access-code button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 30px 0px;
+  font-size: 16px;
+}
+
+/* error access code.js */
+/* error access code.js */
+/* error access code.js */
+/* error access code.js */
+/* error access code.js */
+.error-access-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 70px;  
+}
+
+.error-access-code .title {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.error-access-code button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 30px 0px;
+  font-size: 15px;
+}
+
+/* access code success */
+/* access code success */
+/* access code success */
+/* access code success */
+/* access code success */
+/* access code success */
+.access-code-success {
+  text-align: center;
+  padding-top: 30px;
+  margin: 0px 15px;
+}
+
+.access-code-success .code p {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.access-code-success p {
+  font-size: 16px;
+}
 
 /* src - components - home.js */
 /* A */
