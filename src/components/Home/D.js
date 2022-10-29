@@ -4,9 +4,8 @@ import Loader from "../Partenaire Omisify/Loader";
 export default function D() {
   const [isLoading, setIsLoading] = useState(false);
 
-  async function Next(e) {
+  async function Next() {
     setIsLoading(true);
-    e.prevenDefault();
     window.location = "/inluencer";
   }
 
