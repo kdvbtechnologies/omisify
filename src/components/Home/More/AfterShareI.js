@@ -6,6 +6,11 @@ export default function AfterShareI() {
   const shortname = localStorage.getItem("https://omisify.com/shortname");
   const name = localStorage.getItem("https://omisify.com/name");
 
+  async function Next() {
+    // e.preventDefault();
+    window.location = "/no-influencer";
+  }
+
   return (
     <>
       <div className="email-shrink">
@@ -35,9 +40,7 @@ export default function AfterShareI() {
       </div>
 
       <div className="see-more">
-        <NavLink to="/no-influencer">
-          <button>Voir plus</button>
-        </NavLink>
+        <button onClick={Next}>Voir plus</button>
       </div>
     </>
   );
