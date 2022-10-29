@@ -30,30 +30,23 @@ export default function ConditionsAction() {
         <div className="politique">
           <h2>2. Site WEB:</h2>
           <p>
-            Le site web Omisify.com fournit un moyen pour les Utilisateurs
-            Porteurs de Projets de faire appel à Omisify pour les réaliser à bas
-            prix. Le site fournit un service de creation de site internet et de
-            paiement optionel. Les clients qui choisissent Omisify pour la
-            creation de leur site dès le début beneficie de l'autorisation de
-            Paiement après la livraison. Les clients qui ont déjà un site
-            existant c'est à dire un site créer par d'autres développeur ne
-            beneficie pas de l'autorisation de Paiement apres la livraison en
-            d'autres termes ils doivent payer avant que le travail ne soit
-            effectué. A partir du site web Omisify.com, nous fournissons des
-            informations à propos de nos services ainsi que d'autres
-            informations tiers. Nous pouvons modifier, supprimer ou ajouter une
-            partie ou la totalité de ces informations à n'importe quel moment.
-            En validant cet Accord avec Omisify.com, vous acceptez les termes de
-            paiement décrits dans la section 6 et donc vous acceptez de payer
-            certains services spécifiques.
+            Le site web Omisify.com est une plateforme qui propose les
+            programmes d'affiliation du service Omisify Business. Tout les
+            Partenaires Omisify retirent leur rémunération à n'importe quel
+            moment. A partir du site web Omisify.com, nous fournissons des
+            informations à propos de nos services ainsi que l'outil de travail
+            des Partenaires Omisify y est intégré. Nous pouvons modifier,
+            supprimer ou ajouter une partie ou la totalité de ces informations
+            ou de cet outil de travail à n'importe quel moment.
           </p>
         </div>
 
         <div className="politique">
           <h2>3. LES SERVICES </h2>
           <p>
-            Omisify.com fournit des services à la fois aux particuliers et aux
-            entreprises.
+            Omisify.com est une Plateforme destinés aux Partenaires Omisify.
+            Tout les services proposés sur la plateforme Omisify.com sont
+            destinées aux partenaires Omisify.
           </p>
         </div>
 
@@ -81,17 +74,15 @@ export default function ConditionsAction() {
         </div>
 
         <div className="politique">
-          <h2>6. PAIEMENTS </h2>
+          <h2>6. REMUNERATION </h2>
           <p>
-            Omisify perçoit des paiements en contreparties des services proposés
-            sur Omisify.com . Ces services commencent immédiatement, à partir du
-            moment où le paiement du Client est effectué et validé par Omisify.
-            De ce fait, en commandant nos services, vous pouvez profiter
-            immédiatement des services commandés et vous renoncez explicitement
-            à tout recours au droit de rétractation. Vous acceptez et comprenez
-            que Omisify.com peut modifier ses tarifs à n'importe quel moment. En
-            commandons nos services, vous acceptez que Omisify vous fournisse
-            une facture électronique.
+            En affichant les Programmes d'Affiliation d'Omisify Business sur la
+            plateforme Omisify.com, Omisify perçoit des paiements de la part
+            d'Omisify Business qui permet à rémunérer tout les Partenaires
+            Omisify. En devenant Partenaire Omisify, vous acceptez qu'à chaque
+            retrait de votre rémunération Omisify vous fournisse une facture
+            électronique au niveau de votre compte, peu importe le moyen de
+            paiement utilisé.
           </p>
         </div>
 
