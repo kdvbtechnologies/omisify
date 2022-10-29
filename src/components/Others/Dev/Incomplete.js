@@ -19,12 +19,8 @@ export default function Incomplete() {
         développement et de test. Ne les utilisez pas
       </p>
 
-      <NavLink>
-        <p>aaa</p>
-      </NavLink>
-
-      <NavLink>
-        <p>bbb</p>
+      <NavLink to="/before-calcul-comment">
+        <p>Commentaires</p>
       </NavLink>
     </div>
   );

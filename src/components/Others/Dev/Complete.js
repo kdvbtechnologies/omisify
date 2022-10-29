@@ -24,10 +24,6 @@ export default function Complete() {
       <NavLink>
         <p>aaa</p>
       </NavLink>
-
-      <NavLink>
-        <p>bbb</p>
-      </NavLink>
     </div>
   );
 }
