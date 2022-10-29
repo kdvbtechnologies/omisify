@@ -18,7 +18,7 @@ export default function AfterDev() {
         <p>Fonctionnalités Complètes</p>
       </NavLink>
 
-      <NavLink to="/imcomplete">
+      <NavLink to="/incomplete">
         <p>Fonctionnalités Incomplètes</p>
       </NavLink>
     </div>
