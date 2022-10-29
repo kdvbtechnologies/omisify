@@ -33,6 +33,7 @@ export default function Dev() {
         }
       })
       .catch((err) => console.log(err));
+    setIsLoading(false);
   }
 
   return (
