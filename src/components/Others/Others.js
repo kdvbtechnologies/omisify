@@ -41,7 +41,7 @@ export default function Others() {
             <hr />
           </div>
 
-          <NavLink className="navlink" to="/access-code">
+          <NavLink className="navlink" to="/secure-access-code">
             <p>Code d'accès</p>
           </NavLink>
           <div className="hr">
