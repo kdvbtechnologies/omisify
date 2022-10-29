@@ -1,10 +1,8 @@
 import PartnerNavigation from "../Partner-Navigation";
-import Bonus from "./AfterMore/Bonus/Bonus";
 import A from "./A";
 import B from "./B";
 import C from "./C";
 import D from "./D";
-import E from "./E";
 import Footer from "../Footer";
 
 export default function Home() {
@@ -20,8 +18,6 @@ export default function Home() {
       <B />
       <C />
       <D />
-      <E />
-      <Bonus />
       <Footer />
     </div>
   );

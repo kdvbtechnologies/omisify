@@ -368,6 +368,23 @@
   font-size: 14px;
 }
 
+/* see more.js */
+.see-more {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.see-more button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
 /* Home - LikeI.js */
 /* Home - LikeI.js */
 /* Home - LikeI.js */
@@ -389,13 +406,13 @@
   padding: 1px 0px;
 }
 .like-i-a .hr hr {
-  border: 1px solid blue;
+  border: 1px solid red;
 }
 
 .home .like-i-a {
   font-size: 32px;
   text-align: center;
-  color: blue;
+  color: red;
 }
 
 .home .like-i-b {
@@ -487,12 +504,12 @@
 }
 
 .home .comment-n-a .hr hr {
-  border: 1px solid blue;
+  border: 1px solid red;
 }
 
 .home .comment-n-a {
   font-size: 32px;
-  color: blue;
+  color: red;
   text-align: center;
 }
 
@@ -756,25 +773,24 @@ text-align: center;
 /* Footer.js */
 
 footer {
-    width: 100%;
-    text-align: center;
-    background-color: red;
-    color: white;
-    padding: 90px 0;
-    margin: 300px 0;
-    -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-    position: absolute;
+   background-color: #4e4e4e;
+   margin-top: 70px;
   }
 
-  footer .footer-linkk {
+  footer .navlink {
     text-decoration: none;
   }
   
+  footer .footer-nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
   
-  footer .footer-link p {
-  color: white;
-}
+  footer .footer-nav p {
+    color: black;
+    padding: 2px 10px;
+  }
 
 
  /* politique Actions */
@@ -2823,6 +2839,11 @@ padding-bottom: 70px;
   .home .a button {
     margin: 30px 0px;
   }
+
+  footer .footer-nav {
+    padding: 10px 0px;
+  }
+
   .vocabulary {
     padding-top: 40px;
   }

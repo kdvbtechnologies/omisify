@@ -4,18 +4,18 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <div className="footer-link">
-          <NavLink className="footer-linkk" to="/conditions">
+        <div className="footer-nav">
+          <p>© 2022 Omisify</p>
+          <NavLink className="navlink" to="/conditions">
             <p>Conditions d'utilisation</p>
           </NavLink>
-          <NavLink className="footer-linkk" to="/politique">
+          <NavLink className="navlink" to="/politique">
             <p>Politique de confidentialité</p>
           </NavLink>
-          <NavLink className="footer-linkk" to="/mentions">
+          <NavLink className="navlink" to="/mentions">
             <p>Mentions légales</p>
           </NavLink>
         </div>
-        <p>© 2022 Omisify</p>
       </footer>
     </>
   );

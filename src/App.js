@@ -3,7 +3,13 @@ import "./darkmode.css";
 import Politique from "./Pages/Politique";
 import Conditions from "./Pages/Conditions";
 import Mentions from "./Pages/Mentions";
+
+// home
 import Home from "./components/Home/Home";
+import Influencer from "./components/Home/E.Influencer";
+import NoInfluencer from "./components/Home/F.NoInfluencer";
+import HomeBonus from "./components/Home/AfterMore/Bonus/HomeBonus";
+
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
 import PartnerNavMenu from "./components/Partenaire Omisify/PartnerNavMenu";
@@ -182,6 +188,10 @@ export default function App() {
         <Route path="/dev" element={<Dev />} />
         <Route path="*" element={<Home />} />
         <Route path="/" element={<Home />} />
+        <Route path="/influencer" element={<Influencer />} />
+        <Route path="/no-influencer" element={<NoInfluencer />} />
+        <Route path="/home-bonus" element={<HomeBonus />} />
+
         <Route path="/program" element={<Program />} />
         <Route path="/contact" element={<ContactPartner />} />
         <Route path="/conditions" element={<Conditions />} />
