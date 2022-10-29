@@ -315,14 +315,10 @@ export default function LoginSuccess() {
             );
           }
 
-          /*
-          const birthcountry = res.data.birthcountry;
-          if (birthcountry) {
-            localStorage.setItem(
-              "https://omisify.com/birthcountry",
-              birthcountry
-            );
-          }*/
+          const accesscode = res.data.accesscode;
+          if (accesscode) {
+            localStorage.setItem("https://omisify.com/accesscode", accesscode);
+          }
 
           localStorage.setItem("https://omisify.com/name", name);
           localStorage.setItem("https://omisify.com/partnername", partnername);
