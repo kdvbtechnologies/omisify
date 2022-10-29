@@ -28,6 +28,8 @@ export default function WelcomeBonusPanel() {
   }, []);
   /*
          src={api.filter((u) => u.id === api?.userId)[5].userId}
+         
+         const recommendedPosts = posts.filter(({ _id }) => _id !== post._id) 
 
                         .sort((a, b) => b._id - a._id)
 
