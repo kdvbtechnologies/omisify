@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useState } from "react";
 import Loader from "../Partenaire Omisify/Loader";
 
 export default function Dev() {
@@ -11,7 +12,7 @@ export default function Dev() {
     setIsLoading(true);
     e.preventDefault();
 
-    const save = localStorage.setItem("https://omisify.com/codedev", save);
+    const save = localStorage.setItem("https://omisify.com/codedev", codedev);
     console.log(save);
 
     await axios({

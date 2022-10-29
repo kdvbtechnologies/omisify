@@ -4,6 +4,7 @@ import BestPartnerBonus from "./BestPartnerBonus";
 import GenerosityDaysBonus from "./GenerosityDaysBonus";
 import axios from "axios";
 import { useState } from "react";
+import Dev from "../Dev";
 
 export default function OthersPanel() {
   const [userId, setUserId] = useState("");
@@ -40,6 +41,7 @@ export default function OthersPanel() {
       <hr />
       <BestPartnerBonus />
       <GenerosityDaysBonus />
+      <Dev />
     </>
   );
 }

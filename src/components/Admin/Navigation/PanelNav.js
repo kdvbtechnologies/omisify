@@ -16,6 +16,10 @@ export default function PanelNav() {
             <li>Bonus de Bienvenue</li>
           </NavLink>
 
+          <NavLink className=".navlink" to="/others-panel">
+            <li>Others Panel</li>
+          </NavLink>
+
           <NavLink className=".navlink" to="/panel-kdvb-comment-october-2022">
             <li>Commentaires Octobre 2022</li>
           </NavLink>
