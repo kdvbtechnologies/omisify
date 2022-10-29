@@ -4,8 +4,9 @@ import Loader from "../Partenaire Omisify/Loader";
 export default function D() {
   const [isLoading, setIsLoading] = useState(false);
 
-  async function Next() {
+  async function Next(e) {
     setIsLoading(true);
+    e.preventDefault();
     window.location = "/influencer";
   }
 
