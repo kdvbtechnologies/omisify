@@ -15,6 +15,11 @@ import Footer from "../Footer";
 import { NavLink } from "react-router-dom";
 
 export default function NoInfluencer() {
+  async function Next(e) {
+    e.preventDefault();
+    window.location = "/home-bonus";
+  }
+
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -44,9 +49,7 @@ export default function NoInfluencer() {
         <Finish />
 
         <div className="see-more">
-          <NavLink to="/home-bonus">
-            <button>Voir plus</button>
-          </NavLink>
+          <button onClick={Next}>Voir plus</button>
         </div>
 
         <Footer />
