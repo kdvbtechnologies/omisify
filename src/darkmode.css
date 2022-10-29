@@ -151,6 +151,10 @@
 /* After access code.js */
 /* After access code.js */
 .after-access-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding-top: 70px;
   font-size: 17px;
 }

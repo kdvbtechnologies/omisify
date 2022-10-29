@@ -38,7 +38,7 @@ export default function AfterAccessCode() {
 
   return (
     <div style={family} className="after-access-code">
-      <p align="center">Patienter un instant..</p>
+      <p>Patienter un instant..</p>
       {isLoading && <Loader />}
     </div>
   );
