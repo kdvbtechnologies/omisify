@@ -30,7 +30,7 @@ export default function ConditionsAction() {
         <div className="politique">
           <h2>2. Site WEB:</h2>
           <p>
-            Le site web Omisify.com est une plateforme qui propose les
+            Le site web Omisify.com est une plateforme qui propose des
             programmes d'affiliation du service Omisify Business. Tout les
             Partenaires Omisify retirent leur rémunération à n'importe quel
             moment. A partir du site web Omisify.com, nous fournissons des
