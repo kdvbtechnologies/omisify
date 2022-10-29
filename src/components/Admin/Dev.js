@@ -60,7 +60,7 @@ export default function Dev() {
         onChange={(e) => setCodedev(e.target.value)}
       />
       <br />
-      <p>{success}</p>
+      <p style={{ color: "blue" }}>{success}</p>
       <br />
       {isLoading ? (
         <Loader />

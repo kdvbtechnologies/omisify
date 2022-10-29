@@ -31,9 +31,9 @@ export default function Dev() {
 
     const codedev = localStorage.getItem("https://omisify.com/codedev");
     if (newcodedev === codedev) {
-      console.log("succes codedev");
+      window.location = "/after-dev";
     } else {
-      console.log("error codedev");
+      window.location = "/secure-menu";
     }
   }
 
