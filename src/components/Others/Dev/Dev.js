@@ -6,7 +6,7 @@ import Loader from "../../Partenaire Omisify/Loader";
 export default function Dev() {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
-  const [newcodedev, setnewCodedev] = useState("");
+  const [newaccesscode, setnewaccesscode] = useState("");
   const userId = localStorage.getItem("https://omisify.com/userId");
 
   useEffect(() => {
@@ -15,9 +15,9 @@ export default function Dev() {
         .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/${userId}`)
         .then((res) => {
           console.log(res);
-          const codedev = res.data.codedev;
-          if (codedev) {
-            localStorage.setItem("https://omisify.com/codedev", codedev);
+          const accesscode = res.data.accesscode;
+          if (accesscode) {
+            localStorage.setItem("https://omisify.com/accesscode", accesscode);
           }
         })
         .cath((err) => console.log(err));
@@ -29,8 +29,8 @@ export default function Dev() {
     setIsLoading(true);
     e.preventDefault();
 
-    const codedev = localStorage.getItem("https://omisify.com/codedev");
-    if (newcodedev === codedev) {
+    const accesscode = localStorage.getItem("https://omisify.com/accesscode");
+    if (newaccesscode === accesscode) {
       window.location = "/after-dev";
     } else {
       window.location = "/secure-menu";
@@ -65,10 +65,10 @@ export default function Dev() {
         </p>
         <input
           type="number"
-          placeholder="Code d'accès"
-          value={newcodedev}
-          onChange={(e) => setnewCodedev(e.target.value)}
-          name="codedev"
+          placeholder="__ __ __ __"
+          value={newaccesscode}
+          onChange={(e) => setnewaccesscode(e.target.value)}
+          name="accesscode"
         />
         {isLoading ? (
           <Loader />
