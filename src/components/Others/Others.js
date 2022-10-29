@@ -37,6 +37,9 @@ export default function Others() {
           <NavLink className="navlink" to="/vocabulary">
             <p>Vocabulaire</p>
           </NavLink>
+          <div className="hr">
+            <hr />
+          </div>
 
           <NavLink className="navlink" to="/dev">
             <p>Dev</p>
