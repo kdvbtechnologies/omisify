@@ -56,6 +56,50 @@
   padding: 0px 10px;
 }
 
+/* others - dev.js */
+/* others - dev.js */
+/* others - dev.js */
+/* others - dev.js */
+/* others - dev.js */
+/* others - dev.js */
+/* others - dev.js */
+/* others - dev.js */
+/* others - dev.js */
+.dev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 15px;
+  margin-bottom: 70px;
+  color: #444;
+}
+
+.dev .b {
+  font-size: 15px;
+  padding: 30px 0px;
+}
+
+.dev input[type="number"] {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  margin: 15px 0px;
+}
+
+.dev button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 25px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+
 /* src - components - home.js */
 /* A */
 /* A */

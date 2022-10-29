@@ -47,34 +47,38 @@ export default function Dev() {
       <div className="back-btn">
         <button onClick={() => navigate(-1)}>Retour</button>
       </div>
-      <p>
-        Tout ce qui est caché derrière cette page sont des fonctionnalités qui
-        sont en cours de développement. Vous pouvez y accéder si vous disposer
-        d'un code d'accès
-      </p>
-      <i>
-        Si vous ne disposez pas d'un code d'accès,{" "}
-        <NavLink to="/partner-contact">contacter</NavLink> le service Partenaire
-        pour l'obtention d'un code d'accès
-      </i>
-      <p>
-        Entrer votre code d'accès au fonctionnalité en cours de développement
-      </p>
-      <input
-        type="number"
-        placeholder="Code d'accès"
-        value={newcodedev}
-        onChange={(e) => setnewCodedev(e.target.value)}
-        name="codedev"
-      />
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          {" "}
-          <button onClick={Verify}>Vérifier</button>{" "}
-        </>
-      )}
+      <div className="dev">
+        <p>
+          Tout ce qui est caché derrière cette page sont des fonctionnalités qui
+          sont en cours de développement. Vous pouvez y accéder si vous disposer
+          d'un code d'accès
+        </p>
+        <div className="b">
+          <i>
+            Si vous ne disposez pas d'un code d'accès,{" "}
+            <NavLink to="/partner-contact">contacter</NavLink> le service
+            Partenaire pour l'obtention d'un code d'accès
+          </i>
+        </div>
+        <p>
+          Entrer votre code d'accès au fonctionnalité en cours de développement
+        </p>
+        <input
+          type="number"
+          placeholder="Code d'accès"
+          value={newcodedev}
+          onChange={(e) => setnewCodedev(e.target.value)}
+          name="codedev"
+        />
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>
+            {" "}
+            <button onClick={Verify}>Vérifier</button>{" "}
+          </>
+        )}
+      </div>
     </div>
   );
 }
