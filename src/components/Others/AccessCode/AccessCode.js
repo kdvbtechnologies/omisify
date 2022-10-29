@@ -21,6 +21,7 @@ export default function AccessCode() {
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
+    window.location = "/after-access-code";
   }
 
   const family = {
