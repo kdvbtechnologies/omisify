@@ -57,7 +57,9 @@ export default function Dev() {
           <i>
             Si vous ne disposez pas d'un code d'accès,{" "}
             <NavLink to="/partner-contact">contacter</NavLink> le service
-            Partenaire pour l'obtention d'un code d'accès
+            Partenaire pour l'obtention d'un code d'accès ou cliquer{" "}
+            <NavLink to="/secure-access-code">ici</NavLink> pour la création
+            d'un code d'accès
           </i>
         </div>
         <p>Entrer votre code d'accès</p>
