@@ -16,6 +16,17 @@ export default function ContactPartnerAction() {
           <p>Telegram : +5514991550021</p>
         </div>
       </div>
+      <p
+        align="center"
+        style={{
+          fontSize: "16px",
+          fontFamily: "Roboto, Arial, sans-serif",
+          paddingTop: "20px",
+          color: "blue",
+        }}
+      >
+        Le Service Partenaire est ouvert 24h/24
+      </p>
     </>
   );
 }

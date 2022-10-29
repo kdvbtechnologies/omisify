@@ -155,10 +155,20 @@ import AdsB from "./components/Business/Home/Ads/AdsB";
 import MenuB from "./components/Business/Home/Navigation/MenuB";
 import CreateaAds from "./components/Business/Ads/CreateaAds";
 
+// dev
+import Dev from "./components/Others/Dev/Dev";
+import AfterDev from "./components/Others/Dev/AfterDev";
+import Complete from "./components/Others/Dev/Complete";
+import Incomplete from "./components/Others/Dev/Incomplete";
+
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/incomplete" element={<Incomplete />} />
+        <Route path="/complete" element={<Complete />} />
+        <Route path="/after-dev" element={<AfterDev />} />
+        <Route path="/dev" element={<Dev />} />
         <Route path="*" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/program" element={<Program />} />

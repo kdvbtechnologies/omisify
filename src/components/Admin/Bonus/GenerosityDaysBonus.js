@@ -22,7 +22,7 @@ export default function GenerosityDaysBonus() {
   return (
     <>
       <h3>Bonus des journées de générosité</h3>
-      <p>Commencer entrer le userId</p>
+      <p>Commencer par entrer le userId</p>
       <input
         type="text"
         placeholder="userId"
