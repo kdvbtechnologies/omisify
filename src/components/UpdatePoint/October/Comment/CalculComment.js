@@ -164,7 +164,7 @@ export default function CalculComment() {
   return (
     <div style={family}>
       <div className="back-btn">
-        <NavLink to="/update-point">
+        <NavLink to="/incomplete">
           <button>Retour</button>
         </NavLink>
       </div>

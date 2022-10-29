@@ -51,7 +51,7 @@ export default function ValidateCommentSuccess() {
           <Loader />
         ) : (
           <>
-            <NavLink to="/update-point">
+            <NavLink to="/incomplete">
               <button>Terminer</button>
             </NavLink>
           </>
