@@ -6,7 +6,7 @@ export default function D() {
 
   async function Next() {
     setIsLoading(true);
-    window.location = "/inluencer";
+    window.location = "/influencer";
   }
 
   return (
