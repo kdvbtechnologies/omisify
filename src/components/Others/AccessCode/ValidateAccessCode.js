@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 
 export default function ValidateAccessCode() {
+  const accesscode = localStorage.getItem("https://omisify.com/accesscode");
+
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Arial, Helvetica, sans-serif',
@@ -14,7 +16,7 @@ export default function ValidateAccessCode() {
         </div>
 
         <p>
-          Le code d'accès aaa a vous permettra désormais d'accéder aux
+          Le code d'accès {accesscode} vous permettra désormais d'accéder aux
           fonctionnalités en cours de développement
         </p>
 

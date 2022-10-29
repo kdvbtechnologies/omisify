@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function AccessCodeSuccess() {
   const navigate = useNavigate();
+  const accesscode = localStorage.getItem("https://omisify.com/accesscode");
 
   const family = {
     fontFamily:
@@ -15,10 +16,10 @@ export default function AccessCodeSuccess() {
       </div>
       <div className="access-code-success">
         <div className="code">
-          <p>3524</p>
+          <p>{accesscode}</p>
         </div>
         <p>
-          3524 est votre code d'accès aux fonctionnalités en cours de
+          {accesscode} est votre code d'accès aux fonctionnalités en cours de
           développement
         </p>
       </div>

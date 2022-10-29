@@ -14,6 +14,10 @@ export default function AfterAccessCode() {
           console.log(res);
           const getaccesscode = res.data.accesscode;
           if (getaccesscode) {
+            localStorage.setItem(
+              "https://omisify.com/accesscode",
+              getaccesscode
+            );
             console.log("access-code reussie");
             // window.location = "/validate-access-code"
           } else {
