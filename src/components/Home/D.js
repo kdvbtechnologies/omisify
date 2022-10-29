@@ -1,6 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import Loader from "../Partenaire Omisify/Loader";
 
 export default function D() {
+  const [isLoading, setIsLoading] = useState(false);
+
+  async function Next(e) {
+    setIsLoading(true);
+    e.prevenDefault();
+    window.location = "/inluencer";
+  }
+
   return (
     <>
       <div className="align-part-d">
@@ -33,9 +42,13 @@ export default function D() {
       </div>
 
       <div className="see-more">
-        <NavLink to="/influencer">
-          <button>Voir plus</button>
-        </NavLink>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>
+            <button onClick={Next}>Voir plus</button>
+          </>
+        )}
       </div>
     </>
   );
