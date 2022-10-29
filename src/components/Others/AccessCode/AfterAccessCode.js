@@ -18,11 +18,9 @@ export default function AfterAccessCode() {
               "https://omisify.com/accesscode",
               getaccesscode
             );
-            console.log("access-code reussie");
-            // window.location = "/validate-access-code"
+            window.location = "/validate-access-code";
           } else {
-            console.log("access-code error");
-            // window.location = "/error-access-code"
+            window.location = "/error-access-code";
           }
         })
         .catch((err) => console.log(err));
