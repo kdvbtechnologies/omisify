@@ -9,7 +9,7 @@ export default function AfterAccessCode() {
   useEffect(() => {
     async function get() {
       await axios
-        .get(`${process.env.REACT_APP_OMISIFY_APP}/api/user/${userId}`)
+        .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/${userId}`)
         .then((res) => {
           console.log(res);
           const getaccesscode = res.data.accesscode;
