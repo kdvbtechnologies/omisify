@@ -15,8 +15,15 @@ import Footer from "../Footer";
 import { NavLink } from "react-router-dom";
 import Loader from "../Partenaire Omisify/Loader";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function NoInfluencer() {
+  const userId = localStorage.getItem("https://omisify.com/userId");
+  const partnername = localStorage.getItem("https://omisify.com/partnername");
+  const shortname = localStorage.getItem("https://omisify.com/shortname");
+  const name = localStorage.getItem("https://omisify.com/name");
+  const navigate = useNavigate();
+
   const [isLoading, setIsLoading] = useState(false);
 
   async function Next(e) {
@@ -32,11 +39,22 @@ export default function NoInfluencer() {
 
   return (
     <>
-      <div className="back-btn">
-        <NavLink to="/signup">
-          <button>Retour</button>
-        </NavLink>
-      </div>
+      {userId && shortname && partnername && name ? (
+        <>
+          <div className="back-btn">
+            <button onClick={() => navigate(-1)}>Retour</button>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="back-btn">
+            <NavLink to="/signup">
+              <button>Retour</button>
+            </NavLink>
+          </div>
+        </>
+      )}
+
       <div className="home" style={family}>
         <CommentN />
         <E10k />
