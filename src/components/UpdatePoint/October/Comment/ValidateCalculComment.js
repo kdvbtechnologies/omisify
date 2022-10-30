@@ -76,7 +76,7 @@ export default function ValidateCalculComment() {
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
         // validation reussie
-        window.location = "/validate-comment-success";
+        //window.location = "/validate-comment-success";
       } else {
         await axios({
           method: "put",
@@ -93,7 +93,7 @@ export default function ValidateCalculComment() {
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
         // validation reussie
-        window.location = "/validate-comment-success";
+        // window.location = "/validate-comment-success";
       }
     } else {
       // validation impossible
