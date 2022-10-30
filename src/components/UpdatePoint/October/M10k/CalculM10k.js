@@ -1,9 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Loader from "../../../Partenaire Omisify/Loader";
 
 export default function CalculM10k() {
   const userId = localStorage.getItem("https://omisify.com/userId");
   const [newnumber, setNewnumber] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   // 1ere etape
   useEffect(() => {
@@ -32,7 +34,10 @@ export default function CalculM10k() {
   const calculpointtm10k =
     parseInt(newnumber) * 0.07 + parseFloat(oldpointtm10klife);
 
-  function Save() {
+  function Save(e) {
+    setIsLoading(true);
+    e.preventDefault();
+
     localStorage.setItem(
       "https://omisify.com/resultpointtm10klife",
       calculpointtm10k
@@ -40,7 +45,7 @@ export default function CalculM10k() {
   }
 
   return (
-    <>
+    <div className="all">
       <input
         type="number"
         placeholder="Nombre de M10k"
@@ -49,7 +54,14 @@ export default function CalculM10k() {
         name="newnumber"
       />
 
-      <button onClick={Save}>Calcul terminé</button>
-    </>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          {" "}
+          <button onClick={Save}>Calcul terminé</button>
+        </>
+      )}
+    </div>
   );
 }

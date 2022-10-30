@@ -19,8 +19,8 @@ export default function ValidateCalculM10k() {
   }
 
   return (
-    <>
+    <div className="all">
       <button onClick={Validate}>Valider</button>
-    </>
+    </div>
   );
 }
