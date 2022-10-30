@@ -153,6 +153,7 @@ import UpdatelikespublicationPanel from "./components/Admin/UpdatePoint/LikesPub
 import UpdatepwpPanel from "./components/Admin/UpdatePoint/PWP/UpdatePWPPanel";
 import UpdatepwiPanel from "./components/Admin/UpdatePoint/PWI/UpdatePWIPanel";
 import NewCommentPanel from "./components/Admin/UpdatePoint/Comment/NewCommentPanel";
+import NewM10kPanel from "./components/Admin/UpdatePoint/M10k/NewM10kPanel";
 import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 
 // Omisify Business
@@ -476,6 +477,7 @@ export default function App() {
 
         <Route path="/others-panel" element={<OthersPanel />} />
         <Route path="/new-comment-panel" element={<NewCommentPanel />} />
+        <Route path="/new-m10k-panel" element={<NewM10kPanel />} />
 
         <Route path="/business" element={<HomeB />} />
         <Route path="/ads" element={<AdsB />} />
