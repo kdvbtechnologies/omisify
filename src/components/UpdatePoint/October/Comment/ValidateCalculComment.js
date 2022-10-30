@@ -43,6 +43,10 @@ export default function ValidateCalculComment() {
   );
   console.log(generositydaysbonus);
 
+  const gdb = localStorage.getItem("https://omisify.com/resultgdb");
+
+  const suggestgdb = localStorage.getItem("https://omisify.com/suggestgdb");
+
   async function Validate(e) {
     setIsLoading(true);
     e.preventDefault();
@@ -54,24 +58,43 @@ export default function ValidateCalculComment() {
     console.log(getnewnumber);
 
     if (getnewnumber === numbercommententeradmin) {
-      await axios({
-        method: "put",
-        url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/634c8ab0f59d4e9994f83884`,
-        data: {
-          pointtcommentlife,
-          numbercommententeradmin: newnumbercommententeradmin,
-          statuscomment,
+      if (gdb === suggestgdb) {
+        await axios({
+          method: "put",
+          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/634c8ab0f59d4e9994f83884`,
+          data: {
+            pointtcommentlife,
+            numbercommententeradmin: newnumbercommententeradmin,
+            statuscomment,
 
-          pointtlife,
-          gaintlife,
+            pointtlife,
+            gaintlife,
 
-          generositydaysbonus,
-        },
-      })
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err));
-      // validation reussie
-      window.location = "/validate-comment-success";
+            generositydaysbonus,
+          },
+        })
+          .then((res) => console.log(res))
+          .catch((err) => console.log(err));
+        // validation reussie
+        window.location = "/validate-comment-success";
+      } else {
+        await axios({
+          method: "put",
+          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/634c8ab0f59d4e9994f83884`,
+          data: {
+            pointtcommentlife,
+            numbercommententeradmin: newnumbercommententeradmin,
+            statuscomment,
+
+            pointtlife,
+            gaintlife,
+          },
+        })
+          .then((res) => console.log(res))
+          .catch((err) => console.log(err));
+        // validation reussie
+        window.location = "/validate-comment-success";
+      }
     } else {
       // validation impossible
       window.location = "/validate-comment-error";
