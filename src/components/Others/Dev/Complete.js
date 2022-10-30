@@ -1,8 +1,6 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Complete() {
-  const navigate = useNavigate();
-
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -11,7 +9,9 @@ export default function Complete() {
   return (
     <div style={family}>
       <div className="back-btn">
-        <button onClick={() => navigate(-1)}>Retour</button>
+        <NavLink to="/after-dev">
+          <button>Retour</button>
+        </NavLink>
       </div>
       <p>Attention !</p>
       <p>
