@@ -37,6 +37,7 @@ export default function ValidateCalculComment() {
   const generositydaysbonus = localStorage.getItem(
     "https://omisify.com/resultgenerositydaysbonus"
   );
+  console.log(generositydaysbonus);
 
   async function Validate(e) {
     setIsLoading(true);
