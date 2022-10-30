@@ -146,16 +146,6 @@ export default function CalculComment() {
 
   console.log(calculgaintlife);
 
-  if (gdb === 10) {
-    const calculgenerositydaysbonus =
-      parseInt(calculpointtcommentlife) + parseInt(oldgenerositydaysbonus);
-
-    localStorage.setItem(
-      "https://omisify.com/resultgenerositydaysbonus",
-      calculgenerositydaysbonus
-    );
-  }
-
   /* quatriemement on sauvegarde calculpointtcommentlife (et les autres) dans le 
   localStorage, ensuite on sauvegarde aussi le nombre de comment (newnumber)
 
@@ -184,6 +174,16 @@ export default function CalculComment() {
       "https://omisify.com/resultgaintlife",
       calculgaintlife
     );
+
+    if (gdb === 10) {
+      const calculgenerositydaysbonus =
+        parseInt(calculpointtcommentlife) + parseInt(oldgenerositydaysbonus);
+
+      localStorage.setItem(
+        "https://omisify.com/resultgenerositydaysbonus",
+        calculgenerositydaysbonus
+      );
+    }
 
     window.location = "/validate-calcul-comment";
   }
