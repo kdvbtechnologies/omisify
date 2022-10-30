@@ -21,6 +21,11 @@ export default function CalculM10k() {
               pointtm10klife
             );
           }
+
+          const gaintlife = res.data.gaintlife;
+          if (gaintlife) {
+            localStorage.setItem("https://omisify.com/gaintlife", gaintlife);
+          }
         });
     }
     get();
@@ -31,8 +36,13 @@ export default function CalculM10k() {
     "https://omisify.com/pointtm10klife"
   );
 
+  const oldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
+
   const calculpointtm10k =
-    parseInt(newnumber) * 0.07 + parseFloat(oldpointtm10klife);
+    parseInt(newnumber) * 0.7 + parseFloat(oldpointtm10klife);
+
+  const calculgaintlife =
+    parseInt(newnumber) * 0.0007 + parseFloat(oldgaintlife);
 
   function Save(e) {
     setIsLoading(true);
@@ -41,6 +51,11 @@ export default function CalculM10k() {
     localStorage.setItem(
       "https://omisify.com/resultpointtm10klife",
       calculpointtm10k
+    );
+
+    localStorage.setItem(
+      "https://omisify.com/resultgaintlife",
+      calculgaintlife
     );
   }
 

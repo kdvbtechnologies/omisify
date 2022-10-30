@@ -5,12 +5,15 @@ export default function ValidateCalculM10k() {
     "https://omisify.com/resultpointtm10klife"
   );
 
+  const gaintlife = localStorage.getItem("https://omisify.com/resultgaintlife");
+
   async function Validate() {
     await axios({
       method: "put",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/634c8ab0f59d4e9994f83884`,
       data: {
         pointtm10klife,
+        gaintlife,
       },
     })
       .then((res) => console.log(res))
