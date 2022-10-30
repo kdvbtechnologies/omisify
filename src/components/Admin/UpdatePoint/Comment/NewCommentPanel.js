@@ -6,6 +6,8 @@ import Loader from "../../../Partenaire Omisify/Loader";
 export default function NewCommentPanel() {
   const navigate = useNavigate();
   const [userId, setUserId] = useState("");
+  const getgdb = "1";
+  const [gdb, setGdb] = useState(getgdb);
   const [numbercommententeradmin, setNumbercommententeradmin] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState("");
@@ -26,6 +28,7 @@ export default function NewCommentPanel() {
       data: {
         numbercommententeradmin,
         statuscomment,
+        gdb,
       },
     })
       .then((res) => {
@@ -69,6 +72,17 @@ export default function NewCommentPanel() {
               name="userId"
             />
           </div>
+
+          <p>Journées de générosité</p>
+          <select
+            value={gdb}
+            onChange={(e) => setGdb(e.target.value)}
+            name="gdb"
+            id="gdb"
+          >
+            <option value="1">Non</option>
+            <option value="10">Oui</option>
+          </select>
 
           <p>Entrer le nombre de nouveau(x) commentaire(s)</p>
           <input

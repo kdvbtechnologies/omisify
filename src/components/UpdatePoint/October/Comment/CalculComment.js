@@ -72,6 +72,11 @@ export default function CalculComment() {
           if (gaintlife) {
             localStorage.setItem("https://omisify.com/gaintlife", gaintlife);
           }
+
+          const gdb = res.data.gdb;
+          if (gdb) {
+            localStorage.setItem("https://omisify.com/gdb", gdb);
+          }
         })
         .catch((err) => console.log(err));
     }
@@ -99,7 +104,7 @@ export default function CalculComment() {
   Calcul a effectuer :
 
   on prends le nombre de comment (newnumber) multiplié par la valeur
-  de 1 comment
+  de 1 comment * gdb
   1 comment = 1 point
   
 
@@ -111,18 +116,21 @@ export default function CalculComment() {
 
   pour les gains
   1 comment = 0.001€
-  on prend le nombre de comment (newnumber) multiplié par le gain de 1 comment
+  on prend le nombre de comment (newnumber) multiplié par le gain de 1 comment * gdb
   on additionne le tout par le gaintlife qu'on avait recuperer dans le localStorage 
   */
 
-  const jg = 10;
+  // ici on recupere le gdb qu'on avait sauvegarder dans le localstorage
+  // bonus de generosité - gdb = generosity days bonus
+  const gdb = localStorage.getItem("https://omisify.com/gdb");
+  console.log(gdb);
 
   const calculpointtcommentlife =
-    parseInt(newnumber) * 1 * jg + parseInt(oldpointtcommentlife);
+    parseInt(newnumber) * 1 * gdb + parseInt(oldpointtcommentlife);
   console.log(calculpointtcommentlife);
 
   const calculgaintlife =
-    parseFloat(oldgaintlife) + parseInt(newnumber) * 0.001 * jg;
+    parseFloat(oldgaintlife) + parseInt(newnumber) * 0.001 * gdb;
 
   console.log(calculgaintlife);
 
