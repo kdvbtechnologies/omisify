@@ -22,6 +22,8 @@ export default function PanelCommentOctober() {
     get();
   }, []);
 
+  const userId = localStorage.getItem("https://omisify.com/userId");
+
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -35,6 +37,17 @@ export default function PanelCommentOctober() {
         <Loader />
       ) : (
         <>
+          {api.map((api) =>
+            userId(api.userId) ? (
+              <>
+                <p>{api.userId}</p>
+              </>
+            ) : (
+              <>
+                <p>hello</p>
+              </>
+            )
+          )}
           {api.map((api) => (
             <>
               <h3>Nombres de commentaires: {api.commentrecent}</h3>

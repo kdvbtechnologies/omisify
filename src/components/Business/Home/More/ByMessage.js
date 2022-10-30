@@ -8,7 +8,7 @@ export default function ByMessage() {
     <div style={family} className="homeb">
       <div className="shrink-bymessage-box-shadow">
         <div className="bymessage-box-shadow">
-          <p>Publicité par Message</p>
+          <p>Publicité par Comm</p>
         </div>
       </div>
     </div>

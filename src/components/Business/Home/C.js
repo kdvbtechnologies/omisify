@@ -109,31 +109,41 @@ export default function C() {
         </div>
       </div>
 
-      <p>La Publicité en commentaire parait banales mais pourtant c'est très très éfficace.</p>
-      <p>Avec la publicité par les commentaires réalisés par les Non-Influenceurs vous maintenez la présence de votre
-        entreprise dans l'esprit des gens et vous gagnez par la même occasion de nombreux clients qui seront 
-        intéréssés par l'offre
-        que vous proposer. D'après les sondages réalisés auprès des Partenaires Omisify, 30% des Partenaires Omisify 
-        Non-Influenceurs ont été obtenu grace aux commentaires; ils ont vu un commentaire qui parlaient d'Omisify et ils
-        ont cliqués sur le lien pour obtenir plus d'informations. Voilà pourquoi Omisify Business met en avant le modèle de 
-        Publicité en commentaire car
-        de nombreux clients seront intéréssés après avoir lu un commentaire qui parle de votre produit et cliqueront sur le 
-        lien
-        ou contacterons l'entreprise pour obtenir plus d'informations.</p>
-        <p>lire plus</p>
-        <p>
-        Les Partenaire Omisify Non-Influenceurs reformulent la partie presentation que vous avez founi dans votre 
-publicité. Chaque Partenaire le reformule à sa meilleure manière et le publie en commentaire de n'importe quel
-publication sur les réseaux sociaux. Plusieurs commentaires sont publiés sur plusieurs publications 
-differentes pour vous permettre de toucher le maximum de personnes grace a votre publicité.
-Les gens sur internet ont souvent l'habitude de consulter les commentaires, tres souvent. 90% des internautes
-consultent souvent les commentaires de chaque publication. Alors comme par magie des millions d'internautes 
-tomberont sur des commentaires qui parlent de votre produit ou de votre entreprise. Et vous allez gagner de
-nombreux clients qui liront ces commentaires et seront intéréssés par votre produit ou par l'offre que vous 
-proposé.
-        </p>
-        <button>Essayez gratuitement la Publicité</button>
-
+      <p>
+        La Publicité en commentaire parait banales mais pourtant c'est très très
+        éfficace.
+      </p>
+      <p>
+        Avec la publicité par les commentaires réalisés par les Non-Influenceurs
+        vous maintenez la présence de votre entreprise dans l'esprit des gens et
+        vous gagnez par la même occasion de nombreux clients qui seront
+        intéréssés par l'offre que vous proposer. D'après les sondages réalisés
+        auprès des Partenaires Omisify, 30% des Partenaires Omisify
+        Non-Influenceurs ont été obtenu grace aux commentaires; ils ont vu un
+        commentaire qui parlaient d'Omisify et ils ont cliqués sur le lien pour
+        obtenir plus d'informations. Voilà pourquoi Omisify Business met en
+        avant le modèle de Publicité en commentaire car de nombreux clients
+        seront intéréssés après avoir lu un commentaire qui parle de votre
+        produit et cliqueront sur le lien ou contacterons l'entreprise pour
+        obtenir plus d'informations.
+      </p>
+      <p>lire plus</p>
+      <p>
+        Les Partenaire Omisify Non-Influenceurs reformulent la partie
+        presentation que vous avez founi dans votre publicité. Chaque Partenaire
+        le reformule à sa meilleure manière et le publie en commentaire de
+        n'importe quel publication sur les réseaux sociaux. Plusieurs
+        commentaires sont publiés sur plusieurs publications differentes pour
+        vous permettre de toucher le maximum de personnes grace a votre
+        publicité. Les gens sur internet ont souvent l'habitude de consulter les
+        commentaires, tres souvent. 90% des internautes consultent souvent les
+        commentaires de chaque publication. Alors comme par magie des millions
+        d'internautes tomberont sur des commentaires qui parlent de votre
+        produit ou de votre entreprise. Et vous allez gagner de nombreux clients
+        qui liront ces commentaires et seront intéréssés par votre produit ou
+        par l'offre que vous proposé.
+      </p>
+      <button>Essayez gratuitement la Publicité</button>
 
       <p>Publicité par les Contacts de Confiance</p>
       <p>Publicité par Message</p>
@@ -151,42 +161,46 @@ proposé.
       <p>Publicité vidéo JL</p>
 
       <p>Publicité par les Contacts de Confiance</p>
-      <p>La grande majorité des Partenaires Omisify ont ajoutés la liste de tout leur contact Whatsapp, Telegram et signal 
-        avec lequel
-        ils ont l'habitude de causer tous les jours ce qui est appelé dans le vocabulaire des Partenaires Omisify par 
-        Contacts de
-        Confiance. Les Contacts de Confiance sont des personnes avec lesqueslles ils ont l'habitude de causer tous les jours;
-         ils les ont ajoutés au niveau de leur compte Omisify ainsi que les informations personnelles de leur contact de 
-         confiance avec le consentement biensur de leur Contact de Confiance (informations personnelles comme leur 
-         nom de naissance, leur date de naissance, leur age, leur nationalité,
-        leur genre, leur taille, leur ville actuelle, leur pays actuelle, leur emploi actuel, leur dépenses, 
-        leur divertissements,
-        leur nombre d'enfants, le genre et l'age de chaque enfant, leur nombre de conjoints, le genre et l'age du conjoint
-        , leur adresse de résidence permanente,...) 
-        qui permet à Omisify Business de personnaliser vos publicités, de toucher le public que vous cibler et d'atteindre
-        les résultats que vous attendez.
-        btn: Essayer gratuitement la publicité
-
-        La Publicité par les Contacts de Confiance est le modèle de publicité principal chez Omisify Business
-        , elle est au centre de tout les modèles
-        publicitaire car les Contacts de confiance interagissent tres tres vite, ils passent tres rapidement a l'acte 
-        d'achat, ils n'ont pas besoin de refléchir longtemps s'ils doivent acheter votre produit ou celui de votre 
-        concurrent ou celui qu'ils ont vu à la 
-        télé ou sur internet. Sans réfléchir longtemps ils achètent directement le produit qu'à recommander leur proche 
-        car ils accordent beaucoup de confiance et de respect à leur 
-        proche (Partenaire Omisify) avec lequel ils interagissent tous les jours. Voilà comment votre entreprise va écouler
-        rapidement son stock de marchandises et augmenter ses bénéfices car avec les contacts de confiance ca va tres tres
-        vite, vous serez rapidement en rupture de stock car ils vont tout achetés.
+      <p>
+        La grande majorité des Partenaires Omisify ont ajoutés la liste de tout
+        leur contact Whatsapp, Telegram et signal avec lequel ils ont l'habitude
+        de causer tous les jours ce qui est appelé dans le vocabulaire des
+        Partenaires Omisify par Contacts de Confiance. Les Contacts de Confiance
+        sont des personnes avec lesqueslles ils ont l'habitude de causer tous
+        les jours; ils les ont ajoutés au niveau de leur compte Omisify ainsi
+        que les informations personnelles de leur contact de confiance avec le
+        consentement biensur de leur Contact de Confiance (informations
+        personnelles comme leur nom de naissance, leur date de naissance, leur
+        age, leur nationalité, leur genre, leur taille, leur ville actuelle,
+        leur pays actuelle, leur emploi actuel, leur dépenses, leur
+        divertissements, leur nombre d'enfants, le genre et l'age de chaque
+        enfant, leur nombre de conjoints, le genre et l'age du conjoint , leur
+        adresse de résidence permanente,...) qui permet à Omisify Business de
+        personnaliser vos publicités, de toucher le public que vous cibler et
+        d'atteindre les résultats que vous attendez. btn: Essayer gratuitement
+        la publicité La Publicité par les Contacts de Confiance est le modèle de
+        publicité principal chez Omisify Business , elle est au centre de tout
+        les modèles publicitaire car les Contacts de confiance interagissent
+        tres tres vite, ils passent tres rapidement a l'acte d'achat, ils n'ont
+        pas besoin de refléchir longtemps s'ils doivent acheter votre produit ou
+        celui de votre concurrent ou celui qu'ils ont vu à la télé ou sur
+        internet. Sans réfléchir longtemps ils achètent directement le produit
+        qu'à recommander leur proche car ils accordent beaucoup de confiance et
+        de respect à leur proche (Partenaire Omisify) avec lequel ils
+        interagissent tous les jours. Voilà comment votre entreprise va écouler
+        rapidement son stock de marchandises et augmenter ses bénéfices car avec
+        les Contacts de Confiance ca va tres tres vite, vous serez rapidement en
+        rupture de stock car ils vont tout achetés.
       </p>
       <button>Essayer gratuitement la publicité</button>
-      
+
       <p></p>
 
-      <p>Omisify Business a réunies toutes les conditions pour que votre publicité ne passent jamais inapercue
+      <p>
+        Omisify Business a réunies toutes les conditions pour que votre
+        publicité ne passent jamais inapercue
       </p>
       <button>Essayer gratuitement la publicité</button>
     </div>
-
-   
   );
 }
