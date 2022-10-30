@@ -236,11 +236,15 @@ export default function CalculComment() {
             </p>
           )}
 
-          {calculgaintlife && (
+          {calculgaintlife ? (
             <div className="c">
               <i>Total des Points : {calculpointtlife} point(s)</i>
               <i>Gains : {calculgaintlife}€</i>
             </div>
+          ) : (
+            <>
+              <p></p>
+            </>
           )}
 
           <div className="d">
