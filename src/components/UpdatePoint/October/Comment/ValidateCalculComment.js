@@ -43,7 +43,7 @@ export default function ValidateCalculComment() {
   );
   console.log(generositydaysbonus);
 
-  const gdb = localStorage.getItem("https://omisify.com/resultgdb");
+  const gdb = localStorage.getItem("https://omisify.com/gdb");
 
   const suggestgdb = localStorage.getItem("https://omisify.com/suggestgdb");
 
