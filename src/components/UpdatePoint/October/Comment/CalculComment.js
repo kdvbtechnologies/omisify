@@ -6,14 +6,6 @@ import Loader from "../../../Partenaire Omisify/Loader";
 export default function CalculComment() {
   const [isLoading, setIsLoading] = useState(false);
 
-  const resultgaintlife = localStorage.getItem(
-    "https://omisify.com/resultgaintlife"
-  );
-
-  const resultpointtlife = localStorage.getItem(
-    "https://omisify.com/resultpointtlife"
-  );
-
   /* 
   N.B : il faut commencer à lire la ou c'est ecrit premierement
 
@@ -139,15 +131,19 @@ export default function CalculComment() {
   // bonus de generosité - gdb = generosity days bonus
   const gdb = localStorage.getItem("https://omisify.com/gdb");
   const suggestgdb = localStorage.getItem("https://omisify.com/suggestgdb");
+  console.log(gdb);
 
   const calculpointtcommentlife =
     parseInt(newnumber) * 1 * gdb + parseInt(oldpointtcommentlife);
+  console.log(calculpointtcommentlife);
 
   const calculpointtlife =
     parseInt(calculpointtcommentlife) + parseInt(oldpointtlife);
 
   const calculgaintlife =
     parseFloat(oldgaintlife) + parseInt(newnumber) * 0.001 * gdb;
+
+  console.log(calculgaintlife);
 
   if (gdb === suggestgdb) {
     const calculgenerositydaysbonus =
@@ -173,13 +169,6 @@ export default function CalculComment() {
   resultat total qui est sauvegarder dans le localStorage
   */
 
-  localStorage.setItem(
-    "https://omisify.com/resultpointtlife",
-    calculpointtlife
-  );
-
-  localStorage.setItem("https://omisify.com/resultgaintlife", calculgaintlife);
-
   function Save(e) {
     setIsLoading(true);
     e.preventDefault();
@@ -188,6 +177,16 @@ export default function CalculComment() {
     localStorage.setItem(
       "https://omisify.com/resultpointtcommentlife",
       calculpointtcommentlife
+    );
+
+    localStorage.setItem(
+      "https://omisify.com/resultpointtlife",
+      calculpointtlife
+    );
+
+    localStorage.setItem(
+      "https://omisify.com/resultgaintlife",
+      calculgaintlife
     );
 
     window.location = "/validate-calcul-comment";
@@ -240,10 +239,10 @@ export default function CalculComment() {
             </p>
           )}
 
-          {resultgaintlife && (
+          {calculgaintlife && (
             <div className="c">
-              <i>Total des Points : {resultpointtlife} point(s)</i>
-              <i>Gains : {resultgaintlife}€</i>
+              <i>Total des Points : {calculpointtlife} point(s)</i>
+              <i>Gains : {calculgaintlife}€</i>
             </div>
           )}
 
