@@ -134,9 +134,10 @@ export default function ValidateCalculComment() {
         </div>
 
         <div className="a">
-          <p>Option : Commentaire</p>
-          <p>18/15/5522</p>
-          <p>{date}</p>
+          <div className="date">
+            <p>Option : Commentaire</p>
+            <p>{date}</p>
+          </div>
 
           <div className="shrink-border">
             <div className="border">

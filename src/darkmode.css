@@ -1888,9 +1888,13 @@ padding-bottom: 70px;
   text-align: center;
 }
 
+.validate-calcul-comment .a .date {
+  margin-top: 20px;
+}
+
 .validate-calcul-comment .a p {
-  margin: 20px;
   padding: 5px 20px;
+  
 }
 
 .validate-calcul-comment .a .shrink-border {
