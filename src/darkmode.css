@@ -1889,7 +1889,8 @@ padding-bottom: 70px;
 }
 
 .validate-calcul-comment .a p {
-  padding: 20px;
+  margin: 20px;
+  padding: 5px 20px;
 }
 
 .validate-calcul-comment .a .shrink-border {
