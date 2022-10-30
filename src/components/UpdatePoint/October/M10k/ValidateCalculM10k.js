@@ -3,6 +3,8 @@ import { useState } from "react";
 import Loader from "../../../Partenaire Omisify/Loader";
 
 export default function ValidateCalculM10k() {
+  const statusm10k = "NO";
+  const numberm10kenteradmin = "0";
   const [isLoading, setIsLoading] = useState(false);
 
   const pointtm10klife = localStorage.getItem(
@@ -23,6 +25,8 @@ export default function ValidateCalculM10k() {
         pointtm10klife,
         pointtlife,
         gaintlife,
+        statusm10k,
+        numberm10kenteradmin,
       },
     })
       .then((res) => console.log(res))
