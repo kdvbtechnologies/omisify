@@ -16,13 +16,14 @@ export default function Complete() {
       <p>Attention !</p>
       <p>
         Toutes les Fonctionnalités présentes sur cette page fonctionne très bien
-        mais le développement de leur design n'est pas encore terminé. Vous
+        mais il y'a certaines amélioration qui doivent etre apporté dans le
+        futur et le développement de leur design n'est pas encore terminé. Vous
         pouvez les utiliser en attendant que le developpement du design soit
         terminé
       </p>
 
-      <NavLink>
-        <p>aaa</p>
+      <NavLink to="/before-calcul-comment">
+        <p>Commentaires</p>
       </NavLink>
     </div>
   );

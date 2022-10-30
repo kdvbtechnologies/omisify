@@ -139,11 +139,15 @@ export default function ValidateCalculComment() {
 
           <div className="shrink-border">
             <div className="border">
-              {pointtcommentlife && (
+              {pointtcommentlife ? (
                 <>
                   <p>Commentaire(s) : {pointtcommentlife} point(s)</p>
                   <p>Total des Points : {resultpointtlife} point(s)</p>
                   <p>Gains : {gaintlife}€</p>
+                </>
+              ) : (
+                <>
+                  <p></p>
                 </>
               )}
             </div>
