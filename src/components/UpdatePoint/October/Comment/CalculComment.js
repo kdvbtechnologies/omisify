@@ -39,6 +39,9 @@ export default function CalculComment() {
         .then((res) => {
           console.log(res);
 
+          const suggestgdb = 10;
+          localStorage.setItem("https://omisify.com/suggestgdb", suggestgdb);
+
           const pointtcommentlife = res.data.pointtcommentlife;
           if (pointtcommentlife) {
             localStorage.setItem(
@@ -135,6 +138,7 @@ export default function CalculComment() {
   // ici on recupere le gdb qu'on avait sauvegarder dans le localstorage
   // bonus de generosité - gdb = generosity days bonus
   const gdb = localStorage.getItem("https://omisify.com/gdb");
+  const suggestgdb = localStorage.getItem("https://omisify.com/suggestgdb");
   console.log(gdb);
 
   const calculpointtcommentlife =
@@ -148,6 +152,16 @@ export default function CalculComment() {
     parseFloat(oldgaintlife) + parseInt(newnumber) * 0.001 * gdb;
 
   console.log(calculgaintlife);
+
+  if (gdb === suggestgdb) {
+    const calculgenerositydaysbonus =
+      parseInt(calculpointtcommentlife) + parseInt(oldgenerositydaysbonus);
+
+    localStorage.setItem(
+      "https://omisify.com/resultgenerositydaysbonus",
+      calculgenerositydaysbonus
+    );
+  }
 
   /* quatriemement on sauvegarde calculpointtcommentlife (et les autres) dans le 
   localStorage, ensuite on sauvegarde aussi le nombre de comment (newnumber)
@@ -166,51 +180,22 @@ export default function CalculComment() {
   function Save(e) {
     setIsLoading(true);
     e.preventDefault();
+    localStorage.setItem("https://omisify.com/newnumber", newnumber);
 
-    const suggestgdb = 10;
-    if (gdb === suggestgdb) {
-      const calculgenerositydaysbonus =
-        parseInt(calculpointtcommentlife) + parseInt(oldgenerositydaysbonus);
+    localStorage.setItem(
+      "https://omisify.com/resultpointtcommentlife",
+      calculpointtcommentlife
+    );
 
-      localStorage.setItem(
-        "https://omisify.com/resultgenerositydaysbonus",
-        calculgenerositydaysbonus
-      );
+    localStorage.setItem(
+      "https://omisify.com/resultpointtlife",
+      calculpointtlife
+    );
 
-      localStorage.setItem("https://omisify.com/newnumber", newnumber);
-
-      localStorage.setItem(
-        "https://omisify.com/resultpointtcommentlife",
-        calculpointtcommentlife
-      );
-
-      localStorage.setItem(
-        "https://omisify.com/resultpointtlife",
-        calculpointtlife
-      );
-
-      localStorage.setItem(
-        "https://omisify.com/resultgaintlife",
-        calculgaintlife
-      );
-    } else {
-      localStorage.setItem("https://omisify.com/newnumber", newnumber);
-
-      localStorage.setItem(
-        "https://omisify.com/resultpointtcommentlife",
-        calculpointtcommentlife
-      );
-
-      localStorage.setItem(
-        "https://omisify.com/resultpointtlife",
-        calculpointtlife
-      );
-
-      localStorage.setItem(
-        "https://omisify.com/resultgaintlife",
-        calculgaintlife
-      );
-    }
+    localStorage.setItem(
+      "https://omisify.com/resultgaintlife",
+      calculgaintlife
+    );
 
     window.location = "/validate-calcul-comment";
   }
