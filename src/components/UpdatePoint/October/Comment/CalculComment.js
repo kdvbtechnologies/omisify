@@ -155,7 +155,7 @@ export default function CalculComment() {
 
   if (gdb === suggestgdb) {
     const calculgenerositydaysbonus =
-      parseInt(calculpointtcommentlife) + parseInt(oldgenerositydaysbonus);
+      parseInt(newnumber) * 1 * gdb + parseFloat(oldgenerositydaysbonus);
 
     localStorage.setItem(
       "https://omisify.com/resultgenerositydaysbonus",
