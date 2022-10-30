@@ -139,19 +139,15 @@ export default function CalculComment() {
   // bonus de generosité - gdb = generosity days bonus
   const gdb = localStorage.getItem("https://omisify.com/gdb");
   const suggestgdb = localStorage.getItem("https://omisify.com/suggestgdb");
-  console.log(gdb);
 
   const calculpointtcommentlife =
     parseInt(newnumber) * 1 * gdb + parseInt(oldpointtcommentlife);
-  console.log(calculpointtcommentlife);
 
   const calculpointtlife =
     parseInt(calculpointtcommentlife) + parseInt(oldpointtlife);
 
   const calculgaintlife =
     parseFloat(oldgaintlife) + parseInt(newnumber) * 0.001 * gdb;
-
-  console.log(calculgaintlife);
 
   if (gdb === suggestgdb) {
     const calculgenerositydaysbonus =
@@ -177,6 +173,13 @@ export default function CalculComment() {
   resultat total qui est sauvegarder dans le localStorage
   */
 
+  localStorage.setItem(
+    "https://omisify.com/resultpointtlife",
+    calculpointtlife
+  );
+
+  localStorage.setItem("https://omisify.com/resultgaintlife", calculgaintlife);
+
   function Save(e) {
     setIsLoading(true);
     e.preventDefault();
@@ -185,16 +188,6 @@ export default function CalculComment() {
     localStorage.setItem(
       "https://omisify.com/resultpointtcommentlife",
       calculpointtcommentlife
-    );
-
-    localStorage.setItem(
-      "https://omisify.com/resultpointtlife",
-      calculpointtlife
-    );
-
-    localStorage.setItem(
-      "https://omisify.com/resultgaintlife",
-      calculgaintlife
     );
 
     window.location = "/validate-calcul-comment";
