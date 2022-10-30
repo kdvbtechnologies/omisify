@@ -12,7 +12,7 @@ export default function ValidateCommentError() {
         <div className="title">
           <p>Validation Impossible !</p>
         </div>
-        <NavLink to="/calcul-comment">
+        <NavLink to="/before-calcul-comment">
           <button>Réessayer</button>
         </NavLink>
       </div>
