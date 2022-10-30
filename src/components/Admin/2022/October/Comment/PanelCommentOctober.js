@@ -22,7 +22,9 @@ export default function PanelCommentOctober() {
     get();
   }, []);
 
-  const userId = localStorage.getItem("https://omisify.com/userId");
+  const userId =
+    localStorage.getItem("https://omisify.com/userId") === api.filter();
+
   const matches =
     userId ===
     api.filter(function (value) {
