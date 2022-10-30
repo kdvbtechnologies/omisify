@@ -12,6 +12,15 @@ export default function ValidateCalculComment() {
     "https://omisify.com/resultpointtlife"
   );
 
+  const getdate = new Date();
+  const date = getdate.toLocaleDateString("fr-FR", {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  });
+
   //const userId = localStorage.getItem("https://omisify.com/userId");
 
   /* premierement on recupere le pointtcommentlife (et les autres) qu'on avait sauvegardé 
@@ -71,6 +80,7 @@ export default function ValidateCalculComment() {
             gaintlife,
 
             generositydaysbonus,
+            date,
           },
         })
           .then((res) => console.log(res))
@@ -88,6 +98,8 @@ export default function ValidateCalculComment() {
 
             pointtlife,
             gaintlife,
+
+            date,
           },
         })
           .then((res) => console.log(res))
@@ -123,6 +135,7 @@ export default function ValidateCalculComment() {
 
         <div className="a">
           <p>Option : Commentaire</p>
+          <p>{date}</p>
 
           <div className="shrink-border">
             <div className="border">

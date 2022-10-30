@@ -189,6 +189,15 @@ export default function CalculComment() {
     window.location = "/validate-calcul-comment";
   }
 
+  const getdate = new Date();
+  const date = getdate.toLocaleDateString("fr-FR", {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  });
+
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -224,6 +233,7 @@ export default function CalculComment() {
           </div>
 
           <div className="status-comment">
+            <p>{date}</p>
             {statuscomment && <p>Validation automatique : {statuscomment}</p>}
           </div>
 
