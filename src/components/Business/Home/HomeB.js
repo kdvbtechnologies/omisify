@@ -1,6 +1,8 @@
+import { NavLink } from "react-router-dom";
 import A from "./A";
 import B from "./B";
 import C from "./C";
+import FooterB from "./Footer/FooterB";
 import NavbarB from "./Navigation/NavbarB";
 
 export default function HomeB() {
@@ -15,6 +17,12 @@ export default function HomeB() {
       <A />
       <B />
       <C />
+      <div className="see-more-b">
+        <NavLink to="/prices">
+          <button>Voir plus</button>
+        </NavLink>
+      </div>
+      <FooterB />
     </div>
   );
 }

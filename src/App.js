@@ -172,6 +172,7 @@ import ValidateAccessCode from "./components/Others/AccessCode/ValidateAccessCod
 import ErrorAccessCode from "./components/Others/AccessCode/ErrorAccessCode";
 import AfterAccessCode from "./components/Others/AccessCode/AfterAccessCode";
 import SecureAccessCode from "./components/Others/AccessCode/SecureAccessCode";
+import Prices from "./components/Business/Home/Prices/Prices";
 
 export default function App() {
   return (
@@ -473,6 +474,7 @@ export default function App() {
         <Route path="/ads" element={<AdsB />} />
         <Route path="/omisify-b-menu" element={<MenuB />} />
         <Route path="/create-a-ads" element={<CreateaAds />} />
+        <Route path="/prices" element={<Prices />} />
       </Routes>
     </BrowserRouter>
   );

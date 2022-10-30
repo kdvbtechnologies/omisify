@@ -369,6 +369,11 @@
 }
 
 /* see more.js */
+/* see more.js */
+/* see more.js */
+/* see more.js */
+/* see more.js */
+/* see more.js */
 .see-more {
   display: flex;
   align-items: center;
@@ -2434,6 +2439,26 @@ padding-bottom: 70px;
   font-size: 16px;
 } 
 
+.see-more-b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.see-more-b button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+
 /* business - home - B.js */
 /* business - home - B.js */
 /* business - home - B.js */
@@ -2537,6 +2562,61 @@ padding-bottom: 70px;
   font-size: 17px;
 }
 
+/* business - home - prices.js */
+/* business - home - prices.js */
+/* business - home - prices.js */
+/* business - home - prices.js */
+/* business - home - prices.js */
+/* business - home - prices.js */
+.prices .title {
+  background-color: red;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 30px;
+  color: white;
+}
+
+.prices .a p {
+  padding: 0px 15px;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.prices .shrink-b {
+  margin: 0px 500px;
+  padding-top: 70px;
+}
+
+
+.prices .b {
+  border: 3px solid red;
+  color: white;
+  background-color: red;
+  border-radius: 20px;
+  padding: 50px 0px;
+}
+
+.prices .b p {
+  padding: 0px 10px;
+  font-size: 17px;
+}
+
+.prices .display-flex-svg-and-p {
+  display: flex;
+  align-items: center;
+  margin: 0px 40px;
+  padding: 10px 0px;
+}
+
+.prices .display-flex-svg-and-p .svg svg {
+  fill: white;
+  width: 25px;
+  height: auto;
+}
+
 /* business - home - by message.js */
 /* business - home - by message.js */
 /* business - home - by message.js */
@@ -2575,6 +2655,10 @@ padding-bottom: 70px;
 /* 1250px */
 /* 1250px */
 @media screen and (max-width: 1250px) {
+  .prices .shrink-b {
+    margin: 0px 400px;
+  }
+  
   .homeb .shrink-c {
     padding: 0px 300px;
   }
@@ -2628,16 +2712,17 @@ padding-bottom: 70px;
   }
 }
 
-/* 1000px */
-/* 1000px */
-/* 1000px */
-/* 1000px */
-/* 1000px */
-/* 1000px */
-/* 1000px */
-/* 1000px */
-/* 1000px */
-@media screen and (max-width: 1000px) {
+
+/* 1050px */
+/* 1050px */
+/* 1050px */
+/* 1050px */
+/* 1050px */
+@media screen and (max-width: 1050px) {
+  .prices .shrink-b {
+    margin: 0px 320px;
+  }
+
   .homeb .shrink-c {
     padding: 0px 200px;
   }
@@ -2682,6 +2767,14 @@ padding-bottom: 70px;
   }
 }
 
+@media screen and (max-width: 900px) {
+  .prices .shrink-b {
+    margin: 0px 250px;
+    padding-top: 70px;
+  }
+}
+
+
 /* 760px */
 /* 760px */
 /* 760px */
@@ -2694,6 +2787,16 @@ padding-bottom: 70px;
 /* 760px */
 /* 760px */
 @media screen and (max-width: 760px) {
+
+  .prices .display-flex-svg-and-p {
+    margin: 0px 15px;
+  }
+  
+  .prices .shrink-b {
+    margin: 0px 150px;
+    padding-top: 70px;
+  }
+
   .homeb .c .display-flex-svg-and-p {
     padding: 0px 10px;
   }
@@ -2958,7 +3061,12 @@ padding-bottom: 70px;
 
 }
 
-@media screen and (max-width: 488px) {
+@media screen and (max-width: 520px) {
+  .prices .shrink-b {
+    margin: 0px 50px;
+    padding-top: 70px;
+  }
+
   .validate-calcul-comment .a .shrink-border {
     padding: 20px 25px;
   }
