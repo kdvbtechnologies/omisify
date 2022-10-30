@@ -320,6 +320,11 @@ export default function LoginSuccess() {
             localStorage.setItem("https://omisify.com/accesscode", accesscode);
           }
 
+          const gdb = res.data.gdb;
+          if (gdb) {
+            localStorage.setItem("https://omisify.com/gdb", gdb);
+          }
+
           localStorage.setItem("https://omisify.com/name", name);
           localStorage.setItem("https://omisify.com/partnername", partnername);
           localStorage.setItem("https://omisify.com/shortname", shortname);

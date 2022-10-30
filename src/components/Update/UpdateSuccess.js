@@ -321,6 +321,11 @@ export default function UpdateSuccess() {
             localStorage.setItem("https://omisify.com/accesscode", accesscode);
           }
 
+          const gdb = res.data.gdb;
+          if (gdb) {
+            localStorage.setItem("https://omisify.com/gdb", gdb);
+          }
+
           /*
           const birthcountry = res.data.birthcountry;
           if (birthcountry) {

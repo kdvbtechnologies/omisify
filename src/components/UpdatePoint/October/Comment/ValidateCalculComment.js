@@ -34,6 +34,10 @@ export default function ValidateCalculComment() {
 
   const gaintlife = localStorage.getItem("https://omisify.com/resultgaintlife");
 
+  const generositydaysbonus = localStorage.getItem(
+    "https://omisify.com/resultgenerositydaysbonus"
+  );
+
   async function Validate(e) {
     setIsLoading(true);
     e.preventDefault();
@@ -54,6 +58,8 @@ export default function ValidateCalculComment() {
           statuscomment,
 
           gaintlife,
+
+          generositydaysbonus,
         },
       })
         .then((res) => console.log(res))

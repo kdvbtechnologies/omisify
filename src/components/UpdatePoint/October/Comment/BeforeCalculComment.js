@@ -52,6 +52,14 @@ export default function BeforeCalculComment() {
           if (gdb) {
             localStorage.setItem("https://omisify.com/gdb", gdb);
           }
+
+          const generositydaysbonus = res.data.generositydaysbonus;
+          if (generositydaysbonus) {
+            localStorage.setItem(
+              "https://omisify.com/generositydaysbonus",
+              generositydaysbonus
+            );
+          }
         })
         .catch((err) => console.log(err));
       window.location = "/calcul-comment";

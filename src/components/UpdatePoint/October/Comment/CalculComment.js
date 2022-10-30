@@ -77,6 +77,14 @@ export default function CalculComment() {
           if (gdb) {
             localStorage.setItem("https://omisify.com/gdb", gdb);
           }
+
+          const generositydaysbonus = res.data.generositydaysbonus;
+          if (generositydaysbonus) {
+            localStorage.setItem(
+              "https://omisify.com/generositydaysbonus",
+              generositydaysbonus
+            );
+          }
         })
         .catch((err) => console.log(err));
     }
@@ -93,6 +101,10 @@ export default function CalculComment() {
   );
 
   const oldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
+
+  const oldgenerositydaysbonus = localStorage.getItem(
+    "https://omisify.com/generositydaysbonus"
+  );
 
   // const oldpointtlife = localStorage.getItem("https://omisify.com/pointtlife");
 
@@ -133,6 +145,16 @@ export default function CalculComment() {
     parseFloat(oldgaintlife) + parseInt(newnumber) * 0.001 * gdb;
 
   console.log(calculgaintlife);
+
+  if (gdb === 10) {
+    const calculgenerositydaysbonus =
+      parseInt(calculpointtcommentlife) + parseInt(oldgenerositydaysbonus);
+
+    localStorage.setItem(
+      "https://omisify.com/resultgenerositydaysbonus",
+      calculgenerositydaysbonus
+    );
+  }
 
   /* quatriemement on sauvegarde calculpointtcommentlife (et les autres) dans le 
   localStorage, ensuite on sauvegarde aussi le nombre de comment (newnumber)

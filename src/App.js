@@ -484,4 +484,6 @@ export default function App() {
 
 REACT_APP_OMISIFY_API = https://omisify-api.onrender.com
 
+REACT_APP_OMISIFY_API = https://famous-peplum-dove.cyclic.app
+
  */
