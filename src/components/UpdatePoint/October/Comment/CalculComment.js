@@ -166,22 +166,6 @@ export default function CalculComment() {
   function Save(e) {
     setIsLoading(true);
     e.preventDefault();
-    localStorage.setItem("https://omisify.com/newnumber", newnumber);
-
-    localStorage.setItem(
-      "https://omisify.com/resultpointtcommentlife",
-      calculpointtcommentlife
-    );
-
-    localStorage.setItem(
-      "https://omisify.com/resultpointtlife",
-      calculpointtlife
-    );
-
-    localStorage.setItem(
-      "https://omisify.com/resultgaintlife",
-      calculgaintlife
-    );
 
     const suggestgdb = 10;
     if (gdb === suggestgdb) {
@@ -191,6 +175,40 @@ export default function CalculComment() {
       localStorage.setItem(
         "https://omisify.com/resultgenerositydaysbonus",
         calculgenerositydaysbonus
+      );
+
+      localStorage.setItem("https://omisify.com/newnumber", newnumber);
+
+      localStorage.setItem(
+        "https://omisify.com/resultpointtcommentlife",
+        calculpointtcommentlife
+      );
+
+      localStorage.setItem(
+        "https://omisify.com/resultpointtlife",
+        calculpointtlife
+      );
+
+      localStorage.setItem(
+        "https://omisify.com/resultgaintlife",
+        calculgaintlife
+      );
+    } else {
+      localStorage.setItem("https://omisify.com/newnumber", newnumber);
+
+      localStorage.setItem(
+        "https://omisify.com/resultpointtcommentlife",
+        calculpointtcommentlife
+      );
+
+      localStorage.setItem(
+        "https://omisify.com/resultpointtlife",
+        calculpointtlife
+      );
+
+      localStorage.setItem(
+        "https://omisify.com/resultgaintlife",
+        calculgaintlife
       );
     }
 
