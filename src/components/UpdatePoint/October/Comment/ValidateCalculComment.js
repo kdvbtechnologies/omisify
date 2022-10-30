@@ -86,11 +86,11 @@ export default function ValidateCalculComment() {
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
         // validation reussie
-        // window.location = "/validate-comment-success";
+        window.location = "/validate-comment-success";
       } else {
         await axios({
           method: "put",
-          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/634c8ab0f59d4e9994f83884`,
+          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
           data: {
             pointtcommentlife,
             numbercommententeradmin: newnumbercommententeradmin,
@@ -105,7 +105,7 @@ export default function ValidateCalculComment() {
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
         // validation reussie
-        //window.location = "/validate-comment-success";
+        window.location = "/validate-comment-success";
       }
     } else {
       // validation impossible
