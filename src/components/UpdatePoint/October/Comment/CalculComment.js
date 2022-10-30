@@ -100,13 +100,13 @@ export default function CalculComment() {
     "https://omisify.com/pointtcommentlife"
   );
 
+  const oldpointtlife = localStorage.getItem("https://omisify.com/pointtlife");
+
   const oldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
 
   const oldgenerositydaysbonus = localStorage.getItem(
     "https://omisify.com/generositydaysbonus"
   );
-
-  // const oldpointtlife = localStorage.getItem("https://omisify.com/pointtlife");
 
   /* 
 
@@ -141,6 +141,9 @@ export default function CalculComment() {
     parseInt(newnumber) * 1 * gdb + parseInt(oldpointtcommentlife);
   console.log(calculpointtcommentlife);
 
+  const calculpointtlife =
+    parseInt(calculpointtcommentlife) + parseInt(oldpointtlife);
+
   const calculgaintlife =
     parseFloat(oldgaintlife) + parseInt(newnumber) * 0.001 * gdb;
 
@@ -168,6 +171,11 @@ export default function CalculComment() {
     localStorage.setItem(
       "https://omisify.com/resultpointtcommentlife",
       calculpointtcommentlife
+    );
+
+    localStorage.setItem(
+      "https://omisify.com/resultpointtlife",
+      calculpointtlife
     );
 
     localStorage.setItem(

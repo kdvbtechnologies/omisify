@@ -32,6 +32,10 @@ export default function ValidateCalculComment() {
     "https://omisify.com/resultpointtcommentlife"
   );
 
+  const pointtlife = localStorage.getItem(
+    "https://omisify.com/resultpointtlife"
+  );
+
   const gaintlife = localStorage.getItem("https://omisify.com/resultgaintlife");
 
   const generositydaysbonus = localStorage.getItem(
@@ -58,6 +62,7 @@ export default function ValidateCalculComment() {
           numbercommententeradmin: newnumbercommententeradmin,
           statuscomment,
 
+          pointtlife,
           gaintlife,
 
           generositydaysbonus,
