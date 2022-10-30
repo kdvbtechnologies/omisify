@@ -47,6 +47,11 @@ export default function BeforeCalculComment() {
           if (gaintlife) {
             localStorage.setItem("https://omisify.com/gaintlife", gaintlife);
           }
+
+          const gdb = res.data.gdb;
+          if (gdb) {
+            localStorage.setItem("https://omisify.com/gdb", gdb);
+          }
         })
         .catch((err) => console.log(err));
       window.location = "/calcul-comment";
