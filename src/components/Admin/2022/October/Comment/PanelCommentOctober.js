@@ -57,14 +57,18 @@ export default function PanelCommentOctober() {
         <Loader />
       ) : (
         <>
-          {api.map((api) => (
-            <>
-              <h3>Nombres de commentaires: {api.commentrecent}</h3>
-              <p>Noms Principal: {api.partnername}</p>
-              <p>Heure: {api.time}</p>
-              <p>Date: {api.date}</p>
-            </>
-          ))}
+          {api.map(
+            (api) =>
+              api.userId ===
+              userId(
+                <>
+                  <h3>Nombres de commentaires: {api.commentrecent}</h3>
+                  <p>Noms Principal: {api.partnername}</p>
+                  <p>Heure: {api.time}</p>
+                  <p>Date: {api.date}</p>
+                </>
+              )
+          )}
         </>
       )}
     </div>
