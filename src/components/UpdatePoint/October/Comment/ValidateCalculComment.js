@@ -21,7 +21,7 @@ export default function ValidateCalculComment() {
     minute: "numeric",
   });
 
-  //const userId = localStorage.getItem("https://omisify.com/userId");
+  const userId = localStorage.getItem("https://omisify.com/userId");
 
   /* premierement on recupere le pointtcommentlife (et les autres) qu'on avait sauvegardé 
   dans le localStorage 
@@ -70,7 +70,7 @@ export default function ValidateCalculComment() {
       if (gdb === suggestgdb) {
         await axios({
           method: "put",
-          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/634c8ab0f59d4e9994f83884`,
+          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
           data: {
             pointtcommentlife,
             numbercommententeradmin: newnumbercommententeradmin,

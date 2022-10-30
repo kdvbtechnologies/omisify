@@ -5,6 +5,7 @@ import Loader from "../../../Partenaire Omisify/Loader";
 
 export default function CalculComment() {
   const [isLoading, setIsLoading] = useState(false);
+  const userId = localStorage.getItem("https://omisify.com/userId");
 
   /* 
   N.B : il faut commencer à lire la ou c'est ecrit premierement
@@ -25,9 +26,7 @@ export default function CalculComment() {
   useEffect(() => {
     async function get() {
       await axios
-        .get(
-          "https://famous-peplum-dove.cyclic.app/api/user/634c8ab0f59d4e9994f83884"
-        )
+        .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/${userId}`)
         .then((res) => {
           console.log(res);
 
@@ -84,7 +83,7 @@ export default function CalculComment() {
         .catch((err) => console.log(err));
     }
     get();
-  }, []);
+  }, [userId]);
 
   const [newnumber, setNewnumber] = useState("");
 

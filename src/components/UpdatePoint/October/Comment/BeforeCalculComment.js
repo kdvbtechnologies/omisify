@@ -4,13 +4,12 @@ import Loader from "../../../Partenaire Omisify/Loader";
 
 export default function BeforeCalculComment() {
   const [isLoading, setIsLoading] = useState(true);
+  const userId = localStorage.getItem("https://omisify.com/userId");
 
   useEffect(() => {
     async function get() {
       await axios
-        .get(
-          "https://famous-peplum-dove.cyclic.app/api/user/634c8ab0f59d4e9994f83884"
-        )
+        .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/${userId}`)
         .then((res) => {
           console.log(res);
 
@@ -66,7 +65,7 @@ export default function BeforeCalculComment() {
       setIsLoading(true);
     }
     get();
-  }, []);
+  }, [userId]);
 
   async function Refresh() {
     window.location.reload();
