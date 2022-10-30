@@ -131,19 +131,16 @@ export default function CalculComment() {
   // bonus de generosité - gdb = generosity days bonus
   const gdb = localStorage.getItem("https://omisify.com/gdb");
   const suggestgdb = localStorage.getItem("https://omisify.com/suggestgdb");
-  console.log(gdb);
 
   const calculpointtcommentlife =
     parseInt(newnumber) * 1 * gdb + parseInt(oldpointtcommentlife);
   console.log(calculpointtcommentlife);
 
   const calculpointtlife =
-    parseInt(calculpointtcommentlife) + parseInt(oldpointtlife);
+    parseFloat(oldpointtlife) + parseInt(newnumber) * 1 * gdb;
 
   const calculgaintlife =
     parseFloat(oldgaintlife) + parseInt(newnumber) * 0.001 * gdb;
-
-  console.log(calculgaintlife);
 
   if (gdb === suggestgdb) {
     const calculgenerositydaysbonus =
