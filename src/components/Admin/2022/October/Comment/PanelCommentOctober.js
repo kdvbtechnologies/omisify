@@ -22,8 +22,16 @@ export default function PanelCommentOctober() {
     get();
   }, []);
 
-  /*
   const userId = localStorage.getItem("https://omisify.com/userId");
+  const matches =
+    userId ===
+    api.filter(function (value) {
+      return value >= 0;
+    });
+
+  console.log("matches : ", matches);
+
+  /*
   {api.map((api) =>
     userId(api.userId) ? (
       <>
