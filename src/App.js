@@ -173,6 +173,8 @@ import ErrorAccessCode from "./components/Others/AccessCode/ErrorAccessCode";
 import AfterAccessCode from "./components/Others/AccessCode/AfterAccessCode";
 import SecureAccessCode from "./components/Others/AccessCode/SecureAccessCode";
 import Prices from "./components/Business/Home/Prices/Prices";
+import CalculM10k from "./components/UpdatePoint/October/M10k/CalculM10k";
+import ValidateCalculM10k from "./components/UpdatePoint/October/M10k/ValidateCalculM10k";
 
 export default function App() {
   return (
@@ -340,6 +342,12 @@ export default function App() {
         <Route path="/signup" element={<AuthSignup />} />
         <Route path="/ask-poster" element={<AskPoster />} />
         <Route path="/ask-poster-success" element={<AskPosterSuccess />} />
+
+        <Route
+          path="/before-calcul-comment"
+          element={<BeforeCalculComment />}
+        />
+
         <Route path="/calcul-comment" element={<CalculComment />} />
 
         <Route
@@ -355,11 +363,10 @@ export default function App() {
           element={<ValidateCommentError />}
         />
 
+        <Route path="/calcul-m10k" element={<CalculM10k />} />
+        <Route path="/validate-calcul-m10k" element={<ValidateCalculM10k />} />
+
         <Route path="/program-affiliation" element={<ProgramAffiliation />} />
-        <Route
-          path="/before-calcul-comment"
-          element={<BeforeCalculComment />}
-        />
 
         <Route path="/panel-kdvb" element={<HomePanel />} />
         <Route path="/panel-kdvb-user" element={<User />} />
