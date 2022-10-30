@@ -175,7 +175,8 @@ export default function CalculComment() {
       calculgaintlife
     );
 
-    if (gdb === 10) {
+    const suggestgdb = 10;
+    if (gdb === suggestgdb) {
       const calculgenerositydaysbonus =
         parseInt(calculpointtcommentlife) + parseInt(oldgenerositydaysbonus);
 
