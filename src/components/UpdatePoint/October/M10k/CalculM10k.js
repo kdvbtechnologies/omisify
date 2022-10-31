@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Loader from "../../../Partenaire Omisify/Loader";
 
 export default function CalculM10k() {
+  const suggestgdb = "10";
   const userId = localStorage.getItem("https://omisify.com/userId");
   const [newnumber, setNewnumber] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -14,6 +15,10 @@ export default function CalculM10k() {
         .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/${userId}`)
         .then((res) => {
           console.log(res);
+
+          const suggestgdb = 10;
+          localStorage.setItem("https://omisify.com/suggestgdb", suggestgdb);
+
           const pointtm10klife = res.data.pointtm10klife;
           if (pointtm10klife) {
             localStorage.setItem(
@@ -49,6 +54,14 @@ export default function CalculM10k() {
           if (gdb) {
             localStorage.setItem("https://omisify.com/gdb", gdb);
           }
+
+          const generositydaysbonus = res.data.generositydaysbonus;
+          if (generositydaysbonus) {
+            localStorage.setItem(
+              "https://omisify.com/generositydaysbonus",
+              generositydaysbonus
+            );
+          }
         });
     }
     get();
@@ -65,6 +78,10 @@ export default function CalculM10k() {
 
   const gdb = localStorage.getItem("https://omisify.com/gdb");
 
+  const oldgenerositydaysbonus = localStorage.getItem(
+    "https://omisify.com/generositydaysbonus"
+  );
+
   const calculpointtm10k =
     parseInt(newnumber) * 0.7 * gdb + parseFloat(oldpointtm10klife);
 
@@ -73,6 +90,16 @@ export default function CalculM10k() {
 
   const calculgaintlife =
     parseInt(newnumber) * 0.0007 * gdb + parseFloat(oldgaintlife);
+
+  if (gdb === suggestgdb) {
+    const calculgenerositydaysbonus =
+      parseInt(newnumber) * 1 * gdb + parseFloat(oldgenerositydaysbonus);
+
+    localStorage.setItem(
+      "https://omisify.com/resultgenerositydaysbonus",
+      calculgenerositydaysbonus
+    );
+  }
 
   function Save(e) {
     setIsLoading(true);
