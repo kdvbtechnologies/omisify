@@ -8,6 +8,8 @@ export default function ValidateCalculM10k() {
   const newnumberm10kenteradmin = "0";
   const [isLoading, setIsLoading] = useState(false);
 
+  const userId = localStorage.getItem("https://omisify.com/userId");
+
   const resultpointtlife = localStorage.getItem(
     "https://omisify.com/resultpointtlife"
   );
@@ -57,7 +59,7 @@ export default function ValidateCalculM10k() {
 
         await axios({
           method: "put",
-          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/634c8ab0f59d4e9994f83884`,
+          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/${userId}`,
           data: {
             pointtm10klife,
 
@@ -73,6 +75,7 @@ export default function ValidateCalculM10k() {
         })
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
+        // window.location = "/validate-m10k-success";
       } else {
         console.log("not gdb");
 
@@ -92,9 +95,11 @@ export default function ValidateCalculM10k() {
         })
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
+        // window.location = "/validate-m10k-success"
       }
     } else {
       console.log("m10k error");
+      // window.location = "/validate-m10k-error"
     }
   }
 

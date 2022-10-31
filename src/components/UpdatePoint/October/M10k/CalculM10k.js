@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import Loader from "../../../Partenaire Omisify/Loader";
 
 export default function CalculM10k() {
@@ -7,6 +8,8 @@ export default function CalculM10k() {
   const userId = localStorage.getItem("https://omisify.com/userId");
   const [newnumber, setNewnumber] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  const statusm10k = localStorage.getItem("https://omisify.com/statusm10k");
 
   // 1ere etape
   useEffect(() => {
@@ -82,7 +85,7 @@ export default function CalculM10k() {
     "https://omisify.com/generositydaysbonus"
   );
 
-  const calculpointtm10k =
+  const calculpointtm10klife =
     parseInt(newnumber) * 0.7 * gdb + parseFloat(oldpointtm10klife);
 
   const calculpointtlife =
@@ -109,7 +112,7 @@ export default function CalculM10k() {
 
     localStorage.setItem(
       "https://omisify.com/resultpointtm10klife",
-      calculpointtm10k
+      calculpointtm10klife
     );
 
     localStorage.setItem(
@@ -125,24 +128,89 @@ export default function CalculM10k() {
     window.location = "/validate-calcul-m10k";
   }
 
-  return (
-    <div className="all">
-      <input
-        type="number"
-        placeholder="Nombre de M10k"
-        value={newnumber}
-        onChange={(e) => setNewnumber(e.target.value)}
-        name="newnumber"
-      />
+  const getdate = new Date();
+  const date = getdate.toLocaleDateString("fr-FR", {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  });
 
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          {" "}
-          <button onClick={Save}>Calcul terminé</button>
-        </>
-      )}
-    </div>
+  return (
+    <>
+      <div className="back-btn">
+        <NavLink to="/complete">
+          <button>Retour</button>
+        </NavLink>
+      </div>
+
+      <div className="stats-big-title">
+        <p>Actualisation des points</p>
+      </div>
+
+      <div className="calcul-comment">
+        <div className="title">
+          <p>M10k</p>
+        </div>
+
+        <div className="a">
+          <p>
+            Les M10k (Message aux 10k) concerne les messages envoyés aux comptes
+            ayant entre 10000 abonnés et moins de 1 millions d'abonnés
+          </p>
+          <p>1 m10k : 0.7 point = 0.0007€</p>
+
+          <div className="b">
+            <p>Calcul du résultat de votre travail</p>
+          </div>
+
+          <div className="status-comment">
+            <p>{date}</p>
+            {statusm10k && <p>Validation automatique : {statusm10k}</p>}
+          </div>
+
+          <p>Ancien Total C : {oldpointtm10klife} point(s)</p>
+
+          {newnumber && oldpointtm10klife && (
+            <p>
+              ({newnumber} x 1 ) + {oldpointtm10klife} = {calculpointtm10klife}{" "}
+              point(s)
+            </p>
+          )}
+
+          {calculgaintlife ? (
+            <div className="c">
+              <i>Total des Points : {calculpointtlife} point(s)</i>
+              <i>Gains : {calculgaintlife}€</i>
+            </div>
+          ) : (
+            <>
+              <p></p>
+            </>
+          )}
+
+          <div className="d">
+            <p>Entrer le nombre de M10k</p>
+            <input
+              type="number"
+              value={newnumber}
+              onChange={(e) => setNewnumber(e.target.value)}
+              name="newnumber"
+              placeholder="Nombre de M10k"
+            />
+          </div>
+
+          {isLoading ? (
+            <Loader />
+          ) : (
+            <>
+              {" "}
+              <button onClick={Save}>Calcul terminé</button>
+            </>
+          )}
+        </div>
+      </div>
+    </>
   );
 }

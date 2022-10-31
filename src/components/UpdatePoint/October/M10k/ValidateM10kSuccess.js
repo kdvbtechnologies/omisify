@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Loader from "../../../Partenaire Omisify/Loader";
 
-export default function ValidateCommentSuccess() {
+export default function ValidateM10kSuccess() {
   const userId = localStorage.getItem("https://omisify.com/userId");
   const [isLoading, setIsLoading] = useState(true);
 
@@ -12,11 +12,11 @@ export default function ValidateCommentSuccess() {
       await axios
         .get(`${process.env.REACT_APP_OMISIFY_API}/api/user/${userId}`)
         .then((res) => {
-          const pointtcommentlife = res.data.pointtcommentlife;
-          if (pointtcommentlife) {
+          const pointtm10klife = res.data.pointtm10klife;
+          if (pointtm10klife) {
             localStorage.setItem(
-              "https://omisify.com/pointtcommentlife",
-              pointtcommentlife
+              "https://omisify.com/pointtm10klife",
+              pointtm10klife
             );
           }
 
