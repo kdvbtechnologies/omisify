@@ -25,9 +25,9 @@ export default function PanelCommentOctober() {
   //const userId = localStorage.getItem("https://omisify.com/userId");
   const userId = "634c8ab0f59d4e9994f83884";
 
-  const h = "h2";
+  const h = "2022-10";
 
-  const data = api.filter((name) => name.time.includes(h));
+  const data = api.filter((name) => name.updated.includes(h));
   console.log(data);
 
   const family = {
