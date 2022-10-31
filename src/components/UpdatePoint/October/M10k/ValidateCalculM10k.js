@@ -81,7 +81,7 @@ export default function ValidateCalculM10k() {
 
         await axios({
           method: "put",
-          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/634c8ab0f59d4e9994f83884`,
+          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/${userId}`,
           data: {
             pointtm10klife,
 

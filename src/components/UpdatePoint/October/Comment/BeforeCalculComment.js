@@ -13,11 +13,50 @@ export default function BeforeCalculComment() {
         .then((res) => {
           console.log(res);
 
+          const pointtcommentlife = res.data.pointtcommentlife;
+          if (pointtcommentlife) {
+            localStorage.setItem(
+              "https://omisify.com/pointtcommentlife",
+              pointtcommentlife
+            );
+          }
+
+          const numbercommententeradmin = res.data.numbercommententeradmin;
+          if (numbercommententeradmin) {
+            localStorage.setItem(
+              "https://omisify.com/numbercommententeradmin",
+              numbercommententeradmin
+            );
+          }
+
           const statuscomment = res.data.statuscomment;
           if (statuscomment) {
             localStorage.setItem(
               "https://omisify.com/statuscomment",
               statuscomment
+            );
+          }
+
+          const pointtlife = res.data.pointtlife;
+          if (pointtlife) {
+            localStorage.setItem("https://omisify.com/pointtlife", pointtlife);
+          }
+
+          const gaintlife = res.data.gaintlife;
+          if (gaintlife) {
+            localStorage.setItem("https://omisify.com/gaintlife", gaintlife);
+          }
+
+          const gdb = res.data.gdb;
+          if (gdb) {
+            localStorage.setItem("https://omisify.com/gdb", gdb);
+          }
+
+          const generositydaysbonus = res.data.generositydaysbonus;
+          if (generositydaysbonus) {
+            localStorage.setItem(
+              "https://omisify.com/generositydaysbonus",
+              generositydaysbonus
             );
           }
         })
