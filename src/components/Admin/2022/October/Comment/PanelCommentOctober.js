@@ -63,6 +63,7 @@ export default function PanelCommentOctober() {
         <Loader />
       ) : (
         <>
+          {output && <p>{userId}</p>}
           {api.map((api) => (
             <>
               <h3>Nombres de commentaires: {api.commentrecent}</h3>
