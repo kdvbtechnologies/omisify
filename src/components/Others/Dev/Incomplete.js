@@ -19,7 +19,7 @@ export default function Incomplete() {
         développement et de test. Ne les utilisez pas
       </p>
 
-      <NavLink>
+      <NavLink to="/calcul-m10k">
         <p>M10k</p>
       </NavLink>
     </div>
