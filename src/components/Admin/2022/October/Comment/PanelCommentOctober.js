@@ -41,7 +41,7 @@ export default function PanelCommentOctober() {
     const data = api.filter(function (value) {
       return (value = true);
     });
-    console("output true : ", data);
+    console.log("output true : ", data);
   }
 
   /*
