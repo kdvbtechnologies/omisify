@@ -22,73 +22,9 @@ export default function PanelCommentOctober() {
     get();
   }, []);
 
-  const userIdd = localStorage.getItem("https://omisify.com/userId");
-
-  const matches =
-    userIdd ===
-    api.filter(function (value) {
-      return value >= 0;
-    });
-
-  console.log("matches : ", matches);
-
+  //const userId = localStorage.getItem("https://omisify.com/userId");
   const userId = "634c8ab0f59d4e9994f83884";
 
-  const output = api.map((x) => x.userId === userId);
-  console.log(output);
-
-  const output2 = api.map((x) => x.userId === userId);
-  const result = output2.filter((number) => number.userId === true);
-  console.log(result);
-
-  const output3 = api.filter((user) => user.userId === userId);
-  console.log("ici output3 : ", output3);
-
-  const data = output3.map((name) => name.name);
-  console.log(data);
-  //const output2 = api.map((x) => x.userId === userId);
-
-  const timed = "17:52";
-
-  const output4 = api.filter((user) => user.userId === userId);
-
-  const output5 = output4.filter((user) => user.time === timed);
-  console.log("ici output5 : ", output5);
-
-  const output6 = api.filter(
-    (user) => user.userId === userId && user.time === timed
-  );
-  console.log("ici output6 : ", output6);
-  /*
-  const result = output2.filter(check);
-  function check(output2) {
-    return (output2 = true);
-  }
-
-  console.log("ici result : ", result);
-*/
-
-  /*
-  if (output) {
-    const data = api.filter(function (value) {
-      return (value = true);
-    });
-    console.log("output true : ", data);
-  }*/
-
-  /*
-  {api.map((api) =>
-    userId(api.userId) ? (
-      <>
-        <p>{api.userId}</p>
-      </>
-    ) : (
-      <>
-        <p>hello</p>
-      </>
-    )
-  )}
-  */
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -107,14 +43,12 @@ export default function PanelCommentOctober() {
             .map((name) => (
               <>
                 <h3>{name.name}</h3>
+                <p>{name.time}</p>
               </>
             ))}
+
           <hr />
-          {output3.map((name) => (
-            <>
-              <p>{name.name}</p>
-            </>
-          ))}
+
           {api.map((api) => (
             <>
               <h3>Nombres de commentaires: {api.commentrecent}</h3>
