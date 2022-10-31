@@ -60,12 +60,12 @@ export default function PanelCommentOctober() {
   const output4 = api.filter((user) => user.userId === userId);
 
   const output5 = output4.filter((user) => user.time === timed);
-  console.log(output5);
+  console.log("ici output5 : ", output5);
 
   const output6 = api.filter(
     (user) => user.userId === userId && user.time === timed
   );
-  console.log(output6);
+  console.log("ici output6 : ", output6);
   /*
   const result = output2.filter(check);
   function check(output2) {
