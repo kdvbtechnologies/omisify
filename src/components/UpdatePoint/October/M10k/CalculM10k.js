@@ -174,8 +174,8 @@ export default function CalculM10k() {
 
           {newnumber && oldpointtm10klife && (
             <p>
-              ({newnumber} x 1 ) + {oldpointtm10klife} = {calculpointtm10klife}{" "}
-              point(s)
+              ({newnumber} x 0.7 ) + {oldpointtm10klife} ={" "}
+              {calculpointtm10klife} point(s)
             </p>
           )}
 
