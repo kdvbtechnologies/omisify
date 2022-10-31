@@ -114,11 +114,19 @@ import SecureUpdatePublication from "./components/UpdatePoint/October/Publicatio
 import SecureUpdatePWI from "./components/UpdatePoint/October/PWI/SecureUpdatePWI";
 import SecureUpdatePWP from "./components/UpdatePoint/October/PWP/SecureUpdatePWP";
 
+// updatepoint - comment
 import CalculComment from "./components/UpdatePoint/October/Comment/CalculComment";
 import ValidateCalculComment from "./components/UpdatePoint/October/Comment/ValidateCalculComment";
 import ValidateCommentSuccess from "./components/UpdatePoint/October/Comment/ValidateCommentSuccess";
 import ValidateCommentError from "./components/UpdatePoint/October/Comment/ValidateCommentError";
 import BeforeCalculComment from "./components/UpdatePoint/October/Comment/BeforeCalculComment";
+
+// updatepoint - m10k
+import CalculM10k from "./components/UpdatePoint/October/M10k/CalculM10k";
+import BeforeCalculM10k from "./components/UpdatePoint/October/M10k/BeforeCalculM10k";
+import ValidateCalculM10k from "./components/UpdatePoint/October/M10k/ValidateCalculM10k";
+import ValidateM10kError from "./components/UpdatePoint/October/M10k/ValidateM10kError";
+import ValidateM10kSuccess from "./components/UpdatePoint/October/M10k/ValidateM10kSuccess";
 
 // panel
 import User from "./components/Admin/User/User";
@@ -174,11 +182,6 @@ import ErrorAccessCode from "./components/Others/AccessCode/ErrorAccessCode";
 import AfterAccessCode from "./components/Others/AccessCode/AfterAccessCode";
 import SecureAccessCode from "./components/Others/AccessCode/SecureAccessCode";
 import Prices from "./components/Business/Home/Prices/Prices";
-import CalculM10k from "./components/UpdatePoint/October/M10k/CalculM10k";
-import BeforeCalculM10k from "./components/UpdatePoint/October/M10k/BeforeCalculM10k";
-import ValidateCalculM10k from "./components/UpdatePoint/October/M10k/ValidateCalculM10k";
-import ValidateM10kError from "./components/UpdatePoint/October/M10k/ValidateM10kError";
-import ValidateM10kSuccess from "./components/UpdatePoint/October/M10k/ValidateM10kSuccess";
 
 export default function App() {
   return (

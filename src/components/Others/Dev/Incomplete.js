@@ -19,8 +19,8 @@ export default function Incomplete() {
         développement et de test. Ne les utilisez pas
       </p>
 
-      <NavLink to="/calcul-m10k">
-        <p>M10k</p>
+      <NavLink>
+        <p>E10k</p>
       </NavLink>
     </div>
   );

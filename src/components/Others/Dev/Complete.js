@@ -23,7 +23,11 @@ export default function Complete() {
       </p>
 
       <NavLink to="/before-calcul-comment">
-        <p>Commentaires</p>
+        <p>Commentaire</p>
+      </NavLink>
+      <br />
+      <NavLink to="/before-calcul-m10k">
+        <p>M10k</p>
       </NavLink>
     </div>
   );
