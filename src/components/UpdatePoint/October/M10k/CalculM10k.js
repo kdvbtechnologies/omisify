@@ -44,6 +44,11 @@ export default function CalculM10k() {
               numberm10kenteradmin
             );
           }
+
+          const gdb = res.data.gdb;
+          if (gdb) {
+            localStorage.setItem("https://omisify.com/gdb", gdb);
+          }
         });
     }
     get();
@@ -58,14 +63,16 @@ export default function CalculM10k() {
 
   const oldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
 
+  const gdb = localStorage.getItem("https://omisify.com/gdb");
+
   const calculpointtm10k =
-    parseInt(newnumber) * 0.7 + parseFloat(oldpointtm10klife);
+    parseInt(newnumber) * 0.7 * gdb + parseFloat(oldpointtm10klife);
 
   const calculpointtlife =
-    parseInt(newnumber) * 0.7 + parseFloat(oldpointtlife);
+    parseInt(newnumber) * 0.7 * gdb + parseFloat(oldpointtlife);
 
   const calculgaintlife =
-    parseInt(newnumber) * 0.0007 + parseFloat(oldgaintlife);
+    parseInt(newnumber) * 0.0007 * gdb + parseFloat(oldgaintlife);
 
   function Save(e) {
     setIsLoading(true);
