@@ -91,6 +91,11 @@ export default function PanelCommentOctober() {
         <Loader />
       ) : (
         <>
+          {output3.map((name) => (
+            <>
+              <p>{name.name}</p>
+            </>
+          ))}
           {api.map((api) => (
             <>
               <h3>Nombres de commentaires: {api.commentrecent}</h3>

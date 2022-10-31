@@ -130,7 +130,7 @@ export default function ValidateCalculM10k() {
             <div className="border">
               {pointtm10klife ? (
                 <>
-                  <p>Commentaire(s) : {pointtm10klife} point(s)</p>
+                  <p>M10k : {pointtm10klife} point(s)</p>
                   <p>Total des Points : {resultpointtlife} point(s)</p>
                   <p>Gains : {gaintlife}€</p>
                 </>
