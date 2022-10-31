@@ -32,9 +32,8 @@ export default function PanelCommentOctober() {
 
   console.log("matches : ", matches);
 
-  function get() {
-    return userId;
-  }
+  const output = api.map((x) => x.userId);
+  console.log(output);
 
   /*
   {api.map((api) =>
@@ -62,7 +61,6 @@ export default function PanelCommentOctober() {
         <Loader />
       ) : (
         <>
-          {api.map(get)}
           {api.map((api) => (
             <>
               <h3>Nombres de commentaires: {api.commentrecent}</h3>
