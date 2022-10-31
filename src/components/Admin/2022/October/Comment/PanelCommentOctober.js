@@ -48,6 +48,13 @@ export default function PanelCommentOctober() {
   console.log(data);
   //const output2 = api.map((x) => x.userId === userId);
 
+  const timed = "19";
+
+  const output4 = api.filter(
+    (user) => user.userId === userId && user.time === timed
+  );
+  console.log(output4);
+
   /*
   const result = output2.filter(check);
   function check(output2) {
