@@ -38,14 +38,16 @@ export default function PanelCommentOctober() {
   console.log(output);
 
   const output2 = api.map((x) => x.userId === userId);
+  //const output2 = api.map((x) => x.userId === userId);
+
+  /*
   const result = output2.filter(check);
   function check(output2) {
     return (output2 = true);
   }
 
   console.log("ici result : ", result);
-
-  //const output2 = api.map((x) => x.userId === userId);
+*/
 
   /*
   if (output) {
@@ -81,7 +83,11 @@ export default function PanelCommentOctober() {
         <Loader />
       ) : (
         <>
-          {output && <p>{output}</p>}
+          {output2
+            .filter((name) => name.includes("true"))
+            .map((fil) => (
+              <p>{fil}</p>
+            ))}
           {api.map((api) => (
             <>
               <h3>Nombres de commentaires: {api.commentrecent}</h3>
