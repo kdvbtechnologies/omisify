@@ -23,13 +23,48 @@ export default function PanelCommentOctober() {
   }, []);
 
   //const userId = localStorage.getItem("https://omisify.com/userId");
-  const userId = "634c8ab0f59d4e9994f83884";
 
-  const date = "2022-10";
+  const userId = "634af1b7b994639ed35b178e";
 
-  const data = api.filter((name) => name.updatedAt.includes(date));
+  const byday = "2022-10-20T17:36:48.500Z";
+
+  const data = api.filter(
+    (name) => name.userId === userId && name.createdAt.includes(byday)
+  );
   console.log(data);
 
+  /*
+// ici c'est par jour et tout les resultats du jour s'affichera 
+   //pour tout les utilisateur
+  const byday = "2022-10-20T17:36:48.500Z";
+
+   const data = api.filter((name) => name.createdAt.includes(byday));
+  console.log(data);
+
+
+  // pour un seul utilisateur
+  const byday = "2022-10-20T17:36:48.500Z";
+
+   const data = api.filter((name) => name.userId === userId && name.createdAt.includes(byday));
+  console.log(data);
+*/
+
+  /*
+
+  // ici c'est pour le mois et par jour
+   // pour tout les utilisateur
+  const date = "2022-10";
+
+  const data = api.filter((name) => name.createdAt.includes(date));
+  console.log(data);
+
+
+  // pour un seul utilisateur
+   const date = "2022-10";
+
+  const data = api.filter((name) => name.userId === userId && name.createdAt.includes(date));
+  console.log(data);
+*/
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
