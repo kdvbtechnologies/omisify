@@ -307,14 +307,6 @@ export default function LoginSuccess() {
             );
           }
 
-          const statuscomment = res.data.statuscomment;
-          if (statuscomment) {
-            localStorage.setItem(
-              "https://omisify.com/statuscomment",
-              statuscomment
-            );
-          }
-
           const accesscode = res.data.accesscode;
           if (accesscode) {
             localStorage.setItem("https://omisify.com/accesscode", accesscode);
@@ -323,6 +315,35 @@ export default function LoginSuccess() {
           const gdb = res.data.gdb;
           if (gdb) {
             localStorage.setItem("https://omisify.com/gdb", gdb);
+          }
+
+          const numbercommententeradmin = res.data.numbercommententeradmin;
+          if (numbercommententeradmin) {
+            localStorage.setItem(
+              "https://omisify.com/numbercommententeradmin",
+              numbercommententeradmin
+            );
+          }
+
+          const statuscomment = res.data.statuscomment;
+          if (statuscomment) {
+            localStorage.setItem(
+              "https://omisify.com/statuscomment",
+              statuscomment
+            );
+          }
+
+          const numberm10kenteradmin = res.data.numberm10kenteradmin;
+          if (numberm10kenteradmin) {
+            localStorage.setItem(
+              "https://omisify.com/numberm10kenteradmin",
+              numberm10kenteradmin
+            );
+          }
+
+          const statusm10k = res.data.statusm10k;
+          if (statusm10k) {
+            localStorage.setItem("https://omisify.com/statusm10k", statusm10k);
           }
 
           localStorage.setItem("https://omisify.com/name", name);

@@ -16,6 +16,11 @@ export default function ValidateCalculM10k() {
     minute: "numeric",
   });
 
+  /*
+  const getdate
+  const dateseebyuser
+*/
+
   const pointtm10klife = localStorage.getItem(
     "https://omisify.com/resultpointtm10klife"
   );
@@ -25,24 +30,34 @@ export default function ValidateCalculM10k() {
     "https://omisify.com/resultpointtlife"
   );
 
+  const getnewnumber = localStorage.getItem("https://omisify.com/newnumber");
+  const numberm10kenteradmin = localStorage.getItem(
+    "https://omisify.com/numberm10kenteradmin"
+  );
+
   async function Validate() {
     setIsLoading(true);
-    await axios({
-      method: "put",
-      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/634c8ab0f59d4e9994f83884`,
-      data: {
-        pointtm10klife,
+    if (numberm10kenteradmin === getnewnumber) {
+      console.log("m10k success");
+      await axios({
+        method: "put",
+        url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/634c8ab0f59d4e9994f83884`,
+        data: {
+          pointtm10klife,
 
-        pointtlife,
-        gaintlife,
+          pointtlife,
+          gaintlife,
 
-        statusm10k,
-        numberm10kenteradmin: newnumberm10kenteradmin,
-        date,
-      },
-    })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+          statusm10k,
+          numberm10kenteradmin: newnumberm10kenteradmin,
+          date,
+        },
+      })
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
+    } else {
+      console.log("m10k error");
+    }
   }
 
   return (
