@@ -53,7 +53,9 @@ export default function PanelCommentOctober() {
   const output4 = api.filter(
     (user) => user.userId === userId && user.time === timed
   );
-  console.log(output4);
+
+  const output5 = output4.filter((user) => user.time === timed);
+  console.log(output5);
 
   /*
   const result = output2.filter(check);
