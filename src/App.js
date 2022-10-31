@@ -175,7 +175,10 @@ import AfterAccessCode from "./components/Others/AccessCode/AfterAccessCode";
 import SecureAccessCode from "./components/Others/AccessCode/SecureAccessCode";
 import Prices from "./components/Business/Home/Prices/Prices";
 import CalculM10k from "./components/UpdatePoint/October/M10k/CalculM10k";
+import BeforeCalculM10k from "./components/UpdatePoint/October/M10k/BeforeCalculM10k";
 import ValidateCalculM10k from "./components/UpdatePoint/October/M10k/ValidateCalculM10k";
+import ValidateM10kError from "./components/UpdatePoint/October/M10k/ValidateM10kError";
+import ValidateM10kSuccess from "./components/UpdatePoint/October/M10k/ValidateM10kSuccess";
 
 export default function App() {
   return (
@@ -364,8 +367,14 @@ export default function App() {
           element={<ValidateCommentError />}
         />
 
+        <Route path="/before-calcul-m10k" element={<BeforeCalculM10k />} />
         <Route path="/calcul-m10k" element={<CalculM10k />} />
         <Route path="/validate-calcul-m10k" element={<ValidateCalculM10k />} />
+        <Route
+          path="/validate-m10k-success"
+          element={<ValidateM10kSuccess />}
+        />
+        <Route path="/validate-m10k-error" element={<ValidateM10kError />} />
 
         <Route path="/program-affiliation" element={<ProgramAffiliation />} />
 
