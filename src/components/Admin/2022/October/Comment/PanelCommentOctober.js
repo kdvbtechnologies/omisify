@@ -50,13 +50,6 @@ export default function PanelCommentOctober() {
 
   const timed = "17:52";
 
-  /*
-  const output4 = api.filter(
-    (user) => user.userId === userId && user.time === timed
-  );
-  
-  */
-
   const output4 = api.filter((user) => user.userId === userId);
 
   const output5 = output4.filter((user) => user.time === timed);
@@ -109,6 +102,14 @@ export default function PanelCommentOctober() {
         <Loader />
       ) : (
         <>
+          {api
+            .filter((user) => user.userId === userId)
+            .map((name) => (
+              <>
+                <h3>{name.name}</h3>
+              </>
+            ))}
+          <hr />
           {output3.map((name) => (
             <>
               <p>{name.name}</p>
