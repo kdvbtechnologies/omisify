@@ -18,7 +18,7 @@ export default function ValidateCalculM10k() {
 
   /*
   const getdate
-  const dateseebyuser
+  const dateseenbyuser
 */
 
   const pointtm10klife = localStorage.getItem(

@@ -22,17 +22,19 @@ export default function PanelCommentOctober() {
     get();
   }, []);
 
-  const userId = localStorage.getItem("https://omisify.com/userId");
+  const userIdd = localStorage.getItem("https://omisify.com/userId");
 
   const matches =
-    userId ===
+    userIdd ===
     api.filter(function (value) {
       return value >= 0;
     });
 
   console.log("matches : ", matches);
 
-  const output = api.map((x) => x.userId);
+  const userId = "634c8ab0f59d4e9994f83884";
+
+  const output = api.map((x) => x.userId === userId);
   console.log(output);
 
   /*
