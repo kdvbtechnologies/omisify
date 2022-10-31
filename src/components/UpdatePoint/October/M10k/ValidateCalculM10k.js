@@ -75,7 +75,7 @@ export default function ValidateCalculM10k() {
         })
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
-        // window.location = "/validate-m10k-success";
+        window.location = "/validate-m10k-success";
       } else {
         console.log("not gdb");
 
@@ -95,11 +95,11 @@ export default function ValidateCalculM10k() {
         })
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
-        // window.location = "/validate-m10k-success"
+        window.location = "/validate-m10k-success";
       }
     } else {
       console.log("m10k error");
-      // window.location = "/validate-m10k-error"
+      window.location = "/validate-m10k-error";
     }
   }
 
