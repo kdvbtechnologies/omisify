@@ -37,6 +37,13 @@ export default function PanelCommentOctober() {
   const output = api.map((x) => x.userId === userId);
   console.log(output);
 
+  if (output) {
+    const data = api.filter(function (value) {
+      return (value = true);
+    });
+    console("output true : ", data);
+  }
+
   /*
   {api.map((api) =>
     userId(api.userId) ? (
