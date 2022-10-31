@@ -87,7 +87,10 @@ export default function BeforeCalculComment() {
         </div>
 
         {isLoading ? (
-          <Loader />
+          <>
+            <p>Chargement des données..</p>
+            <Loader />
+          </>
         ) : (
           <>
             <div className="a">

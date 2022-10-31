@@ -225,7 +225,7 @@ export default function CalculComment() {
             ou une entreprise que le Partenaire a publié sur la publication
             d'une personne ou sur sa propre publication
           </p>
-          <p>1 commentaire : 1 point = 0.001€</p>
+          <p>1 Commentaire : 1 point = 0.001€</p>
 
           <div className="b">
             <p>Calcul du résultat de votre travail</p>
@@ -236,7 +236,9 @@ export default function CalculComment() {
             {statuscomment && <p>Validation automatique : {statuscomment}</p>}
           </div>
 
-          <p>Ancien Total C : {oldpointtcommentlife} point(s)</p>
+          <p style={{ fontSize: "14px" }}>
+            Ancien Total Commentaire : {oldpointtcommentlife} point(s)
+          </p>
 
           {newnumber && oldpointtcommentlife && (
             <p>

@@ -159,7 +159,7 @@ export default function CalculM10k() {
             Les M10k (Message aux 10k) concerne les messages envoyés aux comptes
             ayant entre 10000 abonnés et moins de 1 millions d'abonnés
           </p>
-          <p>1 m10k : 0.7 point = 0.0007€</p>
+          <p>1 M10k : 0.7 point = 0.0007€</p>
 
           <div className="b">
             <p>Calcul du résultat de votre travail</p>
@@ -170,7 +170,9 @@ export default function CalculM10k() {
             {statusm10k && <p>Validation automatique : {statusm10k}</p>}
           </div>
 
-          <p>Ancien Total C : {oldpointtm10klife} point(s)</p>
+          <p style={{ fontSize: "14px" }}>
+            Ancien Total M10k : {oldpointtm10klife} point(s)
+          </p>
 
           {newnumber && oldpointtm10klife && (
             <p>
