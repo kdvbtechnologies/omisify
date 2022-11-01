@@ -28,13 +28,15 @@ export default function Test() {
         <Loader />
       ) : (
         <>
-          {api.map((api) => (
-            <>
-              <p>{api.country}</p>
-              <p>{api.city}</p>
-              <p>{api.ip}</p>
-            </>
-          ))}
+          {api.map((api, index) => {
+            return (
+              <div key={index}>
+                <p>{api.country}</p>
+                <p>{api.city}</p>
+                <p>{api.ip}</p>
+              </div>
+            );
+          })}
         </>
       )}
     </>
