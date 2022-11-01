@@ -3,9 +3,7 @@ import axios from "axios";
 export default function Test() {
   async function Get() {
     await axios
-      .get(
-        "https://geolocation-db.com/json/c5544c60-581f-11ed-b302-a99a705cf413/"
-      )
+      .get("https://ip.nf/me.json")
       .then((res) => {
         console.log(res);
       })
