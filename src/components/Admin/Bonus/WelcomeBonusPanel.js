@@ -62,6 +62,11 @@ export default function WelcomeBonusPanel() {
                       <p>{api.partnername}</p>
                     </div>
 
+                    <p>Pays: {api.countryip}</p>
+                    <p>Ville: {api.cityip}</p>
+                    <p>Adresse IP: {api.userip}</p>
+                    <p>Infos : {api.page}</p>
+                    <p>Date: {api.date}</p>
                     <p>Noms : {api.name}</p>
                     <p>Code BM : {api.codewelcomementor}</p>
                     <p>Bonus EP : {api.bestpartnerbonus}</p>
