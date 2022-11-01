@@ -5,6 +5,8 @@ import Loader from "./Partenaire Omisify/Loader";
 export default function Test() {
   const [api, setApi] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const dated = "aaa";
+  const [date, setDate] = useState(dated);
 
   useEffect(() => {
     async function get() {
@@ -20,12 +22,21 @@ export default function Test() {
     get();
   }, [api]);
 
+  useEffect(() => {
+    async function get() {
+      setDate();
+    }
+    get();
+  }, []);
+
   return (
     <>
-      <p>Chargement des données..</p>
-
+      <p>{date}</p>
       {isLoading ? (
-        <Loader />
+        <>
+          <p>Chargement des données..</p>
+          <Loader />
+        </>
       ) : (
         <>
           <p>{api.country}</p>
