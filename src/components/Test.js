@@ -24,10 +24,10 @@ export default function Test() {
 
   useEffect(() => {
     async function get() {
-      setDate();
+      setDate(!date);
     }
     get();
-  }, []);
+  }, [date]);
   console.log(date);
 
   return (
