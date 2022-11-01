@@ -1,38 +1,30 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Loader from "./Partenaire Omisify/Loader";
 
 export default function Test() {
-  const [api, setApi] = useState([]);
+  const [api, setApi] = useState();
   const [isLoading, setIsLoading] = useState(true);
-  const dated = "aaa";
-  const [date, setDate] = useState(dated);
 
-  useEffect(() => {
-    async function get() {
-      await axios
-        .get("https://ip.nf/me.json")
-        .then((res) => {
-          console.log(res.data.ip);
-          setApi(res.data.ip);
-        })
-        .catch((err) => console.log(err));
-      setIsLoading(false);
-    }
-    get();
-  }, [api]);
+  async function get() {
+    await axios
+      .get("https://ip.nf/me.json")
+      .then((res) => {
+        console.log(res.data.ip);
+        setApi(res.data.ip);
 
-  useEffect(() => {
-    async function get() {
-      setDate(!date);
-    }
-    get();
-  }, [date]);
-  console.log(date);
+        const countryip = res.data.ip.country;
+        if (countryip) {
+          localStorage.setItem("https://omisify.com/countryip");
+        }
+      })
+      .catch((err) => console.log(err));
+    setIsLoading(false);
+  }
+  get();
 
   return (
     <>
-      <p>{date}</p>
       {isLoading ? (
         <>
           <p>Chargement des données..</p>
