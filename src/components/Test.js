@@ -18,7 +18,7 @@ export default function Test() {
       setIsLoading(false);
     }
     get();
-  }, [api]);
+  }, []);
 
   return (
     <>
