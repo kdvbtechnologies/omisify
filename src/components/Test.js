@@ -18,7 +18,7 @@ export default function Test() {
       setIsLoading(false);
     }
     get();
-  }, []);
+  }, [api]);
 
   const output = api.map((x) => x.data.ip);
   console.log(output);
