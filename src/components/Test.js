@@ -20,6 +20,12 @@ export default function Test() {
     get();
   }, []);
 
+  const output = api.map((x) => x.data.ip);
+  console.log(output);
+
+  const output2 = api.map((x) => x);
+  console.log(output2);
+
   return (
     <>
       <p>Chargement des données..</p>
