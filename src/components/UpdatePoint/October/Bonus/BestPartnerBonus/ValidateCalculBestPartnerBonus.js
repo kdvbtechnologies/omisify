@@ -20,6 +20,15 @@ export default function ValidateCalculBestPartnerBonus() {
     "https://omisify.com/resultbestpartnerbonus"
   );
 
+  const getdate = new Date();
+  const date = getdate.toLocaleDateString("fr-FR", {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  });
+
   const pointtlife = localStorage.getItem(
     "https://omisify.com/resultpointtlife"
   );
@@ -48,6 +57,8 @@ export default function ValidateCalculBestPartnerBonus() {
           statusbestpartnerbonus,
           numberdaysbestpartnerbonusenteradmin:
             getnumberdaysbestpartnerbonusenteradmin,
+
+          date,
         },
       })
         .then((res) => console.log(res))
@@ -58,15 +69,6 @@ export default function ValidateCalculBestPartnerBonus() {
       window.location = "/validate-best-partner-bonus-error";
     }
   }
-
-  const getdate = new Date();
-  const date = getdate.toLocaleDateString("fr-FR", {
-    year: "numeric",
-    month: "numeric",
-    day: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-  });
 
   return (
     <>

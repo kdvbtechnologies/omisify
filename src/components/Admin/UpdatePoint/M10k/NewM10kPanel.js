@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import Loader from "../../../Partenaire Omisify/Loader";
 
-export default function NewM10Panel() {
+export default function NewM10kPanel() {
   const getgdb = "1";
   const statusm10k = "YES";
   const [gdb, setgdb] = useState(getgdb);

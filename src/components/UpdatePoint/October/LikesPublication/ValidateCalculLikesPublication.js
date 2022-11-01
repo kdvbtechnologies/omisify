@@ -13,6 +13,15 @@ export default function ValidateCalculLikesPublication() {
   );
   const gdb = localStorage.getItem("https://omisify.com/gdb");
 
+  const getdate = new Date();
+  const date = getdate.toLocaleDateString("fr-FR", {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  });
+
   const newnumber = localStorage.getItem("https://omisify.com/newnumber");
   const numberlikespublicationenteradmin = localStorage.getItem(
     "https://omisify.com/numberlikespublicationenteradmin"
@@ -52,6 +61,7 @@ export default function ValidateCalculLikesPublication() {
               getnumberlikespublicationenteradmin,
 
             generositydaysbonus,
+            date,
           },
         })
           .then((res) => console.log(res))
@@ -71,6 +81,8 @@ export default function ValidateCalculLikesPublication() {
             statuslikespublication,
             numberlikespublicationenteradmin:
               getnumberlikespublicationenteradmin,
+
+            date,
           },
         })
           .then((res) => console.log(res))
@@ -82,15 +94,6 @@ export default function ValidateCalculLikesPublication() {
       window.location = "/validate-likes-publication-error";
     }
   }
-
-  const getdate = new Date();
-  const date = getdate.toLocaleDateString("fr-FR", {
-    year: "numeric",
-    month: "numeric",
-    day: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-  });
 
   return (
     <>

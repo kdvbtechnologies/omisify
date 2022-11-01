@@ -13,6 +13,15 @@ export default function ValidateCalculLikesComment() {
   );
   const gdb = localStorage.getItem("https://omisify.com/gdb");
 
+  const getdate = new Date();
+  const date = getdate.toLocaleDateString("fr-FR", {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  });
+
   const newnumber = localStorage.getItem("https://omisify.com/newnumber");
   const numberlikescommententeradmin = localStorage.getItem(
     "https://omisify.com/numberlikescommententeradmin"
@@ -50,6 +59,8 @@ export default function ValidateCalculLikesComment() {
             statuslikescomment,
             numberlikescommententeradmin: getnumberlikescommententeradmin,
             generositydaysbonus,
+
+            date,
           },
         })
           .then((res) => console.log(res))
@@ -68,6 +79,8 @@ export default function ValidateCalculLikesComment() {
 
             statuslikescomment,
             numberlikescommententeradmin: getnumberlikescommententeradmin,
+
+            date,
           },
         })
           .then((res) => console.log(res))
@@ -79,15 +92,6 @@ export default function ValidateCalculLikesComment() {
       window.location = "/validate-likes-comment-error";
     }
   }
-
-  const getdate = new Date();
-  const date = getdate.toLocaleDateString("fr-FR", {
-    year: "numeric",
-    month: "numeric",
-    day: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-  });
 
   return (
     <>

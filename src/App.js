@@ -197,13 +197,17 @@ import UpdatepwpPanel from "./components/Admin/UpdatePoint/PWP/UpdatePWPPanel";
 import UpdatepwiPanel from "./components/Admin/UpdatePoint/PWI/UpdatePWIPanel";
 
 // panel update point
-import UpdateBestPartnerBonusPanel from "./components/Admin/UpdatePoint/Bonus/UpdateBestPartnerBonusPanel";
+// panel update point
+// panel update point
+/*import UpdateBestPartnerBonusPanel from "./components/Admin/UpdatePoint/Bonus/UpdateBestPartnerBonusPanel";
 import NewCommentPanel from "./components/Admin/UpdatePoint/Comment/NewCommentPanel";
 import NewE10kPanel from "./components/Admin/UpdatePoint/E10k/NewE10kPanel";
 import NewLikesCommentPanel from "./components/Admin/UpdatePoint/LikesComment/NewLikesCommentPanel";
 import NewLikesPublicationPanel from "./components/Admin/UpdatePoint/LikesPublication/NewLikesPublicationPanel";
 import NewM10kPanel from "./components/Admin/UpdatePoint/M10k/NewM10kPanel";
 import NewMWIPanel from "./components/Admin/UpdatePoint/MWI/NewMWIPanel";
+*/
+import UpdatePointPanel from "./components/Admin/UpdatePoint/UpdatePointPanel";
 
 import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 
@@ -606,22 +610,8 @@ export default function App() {
         />
 
         <Route path="/others-panel" element={<OthersPanel />} />
-        <Route path="/new-comment-panel" element={<NewCommentPanel />} />
-        <Route path="/new-m10k-panel" element={<NewM10kPanel />} />
-        <Route
-          path="/update-best-partner-bonus-panel"
-          element={<UpdateBestPartnerBonusPanel />}
-        />
-        <Route path="/new-e10k-panel" element={<NewE10kPanel />} />
-        <Route
-          path="/new-likes-comment-panel"
-          element={<NewLikesCommentPanel />}
-        />
-        <Route
-          path="/new-likes-publication-panel"
-          element={<NewLikesPublicationPanel />}
-        />
-        <Route path="/new-mwi-panel" element={<NewMWIPanel />} />
+
+        <Route path="/update-point-panel" element={<UpdatePointPanel />} />
 
         <Route path="/business" element={<HomeB />} />
         <Route path="/ads" element={<AdsB />} />

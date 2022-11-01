@@ -13,6 +13,15 @@ export default function ValidateCalculMWI() {
   );
   const gdb = localStorage.getItem("https://omisify.com/gdb");
 
+  const getdate = new Date();
+  const date = getdate.toLocaleDateString("fr-FR", {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  });
+
   const newnumber = localStorage.getItem("https://omisify.com/newnumber");
   const numbermwienteradmin = localStorage.getItem(
     "https://omisify.com/numbermwienteradmin"
@@ -50,6 +59,7 @@ export default function ValidateCalculMWI() {
             statusmwi,
             numbermwienteradmin: getnumbermwienteradmin,
             generositydaysbonus,
+            date,
           },
         })
           .then((res) => console.log(res))
@@ -65,6 +75,7 @@ export default function ValidateCalculMWI() {
             pointtmwilife,
             pointtlife,
             gaintlife,
+            date,
 
             statusmwi,
             numbermwienteradmin: getnumbermwienteradmin,
@@ -79,15 +90,6 @@ export default function ValidateCalculMWI() {
       window.location = "/validate-mwi-error";
     }
   }
-
-  const getdate = new Date();
-  const date = getdate.toLocaleDateString("fr-FR", {
-    year: "numeric",
-    month: "numeric",
-    day: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-  });
 
   return (
     <>

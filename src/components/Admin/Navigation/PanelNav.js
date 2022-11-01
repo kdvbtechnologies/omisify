@@ -16,6 +16,10 @@ export default function PanelNav() {
             <li>Bonus de Bienvenue</li>
           </NavLink>
 
+          <NavLink className=".navlink" to="/nav-menu-panel">
+            <li>Menu</li>
+          </NavLink>
+
           <NavLink className=".navlink" to="/others-panel">
             <li>Others Panel</li>
           </NavLink>

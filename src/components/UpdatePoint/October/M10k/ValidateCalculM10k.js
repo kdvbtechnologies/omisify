@@ -10,14 +10,14 @@ export default function ValidateCalculM10k() {
 
   const userId = localStorage.getItem("https://omisify.com/userId");
 
-  const resultpointtlife = localStorage.getItem(
-    "https://omisify.com/resultpointtlife"
-  );
-
-  /*
-  const getdate
-  const dateseenbyuser
-*/
+  const getdate = new Date();
+  const date = getdate.toLocaleDateString("fr-FR", {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  });
 
   const pointtm10klife = localStorage.getItem(
     "https://omisify.com/resultpointtm10klife"
@@ -94,15 +94,6 @@ export default function ValidateCalculM10k() {
     }
   }
 
-  const getdate = new Date();
-  const date = getdate.toLocaleDateString("fr-FR", {
-    year: "numeric",
-    month: "numeric",
-    day: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-  });
-
   return (
     <>
       <div className="back-btn">
@@ -131,7 +122,7 @@ export default function ValidateCalculM10k() {
               {pointtm10klife ? (
                 <>
                   <p>M10k : {pointtm10klife} point(s)</p>
-                  <p>Total des Points : {resultpointtlife} point(s)</p>
+                  <p>Total des Points : {pointtlife} point(s)</p>
                   <p>Gains : {gaintlife}€</p>
                 </>
               ) : (
