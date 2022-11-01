@@ -28,6 +28,7 @@ export default function Test() {
     }
     get();
   }, []);
+  console.log(date);
 
   return (
     <>
