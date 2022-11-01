@@ -209,6 +209,10 @@ import NewMWIPanel from "./components/Admin/UpdatePoint/MWI/NewMWIPanel";
 */
 import UpdatePointPanel from "./components/Admin/UpdatePoint/UpdatePointPanel";
 
+// navigation
+import NavMenuPanel from "./components/Admin/Navigation/NavMenuPanel";
+
+// others in panel
 import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 
 // Omisify Business
@@ -612,6 +616,7 @@ export default function App() {
         <Route path="/others-panel" element={<OthersPanel />} />
 
         <Route path="/update-point-panel" element={<UpdatePointPanel />} />
+        <Route path="/nav-menu-panel" element={<NavMenuPanel />} />
 
         <Route path="/business" element={<HomeB />} />
         <Route path="/ads" element={<AdsB />} />
