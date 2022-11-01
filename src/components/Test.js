@@ -10,12 +10,22 @@ export default function Test() {
     await axios
       .get("https://ip.nf/me.json")
       .then((res) => {
-        console.log(res.data.ip);
+        console.log(res.data.ip.country);
         setApi(res.data.ip);
 
         const countryip = res.data.ip.country;
         if (countryip) {
-          localStorage.setItem("https://omisify.com/countryip");
+          localStorage.setItem("https://omisify.com/countryip", countryip);
+        }
+
+        const cityip = res.data.ip.city;
+        if (cityip) {
+          localStorage.setItem("https://omisify.com/cityip", cityip);
+        }
+
+        const userip = res.data.ip.ip;
+        if (userip) {
+          localStorage.setItem("https://omisify.com/userip", userip);
         }
       })
       .catch((err) => console.log(err));
