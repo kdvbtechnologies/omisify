@@ -63,6 +63,7 @@ export default function Complete() {
         <p>MWI</p>
       </NavLink>
       <br />
+      <hr />
     </div>
   );
 }
