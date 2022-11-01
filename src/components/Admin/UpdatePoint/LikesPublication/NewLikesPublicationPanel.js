@@ -1,43 +1,49 @@
 import axios from "axios";
-import { useState } from "react";
 import Loader from "../../../Partenaire Omisify/Loader";
+import { useState } from "react";
 
-export default function NewCommentPanel() {
-  const [userId, setUserId] = useState("");
+export default function NewLikesPublicationPanel() {
+  const statuslikespublication = "YES";
   const getgdb = "1";
   const [gdb, setGdb] = useState(getgdb);
-  const [numbercommententeradmin, setNumbercommententeradmin] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const [success, setSuccess] = useState("");
-  const statuscomment = "YES";
 
-  async function Validate(e) {
+  const [
+    numberlikespublicationenteradmin,
+    setnumberlikespublicationenteradmin,
+  ] = useState("");
+
+  const [userId, setUserId] = useState("");
+  const [success, setSuccess] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  async function Validate() {
     setIsLoading(true);
-    e.preventDefault();
+
     const save = localStorage.setItem(
-      "https://omisify.com/numbercommententeradmin",
-      numbercommententeradmin
+      "https://omisify.com/numberlikespublicationenteradmin",
+      numberlikespublicationenteradmin
     );
     console.log(save);
 
     await axios({
       method: "put",
-      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
+      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatelikespublication/${userId}`,
       data: {
-        numbercommententeradmin,
-        statuscomment,
+        statuslikespublication,
+        numberlikespublicationenteradmin,
         gdb,
       },
     })
       .then((res) => {
         console.log(res);
-        const getnumbercommententeradmin = localStorage.getItem(
-          "https://omisify.com/numbercommententeradmin"
+        const getnumberlikespublicationenteradmin = localStorage.getItem(
+          "https://omisify.com/numberlikespublicationenteradmin"
         );
+
         const name = res.data.name;
         if (name) {
           setSuccess(
-            `${getnumbercommententeradmin} commentaire(s) ajouté(s) avec succès à ${name}`
+            `${getnumberlikespublicationenteradmin} Likes P ajouté(s) avec succès à ${name}`
           );
         }
       })
@@ -45,17 +51,13 @@ export default function NewCommentPanel() {
     setIsLoading(false);
   }
 
-  const family = {
-    fontFamily:
-      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
-  };
-
   return (
     <>
-      <div style={family} className="new-comment-panel">
+      <div className="new-comment-panel">
         <div className="title">
-          <p>Commentaire</p>
+          <p>Likes (publication)</p>
         </div>
+
         <div className="align">
           <div className="a">
             <p>Entrer le userId</p>
@@ -79,17 +81,21 @@ export default function NewCommentPanel() {
             <option value="10">Oui</option>
           </select>
 
-          <p>Entrer le nombre de nouveau(x) commentaire(s)</p>
+          <p>Entrer le nombre de nouveau(x) Likes P</p>
           <input
             type="number"
-            placeholder="Nombre de commentaire(s)"
-            value={numbercommententeradmin}
-            onChange={(e) => setNumbercommententeradmin(e.target.value)}
-            name="numbercommententeradmin"
+            value={numberlikespublicationenteradmin}
+            onChange={(e) =>
+              setnumberlikespublicationenteradmin(e.target.value)
+            }
+            name="numberlikespublicationenteradmin"
+            placeholder="Nombre de Likes P"
           />
+
           <div className="success">
             <p>{success}</p>
           </div>
+
           {isLoading ? (
             <Loader />
           ) : (

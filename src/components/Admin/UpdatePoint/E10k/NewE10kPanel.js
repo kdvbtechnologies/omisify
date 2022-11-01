@@ -1,43 +1,44 @@
 import axios from "axios";
-import { useState } from "react";
 import Loader from "../../../Partenaire Omisify/Loader";
+import { useState } from "react";
 
-export default function NewCommentPanel() {
-  const [userId, setUserId] = useState("");
+export default function NewE10kPanel() {
+  const statuse10k = "YES";
   const getgdb = "1";
   const [gdb, setGdb] = useState(getgdb);
-  const [numbercommententeradmin, setNumbercommententeradmin] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [numbere10kenteradmin, setnumbere10kenteradmin] = useState("");
+  const [userId, setUserId] = useState("");
   const [success, setSuccess] = useState("");
-  const statuscomment = "YES";
+  const [isLoading, setIsLoading] = useState(false);
 
-  async function Validate(e) {
+  async function Validate() {
     setIsLoading(true);
-    e.preventDefault();
+
     const save = localStorage.setItem(
-      "https://omisify.com/numbercommententeradmin",
-      numbercommententeradmin
+      "https://omisify.com/numbere10kenteradmin",
+      numbere10kenteradmin
     );
     console.log(save);
 
     await axios({
       method: "put",
-      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
+      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatee10k/${userId}`,
       data: {
-        numbercommententeradmin,
-        statuscomment,
+        statuse10k,
+        numbere10kenteradmin,
         gdb,
       },
     })
       .then((res) => {
         console.log(res);
-        const getnumbercommententeradmin = localStorage.getItem(
-          "https://omisify.com/numbercommententeradmin"
+        const getnumbere10kenteradmin = localStorage.getItem(
+          "https://omisify.com/numbere10kenteradmin"
         );
+
         const name = res.data.name;
         if (name) {
           setSuccess(
-            `${getnumbercommententeradmin} commentaire(s) ajouté(s) avec succès à ${name}`
+            `${getnumbere10kenteradmin} E10k ajouté(s) avec succès à ${name}`
           );
         }
       })
@@ -45,17 +46,13 @@ export default function NewCommentPanel() {
     setIsLoading(false);
   }
 
-  const family = {
-    fontFamily:
-      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
-  };
-
   return (
     <>
-      <div style={family} className="new-comment-panel">
+      <div className="new-comment-panel">
         <div className="title">
-          <p>Commentaire</p>
+          <p>E10k</p>
         </div>
+
         <div className="align">
           <div className="a">
             <p>Entrer le userId</p>
@@ -79,17 +76,19 @@ export default function NewCommentPanel() {
             <option value="10">Oui</option>
           </select>
 
-          <p>Entrer le nombre de nouveau(x) commentaire(s)</p>
+          <p>Entrer le nombre de nouveau(x) E10k</p>
           <input
             type="number"
-            placeholder="Nombre de commentaire(s)"
-            value={numbercommententeradmin}
-            onChange={(e) => setNumbercommententeradmin(e.target.value)}
-            name="numbercommententeradmin"
+            value={numbere10kenteradmin}
+            onChange={(e) => setnumbere10kenteradmin(e.target.value)}
+            name="numbere10kenteradmin"
+            placeholder="Nombre de E10k"
           />
+
           <div className="success">
             <p>{success}</p>
           </div>
+
           {isLoading ? (
             <Loader />
           ) : (

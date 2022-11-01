@@ -20,7 +20,7 @@ export default function Incomplete() {
       </p>
 
       <NavLink>
-        <p>E10k</p>
+        <p>Bonus de Condition Respecté</p>
       </NavLink>
     </div>
   );

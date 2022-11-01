@@ -171,7 +171,7 @@ export default function CalculM10k() {
           </div>
 
           <p style={{ fontSize: "14px" }}>
-            Ancien Total M10k : {oldpointtm10klife} point(s)
+            Ancien total des points des M10k : {oldpointtm10klife} point(s)
           </p>
 
           {newnumber && oldpointtm10klife && (

@@ -355,7 +355,7 @@ export default function UpdateLikeslikescomment() {
                   publié sur les réseaux sociaux concernant un produit ou une
                   entreprise
                 </p>
-                <p>1 likes (commentaire) : 0.01 point = 0.00001€</p>
+                <p>1 Like (commentaire) : 0.01 point = 0.00001€</p>
                 <div className="c">
                   <p>Envoyer le résultat de votre travail</p>
                 </div>

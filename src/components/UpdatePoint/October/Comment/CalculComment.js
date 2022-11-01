@@ -237,7 +237,8 @@ export default function CalculComment() {
           </div>
 
           <p style={{ fontSize: "14px" }}>
-            Ancien Total Commentaire : {oldpointtcommentlife} point(s)
+            Ancien total des points des Commentaires : {oldpointtcommentlife}{" "}
+            point(s)
           </p>
 
           {newnumber && oldpointtcommentlife && (

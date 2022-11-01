@@ -22,13 +22,47 @@ export default function Complete() {
         terminé
       </p>
 
+      <hr />
+      <br />
+      <NavLink to="/before-calcul-best-partner-bonus">
+        <p>Bonus EP</p>
+      </NavLink>
+      <br />
+
+      <hr />
+      <br />
       <NavLink to="/before-calcul-comment">
         <p>Commentaire</p>
       </NavLink>
       <br />
-      <NavLink to="/before-calcul-m10k">
-        <p>M10k</p>
+
+      <hr />
+      <br />
+      <NavLink to="/before-calcul-e10k">
+        <p>E10k</p>
       </NavLink>
+      <br />
+
+      <hr />
+      <br />
+      <NavLink to="/before-calcul-likes-comment">
+        <p>Likes C</p>
+      </NavLink>
+      <br />
+
+      <hr />
+      <br />
+      <NavLink to="/before-calcul-likes-publication">
+        <p>Likes P</p>
+      </NavLink>
+      <br />
+
+      <hr />
+      <br />
+      <NavLink to="/before-calcul-mwi">
+        <p>MWI</p>
+      </NavLink>
+      <br />
     </div>
   );
 }

@@ -114,6 +114,13 @@ import SecureUpdatePublication from "./components/UpdatePoint/October/Publicatio
 import SecureUpdatePWI from "./components/UpdatePoint/October/PWI/SecureUpdatePWI";
 import SecureUpdatePWP from "./components/UpdatePoint/October/PWP/SecureUpdatePWP";
 
+// updatepoint - BestPartnerBonus
+import CalculBestPartnerBonus from "./components/UpdatePoint/October/Bonus/BestPartnerBonus/CalculBestPartnerBonus";
+import BeforeCalculBestPartnerBonus from "./components/UpdatePoint/October/Bonus/BestPartnerBonus/BeforeCalculBestPartnerBonus";
+import ValidateCalculBestPartnerBonus from "./components/UpdatePoint/October/Bonus/BestPartnerBonus/ValidateCalculBestPartnerBonus";
+import ValidateBestPartnerBonusError from "./components/UpdatePoint/October/Bonus/BestPartnerBonus/ValidateBestPartnerBonusError";
+import ValidateBestPartnerBonusSuccess from "./components/UpdatePoint/October/Bonus/BestPartnerBonus/ValidateBestPartnerBonusSuccess";
+
 // updatepoint - comment
 import CalculComment from "./components/UpdatePoint/October/Comment/CalculComment";
 import ValidateCalculComment from "./components/UpdatePoint/October/Comment/ValidateCalculComment";
@@ -121,12 +128,40 @@ import ValidateCommentSuccess from "./components/UpdatePoint/October/Comment/Val
 import ValidateCommentError from "./components/UpdatePoint/October/Comment/ValidateCommentError";
 import BeforeCalculComment from "./components/UpdatePoint/October/Comment/BeforeCalculComment";
 
+// updatepoint - LikesComment
+import CalculLikesComment from "./components/UpdatePoint/October/LikesComment/CalculLikesComment";
+import BeforeCalculLikesComment from "./components/UpdatePoint/October/LikesComment/BeforeCalculLikesComment";
+import ValidateCalculLikesComment from "./components/UpdatePoint/October/LikesComment/ValidateCalculLikesComment";
+import ValidateLikesCommentError from "./components/UpdatePoint/October/LikesComment/ValidateLikesCommentError";
+import ValidateLikesCommentSuccess from "./components/UpdatePoint/October/LikesComment/ValidateLikesCommentSuccess";
+
+// updatepoint - LikesPublication
+import CalculLikesPublication from "./components/UpdatePoint/October/LikesPublication/CalculLikesPublication";
+import BeforeCalculLikesPublication from "./components/UpdatePoint/October/LikesPublication/BeforeCalculLikesPublication";
+import ValidateCalculLikesPublication from "./components/UpdatePoint/October/LikesPublication/ValidateCalculLikesPublication";
+import ValidateLikesPublicationError from "./components/UpdatePoint/October/LikesPublication/ValidateLikesPublicationError";
+import ValidateLikesPublicationSuccess from "./components/UpdatePoint/October/LikesPublication/ValidateLikesPublicationSuccess";
+
 // updatepoint - m10k
 import CalculM10k from "./components/UpdatePoint/October/M10k/CalculM10k";
 import BeforeCalculM10k from "./components/UpdatePoint/October/M10k/BeforeCalculM10k";
 import ValidateCalculM10k from "./components/UpdatePoint/October/M10k/ValidateCalculM10k";
 import ValidateM10kError from "./components/UpdatePoint/October/M10k/ValidateM10kError";
 import ValidateM10kSuccess from "./components/UpdatePoint/October/M10k/ValidateM10kSuccess";
+
+// updatepoint - E10k
+import CalculE10k from "./components/UpdatePoint/October/E10k/CalculE10k";
+import BeforeCalculE10k from "./components/UpdatePoint/October/E10k/BeforeCalculE10k";
+import ValidateCalculE10k from "./components/UpdatePoint/October/E10k/ValidateCalculE10k";
+import ValidateE10kError from "./components/UpdatePoint/October/E10k/ValidateE10kError";
+import ValidateE10kSuccess from "./components/UpdatePoint/October/E10k/ValidateE10kSuccess";
+
+// updatepoint - MWI
+import CalculMWI from "./components/UpdatePoint/October/MWI/CalculMWI";
+import BeforeCalculMWI from "./components/UpdatePoint/October/MWI/BeforeCalculMWI";
+import ValidateCalculMWI from "./components/UpdatePoint/October/MWI/ValidateCalculMWI";
+import ValidateMWIError from "./components/UpdatePoint/October/MWI/ValidateMWIError";
+import ValidateMWISuccess from "./components/UpdatePoint/October/MWI/ValidateMWISuccess";
 
 // panel
 import User from "./components/Admin/User/User";
@@ -160,8 +195,16 @@ import UpdatepublicationPanel from "./components/Admin/UpdatePoint/Publication/U
 import UpdatelikespublicationPanel from "./components/Admin/UpdatePoint/LikesPublication/UpdateLikesPublicationPanel";
 import UpdatepwpPanel from "./components/Admin/UpdatePoint/PWP/UpdatePWPPanel";
 import UpdatepwiPanel from "./components/Admin/UpdatePoint/PWI/UpdatePWIPanel";
+
+// panel update point
+import UpdateBestPartnerBonusPanel from "./components/Admin/UpdatePoint/Bonus/UpdateBestPartnerBonusPanel";
 import NewCommentPanel from "./components/Admin/UpdatePoint/Comment/NewCommentPanel";
+import NewE10kPanel from "./components/Admin/UpdatePoint/E10k/NewE10kPanel";
+import NewLikesCommentPanel from "./components/Admin/UpdatePoint/LikesComment/NewLikesCommentPanel";
+import NewLikesPublicationPanel from "./components/Admin/UpdatePoint/LikesPublication/NewLikesPublicationPanel";
 import NewM10kPanel from "./components/Admin/UpdatePoint/M10k/NewM10kPanel";
+import NewMWIPanel from "./components/Admin/UpdatePoint/MWI/NewMWIPanel";
+
 import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 
 // Omisify Business
@@ -351,6 +394,27 @@ export default function App() {
         <Route path="/ask-poster-success" element={<AskPosterSuccess />} />
 
         <Route
+          path="/before-calcul-best-partner-bonus"
+          element={<BeforeCalculBestPartnerBonus />}
+        />
+        <Route
+          path="/calcul-best-partner-bonus"
+          element={<CalculBestPartnerBonus />}
+        />
+        <Route
+          path="/validate-calcul-best-partner-bonus"
+          element={<ValidateCalculBestPartnerBonus />}
+        />
+        <Route
+          path="/validate-best-partner-bonus-success"
+          element={<ValidateBestPartnerBonusSuccess />}
+        />
+        <Route
+          path="/validate-best-partner-bonus-error"
+          element={<ValidateBestPartnerBonusError />}
+        />
+
+        <Route
           path="/before-calcul-comment"
           element={<BeforeCalculComment />}
         />
@@ -378,6 +442,60 @@ export default function App() {
           element={<ValidateM10kSuccess />}
         />
         <Route path="/validate-m10k-error" element={<ValidateM10kError />} />
+
+        <Route path="/before-calcul-e10k" element={<BeforeCalculE10k />} />
+        <Route path="/calcul-e10k" element={<CalculE10k />} />
+        <Route path="/validate-calcul-e10k" element={<ValidateCalculE10k />} />
+        <Route
+          path="/validate-e10k-success"
+          element={<ValidateE10kSuccess />}
+        />
+        <Route path="/validate-e10k-error" element={<ValidateE10kError />} />
+
+        <Route
+          path="/before-calcul-likes-comment"
+          element={<BeforeCalculLikesComment />}
+        />
+        <Route path="/calcul-likes-comment" element={<CalculLikesComment />} />
+        <Route
+          path="/validate-calcul-likes-comment"
+          element={<ValidateCalculLikesComment />}
+        />
+        <Route
+          path="/validate-likes-comment-success"
+          element={<ValidateLikesCommentSuccess />}
+        />
+        <Route
+          path="/validate-likes-comment-error"
+          element={<ValidateLikesCommentError />}
+        />
+
+        <Route
+          path="/before-calcul-likes-publication"
+          element={<BeforeCalculLikesPublication />}
+        />
+        <Route
+          path="/calcul-likes-publication"
+          element={<CalculLikesPublication />}
+        />
+        <Route
+          path="/validate-calcul-likes-publication"
+          element={<ValidateCalculLikesPublication />}
+        />
+        <Route
+          path="/validate-likes-publication-success"
+          element={<ValidateLikesPublicationSuccess />}
+        />
+        <Route
+          path="/validate-likes-publication-error"
+          element={<ValidateLikesPublicationError />}
+        />
+
+        <Route path="/before-calcul-MWI" element={<BeforeCalculMWI />} />
+        <Route path="/calcul-MWI" element={<CalculMWI />} />
+        <Route path="/validate-calcul-MWI" element={<ValidateCalculMWI />} />
+        <Route path="/validate-MWI-success" element={<ValidateMWISuccess />} />
+        <Route path="/validate-MWI-error" element={<ValidateMWIError />} />
 
         <Route path="/program-affiliation" element={<ProgramAffiliation />} />
 
@@ -490,6 +608,20 @@ export default function App() {
         <Route path="/others-panel" element={<OthersPanel />} />
         <Route path="/new-comment-panel" element={<NewCommentPanel />} />
         <Route path="/new-m10k-panel" element={<NewM10kPanel />} />
+        <Route
+          path="/update-best-partner-bonus-panel"
+          element={<UpdateBestPartnerBonusPanel />}
+        />
+        <Route path="/new-e10k-panel" element={<NewE10kPanel />} />
+        <Route
+          path="/new-likes-comment-panel"
+          element={<NewLikesCommentPanel />}
+        />
+        <Route
+          path="/new-likes-publication-panel"
+          element={<NewLikesPublicationPanel />}
+        />
+        <Route path="/new-mwi-panel" element={<NewMWIPanel />} />
 
         <Route path="/business" element={<HomeB />} />
         <Route path="/ads" element={<AdsB />} />

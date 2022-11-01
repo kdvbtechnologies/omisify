@@ -3,94 +3,80 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Loader from "../../../Partenaire Omisify/Loader";
 
-export default function ValidateCalculM10k() {
-  const statusm10k = "NO";
-  const newnumberm10kenteradmin = "0";
+export default function ValidateCalculLikesComment() {
   const [isLoading, setIsLoading] = useState(false);
+  const statuslikescomment = "NO";
+  const getnumberlikescommententeradmin = "0";
+  const suggestgdb = "10";
+  const generositydaysbonus = localStorage.getItem(
+    "https://omisify.com/resultgenerositydaysbonus"
+  );
+  const gdb = localStorage.getItem("https://omisify.com/gdb");
 
-  const userId = localStorage.getItem("https://omisify.com/userId");
-
-  const resultpointtlife = localStorage.getItem(
-    "https://omisify.com/resultpointtlife"
+  const newnumber = localStorage.getItem("https://omisify.com/newnumber");
+  const numberlikescommententeradmin = localStorage.getItem(
+    "https://omisify.com/numberlikescommententeradmin"
   );
 
-  /*
-  const getdate
-  const dateseenbyuser
-*/
-
-  const pointtm10klife = localStorage.getItem(
-    "https://omisify.com/resultpointtm10klife"
+  const pointtlikescommentlife = localStorage.getItem(
+    "https://omisify.com/resultpointtlikescommentlife"
   );
 
-  const gaintlife = localStorage.getItem("https://omisify.com/resultgaintlife");
   const pointtlife = localStorage.getItem(
     "https://omisify.com/resultpointtlife"
   );
 
-  const getnewnumber = localStorage.getItem("https://omisify.com/newnumber");
-  const numberm10kenteradmin = localStorage.getItem(
-    "https://omisify.com/numberm10kenteradmin"
-  );
+  const gaintlife = localStorage.getItem("https://omisify.com/resultgaintlife");
 
-  const generositydaysbonus = localStorage.getItem(
-    "https://omisify.com/resultgenerositydaysbonus"
-  );
-
-  const suggestgdb = localStorage.getItem("https://omisify.com/suggestgdb");
-  const gdb = localStorage.getItem("https://omisify.com/gdb");
+  const userId = localStorage.getItem("https://omisify.com/userId");
 
   async function Validate() {
     setIsLoading(true);
-    if (numberm10kenteradmin === getnewnumber) {
-      console.log("m10k success");
+
+    if (numberlikescommententeradmin === newnumber) {
+      console.log("likescomment success");
 
       if (gdb === suggestgdb) {
         console.log("yes gdb");
 
         await axios({
           method: "put",
-          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/${userId}`,
+          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatelikescomment/${userId}`,
           data: {
-            pointtm10klife,
-
+            pointtlikescommentlife,
             pointtlife,
             gaintlife,
 
-            statusm10k,
-            numberm10kenteradmin: newnumberm10kenteradmin,
-            date,
-
+            statuslikescomment,
+            numberlikescommententeradmin: getnumberlikescommententeradmin,
             generositydaysbonus,
           },
         })
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
-        window.location = "/validate-m10k-success";
+        window.location = "/validate-likes-comment-success";
       } else {
-        console.log("not gdb");
+        console.log("no gdb");
 
         await axios({
           method: "put",
-          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/${userId}`,
+          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatelikescomment/${userId}`,
           data: {
-            pointtm10klife,
-
+            pointtlikescommentlife,
             pointtlife,
             gaintlife,
 
-            statusm10k,
-            numberm10kenteradmin: newnumberm10kenteradmin,
-            date,
+            statuslikescomment,
+            numberlikescommententeradmin: getnumberlikescommententeradmin,
           },
         })
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
-        window.location = "/validate-m10k-success";
+        window.location = "/validate-likes-comment-success";
       }
     } else {
-      console.log("m10k error");
-      window.location = "/validate-m10k-error";
+      console.log("error likescomment");
+      window.location = "/validate-likes-comment-error";
     }
   }
 
@@ -106,7 +92,7 @@ export default function ValidateCalculM10k() {
   return (
     <>
       <div className="back-btn">
-        <NavLink to="/before-calcul-m10k">
+        <NavLink to="/before-calcul-likes-comment">
           <button>Retour</button>
         </NavLink>
       </div>
@@ -122,16 +108,16 @@ export default function ValidateCalculM10k() {
 
         <div className="a">
           <div className="date">
-            <p>Option : M10k</p>
+            <p>Option : Likes C</p>
             <p>{date}</p>
           </div>
 
           <div className="shrink-border">
             <div className="border">
-              {pointtm10klife ? (
+              {pointtlikescommentlife ? (
                 <>
-                  <p>M10k : {pointtm10klife} point(s)</p>
-                  <p>Total des Points : {resultpointtlife} point(s)</p>
+                  <p>Likes C : {pointtlikescommentlife} point(s)</p>
+                  <p>Total des Points : {pointtlife} point(s)</p>
                   <p>Gains : {gaintlife}€</p>
                 </>
               ) : (
@@ -154,7 +140,7 @@ export default function ValidateCalculM10k() {
             <div className="b">
               <i>
                 Si les résultats ne sont pas correct, cliquer{" "}
-                <NavLink className="navlink" to="/before-calcul-m10k">
+                <NavLink className="navlink" to="/before-calcul-likes-comment">
                   ici
                 </NavLink>{" "}
                 pour reprendre les calculs ou{" "}

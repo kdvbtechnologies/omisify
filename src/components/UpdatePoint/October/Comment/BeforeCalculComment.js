@@ -67,7 +67,7 @@ export default function BeforeCalculComment() {
     get();
   }, [userId]);
 
-  async function Refresh() {
+  async function TryAgain() {
     window.location.reload();
   }
 
@@ -95,17 +95,11 @@ export default function BeforeCalculComment() {
           <>
             <div className="a">
               <div className="b">
-                <p>
-                  Impossible d'accéder à la page d'actualisation des
-                  Commentaires. Actualiser la page pourrait aider à résoudre ce
-                  problème. Si le problème persiste, vérifier votre connexion
-                  internet ou contacter le Service Partenaire pour obtenir de
-                  l'aide
-                </p>
-                <p>Cliquer sur le bouton Actualiser</p>
+                <p>Impossible de charger les données</p>
+                <p>Cliquer sur le bouton Rééssayer</p>
               </div>
             </div>
-            <button onClick={Refresh}>Actualiser </button>
+            <button onClick={TryAgain}>Rééssayer</button>
           </>
         )}
       </div>

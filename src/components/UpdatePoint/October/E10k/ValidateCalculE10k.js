@@ -3,94 +3,80 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Loader from "../../../Partenaire Omisify/Loader";
 
-export default function ValidateCalculM10k() {
-  const statusm10k = "NO";
-  const newnumberm10kenteradmin = "0";
+export default function ValidateCalculE10k() {
   const [isLoading, setIsLoading] = useState(false);
+  const statuse10k = "NO";
+  const getnumbere10kenteradmin = "0";
+  const suggestgdb = "10";
+  const generositydaysbonus = localStorage.getItem(
+    "https://omisify.com/resultgenerositydaysbonus"
+  );
+  const gdb = localStorage.getItem("https://omisify.com/gdb");
 
-  const userId = localStorage.getItem("https://omisify.com/userId");
-
-  const resultpointtlife = localStorage.getItem(
-    "https://omisify.com/resultpointtlife"
+  const newnumber = localStorage.getItem("https://omisify.com/newnumber");
+  const numbere10kenteradmin = localStorage.getItem(
+    "https://omisify.com/numbere10kenteradmin"
   );
 
-  /*
-  const getdate
-  const dateseenbyuser
-*/
-
-  const pointtm10klife = localStorage.getItem(
-    "https://omisify.com/resultpointtm10klife"
+  const pointte10klife = localStorage.getItem(
+    "https://omisify.com/resultpointte10klife"
   );
 
-  const gaintlife = localStorage.getItem("https://omisify.com/resultgaintlife");
   const pointtlife = localStorage.getItem(
     "https://omisify.com/resultpointtlife"
   );
 
-  const getnewnumber = localStorage.getItem("https://omisify.com/newnumber");
-  const numberm10kenteradmin = localStorage.getItem(
-    "https://omisify.com/numberm10kenteradmin"
-  );
+  const gaintlife = localStorage.getItem("https://omisify.com/resultgaintlife");
 
-  const generositydaysbonus = localStorage.getItem(
-    "https://omisify.com/resultgenerositydaysbonus"
-  );
-
-  const suggestgdb = localStorage.getItem("https://omisify.com/suggestgdb");
-  const gdb = localStorage.getItem("https://omisify.com/gdb");
+  const userId = localStorage.getItem("https://omisify.com/userId");
 
   async function Validate() {
     setIsLoading(true);
-    if (numberm10kenteradmin === getnewnumber) {
-      console.log("m10k success");
+
+    if (numbere10kenteradmin === newnumber) {
+      console.log("e10k success");
 
       if (gdb === suggestgdb) {
         console.log("yes gdb");
 
         await axios({
           method: "put",
-          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/${userId}`,
+          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatee10k/${userId}`,
           data: {
-            pointtm10klife,
-
+            pointte10klife,
             pointtlife,
             gaintlife,
 
-            statusm10k,
-            numberm10kenteradmin: newnumberm10kenteradmin,
-            date,
-
+            statuse10k,
+            numbere10kenteradmin: getnumbere10kenteradmin,
             generositydaysbonus,
           },
         })
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
-        window.location = "/validate-m10k-success";
+        window.location = "/validate-e10k-success";
       } else {
-        console.log("not gdb");
+        console.log("no gdb");
 
         await axios({
           method: "put",
-          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatem10k/${userId}`,
+          url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatee10k/${userId}`,
           data: {
-            pointtm10klife,
-
+            pointte10klife,
             pointtlife,
             gaintlife,
 
-            statusm10k,
-            numberm10kenteradmin: newnumberm10kenteradmin,
-            date,
+            statuse10k,
+            numbere10kenteradmin: getnumbere10kenteradmin,
           },
         })
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
-        window.location = "/validate-m10k-success";
+        window.location = "/validate-e10k-success";
       }
     } else {
-      console.log("m10k error");
-      window.location = "/validate-m10k-error";
+      console.log("error e10k");
+      window.location = "/validate-e10k-error";
     }
   }
 
@@ -106,7 +92,7 @@ export default function ValidateCalculM10k() {
   return (
     <>
       <div className="back-btn">
-        <NavLink to="/before-calcul-m10k">
+        <NavLink to="/before-calcul-e10k">
           <button>Retour</button>
         </NavLink>
       </div>
@@ -122,16 +108,16 @@ export default function ValidateCalculM10k() {
 
         <div className="a">
           <div className="date">
-            <p>Option : M10k</p>
+            <p>Option : E10k</p>
             <p>{date}</p>
           </div>
 
           <div className="shrink-border">
             <div className="border">
-              {pointtm10klife ? (
+              {pointte10klife ? (
                 <>
-                  <p>M10k : {pointtm10klife} point(s)</p>
-                  <p>Total des Points : {resultpointtlife} point(s)</p>
+                  <p>E10k : {pointte10klife} point(s)</p>
+                  <p>Total des Points : {pointtlife} point(s)</p>
                   <p>Gains : {gaintlife}€</p>
                 </>
               ) : (
@@ -154,7 +140,7 @@ export default function ValidateCalculM10k() {
             <div className="b">
               <i>
                 Si les résultats ne sont pas correct, cliquer{" "}
-                <NavLink className="navlink" to="/before-calcul-m10k">
+                <NavLink className="navlink" to="/before-calcul-e10k">
                   ici
                 </NavLink>{" "}
                 pour reprendre les calculs ou{" "}
