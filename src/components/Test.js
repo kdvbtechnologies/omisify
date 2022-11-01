@@ -20,12 +20,6 @@ export default function Test() {
     get();
   }, [api]);
 
-  const output = api.map((x) => x.data.ip);
-  console.log(output);
-
-  const output2 = api.map((x) => x);
-  console.log(output2);
-
   return (
     <>
       <p>Chargement des données..</p>
@@ -34,15 +28,9 @@ export default function Test() {
         <Loader />
       ) : (
         <>
-          {api.map((api, index) => {
-            return (
-              <div key={index}>
-                <p>{api.country}</p>
-                <p>{api.city}</p>
-                <p>{api.ip}</p>
-              </div>
-            );
-          })}
+          <p>{api.country}</p>
+          <p>{api.city}</p>
+          <p>{api.ip}</p>
         </>
       )}
     </>
