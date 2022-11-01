@@ -233,7 +233,7 @@ import ErrorAccessCode from "./components/Others/AccessCode/ErrorAccessCode";
 import AfterAccessCode from "./components/Others/AccessCode/AfterAccessCode";
 import SecureAccessCode from "./components/Others/AccessCode/SecureAccessCode";
 import Prices from "./components/Business/Home/Prices/Prices";
-import Test from "./Test";
+import Test from "./components/Test";
 
 export default function App() {
   return (
