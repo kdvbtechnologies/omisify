@@ -2,10 +2,10 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 
 export default function PartnerNavigation() {
-  const userId = localStorage.getItem("https://omisify.com/userId");
-  const partnername = localStorage.getItem("https://omisify.com/partnername");
-  const shortname = localStorage.getItem("https://omisify.com/shortname");
-  const name = localStorage.getItem("https://omisify.com/name");
+  //const userId = localStorage.getItem("https://omisify.com/userId");
+  //const partnername = localStorage.getItem("https://omisify.com/partnername");
+  //const shortname = localStorage.getItem("https://omisify.com/shortname");
+  //const name = localStorage.getItem("https://omisify.com/name");
 
   async function get() {
     await axios
