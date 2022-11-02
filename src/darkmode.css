@@ -443,6 +443,7 @@
 
 .home .part-d {
   border: 2px solid #ccc;
+  box-shadow: 5px 10px red;
   color: #444;
   font-size: 18px;
   border-radius: 10px;
