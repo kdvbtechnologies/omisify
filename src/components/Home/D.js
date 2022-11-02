@@ -82,10 +82,10 @@ export default function D() {
       <div className="align-part-d">
         <div className="part-d">
           <div className="title">
-            <p>Rémunération</p>
+            <p>{t("--remuneration")}</p>
           </div>
-          <li>1 Commentaire = 1 point</li>
-          <li>1 E10k = 0.7 point</li>
+          <li>{t("--1comment")}</li>
+          <li>{t("--1e10k")}</li>
           <li>1 E-mail = 0.3 point</li>
           <li>1 Like C = 0.01 point</li>
           <li>1 Like P = 0.01 point</li>
