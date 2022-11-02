@@ -31,7 +31,7 @@
     align-items: center;
     justify-content: space-between;
     background: red;
-    padding: 20px;
+    padding: 15px 10px;
   }
 
   .navigation .right-navigation .navlink {
@@ -46,6 +46,15 @@
     font-size: 22px;
 }
 
+.right-navigation .svg {
+  display: flex;
+  align-items: center;
+}
+
+.right-navigation .svg li svg {
+  padding: 0px 5px;
+}
+
 .navigation .left-navigation .navlink {
   text-decoration: none;
 }
@@ -53,7 +62,7 @@
 .navigation .left-navigation .navlink li {
   color: white;
   list-style: none;
-  font-size: 30px;
+  font-size: 27px;
   padding: 0px 10px;
 }
 
