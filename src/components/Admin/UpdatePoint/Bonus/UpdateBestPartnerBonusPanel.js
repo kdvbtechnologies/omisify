@@ -41,10 +41,19 @@ export default function UpdateBestPartnerBonusPanel() {
           "https://omisify.com/numberdaysbestpartnerbonusenteradmin"
         );
 
+        const getdate = new Date();
+        const date = getdate.toLocaleDateString("fr-FR", {
+          year: "numeric",
+          month: "numeric",
+          day: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+        });
+
         const name = res.data.name;
         if (name) {
           setSuccess(
-            `${getnumberdaysbestpartnerbonusenteradmin} jour(s) de Bonus EP ajouté(s) avec succès à ${name}`
+            `${getnumberdaysbestpartnerbonusenteradmin} jour(s) de Bonus EP ajouté(s) avec succès à ${name} le ${date} (Heure de Brasilia)`
           );
         }
       })

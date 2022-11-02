@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import { NavLink } from "react-router-dom";
 
 export default function ShareI() {
@@ -9,39 +10,44 @@ export default function ShareI() {
   return (
     <div className="comment-i-shrink">
       <div className="comment-i-a">
-        <i>Partage</i>
+        <i>{t("-Share")}</i>
       </div>
       <div className="comment-i-b">
         <p>
-          Gagner un revenu passif chaque fois que vos abonnés partagent vos
-          publications
+          {t("-Earn passive income every time your followers share your posts")}
         </p>
       </div>
+
       <div className="comment-i-c">
         <p>
-          Avec Omisify vous gagnez de l'argent lorsque vos abonnés partagent
-          votre publication
+          {t(
+            "-With Omisify you earn money when your subscribers share your post"
+          )}
         </p>
+
         <p>
-          Avec Omisify vous gagnez de l'argent lorsque vos abonnés partagent
-          votre vidéo
+          {t(
+            "-With Omisify you earn money when your subscribers share your video"
+          )}
         </p>
+
         <p>
-          Avec Omisify vous gagnez de l'argent même lorsque vous dormez car vos
-          abonnés travaillent pour vous
+          {t(
+            "-With Omisify you earn money even when you sleep because your subscribers work for you"
+          )}
         </p>
-        <p>Commencer maintenant et Gagner de l'argent avec vos abonnés</p>
+        <p>{t("-Start now and Earn money with your subscribers")}</p>
         <div className="align-button">
           {userId && shortname && partnername && name ? (
             <>
               <NavLink to="/partner">
-                <button>Devenir Partenaire Omisify</button>
+                <button>{t("--join")}</button>
               </NavLink>
             </>
           ) : (
             <>
               <NavLink to="/signup">
-                <button>Devenir Partenaire Omisify</button>
+                <button>{t("--join")}</button>
               </NavLink>
             </>
           )}

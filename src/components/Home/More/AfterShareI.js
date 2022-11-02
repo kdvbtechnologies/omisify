@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Loader from "../../Partenaire Omisify/Loader";
+import { useTranslation } from "react-i18next";
 
 export default function AfterShareI() {
   const userId = localStorage.getItem("https://omisify.com/userId");
@@ -9,6 +10,7 @@ export default function AfterShareI() {
   const shortname = localStorage.getItem("https://omisify.com/shortname");
   const name = localStorage.getItem("https://omisify.com/name");
   const [isLoading, setIsLoading] = useState(false);
+  const { t } = useTranslation();
 
   async function get() {
     await axios
@@ -85,22 +87,21 @@ export default function AfterShareI() {
       <div className="email-shrink">
         <div className="email-c">
           <p>
-            Omisify à réunie toutes les conditions pour vous permettre de gagner
-            de l'argent avec vos abonnés. Commencer maintenant et gagner de
-            l'argent avec vos abonnés, Utilisez-les à votre avantage et gagnez
-            de l'argent avec Omisify
+            {t(
+              "-Omisify has met all the conditions to allow you to earn money with your subscribers. Start now and earn money with your subscribers, Use them to your advantage and earn money with Omisify"
+            )}
           </p>
           <div className="align-button">
             {userId && shortname && partnername && name ? (
               <>
                 <NavLink to="/partner">
-                  <button>Devenir Partenaire Omisify</button>
+                  <button>{t("--join")}</button>
                 </NavLink>
               </>
             ) : (
               <>
                 <NavLink to="/signup">
-                  <button>Devenir Partenaire Omisify</button>
+                  <button>{t("--join")}</button>
                 </NavLink>
               </>
             )}
@@ -110,10 +111,13 @@ export default function AfterShareI() {
 
       <div className="see-more">
         {isLoading ? (
-          <Loader />
+          <>
+            <p>{t("-Loading data..")}</p>
+            <Loader />
+          </>
         ) : (
           <>
-            <button onClick={Next}>Voir plus</button>
+            <button onClick={Next}>{t("--see-more")}</button>
           </>
         )}
       </div>

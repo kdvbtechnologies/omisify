@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
 export default function CommentI() {
@@ -6,6 +7,7 @@ export default function CommentI() {
   const partnername = localStorage.getItem("https://omisify.com/partnername");
   const shortname = localStorage.getItem("https://omisify.com/shortname");
   const name = localStorage.getItem("https://omisify.com/name");
+  const { t } = useTranslation();
 
   async function get() {
     await axios
@@ -74,45 +76,49 @@ export default function CommentI() {
   return (
     <div className="comment-i-shrink">
       <div className="comment-i-a">
-        <i>Commentaire</i>
+        <i>{t("-Comment")}</i>
       </div>
 
       <div className="comment-i-b">
-        <p>
-          Gagner de l'argent sur tout commentaires laissés sur votre publication
-        </p>
+        <p>{t("-Earn money on any comments left on your post")}</p>
       </div>
 
       <div className="comment-i-c">
         <p>
-          Avec Omisify vous gagnez de l'argent lorsque vos abonnés commentent
-          votre publication
+          {t(
+            "-With Omisify you earn money when your subscribers comment on your post"
+          )}
         </p>
+
         <p>
-          Avec Omisify vous gagnez de l'argent lorsque vos abonnés commentent
-          votre vidéo
+          {t(
+            "-With Omisify you earn money when your subscribers comment on your video"
+          )}
         </p>
+
         <p>
-          Omisify vous donne la possibilité de gagner de l'argent lorsque vos
-          abonnés commente votre publication, peu importe la nature du
-          commentaire, vous gagnez de l'argent sur tout commentaires laissés sur
-          votre publication par vos abonnés
+          {t(
+            "-Omisify gives you the opportunity to earn money when your subscribers comment on your post, regardless of the nature of the comment, you earn money on any comments left on your post by your subscribers"
+          )}
         </p>
+
         <p>
-          Avec Omisify toutes les conditions ont été réunies pour vous permettre
-          de transformer un simple complément de revenue en succèss incroyable
+          {t(
+            "-With Omisify, all the conditions have been met to allow you to transform a simple additional income into incredible success"
+          )}
         </p>
+
         <div className="align-button">
           {userId && shortname && partnername && name ? (
             <>
               <NavLink to="/partner">
-                <button>Devenir Partenaire Omisify</button>
+                <button>{t("--join")}</button>
               </NavLink>
             </>
           ) : (
             <>
               <NavLink to="/signup">
-                <button>Devenir Partenaire Omisify</button>
+                <button>{t("--join")}</button>
               </NavLink>
             </>
           )}

@@ -1,11 +1,13 @@
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function LikeI() {
   const userId = localStorage.getItem("https://omisify.com/userId");
   const partnername = localStorage.getItem("https://omisify.com/partnername");
   const shortname = localStorage.getItem("https://omisify.com/shortname");
   const name = localStorage.getItem("https://omisify.com/name");
+  const { t } = useTranslation();
 
   async function get() {
     await axios
@@ -74,7 +76,7 @@ export default function LikeI() {
   return (
     <div className="like-i">
       <div className="like-i-a">
-        <p>Influenceur</p>
+        <p>{t("--influencer")}</p>
         <div className="hr">
           <hr />
         </div>
@@ -89,33 +91,38 @@ export default function LikeI() {
           <i>Like</i>
         </div>
         <div className="like-i-c">
-          <p>Laisser vos abonnés vous faire gagner de l'argent</p>
+          <p>{t("-Let your subscribers make you money")}</p>
         </div>
 
         <div className="like-i-d">
           <p>
-            Avec Omisify vous gagnez de l'argent lorsque vos abonnés like votre
-            publication sur les réseaux sociaux
+            {t(
+              "-With Omisify you earn money when your subscribers like your post on social networks"
+            )}
           </p>
+
           <p>
-            Avec Omisify vous gagnez de l'argent lorsque vos abonnés like votre
-            photo
+            {t(
+              "-With Omisify you earn money when your subscribers like your photo"
+            )}
           </p>
+
           <p>
-            Avec Omisify vous gagnez de l'argent lorsque vos abonnés like votre
-            vidéo
+            {t(
+              "-With Omisify you earn money when your subscribers like your video"
+            )}
           </p>
           <div className="align-button">
             {userId && shortname && partnername && name ? (
               <>
                 <NavLink to="/partner">
-                  <button>Devenir Partenaire Omisify</button>
+                  <button>{t("--join")}</button>
                 </NavLink>
               </>
             ) : (
               <>
                 <NavLink to="/signup">
-                  <button>Devenir Partenaire Omisify</button>
+                  <button>{t("--join")}</button>
                 </NavLink>
               </>
             )}

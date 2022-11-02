@@ -1,8 +1,8 @@
-import LikeI from "./More/LikeI";
 import CommentI from "./More/CommentI";
 import ShareI from "./More/ShareI";
 import AfterShareI from "./More/AfterShareI";
 import Footer from "../Footer";
+import LikeI from "./More/LikeI";
 import { useNavigate } from "react-router-dom";
 
 export default function Influencer() {

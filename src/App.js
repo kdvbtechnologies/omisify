@@ -233,14 +233,13 @@ import ErrorAccessCode from "./components/Others/AccessCode/ErrorAccessCode";
 import AfterAccessCode from "./components/Others/AccessCode/AfterAccessCode";
 import SecureAccessCode from "./components/Others/AccessCode/SecureAccessCode";
 import Prices from "./components/Business/Home/Prices/Prices";
-import Test from "./components/Test";
+//import Test from "./components/Test";
 import Translation from "./components/Translation/Translation";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/test" element={<Test />} />
         <Route path="/translation" element={<Translation />} />
         <Route path="/validate-access-code" element={<ValidateAccessCode />} />
         <Route path="/error-access-code" element={<ErrorAccessCode />} />

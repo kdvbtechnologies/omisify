@@ -1,17 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
-import Loader from "../Partenaire Omisify/Loader";
 import { useTranslation } from "react-i18next";
+import Loader from "../Partenaire Omisify/Loader";
 
 export default function D() {
-  const [isLoading, setIsLoading] = useState(false);
   const { t } = useTranslation();
-
-  async function Next(e) {
-    setIsLoading(true);
-    e.preventDefault();
-    window.location = "/influencer";
-  }
+  const [isLoading, setIsLoading] = useState(false);
 
   async function get() {
     await axios
@@ -77,6 +71,12 @@ export default function D() {
   }
   get();
 
+  async function Next(e) {
+    setIsLoading(true);
+    e.preventDefault();
+    window.location = "/influencer";
+  }
+
   return (
     <>
       <div className="align-part-d">
@@ -119,7 +119,10 @@ export default function D() {
 
       <div className="see-more">
         {isLoading ? (
-          <Loader />
+          <>
+            <p>{t("-Loading data..")}</p>
+            <Loader />
+          </>
         ) : (
           <>
             <button onClick={Next}>{t("--see-more")}</button>

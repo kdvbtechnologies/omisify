@@ -34,10 +34,19 @@ export default function NewCommentPanel() {
         const getnumbercommententeradmin = localStorage.getItem(
           "https://omisify.com/numbercommententeradmin"
         );
+
+        const getdate = new Date();
+        const date = getdate.toLocaleDateString("fr-FR", {
+          year: "numeric",
+          month: "numeric",
+          day: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+        });
         const name = res.data.name;
         if (name) {
           setSuccess(
-            `${getnumbercommententeradmin} commentaire(s) ajouté(s) avec succès à ${name}`
+            `${getnumbercommententeradmin} commentaire(s) ajouté(s) avec succès à ${name} le ${date} (Heure de Brasilia)`
           );
         }
       })
