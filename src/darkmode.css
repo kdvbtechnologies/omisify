@@ -97,6 +97,24 @@
 /* translation.js */
 /* translation.js */
 /* translation.js */
+.translation {
+  padding: 30px 0px;
+}
+
+.translation .title {
+  color: #444;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+
+.translation .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+}
 
 .translation .button .btn-active{
   font-family: Roboto, Arial, sans-serif;
@@ -123,7 +141,6 @@
 }
 
 .translation .button button:active {
-  font-family: Roboto, Arial, sans-serif;
   color: white;
 	background-color: #ff9191;
 	box-shadow: 0 5px #666;

@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import i18n from "../../i18n";
 
 export default function Translation() {
-  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const { t } = useTranslation();
   const [languageModel, setLanguageModel] = useState(
     localStorage.getItem("language-model") === "true"
   );
@@ -35,11 +38,14 @@ export default function Translation() {
 
   const family = {
     fontFamily:
-      ' "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif ',
+      '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
 
   return (
     <div style={family}>
+      <div className="back-btn">
+        <button onClick={() => navigate(-1)}>{t("--back-btn")}</button>
+      </div>
       <div className="translation">
         <div className="title">
           <p>{t("--choose-language")}</p>

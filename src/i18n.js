@@ -11,6 +11,7 @@ i18n
         translations: {
           "--omisify": "Omisify",
           "--choose-language": "Choose your language",
+          "--back-btn": "Return",
         },
       },
 
@@ -18,6 +19,7 @@ i18n
         translations: {
           "--omisify": "Omisify",
           "--choose-language": "Escolha seu idioma",
+          "--back-btn": "Retornar",
         },
       },
 
@@ -25,6 +27,7 @@ i18n
         translations: {
           "--omisify": "Omisify",
           "--choose-language": "Elige tu idioma",
+          "--back-btn": "Devolver",
         },
       },
 
@@ -32,6 +35,7 @@ i18n
         translations: {
           "--omisify": "Omisify",
           "--choose-language": "Choisissez votre langue",
+          "--back-btn": "Retour",
         },
       },
     },
