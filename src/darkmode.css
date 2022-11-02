@@ -451,6 +451,23 @@
 }
 
 .home .part-d .title {
+  background-color: transparent;
+  width: 163px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 3px;
+}
+
+.home .part-d .title svg {
+  padding: 3px;
+}
+
+.home .part-d .title p {
+  padding: 3px 6px;
   font-weight: bold;
   font-size: 17px;
   color: red;
