@@ -1,9 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
 import Loader from "../Partenaire Omisify/Loader";
+import { useTranslation } from "react-i18next";
 
 export default function D() {
   const [isLoading, setIsLoading] = useState(false);
+  const { t } = useTranslation();
 
   async function Next(e) {
     setIsLoading(true);
@@ -94,14 +96,9 @@ export default function D() {
           <li>1 PWI = 5 points</li>
           <li>1 PWP = 0.1 point</li>
           <li>1000 Points = 1€</li>
-          <p>
-            N.B : Tous les Partenaires Omisify retirent leur rémunération à
-            n'importe quel moment
-          </p>
+          <p>{t("--nb")}</p>
           <div className="go-down-i">
-            <i>
-              Transformez un simple complément de revenu en succès incroyable
-            </i>
+            <i>{t("--turn")}</i>
           </div>
         </div>
       </div>
@@ -111,7 +108,7 @@ export default function D() {
           <Loader />
         ) : (
           <>
-            <button onClick={Next}>Voir plus</button>
+            <button onClick={Next}>{t("--see-more")}</button>
           </>
         )}
       </div>

@@ -23,6 +23,10 @@ i18n
             "With Omisify you can withdraw your remuneration at any time. With Omisify, your compensation is at your fingertips. Omisify uses all the means of payment available to allow all its Partners to always be remunerated",
           "--free-c":
             "With Omisify you earn money even when you sleep. Omisify is free and always remunerates its Partners",
+          "--see-more": "See more",
+          "--turn": "Turn a simple extra income into an incredible success",
+          "--nb":
+            "N.B: All Omisify Partners withdraw their remuneration at any time",
           "": "",
         },
       },
@@ -43,6 +47,11 @@ i18n
             "Com a Omisify pode retirar a sua remuneração a qualquer momento. Com o Omisify, sua compensação está ao seu alcance. A Omisify utiliza todos os meios de pagamento disponíveis para permitir que todos os seus Parceiros sejam sempre remunerados",
           "--free-c":
             "Com o Omisify você ganha dinheiro mesmo dormindo. A Omisify é gratuita e remunera sempre os seus Parceiros",
+          "--see-more": "Ver mais",
+          "--turn":
+            "Transforme uma simples renda suplementar em um sucesso incrível",
+          "--nb":
+            "N.B: Todos os Parceiros Omisify retiram sua remuneração a qualquer momento",
           "": "",
         },
       },
@@ -63,6 +72,11 @@ i18n
             "Con Omisify puedes retirar tu remuneración en cualquier momento. Con Omisify, su compensación está al alcance de su mano. Omisify utiliza todos los medios de pago disponibles para permitir que todos sus Socios sean siempre remunerados",
           "--free-c":
             "Con Omisify ganas dinero incluso cuando duermes. Omisify es gratis y siempre remunera a sus Socios",
+          "--see-more": "Ver más",
+          "--turn":
+            "Convierta un ingreso suplementario simple en un éxito increíble",
+          "--nb":
+            "N.B: Todos los Socios de Omisify retiran su remuneración en cualquier momento",
           "": "",
         },
       },
@@ -83,6 +97,11 @@ i18n
             "Avec Omisify vous pourrez retirer votre rémunération à n'importe quel moment. Avec Omisify, votre rémunération est à porter de vos mains. Omisify utilise tout les moyens de paiement disponible pour permettre à tout ses Partenaires d'être toujours rémunérer",
           "--free-c":
             "Avec Omisify vous gagnez de l'argent même lorsque vous dormez. Omisify est gratuit et rémunère toujours ses Partenaires",
+          "--see-more": "Voir plus",
+          "--turn":
+            "Transformez un simple complément de revenu en succès incroyable",
+          "--nb":
+            "N.B: Tous les Partenaires Omisify retirent leur rémunération à n'importe quel moment",
           "": "",
         },
       },
