@@ -130,7 +130,7 @@ i18n
           "--join": "Devenir Partenaire Omisify",
           "--favorable":
             "Omisify est favorable pour les influenceurs et pour les non-influenceurs !",
-          "----1likecfree-a":
+          "--free-a":
             "Omisify est gratuit et rémunère toujours ses Partenaires quelque soit le pays dans lequel vous vous trouver et quelque soit la situation de votre pays",
           "--free-b":
             "Avec Omisify vous pourrez retirer votre rémunération à n'importe quel moment. Avec Omisify, votre rémunération est à porter de vos mains. Omisify utilise tout les moyens de paiement disponible pour permettre à tout ses Partenaires d'être toujours rémunérer",
