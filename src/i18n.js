@@ -40,6 +40,17 @@ i18n
           "--turn": "Turn a simple extra income into an incredible success",
           "--nb":
             "N.B: All Omisify Partners withdraw their remuneration at any time",
+
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          "--omisify-footer": "© 2022 Omisify",
+          "--cgu": "Terms of use",
+          "--privacy": "Privacy Policy",
+          "--legal": "Legal Notice",
           "": "",
         },
       },
@@ -78,6 +89,17 @@ i18n
             "Transforme uma simples renda suplementar em um sucesso incrível",
           "--nb":
             "N.B: Todos os Parceiros Omisify retiram sua remuneração a qualquer momento",
+
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          "--omisify-footer": "© 2022 Omisify",
+          "--cgu": "Termos de uso",
+          "--privacy": "Política de Privacidade",
+          "--legal": "Notícia legal",
           "": "",
         },
       },
@@ -116,6 +138,20 @@ i18n
             "Convierta un ingreso suplementario simple en un éxito increíble",
           "--nb":
             "N.B: Todos los Socios de Omisify retiran su remuneración en cualquier momento",
+
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          "--omisify-footer": "© 2022 Omisify",
+          "--cgu": "Condiciones de uso",
+          "--privacy": "Política de confidencialidad",
+          "--legal": "Notas legales",
           "": "",
         },
       },
@@ -154,6 +190,21 @@ i18n
             "Transformez un simple complément de revenu en succès incroyable",
           "--nb":
             "N.B: Tous les Partenaires Omisify retirent leur rémunération à n'importe quel moment",
+
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          // footer
+          "--omisify-footer": "© 2022 Omisify",
+          "--cgu": "Conditions d'utilisation",
+          "--privacy": "Politique de confidentialité",
+          "--legal": "Mentions légales",
+          "": "",
         },
       },
     },
