@@ -86,9 +86,9 @@ export default function D() {
           </div>
           <li>{t("--1comment")}</li>
           <li>{t("--1e10k")}</li>
-          <li>1 E-mail = 0.3 point</li>
-          <li>1 Like C = 0.01 point</li>
-          <li>1 Like P = 0.01 point</li>
+          <li>{t("--1email")}</li>
+          <li>{t("--1likec")}</li>
+          <li>{t("--1likep")}</li>
           <li>1 M10k = 0.7 point</li>
           <li>1 Message = 0.3 point</li>
           <li>1 MWI = 5 points</li>

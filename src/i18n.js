@@ -26,6 +26,9 @@ i18n
           "--remuneration": "Remuneration",
           "--1comment": "1 Comment = 1 point",
           "--1e10k": "1 E10k = 0.7 point",
+          "--1email": "1 Email = 0.3 point",
+          "--1likec": "1 Like C = 0.01 point",
+          "--1likep": "1 Like P = 0.01 point",
           "": "",
           "--see-more": "See more",
           "--turn": "Turn a simple extra income into an incredible success",
@@ -53,6 +56,9 @@ i18n
           "--remuneration": "Remuneração",
           "--1comment": "1 Comentário = 1 ponto",
           "--1e10k": "1 E10k = 0.7 ponto",
+          "--1email": "1 E-mail = 0.3 ponto",
+          "--1likec": "1 Like C = 0.01 ponto",
+          "--1likep": "1 Like P = 0.01 ponto",
           "": "",
           "--see-more": "Ver mais",
           "--turn":
@@ -81,6 +87,9 @@ i18n
           "--remuneration": "Remuneración",
           "--1comment": "1 Comentario = 1 punto",
           "--1e10k": "1 E10k = 0.7 punto",
+          "--1email": "1 Correo electrónico = 0.3 punto",
+          "--1likec": "1 Like C = 0.01 punto",
+          "--1likep": "1 Like P = 0.01 punto",
           "": "",
           "--see-more": "Ver más",
           "--turn":
@@ -100,7 +109,7 @@ i18n
           "--join": "Devenir Partenaire Omisify",
           "--favorable":
             "Omisify est favorable pour les influenceurs et pour les non-influenceurs !",
-          "--free-a":
+          "----1likecfree-a":
             "Omisify est gratuit et rémunère toujours ses Partenaires quelque soit le pays dans lequel vous vous trouver et quelque soit la situation de votre pays",
           "--free-b":
             "Avec Omisify vous pourrez retirer votre rémunération à n'importe quel moment. Avec Omisify, votre rémunération est à porter de vos mains. Omisify utilise tout les moyens de paiement disponible pour permettre à tout ses Partenaires d'être toujours rémunérer",
@@ -109,6 +118,9 @@ i18n
           "--remuneration": "Rémunération",
           "--1comment": "1 Commentaire = 1 point",
           "--1e10k": "1 E10k = 0.7 point",
+          "--1email": "1 E-mail = 0.3 point",
+          "--1likec": "1 Like C = 0.01 point",
+          "--1likep": "1 Like P = 0.01 point",
           "": "",
           "--see-more": "Voir plus",
           "--turn":
