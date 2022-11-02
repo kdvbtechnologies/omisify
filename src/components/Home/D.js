@@ -89,13 +89,13 @@ export default function D() {
           <li>{t("--1email")}</li>
           <li>{t("--1likec")}</li>
           <li>{t("--1likep")}</li>
-          <li>1 M10k = 0.7 point</li>
-          <li>1 Message = 0.3 point</li>
-          <li>1 MWI = 5 points</li>
-          <li>1 Publication = 1 point</li>
-          <li>1 PWI = 5 points</li>
-          <li>1 PWP = 0.1 point</li>
-          <li>1000 Points = 1€</li>
+          <li>{t("--1m10k")}</li>
+          <li>{t("--1message")}</li>
+          <li>{t("--1mwi")}</li>
+          <li>{t("--1post")}</li>
+          <li>{t("--1pwi")}</li>
+          <li>{t("--1pwp")}</li>
+          <li>{t("--1euro")}</li>
           <p>{t("--nb")}</p>
           <div className="go-down-i">
             <i>{t("--turn")}</i>
