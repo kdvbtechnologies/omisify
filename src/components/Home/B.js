@@ -1,6 +1,8 @@
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 
 export default function B() {
+  const { t } = useTranslation();
   async function get() {
     await axios
       .get("https://ip.nf/me.json")
@@ -68,10 +70,7 @@ export default function B() {
   return (
     <div className="go-down">
       <div className="center">
-        <p>
-          Omisify est favorable pour les influenceurs et pour les
-          non-influenceurs !
-        </p>
+        <p>{t("--favorable")}</p>
       </div>
     </div>
   );
