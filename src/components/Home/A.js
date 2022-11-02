@@ -78,13 +78,13 @@ export default function A() {
       {userId && shortname && partnername && name ? (
         <>
           <NavLink to="/partner">
-            <button>{t("--join-omisify")}</button>
+            <button>{t("--join")}</button>
           </NavLink>
         </>
       ) : (
         <>
           <NavLink to="/signup">
-            <button>{t("--join-omisify")}</button>
+            <button>{t("--join")}</button>
           </NavLink>
         </>
       )}
