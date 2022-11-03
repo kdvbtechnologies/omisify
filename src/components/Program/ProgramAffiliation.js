@@ -18,16 +18,12 @@ export default function ProgramAffiliation() {
     get();
   }, []);
 
-  const getaffiliateprogramname = "";
-
   return (
     <>
       <div className="accordion-item">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
           {api
-            .filter(
-              (user) => user.affiliateprogramname === !getaffiliateprogramname
-            )
+            .filter((user) => user.affiliateprogramname)
             .map((api) => (
               <div>{api.affiliateprogramname}</div>
             ))}
