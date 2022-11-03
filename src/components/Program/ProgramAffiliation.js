@@ -10,13 +10,15 @@ export default function ProgramAffiliation() {
       await axios
         .get(`${process.env.REACT_APP_OMISIFY_API}/api/panel/`)
         .then((res) => {
-          console.log(res);
           setApi(res.data);
         })
         .catch((err) => console.log(err));
     }
     get();
   }, []);
+
+  const data = api.filter((user) => user.adstatus === "no validate");
+  console.log(data);
 
   return (
     <>
