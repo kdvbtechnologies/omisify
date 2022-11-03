@@ -233,7 +233,7 @@ import ErrorAccessCode from "./components/Others/AccessCode/ErrorAccessCode";
 import AfterAccessCode from "./components/Others/AccessCode/AfterAccessCode";
 import SecureAccessCode from "./components/Others/AccessCode/SecureAccessCode";
 import Prices from "./components/Business/Home/Prices/Prices";
-//import Test from "./components/Test";
+import Test from "./components/Test";
 import Translation from "./components/Translation/Translation";
 
 export default function App() {
@@ -246,6 +246,7 @@ export default function App() {
         <Route path="/after-access-code" element={<AfterAccessCode />} />
         <Route path="/secure-access-code" element={<SecureAccessCode />} />
 
+        <Route path="/test" element={<Test />} />
         <Route path="/incomplete" element={<Incomplete />} />
         <Route path="/complete" element={<Complete />} />
         <Route path="/after-dev" element={<AfterDev />} />
