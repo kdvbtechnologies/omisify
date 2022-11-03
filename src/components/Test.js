@@ -9,13 +9,17 @@ export default function Test() {
     window.print();
   }
 
+  async function Back() {
+    window.history.back();
+  }
+
   return (
     <>
       <button onClick={Download}>Download</button>
       <br />
-      <button align="center" onClick={Print}>
-        Imprimer
-      </button>
+      <button onClick={Print}>Imprimer</button>
+      <br />
+      <button onClick={Back}>Retour</button>
     </>
   );
 }
