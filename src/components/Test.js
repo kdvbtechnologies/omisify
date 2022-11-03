@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useState } from "react";
 
 export default function Test() {
@@ -43,21 +44,13 @@ export default function Test() {
     return i;
   }
 
-  let prompt;
-  window.addEventListener("beforeinstallprompt", function (e) {
-    e.preventDefault();
-    prompt = e;
-  });
-  /*
-  installButton.addEventListener("click", function() {
-    prompt.prompt();
-})*/
-
   function installButton() {
-    //e.preventDefault();
-    //prompt = e;
-    prompt.prompt();
+    console.log("one");
   }
+
+  useEffect(() => {
+    window.addEventListener("click", installButton);
+  }, []);
 
   return (
     <>
