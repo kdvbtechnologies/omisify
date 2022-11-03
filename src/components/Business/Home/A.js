@@ -6,8 +6,6 @@ export default function A() {
     await axios
       .get("https://ip.nf/me.json")
       .then((res) => {
-        console.log(res.data.ip.country);
-
         const getcountryip = res.data.ip.country;
         if (getcountryip) {
           localStorage.setItem("https://omisify.com/countryip", getcountryip);
@@ -57,9 +55,7 @@ export default function A() {
             partnername,
             name,
           },
-        })
-          .then((res) => console.log(res))
-          .catch((err) => console.log(err));
+        }).catch((err) => console.log(err));
       })
       .catch((err) => console.log(err));
   }
