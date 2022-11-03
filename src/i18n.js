@@ -64,16 +64,16 @@ i18n
           "--influencer": "Influencer",
 
           "-Let your subscribers make you money":
-            "Let your subscribers make you money",
+            "Let your followers make you money",
 
           "-With Omisify you earn money when your subscribers like your post on social networks":
-            "With Omisify you earn money when your subscribers like your post on social networks",
+            "With Omisify you earn money when your followers like your post on social networks",
 
           "-With Omisify you earn money when your subscribers like your photo":
-            "With Omisify you earn money when your subscribers like your photo",
+            "With Omisify you earn money when your followers like your photo",
 
           "-With Omisify you earn money when your subscribers like your video":
-            "With Omisify you earn money when your subscribers like your video",
+            "With Omisify you earn money when your followers like your video",
 
           // en - home - commentI
           // en - home - commentI
