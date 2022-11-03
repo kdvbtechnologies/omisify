@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Loader from "../Partenaire Omisify/Loader";
+import LikeI from "./More/LikeI";
 
 export default function D() {
   const { t } = useTranslation();
@@ -116,6 +117,8 @@ export default function D() {
           </div>
         </div>
       </div>
+
+      <LikeI />
 
       <div className="see-more">
         {isLoading ? (
