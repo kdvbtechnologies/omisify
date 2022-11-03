@@ -23,7 +23,7 @@ export default function ProgramAffiliation() {
       <div className="accordion-item">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
           {api
-            .filter((user) => user.affiliateprogramname)
+            .filter((user) => user.adstatus === "no validate")
             .map((api) => (
               <>
                 <div>{api.affiliateprogramname}</div>
