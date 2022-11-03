@@ -27,9 +27,11 @@ export default function ProgramAffiliation() {
     <div style={family}>
       <div className="accordion-item">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
-          {api.map((api) => (
-            <div>{api.affiliateprogramname}</div>
-          ))}
+          {api
+            .filter((user) => user.affiliateprogramname)
+            .map((api) => (
+              <div>{api.affiliateprogramname}</div>
+            ))}
           <div>{isActive ? "-" : "+"}</div>
         </div>
 
