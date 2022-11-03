@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export default function Test() {
+  const [time, setTime] = useState();
   async function Download(e) {
     e.preventDefault();
     window.location = "https://jamelfase.com";
@@ -27,8 +30,9 @@ export default function Test() {
     let s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    const time = h + ":" + m + ":" + s;
-    console.log(time);
+    const timed = h + ":" + m + ":" + s;
+    console.log(timed);
+    setTime(timed);
     setTimeout(startTime, 1000);
   }
 
@@ -50,6 +54,8 @@ export default function Test() {
       <button onClick={GetLanguage}>Detect Language</button>
       <br />
       <button onClick={startTime}>Obtenir heure</button>
+      <p>{time}</p>
+      <p>{startTime}</p>
     </>
   );
 }
