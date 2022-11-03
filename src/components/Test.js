@@ -43,6 +43,23 @@ export default function Test() {
     return i;
   }
 
+  /*
+  let prompt;
+  window.addEventListener("beforeinstallprompt", function(e) {
+    e.preventDefault();
+    prompt = e;
+  });*/
+  /*
+  installButton.addEventListener("click", function() {
+    prompt.prompt();
+})*/
+
+  function installButton(prompt, e) {
+    e.preventDefault();
+    prompt = e;
+    prompt.prompt();
+  }
+
   return (
     <>
       <button onClick={Download}>Download</button>
@@ -56,6 +73,7 @@ export default function Test() {
       <button onClick={startTime}>Obtenir heure</button>
       <p>{time}</p>
       <p>{startTime}</p>
+      <button onClick={installButton}>Install</button>
     </>
   );
 }
