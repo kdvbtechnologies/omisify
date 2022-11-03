@@ -713,9 +713,12 @@
 }
 
 .home .email-c p{
-  padding: 10px 0px;
+  padding: 20px 10px;
   font-size: 17px;
-  color: #444;
+  color: white;
+  background-color: red;
+  border: 1px solid red;
+  box-shadow: 5px 10px black;
 }
 
 .home .email-shrink {
