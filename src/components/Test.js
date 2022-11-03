@@ -15,9 +15,8 @@ export default function Test() {
   }
 
   async function GetLanguage() {
-    document.getElementById("demo").innerHTML =
-      "langue détecté sur le navigateur de l'utilisateur : " +
-      navigator.language;
+    const l = navigator.language;
+    console.log(l);
   }
   console.log(GetLanguage);
 
