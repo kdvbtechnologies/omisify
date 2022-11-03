@@ -117,16 +117,16 @@ i18n
             "Earn passive income every time your followers share your posts",
 
           "-With Omisify you earn money when your subscribers share your post":
-            "With Omisify you earn money when your subscribers share your post",
+            "With Omisify you earn money when your followers share your post",
 
           "-With Omisify you earn money when your subscribers share your video":
-            "With Omisify you earn money when your subscribers share your video",
+            "With Omisify you earn money when your followers share your video",
 
           "-With Omisify you earn money even when you sleep because your subscribers work for you":
-            "With Omisify you earn money even when you sleep because your subscribers work for you",
+            "With Omisify you earn money even when you sleep because your followers work for you",
 
           "-Start now and Earn money with your subscribers":
-            "Start now and Earn money with your subscribers",
+            "Start now and Earn money with your followers",
 
           // en - home - aftershareI.js
           // en - home - aftershareI.js
@@ -138,7 +138,7 @@ i18n
           // en - home - aftershareI.js
           // en - home - aftershareI.js
           "-Omisify has met all the conditions to allow you to earn money with your subscribers. Start now and earn money with your subscribers, Use them to your advantage and earn money with Omisify":
-            "Omisify has met all the conditions to allow you to earn money with your subscribers. Start now and earn money with your subscribers, Use them to your advantage and earn money with Omisify",
+            "Omisify has met all the conditions to allow you to earn money with your followers. Start now and earn money with your followers, Use them to your advantage and earn money with Omisify",
 
           "": "",
         },
