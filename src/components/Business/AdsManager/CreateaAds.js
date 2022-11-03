@@ -12,7 +12,7 @@ export default function CreateaAds() {
     setIsLoading(false);
     await axios({
       method: "post",
-      url: `${process.env.OMISIFY_API}/api/panel/add`,
+      url: `${process.env.REACT_APP_OMISIFY_API}/api/panel/add`,
       data: {
         affiliateprogramname,
       },

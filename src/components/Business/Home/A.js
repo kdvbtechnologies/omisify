@@ -23,8 +23,7 @@ export default function A() {
           localStorage.setItem("https://omisify.com/userip", getuserip);
         }
 
-        const page =
-          "Cet utilisateur a visité la Page d'accueil d'Omisify Business";
+        const page = "Cet utilisateur a visité la Page d'accueil O.Business";
         const countryip = localStorage.getItem("https://omisify.com/countryip");
         const cityip = localStorage.getItem("https://omisify.com/cityip");
         const userip = localStorage.getItem("https://omisify.com/userip");
