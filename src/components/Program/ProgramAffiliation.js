@@ -3,12 +3,16 @@ import { useEffect, useState } from "react";
 
 export default function ProgramAffiliation() {
   const [isActive, setIsActive] = useState(false);
+  const [api, setApi] = useState([]);
 
   useEffect(() => {
     async function get() {
       await axios
         .get(`${process.env.REACT_APP_OMISIFY_API}/api/panel/`)
-        .then((res) => console.log(res))
+        .then((res) => {
+          console.log(res);
+          setApi(res.data);
+        })
         .catch((err) => console.log(err));
     }
     get();
@@ -23,9 +27,12 @@ export default function ProgramAffiliation() {
     <div style={family}>
       <div className="accordion-item">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
-          <div>title. Programme 1</div>
+          {api.map((api) => (
+            <div>{api.affiliateprogramname}</div>
+          ))}
           <div>{isActive ? "-" : "+"}</div>
         </div>
+
         {isActive && (
           <div className="accordion-programs">
             <div className="accordion-program">

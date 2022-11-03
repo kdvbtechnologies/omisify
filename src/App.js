@@ -509,8 +509,25 @@ export default function App() {
         <Route path="/validate-MWI-success" element={<ValidateMWISuccess />} />
         <Route path="/validate-MWI-error" element={<ValidateMWIError />} />
 
+        {/* program - programAffiliation.js */}
+        {/* program - programAffiliation.js */}
+        {/* program - programAffiliation.js */}
+        {/* program - programAffiliation.js */}
+        {/* program - programAffiliation.js */}
+        {/* program - programAffiliation.js */}
+        {/* program - programAffiliation.js */}
+        {/* program - programAffiliation.js */}
         <Route path="/program-affiliation" element={<ProgramAffiliation />} />
 
+        {/* admin - homepanel.js */}
+        {/* admin - homepanel.js */}
+        {/* admin - homepanel.js */}
+        {/* admin - homepanel.js */}
+        {/* admin - homepanel.js */}
+        {/* admin - homepanel.js */}
+        {/* admin - homepanel.js */}
+        {/* admin - homepanel.js */}
+        {/* admin - homepanel.js */}
         <Route path="/panel-kdvb" element={<HomePanel />} />
         <Route path="/panel-kdvb-user" element={<User />} />
         <Route
