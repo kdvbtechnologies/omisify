@@ -1,7 +1,18 @@
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 export default function ProgramAffiliation() {
   const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    async function get() {
+      await axios
+        .get(`${process.env.REACT_APP_OMISIFY_API}/api/panel/`)
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
+    }
+    get();
+  }, []);
 
   const family = {
     fontFamily:
