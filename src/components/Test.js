@@ -64,8 +64,6 @@ export default function Test() {
       <br />
       <button onClick={startTime}>Obtenir heure</button>
       <p>{time}</p>
-      <p>{startTime}</p>
-      <button onClick={installButton}>Install</button>
     </>
   );
 }

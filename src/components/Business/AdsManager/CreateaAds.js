@@ -5,33 +5,16 @@ import Loader from "../../Partenaire Omisify/Loader";
 import NavbarB from "../Home/Navigation/NavbarB";
 
 export default function CreateaAds() {
-  const getkindofpeople = "Homme";
-  const getaverageage = "13 - 17 ans";
-  const getnumberofpeopleadvertising = "0 - 1000 personnes";
   const [isLoading, setIsLoading] = useState(false);
   const [affiliateprogramname, setAffiliateprogramname] = useState("");
-  const [affiliatelink, setAffiliatelink] = useState("");
-  const [kindofpeople, setKindofpeople] = useState(getkindofpeople);
-  const [averageage, setAverageage] = useState(getaverageage);
-  const [purposeofadvertising, setPurposeofadvertising] = useState("");
-  const [advertisingcountry, setAdvertisingcountry] = useState("");
-  const [numberofpeopleadvertising, setNumberofpeopleadvertising] = useState(
-    getnumberofpeopleadvertising
-  );
 
   async function Send() {
     setIsLoading(false);
     await axios({
-      method: "put",
-      url: `${process.env.OMISIFY_API}/api/`,
+      method: "post",
+      url: `${process.env.OMISIFY_API}/api/panel/add`,
       data: {
         affiliateprogramname,
-        affiliatelink,
-        kindofpeople,
-        averageage,
-        purposeofadvertising,
-        advertisingcountry,
-        numberofpeopleadvertising,
       },
     })
       .then((res) => console.log(res))
@@ -55,7 +38,47 @@ export default function CreateaAds() {
         name="affiliateprogramname"
       />
 
-      <p>Entrer le lien d'affiliation</p>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <button onClick={Send}>Envoyer</button>
+        </>
+      )}
+    </>
+  );
+}
+
+/*
+
+  const getkindofpeople = "Homme";
+  const getaverageage = "13 - 17 ans";
+  const getnumberofpeopleadvertising = "0 - 1000 personnes";
+
+  const [affiliatelink, setAffiliatelink] = useState("");
+  const [kindofpeople, setKindofpeople] = useState(getkindofpeople);
+  const [averageage, setAverageage] = useState(getaverageage);
+  const [purposeofadvertising, setPurposeofadvertising] = useState("");
+  const [advertisingcountry, setAdvertisingcountry] = useState("");
+  const [numberofpeopleadvertising, setNumberofpeopleadvertising] = useState(
+    getnumberofpeopleadvertising
+  );
+
+  data: {
+        affiliateprogramname,
+        affiliatelink,
+        kindofpeople,
+        averageage,
+        purposeofadvertising,
+        advertisingcountry,
+        numberofpeopleadvertising,
+     },
+
+*/
+
+/*
+
+<p>Entrer le lien d'affiliation</p>
       <input
         type="text"
         placeholder="Lien d'affiliation"
@@ -126,13 +149,4 @@ export default function CreateaAds() {
         <option value="1000 - 10.000 personnes">1000 - 10.000 personnes</option>
       </select>
 
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <button onClick={Send}>Envoyer</button>
-        </>
-      )}
-    </>
-  );
-}
+*/

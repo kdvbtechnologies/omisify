@@ -219,7 +219,7 @@ import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 import HomeB from "./components/Business/Home/HomeB";
 import AdsB from "./components/Business/Home/Ads/AdsB";
 import MenuB from "./components/Business/Home/Navigation/MenuB";
-import CreateaAds from "./components/Business/Ads/CreateaAds";
+import CreateaAds from "./components/Business/AdsManager/CreateaAds";
 
 // dev
 import Dev from "./components/Others/Dev/Dev";
