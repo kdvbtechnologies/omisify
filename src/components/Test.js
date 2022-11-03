@@ -6,7 +6,7 @@ export default function Test() {
 
   return (
     <>
-      <button onClick={Download}></button>
+      <button onClick={Download}>Download</button>
     </>
   );
 }
