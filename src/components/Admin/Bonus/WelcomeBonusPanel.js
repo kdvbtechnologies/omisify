@@ -60,35 +60,37 @@ export default function WelcomeBonusPanel() {
           <Loader />
         ) : (
           <>
-            {api.sort().map((api) => (
-              <>
-                <div className="shrink">
-                  <div className="a">
-                    <div className="name">
-                      <p>{api.partnername}</p>
+            {api
+              .sort((a, b) => a._id - b._id)
+              .map((api) => (
+                <>
+                  <div className="shrink">
+                    <div className="a">
+                      <div className="name">
+                        <p>{api.partnername}</p>
+                      </div>
+
+                      <p>Pays : {api.countryip}</p>
+                      <p>Ville : {api.cityip}</p>
+                      <p>Adresse IP : {api.userip}</p>
+                      <p>Infos : {api.page}</p>
+                      <p>Date: {api.date}</p>
+                      <p>Noms : {api.name}</p>
+                      <p>Code BM : {api.codewelcomementor}</p>
+                      <p>Bonus EP : {api.bestpartnerbonus}</p>
+
+                      <div className="b">
+                        <p>Demande d'Affiches</p>
+                        <p>PA : {api.askposter}</p>
+                      </div>
+
+                      <p>Créé : {dateParser(api.createdAt)}</p>
+                      <p>Modifié : {dateParser(api.updatedAt)}</p>
+                      <p>userId : {api.userId}</p>
                     </div>
-
-                    <p>Pays : {api.countryip}</p>
-                    <p>Ville : {api.cityip}</p>
-                    <p>Adresse IP : {api.userip}</p>
-                    <p>Infos : {api.page}</p>
-                    <p>Date: {api.date}</p>
-                    <p>Noms : {api.name}</p>
-                    <p>Code BM : {api.codewelcomementor}</p>
-                    <p>Bonus EP : {api.bestpartnerbonus}</p>
-
-                    <div className="b">
-                      <p>Demande d'Affiches</p>
-                      <p>PA : {api.askposter}</p>
-                    </div>
-
-                    <p>Créé : {dateParser(api.createdAt)}</p>
-                    <p>Modifié : {dateParser(api.updatedAt)}</p>
-                    <p>userId : {api.userId}</p>
                   </div>
-                </div>
-              </>
-            ))}
+                </>
+              ))}
           </>
         )}
       </div>
