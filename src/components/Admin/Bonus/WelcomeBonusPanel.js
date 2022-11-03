@@ -78,6 +78,10 @@ export default function WelcomeBonusPanel() {
                       <p>Noms : {api.name}</p>
                       <p>Code BM : {api.codewelcomementor}</p>
                       <p>Bonus EP : {api.bestpartnerbonus}</p>
+                      <p>
+                        Nom du programme d'affiliation:{" "}
+                        {api.affiliateprogramname}
+                      </p>
 
                       <div className="b">
                         <p>Demande d'Affiches</p>
