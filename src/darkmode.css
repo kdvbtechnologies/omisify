@@ -73,6 +73,7 @@
 /* all */
 /* all */
 /* all */
+/*
 .all {
   font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
   display: flex;
@@ -102,6 +103,8 @@
   margin-top: 50px;
   font-size: 15px;
 }
+*/
+
 /* translation.js */
 /* translation.js */
 /* translation.js */
@@ -533,6 +536,12 @@
   padding: 100px 400px;
 }
 
+.like-i .box-shadow {
+  border: 1px solid black;
+  background-color:  white;
+  border-radius: 5px;
+}
+
 .like-i-a .hr {
   padding: 1px 0px;
 }
@@ -548,25 +557,44 @@
 
 .home .like-i-b {
   font-size: 14px;
-  padding: 20px 0px;
+  padding: 20px;
+  color: red;
+  background-color: white;
 }
+
 .home .like-i-c {
+  background-color: red;
+  color: white;
   font-weight: bold;
   font-size: 16px;
+  padding: 20px;
+  display: flex;
+}
+
+.home .like-i .like-i-d .svg-and-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home .like-i .like-i-d .svg-and-p svg {
+  padding-top: 30px;
 }
 
 .home .like-i .like-i-d p {
-  padding: 10px 0px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
   font-size: 17px;
   color: #444;
 }
 
-.home .like-i .like-i-d .align-button {
+.home .like-i  .align-button {
   text-align: center;
   padding: 30px 0px;
 }
 
-.home .like-i .like-i-d button {
+.home .like-i button {
   cursor: pointer;
   font-family: Roboto, Arial, sans-serif;
   background-color: blue;
