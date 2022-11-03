@@ -18,17 +18,16 @@ export default function ProgramAffiliation() {
     get();
   }, []);
 
-  const family = {
-    fontFamily:
-      ' "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif ',
-  };
+  const getaffiliateprogramname = "";
 
   return (
-    <div style={family}>
+    <>
       <div className="accordion-item">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
           {api
-            .filter((user) => user.affiliateprogramname)
+            .filter(
+              (user) => user.affiliateprogramname === !getaffiliateprogramname
+            )
             .map((api) => (
               <div>{api.affiliateprogramname}</div>
             ))}
@@ -122,6 +121,6 @@ export default function ProgramAffiliation() {
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 }
