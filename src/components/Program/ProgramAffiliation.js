@@ -25,9 +25,11 @@ export default function ProgramAffiliation() {
           {api
             .filter((user) => user.affiliateprogramname)
             .map((api) => (
-              <div>{api.affiliateprogramname}</div>
+              <>
+                <div>{api.affiliateprogramname}</div>
+                <div>{isActive ? "-" : "+"}</div>
+              </>
             ))}
-          <div>{isActive ? "-" : "+"}</div>
         </div>
 
         {isActive && (

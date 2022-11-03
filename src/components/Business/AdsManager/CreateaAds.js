@@ -10,7 +10,7 @@ export default function CreateaAds() {
   const adstatus = "no validate";
 
   async function Send() {
-    setIsLoading(false);
+    setIsLoading(true);
     await axios({
       method: "post",
       url: `${process.env.REACT_APP_OMISIFY_API}/api/panel/add`,
