@@ -9,9 +9,15 @@ export default function Test() {
     window.print();
   }
 
-  async function Back() {
+  async function Back(e) {
+    e.preventDefault();
     window.history.back();
   }
+
+  async function GetLanguage() {
+    document.getElementById("demo").innerHTML = "langue détecté sur le navigateur de l'utilisateur : " + navigator.language;
+  }
+  console.log(GetLanguage)
 
   return (
     <>
@@ -20,6 +26,8 @@ export default function Test() {
       <button onClick={Print}>Imprimer</button>
       <br />
       <button onClick={Back}>Retour</button>
+      <p id="demo"></p>
+      <p>{GetLanguage}</p>
     </>
   );
 }
