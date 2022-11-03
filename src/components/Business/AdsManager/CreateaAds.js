@@ -7,6 +7,7 @@ import NavbarB from "../Home/Navigation/NavbarB";
 export default function CreateaAds() {
   const [isLoading, setIsLoading] = useState(false);
   const [affiliateprogramname, setAffiliateprogramname] = useState("");
+  const adstatus = "no validate";
 
   async function Send() {
     setIsLoading(false);
@@ -15,6 +16,7 @@ export default function CreateaAds() {
       url: `${process.env.REACT_APP_OMISIFY_API}/api/panel/add`,
       data: {
         affiliateprogramname,
+        adstatus,
       },
     })
       .then((res) => console.log(res))
