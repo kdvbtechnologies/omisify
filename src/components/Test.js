@@ -54,9 +54,9 @@ export default function Test() {
     prompt.prompt();
 })*/
 
-  function installButton(prompt, e) {
-    e.preventDefault();
-    prompt = e;
+  function installButton(prompt) {
+    //e.preventDefault();
+    //prompt = e;
     prompt.prompt();
   }
 
