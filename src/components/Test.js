@@ -43,18 +43,17 @@ export default function Test() {
     return i;
   }
 
-  /*
   let prompt;
-  window.addEventListener("beforeinstallprompt", function(e) {
+  window.addEventListener("beforeinstallprompt", function (e) {
     e.preventDefault();
     prompt = e;
-  });*/
+  });
   /*
   installButton.addEventListener("click", function() {
     prompt.prompt();
 })*/
 
-  function installButton(prompt) {
+  function installButton() {
     //e.preventDefault();
     //prompt = e;
     prompt.prompt();
