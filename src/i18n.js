@@ -90,13 +90,13 @@ i18n
             "Earn money on any comments left on your post",
 
           "-With Omisify you earn money when your subscribers comment on your post":
-            "With Omisify you earn money when your subscribers comment on your post",
+            "With Omisify you earn money when your followers comment on your post",
 
           "-With Omisify you earn money when your subscribers comment on your video":
-            "With Omisify you earn money when your subscribers comment on your video",
+            "With Omisify you earn money when your followers comment on your video",
 
           "-Omisify gives you the opportunity to earn money when your subscribers comment on your post, regardless of the nature of the comment, you earn money on any comments left on your post by your subscribers":
-            "Omisify gives you the opportunity to earn money when your subscribers comment on your post, regardless of the nature of the comment, you earn money on any comments left on your post by your subscribers",
+            "Omisify gives you the opportunity to earn money when your followers comment on your post, regardless of the nature of the comment, you earn money on any comments left on your post by your followers",
 
           "-With Omisify, all the conditions have been met to allow you to transform a simple additional income into incredible success":
             "With Omisify, all the conditions have been met to allow you to transform a simple additional income into incredible success",
