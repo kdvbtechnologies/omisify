@@ -15,9 +15,11 @@ export default function Test() {
   }
 
   async function GetLanguage() {
-    document.getElementById("demo").innerHTML = "langue détecté sur le navigateur de l'utilisateur : " + navigator.language;
+    document.getElementById("demo").innerHTML =
+      "langue détecté sur le navigateur de l'utilisateur : " +
+      navigator.language;
   }
-  console.log(GetLanguage)
+  console.log(GetLanguage);
 
   return (
     <>
@@ -27,7 +29,7 @@ export default function Test() {
       <br />
       <button onClick={Back}>Retour</button>
       <p id="demo"></p>
-      <p>{GetLanguage}</p>
+      <button onClick={{ GetLanguage }}>Detect Language</button>
     </>
   );
 }
