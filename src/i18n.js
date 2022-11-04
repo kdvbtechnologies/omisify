@@ -44,7 +44,14 @@ i18n
           "--nb":
             "N.B: All Omisify Partners withdraw their remuneration at any time",
 
-          // en - footer
+          // en - home - Dsuite.js
+          // en - home - Dsuite.js
+          // en - home - Dsuite.js
+          // en - home - Dsuite.js
+          // en - home - Dsuite.js
+          "-Even if you are not an influencer, Omisify gives you the opportunity to earn money when your friend likes your photo":
+            "Even if you are not an influencer, Omisify gives you the opportunity to earn money when your friend likes your photo",
+
           // en - footer
           // en - footer
           // en - footer
@@ -183,7 +190,15 @@ i18n
           "--nb":
             "N.B: Todos os Parceiros Omisify retiram sua remuneração a qualquer momento",
 
-          // pt - footer
+          // pt - home - Dsuite.js
+          // pt - home - Dsuite.js
+          // pt - home - Dsuite.js
+          // pt - home - Dsuite.js
+          // pt - home - Dsuite.js
+          // pt - home - Dsuite.js
+          "-Even if you are not an influencer, Omisify gives you the opportunity to earn money when your friend likes your photo":
+            "Mesmo que você não seja um influenciador, o Omisify te dá a oportunidade de ganhar dinheiro quando seu amigo curtir sua foto",
+
           // pt - footer
           // pt - footer
           // pt - footer
@@ -318,7 +333,15 @@ i18n
           "--nb":
             "N.B: Todos los Socios de Omisify retiran su remuneración en cualquier momento",
 
-          // es - footer
+          // es - home - Dsuite.js
+          // es - home - Dsuite.js
+          // es - home - Dsuite.js
+          // es - home - Dsuite.js
+          // es - home - Dsuite.js
+          // es - home - Dsuite.js
+          "-Even if you are not an influencer, Omisify gives you the opportunity to earn money when your friend likes your photo":
+            "Incluso si no eres un influencer, Omisify te da la oportunidad de ganar dinero cuando a tu amigo le gusta tu foto",
+
           // es - footer
           // es - footer
           // es - footer
@@ -456,7 +479,15 @@ i18n
           "--nb":
             "N.B: Tous les Partenaires Omisify retirent leur rémunération à n'importe quel moment",
 
-          // fr - footer
+          // fr - home - Dsuite.js
+          // fr - home - Dsuite.js
+          // fr - home - Dsuite.js
+          // fr - home - Dsuite.js
+          // fr - home - Dsuite.js
+          // fr - home - Dsuite.js
+          "-Even if you are not an influencer, Omisify gives you the opportunity to earn money when your friend likes your photo":
+            "Même si vous n'êtes pas influenceur, Omisify vous donne la possibilité de gagner de l'argent lorsque votre ami like votre photo",
+
           // fr - footer
           // fr - footer
           // fr - footer

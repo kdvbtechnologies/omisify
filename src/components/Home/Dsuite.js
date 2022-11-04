@@ -79,7 +79,7 @@ export default function Dsuite() {
         <div className="email-c">
           <p>
             {t(
-              "-Omisify has met all the conditions to allow you to earn money with your subscribers. Start now and earn money with your subscribers, Use them to your advantage and earn money with Omisify"
+              "-Even if you are not an influencer, Omisify gives you the opportunity to earn money when your friend likes your photo"
             )}
           </p>
           <div className="align-button">
