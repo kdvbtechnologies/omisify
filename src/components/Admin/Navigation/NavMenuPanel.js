@@ -7,6 +7,10 @@ export default function NavMenuPanel() {
       <NavLink to="/update-point-panel">
         <li>Actualisation des points</li>
       </NavLink>
+
+      <NavLink to="/ads-manager-panel">
+        <li>Gestionnaire de publicité</li>
+      </NavLink>
     </>
   );
 }

@@ -18,6 +18,21 @@ import PartnerContact from "./components/Partenaire Omisify/PartnerContact";
 import PartnerTrans from "./components/Partenaire Omisify/PartnerTrans";
 import PartnerHistorical from "./components/Partenaire Omisify/PartnerHistorical";
 
+// dev
+import Dev from "./components/Others/Dev/Dev";
+import AfterDev from "./components/Others/Dev/AfterDev";
+import Complete from "./components/Others/Dev/Complete";
+import Incomplete from "./components/Others/Dev/Incomplete";
+
+// AccessCode
+import ValidateAccessCode from "./components/Others/AccessCode/ValidateAccessCode";
+import ErrorAccessCode from "./components/Others/AccessCode/ErrorAccessCode";
+import AfterAccessCode from "./components/Others/AccessCode/AfterAccessCode";
+import SecureAccessCode from "./components/Others/AccessCode/SecureAccessCode";
+import Prices from "./components/Business/Home/Prices/Prices";
+import Test from "./components/Test";
+import Translation from "./components/Translation/Translation";
+
 import AkouaDjenebou from "./Pages/Partenaire Omisify/AkouaDjenebou";
 import AkouaHome from "./Pages/Partenaire Omisify/AkouaHome";
 import AkouaNavMenu from "./components/Partenaire Omisify/AkouaNavMenu";
@@ -216,25 +231,36 @@ import NavMenuPanel from "./components/Admin/Navigation/NavMenuPanel";
 import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 
 // Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
+// Omisify Business
 import HomeB from "./components/Business/Home/HomeB";
 import AdsB from "./components/Business/Home/Ads/AdsB";
 import MenuB from "./components/Business/Home/Navigation/MenuB";
 import CreateaAds from "./components/Business/AdsManager/CreateaAds";
 
-// dev
-import Dev from "./components/Others/Dev/Dev";
-import AfterDev from "./components/Others/Dev/AfterDev";
-import Complete from "./components/Others/Dev/Complete";
-import Incomplete from "./components/Others/Dev/Incomplete";
-
-// AccessCode
-import ValidateAccessCode from "./components/Others/AccessCode/ValidateAccessCode";
-import ErrorAccessCode from "./components/Others/AccessCode/ErrorAccessCode";
-import AfterAccessCode from "./components/Others/AccessCode/AfterAccessCode";
-import SecureAccessCode from "./components/Others/AccessCode/SecureAccessCode";
-import Prices from "./components/Business/Home/Prices/Prices";
-import Test from "./components/Test";
-import Translation from "./components/Translation/Translation";
+// admin - business
+// admin - business
+// admin - business
+// admin - business
+// admin - business
+// admin - business
+// admin - business
+// admin - business
+import AdsManagerPanel from "./components/Admin/Business/AdsManager/AdsManagerPanel";
 
 export default function App() {
   return (
@@ -639,11 +665,57 @@ export default function App() {
         <Route path="/update-point-panel" element={<UpdatePointPanel />} />
         <Route path="/nav-menu-panel" element={<NavMenuPanel />} />
 
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
+        {/* Omisify Business */}
         <Route path="/business" element={<HomeB />} />
         <Route path="/ads" element={<AdsB />} />
         <Route path="/omisify-b-menu" element={<MenuB />} />
         <Route path="/create-a-ads" element={<CreateaAds />} />
         <Route path="/prices" element={<Prices />} />
+
+        {/* admin - business - ads manager */}
+        {/* admin - business - ads manager */}
+        {/* admin - business - ads manager */}
+        {/* admin - business - ads manager */}
+        {/* admin - business - ads manager */}
+        {/* admin - business - ads manager */}
+        <Route path="/ads-manager-panel" element={<AdsManagerPanel />} />
       </Routes>
     </BrowserRouter>
   );
