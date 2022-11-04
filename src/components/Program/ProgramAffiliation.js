@@ -71,10 +71,7 @@ export default function ProgramAffiliation() {
         )}
         {isActive && (
           <div className="">
-            <p>
-              Consigne : Insérer le lien d'affiliation dans toute publication,
-              message ou description de vidéo
-            </p>
+            <p>Consigne : Lien publicitaire obligatoire</p>
             <p>Condition :</p>
             <p>Pour les influenceurs</p>
             <p>Pour les Influenceurs Vidéos</p>

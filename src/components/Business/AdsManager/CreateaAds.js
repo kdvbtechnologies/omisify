@@ -9,6 +9,12 @@ export default function CreateaAds() {
   const [affiliateprogramname, setAffiliateprogramname] = useState("");
   const adstatus = "Waiting for validation";
 
+  // infos of company
+  const userIdbusiness = "";
+  const namebusiness = "Rasivy Company INC";
+  const shortnamebusiness = "Rasivy";
+  const principalnamebusiness = "Rasivy Company";
+
   async function Send() {
     setIsLoading(true);
     await axios({
@@ -17,6 +23,12 @@ export default function CreateaAds() {
       data: {
         affiliateprogramname,
         adstatus,
+
+        // infos of company
+        userIdbusiness,
+        namebusiness,
+        shortnamebusiness,
+        principalnamebusiness,
       },
     })
       .then((res) => console.log(res))
@@ -79,8 +91,8 @@ export default function CreateaAds() {
 */
 
 /*
-
 Ecrivez votre publicité ici
+Présentation de la publicité
 
 <p>Entrer le lien d'affiliation</p>
       <input
