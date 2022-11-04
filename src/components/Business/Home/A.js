@@ -65,8 +65,8 @@ export default function A() {
     <div className="a">
       <p>
         Omisify Business est une plateforme qui vends de la Publicité. Augmentez
-        vos ventes et vos bénéfices en utilisant la Publicité des Contacts de
-        Confiance d'Omisify Business
+        vos ventes et vos bénéfices en utilisant les Partenaires Omisify comme
+        outil publicitaire
       </p>
       <NavLink to="/signup">
         <button>Essayer gratuitement la Publicité</button>

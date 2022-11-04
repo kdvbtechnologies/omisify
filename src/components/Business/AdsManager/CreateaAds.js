@@ -7,7 +7,7 @@ import NavbarB from "../Home/Navigation/NavbarB";
 export default function CreateaAds() {
   const [isLoading, setIsLoading] = useState(false);
   const [affiliateprogramname, setAffiliateprogramname] = useState("");
-  const adstatus = "no validate";
+  const adstatus = "Waiting for validation";
 
   async function Send() {
     setIsLoading(true);
