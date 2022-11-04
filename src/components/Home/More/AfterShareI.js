@@ -79,7 +79,7 @@ export default function AfterShareI() {
   async function Next(e) {
     setIsLoading(true);
     e.preventDefault();
-    window.location = "/no-influencer";
+    window.location = "/omisify-partner";
   }
 
   return (

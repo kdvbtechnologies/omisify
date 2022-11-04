@@ -75,7 +75,7 @@ export default function D() {
   async function Next(e) {
     setIsLoading(true);
     e.preventDefault();
-    window.location = "/influencer";
+    window.location = "/influential-omisify-partner";
   }
 
   return (

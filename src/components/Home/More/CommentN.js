@@ -2,7 +2,7 @@ export default function CommentN() {
   return (
     <div className="comment-n">
       <div className="comment-n-a">
-        <p>Non-Influenceur</p>
+        <p>Partenaire Omisify</p>
         <div className="hr">
           <hr />
         </div>

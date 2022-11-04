@@ -253,8 +253,8 @@ export default function App() {
         <Route path="/dev" element={<Dev />} />
         <Route path="*" element={<Home />} />
         <Route path="/" element={<Home />} />
-        <Route path="/influencer" element={<Influencer />} />
-        <Route path="/no-influencer" element={<NoInfluencer />} />
+        <Route path="/influential-omisify-partner" element={<Influencer />} />
+        <Route path="/omisify-partner" element={<NoInfluencer />} />
         <Route path="/home-bonus" element={<HomeBonus />} />
 
         <Route path="/program" element={<Program />} />

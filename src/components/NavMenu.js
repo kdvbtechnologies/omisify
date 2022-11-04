@@ -15,12 +15,12 @@ export default function NavMenu() {
           <p>Menu</p>
         </div>
 
-        <NavLink className="li" to="/influencer">
-          <li>Influenceur</li>
+        <NavLink className="li" to="/influential-omisify-partner">
+          <li>Partenaire Omisify Influent</li>
         </NavLink>
 
-        <NavLink className="li" to="/no-influencer">
-          <li>Non-Influenceur</li>
+        <NavLink className="li" to="/omisify-partner">
+          <li>Partenaire Omisify</li>
         </NavLink>
 
         <NavLink className="li" to="/home-bonus">
