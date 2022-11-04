@@ -66,8 +66,22 @@ export default function Complete() {
 
       <hr />
       <br />
+      <NavLink to="/before-calcul-message">
+        <p>Message</p>
+      </NavLink>
+      <br />
+
+      <hr />
+      <br />
       <NavLink to="/before-calcul-mwi">
         <p>MWI</p>
+      </NavLink>
+      <br />
+
+      <hr />
+      <br />
+      <NavLink to="/before-calcul-publication">
+        <p>Publication</p>
       </NavLink>
       <br />
       <hr />
