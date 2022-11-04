@@ -133,8 +133,7 @@ export default function D() {
       <br />
       <br />
       <br />
-      <br />
-      <br />
+
       <LikeInfluencer />
       <Dsuite />
 
