@@ -356,6 +356,11 @@ export default function Vocabulary() {
             </div>
             <p>ATP : Ancien Total des Points</p>
           </div>
+
+          <p>
+            Dernière mise à jour du Vocabulaire : 04/11/2022, 07:02 (Heure de
+            Brasilia)
+          </p>
         </div>
       </div>
     </div>
