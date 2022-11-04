@@ -31,7 +31,7 @@ export default function ConditionsAction() {
           <h2>2. Site WEB:</h2>
           <p>
             Le site web Omisify.com est une plateforme qui propose des
-            programmes d'affiliation du service Omisify Business. Tout les
+            programmes publicitaire du service Omisify Business. Tout les
             Partenaires Omisify retirent leur rémunération à n'importe quel
             moment. A partir du site web Omisify.com, nous fournissons des
             informations à propos de nos services ainsi que l'outil de travail
@@ -46,7 +46,7 @@ export default function ConditionsAction() {
           <p>
             Omisify.com est une Plateforme destinés aux Partenaires Omisify.
             Tout les services proposés sur la plateforme Omisify.com sont
-            destinées aux partenaires Omisify.
+            destinées aux Partenaires Omisify.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export default function ConditionsAction() {
           <h2>5. INFORMATIONS PUBLIEES SUR LE SITE WEB </h2>
           <p>
             Le Site Web peut contenir des liens vers des site web extérieurs qui
-            ne sont pas sous le contrôle de Omisify.com. Nous ne sommes pas
+            ne sont pas sous le contrôle d'Omisify.com. Nous ne sommes pas
             responsable du contenu de ces sites web ni des liens pouvant être
             contenu dans ces sites extérieurs.
           </p>
@@ -76,13 +76,15 @@ export default function ConditionsAction() {
         <div className="politique">
           <h2>6. REMUNERATION </h2>
           <p>
-            En affichant les Programmes d'Affiliation d'Omisify Business sur la
-            plateforme Omisify.com, Omisify perçoit des paiements de la part
-            d'Omisify Business qui permet à rémunérer tout les Partenaires
-            Omisify. En devenant Partenaire Omisify, vous acceptez qu'à chaque
-            retrait de votre rémunération Omisify vous fournisse une facture
-            électronique au niveau de votre compte, peu importe le moyen de
-            paiement utilisé.
+            Omisify.com met les Programmes publicitaires d'Omisify Business à la
+            disposition des Partenaires Omisify sur Omisify.com . Les
+            Partenaires Omisify faisant la publicité avec les Programmes
+            publicitaires présent sur Omisify.com permet à Omisify.com de
+            percevoir des paiements de la part d'Omisify Business qui permet à
+            Omisify.com de rémunérer tout les Partenaires Omisify. En devenant
+            Partenaire Omisify, vous acceptez qu'à chaque retrait de votre
+            rémunération, Omisify vous fournisse une facture électronique au
+            niveau de votre compte, peu importe le moyen de paiement utilisé.
           </p>
         </div>
 
@@ -141,9 +143,9 @@ export default function ConditionsAction() {
             Contrat jugée inapplicable ou illégale par une disposition d'effet
             économique équivalent. Tout litige relatif à l'exécution ou à
             l'interprétation du Contrat est, suivant le ressort, de la
-            compétence exclusive du Tribunal de Commerce de Rio de Janeiro. Le
-            droit brésilien sera applicable et la langue de procédure sera la
-            langue Portugaise. Le Contrat contient l'ensemble des dispositions
+            compétence exclusive du Tribunal de Commerce de Brasilia. Le droit
+            brésilien sera applicable et la langue de procédure sera la langue
+            Portugaise. Le Contrat contient l'ensemble des dispositions
             contractuelles entre Omisify.com et l'Utilisateur à propos du Site
             et des services qui y sont proposés, à l'exclusion de tout accord
             antérieur.

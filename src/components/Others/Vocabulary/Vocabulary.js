@@ -68,8 +68,8 @@ export default function Vocabulary() {
             </div>
             <p>
               Les Contacts de Confiance sont des personnes avec lesqueslles vous
-              avez l'habitude de causés tout les jours à travers des
-              applications de messagerie tel que Whatsapp, Telegram, Signal,
+              avez l'habitude de causés tout les jours par appel ou à travers
+              des applications de messagerie tel que Whatsapp, Telegram, Signal,
               Viber, Skype, Messenger, WeChat, ...
             </p>
           </div>
