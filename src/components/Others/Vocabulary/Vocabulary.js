@@ -112,7 +112,7 @@ export default function Vocabulary() {
             <p>
               Un E-mail Publicitaire est un e-mail faisant la publicité d'un
               produit ou d'une offre envoyé par un Partenaire Omisify à une
-              entreprise ou à un inconnu. Les E-mails publicitaire sont
+              entreprise ou à un inconnu. Les E-mails publicitaires sont
               généralement utilisés par les entreprises B2B
             </p>
           </div>
@@ -133,9 +133,9 @@ export default function Vocabulary() {
               <p>Lien publicitaire</p>
             </div>
             <p>
-              Un Lien Publicitaire est un lien redirigera l'internaute vers le
-              produit ou vers le site d'une entreprise ou vers l'application à
-              télécharger. Le lien publicitaire est fourni par tout entreprise
+              Un Lien Publicitaire est un lien qui redirigera l'internaute vers
+              le produit ou vers le site d'une entreprise ou vers l'application
+              à télécharger. Le lien publicitaire est fourni par tout entreprise
               qui paye la publicité chez Omisify Business. Certains programmes
               publicitaires n'ont pas de lien publicitaire à cause du but de la
               publicité et de ce qu'attend l'entreprise cliente
@@ -237,7 +237,7 @@ export default function Vocabulary() {
             </div>
             <p>
               Les E-mails aux 10k abrégé en E10k concerne les e-mails
-              publicitaire envoyés par un Partenaire Omisify aux comptes ayant
+              publicitaires envoyés par un Partenaire Omisify aux comptes ayant
               entre 10000 abonnés et moins d'un millions d'abonnés
             </p>
           </div>
@@ -286,11 +286,11 @@ export default function Vocabulary() {
             </div>
             <p>
               La PWP (Publication Without Presentation, en français Publication
-              sans Présentation) abrégé en PWP concerne une publication qui a
-              été publiée par un Partenaire Omisify ou un Partenaire Omisify
-              Influent sans la partie présentation de son programme
-              publicitaire. Par exemple le Partenaire peut publier sa photo et
-              mettre juste le lien publicitaire
+              sans Présentation) abrégé en PWP concerne une publication
+              publicitaire qui a été publiée par un Partenaire Omisify ou un
+              Partenaire Omisify Influent sans la partie présentation de son
+              programme publicitaire. Par exemple le Partenaire peut publier sa
+              photo et mettre juste le lien publicitaire
             </p>
           </div>
 
@@ -299,10 +299,10 @@ export default function Vocabulary() {
               <p>Publication</p>
             </div>
             <p>
-              L'option Publication concerne une publication publiée par un
-              Partenaire Omisify ou un Partenaire Omisify Influent avec la
-              partie présentation, le lien publicitaire et l'affiche du produit
-              ou de l'entreprise
+              L'option Publication concerne une publication publicitaire publiée
+              par un Partenaire Omisify ou un Partenaire Omisify Influent avec
+              la partie présentation, le lien publicitaire et l'affiche du
+              produit ou de l'entreprise
             </p>
           </div>
 
