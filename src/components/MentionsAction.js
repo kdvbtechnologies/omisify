@@ -49,7 +49,7 @@ export default function MentionsAction() {
           <h2>Protection des données personnelles</h2>
           <p>
             Nous vous invitons à prendre connaissance de notre
-            <NavLink to="/mentions"> politique de confidentialité</NavLink> qui
+            <NavLink to="/politique"> politique de confidentialité</NavLink> qui
             présente les règles de protection des données personnelles dans le
             cadre de l'utilisation de notre plateforme.
           </p>

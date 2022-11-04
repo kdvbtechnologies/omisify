@@ -37,10 +37,10 @@ export default function ProgramAffiliation() {
         {isActive && (
           <div className="accordion-programs">
             <div className="accordion-program">
-              program. Programme d'Affiliation : Devenir Partenaire Omisify"
+              Programme publicitaire : Devenir Partenaire Omisify"
             </div>
             <div className="accordion-program">
-              programLink. Lien d'Affiliation : https://omisify.com
+              Lien publicitaire : https://omisify.com
             </div>
           </div>
         )}

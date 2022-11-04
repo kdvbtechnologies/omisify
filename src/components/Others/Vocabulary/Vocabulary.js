@@ -358,7 +358,7 @@ export default function Vocabulary() {
           </div>
 
           <p>
-            Dernière mise à jour du Vocabulaire : 04/11/2022, 07:02 (Heure de
+            Dernière mise à jour du Vocabulaire : 04/11/2022, 08:01 (Heure de
             Brasilia)
           </p>
         </div>
