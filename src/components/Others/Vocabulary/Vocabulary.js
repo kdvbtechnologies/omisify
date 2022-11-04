@@ -27,6 +27,121 @@ export default function Vocabulary() {
               Omisify.
             </p>
           </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Partenaire Omisify Influent</p>
+            </div>
+            <p>
+              Le type de catégorie Partenaire Omisify Influent concerne un
+              Partenaire qui a sur les réseaux sociaux des abonnés qui le
+              suivent
+            </p>
+          </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Partenaire Omisify</p>
+            </div>
+            <p>
+              Le type de catégorie Partenaire Omisify concerne un Partenaire qui
+              n'a pas sur les réseaux sociaux des abonnés qui le suivent mais
+              qui a une liste des personnes avec lequel ils sont amis sur les
+              réseaux sociaux
+            </p>
+          </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Partenaire Omisify Vidéaste</p>
+            </div>
+            <p>
+              Le type de catégorie Partenaire Omisify Vidéaste concerne un
+              Partenaire qui s'est spécialisé dans la publication des vidéos sur
+              les réseaux sociaux
+            </p>
+          </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Contacts de Confiance</p>
+            </div>
+            <p>
+              Les Contacts de Confiance sont des personnes avec lesqueslles vous
+              avez l'habitude de causés tout les jours à travers des
+              applications de messagerie tel que Whatsapp, Telegram, Signal,
+              Viber, Skype, Messenger, WeChat, ...
+            </p>
+          </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Publication publicitaire</p>
+            </div>
+            <p>
+              Une Publication Publicitaire est une publication publiée par un
+              Partenaire Omisify ou un Partenaire Omisify Influent concernant un
+              produit ou une entreprise
+            </p>
+          </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Vidéo publicitaire</p>
+            </div>
+            <p>
+              Une Vidéo Publicitaire est une vidéo publiée par un Partenaire
+              Omisify Vidéaste concernant un produit ou une entreprise
+            </p>
+          </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Commentaire publicitaire</p>
+            </div>
+            <p>
+              Un Commentaire Publicitaire est un commentaire publiée par un
+              Partenaire Omisify concernant un produit ou une entreprise
+            </p>
+          </div>
+
+          <div className="a">
+            <div className="b">
+              <p>E-mail publicitaire</p>
+            </div>
+            <p>
+              Un E-mail Publicitaire est un e-mail faisant la publicité d'un
+              produit ou d'une offre envoyé par un Partenaire Omisify à une
+              entreprise ou à un inconnu. Les E-mails publicitaire sont
+              généralement utilisés par les entreprises B2B
+            </p>
+          </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Message publicitaire</p>
+            </div>
+            <p>
+              Un Message Publicitaire est un message faisant la publicité d'un
+              produit ou d'une entreprise envoyé par un Partenaire Omisify à sa
+              liste d'amis ou à n'importe qui sur les réseaux sociaux
+            </p>
+          </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Lien publicitaire</p>
+            </div>
+            <p>
+              Un Lien Publicitaire est un lien redirigera l'internaute vers le
+              produit ou vers le site d'une entreprise ou vers l'application à
+              télécharger. Le lien publicitaire est fourni par tout entreprise
+              qui paye la publicité chez Omisify Business. Certains programmes
+              publicitaires n'ont pas de lien publicitaire à cause du but de la
+              publicité et de ce qu'attend l'entreprise cliente
+            </p>
+          </div>
+
           <div className="a">
             <div className="b">
               <p>Bonus B</p>
@@ -89,9 +204,8 @@ export default function Vocabulary() {
             </div>
             <p>
               L'option Likes (commentaire) abrégé en Likes C concerne les likes
-              que des personnes ont laissés sur le commentaire que le Partenaire
-              a publié sur les réseaux sociaux concernant un produit ou une
-              entreprise
+              que des personnes ont laissés sur le commentaire publicitaire d'un
+              Partenaire Omisify ou d'un Partenaire Omisify Influent
             </p>
           </div>
 
@@ -101,8 +215,19 @@ export default function Vocabulary() {
             </div>
             <p>
               L'option Likes (publication) abrégé en Likes P concerne les likes
-              que des personnes ont laissés sur la publication que le Partenaire
-              a faites concernant un produit ou une entreprise
+              que des personnes ont laissés sur la publication publicitaire d'un
+              Partenaire Omisify ou d'un Partenaire Omisify Influent
+            </p>
+          </div>
+
+          <div className="a">
+            <div className="b">
+              <p>Likes V</p>
+            </div>
+            <p>
+              L'option Likes (vidéo) abrégé en Likes V concerne les likes que
+              des personnes ont laissés sur la vidéo publicitaire d'un
+              Partenaire Omisify Vidéaste
             </p>
           </div>
 
@@ -111,9 +236,9 @@ export default function Vocabulary() {
               <p>E10k</p>
             </div>
             <p>
-              Les E-mails aux 10k abrégé en E10k concerne les e-mails envoyés
-              aux comptes ayant entre 10.000 abonnés et moins de 1 millions
-              d'abonnés
+              Les E-mails aux 10k abrégé en E10k concerne les e-mails
+              publicitaire envoyés par un Partenaire Omisify aux comptes ayant
+              entre 10000 abonnés et moins d'un millions d'abonnés
             </p>
           </div>
 
@@ -122,9 +247,9 @@ export default function Vocabulary() {
               <p>M10k</p>
             </div>
             <p>
-              Les Messages aux 10k abrégé en M10k concerne les messages envoyés
-              aux comptes ayant entre 10.000 abonnés et moins de 1 millions
-              d'abonnés
+              Les Messages aux 10k abrégé en M10k concerne les messages
+              publicitaire envoyés par un Partenaire Omisify aux comptes ayant
+              entre 10000 abonnés et moins d'un millions d'abonnés
             </p>
           </div>
 
@@ -134,8 +259,10 @@ export default function Vocabulary() {
             </div>
             <p>
               Les Messages avec interaction abrégé en MWI concerne les messages
-              dans lesqueslles Le Partenaire recommande un produit ou une
-              entreprise lors de ces conversations avec ses proches
+              publicitaire dans lesqueslles un Partenaire Omisify Influent, un
+              Partenaire Omisify ou un Partenaire Omisify Vidéaste recommande un
+              produit ou une entreprise lors de ses conversations avec ses
+              Contacts de Confiance
             </p>
           </div>
 
@@ -144,11 +271,12 @@ export default function Vocabulary() {
               <p>PWI</p>
             </div>
             <p>
-              Les Publications avec interaction abrégé en PWI concerne les
-              publications dans lesqueslles des personnes poses des questions en
-              commentaire concernant le produit ou concernant l'entreprise qui
-              est sur l'affiche de la publication et le Partenaire réponds à la
-              question posé en commentaire
+              La Publication avec interaction abrégé en PWI concerne la
+              publication publicitaire dans laquelle des personnes poses des
+              questions en commentaire concernant le produit ou concernant
+              l'entreprise qui est sur l'affiche de la publication et le
+              Partenaire Omisify ou Partenaire Omisify Influent répond en
+              commentaire à la question posé
             </p>
           </div>
 
@@ -157,9 +285,12 @@ export default function Vocabulary() {
               <p>PWP</p>
             </div>
             <p>
-              Les Publications sans Présentation abrégé en PWP concerne les
-              publications qui ont été publié sans la partie présentation de
-              leur programme d'affiliation
+              La PWP (Publication Without Presentation, en français Publication
+              sans Présentation) abrégé en PWP concerne une publication qui a
+              été publiée par un Partenaire Omisify ou un Partenaire Omisify
+              Influent sans la partie présentation de son programme
+              publicitaire. Par exemple le Partenaire peut publier sa photo et
+              mettre juste le lien publicitaire
             </p>
           </div>
 
@@ -168,8 +299,9 @@ export default function Vocabulary() {
               <p>Publication</p>
             </div>
             <p>
-              L'option Publication concerne les publications publiées avec la
-              partie présentation, le lien d'affiliation et l'affiche du produit
+              L'option Publication concerne une publication publiée par un
+              Partenaire Omisify ou un Partenaire Omisify Influent avec la
+              partie présentation, le lien publicitaire et l'affiche du produit
               ou de l'entreprise
             </p>
           </div>
@@ -179,9 +311,9 @@ export default function Vocabulary() {
               <p>Message</p>
             </div>
             <p>
-              L'option Message concerne les messages envoyés avec la partie
-              présentation et le lien d'affiliation à ses amis ou à ses abonnés
-              sur les réseaux sociaux
+              L'option Message concerne un message publicitaire envoyé par un
+              Partenaire Omisify avec la partie présentation et le lien
+              publicitaire à ses amis ou à des inconnus sur les réseaux sociaux
             </p>
           </div>
 
@@ -190,9 +322,9 @@ export default function Vocabulary() {
               <p>E-mail</p>
             </div>
             <p>
-              L'option E-mail concerne les e-mails envoyés avec la partie
-              présentation et le lien d'affiliation à un influenceur ou à une
-              entreprise
+              L'option E-mail concerne un e-mail publicitaire envoyé par un
+              Partenaire Omisify à une entreprise ou à un inconnu (E-mail
+              contenant la partie présentation et le lien publicitaire)
             </p>
           </div>
 
@@ -201,9 +333,10 @@ export default function Vocabulary() {
               <p>Commentaire</p>
             </div>
             <p>
-              L'option Commentaire s'agit d'un commentaire concernant un produit
-              ou une entreprise que le Partenaire a publié sur la publication
-              d'une personne ou sur sa propre publication
+              L'option Commentaire s'agit d'un commentaire publicitaire
+              concernant un produit ou une entreprise publié par le Partenaire
+              Omisify sur sa propre publication ou sur la publication d'une
+              autre personne
             </p>
           </div>
 
@@ -219,13 +352,9 @@ export default function Vocabulary() {
 
           <div className="a">
             <div className="b">
-              <p>Ancien Total C</p>
+              <p>ATP</p>
             </div>
-            <p>
-              Ancien Total des Commentaires abrégé en Ancien Total C s'agit du
-              total des points des commentaires qui ont été publiés depuis le
-              1er jour du travail
-            </p>
+            <p>ATP : Ancien Total des Points</p>
           </div>
         </div>
       </div>

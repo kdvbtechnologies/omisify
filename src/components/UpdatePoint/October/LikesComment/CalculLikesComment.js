@@ -163,9 +163,9 @@ export default function CalculLikesComment() {
 
         <div className="a">
           <p>
-            L'option Likes (commentaire) concerne les likes que des personnes
-            ont laissés sur le commentaire que le Partenaire a publié sur les
-            réseaux sociaux concernant un produit ou une entreprise
+            L'option Likes (commentaire) abrégé en Likes C concerne les likes
+            que des personnes ont laissés sur le commentaire publicitaire d'un
+            Partenaire Omisify ou d'un Partenaire Omisify Influent
           </p>
           <p>1 Like C : 0.01 point = 0.00001€</p>
 
@@ -181,8 +181,7 @@ export default function CalculLikesComment() {
           </div>
 
           <p style={{ fontSize: "14px" }}>
-            Ancien total des points des Likes C : {oldpointtlikescommentlife}{" "}
-            point(s)
+            ATP Likes C : {oldpointtlikescommentlife} point(s)
           </p>
 
           {newnumber && oldpointtlikescommentlife && (

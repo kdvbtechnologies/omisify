@@ -221,9 +221,9 @@ export default function CalculComment() {
 
         <div className="a">
           <p>
-            L'option Commentaire s'agit d'un commentaire concernant un produit
-            ou une entreprise que le Partenaire a publié sur la publication
-            d'une personne ou sur sa propre publication
+            L'option Commentaire s'agit d'un commentaire publicitaire concernant
+            un produit ou une entreprise publié par le Partenaire Omisify sur sa
+            propre publication ou sur la publication d'une autre personne
           </p>
           <p>1 Commentaire : 1 point = 0.001€</p>
 
@@ -237,8 +237,7 @@ export default function CalculComment() {
           </div>
 
           <p style={{ fontSize: "14px" }}>
-            Ancien total des points des Commentaires : {oldpointtcommentlife}{" "}
-            point(s)
+            ATP Commentaires : {oldpointtcommentlife} point(s)
           </p>
 
           {newnumber && oldpointtcommentlife && (

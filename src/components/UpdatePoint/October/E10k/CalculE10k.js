@@ -165,8 +165,9 @@ export default function CalculE10k() {
 
         <div className="a">
           <p>
-            Les E10k (E-mails aux 10k) concerne les e-mails envoyés aux comptes
-            ayant entre 10000 abonnés et moins d'1 million d'abonnés
+            Les E-mails aux 10k abrégé en E10k concerne les e-mails publicitaire
+            envoyés par un Partenaire Omisify aux comptes ayant entre 10000
+            abonnés et moins d'un millions d'abonnés
           </p>
           <p>1 E10k : 0.7 point = 0.0007€</p>
 
@@ -180,7 +181,7 @@ export default function CalculE10k() {
           </div>
 
           <p style={{ fontSize: "14px" }}>
-            Ancien total des points des E10k : {oldpointte10klife} point(s)
+            ATP E10k : {oldpointte10klife} point(s)
           </p>
 
           {newnumber && oldpointte10klife && (

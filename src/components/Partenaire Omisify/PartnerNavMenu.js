@@ -29,10 +29,6 @@ export default function PartnerNavMenu() {
           <li>Mise à jour</li>
         </NavLink>
 
-        <NavLink className="li" to="/program">
-          <li>Programme</li>
-        </NavLink>
-
         <NavLink className="li" to="/partner-contact">
           <li>Service</li>
         </NavLink>
