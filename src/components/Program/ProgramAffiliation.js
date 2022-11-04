@@ -23,27 +23,38 @@ export default function ProgramAffiliation() {
   return (
     <>
       <div className="accordion-item">
-        <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
-          {api
-            .filter((user) => user.adstatus === "no validate")
-            .map((api) => (
-              <>
+        {api
+          .filter((user) => user.adstatus === "no validate")
+          .map((api) => (
+            <>
+              <div
+                className="accordion-title"
+                onClick={() => setIsActive(!isActive)}
+              >
                 <div>{api.affiliateprogramname}</div>
                 <div>{isActive ? "-" : "+"}</div>
-              </>
-            ))}
-        </div>
+              </div>
+            </>
+          ))}
 
         {isActive && (
           <div className="accordion-programs">
-            <div className="accordion-program">
-              Programme publicitaire : Devenir Partenaire Omisify"
-            </div>
-            <div className="accordion-program">
-              Lien publicitaire : https://omisify.com
-            </div>
+            {api
+              .filter((filter) => filter.adstatus === "no validate")
+              .map((api) => (
+                <>
+                  <div className="accordion-program">
+                    Programme publicitaire : {api.affiliateprogramname}"
+                  </div>
+
+                  <div className="accordion-program">
+                    Lien publicitaire : https://omisify.com
+                  </div>
+                </>
+              ))}
           </div>
         )}
+
         {isActive && (
           <div className="accordion-desc">
             <div className="program-presentation">
