@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Loader from "../Partenaire Omisify/Loader";
 import LikeInfluencer from "./More/LikeInfluencer";
-import AfterShareI from "./More/AfterShareI";
+import Dsuite from "./Dsuite";
 
 export default function D() {
   const { t } = useTranslation();
@@ -120,7 +120,7 @@ export default function D() {
       </div>
 
       <LikeInfluencer />
-      <AfterShareI />
+      <Dsuite />
 
       <div className="see-more">
         {isLoading ? (
