@@ -4,7 +4,9 @@ import NewE10kPanel from "./E10k/NewE10kPanel";
 import NewLikesCommentPanel from "./LikesComment/NewLikesCommentPanel";
 import NewLikesPublicationPanel from "./LikesPublication/NewLikesPublicationPanel";
 import NewM10kPanel from "./M10k/NewM10kPanel";
+import NewMessagePanel from "./Message/NewMessagePanel";
 import NewMWIPanel from "./MWI/NewMWIPanel";
+import NewPublicationPanel from "./Publication/NewPublicationPanel";
 
 export default function UpdatePointPanel() {
   return (
@@ -15,7 +17,9 @@ export default function UpdatePointPanel() {
       <NewLikesCommentPanel />
       <NewLikesPublicationPanel />
       <NewM10kPanel />
+      <NewMessagePanel />
       <NewMWIPanel />
+      <NewPublicationPanel />
     </>
   );
 }

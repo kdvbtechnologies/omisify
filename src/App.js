@@ -165,18 +165,55 @@ import ValidateM10kError from "./components/UpdatePoint/October/M10k/ValidateM10
 import ValidateM10kSuccess from "./components/UpdatePoint/October/M10k/ValidateM10kSuccess";
 
 // updatepoint - E10k
+// updatepoint - E10k
+// updatepoint - E10k
+// updatepoint - E10k
+// updatepoint - E10k
+// updatepoint - E10k
 import CalculE10k from "./components/UpdatePoint/October/E10k/CalculE10k";
 import BeforeCalculE10k from "./components/UpdatePoint/October/E10k/BeforeCalculE10k";
 import ValidateCalculE10k from "./components/UpdatePoint/October/E10k/ValidateCalculE10k";
 import ValidateE10kError from "./components/UpdatePoint/October/E10k/ValidateE10kError";
 import ValidateE10kSuccess from "./components/UpdatePoint/October/E10k/ValidateE10kSuccess";
 
+// updatepoint - message
+// updatepoint - message
+// updatepoint - message
+// updatepoint - message
+// updatepoint - message
+// updatepoint - message
+// updatepoint - message
+// updatepoint - message
+import ValidateMessageError from "./components/UpdatePoint/October/Message/ValidateMessageError";
+import ValidateMessageSuccess from "./components/UpdatePoint/October/Message/ValidateMessageSuccess";
+import ValidateCalculMessage from "./components/UpdatePoint/October/Message/ValidateCalculMessage";
+import CalculMessage from "./components/UpdatePoint/October/Message/CalculMessage";
+import BeforeCalculMessage from "./components/UpdatePoint/October/Message/BeforeCalculMessage";
+
+// updatepoint - MWI
+// updatepoint - MWI
+// updatepoint - MWI
+// updatepoint - MWI
+// updatepoint - MWI
 // updatepoint - MWI
 import CalculMWI from "./components/UpdatePoint/October/MWI/CalculMWI";
 import BeforeCalculMWI from "./components/UpdatePoint/October/MWI/BeforeCalculMWI";
 import ValidateCalculMWI from "./components/UpdatePoint/October/MWI/ValidateCalculMWI";
 import ValidateMWIError from "./components/UpdatePoint/October/MWI/ValidateMWIError";
 import ValidateMWISuccess from "./components/UpdatePoint/October/MWI/ValidateMWISuccess";
+
+// updatepoint - publication
+// updatepoint - publication
+// updatepoint - publication
+// updatepoint - publication
+// updatepoint - publication
+// updatepoint - publication
+// updatepoint - publication
+import ValidatePublicationError from "./components/UpdatePoint/October/Publication/ValidatePublicationError";
+import ValidatePublicationSuccess from "./components/UpdatePoint/October/Publication/ValidatePublicationSuccess";
+import ValidateCalculpublication from "./components/UpdatePoint/October/Publication/ValidateCalculPublication";
+import CalculPublication from "./components/UpdatePoint/October/Publication/CalculPublication";
+import BeforeCalculPublication from "./components/UpdatePoint/October/Publication/BeforeCalculPublication";
 
 // panel
 import User from "./components/Admin/User/User";
@@ -214,14 +251,6 @@ import UpdatepwiPanel from "./components/Admin/UpdatePoint/PWI/UpdatePWIPanel";
 // panel update point
 // panel update point
 // panel update point
-/*import UpdateBestPartnerBonusPanel from "./components/Admin/UpdatePoint/Bonus/UpdateBestPartnerBonusPanel";
-import NewCommentPanel from "./components/Admin/UpdatePoint/Comment/NewCommentPanel";
-import NewE10kPanel from "./components/Admin/UpdatePoint/E10k/NewE10kPanel";
-import NewLikesCommentPanel from "./components/Admin/UpdatePoint/LikesComment/NewLikesCommentPanel";
-import NewLikesPublicationPanel from "./components/Admin/UpdatePoint/LikesPublication/NewLikesPublicationPanel";
-import NewM10kPanel from "./components/Admin/UpdatePoint/M10k/NewM10kPanel";
-import NewMWIPanel from "./components/Admin/UpdatePoint/MWI/NewMWIPanel";
-*/
 import UpdatePointPanel from "./components/Admin/UpdatePoint/UpdatePointPanel";
 
 // navigation
@@ -529,11 +558,65 @@ export default function App() {
           element={<ValidateLikesPublicationError />}
         />
 
+        {/* update point - message */}
+        {/* update point - message */}
+        {/* update point - message */}
+        {/* update point - message */}
+        {/* update point - message */}
+        {/* update point - message */}
+        <Route
+          path="/before-calcul-message"
+          element={<BeforeCalculMessage />}
+        />
+        <Route path="/calcul-message" element={<CalculMessage />} />
+        <Route
+          path="/validate-calcul-message"
+          element={<ValidateCalculMessage />}
+        />
+        <Route
+          path="/validate-message-success"
+          element={<ValidateMessageSuccess />}
+        />
+        <Route
+          path="/validate-message-error"
+          element={<ValidateMessageError />}
+        />
+
+        {/* update point - mwi */}
+        {/* update point - mwi */}
+        {/* update point - mwi */}
+        {/* update point - mwi */}
+        {/* update point - mwi */}
+        {/* update point - mwi */}
         <Route path="/before-calcul-MWI" element={<BeforeCalculMWI />} />
         <Route path="/calcul-MWI" element={<CalculMWI />} />
         <Route path="/validate-calcul-MWI" element={<ValidateCalculMWI />} />
         <Route path="/validate-MWI-success" element={<ValidateMWISuccess />} />
         <Route path="/validate-MWI-error" element={<ValidateMWIError />} />
+
+        {/* update point - publication */}
+        {/* update point - publication */}
+        {/* update point - publication */}
+        {/* update point - publication */}
+        {/* update point - publication */}
+        {/* update point - publication */}
+        <Route
+          path="/before-calcul-publication"
+          element={<BeforeCalculPublication />}
+        />
+        <Route path="/calcul-publication" element={<CalculPublication />} />
+        <Route
+          path="/validate-calcul-publication"
+          element={<ValidateCalculpublication />}
+        />
+        <Route
+          path="/validate-publication-success"
+          element={<ValidatePublicationSuccess />}
+        />
+        <Route
+          path="/validate-publication-error"
+          element={<ValidatePublicationError />}
+        />
 
         {/* program - programAffiliation.js */}
         {/* program - programAffiliation.js */}
