@@ -61,7 +61,7 @@ i18n
           // en - home - LikeI.js
           // en - home - LikeI.js
           // en - home - LikeI.js
-          "--influencer": "Influencer",
+          "--influencer": "Influential Omisify Partner",
 
           "-Let your subscribers make you money":
             "Let your followers make you money",
@@ -198,7 +198,7 @@ i18n
           // pt - home - LikeI.js
           // pt - home - LikeI.js
           // pt - home - LikeI.js
-          "--influencer": "Influenciador",
+          "--influencer": "Parceiro influente da Omisify",
           "-Let your subscribers make you money":
             "Deixe seus assinantes ganharem dinheiro",
 
@@ -337,7 +337,7 @@ i18n
           // es - home - LikeI.js
           // es - home - LikeI.js
           // es - home - LikeI.js
-          "--influencer": "Influenciador",
+          "--influencer": "Socio influyente de Omisify",
 
           "-Let your subscribers make you money":
             "Deja que tus suscriptores te hagan ganar dinero",
@@ -476,7 +476,7 @@ i18n
           // fr - home - LikeI.js
           // fr - home - LikeI.js
           // fr - home - LikeI.js
-          "--influencer": "Influenceur",
+          "--influencer": "Partenaire Omisify Influent",
 
           "-Let your subscribers make you money":
             "Laisser vos abonnés vous faire gagner de l'argent",
