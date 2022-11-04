@@ -38,7 +38,9 @@ i18n
           "--1pwp": "1 PWP = 0.1 point",
           "--1euro": "1000 Points = 1€",
           "--see-more": "See more",
-          "--turn": "Turn a simple extra income into an incredible success",
+
+          "--turn": "Make money with Omisify",
+
           "--nb":
             "N.B: All Omisify Partners withdraw their remuneration at any time",
 
@@ -175,8 +177,9 @@ i18n
           "--1pwp": "1 PWP = 0.1 ponto",
           "--1euro": "1000 Pontos = 1€",
           "--see-more": "Ver mais",
-          "--turn":
-            "Transforme uma simples renda suplementar em um sucesso incrível",
+
+          "--turn": "Ganhe dinheiro com o Omisify",
+
           "--nb":
             "N.B: Todos os Parceiros Omisify retiram sua remuneração a qualquer momento",
 
@@ -310,8 +313,7 @@ i18n
           "--1euro": "1000 Puntos = 1€",
           "--see-more": "Ver más",
 
-          "--turn":
-            "Convierta un ingreso suplementario simple en un éxito increíble",
+          "--turn": "Gana dinero con Omisify",
 
           "--nb":
             "N.B: Todos los Socios de Omisify retiran su remuneración en cualquier momento",
@@ -449,8 +451,7 @@ i18n
           "--1euro": "1000 Points = 1€",
           "--see-more": "Voir plus",
 
-          "--turn":
-            "Transformez un simple complément de revenu en succès incroyable",
+          "--turn": "Gagner de l'argent avec Omisify",
 
           "--nb":
             "N.B: Tous les Partenaires Omisify retirent leur rémunération à n'importe quel moment",
