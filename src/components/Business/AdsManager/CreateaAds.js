@@ -31,7 +31,7 @@ export default function CreateaAds() {
         service client en cliquant{" "}
         <NavLink to="/customer-service-omisify-business">ici</NavLink>
       </p>
-      <p>Entrer le nom du programme d'affiliation</p>
+      <p>Entrer le nom de la publicité</p>
       <input
         type="text"
         placeholder="Nom du Programme d'affiliation"
@@ -79,6 +79,8 @@ export default function CreateaAds() {
 */
 
 /*
+
+Ecrivez votre publicité ici
 
 <p>Entrer le lien d'affiliation</p>
       <input

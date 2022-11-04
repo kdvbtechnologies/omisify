@@ -58,7 +58,7 @@ export default function ProgramAffiliation() {
         {isActive && (
           <div className="accordion-desc">
             <div className="program-presentation">
-              <p>Présentation</p>
+              <p>Présentation de la publicité</p>
             </div>
             programDesc. Omisify est une plateforme qui proprose des programmes
             d'affiliation. Vous pourrez augmenter vos revenus en devenant
