@@ -9,6 +9,7 @@ import ConditionOfMetBonus from "./ConditionOfMetBonus";
 import GenerosityBonus from "./GenerosityBonus";
 import TrustedContactsBonus from "./TrustedContactsBonus";
 import WelcomeBonus from "./WelcomeBonus";
+import PartnerNavigation from "../../../Partner-Navigation";
 
 export default function HomeBonus() {
   const navigate = useNavigate();
@@ -20,6 +21,7 @@ export default function HomeBonus() {
 
   return (
     <div style={family}>
+      <PartnerNavigation />
       <div className="back-btn">
         <button onClick={() => navigate(-1)}>Retour</button>
       </div>
