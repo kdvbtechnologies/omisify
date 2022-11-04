@@ -156,8 +156,9 @@ export default function CalculM10k() {
 
         <div className="a">
           <p>
-            Les M10k (Message aux 10k) concerne les messages envoyés aux comptes
-            ayant entre 10000 abonnés et moins de 1 millions d'abonnés
+            Les Messages aux 10k abrégé en M10k concerne les messages
+            publicitaires envoyés par un Partenaire Omisify aux comptes ayant
+            entre 10000 abonnés et moins d'un millions d'abonnés
           </p>
           <p>1 M10k : 0.7 point = 0.0007€</p>
 
@@ -171,7 +172,7 @@ export default function CalculM10k() {
           </div>
 
           <p style={{ fontSize: "14px" }}>
-            Ancien total des points des M10k : {oldpointtm10klife} point(s)
+            ATP M10k : {oldpointtm10klife} point(s)
           </p>
 
           {newnumber && oldpointtm10klife && (

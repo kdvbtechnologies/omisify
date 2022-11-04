@@ -248,7 +248,7 @@ export default function Vocabulary() {
             </div>
             <p>
               Les Messages aux 10k abrégé en M10k concerne les messages
-              publicitaire envoyés par un Partenaire Omisify aux comptes ayant
+              publicitaires envoyés par un Partenaire Omisify aux comptes ayant
               entre 10000 abonnés et moins d'un millions d'abonnés
             </p>
           </div>
@@ -259,7 +259,7 @@ export default function Vocabulary() {
             </div>
             <p>
               Les Messages avec interaction abrégé en MWI concerne les messages
-              publicitaire dans lesqueslles un Partenaire Omisify Influent, un
+              publicitaires dans lesqueslles un Partenaire Omisify Influent, un
               Partenaire Omisify ou un Partenaire Omisify Vidéaste recommande un
               produit ou une entreprise lors de ses conversations avec ses
               Contacts de Confiance

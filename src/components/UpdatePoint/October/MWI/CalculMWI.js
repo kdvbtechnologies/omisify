@@ -154,10 +154,11 @@ export default function CalculMWI() {
 
         <div className="a">
           <p>
-            Les MWI (Message With Interaction) en français Message avec
-            interaction concerne les messages dans lesqueslles Le Partenaire
-            recommande un produit ou une entreprise lors de ces conversations
-            avec ses Contacts de Confiance, ses proches ou une connaissance
+            Les Messages avec interaction abrégé en MWI concerne les messages
+            publicitaires dans lesqueslles un Partenaire Omisify Influent, un
+            Partenaire Omisify ou un Partenaire Omisify Vidéaste recommande un
+            produit ou une entreprise lors de ses conversations avec ses
+            Contacts de Confiance
           </p>
           <p>1 MWI : 5 points = 0.005€</p>
 
@@ -171,7 +172,7 @@ export default function CalculMWI() {
           </div>
 
           <p style={{ fontSize: "14px" }}>
-            Ancien total des points des MWI : {oldpointtmwilife} point(s)
+            ATP MWI : {oldpointtmwilife} point(s)
           </p>
 
           {newnumber && oldpointtmwilife && (

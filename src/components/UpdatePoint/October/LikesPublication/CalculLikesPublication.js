@@ -164,9 +164,9 @@ export default function CalculLikesPublication() {
 
         <div className="a">
           <p>
-            L'option Likes (publication) concerne les likes que des personnes
-            ont laissés sur la publication du Partenaire. Les Likes de tout les
-            types de publication sont prises en compte
+            L'option Likes (publication) abrégé en Likes P concerne les likes
+            que des personnes ont laissés sur la publication publicitaire d'un
+            Partenaire Omisify ou d'un Partenaire Omisify Influent
           </p>
           <p>1 Like P : 0.01 point = 0.00001€</p>
 
@@ -182,8 +182,7 @@ export default function CalculLikesPublication() {
           </div>
 
           <p style={{ fontSize: "14px" }}>
-            Ancien total des points des Likes P :{" "}
-            {oldpointtlikespublicationlife} point(s)
+            ATP Likes P : {oldpointtlikespublicationlife} point(s)
           </p>
 
           {newnumber && oldpointtlikespublicationlife && (
