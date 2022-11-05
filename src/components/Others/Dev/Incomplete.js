@@ -13,15 +13,25 @@ export default function Incomplete() {
           <button>Retour</button>
         </NavLink>
       </div>
-      <p>Attention !</p>
-      <p>
-        Toutes les Fonctionnalités présentes sur cette page sont en cours de
-        développement et de test. Ne les utilisez pas
-      </p>
+      <div className="others">
+        <p style={{ padding: "0px 20px" }}>Attention !</p>
+        <p style={{ padding: "20px" }}>
+          Toutes les Fonctionnalités présentes sur cette page sont en cours de
+          développement et de test. Ne les utilisez pas
+        </p>
 
-      <NavLink>
-        <p>Bonus de Condition Respecté</p>
-      </NavLink>
+        <div className="a">
+          <div className="hr">
+            <hr />
+          </div>
+          <NavLink className="navlink">
+            <p>Bonus de Condition Respecté</p>
+          </NavLink>
+          <div className="hr">
+            <hr />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

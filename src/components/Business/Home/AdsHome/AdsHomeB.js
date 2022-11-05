@@ -1,6 +1,6 @@
 import NavbarB from "../Navigation/NavbarB";
 
-export default function AdsB() {
+export default function AdsHomeB() {
   return (
     <>
       <div className="ads">

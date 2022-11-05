@@ -277,7 +277,7 @@ import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 // Omisify Business
 // Omisify Business
 import HomeB from "./components/Business/Home/HomeB";
-import AdsB from "./components/Business/Home/Ads/AdsB";
+import AdsHomeB from "./components/Business/Home/AdsHome/AdsHomeB";
 import MenuB from "./components/Business/Home/Navigation/MenuB";
 import CreateaAds from "./components/Business/AdsManager/CreateaAds";
 
@@ -787,7 +787,7 @@ export default function App() {
         {/* Omisify Business */}
         {/* Omisify Business */}
         <Route path="/business" element={<HomeB />} />
-        <Route path="/ads" element={<AdsB />} />
+        <Route path="/ads-home" element={<AdsHomeB />} />
         <Route path="/omisify-b-menu" element={<MenuB />} />
         <Route path="/create-a-ads" element={<CreateaAds />} />
         <Route path="/prices" element={<Prices />} />

@@ -14,13 +14,26 @@ export default function AfterDev() {
         </NavLink>
       </div>
 
-      <NavLink to="/complete">
-        <p>Fonctionnalités Complètes</p>
-      </NavLink>
+      <div className="others">
+        <div className="a">
+          <div className="hr">
+            <hr />
+          </div>
+          <NavLink className="navlink" to="/complete">
+            <p>Fonctionnalités Complètes</p>
+          </NavLink>
+          <div className="hr">
+            <hr />
+          </div>
 
-      <NavLink to="/incomplete">
-        <p>Fonctionnalités Incomplètes</p>
-      </NavLink>
+          <NavLink className="navlink" to="/incomplete">
+            <p>Fonctionnalités Incomplètes</p>
+          </NavLink>
+          <div className="hr">
+            <hr />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

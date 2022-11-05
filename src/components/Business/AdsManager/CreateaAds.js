@@ -8,6 +8,7 @@ export default function CreateaAds() {
   const [isLoading, setIsLoading] = useState(false);
   const [affiliateprogramname, setAffiliateprogramname] = useState("");
   const adstatus = "Waiting for validation";
+  const [calltoaction, setcalltoaction] = useState("");
 
   // infos of company
   const userIdbusiness = "";
@@ -51,6 +52,22 @@ export default function CreateaAds() {
         onChange={(e) => setAffiliateprogramname(e.target.value)}
         name="affiliateprogramname"
       />
+
+      <p>Entrer le but de la publicité</p>
+      <p>sélectionner votre appel à l'action</p>
+      <select
+        name="calltoaction"
+        value={calltoaction}
+        onChange={(e) => setcalltoaction(e.target.value)}
+      >
+        <option value="Visiter le site">Visiter le site</option>
+        <option value="Télécharger l'application">
+          Télécharger l'application
+        </option>
+        <option value="Contacter l'entreprise">Contacter l'entreprise</option>
+        <option value="Visiter le magasin">Visiter le magasin</option>
+      </select>
+      <p>Ajouter d'autres éléments lié à l'appel à l'action (facultatif)</p>
 
       {isLoading ? (
         <Loader />
