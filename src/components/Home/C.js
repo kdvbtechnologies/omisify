@@ -84,13 +84,13 @@ export default function C() {
             {userId && shortname && partnername && name ? (
               <>
                 <NavLink to="/partner">
-                  <button>{t("--join")}</button>
+                  <button>{t("--To become partner")}</button>
                 </NavLink>
               </>
             ) : (
               <>
                 <NavLink to="/signup">
-                  <button>{t("--join")}</button>
+                  <button>{t("--To become partner")}</button>
                 </NavLink>
               </>
             )}

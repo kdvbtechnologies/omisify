@@ -65,9 +65,21 @@ export default function C() {
                 genre de personne pour permettre à votre publicité de toucher le
                 marché que vous cibler
               </p>
+
+              <div className="align-button">
+                <NavLink to="/signup">
+                  <button>Essayer la Publicité</button>
+                </NavLink>
+              </div>
             </div>
 
             <div className="go-down-this">
+              <div className="border-red">
+                <p>
+                  Chez Omisify Business votre publicité ne passera jamais
+                  inaperçue
+                </p>
+              </div>
               <p>
                 Lorsque vous passer votre publicité chez Omisify Business, les
                 Partenaires Omisify Influenceurs Vidéos enregistrent de
@@ -77,19 +89,17 @@ export default function C() {
                 produit et courriront pour en savoir plus ou pour effectuer
                 l'achat de votre produit. Car tout les jours leurs abonnés
                 effectuent des achats, ils dépensent de l'argent tout les jours,
-                et nombreux seront intéréssés par l'offre que vous proposez.
-                Lancer vous dès maintenant et regarder le résultat de votre
-                publicité en temps réel
+                et nombreux seront intéréssés par l'offre que vous proposez
               </p>
-
-              <div className="align-button">
-                <NavLink to="/signup">
-                  <button>Essayer gratuitement la Publicité</button>
-                </NavLink>
+              <div className="border-gray">
+                <p></p>
               </div>
             </div>
 
             <div className="go-down-this">
+              <div className="border-gray">
+                <p></p>
+              </div>
               <p>
                 Lorsque vous passer votre Publicité chez Omisify Business, les
                 Partenaires Omisify Influenceurs récupèrent les affiches que
@@ -97,8 +107,15 @@ export default function C() {
                 sociaux. Ainsi votre publicité touchera leur millions d'abonnés
                 et vous aurez par la même occasion de nombreux clients qui vous
                 contacterons, qui visiteront votre site ou qui viendront acheter
-                dans votre magasin
+                dans votre magasin. Lancer vous dès maintenant et regarder le
+                résultat de votre publicité en temps réel
               </p>
+              <div className="border-red">
+                <p>
+                  Chez Omisify Business votre publicité ne passera jamais
+                  inaperçue
+                </p>
+              </div>
               <div className="align-button">
                 <NavLink to="/signup">
                   <button>Essayer gratuitement la Publicité</button>
@@ -106,6 +123,44 @@ export default function C() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="svg-free">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0"
+          y="0"
+          fill="red"
+          width="100px"
+          enableBackground="new 0 0 490 490"
+          version="1.1"
+          viewBox="0 0 490 490"
+          xmlSpace="preserve"
+        >
+          <path d="M205.5 210h-12.6v26.2h12.6c7.2 0 13.1-5.9 13.1-13.1 0-7.2-5.9-13.1-13.1-13.1z"></path>
+          <path d="M418.1 173.1V71.9H316.9L245 0l-71.9 71.9H71.9v101.5L0 245l71.9 71.9v101.5h101.5L245 490l71.9-71.9h101.5V316.9L490 245l-71.9-71.9zm-269.7 63.1c4.8 0 8.8 3.9 8.8 8.8s-3.9 8.8-8.8 8.8h-25.8v35c0 4.8-3.9 8.8-8.8 8.8s-8.8-3.9-8.8-8.8v-87.4c0-4.8 3.9-8.8 8.8-8.8h34.5c4.8 0 8.8 3.9 8.8 8.8 0 4.8-3.9 8.8-8.8 8.8h-25.8v26.2h25.9v-.2zm82.9 59.3c-2.5 1.1-9 1.3-11.8-3.9l-19.2-37.9h-7.5v35c0 4.8-3.9 8.8-8.8 8.8-4.8 0-8.8-3.9-8.8-8.8v-87.4c0-4.8 3.9-8.8 8.8-8.8h21.4c16.9 0 30.6 13.7 30.6 30.6 0 12.2-7.2 22.8-17.6 27.7l16.7 32.9c2.2 4.3.6 9.7-3.8 11.8zm71-59.3c4.8 0 8.8 3.9 8.8 8.8s-3.9 8.8-8.8 8.8h-25.8V280h25.8c4.8 0 8.8 3.9 8.8 8.8 0 4.8-3.9 8.8-8.8 8.8h-34.5c-4.8 0-8.8-3.9-8.8-8.8v-87.4c0-4.8 3.9-8.8 8.8-8.8h34.5c4.8 0 8.8 3.9 8.8 8.8 0 4.8-3.9 8.8-8.8 8.8h-25.8v26.2h25.8v-.2zm73.8 0c4.8 0 8.8 3.9 8.8 8.8s-3.9 8.8-8.8 8.8h-25.8V280h25.8c4.8 0 8.8 3.9 8.8 8.8 0 4.8-3.9 8.8-8.8 8.8h-34.5c-4.8 0-8.8-3.9-8.8-8.8v-87.4c0-4.8 3.9-8.8 8.8-8.8h34.5c4.8 0 8.8 3.9 8.8 8.8 0 4.8-3.9 8.8-8.8 8.8h-25.8v26.2h25.8v-.2z"></path>
+        </svg>
+        <p>Lancer vous maintenant et obtenez d'excellent résultats</p>
+
+        <div className="align-button">
+          <NavLink to="/signup">
+            <button>Essayer gratuitement la Publicité</button>
+          </NavLink>
+        </div>
+      </div>
+
+      <div className="display-flex-partner-c">
+        <div className="partner-c">
+          <button>Publicité par les Partenaires Omisify Influents</button>
+        </div>
+
+        <div className="partner-c">
+          <button>Publicité par les Partenaires Omisify</button>
+        </div>
+
+        <div className="partner-c">
+          <button>Publicité par les Partenaires Omisify Vidéastes</button>
         </div>
       </div>
 

@@ -428,10 +428,11 @@
 .home .part-c button {
   cursor: pointer;
   font-family: Roboto, Arial, sans-serif;
-  background-color: blue;
+  background-color: red;
   color: white;
-  border: none;
-  padding: 10px;
+  border: 1px solid red;
+  border-radius: 8px;
+  padding: 8px 16px;
   font-size: 16px;
 }
 
@@ -692,6 +693,102 @@
   padding: 50px 400px;
 }
 
+/* home - Dsuite.js */
+/* home - Dsuite.js */
+/* home - Dsuite.js */
+/* home - Dsuite.js */
+/* home - Dsuite.js */
+/*
+.home .dsuite-shrink {
+  padding: 0px 400px;
+}*/
+
+.home .dsuite-shrink .dsuite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home .align-button-dsuite-shrink {
+  text-align: center;
+}
+
+.home .dsuite-shrink button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.home .dsuite-shrink .dsuite .left  {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0px 10px;
+  width: 5%;
+  }
+
+.home .dsuite-shrink .dsuite .right {
+  width: 17%;
+  font-size: 17px;
+}
+
+.home .dsuite-shrink .dsuite .left .svg-c svg {
+    padding: 3px 0px;
+    transform: skewY(-20deg);
+    transform-origin: top left;
+  }
+
+.home .dsuite-shrink .dsuite .left .svg-b svg {
+    padding: 0px 3px;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+   
+  }
+  
+  .home .dsuite-shrink .dsuite .left .svg-a svg {
+    padding: 3px 0px;
+    transform: skewY(0deg);
+    transform-origin: top left;
+  }
+
+
+/* home - D.js */
+/* home - D.js */
+/* home - D.js */
+/* home - D.js */
+/* home - D.js */
+/* home - D.js */
+    
+.see-more-d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.see-more-d button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
 /* home - More - Email.js */
 /* home - More - Email.js */
 /* home - More - Email.js */
@@ -712,7 +809,8 @@
   font-size: 16px;
 }
 
-.home .email-c p{
+
+.home .email-c {
   padding: 20px 10px;
   font-size: 17px;
   color: white;
@@ -727,16 +825,17 @@
 
 .home .email-c .align-button {
   text-align: center;
-  padding: 30px 0px;
+  padding-top: 15px;
 }
 
 .email-c button {
   cursor: pointer;
   font-family: Roboto, Arial, sans-serif;
-  background-color: blue;
-  color: white;
-  padding: 10px;
-  border: none;
+  background-color: white;
+  color: black;
+  border: 3px solid white;
+  border-radius: 8px;
+  padding: 8px 16px;
   font-size: 16px;
 }
 
@@ -2694,11 +2793,75 @@ padding-bottom: 70px;
   border: 1px solid black;
   padding: 20px;
   box-shadow: 5px 10px red;
+  margin-bottom: 50px;
 }
 
 .homeb .c .go-down-this {
-  padding-top: 100px;
+  padding-top: 50px;
 }
+
+.homeb .c .go-down-this .border-red p {
+  background-color: red;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+.homeb .c .go-down-this .border-gray {
+  background-color: #eee;
+}
+
+.homeb .svg-free {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0px;
+}
+
+.homeb .svg-free p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.homeb .svg-free button {
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.homeb .display-flex-partner-c {
+  display: flex;
+  justify-content: center;
+}
+
+.homeb .partner-c button {
+  cursor: pointer;
+  border: 1px solid red;
+  background-color: transparent;
+  color: red;
+  padding: 8px 5px;
+  border-radius: 3px;
+  margin: 15px 25px;
+  font-size: 16px;
+}
+
+.homeb .partner-c button:hover {
+  background-color: red;
+  color: white;
+}
+
+
+
+
 
 .homeb .c .align-button {
   text-align: center;
@@ -2814,6 +2977,15 @@ padding-bottom: 70px;
 /* 1250px */
 /* 1250px */
 @media screen and (max-width: 1250px) {
+  .home .dsuite-shrink .dsuite .left  {
+    width: 5%;
+  }
+  
+.home .dsuite-shrink .dsuite .right {
+    width: 18%;
+    font-size: 17px;
+}
+
   .prices .shrink-b {
     margin: 0px 400px;
   }
@@ -2878,6 +3050,15 @@ padding-bottom: 70px;
 /* 1050px */
 /* 1050px */
 @media screen and (max-width: 1050px) {
+  .home .dsuite-shrink .dsuite .left  {
+    width: 7%;
+  }
+  
+.home .dsuite-shrink .dsuite .right {
+    width: 23%;
+    font-size: 17px;
+}
+
   .prices .shrink-b {
     margin: 0px 320px;
   }
@@ -2946,6 +3127,14 @@ padding-bottom: 70px;
 /* 760px */
 /* 760px */
 @media screen and (max-width: 760px) {
+  .home .dsuite-shrink .dsuite .left  {
+    width: 10%;
+  }
+  
+.home .dsuite-shrink .dsuite .right {
+    width: 35%;
+    font-size: 17px;
+}
 
   .prices .display-flex-svg-and-p {
     margin: 0px 15px;
@@ -3220,7 +3409,26 @@ padding-bottom: 70px;
 
 }
 
+/* 520px */
+/* 520px */
+/* 520px */
+/* 520px */
+/* 520px */
+/* 520px */
+/* 520px */
+/* 520px */
+/* 520px */
+/* 520px */
 @media screen and (max-width: 520px) {
+ /* .home .dsuite-shrink .dsuite .left  {
+    width: 19%;
+    }
+  
+  .home .dsuite-shrink .dsuite .right {
+    width: 55%;
+    font-size: 16px;
+    }*/
+
   .prices .shrink-b {
     margin: 0px 50px;
     padding-top: 70px;
@@ -3240,3 +3448,34 @@ padding-bottom: 70px;
     align-items: center;
   }
 }
+
+/* 490px */
+/* 490px */
+/* 490px */
+/* 490px */
+/* 490px */
+/* 490px */
+/* 490px */
+/* 490px */
+@media screen and (max-width: 490px) {
+  .home .dsuite-shrink .dsuite .left  {
+    width: 19%;
+    }
+  
+  .home .dsuite-shrink .dsuite .right {
+    width: 55%;
+    font-size: 16px;
+    }
+  }
+
+  /* 257px */
+  @media screen and (max-width: 490px) {
+    .home .dsuite-shrink .dsuite .left  {
+      width: 22%;
+      }
+    
+    .home .dsuite-shrink .dsuite .right {
+      width: 55%;
+      font-size: 16px;
+      }
+    }

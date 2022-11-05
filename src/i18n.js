@@ -13,13 +13,20 @@ i18n
           "-Loading data..": "Loading data..",
           "--choose-language": "Choose your language",
           "--back-btn": "Return",
+
           "--a-intro":
             "Omisify is a platform that offers advertising programs. Increase your income by becoming an Omisify Partner",
+
           "--join": "Become an Omisify Partner",
+
+          "--To become partner": "To become partner",
+
           "--favorable":
             "Omisify is favorable for influencers and for non-influencers !",
+
           "--free-a":
             "Omisify is free and always remunerates its Partners whatever the country in which you are and whatever the situation of your country",
+
           "--free-b":
             "With Omisify you can withdraw your remuneration at any time. With Omisify, your compensation is at your fingertips. Omisify uses all the means of payment available to allow all its Partners to always be remunerated",
           "--free-c":
@@ -159,9 +166,14 @@ i18n
           "-Loading data..": "Carregando dados..",
           "--choose-language": "Escolha seu idioma",
           "--back-btn": "Retornar",
+
           "--a-intro":
             "Omisify é uma plataforma que oferece programas de publicidade. Aumente sua renda tornando-se um Parceiro Omisify",
+
           "--join": "Seja um Parceiro Omisify",
+
+          "--To become partner": "Para se tornar Parceiro",
+
           "--favorable":
             "Omisify é favorável para influenciadores e não influenciadores !",
           "--free-a":
@@ -302,9 +314,14 @@ i18n
           "-Loading data..": "Cargando datos..",
           "--choose-language": "Elige tu idioma",
           "--back-btn": "Devolver",
+
           "--a-intro":
             "Omisify es una plataforma que ofrece programas publicitarios. Aumente sus ingresos convirtiéndose en un Socio de Omisify",
+
           "--join": "Conviértase en un Socio de Omisify",
+
+          "--To become partner": "Convertirse en Socio",
+
           "--favorable":
             "¡ Omisify es favorable para personas influyentes y no influyentes !",
           "--free-a":
@@ -448,15 +465,23 @@ i18n
           "-Loading data..": "Chargement des données..",
           "--choose-language": "Choisissez votre langue",
           "--back-btn": "Retour",
+
           "--a-intro":
             "Omisify est une plateforme qui proprose des programmes publicitaires. Augmentez vos revenus en devenant Partenaire Omisify",
+
           "--join": "Devenir Partenaire Omisify",
+
+          "--To become partner": "Devenir Partenaire",
+
           "--favorable":
             "Omisify est favorable pour les influencers et pour les non-influencers !",
+
           "--free-a":
             "Omisify est gratuit et rémunère toujours ses Partenaires quelque soit le pays dans lequel vous vous trouver et quelque soit la situation de votre pays",
+
           "--free-b":
             "Avec Omisify vous pourrez retirer votre rémunération à n'importe quel moment. Avec Omisify, votre rémunération est à porter de vos mains. Omisify utilise tout les moyens de paiement disponible pour permettre à tout ses Partenaires d'être toujours rémunérer",
+
           "--free-c":
             "Avec Omisify vous gagnez de l'argent même lorsque vous dormez. Omisify est gratuit et rémunère toujours ses Partenaires",
           "--remuneration": "Rémunération",

@@ -128,16 +128,11 @@ export default function D() {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
 
       <LikeInfluencer />
       <Dsuite />
 
-      <div className="see-more">
+      <div className="see-more-d">
         {isLoading ? (
           <>
             <p>{t("-Loading data..")}</p>

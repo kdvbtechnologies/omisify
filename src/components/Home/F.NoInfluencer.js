@@ -14,11 +14,8 @@ import ShareN from "./More/ShareN";
 import Footer from "../Footer";
 import Loader from "../Partenaire Omisify/Loader";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function NoInfluencer() {
-  const navigate = useNavigate();
-
   const [isLoading, setIsLoading] = useState(false);
 
   async function Next(e) {
@@ -34,10 +31,6 @@ export default function NoInfluencer() {
 
   return (
     <>
-      <div className="back-btn">
-        <button onClick={() => navigate(-1)}>Retour</button>
-      </div>
-
       <div className="home" style={family}>
         <CommentN />
         <E10k />
