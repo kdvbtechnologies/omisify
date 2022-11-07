@@ -1,0 +1,35 @@
+import { NavLink } from "react-router-dom";
+
+export default function ChooseaAd() {
+  return (
+    <>
+      <div className="ad-menu">
+        <div className="title">
+          <p>Choisissez une publicité</p>
+        </div>
+
+        <div className="a">
+          <div className="hr">
+            <hr />
+          </div>
+
+          <NavLink className="navlink" to="/real-time-results">
+            <p>Chaussure à vendre à Bon Prix</p>
+          </NavLink>
+
+          <div className="hr">
+            <hr />
+          </div>
+
+          <NavLink className="navlink">
+            <p>John Foster à vendre</p>
+          </NavLink>
+
+          <div className="hr">
+            <hr />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}

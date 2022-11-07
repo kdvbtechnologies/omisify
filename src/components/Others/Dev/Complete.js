@@ -19,7 +19,7 @@ export default function Complete() {
           Toutes les Fonctionnalités présentes sur cette page fonctionne très
           bien mais il y'a certaines amélioration qui doivent etre apporté dans
           le futur et le développement de leur design n'est pas encore terminé.
-          Vous pouvez les utiliser en attendant que le developpement du design
+          Vous pouvez les utiliser en attendant que le développement du design
           soit terminé
         </p>
 

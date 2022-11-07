@@ -279,7 +279,14 @@ import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 import HomeB from "./components/Business/Home/HomeB";
 import AdsHomeB from "./components/Business/Home/AdsHome/AdsHomeB";
 import MenuB from "./components/Business/Home/Navigation/MenuB";
-import CreateaAds from "./components/Business/AdsManager/CreateaAds";
+import CreateaAd from "./components/Business/AdsManager/CreateaAd";
+import SignupFirst from "./components/Business/AdsManager/SignupFirst";
+
+import RealTimeResults from "./components/Business/AdsManager/RealTimeResults";
+import OmisifyPartnerRealTimeResults from "./components/Business/AdsManager/OmisifyPartner/OmisifyPartnerRealTimeResults";
+import OmisifyPartnerRealTimeResultsDetailsByDay from "./components/Business/AdsManager/OmisifyPartner/OmisifyPartnerRealTimeResultsDetailsByDay";
+import AdMenu from "./components/Business/AdsManager/AdMenu";
+import ChooseaAd from "./components/Business/AdsManager/ChooseaAd";
 
 // admin - business
 // admin - business
@@ -789,8 +796,23 @@ export default function App() {
         <Route path="/business" element={<HomeB />} />
         <Route path="/ads-home" element={<AdsHomeB />} />
         <Route path="/omisify-b-menu" element={<MenuB />} />
-        <Route path="/create-a-ads" element={<CreateaAds />} />
+        <Route path="/create-a-ad" element={<CreateaAd />} />
+        <Route path="/real-time-results" element={<RealTimeResults />} />
+        <Route path="/ad-menu" element={<AdMenu />} />
+        <Route path="/choose-a-ad" element={<ChooseaAd />} />
+
+        <Route
+          path="/omisify-partner-real-time-results"
+          element={<OmisifyPartnerRealTimeResults />}
+        />
+
+        <Route
+          path="/omisify-partner-real-time-results-details-by-day"
+          element={<OmisifyPartnerRealTimeResultsDetailsByDay />}
+        />
+
         <Route path="/prices" element={<Prices />} />
+        <Route path="/signup-first" element={<SignupFirst />} />
 
         {/* admin - business - ads manager */}
         {/* admin - business - ads manager */}

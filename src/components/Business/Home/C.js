@@ -97,9 +97,6 @@ export default function C() {
             </div>
 
             <div className="go-down-this">
-              <div className="border-gray">
-                <p></p>
-              </div>
               <p>
                 Lorsque vous passer votre Publicité chez Omisify Business, les
                 Partenaires Omisify Influenceurs récupèrent les affiches que
@@ -110,7 +107,7 @@ export default function C() {
                 dans votre magasin. Lancez-vous dès maintenant et regarder le
                 résultat de votre publicité en temps réel
               </p>
-              <div className="border-red">
+              <div className="border-red-and-box-shadow">
                 <p>
                   Chez Omisify Business votre publicité ne passera jamais
                   inaperçue

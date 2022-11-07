@@ -814,9 +814,10 @@
   padding: 20px 10px;
   font-size: 17px;
   color: white;
-  background-color: red;
-  border: 1px solid red;
-  box-shadow: 5px 10px black;
+  background-color: #ff6f79;
+  border: 1px solid #ff6f79;
+  box-shadow: 5px 10px red;
+  border-radius: 5px;
 }
 
 .home .email-shrink {
@@ -1070,6 +1071,12 @@ footer {
 /* src - components - Program.js*/
 .back-btn {
   padding: 20px 10px;
+  cursor: pointer;
+}
+
+.back-btnb {
+  padding: 20px 10px;
+  cursor: pointer;
 }
 
 .back-btn button{
@@ -1594,8 +1601,8 @@ footer {
   color: white;
   border: none;
   border-radius: 10px;
-  font-size: 17px;
-  padding: 10px 20px;
+  font-size: 15px;
+  padding: 8px 16px;
 }
 
 /*  src - components - update - update.js */
@@ -2798,10 +2805,10 @@ padding-bottom: 70px;
 
 .homeb .c .go-down-this {
   padding-top: 50px;
-}
+} 
 
 .homeb .c .go-down-this .border-red p {
-  background-color: red;
+  background-color: #ff6f79;
   border-radius: 5px;
   text-align: center;
   color: white;
@@ -2810,6 +2817,16 @@ padding-bottom: 70px;
 
 .homeb .c .go-down-this .border-gray {
   background-color: #eee;
+}
+
+.homeb .c .go-down-this .border-red-and-box-shadow p {
+  background-color: #ff6f79;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  box-shadow: 5px 10px red;
+  margin-bottom: 10px;
 }
 
 .homeb .svg-free {
@@ -2835,7 +2852,7 @@ padding-bottom: 70px;
   border: 1px solid red;
   border-radius: 8px;
   padding: 8px 16px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .homeb .display-flex-partner-c {
@@ -2851,17 +2868,13 @@ padding-bottom: 70px;
   padding: 8px 5px;
   border-radius: 3px;
   margin: 15px 25px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .homeb .partner-c button:hover {
   background-color: red;
   color: white;
 }
-
-
-
-
 
 .homeb .c .align-button {
   text-align: center;
@@ -2875,7 +2888,7 @@ padding-bottom: 70px;
   padding: 10px;
   border: none;
   margin: 10px 0px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .homeb .c p {
@@ -2960,10 +2973,210 @@ padding-bottom: 70px;
   box-shadow: 5px 10px black;
 }
 
+/* business - create ads.js */
+/* business - create ads.js */
+/* business - create ads.js */
+/* business - create ads.js */
+/* business - create ads.js */
+/* business - create ads.js */
+/* business - create ads.js */
+.create-a-ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+}
 
+.create-a-ads .title {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
 
+.create-a-ads .a {
+  padding: 20px 0px;
+}
 
+.create-a-ads .a p {
+  padding: 5px 0px;
+}
 
+.create-a-ads .a input[type="text"] {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+/* business - realtimeresults.js */
+/* business - realtimeresults.js */
+/* business - realtimeresults.js */
+/* business - realtimeresults.js */
+/* business - realtimeresults.js */
+/* business - realtimeresults.js */
+
+.stats-big-titleb {
+  color: black;
+  background-color: #fcff07;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.real-time-results {
+  font-size: 17px;
+}
+
+.real-time-results .date {
+  font-size: 14px;
+  padding: 0px 20px;
+  padding-bottom: 20px;
+}
+
+.real-time-results .date-results-by-day p {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.real-time-results .amount-spent-ads {
+  font-size: 17px;
+  text-align: center;
+  padding: 20px 0px;
+  color: #444;
+}
+
+.real-time-results .title-omisify-partner {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0px 20px;
+  padding-bottom: 10px;
+  color: blue;
+}
+
+.real-time-results .align-center-main-results .main-results {
+  border: 1px solid #444;
+  padding: 8px 4px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.real-time-results .align-center-main-results {
+  display: flex;
+  justify-content: center;
+}
+
+.real-time-results .display-a {
+  display: flex;
+  justify-content: center;
+}
+
+.real-time-results .display-a .navlink {
+  color: #444;
+}
+
+.real-time-results .display-a .a .price {
+  color: #ccc;
+}
+
+.real-time-results .a {
+  padding: 8px 16px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.real-time-results .infos {
+  margin-bottom: -30px;
+}
+
+.real-time-results .infos p {
+  font-size: 16px;
+  padding: 5px 20px;
+}
+
+.real-time-results .infos .adstatus {
+  display: flex;
+}
+
+.real-time-results .infos .adstatus .d {
+  background-color:#89f300;
+  color: white;
+  border-radius: 20px;
+}
+
+.real-time-results .stats-by-day {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fcff07;
+  background-color: black;
+}
+
+.real-time-results .overflow-table .navlink {
+  color: #444;
+}
+
+.real-time-results #results-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.real-time-results #results-table th, #results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.real-time-results #results-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #fcff07;
+  color: black;
+  font-weight: lighter;
+}
+
+.real-time-results .i {
+  padding: 50px 20px;
+}
+
+/* business - admenu.js */
+/* business - admenu.js */
+/* business - admenu.js */
+/* business - admenu.js */
+/* business - admenu.js */
+/* business - admenu.js */
+.ad-menu .title {
+  color: #fcff07;
+  text-align: center;
+  font-size: 18px;
+  background-color: black;
+  padding: 10px;
+}
+
+.ad-menu .a {
+  padding: 20px 0px;
+}
+
+.ad-menu .a p{
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000;
+}
+
+.ad-menu .a .hr hr {
+ border: 1px solid #eee;
+}
+
+.ad-menu .a .navlink {
+  text-decoration: none;
+}
 
 
 /* 1250px */
@@ -3127,6 +3340,11 @@ padding-bottom: 70px;
 /* 760px */
 /* 760px */
 @media screen and (max-width: 760px) {
+
+  .real-time-results .overflow-table {
+    overflow-x: auto;
+  }
+  
   .home .dsuite-shrink .dsuite .left  {
     width: 10%;
   }
