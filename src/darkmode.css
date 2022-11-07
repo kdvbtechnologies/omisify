@@ -3161,7 +3161,7 @@ padding-bottom: 70px;
 }
 
 .ad-menu .a {
-  padding: 20px 0px;
+  padding: 0px 0px;
 }
 
 .ad-menu .a p{
@@ -3178,6 +3178,589 @@ padding-bottom: 70px;
   text-decoration: none;
 }
 
+/* business - settings.js */
+/* business - settings.js */
+/* business - settings.js */
+/* business - settings.js */
+/* business - settings.js */
+
+.settings-nav-b .title {
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  background-color: yellow;
+  padding: 10px;
+}
+
+.settings-nav-b .a {
+  padding: 0px 0px;
+}
+
+.settings-nav-b .a p{
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000;
+}
+
+.settings-nav-b .a .hr hr {
+ border: 1px solid #eee;
+}
+
+.settings-nav-b .a .navlink {
+  text-decoration: none;
+}
+
+
+/* business - settings infos */
+/* business - settings infos */
+/* business - settings infos */
+/* business - settings infos */
+/* business - settings infos */
+.settings-infos-b .title {
+  color: black;
+  font-size: 18px;
+  background-color: yellow;
+  padding: 10px;
+}
+
+.settings-infos-b .a p {
+  padding: 10px 20px;
+  color: #444;
+  font-size: 16px;
+}
+
+.settings-infos-b .title-main .title {
+  display: flex;
+  align-items: center;
+   
+}
+
+.settings-infos-b .title {
+  background-color: yellow;
+  color: black;
+  font-size: 17px;
+}
+
+.settings-infos-b .title-main .title  button {
+  cursor: pointer;
+  background-color: transparent;
+  margin: 0px 6px;
+  padding: 4px 8px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+/* business - settings infos update.js */
+/* business - settings infos update.js */
+/* business - settings infos update.js */
+/* business - settings infos update.js */
+/* business - settings infos update.js */
+/* business - settings infos update.js */
+.settings-infos-update {
+  margin-bottom: 100px;
+}
+
+.settings-infos-update .title {
+  color: yellow;
+  font-size: 17px;
+  background-color: black;
+  padding: 10px;
+}
+
+.settings-infos-update .a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.settings-infos-update .a input[type="text"] {
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 1px solid #444;
+  border-radius: 3px;
+}
+
+.settings-infos-update .a input[type="number"] {
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 1px solid #444;
+  border-radius: 3px;
+}
+
+.settings-infos-update .a .b {
+  margin: 15px 0px;
+}
+
+.settings-infos-update .a .b p {
+  padding: 5px 0px;
+}
+
+.settings-infos-update button {
+  cursor: pointer;
+  color: black;
+  background-color: yellow;
+  border: 1px solid yellow;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 20px 10px;
+}
+
+/* business - geolocation.js */
+/* business - geolocation.js */
+/* business - geolocation.js */
+/* business - geolocation.js */
+/* business - geolocation.js */
+/* business - geolocation.js */
+.geolocation .title {
+  color: yellow;
+  font-size: 18px;
+  background-color: black;
+  padding: 10px;
+}
+
+.geolocation .a {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0px 400px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.geolocation .a p {
+  padding: 10px 0px;
+}
+
+/* business - logout */
+/* business - logout */
+/* business - logout */
+/* business - logout */
+/* business - logout */
+/* business - logout */
+.logout-b {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.logout-question p {
+  text-align: center;
+  font-size: 17px;
+}
+
+.logout-b .a button {
+  cursor: pointer;
+  color: yellow;
+  background-color: black;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.logout-b .b button {
+  cursor: pointer;
+  color: #ccc;
+  background-color: #eee;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+/* business - logout confirm.js */
+/* business - logout confirm.js */
+/* business - logout confirm.js */
+/* business - logout confirm.js */
+/* business - logout confirm.js */
+/* business - logout confirm.js */
+/* business - logout confirm.js */
+.logout-confirmb {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.logout-questionb p {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 70px;
+  padding: 0px 20px;
+}
+
+.logout-confirmb .a button {
+  cursor: pointer;
+  color: yellow;
+  background-color: black;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.logout-confirmb .b button {
+  cursor: pointer;
+  color: #ccc;
+  background-color: #eee;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+
+
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+/* alrani */
+
+/* al - auth - logout.js */
+/* al - auth - logout.js */
+/* al - auth - logout.js */
+/* al - auth - logout.js */
+/* al - auth - logout.js */
+/* al - auth - logout.js */
+
+.stats-big-title-al {
+  color: white;
+  background-color: blue;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.logout-al {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.logout-question-al p {
+  text-align: center;
+  font-size: 17px;
+}
+
+.logout-al .b button {
+  cursor: pointer;
+  color: blue;
+  background-color: transparent;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: 1px solid blue;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.logout-al .a button {
+  cursor: pointer;
+  color: #ccc;
+  background-color: #eee;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.popup-main {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup {
+  margin: 0px 500px;
+  margin-top: 150px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  border: none;
+  overflow: auto;
+}
+
+.popup .e {
+  padding: 50px 15px;
+}
+
+.popup .e p {
+  font-size: 16px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.popup .e .display {
+  display: flex;
+  justify-content: center;
+}
+
+.popup .e .no button {
+  cursor: pointer;
+  color: blue;
+  background-color: white;
+  padding: 8px 24px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  margin: 10px 10px;
+}
+
+.popup .e .yes button {
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  padding: 8px 24px;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 15px;
+  margin: 10px 10px;
+}
+
+.close-popup {
+  content: '&times;';
+  cursor: pointer;
+  padding: 3px 10px;
+  background: #eee;
+  color: #444;
+  border-radius: 50%;
+  float: right;
+}
+
+/* al - Back - Back.js */
+/* al - Back - Back.js */
+/* al - Back - Back.js */
+/* al - Back - Back.js */
+/* al - Back - Back.js */
+/* al - Back - Back.js */
+.back-btn-al {
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+/* vi - auth - logout.js */
+/* vi - auth - logout.js */
+/* vi - auth - logout.js */
+/* vi - auth - logout.js */
+/* vi - auth - logout.js */
+/* vi - auth - logout.js */
+/* vi - auth - logout.js */
+.stats-big-title-vi {
+  color: white;
+  background-color: #fd7e14;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.logout-vi {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.logout-question-vi p {
+  text-align: center;
+  font-size: 17px;
+}
+
+.logout-vi .a button {
+  cursor: pointer;
+  color: #fd7e14;
+  background-color: transparent;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid #fd7e14;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.logout-vi .b button {
+  cursor: pointer;
+  color: #ccc;
+  background-color: #eee;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+
+/* vi - Back - Back.js */
+/* vi - Back - Back.js */
+/* vi - Back - Back.js */
+/* vi - Back - Back.js */
+.back-btn-vi {
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+/* vi - auth - logout confirm.js */
+/* vi - auth - logout confirm.js */
+/* vi - auth - logout confirm.js */
+/* vi - auth - logout confirm.js */
+/* vi - auth - logout confirm.js */
+/* vi - auth - logout confirm.js */
+.logout-confirm-vi {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.logout-question-vi p {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 70px;
+  padding: 0px 20px;
+}
+
+.logout-confirm-vi .a button {
+  cursor: pointer;
+  color: white;
+  background-color:#fd7e14;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.logout-confirm-vi .b button {
+  cursor: pointer;
+  color: #ccc;
+  background-color: #eee;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+
+
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+.stats-big-title-in {
+  color: white;
+  background-color:  #00cc00;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.logout-in {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.logout-question-in p {
+  text-align: center;
+  font-size: 17px;
+}
+
+.logout-in .a button {
+  cursor: pointer;
+  color:#00cc00;
+  background-color: transparent;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #00cc00;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.logout-in .b button {
+  cursor: pointer;
+  color: #ccc;
+  background-color: #eee;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+/* ini - Back - Back.js */
+/* ini - Back - Back.js */
+/* ini - Back - Back.js */
+/* ini - Back - Back.js */
+/* ini - Back - Back.js */
+.back-btn-in {
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+/* in - auth - logout confirm.js */
+/* in - auth - logout confirm.js */
+/* in - auth - logout confirm.js */
+/* in - auth - logout confirm.js */
+/* in - auth - logout confirm.js */
+.logout-confirm-in {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.logout-question-in p {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 70px;
+  padding: 0px 20px;
+}
+
+.logout-confirm-in .a button {
+  cursor: pointer;
+  color: white;
+  background-color: #00cc00;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.logout-confirm-in .b button {
+  cursor: pointer;
+  color: #ccc;
+  background-color: #eee;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+
+
+
 
 /* 1250px */
 /* 1250px */
@@ -3190,6 +3773,27 @@ padding-bottom: 70px;
 /* 1250px */
 /* 1250px */
 @media screen and (max-width: 1250px) {
+  /* alrani */
+  /* alrani */
+  /* alrani */
+  /* alrani */
+  /* alrani */
+  .popup {
+    margin: 0px 400px;
+    margin-top: 150px;
+  }
+
+
+/* jamelfase */
+/* jamelfase */
+/* jamelfase */
+/* jamelfase */
+/* jamelfase */
+  .geolocation .a {
+    margin: 0px 420px;
+  }
+
+  /* */
   .home .dsuite-shrink .dsuite .left  {
     width: 5%;
   }
@@ -3256,13 +3860,27 @@ padding-bottom: 70px;
   }
 }
 
+/* 1060px */
+/* 1060px */
+/* 1060px */
+/* 1060px */
+/* 1060px */
+/* 1060px */
+@media screen and (max-width: 1060px) {
 
-/* 1050px */
-/* 1050px */
-/* 1050px */
-/* 1050px */
-/* 1050px */
-@media screen and (max-width: 1050px) {
+  /* alrani */
+  .popup {
+    margin: 0px 300px;
+    margin-top: 150px;
+  }
+
+/* jamelfase */
+  .geolocation .a {
+    margin: 0px 320px;
+  }
+
+  /* */
+
   .home .dsuite-shrink .dsuite .left  {
     width: 7%;
   }
@@ -3321,6 +3939,19 @@ padding-bottom: 70px;
 }
 
 @media screen and (max-width: 900px) {
+
+  /* alrani */
+  .popup {
+    margin: 0px 200px;
+    margin-top: 150px;
+  }
+
+/* jamelfase */
+  .geolocation .a {
+    margin: 0px 220px;
+  }
+
+  /* */
   .prices .shrink-b {
     margin: 0px 250px;
     padding-top: 70px;
@@ -3340,6 +3971,20 @@ padding-bottom: 70px;
 /* 760px */
 /* 760px */
 @media screen and (max-width: 760px) {
+   /* alrani */
+   .popup {
+    margin: 0px 100px;
+    margin-top: 150px;
+  }
+
+  .popup .e {
+    padding: 20px 15px;
+  }
+
+/* jamelfase */
+  .geolocation .a {
+    margin: 0px 220px;
+  }
 
   .real-time-results .overflow-table {
     overflow-x: auto;
@@ -3349,6 +3994,7 @@ padding-bottom: 70px;
     width: 10%;
   }
   
+  /* */
 .home .dsuite-shrink .dsuite .right {
     width: 35%;
     font-size: 17px;
@@ -3623,7 +4269,10 @@ padding-bottom: 70px;
 
 
 @media screen and (max-width: 700px) {
-  
+  .geolocation .a {
+    margin: 0px 150px;
+  }
+
 
 }
 
@@ -3638,19 +4287,18 @@ padding-bottom: 70px;
 /* 520px */
 /* 520px */
 @media screen and (max-width: 520px) {
- /* .home .dsuite-shrink .dsuite .left  {
-    width: 19%;
-    }
-  
-  .home .dsuite-shrink .dsuite .right {
-    width: 55%;
-    font-size: 16px;
-    }*/
+
+  /* jamelfase */
+  .geolocation .a {
+    margin: 0px 120px;
+  }
 
   .prices .shrink-b {
     margin: 0px 50px;
     padding-top: 70px;
   }
+
+  /* */
 
   .validate-calcul-comment .a .shrink-border {
     padding: 20px 25px;
@@ -3676,6 +4324,28 @@ padding-bottom: 70px;
 /* 490px */
 /* 490px */
 @media screen and (max-width: 490px) {
+
+  /* alrani */
+  .popup {
+    margin: 0px 20px;
+    margin-top: 150px;
+  }
+
+  .popup .e {
+    padding: 20px 15px;
+  }
+
+/* jamelfase */
+  .geolocation .a {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0px 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  /* */
+  
   .home .dsuite-shrink .dsuite .left  {
     width: 19%;
     }
@@ -3687,7 +4357,7 @@ padding-bottom: 70px;
   }
 
   /* 257px */
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 257px) {
     .home .dsuite-shrink .dsuite .left  {
       width: 22%;
       }

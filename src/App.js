@@ -288,6 +288,13 @@ import OmisifyPartnerRealTimeResultsDetailsByDay from "./components/Business/Ads
 import AdMenu from "./components/Business/AdsManager/AdMenu";
 import ChooseaAd from "./components/Business/AdsManager/ChooseaAd";
 
+import LogoutConfirmB from "./components/Business/Auth/LogoutConfirm";
+import LogoutB from "./components/Business/Auth/Logout";
+
+import Settings from "./components/Business/Settings/Settings";
+import SettingsInfos from "./components/Business/Settings/SettingsInfos";
+import SettingsInfosUpdate from "./components/Business/Settings/SettingsInfosUpdate";
+
 // admin - business
 // admin - business
 // admin - business
@@ -297,6 +304,61 @@ import ChooseaAd from "./components/Business/AdsManager/ChooseaAd";
 // admin - business
 // admin - business
 import AdsManagerPanel from "./components/Admin/Business/AdsManager/AdsManagerPanel";
+import Geolocation from "./components/Business/Settings/Geolocation";
+
+// alrani
+// alrani
+// alrani
+// alrani
+// alrani
+// alrani
+// alrani
+// alrani
+// alrani
+// alrani
+// alrani
+// alrani
+// alrani
+// alrani
+// alrani
+import LogoutAl from "./components/Alrani/Auth/Logout";
+
+// vixinol
+// vixinol
+// vixinol
+// vixinol
+// vixinol
+// vixinol
+// vixinol
+// vixinol
+// vixinol
+// vixinol
+// vixinol
+// vixinol
+// vixinol
+// vixinol
+import LogoutVi from "./components/0Vixinol/Auth/Logout";
+import LogoutConfirmVI from "./components/0Vixinol/Auth/LogoutConfirm";
+
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+import LogoutIn from "./components/0Inizel/Auth/Logout";
+import LogoutConfirmIN from "./components/0Inizel/Auth/LogoutConfirm";
 
 export default function App() {
   return (
@@ -801,6 +863,18 @@ export default function App() {
         <Route path="/ad-menu" element={<AdMenu />} />
         <Route path="/choose-a-ad" element={<ChooseaAd />} />
 
+        <Route path="/logout-confirmb" element={<LogoutConfirmB />} />
+        <Route path="/logoutb" element={<LogoutB />} />
+
+        <Route path="/settingsb" element={<Settings />} />
+        <Route path="/settings-infos" element={<SettingsInfos />} />
+
+        <Route
+          path="/settings-infos-update"
+          element={<SettingsInfosUpdate />}
+        />
+        <Route path="/geolocation" element={<Geolocation />} />
+
         <Route
           path="/omisify-partner-real-time-results"
           element={<OmisifyPartnerRealTimeResults />}
@@ -821,6 +895,100 @@ export default function App() {
         {/* admin - business - ads manager */}
         {/* admin - business - ads manager */}
         <Route path="/ads-manager-panel" element={<AdsManagerPanel />} />
+
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        {/* alrani */}
+        <Route path="/logout-al" element={<LogoutAl />} />
+
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        {/* vixinol */}
+        <Route path="/logout-vi" element={<LogoutVi />} />
+        <Route path="/logout-confirm-vi" element={<LogoutConfirmVI />} />
+
+        {/*  */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        <Route path="/logout-in" element={<LogoutIn />} />
+        <Route path="/logout-confirm-in" element={<LogoutConfirmIN />} />
       </Routes>
     </BrowserRouter>
   );
