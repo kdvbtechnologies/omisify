@@ -322,6 +322,41 @@ import Geolocation from "./components/Business/Settings/Geolocation";
 // alrani
 // alrani
 import LogoutAl from "./components/Alrani/Auth/Logout";
+import SignupAl from "./components/Alrani/Auth/Signup";
+import LoginAl from "./components/Alrani/Auth/Login";
+import ForgotPasswordAl from "./components/Alrani/Auth/ForgotPassword";
+import NewPasswordAl from "./components/Alrani/Auth/NewPassword";
+import NewPasswordSuccessAl from "./components/Alrani/Auth/NewPasswordSuccess";
+
+import LoginPartnerAl from "./components/Alrani/Partner/LoginPartner";
+import SignupPartnerAl from "./components/Alrani/Partner/SignupPartner";
+
+import ForgotPasswordPartnerAl from "./components/Alrani/Partner/ForgotPassword";
+import NewPasswordPartnerAl from "./components/Alrani/Partner/NewPassword";
+import NewPasswordSuccessPartnerAl from "./components/Alrani/Partner/NewPasswordSuccess";
+
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel-
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+// inizel
+import LogoutIn from "./components/0Inizel/Auth/Logout";
+import LogoutConfirmIN from "./components/0Inizel/Auth/LogoutConfirm";
+import SignupIN from "./components/0Inizel/Auth/Signup";
+
+import HomeIN from "./components/0Inizel/Home/Home";
 
 // vixinol
 // vixinol
@@ -340,25 +375,18 @@ import LogoutAl from "./components/Alrani/Auth/Logout";
 import LogoutVi from "./components/0Vixinol/Auth/Logout";
 import LogoutConfirmVI from "./components/0Vixinol/Auth/LogoutConfirm";
 
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-// inizel
-import LogoutIn from "./components/0Inizel/Auth/Logout";
-import LogoutConfirmIN from "./components/0Inizel/Auth/LogoutConfirm";
+import SignupVI from "./components/0Vixinol/Auth/Signup";
+import LoginVI from "./components/0Vixinol/Auth/Login";
+import ForgotPasswordVI from "./components/0Vixinol/Auth/ForgotPassword";
+import NewPasswordVI from "./components/0Vixinol/Auth/NewPassword";
+import NewPasswordSuccessVI from "./components/0Vixinol/Auth/NewPasswordSuccess";
+
+import SignupPartnerVI from "./components/0Vixinol/Partner/Auth/SignupPartner";
+import LoginPartnerVI from "./components/0Vixinol/Partner/Auth/LoginPartner";
+import ForgotPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/ForgotPasswordPartner";
+import NewPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/NewPassword";
+import NewPasswordSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/NewPasswordSuccess";
+import SearchResultHomeIN from "./components/0Inizel/Home/SearchResult/SearchResultHome";
 
 export default function App() {
   return (
@@ -927,6 +955,62 @@ export default function App() {
         {/* alrani */}
         {/* alrani */}
         <Route path="/logout-al" element={<LogoutAl />} />
+        <Route path="/signup-al" element={<SignupAl />} />
+        <Route path="/login-al" element={<LoginAl />} />
+        <Route path="/forgot-password-al" element={<ForgotPasswordAl />} />
+        <Route path="/new-password-al" element={<NewPasswordAl />} />
+        <Route
+          path="/new-password-success-al"
+          element={<NewPasswordSuccessAl />}
+        />
+
+        <Route path="/login-partner-al" element={<LoginPartnerAl />} />
+        <Route path="/signup-partner-al" element={<SignupPartnerAl />} />
+        <Route
+          path="/forgot-password-partner-al"
+          element={<ForgotPasswordPartnerAl />}
+        />
+        <Route
+          path="/new-password-partner-al"
+          element={<NewPasswordPartnerAl />}
+        />
+        <Route
+          path="/new-password-success-partner-al"
+          element={<NewPasswordSuccessPartnerAl />}
+        />
+
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        {/* inizel */}
+        <Route path="/logout-in" element={<LogoutIn />} />
+        <Route path="/logout-confirm-in" element={<LogoutConfirmIN />} />
+        <Route path="/signup-in" element={<SignupIN />} />
+        <Route path="/home-in" element={<HomeIN />} />
+        <Route path="/search-result-home-in" element={<SearchResultHomeIN />} />
 
         {/* vixinol */}
         {/* vixinol */}
@@ -958,37 +1042,31 @@ export default function App() {
         {/* vixinol */}
         <Route path="/logout-vi" element={<LogoutVi />} />
         <Route path="/logout-confirm-vi" element={<LogoutConfirmVI />} />
+        <Route path="/signup-vi" element={<SignupVI />} />
+        <Route path="/login-vi" element={<LoginVI />} />
+        <Route path="/forgot-password-vi" element={<ForgotPasswordVI />} />
+        <Route path="/new-password-vi" element={<NewPasswordVI />} />
+        <Route
+          path="/new-password-success-vi"
+          element={<NewPasswordSuccessVI />}
+        />
 
-        {/*  */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        {/* inizel */}
-        <Route path="/logout-in" element={<LogoutIn />} />
-        <Route path="/logout-confirm-in" element={<LogoutConfirmIN />} />
+        <Route path="/login-partner-vi" element={<LoginPartnerVI />} />
+        <Route path="/signup-partner-vi" element={<SignupPartnerVI />} />
+        <Route
+          path="/forgot-password-partner-vi"
+          element={<ForgotPasswordPartnerVI />}
+        />
+
+        <Route
+          path="/new-password-partner-vi"
+          element={<NewPasswordPartnerVI />}
+        />
+
+        <Route
+          path="/new-password-success-partner-vi"
+          element={<NewPasswordSuccessPartnerVI />}
+        />
       </Routes>
     </BrowserRouter>
   );

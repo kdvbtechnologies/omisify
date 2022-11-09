@@ -35,7 +35,7 @@ export default function NewPassword() {
         <div className="title">
           <p>Créer un nouveau mot de passe</p>
         </div>
-        <p>Entrer un nouveau mot de passe et cliquez sur créer</p>
+        <p>Entrer un nouveau mot de passe pour votre compte Omisify</p>
         <input
           type="text"
           placeholder="Nouveau mot de passe"

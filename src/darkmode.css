@@ -1361,6 +1361,7 @@ footer {
 
 
 /* omisify - copyright - footer */
+/*
 .omisify-copy {
   padding: 20px 0px;
 }
@@ -1369,7 +1370,7 @@ footer {
   padding-top: 300px;
   text-align: center;
   font-size: 14px;
-}
+}*/
 
 /*  Stats details */
 
@@ -3445,7 +3446,7 @@ padding-bottom: 70px;
 
 .stats-big-title-al {
   color: white;
-  background-color: blue;
+  background-color: #00cc00;
   padding: 10px 20px;
   font-size: 18px;
 }
@@ -3467,7 +3468,7 @@ padding-bottom: 70px;
   background-color: transparent;
   padding: 8px 24px;
   border-radius: 20px;
-  border: 1px solid blue;
+  border: 1px solid #00cc00;
   font-size: 15px;
   margin: 0px 10px;
 }
@@ -3495,7 +3496,7 @@ padding-bottom: 70px;
 .popup {
   margin: 0px 500px;
   margin-top: 150px;
-  background-color: blue;
+  background-color: #00cc00;
   color: white;
   border-radius: 5px;
   padding: 20px;
@@ -3520,7 +3521,7 @@ padding-bottom: 70px;
 
 .popup .e .no button {
   cursor: pointer;
-  color: blue;
+  color: #00cc00;
   background-color: white;
   padding: 8px 24px;
   border-radius: 5px;
@@ -3559,6 +3560,307 @@ padding-bottom: 70px;
 .back-btn-al {
   padding: 20px 10px;
   cursor: pointer;
+}
+
+/* al - Auth - Signup.js */
+/* al - Auth - Signup.js */
+/* al - Auth - Signup.js */
+/* al - Auth - Signup.js */
+/* al - Auth - Signup.js */
+/* al - Auth - Signup.js */
+
+.signup-al {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.signup-al .a {
+  padding: 20px 20px;
+  font-size: 20px;
+}
+
+.signup-al .a .navlink {
+  text-decoration: none;
+  color: #00cc00;
+}
+
+.signup-al .b {
+  margin: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+
+.signup-al .b input[type="text"] {
+ background-color: transparent;
+ border: 1px solid #ccc;
+ font-size: 16px;
+ padding: 10px;
+ margin: 10px 30px;
+}
+
+.signup-al .b .title p {
+  color: #00cc00;
+  font-size: 23px;
+  padding: 20px 0px;
+  margin-top: 30px;
+}
+
+.signup-al .b button {
+  cursor: pointer;
+  color:#00cc00;
+  background-color: transparent;
+  padding: 8px 16px;
+  margin: 20px 0px;
+  border-radius: 5px;
+  border: 1px solid #00cc00;
+  font-size: 15px;
+}
+
+.signup-al .b .c {
+  display: flex;
+}
+
+.signup-al .b .c {
+  font-size: 15px;
+  color: #444;
+  padding: 20px 0px;
+}
+
+.signup-al .b .c .navlink {
+  text-decoration: none;
+}
+
+.signup-al .b .c p {
+  padding: 0px 2px;
+}
+
+.signup-al .b .d p {
+  text-align: center;
+  padding: 20px 10px;
+  color: #6f6f6f;
+  font-size: 12px;
+  width: 200px;
+}
+
+.signup-al .b .d .navlink {
+  color: #6f6f6f;
+  padding: 0px 3px;
+}
+
+
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+/* in - auth - logout.js */
+.stats-big-title-in {
+  color: white;
+  background-color:  #00cc00;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.logout-in {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.logout-question-in p {
+  text-align: center;
+  font-size: 17px;
+}
+
+.logout-in .a button {
+  cursor: pointer;
+  color:#00cc00;
+  background-color: transparent;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #00cc00;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.logout-in .b button {
+  cursor: pointer;
+  color: #ccc;
+  background-color: #eee;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+/* ini - Back - Back.js */
+/* ini - Back - Back.js */
+/* ini - Back - Back.js */
+/* ini - Back - Back.js */
+/* ini - Back - Back.js */
+.back-btn-in {
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+/* in - auth - logout confirm.js */
+/* in - auth - logout confirm.js */
+/* in - auth - logout confirm.js */
+/* in - auth - logout confirm.js */
+/* in - auth - logout confirm.js */
+.logout-confirm-in {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.logout-question-in p {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 70px;
+  padding: 0px 20px;
+}
+
+.logout-confirm-in .a button {
+  cursor: pointer;
+  color: white;
+  background-color: #00cc00;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.logout-confirm-in .b button {
+  cursor: pointer;
+  color: #ccc;
+  background-color: #eee;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+/* in - home - home.js */
+/* in - home - home.js */
+/* in - home - home.js */
+/* in - home - home.js */
+.home-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.home-in img {
+  width: 16%;
+  height: auto;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+
+.home-in .a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-in .a .search-svg {
+  fill: #ccc;
+  width: 30px;
+}
+
+.home-in input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 100%;
+  padding-right: 100%;
+  font-size: 16px;
+}
+
+.home-in button {
+  cursor: pointer;
+  color: #444;
+  background-color: #eee;
+  padding: 8px 24px;
+  margin: 20px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+}
+
+.home-in button:hover {
+  color: #fff;
+  background-color: blue;
+}
+
+.more-language-in {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.more-language-in .navlink {
+  color: 	 #a6a6a6;
+}
+
+.more-language-in p {
+  cursor: pointer;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+
+/* in - footer - footer.js */
+/* in - footer - footer.js */
+/* in - footer - footer.js */
+.footer-in {
+  background-color: #4e4e4e;
+  margin-top: 70px;
+}
+
+.footer-in .nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.footer-in .nav .navlink {
+  text-decoration: none;
+}
+
+.footer-in .nav p {
+  color: black;
+  padding: 2px 10px;
+}
+
+/* in - home - search result home.js */
+.search-result-in {
+  
+}
+.search-result-in .background-color {
+  background-color: yellow;
+  
+}
+
+.search-result-in .background-color input[type="text"] {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* vi - auth - logout.js */
@@ -3659,108 +3961,138 @@ padding-bottom: 70px;
   margin: 0px 10px;
 }
 
-
-
-/* in - auth - logout.js */
-/* in - auth - logout.js */
-/* in - auth - logout.js */
-/* in - auth - logout.js */
-/* in - auth - logout.js */
-/* in - auth - logout.js */
-/* in - auth - logout.js */
-.stats-big-title-in {
-  color: white;
-  background-color:  #00cc00;
-  padding: 10px 20px;
-  font-size: 18px;
+/* vi - auth - signup.js */
+/* vi - auth - signup.js */
+/* vi - auth - signup.js */
+/* vi - auth - signup.js */
+/* vi - auth - signup.js */
+/* vi - auth - signup.js */
+.signup-vi-body-background-color {
+  background-color: #fd7e14;
 }
 
-.logout-in {
+.signup-vi {
   display: flex;
   justify-content: center;
-  margin: 50px 0px;
+  align-items: center;
 }
 
-.logout-question-in p {
-  text-align: center;
-  font-size: 17px;
+.signup-vi .signup-vi-border {
+ margin: auto 500px;
+ padding: 50px;
+ margin-top: 50px;
+ margin-bottom: 100px;
+ border: 1px solid white;
+ background-color: white;
+ border-radius: 5px;
 }
 
-.logout-in .a button {
+.signup-vi .signup-vi-border .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.signup-vi-border .a {
+  padding: 15px 0px;
+}
+
+.signup-vi-border .a p {
+  padding: 3px 0px;
+}
+
+.signup-vi-border button {
   cursor: pointer;
-  color:#00cc00;
+  color: white;
+  background-color:#fd7e14;
+  padding: 10px 28px;
+  width: 200px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.signup-vi-border .display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.signup-vi-border .display .navlink {
+  color: #fd7e14;
+  padding: 0px 5px;
+}
+
+.signup-vi-border .a input[type="text"] {
   background-color: transparent;
-  padding: 8px 16px;
-  border-radius: 5px;
-  border: 1px solid #00cc00;
-  font-size: 15px;
-  margin: 0px 10px;
+  border: 1px solid #444;
+  border-radius: 3px;
+  padding: 10px 24px;
 }
 
-.logout-in .b button {
-  cursor: pointer;
-  color: #ccc;
-  background-color: #eee;
-  padding: 8px 16px;
-  border-radius: 5px;
-  border: none;
-  font-size: 15px;
-  margin: 0px 10px;
-}
-
-/* ini - Back - Back.js */
-/* ini - Back - Back.js */
-/* ini - Back - Back.js */
-/* ini - Back - Back.js */
-/* ini - Back - Back.js */
-.back-btn-in {
-  padding: 20px 10px;
-  cursor: pointer;
-}
-
-/* in - auth - logout confirm.js */
-/* in - auth - logout confirm.js */
-/* in - auth - logout confirm.js */
-/* in - auth - logout confirm.js */
-/* in - auth - logout confirm.js */
-.logout-confirm-in {
-  display: flex;
-  justify-content: center;
-  margin: 50px 0px;
-}
-
-.logout-question-in p {
+.signup-vi .b {
   text-align: center;
-  font-size: 17px;
-  margin-top: 70px;
-  padding: 0px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #6f6f6f;
+  font-size: 12px;
+  width: 200px;
 }
 
-.logout-confirm-in .a button {
-  cursor: pointer;
-  color: white;
-  background-color: #00cc00;
-  padding: 8px 24px;
-  border-radius: 20px;
-  border: none;
-  font-size: 15px;
-  margin: 0px 10px;
+.signup-vi .b .navlink {
+  color: #551a8b;
+  padding: 0px 0px;
 }
 
-.logout-confirm-in .b button {
-  cursor: pointer;
-  color: #ccc;
-  background-color: #eee;
-  padding: 8px 24px;
-  border-radius: 20px;
-  border: none;
-  font-size: 15px;
-  margin: 0px 10px;
+/* auth - forgot password partner.js */
+/* auth - forgot password partner.js */
+/* auth - forgot password partner.js */
+/* auth - forgot password partner.js */
+/* auth - forgot password partner.js */
+.navlink-forgot-password-partner-vi {
+  color: #444;
 }
 
+/* 1350px */
+/* 1350px */
+/* 1350px */
+/* 1350px */
+/* 1350px */
+/* 1350px */
+/* 1350px */
+@media screen and (max-width: 1350px) {
+
+  /* inizel */
+  /* inizel */
+  /* inizel */
+  .more-language-in {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
 
 
+  /* vixinol */
+  /* vixinol */
+  /* vixinol */
+  .signup-vi .signup-vi-border {
+    margin: auto 350px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+  }
 
+  .signup-vi .signup-vi-border .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 230px;
+  }
+}
 
 /* 1250px */
 /* 1250px */
@@ -3773,8 +4105,7 @@ padding-bottom: 70px;
 /* 1250px */
 /* 1250px */
 @media screen and (max-width: 1250px) {
-  /* alrani */
-  /* alrani */
+
   /* alrani */
   /* alrani */
   /* alrani */
@@ -3783,6 +4114,24 @@ padding-bottom: 70px;
     margin-top: 150px;
   }
 
+  /* inizel */
+  /* inizel */
+  /* inizel */
+  .more-language-in {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+ /* vixinol */
+  /* vixinol */
+  /* vixinol */
+  .signup-vi .signup-vi-border .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 230px;
+  }
 
 /* jamelfase */
 /* jamelfase */
@@ -3866,12 +4215,49 @@ padding-bottom: 70px;
 /* 1060px */
 /* 1060px */
 /* 1060px */
+/* 1060px */
+/* 1060px */
+/* 1060px */
+/* 1060px */
+/* 1060px */
 @media screen and (max-width: 1060px) {
 
+  /* alrani */
+  /* alrani */
   /* alrani */
   .popup {
     margin: 0px 300px;
     margin-top: 150px;
+  }
+
+   /* inizel */
+  /* inizel */
+  /* inizel */
+  .more-language-in {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  /* vixinol */
+  /* vixinol */
+  /* vixinol */
+  .signup-vi .signup-vi-border {
+    margin: auto 200px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .signup-vi .signup-vi-border .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 230px;
   }
 
 /* jamelfase */
@@ -3946,6 +4332,35 @@ padding-bottom: 70px;
     margin-top: 150px;
   }
 
+   /* inizel */
+   .home-in {
+    margin-top: 20px;
+  }  
+
+  .more-language-in {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  
+    
+  .home-in img {
+    width: 20%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+    
+  .home-in input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 80%;
+    padding-right: 80%;
+    font-size: 16px;
+  }
+
 /* jamelfase */
   .geolocation .a {
     margin: 0px 220px;
@@ -3971,7 +4386,23 @@ padding-bottom: 70px;
 /* 760px */
 /* 760px */
 @media screen and (max-width: 760px) {
+
    /* alrani */
+   .signup-al .b .title p {
+    font-size: 20px;
+  }
+
+   .signup-al .a {
+    margin-top: 30px;
+    padding: 20px 25px;
+    font-size: 18px;
+  }
+
+   .signup-al .b {
+    margin: 20px 20px;
+    margin-bottom: 100px;
+   }
+
    .popup {
     margin: 0px 100px;
     margin-top: 150px;
@@ -3980,6 +4411,36 @@ padding-bottom: 70px;
   .popup .e {
     padding: 20px 15px;
   }
+
+  /* inizel */
+  /* inizel */
+  /* inizel */
+  .footer-in .nav {
+    padding: 10px 0px;
+  }
+
+ 
+
+
+    /* vixinol */
+    /* vixinol */
+    /* vixinol */
+    .signup-vi .signup-vi-border {
+      margin: auto 100px;
+      padding: 50px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      border: 1px solid white;
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    .signup-vi .signup-vi-border .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      width: 240px;
+    }
 
 /* jamelfase */
   .geolocation .a {
@@ -4268,12 +4729,121 @@ padding-bottom: 70px;
 
 
 
+
+/* 740px */
+@media screen and (max-width: 740px) {
+  /* inizel */
+  .home-in {
+    margin-top: 20px;
+  }  
+    
+  .home-in img {
+    width: 24%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+    
+  .home-in input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 70%;
+    padding-right: 70%;
+    font-size: 16px;
+  }
+}
+
+
 @media screen and (max-width: 700px) {
+  /* */
   .geolocation .a {
     margin: 0px 150px;
   }
+}
 
 
+/* 680px */
+@media screen and (max-width: 680px) {
+  /* inizel */
+  .home-in {
+    margin-top: 20px;
+  }  
+    
+  .home-in img {
+    width: 24%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+    
+  .home-in input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 62%;
+    padding-right: 62%;
+    font-size: 16px;
+  }
+
+  .more-language-in {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+/* 620px */
+@media screen and (max-width: 620px) {
+  /* inizel */
+  .home-in {
+    margin-top: 20px;
+  }  
+    
+  .home-in img {
+    width: 24%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+    
+  .home-in input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 54%;
+    padding-right: 54%;
+    font-size: 16px;
+  }
+}
+
+/* 560px */
+@media screen and (max-width: 560px) {
+  /* inizel */
+  .home-in {
+    margin-top: 20px;
+  }  
+    
+  .home-in img {
+    width: 24%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+    
+  .home-in input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 46%;
+    padding-right: 46%;
+    font-size: 16px;
+  }
 }
 
 /* 520px */
@@ -4287,7 +4857,7 @@ padding-bottom: 70px;
 /* 520px */
 /* 520px */
 @media screen and (max-width: 520px) {
-
+  
   /* jamelfase */
   .geolocation .a {
     margin: 0px 120px;
@@ -4315,6 +4885,31 @@ padding-bottom: 70px;
   }
 }
 
+/* 500px */
+@media screen and (max-width: 500px) {
+  /* inizel */
+  .home-in {
+    margin-top: 20px;
+  }  
+    
+  .home-in img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+    
+  .home-in input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 46%;
+    padding-right: 46%;
+    font-size: 16px;
+  }
+}
+
 /* 490px */
 /* 490px */
 /* 490px */
@@ -4324,15 +4919,36 @@ padding-bottom: 70px;
 /* 490px */
 /* 490px */
 @media screen and (max-width: 490px) {
+    /* alrani */
+    /* alrani */
+    /* alrani */
+    .popup {
+      margin: 0px 20px;
+      margin-top: 150px;
+    }
+  
+    .popup .e {
+      padding: 20px 15px;
+    }
 
-  /* alrani */
-  .popup {
-    margin: 0px 20px;
-    margin-top: 150px;
-  }
+  /* vixinol */
+  /* vixinol */
+  /* vixinol */
+  .signup-vi .signup-vi-border {
+    margin: auto 0px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 50px 15px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+   }
 
-  .popup .e {
-    padding: 20px 15px;
+   .signup-vi .signup-vi-border .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 230px;
   }
 
 /* jamelfase */
@@ -4356,14 +4972,143 @@ padding-bottom: 70px;
     }
   }
 
+  /* 440px */
+@media screen and (max-width: 440px) {
+  /* inizel */
+  .home-in {
+    margin-top: 20px;
+  }  
+    
+  .home-in img {
+    width: 34%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+    
+  .home-in input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 38%;
+    padding-right: 38%;
+    font-size: 16px;
+  }
+}
+
+
+/* 380px */
+@media screen and (max-width: 380px) {
+  /* inizel */
+  .home-in {
+    margin-top: 20px;
+  }  
+    
+  .home-in img {
+    width: 38%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+    
+  .home-in input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 16px;
+  }
+}
+
+/* 320px */
+@media screen and (max-width: 320px) {
+  /* inizel */
+  .home-in {
+    margin-top: 20px;
+  }  
+    
+  .home-in img {
+    width: 42%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+    
+  .home-in input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16%;
+    padding-right: 16%;
+    font-size: 16px;
+  }
+}
+
+
+/* 260px */
+@media screen and (max-width: 260px) {
+  /* inizel */
+  .home-in {
+    margin-top: 20px;
+  }  
+    
+  .home-in img {
+    width: 46%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+    
+  .home-in input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14%;
+    padding-right: 14%;
+    font-size: 16px;
+  }
+}
+
+
   /* 257px */
   @media screen and (max-width: 257px) {
+  
     .home .dsuite-shrink .dsuite .left  {
-      width: 22%;
-      }
+    width: 22%;
+  }
     
-    .home .dsuite-shrink .dsuite .right {
-      width: 55%;
-      font-size: 16px;
-      }
-    }
+  .home .dsuite-shrink .dsuite .right {
+    width: 55%;
+    font-size: 16px;
+  }
+}
+
+ /* 257px */
+ @media screen and (max-width: 245px) {
+  /* inizel */
+  .home-in {
+    margin-top: 20px;
+  }  
+    
+  .home-in img {
+    width: 46%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+    
+  .home-in input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 16px;
+  }
+}
