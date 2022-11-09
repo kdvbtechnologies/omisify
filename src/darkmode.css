@@ -3846,21 +3846,38 @@ padding-bottom: 70px;
 }
 
 /* in - home - search result home.js */
-.search-result-in {
-  
-}
-.search-result-in .background-color {
-  background-color: yellow;
-  
-}
-
-.search-result-in .background-color input[type="text"] {
-  background-color: transparent;
-  border: 1px solid black;
-  padding: 10px;
+.search-result-in .align-input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.search-result-in .align-input .input {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: blue;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-result-in .align-input .input .icon-search {
+  width: 20px;
+  height: auto;
+  fill: white;
+  cursor: pointer;
+}
+.search-result-in .align-input .input input[type="text"] {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 150px;
+  color: black;
+}
+
+.search-result-in .align-input .input svg {
+  padding: 0px 10px;
 }
 
 /* vi - auth - logout.js */
