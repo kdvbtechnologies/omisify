@@ -3846,6 +3846,11 @@ padding-bottom: 70px;
 }
 
 /* in - home - search result home.js */
+.search-result-in .align-logo-and-search-input {
+  display: flex;
+  align-items: center;
+}
+
 .search-result-in .align-input {
   display: flex;
   justify-content: center;
@@ -3856,7 +3861,6 @@ padding-bottom: 70px;
   border: 1px solid #ccc;
   border-radius: 20px;
   background-color: blue;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3868,6 +3872,7 @@ padding-bottom: 70px;
   fill: white;
   cursor: pointer;
 }
+
 .search-result-in .align-input .input input[type="text"] {
   background-color: white;
   border: 1px solid white;
@@ -4436,7 +4441,13 @@ padding-bottom: 70px;
     padding: 10px 0px;
   }
 
- 
+  .search-result-in .align-input .input input[type="text"] {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 8px;
+    color: black;
+  }
 
 
     /* vixinol */
