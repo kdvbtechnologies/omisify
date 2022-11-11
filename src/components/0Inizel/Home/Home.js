@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import FooterIN from "../Footer/Footer";
+import { useState } from "react";
 
 export default function HomeIN() {
+  const [searchinizel, setSearchinizel] = useState("");
+  localStorage.setItem("https://inizel.com/searchinizel", searchinizel);
+
   return (
     <>
       <div className="home-in">
@@ -24,7 +28,12 @@ export default function HomeIN() {
               <path d="M50.224 13.776a12.92 12.92 0 00-9.194-3.808 12.914 12.914 0 00-9.192 3.809 1 1 0 001.414 1.414 10.93 10.93 0 017.78-3.222c2.937-.001 5.7 1.143 7.778 3.22a1 1 0 101.414-1.413z"></path>
             </g>
           </svg>
-          <input type="text" />
+          <input
+            type="text"
+            value={searchinizel}
+            onChange={(e) => setSearchinizel(e.target.value)}
+            name="searchinizel"
+          />
         </div>
 
         <NavLink to="/search-result-home-in">

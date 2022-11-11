@@ -1,8 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import Back from "../../Back/Back";
+import NameOfSearchResults from "./NameOfSearchResults";
+import NumberOfSearchResults from "./NumberOfSearchResults";
+import { useState } from "react";
 
 export default function SearchResultHomeIN() {
+  const getsearchinizel = localStorage.getItem(
+    "https://inizel.com/searchinizel"
+  );
   const navigate = useNavigate();
+  const [searchinizel, setSearchinizel] = useState(getsearchinizel);
 
   return (
     <>
@@ -29,7 +36,12 @@ export default function SearchResultHomeIN() {
 
           <div className="align-input">
             <div className="input">
-              <input type="text" />
+              <input
+                type="text"
+                value={searchinizel}
+                onChange={(e) => setSearchinizel(e.target.value)}
+                name="searchinizel"
+              />
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,6 +63,9 @@ export default function SearchResultHomeIN() {
       <div onClick={() => navigate(-1)}>
         <Back />
       </div>
+
+      <NumberOfSearchResults />
+      <NameOfSearchResults />
     </>
   );
 }

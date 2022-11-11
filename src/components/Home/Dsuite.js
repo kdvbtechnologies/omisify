@@ -31,7 +31,7 @@ export default function Dsuite() {
         }
 
         const page =
-          "Cet utilisateur a été présent sur la page Dsuite d'Omisify";
+          "Cet utilisateur a été présent sur la page d'accueil Dsuite d'Omisify";
         const countryip = localStorage.getItem("https://omisify.com/countryip");
         const cityip = localStorage.getItem("https://omisify.com/cityip");
         const userip = localStorage.getItem("https://omisify.com/userip");
