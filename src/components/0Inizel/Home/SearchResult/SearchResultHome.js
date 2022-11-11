@@ -3,6 +3,7 @@ import Back from "../../Back/Back";
 import NameOfSearchResults from "./NameOfSearchResults";
 import NumberOfSearchResults from "./NumberOfSearchResults";
 import { useState } from "react";
+import WikiDesc from "./WikiDesc";
 
 export default function SearchResultHomeIN() {
   const getsearchinizel = localStorage.getItem(
@@ -66,6 +67,7 @@ export default function SearchResultHomeIN() {
 
       <NumberOfSearchResults />
       <NameOfSearchResults />
+      <WikiDesc />
     </>
   );
 }
