@@ -1,3 +1,6 @@
+import HRinWikiDesc from "./HRinWikiDesc";
+import OthersLinksinWikiDesc from "./OthersLinksinWikiDesc";
+
 export default function WikiDesc() {
   const website = "https://cristianoronaldo.com";
 
@@ -10,6 +13,42 @@ export default function WikiDesc() {
           est un footballeur international portugais qui évolue au poste
           d'attaquant à Manchester United.
         </p>
+
+        <div className="a">
+          <p
+            style={{
+              fontWeight: "bold",
+              paddingRight: "3px",
+            }}
+          >
+            Date et lieu de naissance :
+          </p>
+          <p>5 février 1985 à Hospital Dr. Nélio Mendonça, Funchal, Portugal</p>
+        </div>
+
+        <div className="a">
+          <p
+            style={{
+              fontWeight: "bold",
+              paddingRight: "3px",
+            }}
+          >
+            Équipe actuelle :
+          </p>{" "}
+          <p>Manchester United</p>
+        </div>
+
+        <div className="a">
+          <p
+            style={{
+              fontWeight: "bold",
+              paddingRight: "3px",
+            }}
+          >
+            Partenaire :
+          </p>
+          <p>Georgina Rodriguez (2016 – jusqu'à présent)</p>
+        </div>
 
         <div className="plain-button">
           <svg
@@ -25,6 +64,10 @@ export default function WikiDesc() {
             <button>Site officiel</button>
           </a>
         </div>
+
+        <HRinWikiDesc />
+        <OthersLinksinWikiDesc />
+        <HRinWikiDesc />
       </div>
     </>
   );

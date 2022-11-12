@@ -4,6 +4,7 @@ import NameOfSearchResults from "./NameOfSearchResults";
 import NumberOfSearchResults from "./NumberOfSearchResults";
 import { useState } from "react";
 import WikiDesc from "./WikiDesc";
+import LinksOfWebsite from "./LinksOf Website";
 
 export default function SearchResultHomeIN() {
   const getsearchinizel = localStorage.getItem(
@@ -61,18 +62,32 @@ export default function SearchResultHomeIN() {
         </div>
       </div>
 
-      <div onClick={() => navigate(-1)}>
-        <Back />
+      <div className="align-backbutton-and-filterbutton">
+        <div className="backbutton" onClick={() => navigate(-1)}>
+          <Back />
+        </div>
+
+        <div className="filterbutton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0"
+            y="0"
+            width="20px"
+            height="auto"
+            enableBackground="new 0 0 480.3 480.3"
+            version="1.1"
+            viewBox="0 0 480.3 480.3"
+            xmlSpace="preserve"
+          >
+            <path d="M254.15 234.1V13.5c0-7.5-6-13.5-13.5-13.5s-13.5 6-13.5 13.5v220.6c-31.3 6.3-55 34-55 67.2s23.7 60.9 55 67.2v98.2c0 7.5 6 13.5 13.5 13.5s13.5-6 13.5-13.5v-98.2c31.3-6.3 55-34 55-67.2 0-33.1-23.6-60.9-55-67.2zm-13.5 108.7c-22.9 0-41.5-18.6-41.5-41.5s18.6-41.5 41.5-41.5 41.5 18.6 41.5 41.5-18.6 41.5-41.5 41.5zM88.85 120.9V13.5c0-7.5-6-13.5-13.5-13.5s-13.5 6-13.5 13.5v107.4c-31.3 6.3-55 34-55 67.2s23.7 60.9 55 67.2v211.4c0 7.5 6 13.5 13.5 13.5s13.5-6 13.5-13.5V255.2c31.3-6.3 55-34 55-67.2s-23.7-60.8-55-67.1zm-13.5 108.7c-22.9 0-41.5-18.6-41.5-41.5s18.6-41.5 41.5-41.5 41.5 18.6 41.5 41.5-18.7 41.5-41.5 41.5zM418.45 120.9V13.5c0-7.5-6-13.5-13.5-13.5s-13.5 6-13.5 13.5v107.4c-31.3 6.3-55 34-55 67.2s23.7 60.9 55 67.2v211.5c0 7.5 6 13.5 13.5 13.5s13.5-6 13.5-13.5V255.2c31.3-6.3 55-34 55-67.2s-23.6-60.8-55-67.1zm-13.5 108.7c-22.9 0-41.5-18.6-41.5-41.5s18.6-41.5 41.5-41.5 41.5 18.6 41.5 41.5-18.6 41.5-41.5 41.5z"></path>
+          </svg>
+        </div>
       </div>
 
       <NumberOfSearchResults />
       <NameOfSearchResults />
       <WikiDesc />
+      <LinksOfWebsite />
     </>
   );
 }
-
-/*
-
-
-*/
