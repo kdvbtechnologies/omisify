@@ -24,7 +24,9 @@ export default function LoginPartnerVI() {
             <input type="text" placeholder="Mot de passe" />
           </div>
 
-          <button>Se connecter</button>
+          <NavLink to="/login-success-partner-vi">
+            <button>Se connecter</button>
+          </NavLink>
 
           <div className="display">
             <p>Je n'ai pas de compte.</p>

@@ -146,18 +146,37 @@ export default function Dsuite() {
           </div>
           <div className="right">
             <p>
+              Plutot que de perdre votre temps à publier des commentaires et
+              liker des publications sur les réseaux sociaux, inverser les
+              choses, désormais travaillez avec Omisify et gagnez de l'argent
+              avec vos réseaux sociaux
+              {/*  
               {t(
                 "-Even if you are not an influencer, Omisify gives you the opportunity to earn money when your friend likes your photo"
               )}
+              */}
             </p>
+
+            <p>Aucun diplome n'est nécessaire pour travailler avec Omisify</p>
+            <p>
+              Aucune expérience profesionnelle n'est nécessaire pour travailler
+              avec Omisify
+            </p>
+            <p>
+              Juste votre forfait internet et vous êtes prêt à débuter le
+              travail
+            </p>
+            <p>Lancez-vous maintenant</p>
+            <button>Travailler avec Omisify</button>
           </div>
         </div>
 
         <div className="align-button-dsuite-shrink">
           {userId && shortname && partnername && name ? (
             <>
+              <p>Lancez-vous maintenant</p>
               <NavLink to="/partner">
-                <button>{t("--join")}</button>
+                <button>Travailler avec Omisify</button>
               </NavLink>
             </>
           ) : (

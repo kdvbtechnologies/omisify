@@ -29,7 +29,9 @@ export default function SignupVI() {
             <input type="text" placeholder="Mot de passe" />
           </div>
 
-          <button>S'inscrire gratuitement</button>
+          <NavLink to="/signup-success-vi">
+            <button>S'inscrire gratuitement</button>
+          </NavLink>
 
           <div className="display">
             <p>J'ai déjà un compte.</p>

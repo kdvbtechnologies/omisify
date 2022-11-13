@@ -1,13 +1,15 @@
 import { useNavigate } from "react-router-dom";
+import Back from "./Back/Back";
 
 export default function PolitiqueAction() {
   const navigate = useNavigate();
 
   return (
     <>
-      <div className="back-btn">
-        <button onClick={() => navigate(-1)}>Retour</button>
+      <div onClick={() => navigate(-1)}>
+        <Back />
       </div>
+
       <div className="main-politique">
         <div className="politique">
           <h1>Politique de confidentialité</h1>

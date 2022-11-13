@@ -1,8 +1,10 @@
 import { useState } from "react";
-import LoginNav from "../Auth/LoginNav";
+import { useNavigate } from "react-router-dom";
+import Back from "../Back/Back";
 import Loader from "../Partenaire Omisify/Loader";
 
 export default function ResetPassword() {
+  const navigate = useNavigate();
   const [userId, setUserId] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -15,11 +17,15 @@ export default function ResetPassword() {
 
   return (
     <>
-      <LoginNav />
+      <div onClick={() => navigate(-1)}>
+        <Back />
+      </div>
+
       <div className="reset-password">
         <div className="title">
           <p>Réinitialiser votre mot de passe</p>
         </div>
+
         <p>Entrer votre adresse e-mail ou votre id</p>
         <input
           type="email"

@@ -44,7 +44,15 @@ export default function Login() {
           <div>
             <p>Portail des Partenaires Omisify</p>
             <div className="input">
-              <h1>Connexion</h1>
+              <p
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "30px",
+                  marginBottom: "-20px",
+                }}
+              >
+                Connexion
+              </p>
               <input
                 type="text"
                 placeholder="E-mail"
@@ -69,9 +77,18 @@ export default function Login() {
                 </>
               )}
             </div>
+
             <NavLink className="navlink" to="/reset-password">
               <div className="forgot-password">
-                <p>Mot de passe oublié</p>
+                <p
+                  style={{
+                    textDecoration: "underline",
+                    fontSize: "15px",
+                    color: "#444",
+                  }}
+                >
+                  Mot de passe oublié
+                </p>
               </div>
             </NavLink>
           </div>

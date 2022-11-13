@@ -74,7 +74,10 @@ export default function A() {
 
   return (
     <div className="a">
-      <p>{t("--a-intro")}</p>
+      {/* <p>{t("--a-intro")}</p> */}
+      <p>Omisify est une plateforme qui proprose des</p>{" "}
+      <p style={{ color: "red" }}>programmes publicitaires.</p>{" "}
+      <p>Augmentez vos revenus en devenant Partenaire Omisify</p>
       {userId && shortname && partnername && name ? (
         <>
           <NavLink to="/partner">

@@ -259,23 +259,26 @@ import NavMenuPanel from "./components/Admin/Navigation/NavMenuPanel";
 // others in panel
 import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
-// Omisify Business
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+// Jamelfase
+import ProfilJA from "./components/Business/Profil/Profil";
+import SignupSuccessJA from "./components/Business/Auth/SignupSuccess";
+
 import HomeB from "./components/Business/Home/HomeB";
 import AdsHomeB from "./components/Business/Home/AdsHome/AdsHomeB";
 import MenuB from "./components/Business/Home/Navigation/MenuB";
@@ -287,6 +290,13 @@ import OmisifyPartnerRealTimeResults from "./components/Business/AdsManager/Omis
 import OmisifyPartnerRealTimeResultsDetailsByDay from "./components/Business/AdsManager/OmisifyPartner/OmisifyPartnerRealTimeResultsDetailsByDay";
 import AdMenu from "./components/Business/AdsManager/AdMenu";
 import ChooseaAd from "./components/Business/AdsManager/ChooseaAd";
+
+import SignupJA from "./components/Business/Auth/Signup";
+import LoginJA from "./components/Business/Auth/Login";
+import ForgotPasswordJA from "./components/Business/Auth/ForgotPassword";
+import NewPasswordJA from "./components/Business/Auth/NewPassword";
+import NewPasswordSuccessJA from "./components/Business/Auth/NewPasswordSuccess";
+import LoginSuccessJA from "./components/Business/Auth/LoginSuccess";
 
 import LogoutConfirmB from "./components/Business/Auth/LogoutConfirm";
 import LogoutB from "./components/Business/Auth/Logout";
@@ -321,6 +331,13 @@ import Geolocation from "./components/Business/Settings/Geolocation";
 // alrani
 // alrani
 // alrani
+import NavbarAl from "./components/Alrani/Navigation/Navbar";
+import HomeAl from "./components/Alrani/Home/Home";
+
+import ProfilAl from "./components/Alrani/Profil/Profil";
+import LoginSuccessAl from "./components/Alrani/Auth/LoginSuccess";
+import SignupSuccessAl from "./components/Alrani/Auth/SignupSuccess";
+
 import LogoutAl from "./components/Alrani/Auth/Logout";
 import SignupAl from "./components/Alrani/Auth/Signup";
 import LoginAl from "./components/Alrani/Auth/Login";
@@ -328,8 +345,12 @@ import ForgotPasswordAl from "./components/Alrani/Auth/ForgotPassword";
 import NewPasswordAl from "./components/Alrani/Auth/NewPassword";
 import NewPasswordSuccessAl from "./components/Alrani/Auth/NewPasswordSuccess";
 
+import ProfilPartnerAl from "./components/Alrani/Partner/Profil/Profil";
+
 import LoginPartnerAl from "./components/Alrani/Partner/LoginPartner";
+import LoginSuccessPartnerAl from "./components/Alrani/Partner/LoginSuccessPartner";
 import SignupPartnerAl from "./components/Alrani/Partner/SignupPartner";
+import SignupSuccessPartnerAl from "./components/Alrani/Partner/SignupSuccessPartner";
 
 import ForgotPasswordPartnerAl from "./components/Alrani/Partner/ForgotPassword";
 import NewPasswordPartnerAl from "./components/Alrani/Partner/NewPassword";
@@ -352,11 +373,14 @@ import NewPasswordSuccessPartnerAl from "./components/Alrani/Partner/NewPassword
 // inizel
 // inizel
 // inizel
+import ProfilIN from "./components/0Inizel/Profil/Profil";
+
 import LogoutIn from "./components/0Inizel/Auth/Logout";
 import LogoutConfirmIN from "./components/0Inizel/Auth/LogoutConfirm";
 import SignupIN from "./components/0Inizel/Auth/Signup";
 
 import HomeIN from "./components/0Inizel/Home/Home";
+import SearchResultHomeIN from "./components/0Inizel/Home/SearchResult/SearchResultHome";
 
 // vixinol
 // vixinol
@@ -372,21 +396,27 @@ import HomeIN from "./components/0Inizel/Home/Home";
 // vixinol
 // vixinol
 // vixinol
+import ProfilVI from "./components/0Vixinol/Profil/Profil";
+
 import LogoutVi from "./components/0Vixinol/Auth/Logout";
 import LogoutConfirmVI from "./components/0Vixinol/Auth/LogoutConfirm";
 
 import SignupVI from "./components/0Vixinol/Auth/Signup";
+import SignupSuccessVI from "./components/0Vixinol/Auth/SignupSuccess";
 import LoginVI from "./components/0Vixinol/Auth/Login";
+import LoginSuccessVI from "./components/0Vixinol/Auth/LoginSuccess";
 import ForgotPasswordVI from "./components/0Vixinol/Auth/ForgotPassword";
 import NewPasswordVI from "./components/0Vixinol/Auth/NewPassword";
 import NewPasswordSuccessVI from "./components/0Vixinol/Auth/NewPasswordSuccess";
 
 import SignupPartnerVI from "./components/0Vixinol/Partner/Auth/SignupPartner";
+import SignupSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/SignupSuccess";
 import LoginPartnerVI from "./components/0Vixinol/Partner/Auth/LoginPartner";
+import LoginSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/LoginSuccess";
 import ForgotPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/ForgotPasswordPartner";
 import NewPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/NewPassword";
 import NewPasswordSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/NewPasswordSuccess";
-import SearchResultHomeIN from "./components/0Inizel/Home/SearchResult/SearchResultHome";
+import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
 
 export default function App() {
   return (
@@ -845,44 +875,58 @@ export default function App() {
         <Route path="/update-point-panel" element={<UpdatePointPanel />} />
         <Route path="/nav-menu-panel" element={<NavMenuPanel />} />
 
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
-        {/* Omisify Business */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        {/* Jamelfase */}
+        <Route path="/signup-ja" element={<SignupJA />} />
+        <Route path="/signup-success-ja" element={<SignupSuccessJA />} />
+        <Route path="/login-ja" element={<LoginJA />} />
+        <Route path="/login-success-ja" element={<LoginSuccessJA />} />
+        <Route path="/new-password-ja" element={<NewPasswordJA />} />
+        <Route
+          path="/new-password-success-ja"
+          element={<NewPasswordSuccessJA />}
+        />
+        <Route path="/forgot-password-ja" element={<ForgotPasswordJA />} />
+        <Route path="/logout-confirmb" element={<LogoutConfirmB />} />
+        <Route path="/logoutb" element={<LogoutB />} />
+
+        <Route path="/profil-ja" element={<ProfilJA />} />
         <Route path="/business" element={<HomeB />} />
         <Route path="/ads-home" element={<AdsHomeB />} />
         <Route path="/omisify-b-menu" element={<MenuB />} />
@@ -890,9 +934,6 @@ export default function App() {
         <Route path="/real-time-results" element={<RealTimeResults />} />
         <Route path="/ad-menu" element={<AdMenu />} />
         <Route path="/choose-a-ad" element={<ChooseaAd />} />
-
-        <Route path="/logout-confirmb" element={<LogoutConfirmB />} />
-        <Route path="/logoutb" element={<LogoutB />} />
 
         <Route path="/settingsb" element={<Settings />} />
         <Route path="/settings-infos" element={<SettingsInfos />} />
@@ -954,6 +995,13 @@ export default function App() {
         {/* alrani */}
         {/* alrani */}
         {/* alrani */}
+        <Route path="/navbar-al" element={<NavbarAl />} />
+
+        <Route path="/home-al" element={<HomeAl />} />
+        <Route path="/profil-al" element={<ProfilAl />} />
+        <Route path="/login-success-al" element={<LoginSuccessAl />} />
+        <Route path="/signup-success-al" element={<SignupSuccessAl />} />
+
         <Route path="/logout-al" element={<LogoutAl />} />
         <Route path="/signup-al" element={<SignupAl />} />
         <Route path="/login-al" element={<LoginAl />} />
@@ -966,6 +1014,16 @@ export default function App() {
 
         <Route path="/login-partner-al" element={<LoginPartnerAl />} />
         <Route path="/signup-partner-al" element={<SignupPartnerAl />} />
+        <Route path="/profil-partner-al" element={<ProfilPartnerAl />} />
+        <Route
+          path="/signup-success-partner-al"
+          element={<SignupSuccessPartnerAl />}
+        />
+        <Route
+          path="/login-success-partner-al"
+          element={<LoginSuccessPartnerAl />}
+        />
+
         <Route
           path="/forgot-password-partner-al"
           element={<ForgotPasswordPartnerAl />}
@@ -1006,6 +1064,7 @@ export default function App() {
         {/* inizel */}
         {/* inizel */}
         {/* inizel */}
+        <Route path="/profil-in" element={<ProfilIN />} />
         <Route path="/logout-in" element={<LogoutIn />} />
         <Route path="/logout-confirm-in" element={<LogoutConfirmIN />} />
         <Route path="/signup-in" element={<SignupIN />} />
@@ -1040,10 +1099,14 @@ export default function App() {
         {/* vixinol */}
         {/* vixinol */}
         {/* vixinol */}
+        <Route path="/profil-vi" element={<ProfilVI />} />
+        <Route path="/profil-partner-vs" element={<ProfilPartnerVS />} />
         <Route path="/logout-vi" element={<LogoutVi />} />
         <Route path="/logout-confirm-vi" element={<LogoutConfirmVI />} />
         <Route path="/signup-vi" element={<SignupVI />} />
+        <Route path="/signup-success-vi" element={<SignupSuccessVI />} />
         <Route path="/login-vi" element={<LoginVI />} />
+        <Route path="/login-success-vi" element={<LoginSuccessVI />} />
         <Route path="/forgot-password-vi" element={<ForgotPasswordVI />} />
         <Route path="/new-password-vi" element={<NewPasswordVI />} />
         <Route
@@ -1052,7 +1115,16 @@ export default function App() {
         />
 
         <Route path="/login-partner-vi" element={<LoginPartnerVI />} />
+        <Route
+          path="/login-success-partner-vi"
+          element={<LoginSuccessPartnerVI />}
+        />
         <Route path="/signup-partner-vi" element={<SignupPartnerVI />} />
+        <Route
+          path="/signup-success-partner-vi"
+          element={<SignupSuccessPartnerVI />}
+        />
+
         <Route
           path="/forgot-password-partner-vi"
           element={<ForgotPasswordPartnerVI />}

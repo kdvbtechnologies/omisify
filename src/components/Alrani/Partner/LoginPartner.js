@@ -21,7 +21,10 @@ export default function LoginPartnerAl() {
 
           <input type="text" placeholder="E-mail de l'Auteur" />
           <input type="text" placeholder="Mot de passe" />
-          <button>Se connecter</button>
+
+          <NavLink to="/login-success-partner-al">
+            <button>Se connecter</button>
+          </NavLink>
 
           <div className="c">
             <p>Je n'ai pas de compte.</p>

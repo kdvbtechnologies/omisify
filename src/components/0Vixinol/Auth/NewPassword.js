@@ -21,7 +21,7 @@ export default function NewPasswordVI() {
             <p>Créer un nouveau mot de passe</p>
           </div>
 
-          <p>Entrer un nouveau mot de passe pour votre compte Vixinol Store</p>
+          <p>Créer un nouveau mot de passe pour votre compte Vixinol Store</p>
 
           <div className="a">
             <p>Entrer un nouveau mot de passe</p>

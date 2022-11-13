@@ -22,7 +22,9 @@ export default function SignupAl() {
           <input type="text" placeholder="Nom d'utilisateur" />
           <input type="text" placeholder="E-mail" />
           <input type="text" placeholder="Mot de passe" />
-          <button>S'inscrire gratuitement</button>
+          <NavLink to="/signup-success-al">
+            <button>S'inscrire gratuitement</button>
+          </NavLink>
 
           <div className="c">
             <p>J'ai déjà un compte.</p>

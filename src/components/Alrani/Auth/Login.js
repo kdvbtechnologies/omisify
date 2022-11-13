@@ -21,7 +21,10 @@ export default function LoginAl() {
 
           <input type="text" placeholder="E-mail" />
           <input type="text" placeholder="Mot de passe" />
-          <button>Se connecter</button>
+
+          <NavLink to="/login-success-al">
+            <button>Se connecter</button>
+          </NavLink>
 
           <div className="c">
             <p>Je n'ai pas de compte.</p>

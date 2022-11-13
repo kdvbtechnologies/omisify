@@ -363,7 +363,9 @@ export default function LoginSuccess() {
   return (
     <>
       <div className="login-success">
-        <h1>Connexion réussie !</h1>
+        <p style={{ fontSize: "20px", fontWeight: "bold" }}>
+          Connexion réussie !
+        </p>
         {isLoading ? (
           <Loader />
         ) : (

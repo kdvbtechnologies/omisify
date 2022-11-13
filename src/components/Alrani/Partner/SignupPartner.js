@@ -22,7 +22,10 @@ export default function SignupPartnerAl() {
           <input type="text" placeholder="Nom de l'Auteur" />
           <input type="text" placeholder="E-mail de l'Auteur" />
           <input type="text" placeholder="Mot de passe" />
-          <button>S'inscrire gratuitement</button>
+
+          <NavLink to="/signup-success-partner-al">
+            <button>S'inscrire gratuitement</button>
+          </NavLink>
 
           <div className="c">
             <p>J'ai déjà un compte.</p>

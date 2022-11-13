@@ -1,7 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import Back from "../../Back/Back";
 
-export default function LogoutB() {
+export default function LogoutJA() {
   const navigate = useNavigate();
 
   return (

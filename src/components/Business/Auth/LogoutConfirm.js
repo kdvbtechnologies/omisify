@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function LogoutConfirmB() {
+export default function LogoutConfirmJA() {
   function nowLogout() {
     localStorage.removeItem("https://jamelfase.com/userId");
     localStorage.removeItem("https://jamelfase.com/shortname");

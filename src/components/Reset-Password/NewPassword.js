@@ -1,9 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
-import LoginNav from "../Auth/LoginNav";
 import Loader from "../Partenaire Omisify/Loader";
+import { useNavigate } from "react-router-dom";
+import Back from "../Back/Back";
 
 export default function NewPassword() {
+  const navigate = useNavigate();
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -30,12 +32,15 @@ export default function NewPassword() {
 
   return (
     <>
-      <LoginNav />
+      <div onClick={() => navigate(-1)}>
+        <Back />
+      </div>
+
       <div className="reset-password">
         <div className="title">
           <p>Créer un nouveau mot de passe</p>
         </div>
-        <p>Entrer un nouveau mot de passe pour votre compte Omisify</p>
+        <p>Créer un nouveau mot de passe pour votre compte Omisify</p>
         <input
           type="text"
           placeholder="Nouveau mot de passe"
