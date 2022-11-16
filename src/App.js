@@ -417,6 +417,7 @@ import ForgotPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/ForgotPa
 import NewPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/NewPassword";
 import NewPasswordSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/NewPasswordSuccess";
 import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
+import HomeUserVI from "./components/0Vixinol/HomeUser/Home";
 
 export default function App() {
   return (
@@ -1113,6 +1114,7 @@ export default function App() {
           path="/new-password-success-vi"
           element={<NewPasswordSuccessVI />}
         />
+        <Route path="/home-user-vi" element={<HomeUserVI />} />
 
         <Route path="/login-partner-vi" element={<LoginPartnerVI />} />
         <Route

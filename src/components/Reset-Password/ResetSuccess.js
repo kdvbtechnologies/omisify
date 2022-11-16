@@ -14,11 +14,11 @@ export default function ResetSuccess() {
         </div>
 
         <p>
-          Continuez sur la page de connexion pour vous connecter avec votre
+          Continuer sur la page de connexion pour vous connecter avec votre
           nouveau mot de passe
         </p>
         <div className="button">
-          <button onClick={Next}>Continuez</button>
+          <button onClick={Next}>Continuer</button>
         </div>
       </div>
     </>

@@ -4,7 +4,7 @@ export default function HomeAl() {
   return (
     <>
       <NavbarAl />
-      <p>Home Page here</p>
+      <p>page d'accueil</p>
     </>
   );
 }

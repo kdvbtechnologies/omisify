@@ -16,12 +16,12 @@ export default function NewPasswordSuccessJA() {
               marginTop: "10px",
             }}
           >
-            Continuez sur la page de connexion pour vous connecter avec votre
+            Continuer sur la page de connexion pour vous connecter avec votre
             nouveau mot de passe
           </p>
 
           <NavLink to="/login-ja">
-            <button>Continuez</button>
+            <button>Continuer</button>
           </NavLink>
         </div>
       </div>

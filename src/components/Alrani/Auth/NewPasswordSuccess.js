@@ -10,12 +10,12 @@ export default function NewPasswordSuccessAl() {
           </div>
 
           <p style={{ margin: "0px 20px" }}>
-            Continuez sur la page de connexion pour vous connecter avec votre
+            Continuer sur la page de connexion pour vous connecter avec votre
             nouveau mot de passe
           </p>
 
           <NavLink to="/login-al">
-            <button>Continuez</button>
+            <button>Continuer</button>
           </NavLink>
         </div>
       </div>

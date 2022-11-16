@@ -110,35 +110,3 @@ export default function PartnerNavigation() {
     </>
   );
 }
-
-/*
-
-{userId && shortname && partnername && name ? (
-            <>
-              <NavLink className="navlink" to="/partner">
-                <li>{shortname}</li>
-              </NavLink>
-            </>
-          ) : (
-            <>
-              <NavLink className="navlink" to="/partner">
-                <li>Con</li>
-              </NavLink>
-            </>
-          )}
-
-          {userId && shortname && partnername && name ? (
-            <>
-              <NavLink className="navlink" to="/secure-menu">
-                <li>Menu</li>
-              </NavLink>
-            </>
-          ) : (
-            <>
-              <NavLink className="navlink" to="/menu">
-                <li>Menu</li>
-              </NavLink>
-            </>
-          )}
-
-*/
