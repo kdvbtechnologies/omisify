@@ -3000,6 +3000,8 @@ padding-bottom: 70px;
   background-color: #fcff07;
   padding: 10px 20px;
   font-size: 18px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .real-time-results {
@@ -3130,11 +3132,17 @@ padding-bottom: 70px;
 /* business - admenu.js */
 /* business - admenu.js */
 .ad-menu .title {
-  color: #fcff07;
-  text-align: center;
+  color: black;
   font-size: 18px;
-  background-color: black;
-  padding: 10px;
+  background-color: #fcff07;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ad-menu .title svg:hover {
+  fill: #00cc00
 }
 
 .ad-menu .a {
@@ -4324,6 +4332,9 @@ padding-bottom: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
 }
 
 .navbar-menu-ja .logo {
@@ -4334,6 +4345,48 @@ padding-bottom: 70px;
 .navbar-menu-ja .menu {
   padding-top: 0px;
   padding-right: 30px;
+}
+
+.navbar-menu-ja .menu svg:hover {
+  fill: #fcff07;
+}
+
+/* ja - profil image.js */
+/* ja - profil image.js */
+/* ja - profil image.js */
+/* ja - profil image.js */
+.profil-image-ja img {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 50px 10px;
+  margin-left: 30px;
+  margin-top: 100px;
+}
+
+/* ja - company infos.js */
+/* ja - company infos.js */
+/* ja - company infos.js */
+/* ja - company infos.js */
+.company-infos {
+  padding-bottom: 150px;
+}
+
+.company-infos .icon {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.company-infos .icon svg {
+  padding-left: 30px;
+  padding-right: 5px;
+}
+
+.company-infos .icon p {
+  padding-left: 10px;
+  padding-right: 5px;
 }
 
 /* vi - auth - logout.js */
@@ -5330,6 +5383,23 @@ padding-bottom: 70px;
     }
 
 /* jamelfase */
+.company-infos {
+  padding-bottom: 130px;
+}
+
+.company-infos .icon svg {
+  padding-left: 20px;
+}
+
+.company-infos .icon p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.profil-image-ja img {
+  margin-left: 20px;
+}
+
 .navbar-menu-ja .logo {
   padding-top: 0px;
   padding-left: 20px;
@@ -6453,7 +6523,7 @@ padding-bottom: 70px;
 
   /* 257px */
   @media screen and (max-width: 257px) {
-  
+    /* */
     .home .dsuite-shrink .dsuite .left  {
     width: 22%;
   }
@@ -6527,6 +6597,14 @@ padding-bottom: 70px;
     padding-right: 3%;
     font-size: 16px;
   }
+
+  /* jamelfase */
+  /* jamelfase */
+  /* jamelfase */
+  .navbar-bottom-ja .icon {
+      padding-left: 39px;
+      padding-right: 39px;
+    } 
 }
 
 @media screen and (max-width: 235px) {

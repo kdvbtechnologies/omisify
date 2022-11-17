@@ -278,6 +278,7 @@ import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 // Jamelfase
 import ProfilJA from "./components/Business/Profil/Profil";
 import SignupSuccessJA from "./components/Business/Auth/SignupSuccess";
+import StatsJA from "./components/Business/Stats/Stats";
 
 import HomeB from "./components/Business/Home/HomeB";
 import AdsHomeB from "./components/Business/Home/AdsHome/AdsHomeB";
@@ -928,6 +929,7 @@ export default function App() {
         <Route path="/logoutb" element={<LogoutB />} />
 
         <Route path="/profil-ja" element={<ProfilJA />} />
+        <Route path="/stats-ja" element={<StatsJA />} />
         <Route path="/business" element={<HomeB />} />
         <Route path="/ads-home" element={<AdsHomeB />} />
         <Route path="/omisify-b-menu" element={<MenuB />} />
