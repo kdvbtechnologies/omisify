@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import HRinWikiDesc from "./HRinWikiDesc";
 import OthersLinksinWikiDesc from "./OthersLinksinWikiDesc";
 
@@ -7,48 +8,52 @@ export default function WikiDesc() {
   return (
     <>
       <div className="wiki-desc">
-        <p>
-          Cristiano Ronaldo dos Santos Aveiro, couramment appelé Cristiano
-          Ronaldo ou Ronaldo et surnommé CR7, né le 5 février 1985 à Funchal,
-          est un footballeur international portugais qui évolue au poste
-          d'attaquant à Manchester United.
-        </p>
-
-        <div className="a">
-          <p
-            style={{
-              fontWeight: "bold",
-              paddingRight: "3px",
-            }}
-          >
-            Date et lieu de naissance :
+        <NavLink style={{ textDecoration: "none" }} to="/result-encyclodata">
+          <p>
+            Cristiano Ronaldo dos Santos Aveiro, couramment appelé Cristiano
+            Ronaldo ou Ronaldo et surnommé CR7, né le 5 février 1985 à Funchal,
+            est un footballeur international portugais qui évolue au poste
+            d'attaquant à Manchester United.
           </p>
-          <p>5 février 1985 à Hospital Dr. Nélio Mendonça, Funchal, Portugal</p>
-        </div>
 
-        <div className="a">
-          <p
-            style={{
-              fontWeight: "bold",
-              paddingRight: "3px",
-            }}
-          >
-            Équipe actuelle :
-          </p>{" "}
-          <p>Manchester United</p>
-        </div>
+          <div className="a">
+            <p
+              style={{
+                fontWeight: "bold",
+                paddingRight: "3px",
+              }}
+            >
+              Date et lieu de naissance :
+            </p>
+            <p>
+              5 février 1985 à Hospital Dr. Nélio Mendonça, Funchal, Portugal
+            </p>
+          </div>
 
-        <div className="a">
-          <p
-            style={{
-              fontWeight: "bold",
-              paddingRight: "3px",
-            }}
-          >
-            Partenaire :
-          </p>
-          <p>Georgina Rodriguez (2016 – jusqu'à présent)</p>
-        </div>
+          <div className="a">
+            <p
+              style={{
+                fontWeight: "bold",
+                paddingRight: "3px",
+              }}
+            >
+              Équipe actuelle :
+            </p>{" "}
+            <p>Manchester United</p>
+          </div>
+
+          <div className="a">
+            <p
+              style={{
+                fontWeight: "bold",
+                paddingRight: "3px",
+              }}
+            >
+              Partenaire :
+            </p>
+            <p>Georgina Rodriguez (2016 – jusqu'à présent)</p>
+          </div>
+        </NavLink>
 
         <div className="plain-button">
           <svg

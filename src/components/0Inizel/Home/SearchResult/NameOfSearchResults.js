@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import AfterNameOfSearchResults from "./AfterNameOfSearchResults";
 import ImageTitleResults from "./ImageTitleResults";
 
@@ -7,7 +8,9 @@ export default function NameOfSearchResults() {
       <div className="name-of-search-results">
         <p>Cristiano Ronaldo</p>
         <AfterNameOfSearchResults />
-        <ImageTitleResults />
+        <NavLink to="/result-encyclodata">
+          <ImageTitleResults />
+        </NavLink>
       </div>
     </>
   );

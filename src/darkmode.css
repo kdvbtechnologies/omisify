@@ -4208,6 +4208,19 @@ padding-bottom: 70px;
   border-radius: 5px;
 }
 
+/* en - result - navbar top.js */
+/* en - result - navbar top.js */
+/* en - result - navbar top.js */
+/* en - result - navbar top.js */
+/* en - result - navbar top.js */
+.navbar-top-en {
+
+}
+
+.navbar-top-en .mobile {
+  display: none;
+}
+
 /* ja - auth - signup */
 /* ja - auth - signup */
 /* ja - auth - signup */
@@ -5317,6 +5330,40 @@ padding-bottom: 70px;
     padding: 10px 0px;
   }
 
+  /* encyclodata */
+  /* encyclodata */
+  /* encyclodata */
+  .navbar-top-en .pc {
+    display: none;
+  }
+  
+  .navbar-top-en .mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+  }  
+
+  .navbar-top-en .mobile p {
+    padding-left: 35%;
+    font-size: 17px;
+  }  
+
+  .navbar-top-en .mobile .a {
+    padding-left: 30%;
+  }  
+
+  .navbar-top-en .mobile .a svg{
+    fill: black;
+    padding-left: 20px;
+  }  
+
     /* vixinol */
     /* vixinol */
     /* vixinol */
@@ -5444,8 +5491,6 @@ padding-bottom: 70px;
   .homeb .c .display-flex-svg-and-p p {
     margin: 0px -10px
   }
-
-
 
   .homeb .c .box-shadow-c-title {
     border: 3px solid red;
@@ -5898,6 +5943,18 @@ padding-bottom: 70px;
     padding-right: 54%;
     font-size: 16px;
   }
+
+  /* encyclodata */
+  /* encyclodata */
+  /* encyclodata */
+  .navbar-top-en .mobile p {
+    padding-left: 33%;
+    font-size: 17px;
+  }
+
+  .navbar-top-en .mobile .a {
+    padding-left: 25%;
+  }  
 }
 
 /* 560px */
@@ -6294,6 +6351,18 @@ padding-bottom: 70px;
     padding: 10px 50px;
     color: black;
   }
+
+  /* encyclodata */
+  /* encyclodata */
+  /* encyclodata */
+  .navbar-top-en .mobile p {
+    padding-left: 33%;
+    font-size: 17px;
+  }  
+
+  .navbar-top-en .mobile .a {
+    padding-left: 20%;
+  }  
    
   /* vixinol */
   /* vixinol */
@@ -6359,6 +6428,18 @@ padding-bottom: 70px;
     padding-right: 38%;
     font-size: 16px;
   }
+
+   /* encyclodata */
+  /* encyclodata */
+  /* encyclodata */
+  .navbar-top-en .mobile p {
+    padding-left: 33%;
+    font-size: 17px;
+  }  
+
+  .navbar-top-en .mobile .a {
+    padding-left: 20%;
+  }  
 }
 
 
@@ -6421,14 +6502,26 @@ padding-bottom: 70px;
     padding-right: 30%;
     font-size: 16px;
   }
+
+  /* encyclodata */
+  /* encyclodata */
+  /* encyclodata */
+  .navbar-top-en .mobile p {
+    padding-left: 30%;
+    font-size: 17px;
+  }  
+
+  .navbar-top-en .mobile .a {
+    padding-left: 15%;
+  }
 }
 
 /* 320px */
 @media screen and (max-width: 320px) {
   /* inizel */
-   /* inizel */
-    /* inizel */
-    .search-result-in .align-logo-and-search-input {
+  /* inizel */
+  /* inizel */
+  .search-result-in .align-logo-and-search-input {
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -6469,6 +6562,18 @@ padding-bottom: 70px;
     padding-right: 16%;
     font-size: 16px;
   }
+
+  /* encyclodata */
+  /* encyclodata */
+  /* encyclodata */
+  .navbar-top-en .mobile p {
+    padding-left: 30%;
+    font-size: 17px;
+  }  
+
+  .navbar-top-en .mobile .a {
+    padding-left: 10%;
+  }
 }
 
 @media screen and (max-width: 300px) {
@@ -6477,16 +6582,45 @@ padding-bottom: 70px;
     padding-left: 14px;
     padding-right: 14px;
   }
+
+  /* inizel */
+
+  /* encyclodata */
+  /* encyclodata */
+  /* encyclodata */
+  .navbar-top-en .mobile p {
+    padding-left: 28%;
+    font-size: 17px;
+  }  
+
+  .navbar-top-en .mobile .a {
+    padding-left: 7%;
+  }  
 }
 
 @media screen and (max-width: 275px) {
+
+  /* inizel */
+
+  /* encyclodata */
+  /* encyclodata */
+  /* encyclodata */
+  .navbar-top-en .mobile p {
+    padding-left: 25%;
+    font-size: 17px;
+  }  
+
+  .navbar-top-en .mobile .a {
+    padding-left: 5%;
+  } 
+
+  /* vixinol */
   .sub-navbar-top-vi .icon {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 11%;
     padding-left: 11%;
   }
-
 }
 
 /* 260px */
@@ -6598,6 +6732,18 @@ padding-bottom: 70px;
     font-size: 16px;
   }
 
+  /* encyclodata */
+  /* encyclodata */
+  /* encyclodata */
+  .navbar-top-en .mobile p {
+    padding-left: 20%;
+    font-size: 17px;
+  }  
+
+  .navbar-top-en .mobile .a {
+    padding-left: 5%;
+  } 
+
   /* jamelfase */
   /* jamelfase */
   /* jamelfase */
@@ -6608,6 +6754,20 @@ padding-bottom: 70px;
 }
 
 @media screen and (max-width: 235px) {
+  /* inizel */
+
+  /* encyclodata */
+  /* encyclodata */
+  /* encyclodata */
+  .navbar-top-en .mobile p {
+    padding-left: 18%;
+    font-size: 17px;
+  }
+
+  .navbar-top-en .mobile .a {
+    padding-left: 0%;
+  } 
+
   /* vixinol */
   .navbar-bottom-vi li {
     display: none;

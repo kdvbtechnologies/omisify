@@ -375,13 +375,16 @@ import NewPasswordSuccessPartnerAl from "./components/Alrani/Partner/NewPassword
 // inizel
 // inizel
 import ProfilIN from "./components/0Inizel/Profil/Profil";
-
 import LogoutIn from "./components/0Inizel/Auth/Logout";
 import LogoutConfirmIN from "./components/0Inizel/Auth/LogoutConfirm";
 import SignupIN from "./components/0Inizel/Auth/Signup";
-
 import HomeIN from "./components/0Inizel/Home/Home";
 import SearchResultHomeIN from "./components/0Inizel/Home/SearchResult/SearchResultHome";
+
+// encyclodata
+// encyclodata
+// encyclodata
+import ResultEncyclodata from "./components/0Inizel/Home/Encyclodata/Result/ResultEncyclodata";
 
 // vixinol
 // vixinol
@@ -1073,6 +1076,13 @@ export default function App() {
         <Route path="/signup-in" element={<SignupIN />} />
         <Route path="/home-in" element={<HomeIN />} />
         <Route path="/search-result-home-in" element={<SearchResultHomeIN />} />
+
+        {/* encyclodata */}
+        {/* encyclodata */}
+        {/* encyclodata */}
+        {/* encyclodata */}
+        {/* encyclodata */}
+        <Route path="/result-encyclodata" element={<ResultEncyclodata />} />
 
         {/* vixinol */}
         {/* vixinol */}
