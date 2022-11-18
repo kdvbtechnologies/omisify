@@ -3524,6 +3524,16 @@ padding-bottom: 70px;
   overflow: auto;
 }
 
+.close-popup {
+  content: '&times;';
+  cursor: pointer;
+  padding: 3px 10px;
+  background: #eee;
+  color: #444;
+  border-radius: 50%;
+  float: right;
+}
+
 .popup .e {
   padding: 50px 15px;
 }
@@ -3561,15 +3571,7 @@ padding-bottom: 70px;
   margin: 10px 10px;
 }
 
-.close-popup {
-  content: '&times;';
-  cursor: pointer;
-  padding: 3px 10px;
-  background: #eee;
-  color: #444;
-  border-radius: 50%;
-  float: right;
-}
+
 
 /* al - Back - Back.js */
 /* al - Back - Back.js */
@@ -4213,12 +4215,63 @@ padding-bottom: 70px;
 /* en - result - navbar top.js */
 /* en - result - navbar top.js */
 /* en - result - navbar top.js */
+
+
+
 .navbar-top-en {
 
 }
 
 .navbar-top-en .mobile {
   display: none;
+}
+
+.navbar-top-en .popup-background-en-title {
+  position: fixed;
+  background-color: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navbar-top-en .popup-card {
+  margin: 0px 500px;
+  margin-top: 150px;
+  background-color: #00cc00;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  border: none;
+  overflow: auto;
+}
+
+.navbar-top-en .close-popup-card {
+  content: "&times;";
+  cursor: pointer;
+  background-color: #eee;
+  color: #444;
+  border-radius: 50%;
+  float: right;
+  padding: 3px 10px;
+}
+
+/* en - result encyclodata.js */
+/* en - result encyclodata.js */
+/* en - result encyclodata.js */
+/* en - result encyclodata.js */
+/* en - result encyclodata.js */
+.result-encyclodata .align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-encyclodata img {
+  width: 260px;
+  height: auto;
+  margin-top: 100px;
+  border-radius: 5px;
 }
 
 /* ja - auth - signup */
@@ -4803,6 +4856,12 @@ padding-bottom: 70px;
     justify-content: center;
   }
 
+  /* encyclodata */
+  .navbar-top-en .popup-card {
+    margin: 0px 400px;
+    margin-top: 150px;
+  }
+
  /* vixinol */
   /* vixinol */
   /* vixinol */
@@ -4979,6 +5038,12 @@ padding-bottom: 70px;
     margin-top: 70px;
     display: flex;
     justify-content: center;
+  }
+
+  /* encyclodata */
+  .navbar-top-en .popup-card {
+    margin: 0px 300px;
+    margin-top: 150px;
   }
 
 
@@ -5180,6 +5245,12 @@ padding-bottom: 70px;
     font-size: 16px;
   }
 
+  /* encyclodata */
+  .navbar-top-en .popup-card {
+    margin: 0px 200px;
+    margin-top: 150px;
+  }
+
   /* vixinol */
   .navbar-top-vi .pc .download {
     margin-left: 80px;
@@ -5259,7 +5330,7 @@ padding-bottom: 70px;
   .popup .e {
     padding: 20px 15px;
   }
-
+  
   /* inizel */
   /* inizel */
   /* inizel */
@@ -5352,7 +5423,13 @@ padding-bottom: 70px;
   .navbar-top-en .mobile .a svg{
     fill: black;
     padding-left: 20px;
-  }  
+  }
+
+  .navbar-top-en .popup-card {
+    margin: 0px 100px;
+    margin-top: 150px;
+    padding: 20px 15px;
+  }
 
     /* vixinol */
     /* vixinol */
@@ -6263,6 +6340,7 @@ padding-bottom: 70px;
       padding: 20px 15px;
     }
 
+    
     /* inizel */
     /* inizel */
   /* inizel */
@@ -6353,6 +6431,13 @@ padding-bottom: 70px;
   .navbar-top-en .mobile .a {
     padding-left: 20%;
   }  
+
+  .navbar-top-en .popup-card {
+    margin: 0px 15px;
+    margin-top: 150px;
+    padding: 20px 20px;
+  }
+
    
   /* vixinol */
   /* vixinol */
@@ -6609,6 +6694,11 @@ padding-bottom: 70px;
   /* encyclodata */
   /* encyclodata */
   /* encyclodata */
+  .navbar-top-en .mobile .item {
+    width: 235px;
+    margin-left: -20px;
+  }  
+  /*
   .navbar-top-en .mobile p {
     padding-left: 25%;
     font-size: 17px;
@@ -6616,7 +6706,7 @@ padding-bottom: 70px;
 
   .navbar-top-en .mobile .a {
     padding-left: 5%;
-  } 
+  } */
 
   /* vixinol */
   .sub-navbar-top-vi .icon {
@@ -6739,6 +6829,7 @@ padding-bottom: 70px;
   /* encyclodata */
   /* encyclodata */
   /* encyclodata */
+  /*
   .navbar-top-en .mobile p {
     padding-left: 20%;
     font-size: 17px;
@@ -6746,7 +6837,7 @@ padding-bottom: 70px;
 
   .navbar-top-en .mobile .a {
     padding-left: 5%;
-  } 
+  } */
 
   /* jamelfase */
   /* jamelfase */
@@ -6763,14 +6854,17 @@ padding-bottom: 70px;
   /* encyclodata */
   /* encyclodata */
   /* encyclodata */
+
+  /*
   .navbar-top-en .mobile p {
     padding-left: 18%;
     font-size: 17px;
-  }
+  }*/
 
+  /*
   .navbar-top-en .mobile .a {
     padding-left: 0%;
-  } 
+  } */
 
   /* vixinol */
   .navbar-bottom-vi li {

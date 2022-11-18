@@ -1,14 +1,50 @@
+import { useState } from "react";
+
 export default function NavbarTopEN() {
-  const itemNoVerify = "Tournée africaine de Black M en 2023";
-  const itemverify = itemNoVerify.slice(0, 17);
-  const item = itemverify;
+  const [open, setOpen] = useState(false);
+  const [openSummaryTitle, setOpenSummaryTitle] = useState(false);
+  // const itemNoVerify =
+  //   "Tournée africaine de Black M en 2023 accompagnée de Lefa, Dadju et GIMS au Palais de la Culture d'Abidjan";
+  //const itemNoVerify = "DSN";
+  // Denis Sassou Nguesso
+  // Emmanuel Macron
+  // President Français
+  //Président de la République Française
+  //const itemNoVerify = "Denis Sassou Nguesso a Abidjan";
+
+  // title
+  const title = "Denis Sassou Nguesso";
+  const titleVerify = title.slice(0, 17);
+
+  // summary title
+  const summaryTitle = "Président de la République Française";
+  const summaryTitleVerify = summaryTitle.slice(0, 36);
+
+  function Title() {
+    setOpen(!open);
+  }
+
+  function SummaryTitle() {
+    setOpenSummaryTitle(!openSummaryTitle);
+  }
 
   return (
     <>
       <div className="navbar-top-en">
         {/*<p>Tournée africaine de Black M en 2023</p>*/}
 
-        {itemNoVerify.length > 20 && (
+        {/* title superieure a 20 */}
+        {/* title superieure a 20 */}
+        {/* title superieure a 20 */}
+        {/* title superieure a 20 */}
+        {/* title superieure a 20 */}
+        {/* title superieure a 20 */}
+        {/* title superieure a 20 */}
+        {/* title superieure a 20 */}
+        {/* title superieure a 20 */}
+        {/* title superieure a 20 */}
+        {/* title superieure a 20 */}
+        {title.length > 20 && (
           <>
             <div className="mobile">
               <div className="logo">
@@ -24,7 +60,7 @@ export default function NavbarTopEN() {
                 </svg>
               </div>
               <div className="item">
-                <p>{item}...</p>
+                <p onClick={Title}>{titleVerify}...</p>
               </div>
 
               <div className="icons-right">
@@ -60,20 +96,76 @@ export default function NavbarTopEN() {
                 </svg>
               </div>
             </div>
-            ;
-            <p
-              style={{
-                paddingTop: "100px",
-                color: "blue",
-                textAlign: "center",
-              }}
-            >
-              {itemNoVerify}
-            </p>
+
+            {/* (title > 20) summarytitle = 36 - afficher le titre du sommaire */}
+            {summaryTitle.length <= 36 && (
+              <>
+                <div
+                  style={{
+                    position: "fixed",
+                    background: "white",
+                    width: "100%",
+                    marginTop: "48px",
+                    paddingTop: "10px",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  <p
+                    onClick={SummaryTitle}
+                    style={{
+                      color: "blue",
+                      textAlign: "center",
+                    }}
+                  >
+                    {summaryTitle}
+                  </p>
+                </div>
+              </>
+            )}
+
+            {/* (title > 20) summarytitle > 36 - afficher le titre du sommaire */}
+            {summaryTitle.length > 36 && (
+              <>
+                <div
+                  style={{
+                    position: "fixed",
+                    background: "white",
+                    width: "100%",
+                    marginTop: "48px",
+                    paddingTop: "10px",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  <p
+                    onClick={SummaryTitle}
+                    style={{
+                      color: "blue",
+                      textAlign: "center",
+                    }}
+                  >
+                    {summaryTitleVerify}...
+                  </p>
+                </div>
+              </>
+            )}
           </>
         )}
 
-        {itemNoVerify.length === 20 && (
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {/* title egale a 20 */}
+        {title.length === 20 && (
           <>
             <div className="mobile">
               <div className="logo">
@@ -90,7 +182,9 @@ export default function NavbarTopEN() {
               </div>
 
               <div className="item">
-                <p>{itemNoVerify}</p>
+                <p onClick={Title} style={{ textAlign: "center" }}>
+                  {title}
+                </p>
               </div>
 
               <div className="icons-right">
@@ -126,11 +220,72 @@ export default function NavbarTopEN() {
                 </svg>
               </div>
             </div>
-            ;
+
+            {/* (title = 20) summarytitle = 36 - afficher le titre du sommaire */}
+            {summaryTitle.length <= 36 && (
+              <>
+                <div
+                  style={{
+                    position: "fixed",
+                    background: "white",
+                    width: "100%",
+                    marginTop: "48px",
+                    paddingTop: "10px",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  <p
+                    onClick={SummaryTitle}
+                    style={{
+                      color: "blue",
+                      textAlign: "center",
+                    }}
+                  >
+                    {summaryTitle}
+                  </p>
+                </div>
+              </>
+            )}
+
+            {/* (title = 20) summarytitle > 36 - afficher le titre du sommaire */}
+            {summaryTitle.length > 36 && (
+              <>
+                <div
+                  style={{
+                    position: "fixed",
+                    background: "white",
+                    width: "100%",
+                    marginTop: "48px",
+                    paddingTop: "10px",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  <p
+                    onClick={SummaryTitle}
+                    style={{
+                      color: "blue",
+                      textAlign: "center",
+                    }}
+                  >
+                    {summaryTitleVerify}...
+                  </p>
+                </div>
+              </>
+            )}
           </>
         )}
 
-        {itemNoVerify.length < 20 && (
+        {/* title inferieure a 20 */}
+        {/* title inferieure a 20 */}
+        {/* title inferieure a 20 */}
+        {/* title inferieure a 20 */}
+        {/* title inferieure a 20 */}
+        {/* title inferieure a 20 */}
+        {/* title inferieure a 20 */}
+        {/* title inferieure a 20 */}
+        {/* title inferieure a 20 */}
+        {/* title inferieure a 20 */}
+        {title.length < 20 && (
           <>
             <div className="mobile">
               <div className="logo">
@@ -147,7 +302,9 @@ export default function NavbarTopEN() {
               </div>
 
               <div className="item">
-                <p>{itemNoVerify}</p>
+                <p onClick={Title} style={{ textAlign: "center" }}>
+                  {title}
+                </p>
               </div>
 
               <div className="icons-right">
@@ -183,7 +340,57 @@ export default function NavbarTopEN() {
                 </svg>
               </div>
             </div>
-            ;
+            {/* (title < 20) summarytitle = 36 - afficher le titre du sommaire */}
+            {summaryTitle.length <= 36 && (
+              <>
+                <div
+                  style={{
+                    position: "fixed",
+                    background: "white",
+                    width: "100%",
+                    marginTop: "48px",
+                    paddingTop: "10px",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  <p
+                    onClick={SummaryTitle}
+                    style={{
+                      color: "blue",
+                      textAlign: "center",
+                    }}
+                  >
+                    {summaryTitle}
+                  </p>
+                </div>
+              </>
+            )}
+
+            {/* (title < 20) summarytitle > 36 - afficher le titre du sommaire */}
+            {summaryTitle.length > 36 && (
+              <>
+                <div
+                  style={{
+                    position: "fixed",
+                    background: "white",
+                    width: "100%",
+                    marginTop: "48px",
+                    paddingTop: "10px",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  <p
+                    onClick={SummaryTitle}
+                    style={{
+                      color: "blue",
+                      textAlign: "center",
+                    }}
+                  >
+                    {summaryTitleVerify}...
+                  </p>
+                </div>
+              </>
+            )}
           </>
         )}
 
@@ -219,6 +426,32 @@ export default function NavbarTopEN() {
             <path d="M100.77 129.187a388.04 388.04 0 0129.73-1.123c28.459 0 55.799 3.033 76.984 8.54a10.02 10.02 0 002.522.324c4.444 0 8.501-2.985 9.671-7.487 1.39-5.345-1.817-10.805-7.163-12.194-22.781-5.922-51.908-9.183-82.016-9.183-10.588 0-21.109.397-31.27 1.182-5.506.425-9.626 5.233-9.201 10.74.428 5.506 5.243 9.636 10.743 9.201zM50.993 136.929c.833 0 1.679-.105 2.522-.324 4.476-1.164 9.297-2.232 14.331-3.178 5.428-1.02 9.001-6.247 7.982-11.674-1.02-5.428-6.248-9.003-11.674-7.982a236.148 236.148 0 00-15.669 3.477c-5.346 1.389-8.553 6.849-7.164 12.194 1.171 4.5 5.228 7.487 9.672 7.487zM212.516 168.969c-22.779-5.922-51.906-9.183-82.016-9.183-30.11 0-59.237 3.261-82.016 9.183-5.345 1.39-8.552 6.849-7.162 12.194 1.39 5.345 6.85 8.551 12.194 7.162 21.183-5.507 48.523-8.54 76.984-8.54s55.801 3.033 76.984 8.54c.844.219 1.69.324 2.523.324 4.444 0 8.501-2.985 9.671-7.486 1.39-5.345-1.817-10.804-7.162-12.194zM212.516 220.664c-22.779-5.922-51.906-9.183-82.016-9.183-30.11 0-59.237 3.261-82.016 9.183-5.345 1.39-8.552 6.849-7.162 12.194 1.39 5.345 6.85 8.551 12.194 7.162 21.183-5.507 48.523-8.54 76.984-8.54s55.801 3.033 76.984 8.54c.844.219 1.69.324 2.523.324 4.444 0 8.501-2.985 9.671-7.486 1.39-5.345-1.817-10.804-7.162-12.194zM53.515 291.743c21.186-5.507 48.525-8.54 76.984-8.54 28.459 0 55.799 3.033 76.984 8.54a10.02 10.02 0 002.522.324c4.444 0 8.501-2.985 9.671-7.487 1.392-5.346-1.815-10.805-7.16-12.194-22.781-5.922-51.908-9.183-82.016-9.183-30.108 0-59.235 3.261-82.016 9.183-5.345 1.389-8.552 6.849-7.163 12.194 1.389 5.345 6.85 8.553 12.194 7.163zM212.516 324.109c-22.779-5.922-51.906-9.183-82.016-9.183s-59.237 3.261-82.016 9.183c-5.345 1.39-8.552 6.849-7.162 12.194 1.39 5.345 6.85 8.552 12.194 7.162 21.183-5.507 48.523-8.54 76.984-8.54s55.801 3.033 76.984 8.54c.844.219 1.69.324 2.523.324 4.444 0 8.501-2.985 9.671-7.486 1.39-5.345-1.817-10.806-7.162-12.194zM294.516 136.604c21.186-5.507 48.525-8.54 76.984-8.54 28.459 0 55.799 3.033 76.984 8.54a10.02 10.02 0 002.522.324c4.444 0 8.501-2.985 9.671-7.487 1.39-5.345-1.817-10.805-7.163-12.194-22.781-5.922-51.908-9.183-82.016-9.183-30.108 0-59.235 3.261-82.016 9.183-5.345 1.389-8.552 6.849-7.163 12.194 1.392 5.345 6.852 8.553 12.197 7.163zM453.516 168.971c-22.779-5.922-51.906-9.183-82.016-9.183s-59.237 3.261-82.016 9.183c-5.345 1.39-8.552 6.849-7.162 12.194 1.39 5.345 6.849 8.551 12.194 7.162 21.183-5.507 48.523-8.54 76.984-8.54s55.801 3.033 76.984 8.54c.844.219 1.69.324 2.523.324 4.444 0 8.501-2.985 9.671-7.486 1.39-5.345-1.817-10.806-7.162-12.194zM453.516 220.664c-22.779-5.922-51.906-9.183-82.016-9.183s-59.237 3.261-82.016 9.183c-5.345 1.39-8.552 6.849-7.162 12.194 1.39 5.345 6.849 8.552 12.194 7.162 21.183-5.507 48.523-8.54 76.984-8.54s55.801 3.033 76.984 8.54c.844.219 1.69.324 2.523.324 4.444 0 8.501-2.985 9.671-7.486 1.39-5.345-1.817-10.804-7.162-12.194zM294.515 291.743c21.186-5.507 48.525-8.54 76.984-8.54 28.459 0 55.799 3.033 76.984 8.54a10.02 10.02 0 002.522.324c4.444 0 8.501-2.985 9.671-7.487 1.392-5.346-1.815-10.805-7.16-12.194-22.781-5.922-51.908-9.183-82.016-9.183-30.108 0-59.235 3.261-82.016 9.183-5.345 1.389-8.552 6.849-7.163 12.194 1.389 5.345 6.849 8.553 12.194 7.163zM453.516 324.109c-22.779-5.922-51.906-9.183-82.016-9.183s-59.237 3.261-82.016 9.183c-5.345 1.39-8.552 6.849-7.162 12.194 1.39 5.345 6.849 8.552 12.194 7.162 21.183-5.507 48.523-8.54 76.984-8.54s55.801 3.033 76.984 8.54c.844.219 1.69.324 2.523.324 4.444 0 8.501-2.985 9.671-7.486 1.39-5.345-1.817-10.806-7.162-12.194z"></path>
           </svg>
         </div>
+
+        {open && (
+          <>
+            <div className="popup-background-en-title">
+              <div className="popup-card">
+                <span onClick={Title} className="close-popup-card">
+                  &times;
+                </span>
+                <p>{title}</p>
+              </div>
+            </div>
+          </>
+        )}
+
+        {openSummaryTitle && (
+          <>
+            <div className="popup-background-en-title">
+              <div className="popup-card">
+                <span onClick={SummaryTitle} className="close-popup-card">
+                  &times;
+                </span>
+                <p>{summaryTitle}</p>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </>
   );

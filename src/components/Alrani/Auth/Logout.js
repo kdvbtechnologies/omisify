@@ -58,7 +58,7 @@ export default function LogoutAl() {
                   </div>
 
                   <div className="yes">
-                    <button>Oui</button>
+                    <button onClick={nowLogout}>Oui</button>
                   </div>
                 </div>
               </div>
