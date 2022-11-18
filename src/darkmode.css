@@ -5339,7 +5339,6 @@ padding-bottom: 70px;
   
   .navbar-top-en .mobile {
     display: flex;
-    justify-content: center;
     align-items: center;
     position: fixed;
     top: 0;
@@ -5348,16 +5347,7 @@ padding-bottom: 70px;
     color: black;
     padding-top: 10px; 
     padding-bottom: 10px; 
-  }  
-
-  .navbar-top-en .mobile p {
-    padding-left: 35%;
-    font-size: 17px;
-  }  
-
-  .navbar-top-en .mobile .a {
-    padding-left: 30%;
-  }  
+  }
 
   .navbar-top-en .mobile .a svg{
     fill: black;
@@ -6588,14 +6578,28 @@ padding-bottom: 70px;
   /* encyclodata */
   /* encyclodata */
   /* encyclodata */
-  .navbar-top-en .mobile p {
-    padding-left: 28%;
-    font-size: 17px;
+  .navbar-top-en .mobile .logo {
+    width: 5px;
+    margin-left: 10px;
+  }
+
+  .navbar-top-en .mobile .item {
+    width: 235px;
+    margin-left: -40px;
   }  
 
-  .navbar-top-en .mobile .a {
-    padding-left: 7%;
+  .navbar-top-en .mobile .item p {
+    font-size: 16px;
   }  
+
+  .navbar-top-en .mobile .icons-right {
+    width: 88px;
+  }  
+
+  .navbar-top-en .mobile .icons-right svg {
+    padding-left: 10px;
+    padding-right: 10px;
+  } 
 }
 
 @media screen and (max-width: 275px) {
