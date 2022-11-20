@@ -1,10 +1,12 @@
 import NavbarBottomVI from "../Navigation/NavbarBottom";
 import NavbarTopVI from "../Navigation/NavbarTop";
+import Slideshow from "./Slideshow/Slideshow";
 
 export default function HomeUserVI() {
   return (
     <>
       <NavbarTopVI />
+      <Slideshow />
       <p>
         Bonus de Bienvenue Le Bonus de Bienvenue de 100 points est attribué une
         seule fois à chaque nouveau arivant après avoir entrer le Code de
