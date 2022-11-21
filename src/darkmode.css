@@ -5030,8 +5030,9 @@ padding-bottom: 70px;
 }
 
 .slideshow .images img {
-  width: 250px;
-  height: 150px;
+  cursor: pointer;
+  width: 580px;
+  height: 350px;
   border-radius: 10px;
 }
 
@@ -5046,53 +5047,60 @@ padding-bottom: 70px;
 }
 
 .after-slideshow .image img {
-  width: 50px;
+  cursor: pointer;
+  width: 80px;
   height: 50px;
   border-radius: 5px;
 }
 
-/*
-.slider-frame {
-  overflow: hidden;
-  height: 800px;
-  width: 1200px;
-  margin-left: 360px;
-  margin-top: 20px;
+/* vi - home user - popup download btn.js */
+/* vi - home user - popup download btn.js */
+/* vi - home user - popup download btn.js */
+/* vi - home user - popup download btn.js */
+/* vi - home user - popup download btn.js */
+.popup-download-btn-background {
+  background: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@-webkit-keyframes slide_animation {
-  0% {left: 0px;}
-  10% {left: 0px;}
-  20% {left: 1200px;}
-  30% {left: 1200px;}
-  40% {left: 2400px;}
-  50% {left: 2400px;}
-  60% {left: 1200px;}
-  70% {left: 1200px;}
-  80% {left: 0px;}
-  90% {left: 0px;}
-  100% {left: 0px;}
+.popup-download-btn-background .card {
+  color: white;
+  background: #fd7e14;
+  width: auto;
+  height: auto;
+  padding: 20px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slide-images {
-  width: 3600px;
-  height: 800px;
-  margin: 0 0 0 -2400px;
-  position: relative;
-  -webkit-animation-name: slide_animation;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-play-state: running;
+.popup-download-btn-background .card .border {
+  border: 1px solid white;
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
 }
 
-.img-container {
-  width: 1200px;
-  height: 800px;
-  position: relative;
-  float: left;
+.popup-download-btn-background .card .border .a {
+  display: flex;
+  flex-wrap: nowrap;
 }
-*/
+
+.popup-download-btn-background .card .border .a p {
+  width: 200px;
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 16px;
+}
 
 /* 1350px */
 /* 1350px */
@@ -5807,6 +5815,12 @@ padding-bottom: 70px;
     /* vixinol */
     /* vixinol */
     /* vixinol */
+    .slideshow .images img {
+      width: 500px;
+      height: 300px;
+      border-radius: 10px;
+    }
+
     .navbar-top-vi .pc {
       display: none;
     }
@@ -6395,6 +6409,13 @@ padding-bottom: 70px;
   .navbar-top-en .mobile .a {
     padding-left: 25%;
   }  
+
+  /* vixinol */
+  .slideshow .images img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+  }
 }
 
 /* 560px */
@@ -6815,6 +6836,12 @@ padding-bottom: 70px;
   /* vixinol */
   /* vixinol */
   /* vixinol */
+   .slideshow .images img {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
   .signup-vi .signup-vi-border {
     margin: auto 0px;
     margin-top: 50px;
@@ -6902,6 +6929,13 @@ padding-bottom: 70px;
   width: 54px;
   height: 30px;
  }
+
+  /* vixinol */
+ .slideshow .images img {
+  width: 300px;
+  height: 180px;
+  border-radius: 10px;
+}
 }
 
 
@@ -7056,6 +7090,14 @@ padding-bottom: 70px;
   flex-direction: column;
   flex-wrap: wrap;
   }
+
+  
+   /* vixinol */
+ .slideshow .images img {
+  width: 280px;
+  height: 170px;
+  border-radius: 10px;
+}
 }
 
 /* 320px */
@@ -7121,6 +7163,7 @@ padding-bottom: 70px;
   .navbar-top-en .mobile .a {
     padding-left: 10%;
   }
+
 }
 
 @media screen and (max-width: 300px) {
@@ -7158,6 +7201,17 @@ padding-bottom: 70px;
   } 
   
   /* vixinol */
+  /* vixinol */
+ .slideshow .images img {
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+  .popup-download-btn-background .card {
+    padding: 15px 15px;
+  }
+
   .navbar-bottom-vi li {
     padding-left: 14px;
     padding-right: 14px;
@@ -7182,6 +7236,22 @@ padding-bottom: 70px;
   }  
   
   /* vixinol */
+  .slideshow .images img {
+    width: 230px;
+    height: 140px;
+    border-radius: 10px;
+  }
+
+  .after-slideshow .image img {
+    width: 75px;
+    height: 45px;
+    border-radius: 5px;
+  }
+
+  .popup-download-btn-background .card {
+    padding: 10px 10px;
+  }
+
   .sub-navbar-top-vi .icon {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -7221,6 +7291,7 @@ padding-bottom: 70px;
   }
 
   /* vixinol */
+  /* vixinol */
   .navbar-bottom-vi li {
     padding-left: 10px;
     padding-right: 10px;
@@ -7231,6 +7302,27 @@ padding-bottom: 70px;
   /* 257px */
   @media screen and (max-width: 257px) {
     
+    /* vixinol */
+    /* vixinol */
+  .slideshow .images img {
+    width: 220px;
+    height: 140px;
+    border-radius: 10px;
+  }
+
+  .after-slideshow .image img {
+    width: 71px;
+    height: 45px;
+    border-radius: 5px;
+  }
+
+  .popup-download-btn-background .card {
+      padding: 5px 5px;
+    }
+
+    .popup-download-btn-background .card .border {
+      padding: 10px 5px;
+    }
 
     /* */
     .home .dsuite-shrink .dsuite .left  {
@@ -7334,6 +7426,28 @@ padding-bottom: 70px;
   /* encyclodata */
 
   /* vixinol */
+   /* vixinol */
+   .slideshow .images img {
+    width: 210px;
+    height: 130px;
+    border-radius: 10px;
+  }
+
+  .after-slideshow .image img {
+    width: 68px;
+    height: 43px;
+    border-radius: 5px;
+  }
+
+  .popup-download-btn-background .card .border {
+    padding: 10px 5px;
+    width: 180px;
+  }
+
+  .popup-download-btn-background .card .border .a p {
+    width: 160px;
+  }
+
   .navbar-bottom-vi li {
     display: none;
   }
@@ -7351,6 +7465,19 @@ padding-bottom: 70px;
 .popup-background-al .popup-card img {
  width: 200px;
 }
+
+/* vixinol */
+.slideshow .images img {
+  width: 200px;
+  height: 130px;
+  border-radius: 10px;
+}
+
+.after-slideshow .image img {
+  width: 64px;
+  height: 40px;
+  border-radius: 5px;
+}
 }
 
 @media screen and (max-width: 220px) {
@@ -7359,12 +7486,37 @@ padding-bottom: 70px;
   width: 75px;
   height: 30px;
  }
+
+  /* vixinol */
+ .popup-download-btn-background .card .border {
+  padding: 10px 5px;
+  width: 170px;
+}
 }
 
 @media screen and (max-width: 215px) {
   /* alrani */
 .popup-background-al .popup-card img {
  width: 190px;
+}
+
+/* vixinol */
+/* vixinol */
+.slideshow .images img {
+  width: 190px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.after-slideshow .image img {
+  width: 61px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.popup-download-btn-background .card .border {
+  padding: 10px 5px;
+  width: 165px;
 }
 }
 

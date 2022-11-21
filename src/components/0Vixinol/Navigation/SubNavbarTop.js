@@ -1,4 +1,13 @@
+import { useState } from "react";
+import PopupDownloadBtn from "../HomeUser/PopupDownloadBtn/PopupDownloadBtn";
+
 export default function SubNavbarTop() {
+  const [popup, setpopup] = useState(false);
+
+  function DownloadBtn() {
+    setpopup(!popup);
+  }
+
   return (
     <>
       <div className="sub-navbar-top-vi">
@@ -22,6 +31,7 @@ export default function SubNavbarTop() {
 
         <div className="icon">
           <svg
+            onClick={DownloadBtn}
             xmlns="http://www.w3.org/2000/svg"
             x="0"
             y="0"
@@ -52,6 +62,12 @@ export default function SubNavbarTop() {
           </svg>
         </div>
       </div>
+
+      {popup && (
+        <div onClick={DownloadBtn}>
+          <PopupDownloadBtn />
+        </div>
+      )}
     </>
   );
 }

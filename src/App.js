@@ -402,10 +402,8 @@ import ResultEncyclodata from "./components/0Inizel/Home/Encyclodata/Result/Resu
 // vixinol
 // vixinol
 import ProfilVI from "./components/0Vixinol/Profil/Profil";
-
 import LogoutVi from "./components/0Vixinol/Auth/Logout";
 import LogoutConfirmVI from "./components/0Vixinol/Auth/LogoutConfirm";
-
 import SignupVI from "./components/0Vixinol/Auth/Signup";
 import SignupSuccessVI from "./components/0Vixinol/Auth/SignupSuccess";
 import LoginVI from "./components/0Vixinol/Auth/Login";
@@ -413,6 +411,8 @@ import LoginSuccessVI from "./components/0Vixinol/Auth/LoginSuccess";
 import ForgotPasswordVI from "./components/0Vixinol/Auth/ForgotPassword";
 import NewPasswordVI from "./components/0Vixinol/Auth/NewPassword";
 import NewPasswordSuccessVI from "./components/0Vixinol/Auth/NewPasswordSuccess";
+import HomeUserVI from "./components/0Vixinol/HomeUser/Home";
+import ProfilApp from "./components/0Vixinol/HomeUser/ProfilApp";
 
 import SignupPartnerVI from "./components/0Vixinol/Partner/Auth/SignupPartner";
 import SignupSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/SignupSuccess";
@@ -422,7 +422,6 @@ import ForgotPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/ForgotPa
 import NewPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/NewPassword";
 import NewPasswordSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/NewPasswordSuccess";
 import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
-import HomeUserVI from "./components/0Vixinol/HomeUser/Home";
 
 export default function App() {
   return (
@@ -1113,6 +1112,7 @@ export default function App() {
         {/* vixinol */}
         {/* vixinol */}
         {/* vixinol */}
+        <Route path="/profil-app" element={<ProfilApp />} />
         <Route path="/profil-vi" element={<ProfilVI />} />
         <Route path="/profil-partner-vs" element={<ProfilPartnerVS />} />
         <Route path="/logout-vi" element={<LogoutVi />} />

@@ -1,6 +1,14 @@
+import { useState } from "react";
+import PopupDownloadBtn from "../HomeUser/PopupDownloadBtn/PopupDownloadBtn";
 import SubNavbarTop from "./SubNavbarTop";
 
 export default function NavbarTopVI() {
+  const [popup, setpopup] = useState(false);
+
+  function DownloadBtn() {
+    setpopup(!popup);
+  }
+
   return (
     <>
       <div className="navbar-top-vi">
@@ -68,6 +76,7 @@ export default function NavbarTopVI() {
 
           <div className="download">
             <svg
+              onClick={DownloadBtn}
               xmlns="http://www.w3.org/2000/svg"
               x="0"
               y="0"
@@ -99,6 +108,12 @@ export default function NavbarTopVI() {
           </div>
         </div>
       </div>
+
+      {popup && (
+        <div onClick={DownloadBtn}>
+          <PopupDownloadBtn />
+        </div>
+      )}
     </>
   );
 }

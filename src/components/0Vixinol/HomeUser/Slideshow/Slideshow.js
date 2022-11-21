@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import img1 from "../../img/img1.jpg";
 import img2 from "../../img/img2.jpg";
 import img3 from "../../img/img3.png";
@@ -30,41 +31,48 @@ export default function Slideshow() {
     <>
       <div className="slideshow">
         {verify1 && (
-          <div className="images">
-            <img src={img1} alt="image" />
-          </div>
+          <NavLink to="/profil-app">
+            <div className="images">
+              <img src={img1} alt="image" />
+            </div>
+          </NavLink>
         )}
 
         {verify2 && (
-          <div className="images">
-            <img src={img2} alt="image" />
-          </div>
+          <NavLink to="/">
+            <div className="images">
+              <img src={img2} alt="image" />
+            </div>
+          </NavLink>
         )}
 
         {verify3 && (
-          <div className="images">
-            <img src={img3} alt="image" />
-          </div>
+          <NavLink to="/">
+            <div className="images">
+              <img src={img3} alt="image" />
+            </div>
+          </NavLink>
         )}
       </div>
+
       <div className="after-slideshow">
         <div className="image" onClick={Image1}>
           <img
-            style={{ border: verify1 && "1px solid red" }}
+            style={{ border: verify1 && "1px solid #fd7e14" }}
             src={img1}
             alt="image"
           />
         </div>
         <div className="image" onClick={Image2}>
           <img
-            style={{ border: verify2 && "1px solid red" }}
+            style={{ border: verify2 && "1px solid #fd7e14" }}
             src={img2}
             alt="image"
           />
         </div>
         <div className="image" onClick={Image3}>
           <img
-            style={{ border: verify3 && "1px solid red" }}
+            style={{ border: verify3 && "1px solid #fd7e14" }}
             src={img3}
             alt="image"
           />
