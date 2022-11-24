@@ -2476,6 +2476,216 @@ padding-bottom: 70px;
   background-color: white;
 }
 
+/* home Omisify - home omisify.js */
+/* home Omisify - home omisify.js */
+/* home Omisify - home omisify.js */
+/* home Omisify - home omisify.js */
+/* home Omisify - home omisify.js */
+.home-omisify .a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 450px;
+  margin: 20px;
+  border: 1px solid #eee;
+}
+
+.home-omisify .display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-omisify .a img {
+  width: 450px;
+}
+
+.home-omisify .a svg {
+  fill: red;
+  padding: 20px 0px;
+}
+
+.home-omisify .a h3 {
+  color: #444;
+  font-size: 19px;
+}
+
+.home-omisify .a p {
+  color: #444;
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* home omisify - popup card.js */
+/* home omisify - popup card.js */
+/* home omisify - popup card.js */
+/* home omisify - popup card.js */
+/* home omisify - popup card.js */
+.popup-card-background {
+  cursor: pointer;
+  background-color: #00000050;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.popup-card-background .back-popup {
+  background-color: #eee;
+  width: 100%;
+}
+
+.popup-card-background .navlink {
+  text-decoration: none;
+}
+
+.popup-card-background .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-card-background .card .a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 450px;
+  margin: 20px;
+  border: 1px solid #eee;
+  background-color: white;
+}
+
+.popup-card-background .a img {
+  width: 450px;
+}
+
+.popup-card-background .a svg {
+  fill: red;
+  padding: 20px 0px;
+}
+
+.popup-card-background .a h3 {
+  color: #444;
+  font-size: 19px;
+}
+
+.popup-card-background .a p {
+  color: #444;
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup-card-background .card .a button {
+  cursor: pointer;
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: red;
+  border: 1px solid red;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+/* home omisify - popup image.js */
+/* home omisify - popup image.js */
+/* home omisify - popup image.js */
+/* home omisify - popup image.js */
+/* home omisify - popup image.js */
+.popup-image-background-home-omisify {
+  cursor: pointer;
+  background-color: #00000050;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup-image-background-home-omisify .card {
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.popup-image-background-home-omisify .card img {
+  border-radius: 10px;
+  width: 600px;
+}
+
+.home-omisify-remuneration p {
+  cursor: pointer;
+  color: #444;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.popup-remuneration-background {
+  background-color: #00000050;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* home omisify - popup comment.js */
+/* home omisify - popup comment.js */
+/* home omisify - popup comment.js */
+/* home omisify - popup comment.js */
+.popup-comment-background {
+  cursor: pointer;
+  background-color: #00000050;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.popup-comment-background .card {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 650px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 100px;
+  padding-bottom: 30px;
+}
+
+.popup-comment-background .card h3 {
+  padding: 10px;
+}
+
+.popup-comment-background .card p {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.popup-comment-background .card img {
+  border-radius: 10px;
+  width: 650px;
+}
+
+
+
 /* admin - navigation - navigation.js */
 /* admin - navigation - navigation.js */
 /* admin - navigation - navigation.js */
@@ -3398,6 +3608,134 @@ padding-bottom: 70px;
   border: none;
   font-size: 15px;
   margin: 0px 10px;
+}
+
+/* ja - business - homeJa.js */
+/* ja - business - homeJa.js */
+/* ja - business - homeJa.js */
+/* ja - business - homeJa.js */
+.home-ja {
+  background-color: white;
+}
+
+.home-ja .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-ja .main .a {
+  width: 400px;
+  margin: 0px 30px;
+}
+
+.home-ja .main .a p {
+  padding: 10px 20px;
+}
+
+.home-ja .main .a img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.home-ja .main .display {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+}
+
+.home-ja .main .paragraph {
+  font-size: 25px;
+  background-color: #666666;
+  color: white;
+  box-shadow: 5px 10px #fcff07;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+.home-ja .main .background {
+  display: flex;
+  background-color: #fcff07;
+  padding: 20px;
+}
+
+.home-ja .main .background .a p {
+  padding: 20px;
+  font-size: 17px;
+}
+
+.home-ja .main .background .a .b {
+  display: flex;
+}
+
+.home-ja .main .background .a .b p {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.home-ja .main .guide {
+  display: flex;
+}
+
+.home-ja .main .guide p {
+  text-decoration: underline;
+  font-size: 17px;
+  color: black;
+  padding: 20px 5px;
+  cursor: pointer;
+}
+
+.home-ja .main .guide svg {
+  fill: black;
+}
+
+.home-ja .main .service img {
+  width: 120px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
+.home-ja .main .background .a .b .navlink {
+  color: black;
+}
+
+.home-ja .main .background .a .b p {
+  display: flex;
+  padding: 0px 1px;
+}
+
+.home-ja .main .paragraph .a {
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+}
+
+.home-ja .main .paragraph .a p {
+  padding: 5px;
+}
+
+.home-ja .main .profil .a {
+  display: flex;
+  padding: 20px;
+}
+
+.home-ja .main .profil img {
+  width: 500px;
+  border: 1px solid #444;
+  border-radius: 10px;
+}
+
+.home-ja .main .create img {
+  width: 500px;
+  border: 1px solid #444;
+  border-radius: 0px;
+}
+
+.home-ja .main .create {
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 
 
@@ -5204,6 +5542,8 @@ padding-bottom: 70px;
     width: 230px;
   }
 }
+
+
 
 /* 1250px */
 /* 1250px */

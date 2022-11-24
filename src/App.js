@@ -9,6 +9,7 @@ import Home from "./components/Home/Home";
 import Influencer from "./components/Home/E.Influencer";
 import NoInfluencer from "./components/Home/F.NoInfluencer";
 import HomeBonus from "./components/Home/AfterMore/Bonus/HomeBonus";
+import HomeOmisify from "./components/Home Omisify/Home";
 
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
@@ -276,6 +277,7 @@ import OthersPanel from "./components/Admin/Bonus/OthersPanel";
 // Jamelfase
 // Jamelfase
 // Jamelfase
+import HomeJA from "./components/Business/Home Jamelfase/HomeJA";
 import ProfilJA from "./components/Business/Profil/Profil";
 import SignupSuccessJA from "./components/Business/Auth/SignupSuccess";
 import StatsJA from "./components/Business/Stats/Stats";
@@ -413,6 +415,7 @@ import NewPasswordVI from "./components/0Vixinol/Auth/NewPassword";
 import NewPasswordSuccessVI from "./components/0Vixinol/Auth/NewPasswordSuccess";
 import HomeUserVI from "./components/0Vixinol/HomeUser/Home";
 import ProfilApp from "./components/0Vixinol/HomeUser/ProfilApp";
+import DownloadAppVI from "./components/0Vixinol/HomeUser/DownloadApp";
 
 import SignupPartnerVI from "./components/0Vixinol/Partner/Auth/SignupPartner";
 import SignupSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/SignupSuccess";
@@ -439,6 +442,26 @@ export default function App() {
         <Route path="/after-dev" element={<AfterDev />} />
         <Route path="/dev" element={<Dev />} />
         <Route path="*" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        {/* new Omisify */}
+        <Route path="/home-omisify" element={<HomeOmisify />} />
         <Route path="/" element={<Home />} />
         <Route path="/influential-omisify-partner" element={<Influencer />} />
         <Route path="/omisify-partner" element={<NoInfluencer />} />
@@ -918,6 +941,8 @@ export default function App() {
         {/* Jamelfase */}
         {/* Jamelfase */}
         {/* Jamelfase */}
+        <Route path="/home-ja" element={<HomeJA />} />
+
         <Route path="/signup-ja" element={<SignupJA />} />
         <Route path="/signup-success-ja" element={<SignupSuccessJA />} />
         <Route path="/login-ja" element={<LoginJA />} />
@@ -1112,6 +1137,7 @@ export default function App() {
         {/* vixinol */}
         {/* vixinol */}
         {/* vixinol */}
+        <Route path="/download-app" element={<DownloadAppVI />} />
         <Route path="/profil-app" element={<ProfilApp />} />
         <Route path="/profil-vi" element={<ProfilVI />} />
         <Route path="/profil-partner-vs" element={<ProfilPartnerVS />} />
