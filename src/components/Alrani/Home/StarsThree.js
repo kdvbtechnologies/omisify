@@ -83,7 +83,7 @@ export default function StarsThree() {
         </div>
 
         <div className="b">
-          <p>( 44 )</p>
+          <p style={{ cursor: "pointer" }}>( 44 )</p>
         </div>
       </div>
     </>

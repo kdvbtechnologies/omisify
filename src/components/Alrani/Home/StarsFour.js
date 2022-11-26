@@ -84,7 +84,7 @@ export default function StarsFour() {
         </div>
 
         <div className="b">
-          <p>( 9 )</p>
+          <p style={{ cursor: "pointer" }}>( 9 )</p>
         </div>
       </div>
     </>

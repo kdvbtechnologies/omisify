@@ -82,7 +82,7 @@ export default function StarsTwo() {
         </div>
 
         <div className="b">
-          <p>( 153 )</p>
+          <p style={{ cursor: "pointer" }}>( 153 )</p>
         </div>
       </div>
     </>

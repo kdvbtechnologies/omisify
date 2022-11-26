@@ -81,7 +81,7 @@ export default function StarOne() {
         </div>
 
         <div className="b">
-          <p>( 27 )</p>
+          <p style={{ cursor: "pointer" }}>( 27 )</p>
         </div>
       </div>
     </>

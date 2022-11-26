@@ -4419,6 +4419,7 @@ padding-bottom: 70px;
   justify-content: center;
   align-items: center;
   margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .note-of-book .border {
@@ -4454,13 +4455,59 @@ padding-bottom: 70px;
 
 .five-stars .a svg {
   padding-right: 3px;
+  color: #fcff07
 }
 
 .five-stars .b p {
   padding-left: 5px;
 }
 
+/* al - Stars book.js */
+/* al - Stars book.js */
+/* al - Stars book.js */
+/* al - Stars book.js */
+/* al - Stars book.js */
+.stars-book .title {
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
 
+/* al - Comment book.js */
+/* al - Comment book.js */
+/* al - Comment book.js */
+/* al - Comment book.js */
+/* al - Comment book.js */
+.comment-book {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 35px;
+}
+
+.comment-book .b {
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.comment-book .b .country {
+  font-size: 14px;
+}
+
+.comment-book-desc {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.comment-book-desc .date {
+  font-size: 13px;
+  color: #a6a6a6;
+}
+
+/* al - popup comment.js */
+
+
+  
 /* in - auth - logout.js */
 /* in - auth - logout.js */
 /* in - auth - logout.js */
