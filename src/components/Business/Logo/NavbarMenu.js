@@ -1,4 +1,13 @@
+import { useState } from "react";
+
 export default function NavbarMenuJA() {
+  const [popupMenu, setPopupMenu] = useState(false);
+
+  function PopupMenu() {
+    setPopupMenu(!popupMenu);
+    console.log("popup true");
+  }
+
   return (
     <>
       <div className="navbar-menu-ja">
@@ -16,6 +25,7 @@ export default function NavbarMenuJA() {
 
         <div className="menu">
           <svg
+            onClick={PopupMenu}
             xmlns="http://www.w3.org/2000/svg"
             x="0"
             y="0"

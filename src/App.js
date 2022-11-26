@@ -19,6 +19,9 @@ import PartnerContact from "./components/Partenaire Omisify/PartnerContact";
 import PartnerTrans from "./components/Partenaire Omisify/PartnerTrans";
 import PartnerHistorical from "./components/Partenaire Omisify/PartnerHistorical";
 
+// bonus
+import ContactConfiance from "./components/Bonus/ContactConfiance/ContactConfiance";
+
 // dev
 import Dev from "./components/Others/Dev/Dev";
 import AfterDev from "./components/Others/Dev/AfterDev";
@@ -466,6 +469,7 @@ export default function App() {
         <Route path="/influential-omisify-partner" element={<Influencer />} />
         <Route path="/omisify-partner" element={<NoInfluencer />} />
         <Route path="/home-bonus" element={<HomeBonus />} />
+        <Route path="/contact-confiance" element={<ContactConfiance />} />
 
         <Route path="/program" element={<Program />} />
         <Route path="/contact" element={<ContactPartner />} />

@@ -6,6 +6,10 @@ import smallbusiness from "./img/smallbusiness.jpg";
 import service from "./img/service.jpg";
 import profil from "./img/profil.png";
 import create from "./img/create.png";
+import stats from "./img/stats.png";
+import app from "./img/app.png";
+import app1 from "./img/app1.jpg";
+import app2 from "./img/app2.jpg";
 
 export default function HomeJA() {
   return (
@@ -158,18 +162,36 @@ export default function HomeJA() {
             </div>
           </div>
 
-          <p>
-            L'outil Jamelfase est sophistiqué et vous permet de suivre les
-            résultats de votre publicité avec des détails annuels, mensuels,
-            journaliers et horaires. Et en Bonus vous avez des notifications
-            pour restez toujours informé sur l'évolution de votre publicité
-          </p>
+          <div className="profil">
+            <div className="a">
+              <img src={stats} alt="image jamelfase" />
+            </div>
 
-          <p>
-            Votre application Jamelfase vous servira pour suivre les résultats
-            de votre publicité en temps réel partout, où que vous soyez, même en
-            déplacement
-          </p>
+            <div className="a">
+              <p>
+                L'outil Jamelfase est sophistiqué et vous permet de suivre les
+                résultats de votre publicité avec des détails annuels, mensuels,
+                journaliers et horaires. Et en Bonus vous avez des notifications
+                pour restez toujours informé sur l'évolution de votre publicité
+              </p>
+            </div>
+          </div>
+
+          <div className="app">
+            <div className="a">
+              <img src={app} alt="image jamelfase" />
+              <img src={app1} alt="image jamelfase" />
+              <img src={app2} alt="image jamelfase" />
+            </div>
+
+            <div className="a">
+              <p>
+                Votre application Jamelfase vous servira pour suivre les
+                résultats de votre publicité en temps réel partout, où que vous
+                soyez, même en déplacement
+              </p>
+            </div>
+          </div>
 
           <p>
             Le modèle de tarification basé sur les enchères vous permet de fixer

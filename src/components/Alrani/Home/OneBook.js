@@ -2,6 +2,9 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import Back from "../Back/Back";
 import NavbarAl from "../Navigation/Navbar";
+import DetailsBook from "./Details";
+import NoteOfBook from "./NoteOfBook";
+import StarsBook from "./StarsBook";
 
 export default function OneBook() {
   const navigate = useNavigate();
@@ -676,6 +679,10 @@ export default function OneBook() {
         <div className="hr">
           <hr />
         </div>
+
+        <DetailsBook />
+        <NoteOfBook />
+        <StarsBook />
       </div>
 
       {popup && (
