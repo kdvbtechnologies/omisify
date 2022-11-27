@@ -2,8 +2,10 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import Back from "../Back/Back";
 import NavbarAl from "../Navigation/Navbar";
+import ChartParagraph from "./ChartParagraph";
 import CommentBook from "./CommentBook";
 import DetailsBook from "./Details";
+import MoreBook from "./MoreBook";
 import NoteOfBook from "./NoteOfBook";
 import StarsBook from "./StarsBook";
 
@@ -91,44 +93,34 @@ export default function OneBook() {
           */}
         </div>
       </div>
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
-      {/* mobile */}
 
-      {/*
-
-{seeMore ? (
-    <>
-    </>
-) : (
-    <>
-    </>
-)}
-
-*/}
+      <ChartParagraph />
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
+      {/* mobile */}
 
       {seeMore ? (
         <>
@@ -685,6 +677,7 @@ export default function OneBook() {
         <NoteOfBook />
         <StarsBook />
         <CommentBook />
+        <MoreBook />
       </div>
 
       {popup && (

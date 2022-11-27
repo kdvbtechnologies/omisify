@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import Back from "../../Back/Back";
-import StarsFive from "./StarsFive";
+import Back from "../Back/Back";
+import StarsFive from "./Comment/StarsFive";
 
-export default function PageCommentBookFiveStars() {
-  const navigate = useNavigate(-1);
+export default function CommentBookAll() {
+  const navigate = useNavigate();
 
   const api = [
     {
@@ -22,10 +22,26 @@ export default function PageCommentBookFiveStars() {
     },
 
     {
+      nameofuser: "Kamone Sigolidi",
+      countryofuser: "France",
+      commentofuser:
+        "C'est un livre très intéressant, je pensais qu'il serait indigeste à lire mais je suis finalement surprise par la facilité de lecture.",
+      datecomment: "10/12/2023",
+    },
+
+    {
       nameofuser: "Justine Solax",
       countryofuser: "Belgique",
       commentofuser: "Je déteste lire mais j’ai dévoré ce livre ! Il est extra",
       datecomment: "29/12/2023",
+    },
+
+    {
+      nameofuser: "Kamone Sigolidi",
+      countryofuser: "France",
+      commentofuser:
+        "C'est un livre très intéressant, je pensais qu'il serait indigeste à lire mais je suis finalement surprise par la facilité de lecture.",
+      datecomment: "10/12/2023",
     },
 
     {
@@ -37,45 +53,26 @@ export default function PageCommentBookFiveStars() {
   ];
 
   const data = api.length;
-  const pluriel = api.length > 2;
 
   return (
     <>
       <div
-        style={{ backgroundColor: "#eee" }}
         onClick={() => navigate(-1)}
-        className="comment-book-back-btn"
+        style={{ background: "#eee", position: "fixed", width: "100%" }}
       >
         <Back />
       </div>
 
-      {pluriel && (
-        <>
-          <div>
-            <p
-              style={{
-                padding: "20px",
-              }}
-            >
-              {data} personnes ont notées 5 étoiles
-            </p>
-          </div>
-        </>
-      )}
-
-      {!pluriel && (
-        <>
-          <div>
-            <p
-              style={{
-                padding: "20px",
-              }}
-            >
-              Une personne a notée 5 étoiles
-            </p>
-          </div>
-        </>
-      )}
+      <p
+        style={{
+          fontWeight: "bold",
+          paddingTop: "70px",
+          paddingBottom: "20px",
+          paddingLeft: "20px",
+        }}
+      >
+        {data} Commentaires
+      </p>
 
       {api.map((api) => (
         <>

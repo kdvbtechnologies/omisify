@@ -2684,8 +2684,6 @@ padding-bottom: 70px;
   width: 650px;
 }
 
-
-
 /* admin - navigation - navigation.js */
 /* admin - navigation - navigation.js */
 /* admin - navigation - navigation.js */
@@ -4349,7 +4347,7 @@ padding-bottom: 70px;
 
 .details-book .title {
   font-weight: bold;
-  font-size: 20px; 
+  font-size: 19px; 
   padding-top: 50px;
   padding-bottom: 15px;
   padding-left: 20px;
@@ -4504,7 +4502,78 @@ padding-bottom: 70px;
   color: #a6a6a6;
 }
 
-/* al - popup comment.js */
+/* al - home - more book.js */
+/* al - home - more book.js */
+/* al - home - more book.js */
+/* al - home - more book.js */
+/* al - home - more book.js */
+.more-book {
+  padding: 30px 20px;
+}
+
+.more-book .a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.more-book .flex {
+  display: flex;
+}
+
+.more-book .book {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  padding-right: 20px;
+  margin: 15px 15px;
+}
+
+.more-book .book img {
+  width: 130px;
+  height: 170px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.more-book .book .nameofbook {
+  color: blue;
+}
+
+.more-book .book .chart {
+  font-size: 14px;
+}
+
+.more-book-svg svg:hover {
+  fill: yellow;
+}
+
+.more-book .book .stars {
+  display: flex;
+  padding: 5px 0px;
+}
+
+.more-book .book .stars svg {
+  padding-left: 5px;
+}
+
+/* al - chart paragraph.js */
+/* al - chart paragraph.js */
+/* al - chart paragraph.js */
+/* al - chart paragraph.js */
+/* al - chart paragraph.js */
+.chart-paragraph .align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.chart-paragraph .align .a {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
 
 
   
@@ -7308,6 +7377,10 @@ padding-bottom: 70px;
     /* alrani */
     /* alrani */
     /* alrani */
+  .details-book .title p {
+    font-size: 18px;
+  }
+
   .details-book-pc {
     display: none;
   }
@@ -8137,6 +8210,10 @@ padding-bottom: 70px;
 
 @media screen and (max-width: 225px) {
   /* alrani */
+  .details-book .title p {
+    font-size: 17px;
+  }
+
   .details-book-mobile .detail .a {
     width: 160px;
   }
@@ -8199,6 +8276,8 @@ padding-bottom: 70px;
     padding: 17px 20px;
     width: 130px;
   }
+
+ 
 
   .details-book-mobile .detail .a {
     width: 138px;

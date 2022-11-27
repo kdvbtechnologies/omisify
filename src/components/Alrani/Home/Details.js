@@ -14,7 +14,7 @@ export default function DetailsBook() {
       <div className="details-book-pc">
         <div className="details-book">
           <div className="title">
-            <p>Détails</p>
+            <p>Détails de l'ouvrage</p>
           </div>
 
           <div className="detail">
@@ -106,7 +106,7 @@ export default function DetailsBook() {
       <div onClick={PopupDetails} className="details-book-mobile">
         <div className="details-book">
           <div className="title">
-            <p>Détails</p>
+            <p>Détails de l'ouvrage</p>
           </div>
 
           <div className="detail">

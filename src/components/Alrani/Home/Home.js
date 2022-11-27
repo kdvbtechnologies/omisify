@@ -23,19 +23,6 @@ export default function HomeAl() {
       titlebook: "Tout le monde n'a pas eu la chance de rater ses études",
       authorbook: "Olivier Roland",
     },
-
-    /*
-    {
-      imagebook: "",
-      titlebook: "",
-      authorbook: "",
-    },
-
-    {
-      imagebook: "",
-      titlebook: "",
-      authorbook: "",
-    },*/
   ];
 
   return (

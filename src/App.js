@@ -341,6 +341,8 @@ import NavbarAl from "./components/Alrani/Navigation/Navbar";
 import HomeAl from "./components/Alrani/Home/Home";
 import OneBook from "./components/Alrani/Home/OneBook";
 import PageCommentBookFiveStars from "./components/Alrani/Home/Comment/PageCommentBookFiveStars";
+import MoreBookPage from "./components/Alrani/Home/MoreBookPage";
+import CommentBookAll from "./components/Alrani/Home/CommentBookAll";
 
 import ProfilAl from "./components/Alrani/Profil/Profil";
 import LoginSuccessAl from "./components/Alrani/Auth/LoginSuccess";
@@ -1034,7 +1036,9 @@ export default function App() {
         <Route path="/navbar-al" element={<NavbarAl />} />
         <Route path="/home-al" element={<HomeAl />} />
         <Route path="/book" element={<OneBook />} />
+        <Route path="/more-book" element={<MoreBookPage />} />
         <Route path="/comment-book" element={<PageCommentBookFiveStars />} />
+        <Route path="/all-comment-book" element={<CommentBookAll />} />
         <Route path="/profil-al" element={<ProfilAl />} />
         <Route path="/login-success-al" element={<LoginSuccessAl />} />
         <Route path="/signup-success-al" element={<SignupSuccessAl />} />

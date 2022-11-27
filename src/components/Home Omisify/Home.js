@@ -10,6 +10,7 @@ import FilePopupImageInfluent from "./PopupImageInfluent";
 import FilePopupComment from "./PopupComment";
 import { useTranslation } from "react-i18next";
 import Back from "../Back/Back";
+import homeinfluencer from "./img/home-influencer.jpg";
 
 export default function HomeOmisify() {
   const { t } = useTranslation();
@@ -71,6 +72,37 @@ export default function HomeOmisify() {
 
   return (
     <>
+      <div
+        style={{
+          backgroundImage: `url(${homeinfluencer})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          width: "250px",
+        }}
+      >
+        <p>Omisify est la marque préféré des influenceurs</p>
+        <button>Télécharger l'application Omisify</button>
+        <button>Travaillez avec Omisify</button>
+        <img src={homeinfluencer} />
+      </div>
+
+      <p>
+        Ajouter le logo de la marque Omisify à votre photo ou vidéo et gagnez de
+        l'argent avec Omisify
+      </p>
+      <p>
+        Travaillez avec Omisify en faisant de la publicité pour des entreprises
+      </p>
+
+      <p>
+        Omisify est favorable pour les influenceurs et pour les non-influenceurs
+      </p>
+
+      <p>
+        Omisify est gratuit et rémunère toujours ses Partenaires quelque soit le
+        pays dans lequel vous vous trouver et quelque soit la situation de votre
+        pays
+      </p>
       <div className="home-omisify">
         <div className="display">
           {/* partner */}
@@ -200,6 +232,53 @@ export default function HomeOmisify() {
           </div>
         </div>
       </div>
+
+      <p>Inauguration Omisify Francophone - 23 Décembre 2022</p>
+      <p>Voir les inaugurations à venir</p>
+
+      <p>Bonus</p>
+
+      <p>Comment fonctionne Omisify</p>
+      <p>1</p>
+      <p>Installer l'application Omisify</p>
+      <p>Installer l'application Web Omisify depuis Vixinol Store</p>
+
+      <p>2</p>
+      <p>Inscription et Connexion</p>
+      <p>
+        Après votre inscription, Suivez le guide détaillé qui est épinglé au
+        menu de votre compte
+      </p>
+
+      <p>3</p>
+      <p>Réception du Bonus de Bienvenue et Début du Travail</p>
+      <p>
+        Recevez votre Bonus de Bienvenue, télécharger les affiches et débuter le
+        travail
+      </p>
+
+      <p>
+        Besoin d'aide ? Le Service Partenaire d'Omisify est disponible 24h/24
+      </p>
+      <p>Contacter Le Service Partenaire d'Omisify</p>
+
+      <p>
+        Télécharger l'application Omisify et travaillez à partir de n'importe
+        quel endroit, Suivez les statistiques détaillés et votre historique de
+        travail
+      </p>
+      <p>
+        L'application Omisify fonctionne sur tout les types de mobile, tablettes
+        et ordinateur
+      </p>
+
+      <p>
+        Emporter l'application Omisify lors de vos déplacements et suivez les
+        résultats de votre travail en temps réel
+      </p>
+
+      <p>Faites comme les autres, Travaillez avec Omisify</p>
+      <button>Télécharger l'application Omisify</button>
 
       {/* popup card Partner */}
       {/* popup card Partner */}
