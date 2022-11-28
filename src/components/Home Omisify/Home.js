@@ -10,7 +10,7 @@ import FilePopupImageInfluent from "./PopupImageInfluent";
 import FilePopupComment from "./PopupComment";
 import { useTranslation } from "react-i18next";
 import Back from "../Back/Back";
-import homeinfluencer from "./img/home-influencer.jpg";
+import homeinfluencer from "./img/home-influencer.png";
 
 export default function HomeOmisify() {
   const { t } = useTranslation();
@@ -72,24 +72,33 @@ export default function HomeOmisify() {
 
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${homeinfluencer})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          width: "250px",
-        }}
-      >
-        <p>Omisify est la marque préféré des influenceurs</p>
-        <button>Télécharger l'application Omisify</button>
-        <button>Travaillez avec Omisify</button>
-        <img src={homeinfluencer} />
+      <div className="home-influencer-new-omisify">
+        <div className="a">
+          <div className="title">
+            <p>Omisify est la marque préféré des influenceurs</p>
+          </div>
+
+          <div className="display-btn">
+            <div className="button-a">
+              <button>Télécharger l'application Omisify</button>
+            </div>
+
+            <div className="button-b">
+              <button>Travaillez avec Omisify</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="b">
+          <img src={homeinfluencer} alt="" />
+        </div>
       </div>
 
       <p>
         Ajouter le logo de la marque Omisify à votre photo ou vidéo et gagnez de
         l'argent avec Omisify
       </p>
+
       <p>
         Travaillez avec Omisify en faisant de la publicité pour des entreprises
       </p>

@@ -1,4 +1,4 @@
-export default function DownloadAppVI() {
+export default function PageDownloadAppVI() {
   return (
     <>
       <div className="download-app-vi">

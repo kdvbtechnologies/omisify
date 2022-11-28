@@ -421,7 +421,7 @@ import NewPasswordVI from "./components/0Vixinol/Auth/NewPassword";
 import NewPasswordSuccessVI from "./components/0Vixinol/Auth/NewPasswordSuccess";
 import HomeUserVI from "./components/0Vixinol/HomeUser/Home";
 import ProfilApp from "./components/0Vixinol/HomeUser/ProfilApp";
-import DownloadAppVI from "./components/0Vixinol/HomeUser/DownloadApp";
+import PageDownloadAppVI from "./components/0Vixinol/HomeUser/PageDownloadApp";
 
 import SignupPartnerVI from "./components/0Vixinol/Partner/Auth/SignupPartner";
 import SignupSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/SignupSuccess";
@@ -1147,7 +1147,7 @@ export default function App() {
         {/* vixinol */}
         {/* vixinol */}
         {/* vixinol */}
-        <Route path="/download-app" element={<DownloadAppVI />} />
+        <Route path="/page-download-app" element={<PageDownloadAppVI />} />
         <Route path="/profil-app" element={<ProfilApp />} />
         <Route path="/profil-vi" element={<ProfilVI />} />
         <Route path="/profil-partner-vs" element={<ProfilPartnerVS />} />

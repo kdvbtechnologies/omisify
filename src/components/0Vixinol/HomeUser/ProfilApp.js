@@ -1,17 +1,33 @@
-import imageProfilApp from "../img/blue.jpg";
+import BackAndSearch from "../Back/BackandSearch";
+import imageProfilApp from "../img/omisify-red.jpg";
+import AboutApp from "./AboutApp";
 import BlockImage from "./ProfilApp/BlockImage";
+import ProfilAppNavbarDownloadBtn from "./ProfilAppNavbarDownloadBtn";
+import ShortDescriptionApp from "./ShortDescriptionApp";
+import StoreApp from "./StoreApp/StoreApp";
 
 export default function ProfilApp() {
+  // Lydia - La Super App pour gérer votre argent
   return (
     <>
-      <div className="profil-app">
-        <div className="image">
+      <ProfilAppNavbarDownloadBtn />
+      <BackAndSearch />
+      <div className="display-image-and-name-of-app">
+        <div className="image-profil-app">
           <img src={imageProfilApp} alt="image Profil App" />
         </div>
 
-        <div className="part">
-          <p>Lydia - La super-app pour votre argent</p>
+        <div className="name-of-app">
+          <p>Omisify</p>
+        </div>
+      </div>
 
+      <div>
+        <StoreApp />
+      </div>
+
+      <div className="profil-app">
+        <div className="app">
           <div className="icon">
             <div className="a">
               <svg
@@ -45,7 +61,16 @@ export default function ProfilApp() {
           </div>
         </div>
       </div>
+
+      <div className="profil-app-download-btn">
+        <button>Installer l'application</button>
+      </div>
+
+      <ShortDescriptionApp />
+
       <BlockImage />
+
+      <AboutApp />
     </>
   );
 }
