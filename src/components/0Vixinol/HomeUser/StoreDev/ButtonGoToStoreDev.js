@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 
-export default function StoreApp() {
+export default function ButtonGoToStoreDev() {
   return (
     <>
-      <NavLink style={{ color: "blue" }} to="/">
+      <NavLink style={{ color: "blue" }} to="/store-dev">
         <div className="store-app">
           <svg
             xmlns="http://www.w3.org/2000/svg"

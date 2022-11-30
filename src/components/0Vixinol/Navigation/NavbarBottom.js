@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function NavbarBottomVI() {
   const [isActiveRecommended, setIsActiveRecommended] = useState(true);
@@ -32,31 +33,33 @@ export default function NavbarBottomVI() {
   return (
     <>
       <div className="navbar-bottom-vi">
-        <div className="a">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="28px"
-            height="auto"
-            viewBox="0 0 24 24"
-            onClick={ActiveRecommended}
-            className={
-              isActiveRecommended ? "active-class-vi" : "no-active-class-vi"
-            }
-          >
-            <g fillRule="evenodd" strokeWidth="1">
-              <g fillRule="nonzero">
-                <path d="M12 2a8 8 0 014.953 14.283l.049-.039L17 22.245a.75.75 0 01-1.069.68l-3.931-1.843-3.93 1.842a.75.75 0 01-1.069-.679l-.001-6A8 8 0 0112 2zm3.501 15.195l.04-.02A7.967 7.967 0 0112 18a7.974 7.974 0 01-3.168-.652l-.33-.151v3.868l3.18-1.49a.75.75 0 01.637 0l3.182 1.49v-3.87zM12 3.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zm.229 3.142l.912 1.853 2.044.295c.21.03.293.288.142.435l-1.479 1.44.35 2.036a.255.255 0 01-.37.269L12 12.008l-1.827.962a.255.255 0 01-.37-.269l.35-2.035-1.48-1.44a.255.255 0 01.142-.436l2.044-.295.912-1.853a.255.255 0 01.458 0z"></path>
+        <NavLink style={{ textDecoration: "none" }} to="/home-user-vi">
+          <div className="a">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28px"
+              height="auto"
+              viewBox="0 0 24 24"
+              onClick={ActiveRecommended}
+              className={
+                isActiveRecommended ? "active-class-vi" : "no-active-class-vi"
+              }
+            >
+              <g fillRule="evenodd" strokeWidth="1">
+                <g fillRule="nonzero">
+                  <path d="M12 2a8 8 0 014.953 14.283l.049-.039L17 22.245a.75.75 0 01-1.069.68l-3.931-1.843-3.93 1.842a.75.75 0 01-1.069-.679l-.001-6A8 8 0 0112 2zm3.501 15.195l.04-.02A7.967 7.967 0 0112 18a7.974 7.974 0 01-3.168-.652l-.33-.151v3.868l3.18-1.49a.75.75 0 01.637 0l3.182 1.49v-3.87zM12 3.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zm.229 3.142l.912 1.853 2.044.295c.21.03.293.288.142.435l-1.479 1.44.35 2.036a.255.255 0 01-.37.269L12 12.008l-1.827.962a.255.255 0 01-.37-.269l.35-2.035-1.48-1.44a.255.255 0 01.142-.436l2.044-.295.912-1.853a.255.255 0 01.458 0z"></path>
+                </g>
               </g>
-            </g>
-          </svg>
+            </svg>
 
-          <li
-            onClick={ActiveRecommended}
-            style={{ color: isActiveRecommended ? "white" : "#fed5b3" }}
-          >
-            Recommandé
-          </li>
-        </div>
+            <li
+              onClick={ActiveRecommended}
+              style={{ color: isActiveRecommended ? "white" : "#fed5b3" }}
+            >
+              Recommandé
+            </li>
+          </div>
+        </NavLink>
 
         <div className="a">
           <svg

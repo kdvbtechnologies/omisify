@@ -5926,35 +5926,51 @@ padding-bottom: 70px;
 /* vi - home user - block image.js */
 /* vi - home user - block image.js */
 /* vi - home user - block image.js */
-.block-image {
-  overflow-x: auto;
+
+.align-block-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-block-image .block-image {
+  cursor: pointer;
   margin-top: 20px;
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 40px;
   padding-bottom: 40px;
-  cursor: -webkit-grab; 
-  cursor: grab;
+  display: flex;
+  overflow-x: auto;
 }
 
-.block-image .images {
-  display: flex;
+.align-block-image .block-image .images {
   flex-wrap: nowrap;
+  display: flex;
 }
 
 .block-image .images img {
-  width: 220px;
+  cursor: pointer;
+  width: 160px;
   border-radius: 15px;
-  padding-left: 8px;
-  padding-right: 8px;
-  cursor: -webkit-grab; 
-  cursor: grab;
-/*
-.grabbing {
-  cursor: -webkit-grabbing; 
-  cursor: grabbing;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-*/
+
+.popup-image-in-bottom .align {
+  overflow-x: auto;
+  display: flex;
+}
+
+.popup-image-in-bottom .display {
+  display: flex;
+}
+
+.popup-image-in-bottom .image img {
+  width: 30px;
+  height: 50px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 /* vi - home user - about app.js */
@@ -5965,6 +5981,250 @@ padding-bottom: 70px;
 .about-app .title {
   display: flex;
 }
+
+/* vi - home user - before block image.js */
+/* vi - home user - before block image.js */
+/* vi - home user - before block image.js */
+/* vi - home user - before block image.js */
+/* vi - home user - before block image.js */
+.before-block-image-pc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.before-block-image-pc .icon {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.before-block-image-pc .icon .mobile {
+  display: flex;
+  align-items: center;
+}
+
+.before-block-image-pc .icon .tablet {
+  display: flex;
+  align-items: center;
+}
+
+.before-block-image-pc .icon .computer {
+  display: flex;
+  align-items: center;
+}
+
+.before-block-image-pc .icon p {
+  padding-left: 3px;
+  font-size: 14px;
+  margin-right: 7px;
+}
+
+.before-block-image-pc .icon svg {
+  margin-left: 3px;
+}
+
+/* vi - home user - infos of dev.js */
+/* vi - home user - infos of dev.js */
+/* vi - home user - infos of dev.js */
+/* vi - home user - infos of dev.js */
+/* vi - home user - infos of dev.js */
+.infos-of-dev-background {
+  background: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.infos-of-dev-background .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 70px;
+  padding-bottom: 50px;
+}
+
+.infos-of-dev-background .card {
+  width: 400px;
+  padding: 20px;
+  background-color: white;
+}
+
+.infos-of-dev-background .card .border {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.infos-of-dev-background .card .close {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos-of-dev {
+  padding-bottom: 30px;
+}
+
+.infos-of-dev .icon {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.infos-of-dev .icon svg {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.infos-of-dev .icon p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.infos-of-dev-close-btn {
+  fill: black;
+}
+
+.infos-of-dev-close-btn:hover {
+  background: black;
+  fill: white;
+}
+
+/* vi - home user - back-btn-and-go-to-infos-of-dev-btn.js */
+/* vi - home user - back-btn-and-go-to-infos-of-dev-btn.js */
+/* vi - home user - back-btn-and-go-to-infos-of-dev-btn.js */
+/* vi - home user - back-btn-and-go-to-infos-of-dev-btn.js */
+/* vi - home user - back-btn-and-go-to-infos-of-dev-btn.js */
+.back-btn-and-go-to-infos-of-dev-btn-mobile {
+  display: none;
+}
+
+.back-btn-and-go-to-infos-of-dev-btn-pc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.back-btn-and-go-to-infos-of-dev-btn-pc .go-to-infos-of-dev-btn {
+  display: flex;
+}
+
+.photo-cover-dev-store-1300x180 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 180px;
+}
+
+.photo-cover-dev-store-300x135 img {
+  display: none;
+}
+
+.photo-cover-dev-store-320x135 img {
+  display: none;
+}
+
+.photo-cover-dev-store-250x135 img {
+  display: none;
+}
+
+/* vi - home user - store dev.js */
+/* vi - home user - store dev.js */
+/* vi - home user - store dev.js */
+/* vi - home user - store dev.js */
+.store-dev .title {
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.align-icon-of-app {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.display-icon-of-app {
+  display: flex;
+}
+
+.icon-of-app {
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 30px;
+}
+
+.icon-of-app img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  
+}
+
+.icon-of-app p {
+  margin-left: -10px;
+  font-size: 17px;
+  width: 120px;
+  height: auto;
+  text-align: center;
+  color: #444;
+  padding-top: 3px;
+}
+
+/* vi - home user - popup block image.js */
+/* vi - home user - popup block image.js */
+/* vi - home user - popup block image.js */
+/* vi - home user - popup block image.js */
+/* vi - home user - popup block image.js */
+.popup-block-image-background {
+  width: 100%;
+  height: 100%;
+  background-color: #00000050;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.popup-block-image-background .card {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 45px;
+  padding-bottom: 200px;
+}
+
+.popup-block-image-background .card .close svg {
+  padding-left: 30px;
+}
+
+.popup-block-image-background .card .display {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.popup-block-image-background .card .display .left {
+  padding-right: 10px;
+}
+
+.popup-block-image-background .card .display .right {
+  padding-left: 10px;
+}
+
+.popup-block-image-background .card .images img {
+  width: 250px;
+}
+
 
 /* 1350px */
 /* 1350px */
@@ -6682,6 +6942,51 @@ padding-bottom: 70px;
     /* vixinol */
     /* vixinol */
     /* vixinol */
+    /* vixinol */
+  .popup-block-image-background .card {
+    margin-top: 47px;
+  }
+  .popup-block-image-background .card .images img {
+    width: 200px;
+  }
+
+  .infos-of-dev-background .card {
+    width: 380px;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .infos-of-dev-background .card .border {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .infos-of-dev .icon svg {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  
+  .infos-of-dev .icon p {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+  }
+    
+    .back-btn-and-go-to-infos-of-dev-btn-pc {
+      display: none;
+    }
+
+    .back-btn-and-go-to-infos-of-dev-btn-mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .back-btn-and-go-to-infos-of-dev-btn-mobile .go-to-infos-of-dev-btn {
+      display: flex;
+    }
+
     .slideshow .images img {
       width: 500px;
       height: 300px;
@@ -7162,6 +7467,29 @@ padding-bottom: 70px;
     display: flex;
     justify-content: center;
   }
+
+  /* vixinol */
+  .infos-of-dev-background .card {
+    width: 340px;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .infos-of-dev-background .card .border {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .infos-of-dev .icon svg {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  
+  .infos-of-dev .icon p {
+    padding-left: 2px;
+    padding-right: 5px;
+    font-size: 16px;
+  }
 }
 
 
@@ -7277,6 +7605,7 @@ padding-bottom: 70px;
     padding-left: 25%;
   }  
 
+  /* vixinol */
   .slideshow .images img {
     width: 400px;
     height: 250px;
@@ -7284,6 +7613,15 @@ padding-bottom: 70px;
   }
 }
 
+/*  600px */
+/*  600px */
+@media screen and (max-width: 600px) {
+  .store-dev .title {
+    font-size: 20px;
+  }
+}
+
+/* 560px */
 /* 560px */
 @media screen and (max-width: 560px) {
   /* inizel */
@@ -7453,6 +7791,29 @@ padding-bottom: 70px;
     padding: 10px;
     margin: 20px 0px;
     width: 435px;
+  }
+
+  /* vixinol */
+  .infos-of-dev-background .card {
+    width: 300px;
+    padding: 15px;
+    background-color: white;
+  }
+
+  .infos-of-dev-background .card .border {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .infos-of-dev .icon svg {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  
+  .infos-of-dev .icon p {
+    padding-left: 2px;
+    padding-right: 5px;
+    font-size: 16px;
   }
   
   /* jamelfase */
@@ -7842,6 +8203,31 @@ padding-bottom: 70px;
   .navbar-top-en .mobile .a {
     padding-left: 20%;
   }  
+
+  /* vixinol */
+  /* vixinol */
+  /* vixinol */
+  .infos-of-dev-background .card {
+    width: 290px;
+    padding: 15px;
+    background-color: white;
+  }
+
+  .infos-of-dev-background .card .border {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .infos-of-dev .icon svg {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  
+  .infos-of-dev .icon p {
+    padding-left: 2px;
+    padding-right: 5px;
+    font-size: 16px;
+  }
 }
 
 /* 385px */
@@ -7858,6 +8244,29 @@ padding-bottom: 70px;
  }
 
   /* vixinol */
+  /* vixinol */
+  .infos-of-dev-background .card {
+    width: 270px;
+    padding: 15px;
+    background-color: white;
+  }
+
+  .infos-of-dev-background .card .border {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .infos-of-dev .icon svg {
+    padding-left: 2px;
+    padding-right: 5px;
+  }
+  
+  .infos-of-dev .icon p {
+    padding-left: 2px;
+    padding-right: 5px;
+    font-size: 16px;
+  }
+
  .slideshow .images img {
   width: 300px;
   height: 180px;
@@ -7982,15 +8391,32 @@ padding-bottom: 70px;
   .one-book .a .buttonb button {
     margin: 10px 0px;
   }
+
+  /* vixinol */
+  /* vixinol */
+  .infos-of-dev-background .card {
+    width: 260px;
+    padding: 15px;
+    background-color: white;
+  }
+
+  .infos-of-dev-background .card .border {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .infos-of-dev .icon svg {
+    padding-left: 2px;
+    padding-right: 5px;
+  }
+  
+  .infos-of-dev .icon p {
+    padding-left: 2px;
+    padding-right: 5px;
+    font-size: 16px;
+  }
 }
 
-/*
-@media screen and (min-width: 337px) {
-  /* vixinol 
-  .profil-app {
-    padding-left: 12%;
-  }
-}*/
 
 /* 337px */
 @media screen and (max-width: 337px) {
@@ -8096,7 +8522,51 @@ padding-bottom: 70px;
     padding-left: 10%;
   }
 
-  /* vixinol */
+/* vixinol */
+/* vixinol */
+/* vixinol */
+.infos-of-dev-background .card {
+  width: 260px;
+  padding: 10px;
+  background-color: white;
+}
+
+.infos-of-dev-background .card .border {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.infos-of-dev .icon svg {
+  padding-left: 2px;
+  padding-right: 5px;
+}
+
+.infos-of-dev .icon p {
+  padding-left: 2px;
+  padding-right: 5px;
+  font-size: 16px;
+}
+
+  .photo-cover-dev-store-320x135 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 135px;
+  }
+
+  .photo-cover-dev-store-1300x180 img {
+    display: none;
+  }
+
+  .photo-cover-dev-store-300x135 img {
+    display: none;
+  }
+
+  .photo-cover-dev-store-250x135 img {
+    display: none;
+  }
+
   .store-app {
     padding: 15px;
     display: flex;
@@ -8147,6 +8617,49 @@ padding-bottom: 70px;
   
   /* vixinol */
   /* vixinol */
+  .photo-cover-dev-store-300x135 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 135px;
+  }
+
+  .photo-cover-dev-store-1300x180 img {
+    display: none;
+  }
+
+  .photo-cover-dev-store-320x135 img {
+    display: none;
+  }
+
+  .photo-cover-dev-store-250x135 img {
+    display: none;
+  }
+
+   /* vixinol */
+   .infos-of-dev-background .card {
+    width: 240px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .infos-of-dev-background .card .border {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .infos-of-dev .icon svg {
+    padding-left: 2px;
+    padding-right: 5px;
+  }
+  
+  .infos-of-dev .icon p {
+    padding-left: 2px;
+    padding-right: 5px;
+    font-size: 15px;
+  }
+
   .name-of-app {
     font-size: 20px;
     width: 50%;
@@ -8222,6 +8735,30 @@ padding-bottom: 70px;
   }
 }
 
+/* 280px */
+@media screen and (max-width: 280px) {
+   /* vixinol */
+   .infos-of-dev-background .card {
+    width: 235px;
+    padding: 5px;
+    background-color: white;
+  }
+
+  .infos-of-dev-background .card .border {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .infos-of-dev .icon svg {
+    padding-left: 2px;
+    padding-right: 5px;
+  }
+  
+  .infos-of-dev .icon p {
+    padding-left: 2px;
+    padding-right: 5px;
+  }
+}
 
 /* 260px */
 @media screen and (max-width: 260px) {
@@ -8266,6 +8803,29 @@ padding-bottom: 70px;
 
   /* vixinol */
   /* vixinol */  
+  /* vixinol */
+  .infos-of-dev-background .card {
+    width: 225px;
+    padding: 5px;
+    background-color: white;
+  }
+
+  .infos-of-dev-background .card .border {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .infos-of-dev .icon svg {
+    padding-left: 2px;
+    padding-right: 5px;
+  }
+  
+  .infos-of-dev .icon p {
+    padding-left: 2px;
+    padding-right: 5px;
+    font-size: 15px;
+  }
+
   .navbar-bottom-vi li {
     padding-left: 10px;
     padding-right: 10px;
@@ -8320,6 +8880,52 @@ padding-bottom: 70px;
   .home .dsuite-shrink .dsuite .right {
     width: 55%;
     font-size: 16px;
+  }
+}
+
+/* 250px */
+@media screen and (max-width: 250px) {
+  
+  /* vixinol */
+  .photo-cover-dev-store-250x135 img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 135px;
+  }
+
+  .photo-cover-dev-store-1300x180 img {
+    display: none;
+  }
+
+  .photo-cover-dev-store-320x135 img {
+    display: none;
+  }
+
+  .photo-cover-dev-store-300x135 img {
+    display: none;
+  }
+
+  .infos-of-dev-background .card {
+    width: 205px;
+    padding: 5px;
+    background-color: white;
+  }
+
+  .infos-of-dev-background .card .border {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .infos-of-dev .icon svg {
+    padding-left: 2px;
+    padding-right: 5px;
+  }
+  
+  .infos-of-dev .icon p {
+    padding-left: 2px;
+    padding-right: 5px;
+    font-size: 14px;
   }
 }
 
@@ -8431,6 +9037,28 @@ padding-bottom: 70px;
 
   /* vixinol */
    /* vixinol */
+   .infos-of-dev-background .card {
+    width: 205px;
+    padding: 2px;
+    background-color: white;
+  }
+
+  .infos-of-dev-background .card .border {
+    border: 1px solid black;
+    padding: 2px;
+  }
+
+  .infos-of-dev .icon svg {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  
+  .infos-of-dev .icon p {
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 14px;
+  }
+
    .slideshow .images img {
     width: 210px;
     height: 130px;
@@ -8487,6 +9115,28 @@ padding-bottom: 70px;
 }
 
 /* vixinol */
+.infos-of-dev-background .card {
+  width: 195px;
+  padding: 2px;
+  background-color: white;
+}
+
+.infos-of-dev-background .card .border {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.infos-of-dev .icon svg {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.infos-of-dev .icon p {
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 14px;
+}
+
 .slideshow .images img {
   width: 200px;
   height: 130px;
@@ -8561,6 +9211,29 @@ padding-bottom: 70px;
 
 /* vixinol */
 /* vixinol */
+/* vixinol */
+.infos-of-dev-background .card {
+  width: 190px;
+  padding: 1px;
+  background-color: white;
+}
+
+.infos-of-dev-background .card .border {
+  border: 1px solid black;
+  padding: 1px;
+}
+
+.infos-of-dev .icon svg {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.infos-of-dev .icon p {
+  padding-left: 1px;
+  padding-right: 1px;
+  font-size: 14px;
+}
+
 .profil-app .icon {
   display: flex;
   justify-content: center;
@@ -8589,3 +9262,29 @@ padding-bottom: 70px;
 }
 }
 
+
+/* 210px */
+@media screen and (max-width: 210px) {
+/* vixinol */
+.infos-of-dev-background .card {
+  width: 185px;
+  padding: 0.5px;
+  background-color: white;
+}
+
+.infos-of-dev-background .card .border {
+  border: none;
+}
+
+.infos-of-dev .icon svg {
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+}
+
+.infos-of-dev .icon p {
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+  font-size: 14px;
+}
+
+}
