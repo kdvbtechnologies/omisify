@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Back() {
+  const navigate = useNavigate();
+
   return (
-    <div style={{ display: "flex" }}>
+    <div onClick={() => navigate(-1)} style={{ display: "flex" }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0"

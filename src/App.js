@@ -337,12 +337,15 @@ import Geolocation from "./components/Business/Settings/Geolocation";
 // alrani
 // alrani
 // alrani
+import StoreBook from "./components/Alrani/StoreBook/StoreBook";
+import AboutAuthor from "./components/Alrani/Profil/AboutAuthor";
 import NavbarAl from "./components/Alrani/Navigation/Navbar";
 import HomeAl from "./components/Alrani/Home/Home";
 import OneBook from "./components/Alrani/Home/OneBook";
 import PageCommentBookFiveStars from "./components/Alrani/Home/Comment/PageCommentBookFiveStars";
 import MoreBookPage from "./components/Alrani/Home/MoreBookPage";
 import CommentBookAll from "./components/Alrani/Home/CommentBookAll";
+import DetailsPopularityAuthor from "./components/Alrani/Profil/DetailsPopularityAuthor";
 
 import ProfilAl from "./components/Alrani/Profil/Profil";
 import LoginSuccessAl from "./components/Alrani/Auth/LoginSuccess";
@@ -409,6 +412,7 @@ import ResultEncyclodata from "./components/0Inizel/Home/Encyclodata/Result/Resu
 // vixinol
 // vixinol
 // vixinol
+import StoreDev from "./components/0Vixinol/HomeUser/StoreDev/StoreDev";
 import ProfilVI from "./components/0Vixinol/Profil/Profil";
 import LogoutVi from "./components/0Vixinol/Auth/Logout";
 import LogoutConfirmVI from "./components/0Vixinol/Auth/LogoutConfirm";
@@ -431,7 +435,6 @@ import ForgotPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/ForgotPa
 import NewPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/NewPassword";
 import NewPasswordSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/NewPasswordSuccess";
 import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
-import StoreDev from "./components/0Vixinol/HomeUser/StoreDev/StoreDev";
 
 export default function App() {
   return (
@@ -1034,6 +1037,8 @@ export default function App() {
         {/* alrani */}
         {/* alrani */}
         {/* alrani */}
+        <Route path="/store-book" element={<StoreBook />} />
+        <Route path="/about" element={<AboutAuthor />} />
         <Route path="/navbar-al" element={<NavbarAl />} />
         <Route path="/home-al" element={<HomeAl />} />
         <Route path="/book" element={<OneBook />} />
@@ -1149,6 +1154,7 @@ export default function App() {
         {/* vixinol */}
         {/* vixinol */}
         <Route path="/page-download-app" element={<PageDownloadAppVI />} />
+        <Route path="/popularity" element={<DetailsPopularityAuthor />} />
         <Route path="/store-dev" element={<StoreDev />} />
         <Route path="/profil-app" element={<ProfilApp />} />
         <Route path="/profil-vi" element={<ProfilVI />} />

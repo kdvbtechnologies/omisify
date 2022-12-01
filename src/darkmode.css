@@ -3822,7 +3822,7 @@ padding-bottom: 70px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 300px;
   margin-top: 120px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3851,6 +3851,288 @@ padding-bottom: 70px;
   border-radius: 5px;
   border: 1px solid #00cc00;
   font-size: 15px;
+}
+
+.profil-author-popularity {
+  margin-top: 40px;
+}
+
+.profil-author-droit-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.profil-author-popularity .a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profil-author-popularity .a p {
+  padding-right: 5px;
+}
+
+.profil-author-droit-author p {
+  padding-right: 5px;
+}
+
+.popup-stats-background {
+  background-color: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.popup-stats-background .card {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.popup-stats-background .card .stats-title {
+  font-size: 20px;
+  background-color: #eee;
+  color: #444;
+}
+
+.popup-stats-background .card .stats-title .b {
+  font-size: 14px;
+  display: flex;
+  color: #00cc00;
+}
+
+.popup-stats-background .display .a {
+  display: flex;
+  width: 250px;
+  background-color: white;
+  padding: 20px;
+}
+
+.popup-stats-background .display .a svg {
+  padding: 0px 5px;
+}
+
+.popup-droit-author-background {
+  background-color: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.popup-droit-author-background .card {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.popup-droit-author-background .card .a {
+  width: 200px;
+  background: white;
+  padding: 30px 15px;
+  border-radius: 10px;
+}
+
+.popup-droit-author-background .card .a p {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* al - profil - details popularity author */
+/* al - profil - details popularity author */
+/* al - profil - details popularity author */
+/* al - profil - details popularity author */
+/* al - profil - details popularity author */
+/* al - profil - details popularity author */
+.align-details-popularity-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.details-popularity-author {
+  display: flex;
+  padding-top: 100px;
+  font-size: 20px;
+  
+}
+
+.details-popularity-author p {
+  padding-left: 5px;
+}
+
+.align-popularity-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popularity-paragraph {
+  display: flex;
+  padding-left: 5px;
+  font-size: 17px;
+  border: 1px solid #00cc00;
+  box-shadow: 5px 5px #00cc00;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 20px;
+}
+
+.popularity-paragraph p {
+  padding-left: 5px;
+}
+
+.popularity-by-country .hr hr {
+  border: 1px solid #eee;
+  margin: 5px 20px;;
+}
+
+.popularity-by-country {
+  margin-bottom: 50px;
+}
+
+.popularity-by-country .a {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popularity-by-country .a p {
+  padding: 0px 5px;
+}
+
+.popularity-author-last-maj {
+  font-size: 14px;
+  padding: 20px;
+}
+
+.align-book-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-btn-hr {
+  border: 1px solid #fff;
+}
+
+.book-btn {
+  margin-bottom: 50px;
+}
+
+.book-btn .a {
+  width: 200px;
+  background-color: transparent;
+}
+
+.book-btn .a svg {
+  padding: 10px;
+}
+
+.align-infos-of-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infos-of-author {
+  width: 450px;
+  border: 1px solid #444;
+  padding: 30px 15px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.infos-of-author .a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infos-of-author .a svg {
+  padding-left: 10px;
+  padding-right: 7px;
+}
+
+.infos-of-author .a p {
+  font-size: 20px;
+}
+
+.infos-of-author .paragraph {
+  padding: 25px 5px;
+  font-size: 17px;
+}
+
+.infos-of-author .align-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* al - profil - about author.js */
+/* al - profil - about author.js */
+/* al - profil - about author.js */
+/* al - profil - about author.js */
+/* al - profil - about author.js */
+/* al - profil - about author.js */
+
+.about-author .align-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-author .about {
+  padding-top: 100px;
+  display: flex;
+  font-size: 20px;
+}
+
+.about-author .about svg {
+  padding-right: 10px;
+}
+
+.about-author .align-paragraph {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.about-author .paragraph {
+  width: 500px;
+  padding: 20px 10px;
+  font-size: 17px;
+  box-shadow: 5px 5px aqua;
+}
+
+.about-author .paragraph .a {
+  display: flex;
+  margin-top: 15px;
+}
+
+.about-author .paragraph .a p {
+  font-size: 15px;
+  text-decoration: underline;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.about-author .paragraph .a svg {
+  padding-right: 5px;
 }
 
 /* al - auth - logout.js */
@@ -6807,7 +7089,7 @@ padding-bottom: 70px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 120px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .profil-card-al img {
@@ -7404,6 +7686,11 @@ padding-bottom: 70px;
 
 /* 680px */
 @media screen and (max-width: 680px) {
+  /* alrani */
+  .about-author .paragraph {
+    width: 400px;
+  }
+
   /* inizel */
   /* inizel */
   /* inizel */
@@ -7616,9 +7903,18 @@ padding-bottom: 70px;
 /*  600px */
 /*  600px */
 @media screen and (max-width: 600px) {
+
+  /* alrani */
+  .infos-of-author {
+    width: 350px;
+    padding: 15px 15px;
+  }
+
+  /* vixinol */
   .store-dev .title {
     font-size: 20px;
   }
+
 }
 
 /* 560px */
@@ -7734,6 +8030,11 @@ padding-bottom: 70px;
 /* 520px */
 /* 520px */
 @media screen and (max-width: 520px) {
+  /* alrani */
+  .about-author .paragraph {
+    width: 400px;
+    font-size: 16px;
+  }
 
   /* inizel */
   /* inizel */
@@ -7847,6 +8148,18 @@ padding-bottom: 70px;
 
 /* 500px */
 @media screen and (max-width: 500px) {
+   /* alrani */
+   .infos-of-author {
+    width: 270px;
+    padding: 15px 15px;
+  }
+
+  .infos-of-author .paragraph {
+    padding: 20px 5px;
+    font-size: 17px;
+  }
+  
+
   /* inizel */
    /* inizel */
   /* inizel */
@@ -7954,6 +8267,15 @@ padding-bottom: 70px;
     /* alrani */
     /* alrani */
     /* alrani */
+  .about-author .paragraph {
+      width: 320px;
+      padding: 10px 5px;
+  }
+  
+  .about-author .paragraph .a p {
+      font-size: 14px;
+  }
+
   .details-book .title p {
     font-size: 18px;
   }
@@ -8305,13 +8627,13 @@ padding-bottom: 70px;
   }
 
   .number-of-search-results-in {
-      padding-left: 30px;
+    padding-left: 30px;
   }
   
   .search-result-in .align-logo-and-search-input {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
    
   .search-result-in .align-logo-and-search-input .logo {
@@ -8322,11 +8644,11 @@ padding-bottom: 70px;
   }
   
   .search-result-in .align-input .input input[type="text"] {
-      background-color: white;
-      border: 1px solid white;
-      border-radius: 20px;
-      padding: 8px 24px;
-      color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 24px;
+    color: black;
   }
 
   .home-in {
@@ -8360,6 +8682,19 @@ padding-bottom: 70px;
 
   .navbar-top-en .mobile .a {
     padding-left: 15%;
+  }
+}
+
+/* 360px */
+@media screen and (max-width: 360px) {
+  
+  /* alrani */
+  .about-author .paragraph {
+    width: 300px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -8420,7 +8755,30 @@ padding-bottom: 70px;
 
 /* 337px */
 @media screen and (max-width: 337px) {
-  /* alrani */
+/* alrani */
+/* alrani */
+.infos-of-author {
+  width: 240px;
+  padding: 15px 15px;
+}
+
+.infos-of-author .paragraph {
+  padding: 20px 5px;
+  font-size: 17px;
+}
+
+.about-author .paragraph {
+  width: 250px;
+  margin-right: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+    
+.about-author .paragraph .a p {
+  width: 150px;
+}
 .one-book img {
   width: 170px;
   height: auto;
@@ -8451,17 +8809,29 @@ padding-bottom: 70px;
   }
 
    /* vixinol */
-
  .slideshow .images img {
   width: 280px;
   height: 170px;
   border-radius: 10px;
-}
+ }
 }
 
 /* 320px */
 @media screen and (max-width: 320px) {
   /* alrani */
+  .about-author .paragraph {
+    width: 250px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .about-author .paragraph .a p {
+    width: 150px;
+  }
+  
   .popup-background-al .popup-card img {
     width: 260px;
   }
@@ -8525,6 +8895,7 @@ padding-bottom: 70px;
 /* vixinol */
 /* vixinol */
 /* vixinol */
+/* vixinol */
 .infos-of-dev-background .card {
   width: 260px;
   padding: 10px;
@@ -8577,6 +8948,30 @@ padding-bottom: 70px;
 
 @media screen and (max-width: 300px) {
   /* alrani */
+  /* alrani */
+.infos-of-author {
+  width: 220px;
+  padding: 15px 15px;
+}
+
+.infos-of-author .paragraph {
+  padding: 20px 5px;
+  font-size: 17px;
+}
+
+  .about-author .paragraph {
+    width: 230px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .about-author .paragraph .a p {
+    width: 150px;
+  }
+
   .details-book-mobile .detail .a {
     width: 195px;
   }
@@ -8637,8 +9032,7 @@ padding-bottom: 70px;
     display: none;
   }
 
-   /* vixinol */
-   .infos-of-dev-background .card {
+  .infos-of-dev-background .card {
     width: 240px;
     padding: 10px;
     background-color: white;
@@ -8696,44 +9090,7 @@ padding-bottom: 70px;
   }
 }
 
-/* 275px */
-@media screen and (max-width: 275px) {
-/* alrani */
-.popup-background-al .popup-card img {
-  width: 240px;
-}
 
-  /* inizel */
-
-  /* encyclodata */
-  .navbar-top-en .mobile .item {
-    width: 235px;
-    margin-left: -20px;
-  }  
-  
-  .slideshow .images img {
-    width: 230px;
-    height: 140px;
-    border-radius: 10px;
-  }
-
-  .after-slideshow .image img {
-    width: 75px;
-    height: 45px;
-    border-radius: 5px;
-  }
-
-  .popup-download-btn-background .card {
-    padding: 10px 10px;
-  }
-
-  .sub-navbar-top-vi .icon {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 11%;
-    padding-left: 11%;
-  }
-}
 
 /* 280px */
 @media screen and (max-width: 280px) {
@@ -8759,6 +9116,68 @@ padding-bottom: 70px;
     padding-right: 5px;
   }
 }
+
+/* 275px */
+@media screen and (max-width: 275px) {
+  /* alrani */
+  .infos-of-author {
+    width: 200px;
+    padding: 15px 15px;
+  }
+  
+  .infos-of-author .paragraph {
+    padding: 20px 5px;
+    font-size: 17px;
+  }
+
+  .about-author .paragraph {
+    width: 210px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .about-author .paragraph .a p {
+    width: 150px;
+  }
+
+  .popup-background-al .popup-card img {
+    width: 240px;
+  }
+  
+    /* inizel */
+  
+    /* encyclodata */
+    .navbar-top-en .mobile .item {
+      width: 235px;
+      margin-left: -20px;
+    }  
+    
+    .slideshow .images img {
+      width: 230px;
+      height: 140px;
+      border-radius: 10px;
+    }
+  
+    .after-slideshow .image img {
+      width: 75px;
+      height: 45px;
+      border-radius: 5px;
+    }
+  
+    .popup-download-btn-background .card {
+      padding: 10px 10px;
+    }
+  
+    .sub-navbar-top-vi .icon {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 11%;
+      padding-left: 11%;
+    }
+  }
 
 /* 260px */
 @media screen and (max-width: 260px) {
@@ -8885,7 +9304,30 @@ padding-bottom: 70px;
 
 /* 250px */
 @media screen and (max-width: 250px) {
+  /* alrani */
+  .infos-of-author {
+    width: 180px;
+    padding: 15px 15px;
+  }
   
+  .infos-of-author .paragraph {
+    padding: 20px 5px;
+    font-size: 17px;
+  }
+
+  .about-author .paragraph {
+    width: 190px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .about-author .paragraph .a p {
+    width: 130px;
+  }
+
   /* vixinol */
   .photo-cover-dev-store-250x135 img {
     display: flex;
@@ -9000,9 +9442,6 @@ padding-bottom: 70px;
 
   /* encyclodata */
 
-
-  /* jamelfase */
-  /* jamelfase */
   /* jamelfase */
   .navbar-bottom-ja .icon {
       padding-left: 39px;
@@ -9012,6 +9451,29 @@ padding-bottom: 70px;
 
 @media screen and (max-width: 235px) {
    /* alrani */
+   .infos-of-author {
+    width: 160px;
+    padding: 15px 15px;
+  }
+  
+  .infos-of-author .paragraph {
+    font-size: 17px;
+    padding: 20px 5px;
+  }
+
+   .about-author .paragraph {
+    width: 170px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .about-author .paragraph .a p {
+    width: 110px;
+  }
+
    .note-of-book .border {
      width: 130px;
    }
@@ -9028,9 +9490,10 @@ padding-bottom: 70px;
     padding-top: 72px;
   }
 
-.popup-background-al .popup-card img {
-  width: 210px;
-}
+  .popup-background-al .popup-card img {
+    width: 210px;
+  }
+
   /* inizel */
 
   /* encyclodata */
@@ -9152,6 +9615,16 @@ padding-bottom: 70px;
 
 @media screen and (max-width: 220px) {
   /* alrani */
+  .infos-of-author {
+    width: 140px;
+    padding: 15px 15px;
+  }
+  
+  .infos-of-author .paragraph {
+    font-size: 16px;
+    padding: 20px 5px;
+  }
+
   .details-book-mobile .detail .a {
     width: 145px;
   }
