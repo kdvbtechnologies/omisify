@@ -435,6 +435,8 @@ import ForgotPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/ForgotPa
 import NewPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/NewPassword";
 import NewPasswordSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/NewPasswordSuccess";
 import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
+import BeforeCategorieApp from "./components/0Vixinol/HomeUser/Categorie/BeforeCategorieApp";
+import CategorieApp from "./components/0Vixinol/HomeUser/Categorie/CategorieApp";
 
 export default function App() {
   return (
@@ -1154,6 +1156,8 @@ export default function App() {
         {/* vixinol */}
         {/* vixinol */}
         <Route path="/page-download-app" element={<PageDownloadAppVI />} />
+        <Route path="/categorie-app" element={<CategorieApp />} />
+        <Route path="/before-categorie-app" element={<BeforeCategorieApp />} />
         <Route path="/popularity" element={<DetailsPopularityAuthor />} />
         <Route path="/store-dev" element={<StoreDev />} />
         <Route path="/profil-app" element={<ProfilApp />} />

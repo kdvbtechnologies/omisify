@@ -6402,7 +6402,7 @@ padding-bottom: 70px;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 180px;
+  height: auto;
 }
 
 .photo-cover-dev-store-300x135 img {
@@ -6507,6 +6507,75 @@ padding-bottom: 70px;
   width: 250px;
 }
 
+/* vi - home user - before categorie app.js */
+/* vi - home user - before categorie app.js */
+/* vi - home user - before categorie app.js */
+/* vi - home user - before categorie app.js */
+/* vi - home user - before categorie app.js */
+/* vi - home user - before categorie app.js */
+.before-categorie-app-title {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 19px;
+   color: black;
+}
+
+.before-categorie-app .a {
+  display: flex;
+}
+
+.before-categorie-app .a {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.before-categorie-app .a p {
+  padding-left: 10px;
+  color: #444;
+}
+
+/* vi - home user - categorie app.js */
+.categorie-app-title {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 19px;
+  color: black;
+}
+
+.categorie-app-title .a {
+  display: flex;
+}
+
+.categorie-app-title .a p {
+  padding-left: 10px;
+  color: black;
+}
+
+.categorie-app-popularity {
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.categorie-app .a {
+  margin-left: 40px;
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 35px;
+  flex-wrap: nowrap;
+  color: black;
+}
+
+.categorie-app .a img {
+  padding-left: 15px;
+  padding-right: 10px;
+  width: 70px;
+  height: 70px;
+}
 
 /* 1350px */
 /* 1350px */
@@ -7225,6 +7294,14 @@ padding-bottom: 70px;
     /* vixinol */
     /* vixinol */
     /* vixinol */
+  .categorie-app-popularity {
+    margin-left: 20px;
+  }
+
+  .categorie-app .a {
+    margin-left: 20px;
+  }
+
   .popup-block-image-background .card {
     margin-top: 47px;
   }
