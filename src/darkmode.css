@@ -6263,9 +6263,9 @@ padding-bottom: 70px;
 /* vi - home user - about app.js */
 /* vi - home user - about app.js */
 .about-app .title {
+  font-size: 20px;
   display: flex;
   align-items: center;
-  font-size: 20px;
   padding-left: 20px;
 }
 
@@ -6282,11 +6282,57 @@ padding-bottom: 70px;
   color: #444;
 }
 
+/* vi - home user - page about app.js */
+/* vi - home user - page about app.js */
+/* vi - home user - page about app.js */
+/* vi - home user - page about app.js */
+/* vi - home user - page about app.js */
+/* vi - home user - page about app.js */
+/* vi - home user - page about app.js */
+.page-about-app .title {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.page-about-app .title p {
+  padding-right: 7px;
+  color: black;
+}
+
+.after-page-about-app {
+  padding-top: 7px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #444;
+}
+
+.page-about-app-with-bold {
+  padding: 10px 20px;
+}
+
+.page-about-app-with-bold .a {
+  font-weight: bold;
+}
+
+.page-about-app-without-bold {
+  padding: 10px 20px;
+}
+
+
+
 /* vi - home user - before block image.js */
 /* vi - home user - before block image.js */
 /* vi - home user - before block image.js */
 /* vi - home user - before block image.js */
 /* vi - home user - before block image.js */
+.before-block-image-mobile {
+  display: none;
+}
+
 .before-block-image-pc {
   display: flex;
   justify-content: center;
@@ -6693,7 +6739,7 @@ padding-bottom: 70px;
 /* vi - profil app - notice.js */
 .notice {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 15px;
   margin-left: 20px;
   font-size: 16px;
   color: #fd7e14;
@@ -6799,6 +6845,78 @@ padding-bottom: 70px;
   background-color: #fd7e14;
   color: white;
   border: none;
+}
+
+/* vi - comment app - comment app.js */
+/* vi - comment app - comment app.js */
+/* vi - comment app - comment app.js */
+/* vi - comment app - comment app.js */
+/* vi - comment app - comment app.js */
+/* vi - comment app - comment app.js */
+.comment-app {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 35px;
+}
+
+.comment-app .a .photo-profil {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.comment-app .b {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.comment-app .b .country {
+  font-size: 14px;
+}
+
+.comment-app-desc {
+  padding-left: 70px;
+  padding-right: 20px;
+}
+
+.comment-app-desc .date {
+  font-size: 13px;
+  color: #a6a6a6;
+}
+
+.stars-five-app {
+  margin-left: 68px;
+}
+
+/* vi - home user - quality app.js */
+/* vi - home user - quality app.js */
+/* vi - home user - quality app.js */
+/* vi - home user - quality app.js */
+/* vi - home user - quality app.js */
+/* vi - home user - quality app.js */
+.quality-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quality-app .a {
+  background: #eee;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin: 3px;
+}
+
+.quality-app .b {
+  margin: 3px;
+}
+
+.quality-app .b p {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: blue;
+  font-size: 16px;
 }
 
 /* 1350px */
@@ -9563,7 +9681,51 @@ padding-bottom: 70px;
       margin-left: -20px;
     }  
 
-    /* vixinol */
+  /* vixinol */
+.before-block-image-pc {
+  display: none;
+}
+    
+.before-block-image-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.before-block-image-mobile .icon {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.before-block-image-mobile .icon .mobile {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.before-block-image-mobile .icon .tablet {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.before-block-image-mobile .icon .computer {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.before-block-image-mobile .icon p {
+  padding-left: 3px;
+  font-size: 14px;
+  margin-right: 7px;
+}
+
+.before-block-image-mobile .icon svg {
+  margin-left: 3px;
+}
+
     .popup-notice-background .align .card {
       width: 180px;
     }  
@@ -9649,6 +9811,10 @@ padding-bottom: 70px;
   /* vixinol */
   /* vixinol */  
   /* vixinol */
+  .about-app .title {
+    font-size: 18px;
+  }
+
   .infos-of-dev-background .card {
     width: 225px;
     padding: 5px;

@@ -10,6 +10,8 @@ import ShortDescriptionApp from "./ShortDescriptionApp";
 import ButtonGoToStoreDev from "./StoreDev/ButtonGoToStoreDev";
 import NavbarBottomVI from "../Navigation/NavbarBottom";
 import Notice from "./ProfilApp/Notice";
+import CommentApp from "./ProfilApp/CommentApp/CommentApp";
+import QualityApp from "./ProfilApp/QualityApp";
 
 export default function ProfilApp() {
   const [activeMobile, setActiveMobile] = useState(true);
@@ -165,13 +167,80 @@ export default function ProfilApp() {
       </div>
       {/* before-block-image-pc */}
 
+      {/* before-block-image-mobile */}
+      {/* before-block-image-mobile */}
+      {/* before-block-image-mobile */}
+      {/* before-block-image-mobile */}
+      {/* before-block-image-mobile */}
+      {/* before-block-image-mobile */}
+      {/* before-block-image-mobile */}
+      {/* before-block-image-mobile */}
+      <div className="before-block-image-mobile">
+        <div className="icon">
+          <div onClick={ActiveMobile} className="mobile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              fill={activeMobile && "#fd7e14"}
+              cursor="pointer"
+              viewBox="-11.25 0 70 70"
+            >
+              <path d="M2.902 69.714c-.937-.36-1.998-1.395-2.477-2.417l-.371-.792-.036-31.21C-.02.795-.084 3.316.851 2A4.704 4.704 0 013.095.261c.747-.279.886-.28 20.826-.245l20.074.036.93.458c1.085.534 1.837 1.381 2.282 2.57l.285.763-.035 31.334-.035 31.334-.451.916c-.542 1.1-1.401 1.907-2.451 2.3-.739.276-.964.28-20.821.272-19.806-.01-20.085-.011-20.797-.285zm25.714-4.678c.436-.198.751-.767.751-1.353 0-.309-.133-.566-.467-.899l-.466-.467h-4.415c-4.867 0-5.016.023-5.44.843-.302.584-.158 1.246.369 1.689l.417.351h4.446c3.154 0 4.55-.048 4.805-.164zm14.07-32.444V7.397H4.79V57.786h37.894V32.592zM32.793 4.626c.193-.207.28-.487.28-.9 0-.77-.416-1.215-1.252-1.337-.897-.13-16.351-.022-16.636.117-.663.323-.846 1.547-.31 2.083l.337.337H32.514l.28-.3z"></path>
+            </svg>
+          </div>
+
+          <div onClick={ActiveTablet} className="tablet">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0"
+              y="0"
+              width="20px"
+              cursor="pointer"
+              fill={activeTablet && "#fd7e14"}
+              enableBackground="new 0 0 472.615 472.615"
+              version="1.1"
+              viewBox="0 0 472.615 472.615"
+              xmlSpace="preserve"
+            >
+              <path d="M437.333 0H35.282C18.968 0 5.744 13.223 5.744 29.538v413.538c0 16.315 13.224 29.539 29.538 29.539h402.051c16.314 0 29.538-13.223 29.538-29.539V29.538C466.872 13.223 453.647 0 437.333 0zM236.308 441.464c-13.822 0-25.026-11.204-25.026-25.024 0-13.822 11.204-25.026 25.026-25.026 13.821 0 25.025 11.204 25.025 25.026 0 13.82-11.204 25.024-25.025 25.024zm181.337-82.461H54.972V49.229h362.673v309.774z"></path>
+            </svg>
+          </div>
+
+          <div onClick={ActiveComputer} className="computer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              cursor="pointer"
+              fill={activeComputer && "#fd7e14"}
+              x="0"
+              y="0"
+              enableBackground="new 0 0 26.498 26.498"
+              version="1.1"
+              viewBox="0 0 26.498 26.498"
+              xmlSpace="preserve"
+            >
+              <path d="M26.394 22.189l-1.711-6.417V4.162A3.228 3.228 0 0021.458.937H5.041a3.228 3.228 0 00-3.225 3.225v11.611L.105 22.19c-.229.86-.078 1.722.415 2.362.493.642 1.286 1.01 2.176 1.01h21.107c.89 0 1.683-.368 2.176-1.01.492-.641.644-1.502.415-2.363zM5.041 2.695h16.417c.808 0 1.466.657 1.466 1.466v11.318H3.575V4.162c0-.808.656-1.467 1.466-1.467zm19.543 20.786c-.16.207-.438.322-.781.322H2.694c-.344 0-.622-.115-.781-.322-.159-.208-.199-.506-.11-.838l1.741-6.527.006-.05h19.397l.006.05 1.74 6.527c.09.333.05.63-.109.838z"></path>
+              <path d="M5.041 14.618h16.417a.59.59 0 00.586-.586V4.21a.589.589 0 00-.586-.586H5.041a.588.588 0 00-.586.586v9.822c0 .322.263.586.586.586z"></path>
+              <path d="M9.315 19.741L8.682 22.65 17.229 22.65 16.595 19.741z"></path>
+            </svg>
+          </div>
+          {/* computer */}
+        </div>
+        {/* icon */}
+      </div>
+      {/* before-block-image-mobile */}
+
       {activeMobile && <BlockImageMobile />}
       {activeTablet && <BlockImageTablet />}
       {activeComputer && <BlockImageComputer />}
 
       <AboutApp />
 
+      <QualityApp />
+
       <Notice />
+
+      <CommentApp />
 
       <NavbarBottomVI />
     </>

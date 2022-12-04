@@ -429,6 +429,7 @@ import PageDownloadAppVI from "./components/0Vixinol/HomeUser/PageDownloadApp";
 import BeforeCategorieApp from "./components/0Vixinol/HomeUser/Categorie/BeforeCategorieApp";
 import CategorieApp from "./components/0Vixinol/HomeUser/Categorie/CategorieApp";
 import SearchApp from "./components/0Vixinol/HomeUser/SearchApp/SearchApp";
+import PageAboutApp from "./components/0Vixinol/HomeUser/ProfilApp/AboutApp/PageAboutApp";
 
 import SignupPartnerVI from "./components/0Vixinol/Partner/Auth/SignupPartner";
 import SignupSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/SignupSuccess";
@@ -1158,6 +1159,7 @@ export default function App() {
         {/* vixinol */}
         {/* vixinol */}
         <Route path="/page-download-app" element={<PageDownloadAppVI />} />
+        <Route path="/about-app" element={<PageAboutApp />} />
         <Route path="/search-app" element={<SearchApp />} />
         <Route path="/categorie-app" element={<CategorieApp />} />
         <Route path="/before-categorie-app" element={<BeforeCategorieApp />} />

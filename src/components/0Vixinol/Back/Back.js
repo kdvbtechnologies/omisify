@@ -1,7 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Back() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <svg
+        onClick={() => navigate(-1)}
         xmlns="http://www.w3.org/2000/svg"
         x="0"
         y="0"

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function AboutApp() {
   return (
     <>
-      <NavLink style={{ textDecoration: "none" }} to="/">
+      <NavLink to="/about-app" style={{ textDecoration: "none" }}>
         <div className="about-app">
           <div className="title">
             <p>A Propos de l'application</p>
