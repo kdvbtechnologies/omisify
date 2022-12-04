@@ -12,6 +12,13 @@ import NavbarBottomVI from "../Navigation/NavbarBottom";
 import Notice from "./ProfilApp/Notice";
 import CommentApp from "./ProfilApp/CommentApp/CommentApp";
 import QualityApp from "./ProfilApp/QualityApp";
+import StarsApp from "./ProfilApp/StarsApp/StarsApp";
+import ChartApp from "./ProfilApp/ChartApp";
+import MoreApp from "./ProfilApp/MoreApp/MoreApp";
+import MoreAppCategorie from "./ProfilApp/MoreApp/MoreAppCategorie";
+import MoreAppInfosOfDev from "./ProfilApp/MoreApp/MoreAppInfosOfDev";
+import MoreAppFavoris from "./ProfilApp/MoreApp/MoreAppFavoris";
+import MoreAppSearch from "./ProfilApp/MoreApp/MoreAppSearch";
 
 export default function ProfilApp() {
   const [activeMobile, setActiveMobile] = useState(true);
@@ -238,9 +245,25 @@ export default function ProfilApp() {
 
       <QualityApp />
 
+      <ChartApp />
+
+      <StarsApp />
+
       <Notice />
 
       <CommentApp />
+
+      <MoreApp />
+
+      <MoreAppCategorie />
+
+      <MoreAppInfosOfDev />
+
+      <MoreAppSearch />
+
+      <MoreAppFavoris />
+
+      <p style={{ marginBottom: "100px" }}></p>
 
       <NavbarBottomVI />
     </>
