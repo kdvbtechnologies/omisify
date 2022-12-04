@@ -426,6 +426,9 @@ import NewPasswordSuccessVI from "./components/0Vixinol/Auth/NewPasswordSuccess"
 import HomeUserVI from "./components/0Vixinol/HomeUser/Home";
 import ProfilApp from "./components/0Vixinol/HomeUser/ProfilApp";
 import PageDownloadAppVI from "./components/0Vixinol/HomeUser/PageDownloadApp";
+import BeforeCategorieApp from "./components/0Vixinol/HomeUser/Categorie/BeforeCategorieApp";
+import CategorieApp from "./components/0Vixinol/HomeUser/Categorie/CategorieApp";
+import SearchApp from "./components/0Vixinol/HomeUser/SearchApp/SearchApp";
 
 import SignupPartnerVI from "./components/0Vixinol/Partner/Auth/SignupPartner";
 import SignupSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/SignupSuccess";
@@ -435,8 +438,6 @@ import ForgotPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/ForgotPa
 import NewPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/NewPassword";
 import NewPasswordSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/NewPasswordSuccess";
 import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
-import BeforeCategorieApp from "./components/0Vixinol/HomeUser/Categorie/BeforeCategorieApp";
-import CategorieApp from "./components/0Vixinol/HomeUser/Categorie/CategorieApp";
 
 export default function App() {
   return (
@@ -1039,6 +1040,7 @@ export default function App() {
         {/* alrani */}
         {/* alrani */}
         {/* alrani */}
+        <Route path="/popularity" element={<DetailsPopularityAuthor />} />
         <Route path="/store-book" element={<StoreBook />} />
         <Route path="/about" element={<AboutAuthor />} />
         <Route path="/navbar-al" element={<NavbarAl />} />
@@ -1156,9 +1158,9 @@ export default function App() {
         {/* vixinol */}
         {/* vixinol */}
         <Route path="/page-download-app" element={<PageDownloadAppVI />} />
+        <Route path="/search-app" element={<SearchApp />} />
         <Route path="/categorie-app" element={<CategorieApp />} />
         <Route path="/before-categorie-app" element={<BeforeCategorieApp />} />
-        <Route path="/popularity" element={<DetailsPopularityAuthor />} />
         <Route path="/store-dev" element={<StoreDev />} />
         <Route path="/profil-app" element={<ProfilApp />} />
         <Route path="/profil-vi" element={<ProfilVI />} />

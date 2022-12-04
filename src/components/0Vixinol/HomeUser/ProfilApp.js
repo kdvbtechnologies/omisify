@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BackAndSearch from "../Back/BackandSearch";
 import imageProfilApp from "../img/omisify-red.jpg";
-//import AboutApp from "./AboutApp";
+import AboutApp from "./AboutApp";
 import BlockImageMobile from "./ProfilApp/BlockImageMobile";
 import BlockImageComputer from "./ProfilApp/BlockImageComputer";
 import BlockImageTablet from "./ProfilApp/BlockImageTablet";
@@ -9,6 +9,7 @@ import ProfilAppNavbarDownloadBtn from "./ProfilAppNavbarDownloadBtn";
 import ShortDescriptionApp from "./ShortDescriptionApp";
 import ButtonGoToStoreDev from "./StoreDev/ButtonGoToStoreDev";
 import NavbarBottomVI from "../Navigation/NavbarBottom";
+import Notice from "./ProfilApp/Notice";
 
 export default function ProfilApp() {
   const [activeMobile, setActiveMobile] = useState(true);
@@ -168,7 +169,9 @@ export default function ProfilApp() {
       {activeTablet && <BlockImageTablet />}
       {activeComputer && <BlockImageComputer />}
 
-      {/* <AboutApp /> */}
+      <AboutApp />
+
+      <Notice />
 
       <NavbarBottomVI />
     </>
