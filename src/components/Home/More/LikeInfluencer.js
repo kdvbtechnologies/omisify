@@ -91,6 +91,7 @@ export default function LikeInfluencer() {
           <div className="like-i-b">
             <i>Like</i>
           </div>
+
           <div className="like-i-c">
             <p>{t("-Let your subscribers make you money")}</p>
           </div>
@@ -165,7 +166,9 @@ export default function LikeInfluencer() {
                 )}
               </p>
             </div>
+            {/* svg-and-p */}
           </div>
+          {/* like-i-d */}
         </div>
         <div className="align-button">
           {userId && shortname && partnername && name ? (

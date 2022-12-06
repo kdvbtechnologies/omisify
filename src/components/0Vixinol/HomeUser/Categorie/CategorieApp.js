@@ -1,5 +1,4 @@
 import BackbtnCategorieApp from "../../Back/BackbtnCategorieApp";
-import NavbarBottomVI from "../../Navigation/NavbarBottom";
 import omisifyred from "../../img/omisify-red.jpg";
 import { NavLink } from "react-router-dom";
 
@@ -165,7 +164,7 @@ export default function CategorieApp() {
             <NavLink style={{ textDecoration: "none" }} to="/profil-app">
               <div className="a">
                 <p>{api.rang}</p>
-                <img src={api.imageIconApp} alt="image icon app" />
+                <img src={api.imageIconApp} alt="imagee icon app" />
 
                 <div className="column">
                   <p>{api.nameOfApp}</p>
@@ -196,8 +195,6 @@ export default function CategorieApp() {
       </div>
 
       <p style={{ marginBottom: "150px" }}></p>
-
-      <NavbarBottomVI />
     </>
   );
 }

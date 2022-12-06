@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import NavbarBottomVI from "../../Navigation/NavbarBottom";
 
 export default function SearchApp() {
   const navigate = useNavigate();
@@ -45,8 +44,6 @@ export default function SearchApp() {
         </div>
         {/* input */}
       </div>
-
-      <NavbarBottomVI />
     </>
   );
 }

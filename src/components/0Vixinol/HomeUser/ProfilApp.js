@@ -8,7 +8,6 @@ import BlockImageTablet from "./ProfilApp/BlockImageTablet";
 import ProfilAppNavbarDownloadBtn from "./ProfilAppNavbarDownloadBtn";
 import ShortDescriptionApp from "./ShortDescriptionApp";
 import ButtonGoToStoreDev from "./StoreDev/ButtonGoToStoreDev";
-import NavbarBottomVI from "../Navigation/NavbarBottom";
 import Notice from "./ProfilApp/Notice";
 import CommentApp from "./ProfilApp/CommentApp/CommentApp";
 import QualityApp from "./ProfilApp/QualityApp";
@@ -51,7 +50,7 @@ export default function ProfilApp() {
       <BackAndSearch />
       <div className="display-image-and-name-of-app">
         <div className="image-profil-app">
-          <img src={imageProfilApp} alt="image Profil App" />
+          <img src={imageProfilApp} alt="imagee Profil App" />
         </div>
 
         <div className="name-of-app">
@@ -264,8 +263,6 @@ export default function ProfilApp() {
       <MoreAppFavoris />
 
       <p style={{ marginBottom: "100px" }}></p>
-
-      <NavbarBottomVI />
     </>
   );
 }

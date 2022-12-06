@@ -134,7 +134,7 @@ export default function CommentApp() {
                 paddingTop: "20px",
                 paddingLeft: "20px",
                 paddingRight: "5px",
-                paddingBottom: "100px",
+                paddingBottom: "50px",
               }}
             >
               Voir plus d'avis

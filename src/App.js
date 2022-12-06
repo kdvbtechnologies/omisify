@@ -10,6 +10,7 @@ import Influencer from "./components/Home/E.Influencer";
 import NoInfluencer from "./components/Home/F.NoInfluencer";
 import HomeBonus from "./components/Home/AfterMore/Bonus/HomeBonus";
 import HomeOmisify from "./components/Home Omisify/Home";
+import NavbarBottomOmisify from "./components/Home Omisify/NavbarBottomOmisify";
 
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
@@ -413,7 +414,6 @@ import ResultEncyclodata from "./components/0Inizel/Home/Encyclodata/Result/Resu
 // vixinol
 // vixinol
 import StoreDev from "./components/0Vixinol/HomeUser/StoreDev/StoreDev";
-import ProfilVI from "./components/0Vixinol/Profil/Profil";
 import LogoutVi from "./components/0Vixinol/Auth/Logout";
 import LogoutConfirmVI from "./components/0Vixinol/Auth/LogoutConfirm";
 import SignupVI from "./components/0Vixinol/Auth/Signup";
@@ -430,6 +430,7 @@ import BeforeCategorieApp from "./components/0Vixinol/HomeUser/Categorie/BeforeC
 import CategorieApp from "./components/0Vixinol/HomeUser/Categorie/CategorieApp";
 import SearchApp from "./components/0Vixinol/HomeUser/SearchApp/SearchApp";
 import PageAboutApp from "./components/0Vixinol/HomeUser/ProfilApp/AboutApp/PageAboutApp";
+import ProfilUserVI from "./components/0Vixinol/ProfilUser/ProfilUser";
 
 import SignupPartnerVI from "./components/0Vixinol/Partner/Auth/SignupPartner";
 import SignupSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/SignupSuccess";
@@ -475,8 +476,11 @@ export default function App() {
         {/* new Omisify */}
         {/* new Omisify */}
         {/* new Omisify */}
+        <Route
+          path="/navbar-bottom-omisify"
+          element={<NavbarBottomOmisify />}
+        />
         <Route path="/home-omisify" element={<HomeOmisify />} />
-        <Route path="/" element={<Home />} />
         <Route path="/influential-omisify-partner" element={<Influencer />} />
         <Route path="/omisify-partner" element={<NoInfluencer />} />
         <Route path="/home-bonus" element={<HomeBonus />} />
@@ -1165,7 +1169,6 @@ export default function App() {
         <Route path="/before-categorie-app" element={<BeforeCategorieApp />} />
         <Route path="/store-dev" element={<StoreDev />} />
         <Route path="/profil-app" element={<ProfilApp />} />
-        <Route path="/profil-vi" element={<ProfilVI />} />
         <Route path="/profil-partner-vs" element={<ProfilPartnerVS />} />
         <Route path="/logout-vi" element={<LogoutVi />} />
         <Route path="/logout-confirm-vi" element={<LogoutConfirmVI />} />
@@ -1179,6 +1182,7 @@ export default function App() {
           path="/new-password-success-vi"
           element={<NewPasswordSuccessVI />}
         />
+        <Route path="/profil-user-vi" element={<ProfilUserVI />} />
         <Route path="/home-user-vi" element={<HomeUserVI />} />
 
         <Route path="/login-partner-vi" element={<LoginPartnerVI />} />

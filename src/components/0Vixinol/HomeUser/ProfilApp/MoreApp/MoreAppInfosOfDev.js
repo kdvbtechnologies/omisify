@@ -6,62 +6,61 @@ import snapicon from "../../../img/snap-icon.png";
 
 const api = [
   {
-    imagebook: `${omisifyicon}`,
-    nameofbook: "L'autoroute du Millionnaire",
-    authorbook: "MJ Demarco",
+    imageapp: `${omisifyicon}`,
+    nameofapp: "Omisify",
     numberinthechart: "1",
-    categorieofthebook: "Investir et Entreprendre",
+    categorieoftheapp: "Productivité",
   },
 
   {
-    imagebook: `${lemondeicon}`,
-    nameofbook: "Tout le monde n'a pas eu la chance de rater ses études",
-    authorbook: "Olivier Roland",
-    categorieofthebook: "Satisfaction Professionnelle",
+    imageapp: `${lemondeicon}`,
+    nameofapp: "Le Monde",
+    categorieoftheapp: "Actualités",
   },
 
   {
-    imagebook: `${lydiaicon}`,
-    nameofbook: "Le Principe de Pareto",
-    authorbook: "Luca CANNIZARO",
-    categorieofthebook: "Finances et Economie",
+    imageapp: `${lydiaicon}`,
+    nameofapp: "Lydia - La Super App pour gérer votre argent",
+    categorieoftheapp: "Finances et Economie",
   },
 
   {
-    imagebook: `${snapicon}`,
-    nameofbook: "Réfléchissez et devenez Riche",
-    authorbook: "Napoleon Hill",
+    imageapp: `${snapicon}`,
+    nameofapp: "SnapChat",
     numberinthechart: "5",
-    categorieofthebook: "Investir et Entreprendre",
+    categorieoftheapp: "Réseaux sociaux",
   },
-
   {
-    imagebook: `${lemondeicon}`,
-    nameofbook: "L'autoroute du Millionnaire",
-    authorbook: "MJ Demarco",
+    imageapp: `${omisifyicon}`,
+    nameofapp: "Omisify",
     numberinthechart: "1",
-    categorieofthebook: "Investir et Entreprendre",
+    categorieoftheapp: "Productivité",
   },
 
   {
-    imagebook: `${lydiaicon}`,
-    nameofbook: "Tout le monde n'a pas eu la chance de rater ses études",
-    authorbook: "Olivier Roland",
-    categorieofthebook: "Satisfaction Professionnelle",
+    imageapp: `${lemondeicon}`,
+    nameofapp: "Le Monde",
+    categorieoftheapp: "Actualités",
   },
 
   {
-    imagebook: `${snapicon}`,
-    nameofbook: "Le Principe de Pareto",
-    authorbook: "Luca CANNIZARO",
-    categorieofthebook: "Finances et Economie",
+    imageapp: `${lydiaicon}`,
+    nameofapp: "Lydia - La Super App pour gérer votre argent",
+    categorieoftheapp: "Finances et Economie",
+  },
+
+  {
+    imageapp: `${snapicon}`,
+    nameofapp: "SnapChat",
+    numberinthechart: "5",
+    categorieoftheapp: "Réseaux sociaux",
   },
 ];
 
 export default function MoreAppInfosOfDev() {
   return (
     <>
-      <div className="more-book">
+      <div className="more-app">
         <div className="a">
           <p>
             Les personnes qui ont installées l'application Web Omisify ont aussi
@@ -76,13 +75,13 @@ export default function MoreAppInfosOfDev() {
                 style={{ color: "black", textDecoration: "none" }}
                 to="/"
               >
-                <div className="book">
-                  <img src={api.imagebook} alt="" />
-                  <div className="nameofbook">
-                    <p>{api.nameofbook}</p>
+                <div className="app">
+                  <img src={api.imageapp} alt="" />
+                  <div className="nameofapp">
+                    <p>{api.nameofapp}</p>
                   </div>
                   <p style={{ fontWeight: "bold", padding: "1px 0px" }}>
-                    {api.authorbook}
+                    {api.authorapp}
                   </p>
 
                   <div className="stars">
@@ -124,22 +123,22 @@ export default function MoreAppInfosOfDev() {
                         <p> dans</p>
 
                         <NavLink style={{ color: "#444" }} to="/categorie">
-                          <p>{api.categorieofthebook}</p>
+                          <p>{api.categorieoftheapp}</p>
                         </NavLink>
                       </>
                     )}
                   </div>
                   {/* chart */}
                 </div>
-                {/* book */}
+                {/* app */}
               </NavLink>
             </>
           ))}
         </div>
       </div>
 
-      <NavLink to="/more-book">
-        <div className="more-book-svg" align="center">
+      <NavLink to="/more-app">
+        <div className="more-app-svg" align="center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0"

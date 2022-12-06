@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import NavbarBottomVI from "../../Navigation/NavbarBottom";
+import NavbarBottomCategorieVI from "../../Navigation/NavbarBottomCategorie";
 
 export default function BeforeCategorieApp() {
   return (
@@ -178,7 +178,7 @@ export default function BeforeCategorieApp() {
         </NavLink>
       </div>
 
-      <NavbarBottomVI />
+      <NavbarBottomCategorieVI />
     </>
   );
 }

@@ -2573,6 +2573,91 @@ padding-bottom: 70px;
   width: 550px;
 }
 
+
+.home-omisify-go-down .center {
+  text-align: center;
+  color: white;
+  background-color: red;
+  padding: 90px 0px;
+  margin: 100px 0px;
+  width: 100%;
+  font-size: 28px;
+}
+
+.home-omisify-go-down .center p {
+  padding: 0px 20px;
+}
+
+.shrink-omisify-free-box-shadow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shrink-omisify-free-box-shadow .box-shadow {
+  border: 1px solid #444;
+  width: 500px;
+}
+
+.shrink-omisify-free-box-shadow .like-i-b {
+  font-size: 14px;
+  padding: 20px;
+  color: red;
+  background-color: white;
+}
+
+.shrink-omisify-free-box-shadow .like-i-c {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 20px;
+  display: flex;
+}
+
+.shrink-omisify-free-box-shadow .like-i-d .svg-and-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.shrink-omisify-free-box-shadow .like-i-d p {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #444;
+}
+
+.home-omisify-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.home-omisify-final p {
+  font-size: 20px;
+}
+
+.home-omisify-final button {
+  cursor: pointer;
+  padding: 10px 22px;
+  margin-top: 10px;
+  background-color: red;
+  border: none;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+}
+
+.home-omisify-final button:hover {
+  background-color: #ff6f79;
+  color: white;
+}
+
 /* home omisify - popup card.js */
 /* home omisify - popup card.js */
 /* home omisify - popup card.js */
@@ -2737,6 +2822,217 @@ padding-bottom: 70px;
   border-radius: 10px;
   width: 650px;
 }
+
+/* home omisify - generation omisify.js */
+/* home omisify - generation omisify.js */
+/* home omisify - generation omisify.js */
+/* home omisify - generation omisify.js */
+/* home omisify - generation omisify.js */
+/* home omisify - generation omisify.js */
+/* home omisify - generation omisify.js */
+/* home omisify - generation omisify.js */
+.generation-omisify .a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.generation-omisify .a p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.generation-omisify .display {
+  background-color: #ffe6e6;
+  padding: 20px 0px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.generation-omisify .display .part-left img {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.generation-omisify .display .part-right {
+  width: 500px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.how-to-join-omisify-generation p {
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-top: 50px;;
+  text-align: center;
+}
+
+.how-to-join-omisify-generation-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-to-join-omisify-generation-detail .a {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.how-to-join-omisify-generation-detail .b {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 320px;
+}
+
+.how-to-join-omisify-generation-detail .b p {
+  color: #444;
+}
+
+.generation-omisify .align-box-shadow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.generation-omisify .box-shadow {
+  box-shadow: 5px 5px red;
+  border: 1px solid black;
+  width: 450px;
+  border-radius: 10px;
+  padding: 25px 20px;
+  font-size: 18px;
+}
+
+.generation-omisify .box-shadow .a {
+  color: blue;
+  float: right;
+}
+
+.generation-omisify .box-shadow .a p {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.person-join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person-join img {
+  width: 350px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.display-person-join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-person-join .left {
+  padding-right: 10px;
+}
+
+.display-person-join .right {
+  padding-left: 10px;
+}
+
+.display-person-join .background {
+  background: #eee;
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.align-icon-go-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-to-join-omisify-generation-detail .d {
+  display: flex;
+}
+
+.generation-omisify .display-help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.generation-omisify .display-help p {
+  padding-left: 5px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.popupHelp-background {
+  background-color: #00000050;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.popupHelp-background .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
+}
+
+.popupHelp-background .align .card {
+  width: 300px;
+  background-color: white;
+  padding: 25px 20px;
+}
+
+/* home omisify - navbar bottom omisify.js */
+/* home omisify - navbar bottom omisify.js */
+/* home omisify - navbar bottom omisify.js */
+/* home omisify - navbar bottom omisify.js */
+/* home omisify - navbar bottom omisify.js */
+/* home omisify - navbar bottom omisify.js */
+/* home omisify - navbar bottom omisify.js */
+/* home omisify - navbar bottom omisify.js */
+.navbar-bottom-omisify .display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  background-color: red;
+}
+
+.navbar-bottom-omisify .display .a {
+  padding: 15px 35px;
+}
+
+.navbar-bottom-omisify .display .a svg {
+  fill: white;
+  width: 30px;
+}
+
 
 /* admin - navigation - navigation.js */
 /* admin - navigation - navigation.js */
@@ -5386,12 +5682,6 @@ padding-bottom: 70px;
 /* en - result - navbar top.js */
 /* en - result - navbar top.js */
 
-
-
-.navbar-top-en {
-
-}
-
 .navbar-top-en .mobile {
   display: none;
 }
@@ -6965,12 +7255,111 @@ padding-bottom: 70px;
 }
 
 
-/*
-.chart-app .align .display {
+/* vi - home user - more app.js */
+/* vi - home user - more app.js */
+/* vi - home user - more app.js */
+/* vi - home user - more app.js */
+/*0. vi - home user - more app.js */
+/* vi - home user - more app.js */
+/* vi - home user - more app.js */
+.more-app {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.more-app .a {
+  font-size: 20px;
+}
+
+.more-app .app {
   display: flex;
-  align-items: center;
-  font-size: 17px;
-}*/
+  flex-direction: column;
+  width: 130px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.more-app .app .chart {
+  font-size: 14px;
+}
+
+.more-app .app img {
+  width: 80px;
+  height: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.more-app .flex {
+  display: flex;
+}
+
+.more-app .app .stars {
+  display: flex;
+  padding: 5px 0px;
+}
+
+.more-app .app .stars svg {
+  padding-left: 5px;
+}
+
+/*
+.more-book {
+  padding: 30px 20px;
+}
+
+.more-book .a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.more-book .flex {
+  display: flex;
+}
+
+.more-book .book {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  padding-right: 20px;
+  margin: 15px 15px;
+}
+
+.more-book .book img {
+  width: 130px;
+  height: 170px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.more-book .book .nameofbook {
+  color: blue;
+}
+
+.more-book .book .chart {
+  font-size: 14px;
+}
+
+.more-book-svg svg:hover {
+  fill: yellow;
+}
+
+.more-book .book .stars {
+  display: flex;
+  padding: 5px 0px;
+}
+
+.more-book .book .stars svg {
+  padding-left: 5px;
+}
+
+
+*/
 
 
 
@@ -7826,6 +8215,20 @@ padding-bottom: 70px;
       width: 240px;
     }
 
+    /* home omisify */
+    /* home omisify */
+    /* home omisify */
+    .navbar-bottom-omisify .display .a {
+      padding: 15px 20px;
+    }
+    
+    .navbar-bottom-omisify .display .a svg {
+      fill: white;
+      width: 23px;
+    }
+
+/* jamelfase */
+/* jamelfase */
 /* jamelfase */
 .company-infos {
   padding-bottom: 130px;
@@ -9513,6 +9916,18 @@ padding-bottom: 70px;
     align-items: center;
     justify-content: center;
   }
+
+  /* home omisify */
+  /* home omisify */
+  /* home omisify */
+  .navbar-bottom-omisify .display .a {
+    padding: 15px 18px;
+  }
+  
+  .navbar-bottom-omisify .display .a svg {
+    fill: white;
+    width: 23px;
+  }
 }
 
 @media screen and (max-width: 300px) {
@@ -9669,6 +10084,11 @@ padding-bottom: 70px;
     display: flex;
     flex-wrap: nowrap;
   }
+
+  /* home omisify */
+  .navbar-bottom-omisify .display .a {
+    padding: 15px 15px;
+  }
 }
 
 
@@ -9820,6 +10240,13 @@ padding-bottom: 70px;
     .search-app .input {
       margin-right: 20px;
     }  
+
+    /* home omisify */
+    /* home omisify */
+    /* home omisify */
+    .navbar-bottom-omisify .display .a {
+      padding: 15px 13px;
+    }
   }
 
 /* 260px */
@@ -9946,6 +10373,11 @@ padding-bottom: 70px;
   .home .dsuite-shrink .dsuite .right {
     width: 55%;
     font-size: 16px;
+  }
+
+  /* home omisify */
+  .navbar-bottom-omisify .display .a {
+    padding: 15px 12px;
   }
 }
 
@@ -10244,6 +10676,18 @@ padding-bottom: 70px;
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  /* home omisify */
+  /* home omisify */
+  /* home omisify */
+  .navbar-bottom-omisify .display .a {
+    padding: 15px 10px;
+  }
+  
+  .navbar-bottom-omisify .display .a svg {
+    fill: white;
+    width: 22px;
+  }
 }
 
 
@@ -10303,6 +10747,11 @@ padding-bottom: 70px;
   width: 64px;
   height: 40px;
   border-radius: 5px;
+}
+
+/* home omisify */
+.navbar-bottom-omisify .display .a {
+  padding: 15px 10px;
 }
 }
 
@@ -10471,6 +10920,16 @@ padding-bottom: 70px;
   padding-left: 0.5px;
   padding-right: 0.5px;
   font-size: 14px;
+}
+
+/* home omisify */
+.navbar-bottom-omisify .display .a {
+  padding: 15px 9px;
+}
+
+.navbar-bottom-omisify .display .a svg {
+  fill: white;
+  width: 21px;
 }
 
 }
