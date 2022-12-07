@@ -41,7 +41,6 @@ export default function CategorieApp() {
             xmlns="http://www.w3.org/2000/svg"
             x="0"
             y="0"
-            cursor="pointer"
             width="25px"
             enableBackground="new 0 0 502.422 502.422"
             version="1.1"
