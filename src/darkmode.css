@@ -5974,7 +5974,6 @@ padding-bottom: 70px;
 .back-and-search .justify {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
   padding-top: 70px;
   padding-bottom: 20px;
   padding-right: 20px;
@@ -5982,6 +5981,16 @@ padding-bottom: 70px;
 }
 
 .back-and-search .justify .b svg {
+  padding-left: 15px;
+}
+
+.back-btn-profil-user .justify {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.back-btn-profil-user .justify .b svg {
   padding-left: 15px;
 }
 
@@ -6749,6 +6758,8 @@ padding-bottom: 70px;
 
 .back-btn-and-go-to-infos-of-dev-btn-pc .go-to-infos-of-dev-btn {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .photo-cover-dev-store-1300x180 img {
@@ -7259,7 +7270,7 @@ padding-bottom: 70px;
 /* vi - home user - more app.js */
 /* vi - home user - more app.js */
 /* vi - home user - more app.js */
-/*0. vi - home user - more app.js */
+/* vi - home user - more app.js */
 /* vi - home user - more app.js */
 /* vi - home user - more app.js */
 .more-app {
@@ -7307,60 +7318,209 @@ padding-bottom: 70px;
   padding-left: 5px;
 }
 
-/*
-.more-book {
-  padding: 30px 20px;
-}
-
-.more-book .a {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.more-book .flex {
+/*vi - profil user - profil user not connected */
+/*vi - profil user - profil user not connected */
+/*vi - profil user - profil user not connected */
+/*vi - profil user - profil user not connected */
+/*vi - profil user - profil user not connected */
+/*vi - profil user - profil user not connected */
+.profil-user-not-connected {
   display: flex;
-}
-
-.more-book .book {
-  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  width: 130px;
-  padding-right: 20px;
-  margin: 15px 15px;
 }
 
-.more-book .book img {
-  width: 130px;
-  height: 170px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
+.profil-user-not-connected .display svg {
+  width: 100px;
 }
 
-.more-book .book .nameofbook {
-  color: blue;
+.profil-user-not-connected .display .block {
+  width: 450px;
+  display: flex;
+  padding-left: 10px;
 }
 
-.more-book .book .chart {
+.profil-user-not-connected .display .block p {
+  font-size: 20px;
+}
+
+.profil-user-not-connected .display {
+  display: flex;
+  align-items: center;
+}
+
+.profil-user-not-connected-display-btn {
+  display: flex;
+  margin-right: 35px;
+  margin-top: 20px;
+}
+
+.profil-user-not-connected-display-btn .a button {
+  padding: 8px 16px;
+  background: #fd7e14;
+  color: white;
+  border: 1px solid #fd7e14;
+  margin-right: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.profil-user-not-connected-display-btn .a button:hover {
+  color: white;
+  background: #feb981;
+  border: 1px solid #feb981;
+}
+
+.profil-user-not-connected-display-btn .b button {
+  padding: 8px 16px;
+  background: transparent;
+  color: #fd7e14;
+  border: 1px solid #fd7e14;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.profil-user-not-connected-display-btn .b button:hover {
+  color: #fec79a;
+  border: 1px solid #fec79a;
+}
+
+/* vi - functionality - popup all functionality.js */
+/* vi - functionality - popup all functionality.js */
+/* vi - functionality - popup all functionality.js */
+/* vi - functionality - popup all functionality.js */
+/* vi - functionality - popup all functionality.js */
+/* vi - functionality - popup all functionality.js */
+.popup-all-functionality-opacity {
+  width: 100%;
+  height: 100%;
+  background-color: #00000050;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.popup-all-functionality-opacity .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.popup-all-functionality-opacity .card {
+  width: 450px;
+  background-color: #fd7e14;
+  color: white;
+  padding: 20px;
+}
+
+.popup-all-functionality-opacity .card .details {
+  display: flex;
+}
+
+.popup-all-functionality-opacity .card .details p {
+  font-size: 17px;
+}
+
+.popup-all-functionality-opacity .card .display {
+  display: flex;
+}
+
+.popup-all-functionality-opacity .card .display .a button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  margin-top: 15px;
+  background-color: white;
+  color: #fd7e14;
+  border: 1px solid white;
+  cursor: pointer;
   font-size: 14px;
 }
 
-.more-book-svg svg:hover {
-  fill: yellow;
+.popup-all-functionality-opacity .card .display .a button:hover {
+  background-color: #feb981;
+  color: white;
 }
 
-.more-book .book .stars {
+.popup-all-functionality-opacity .card .display .b button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  margin-top: 15px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.popup-all-functionality-opacity .card .display .b button:hover {
+  border: 1px solid #fed5b3;
+  color: #fed5b3;
+}
+
+/* vi - profil user - Favorite.js */
+/* vi - profil user - Favorite.js */
+/* vi - profil user - Favorite.js */
+/* vi - profil user - Favorite.js */
+/* vi - profil user - Favorite.js */
+/* vi - profil user - Favorite.js */
+/* vi - profil user - Favorite.js */
+.favorite-app-title {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 19px;
+  color: black;
+}
+
+.favorite-app-title .a {
   display: flex;
-  padding: 5px 0px;
 }
 
-.more-book .book .stars svg {
-  padding-left: 5px;
+.favorite-app-title .a p {
+  padding-left: 10px;
+  color: black;
 }
 
+.favorite-app-popularity {
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  color: #444;
+}
 
-*/
+.favorite-app .a {
+  margin-left: 40px;
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 35px;
+  flex-wrap: nowrap;
+  color: black;
+}
 
+.favorite-app .a .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.favorite-app .a .column .note {
+  display: flex;
+}
+
+.favorite-app .a .column .note p {
+  padding-right: 3px;
+}
+
+.favorite-app .a img {
+  padding-left: 15px;
+  padding-right: 10px;
+  width: 70px;
+  height: 70px;
+}
 
 
 /* 1350px */
@@ -8083,6 +8243,23 @@ padding-bottom: 70px;
   /* vixinol */
   /* vixinol */
   /* vixinol */
+  
+  .profil-user-not-connected .display .block {
+    width: 400px;
+  }
+
+  .profil-user-not-connected .display svg {
+    width: 80px;
+  }
+
+  .profil-user-not-connected .display .block p {
+    font-size: 19px;
+  }  
+
+  .profil-user-not-connected-display-btn {
+    margin-right: 3px;
+  }
+
   .popup-notice-background .align .card {
     width: 300px;
   }  
@@ -8815,6 +8992,10 @@ padding-bottom: 70px;
   }
 
   /* vixinol */
+  .popup-all-functionality-opacity .card {
+    width: 400px;
+  }
+
   .store-dev .title {
     font-size: 20px;
   }
@@ -9170,6 +9351,56 @@ padding-bottom: 70px;
     padding-right: 46%;
     font-size: 16px;
   }
+
+  /* vixinol */
+  .popup-all-functionality-opacity .card .display .a button {
+    margin-right: 0px;
+  }
+
+  .popup-all-functionality-opacity .card .display .b button {
+    margin-right: 0px;
+  }
+
+  .popup-all-functionality-opacity .card .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-all-functionality-opacity .card {
+    width: 320px;
+  }
+
+  .popup-all-functionality-opacity .card .display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profil-user-not-connected .display .block {
+    width: 300px;
+  }
+
+  .profil-user-not-connected .display svg {
+    width: 80px;
+    margin-bottom: 5px;
+  }
+
+  .profil-user-not-connected .display .block p {
+    font-size: 19px;
+  }  
+
+  .profil-user-not-connected-display-btn {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .profil-user-not-connected-display-btn button {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
 }
 
 /* 490px */
@@ -9497,6 +9728,47 @@ padding-bottom: 70px;
   }
 }
 
+/* 400px */
+@media screen and (max-width: 400px) {
+  /* vixinol */
+  .popup-all-functionality-opacity .card {
+    width: 280px;
+  }
+
+  .profil-user-not-connected .display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .profil-user-not-connected .display .block {
+    width: 300px;
+    display: flex;
+    align-items: center;
+  }
+
+  .profil-user-not-connected .display svg {
+    width: 60px;
+  }
+
+  .profil-user-not-connected .display .block p {
+    font-size: 19px;
+  }  
+
+  .profil-user-not-connected-display-btn {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .profil-user-not-connected-display-btn button {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}
+
 /* 385px */
 @media screen and (max-width: 385px) {
   /* alrani */
@@ -9770,6 +10042,10 @@ padding-bottom: 70px;
   }
 
    /* vixinol */
+  .popup-all-functionality-opacity .card {
+    width: 220px;
+  }
+
  .slideshow .images img {
   width: 280px;
   height: 170px;
@@ -9856,6 +10132,10 @@ padding-bottom: 70px;
 /* vixinol */
 /* vixinol */
 /* vixinol */
+.profil-user-not-connected .display .block {
+  width: 260px;
+}
+
 .search-app input[type="text"] {
   padding: 6px 14px;
 }
@@ -10157,6 +10437,19 @@ padding-bottom: 70px;
     }  
 
   /* vixinol */
+  .popup-all-functionality-opacity .card {
+    width: 220px;
+    padding: 20px 10px;
+  }
+
+  .profil-user-not-connected .display .block {
+    width: 240px;
+  }
+
+  .profil-user-not-connected .display .block p {
+    font-size: 18px;
+  }  
+
 .before-block-image-pc {
   display: none;
 }
@@ -10408,6 +10701,7 @@ padding-bottom: 70px;
   }
 
   /* vixinol */
+  /* vixinol */
   .photo-cover-dev-store-250x135 img {
     display: flex;
     align-items: center;
@@ -10426,6 +10720,19 @@ padding-bottom: 70px;
   .photo-cover-dev-store-300x135 img {
     display: none;
   }
+
+  .popup-all-functionality-opacity .card {
+    width: 210px;
+    padding: 20px 10px;
+  }
+
+  .profil-user-not-connected .display .block {
+    width: 220px;
+  }
+
+  .profil-user-not-connected .display .block p {
+    font-size: 17px;
+  } 
 
   .popup-notice-background .align .card {
     width: 150px;
@@ -10621,6 +10928,23 @@ padding-bottom: 70px;
 
   /* vixinol */
    /* vixinol */
+   .popup-all-functionality-opacity .card {
+    width: 200px;
+    padding: 20px 10px;
+  }
+
+  .popup-all-functionality-opacity .card .details p {
+    font-size: 16px;
+  }
+  
+  .popup-all-functionality-opacity .card .display .a button {
+    padding: 8px 8px;
+  }
+
+  .popup-all-functionality-opacity .card .display .b button {
+    padding: 8px 8px;
+  }
+
    .search-app .input {
     margin-right: 10px;
   }  
@@ -10690,6 +11014,16 @@ padding-bottom: 70px;
   }
 }
 
+@media screen and (max-width: 230px) {
+  /* vixinol */
+  .profil-user-not-connected .display .block {
+    width: 210px;
+  }
+
+  .profil-user-not-connected .display .block p {
+    font-size: 17px;
+  } 
+}
 
 
 @media screen and (max-width: 225px) {
@@ -10715,6 +11049,19 @@ padding-bottom: 70px;
 }
 
 /* vixinol */
+.popup-all-functionality-opacity .card {
+  width: 190px;
+  padding: 20px 10px;
+}
+
+.popup-all-functionality-opacity .card .display .a button {
+  padding: 8px 4px;
+}
+
+.popup-all-functionality-opacity .card .display .b button {
+  padding: 8px 4px;
+}
+
 .infos-of-dev-background .card {
   width: 195px;
   padding: 2px;
@@ -10785,6 +11132,14 @@ padding-bottom: 70px;
  }
 
   /* vixinol */
+  .profil-user-not-connected .display .block {
+    width: 200px;
+  }
+
+  .profil-user-not-connected .display .block p {
+    font-size: 17px;
+  } 
+
   .profil-app .icon {
     display: flex;
     justify-content: center;
@@ -10827,6 +11182,19 @@ padding-bottom: 70px;
 /* vixinol */
 /* vixinol */
 /* vixinol */
+.popup-all-functionality-opacity .card {
+  width: 170px;
+  padding: 20px 10px;
+}
+
+.popup-all-functionality-opacity .card .display .a button {
+  padding: 8px 4px;
+}
+
+.popup-all-functionality-opacity .card .display .b button {
+  padding: 8px 4px;
+}
+
 .infos-of-dev-background .card {
   width: 190px;
   padding: 1px;
@@ -10881,6 +11249,14 @@ padding-bottom: 70px;
 /* 210px */
 @media screen and (max-width: 210px) {
 /* vixinol */
+.profil-user-not-connected .display .block {
+  width: 190px;
+}
+
+.profil-user-not-connected .display .block p {
+  font-size: 16px;
+} 
+
 .search-app {
   padding: 5px;
 }

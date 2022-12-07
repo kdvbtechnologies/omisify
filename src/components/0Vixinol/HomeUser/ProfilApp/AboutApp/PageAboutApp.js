@@ -1,5 +1,4 @@
 import Back from "../../../Back/Back";
-import NavbarBottomVI from "../../../Navigation/NavbarBottom";
 import ProfilAppNavbarDownloadBtn from "../../ProfilAppNavbarDownloadBtn";
 
 export default function PageAboutApp() {
@@ -52,7 +51,6 @@ export default function PageAboutApp() {
       </div>
 
       <p style={{ marginBottom: "130px" }}></p>
-      <NavbarBottomVI />
     </>
   );
 }

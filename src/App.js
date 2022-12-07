@@ -431,6 +431,7 @@ import CategorieApp from "./components/0Vixinol/HomeUser/Categorie/CategorieApp"
 import SearchApp from "./components/0Vixinol/HomeUser/SearchApp/SearchApp";
 import PageAboutApp from "./components/0Vixinol/HomeUser/ProfilApp/AboutApp/PageAboutApp";
 import ProfilUserVI from "./components/0Vixinol/ProfilUser/ProfilUser";
+import ProfilUserNotConnectedVI from "./components/0Vixinol/ProfilUser/ProfilUserNotConnected";
 
 import SignupPartnerVI from "./components/0Vixinol/Partner/Auth/SignupPartner";
 import SignupSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/SignupSuccess";
@@ -440,6 +441,7 @@ import ForgotPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/ForgotPa
 import NewPasswordPartnerVI from "./components/0Vixinol/Partner/Auth/NewPassword";
 import NewPasswordSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/NewPasswordSuccess";
 import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
+import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
 export default function App() {
   return (
@@ -1168,7 +1170,12 @@ export default function App() {
         <Route path="/categorie-app" element={<CategorieApp />} />
         <Route path="/before-categorie-app" element={<BeforeCategorieApp />} />
         <Route path="/store-dev" element={<StoreDev />} />
+        <Route path="/favorite-vi" element={<FavoriteVI />} />
         <Route path="/profil-app" element={<ProfilApp />} />
+        <Route
+          path="/profil-user-not-connected"
+          element={<ProfilUserNotConnectedVI />}
+        />
         <Route path="/profil-partner-vs" element={<ProfilPartnerVS />} />
         <Route path="/logout-vi" element={<LogoutVi />} />
         <Route path="/logout-confirm-vi" element={<LogoutConfirmVI />} />
