@@ -1,7 +1,8 @@
 import NavbarBottomHomeVI from "../Navigation/NavbarBottomHome";
 import NavbarTopVI from "../Navigation/NavbarTop";
+import HomeUserAppByCategorie from "./HomeUserAppByCategorie";
 import Slideshow from "./Slideshow/Slideshow";
-import Sponsoriser from "./Sponsoriser/Sponsoriser";
+import SponsoredApp from "./SponsoredApp/SponsoredApp";
 
 export default function HomeUserVI() {
   return (
@@ -10,7 +11,11 @@ export default function HomeUserVI() {
 
       <Slideshow />
 
-      <Sponsoriser />
+      <SponsoredApp />
+
+      <HomeUserAppByCategorie />
+
+      <div style={{ marginBottom: "130px" }}></div>
 
       <NavbarBottomHomeVI />
     </>
