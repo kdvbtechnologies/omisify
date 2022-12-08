@@ -220,7 +220,7 @@ export default function HomeOmisify() {
           {/* partner */}
           {/* partner */}
           <div className="a">
-            <img src={partner} alt="image" />
+            <img src={partner} alt="imagee" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0"
@@ -265,7 +265,7 @@ export default function HomeOmisify() {
           {/* videaste */}
           {/* videaste */}
           <div className="a">
-            <img src={videaste} alt="image" />
+            <img src={videaste} alt="imagee" />
             <svg
               width="20px"
               xmlns="http://www.w3.org/2000/svg"
@@ -306,7 +306,7 @@ export default function HomeOmisify() {
           {/* influent */}
           {/* influent */}
           <div className="a">
-            <img src={influentgroup} alt="image" />
+            <img src={influentgroup} alt="imagee" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20px"
@@ -427,7 +427,7 @@ export default function HomeOmisify() {
                 <div onClick={PopupPartner} className="back-popup">
                   <BackbtnTwo />
                 </div>
-                <img onClick={PopupImagePartner} src={partner} alt="image" />
+                <img onClick={PopupImagePartner} src={partner} alt="imagee" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0"
@@ -506,7 +506,7 @@ export default function HomeOmisify() {
                   <BackbtnTwo />
                 </div>
 
-                <img onClick={PopupImageVideaste} src={videaste} alt="image" />
+                <img onClick={PopupImageVideaste} src={videaste} alt="imagee" />
                 <svg
                   cursor="pointer"
                   width="20px"
@@ -579,7 +579,7 @@ export default function HomeOmisify() {
                 <img
                   onClick={PopupImageInfluent}
                   src={influentgroup}
-                  alt="image"
+                  alt="imagee"
                 />
                 <svg
                   cursor="pointer"

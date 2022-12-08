@@ -5,7 +5,7 @@ export default function PopupImagePartner() {
     <>
       <div className="popup-image-background-home-omisify">
         <div className="card">
-          <img src={partner} alt="image" />
+          <img src={partner} alt="imagee" />
         </div>
       </div>
     </>

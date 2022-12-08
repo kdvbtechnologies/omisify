@@ -20,7 +20,7 @@ export default function ProfilAl() {
       <div className="profil-card-al">
         <img
           src="https://res.cloudinary.com/rasivyy/image/upload/v1668421426/inizel/inizel%20home/image-profil-al_ravgtr.jpg"
-          alt="image profil of user"
+          alt="imagee profil of user"
         />
         <h3>Ousmane Dembélé</h3>
 

@@ -21,14 +21,14 @@ export default function HomeJA() {
               <p>
                 Voulez-vous augmenter le chiffre d'affaire de votre entreprise ?
               </p>
-              <img src={entreprise} alt="image jamelfase" />
+              <img src={entreprise} alt="imagee jamelfase" />
             </div>
 
             <div className="a">
               <p>
                 Voulez-vous augmenter les bénéfices de votre petit business ?
               </p>
-              <img src={smallbusiness} alt="image jamelfase" />
+              <img src={smallbusiness} alt="imagee jamelfase" />
             </div>
           </div>
 
@@ -39,12 +39,12 @@ export default function HomeJA() {
                 internet ou application mobile ?
               </p>
 
-              <img src={site} alt="image jamelfase" />
+              <img src={site} alt="imagee jamelfase" />
             </div>
 
             <div className="a">
               <p>Voulez-vous augmenter les clients de votre magasin ?</p>
-              <img src={magasin} alt="image jamelfase" />
+              <img src={magasin} alt="imagee jamelfase" />
             </div>
           </div>
 
@@ -137,7 +137,7 @@ export default function HomeJA() {
 
           <div className="profil">
             <div className="a">
-              <img src={profil} alt="image jamelfase" />
+              <img src={profil} alt="imagee jamelfase" />
             </div>
 
             <div className="a">
@@ -158,13 +158,13 @@ export default function HomeJA() {
             </div>
 
             <div className="a">
-              <img src={create} alt="image jamelfase" />
+              <img src={create} alt="imagee jamelfase" />
             </div>
           </div>
 
           <div className="profil">
             <div className="a">
-              <img src={stats} alt="image jamelfase" />
+              <img src={stats} alt="imagee jamelfase" />
             </div>
 
             <div className="a">
@@ -179,9 +179,9 @@ export default function HomeJA() {
 
           <div className="app">
             <div className="a">
-              <img src={app} alt="image jamelfase" />
-              <img src={app1} alt="image jamelfase" />
-              <img src={app2} alt="image jamelfase" />
+              <img src={app} alt="imagee jamelfase" />
+              <img src={app1} alt="imagee jamelfase" />
+              <img src={app2} alt="imagee jamelfase" />
             </div>
 
             <div className="a">
@@ -204,7 +204,7 @@ export default function HomeJA() {
           <button>Essayer gratuitement la publicité</button>
 
           <div className="service">
-            <img src={service} alt="image customer service jamelfase" />
+            <img src={service} alt="imagee customer service jamelfase" />
             <p>Besoin d'aide ? Notre service client est disponible 24h/24</p>
             <p style={{ color: "blue", cursor: "pointer" }}>
               Contacter le service client

@@ -33,7 +33,7 @@ export default function Slideshow() {
         {verify1 && (
           <NavLink to="/profil-app">
             <div className="images">
-              <img src={img1} alt="image" />
+              <img src={img1} alt="imagee" />
             </div>
           </NavLink>
         )}
@@ -41,7 +41,7 @@ export default function Slideshow() {
         {verify2 && (
           <NavLink to="/">
             <div className="images">
-              <img src={img2} alt="image" />
+              <img src={img2} alt="imagee" />
             </div>
           </NavLink>
         )}
@@ -49,7 +49,7 @@ export default function Slideshow() {
         {verify3 && (
           <NavLink to="/">
             <div className="images">
-              <img src={img3} alt="image" />
+              <img src={img3} alt="imagee" />
             </div>
           </NavLink>
         )}
@@ -60,21 +60,21 @@ export default function Slideshow() {
           <img
             style={{ border: verify1 && "1px solid #fd7e14" }}
             src={img1}
-            alt="image"
+            alt="imagee"
           />
         </div>
         <div className="image" onClick={Image2}>
           <img
             style={{ border: verify2 && "1px solid #fd7e14" }}
             src={img2}
-            alt="image"
+            alt="imagee"
           />
         </div>
         <div className="image" onClick={Image3}>
           <img
             style={{ border: verify3 && "1px solid #fd7e14" }}
             src={img3}
-            alt="image"
+            alt="imagee"
           />
         </div>
       </div>

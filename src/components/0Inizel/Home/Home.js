@@ -11,7 +11,7 @@ export default function HomeIN() {
       <div className="home-in">
         <img
           src="https://res.cloudinary.com/rasivyy/image/upload/v1667979773/inizel/inizel%20home/rihanna-inizel_fevtuk.jpg"
-          alt="artist image"
+          alt="artist imagee"
         />
         <div className="a">
           <svg

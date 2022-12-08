@@ -48,20 +48,20 @@ export default function OneBook() {
           <img
             onClick={PopupMainImage}
             src="https://res.cloudinary.com/rasivyy/image/upload/v1668836770/alrani/book1_vv3bkg.jpg"
-            alt="image"
+            alt="imagee"
           />
 
           <div className="image">
             <img
               onClick={PopupImage1}
               src="https://res.cloudinary.com/rasivyy/image/upload/v1668836770/alrani/book1_vv3bkg.jpg"
-              alt="image"
+              alt="imagee"
             />
 
             <img
               onClick={PopupImage2}
               src="https://res.cloudinary.com/rasivyy/image/upload/v1668896912/alrani/book1-1_nmbwp3.jpg"
-              alt="image"
+              alt="imagee"
             />
           </div>
         </div>
@@ -686,7 +686,7 @@ export default function OneBook() {
             <div className="popup-card">
               <img
                 src="https://res.cloudinary.com/rasivyy/image/upload/v1668836770/alrani/book1_vv3bkg.jpg"
-                alt="image"
+                alt="imagee"
               />
             </div>
           </div>
@@ -699,7 +699,7 @@ export default function OneBook() {
             <div className="popup-card">
               <img
                 src="https://res.cloudinary.com/rasivyy/image/upload/v1668836770/alrani/book1_vv3bkg.jpg"
-                alt="image"
+                alt="imagee"
               />
             </div>
           </div>
@@ -712,7 +712,7 @@ export default function OneBook() {
             <div className="popup-card">
               <img
                 src="https://res.cloudinary.com/rasivyy/image/upload/v1668896912/alrani/book1-1_nmbwp3.jpg"
-                alt="image"
+                alt="imagee"
               />
             </div>
           </div>

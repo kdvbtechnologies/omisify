@@ -9,7 +9,7 @@ export default function ResultEncyclodata() {
         <div className="align">
           <img
             src="https://res.cloudinary.com/rasivyy/image/upload/v1668780827/inizel/inizel%20home/blackm1_c695ny.jpg"
-            alt="image"
+            alt="imagee"
           />
 
           <p style={{ paddingTop: "150px" }}>

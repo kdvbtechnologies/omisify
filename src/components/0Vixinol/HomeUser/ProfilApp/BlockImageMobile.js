@@ -93,6 +93,8 @@ export default function BlockImageMobile() {
     },
   ];
 
+  console.log(api);
+
   // image 1
   // image 1
   // image 1
