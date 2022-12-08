@@ -22,6 +22,8 @@ export default function Notice() {
     setStarsApp(true);
   }
 
+  console.log(StarsApp);
+
   // five stars
   // five stars
   // five stars
