@@ -32,7 +32,7 @@ export default function HomeAl() {
         {api.map((api) => (
           <div className="book">
             <NavLink className="navlink" to="/book">
-              <img src={api.imagebook} alt="image" />
+              <img src={api.imagebook} alt="imagee" />
 
               <div className="title">
                 <p>{api.titlebook}</p>
