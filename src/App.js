@@ -458,8 +458,8 @@ export default function App() {
         <Route path="/complete" element={<Complete />} />
         <Route path="/after-dev" element={<AfterDev />} />
         <Route path="/dev" element={<Dev />} />
-        <Route path="*" element={<AuthSignup />} />
-        <Route path="/" element={<AuthSignup />} />
+        <Route path="*" element={<AfterLoginSuccess />} />
+        <Route path="/" element={<AfterLoginSuccess />} />
         {/* new Omisify */}
         {/* new Omisify */}
         {/* new Omisify */}
