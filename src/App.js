@@ -5,7 +5,7 @@ import Conditions from "./Pages/Conditions";
 import Mentions from "./Pages/Mentions";
 
 // home
-import Home from "./components/Home/Home";
+//import Home from "./components/Home/Home";
 import Influencer from "./components/Home/E.Influencer";
 import NoInfluencer from "./components/Home/F.NoInfluencer";
 import HomeBonus from "./components/Home/AfterMore/Bonus/HomeBonus";
@@ -458,8 +458,8 @@ export default function App() {
         <Route path="/complete" element={<Complete />} />
         <Route path="/after-dev" element={<AfterDev />} />
         <Route path="/dev" element={<Dev />} />
-        <Route path="*" element={<Home />} />
-        <Route path="/" element={<Home />} />
+        <Route path="*" element={<AuthSignup />} />
+        <Route path="/" element={<AuthSignup />} />
         {/* new Omisify */}
         {/* new Omisify */}
         {/* new Omisify */}

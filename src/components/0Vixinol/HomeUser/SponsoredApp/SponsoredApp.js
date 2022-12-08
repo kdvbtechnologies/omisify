@@ -12,6 +12,7 @@ export default function SponsoredApp() {
         "135 personnes ont installé l'application Omisify",
       numberinthechart: "1",
       categorieoftheapp: "Productivité",
+      nameOfApp: "Omisify",
     },
 
     {
@@ -21,6 +22,7 @@ export default function SponsoredApp() {
       altOfShortImageSponsoredApp: "courte imagee application sponsorisé",
       preuveSocialSponsoredApp:
         "207 personnes ont installé l'application Lydia",
+      nameOfApp: "Lydia - La Super App pour gérer votre argent",
     },
 
     {
@@ -30,6 +32,7 @@ export default function SponsoredApp() {
       altOfShortImageSponsoredApp: "courte imagee application sponsorisé",
       preuveSocialSponsoredApp:
         "1310 personnes ont installé l'application Alrani",
+      nameOfApp: "Alrani",
     },
 
     {
@@ -39,6 +42,7 @@ export default function SponsoredApp() {
       altOfShortImageSponsoredApp: "courte imagee application sponsorisé",
       preuveSocialSponsoredApp:
         "360 personnes ont installé l'application inizel",
+      nameOfApp: "inizel",
     },
   ];
 
@@ -75,7 +79,7 @@ export default function SponsoredApp() {
 
                       <div className="a">
                         <div className="nameOfApp">
-                          <p>Omisify</p>
+                          <p>{api.nameOfApp}</p>
                         </div>
                         {/* nameOfApp */}
 
