@@ -50,7 +50,7 @@ export default function UpdatePoint() {
         <NavLink className="navlink" to="/secure-update-comment">
           <p>Commentaire</p>
         </NavLink>
-
+        {/* 
         <NavLink className="navlink" to="/secure-update-e10k">
           <p>E10k</p>
         </NavLink>
@@ -78,11 +78,13 @@ export default function UpdatePoint() {
         <NavLink className="navlink" to="/secure-update-mwi">
           <p>MWI</p>
         </NavLink>
+        */}
 
         <NavLink className="navlink" to="/secure-update-publication">
           <p>Publication</p>
         </NavLink>
 
+        {/* 
         <NavLink className="navlink" to="/secure-update-pwi">
           <p>PWI</p>
         </NavLink>
@@ -90,6 +92,7 @@ export default function UpdatePoint() {
         <NavLink className="navlink" to="/secure-update-pwp">
           <p>PWP</p>
         </NavLink>
+      */}
       </div>
     </div>
   );
