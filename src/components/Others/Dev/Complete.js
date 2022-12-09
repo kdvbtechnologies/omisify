@@ -43,6 +43,7 @@ export default function Complete() {
             <hr />
           </div>
 
+          {/* 
           <NavLink className="navlink" to="/before-calcul-e10k">
             <p>E10k</p>
           </NavLink>
@@ -90,6 +91,7 @@ export default function Complete() {
           <div className="hr">
             <hr />
           </div>
+          */}
 
           <NavLink className="navlink" to="/before-calcul-publication">
             <p>Publication</p>
