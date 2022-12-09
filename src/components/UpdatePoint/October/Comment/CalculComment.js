@@ -133,18 +133,18 @@ export default function CalculComment() {
   const suggestgdb = localStorage.getItem("https://omisify.com/suggestgdb");
 
   const calculpointtcommentlife =
-    parseInt(newnumber) * 1 * gdb + parseInt(oldpointtcommentlife);
+    parseInt(newnumber) * 500 * gdb + parseInt(oldpointtcommentlife);
   console.log(calculpointtcommentlife);
 
   const calculpointtlife =
-    parseFloat(oldpointtlife) + parseInt(newnumber) * 1 * gdb;
+    parseFloat(oldpointtlife) + parseInt(newnumber) * 500 * gdb;
 
   const calculgaintlife =
-    parseFloat(oldgaintlife) + parseInt(newnumber) * 0.001 * gdb;
+    parseFloat(oldgaintlife) + parseInt(newnumber) * 0.000001 * gdb;
 
   if (gdb === suggestgdb) {
     const calculgenerositydaysbonus =
-      parseInt(newnumber) * 1 * gdb + parseFloat(oldgenerositydaysbonus);
+      parseInt(newnumber) * 500 * gdb + parseFloat(oldgenerositydaysbonus);
 
     localStorage.setItem(
       "https://omisify.com/resultgenerositydaysbonus",
@@ -436,7 +436,7 @@ export default function CalculComment() {
                   </p>
                 </div>
 
-                <p>1 Commentaire » 1 point » 0.001€</p>
+                <p>1 Commentaire » 500 points » 0.000001€</p>
 
                 <p style={{ fontSize: "14px" }}>
                   Ancien total des points des commentaires :{" "}

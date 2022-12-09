@@ -92,17 +92,17 @@ export default function CalculPublication() {
   );
 
   const calculpointtpublicationlife =
-    parseInt(newnumber) * 1 * gdb + parseFloat(oldpointtpublicationlife);
+    parseInt(newnumber) * 1000 * gdb + parseFloat(oldpointtpublicationlife);
 
   const calculpointtlife =
-    parseInt(newnumber) * 1 * gdb + parseFloat(oldpointtlife);
+    parseInt(newnumber) * 1000 * gdb + parseFloat(oldpointtlife);
 
   const calculgaintlife =
-    parseInt(newnumber) * 0.001 * gdb + parseFloat(oldgaintlife);
+    parseInt(newnumber) * 0.000002 * gdb + parseFloat(oldgaintlife);
 
   if (gdb === suggestgdb) {
     const calculgenerositydaysbonus =
-      parseInt(newnumber) * 1 * gdb + parseFloat(oldgenerositydaysbonus);
+      parseInt(newnumber) * 1000 * gdb + parseFloat(oldgenerositydaysbonus);
 
     localStorage.setItem(
       "https://omisify.com/resultgenerositydaysbonus",
@@ -167,7 +167,7 @@ export default function CalculPublication() {
             partie présentation, le lien publicitaire et l'affiche du produit ou
             de l'entreprise
           </p>
-          <p>1 Publication : 1 point = 0.001€</p>
+          <p>1 Publication : 1000 points = 0.000002€</p>
 
           <div className="b">
             <p>Calcul du résultat de votre travail</p>
