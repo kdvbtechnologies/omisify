@@ -1032,12 +1032,10 @@ footer {
 /* src - components - Program.js*/
 .back-btn {
   padding: 20px 10px;
-  cursor: pointer;
 }
 
 .back-btnb {
-  padding: 20px 10px;
-  cursor: pointer;
+  padding: 5px 10px;
 }
 
 .back-btn button{
@@ -2035,15 +2033,25 @@ footer {
 /* update point - Calcul Comment */
 /* update point - Calcul Comment */
 .calcul-comment {
-padding-bottom: 70px;
+  margin-bottom: 70px;
 }
 
-.calcul-comment .title {
+.calcul-comment .calcul-comment-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calcul-comment .calcul-comment-title .b p {
   color: blue;
-  font-size: 25px;
-  font-weight: bold;
-  padding-bottom: 10px;
-  text-align: center;
+  font-size: 18px;
+  padding-right: 10px;
+  padding-left: 3px;
+  cursor: pointer;
+}
+
+.calcul-comment .calcul-comment-title .c svg {
+  padding-top: 4px;
 }
 
 .calcul-comment .a {
@@ -2081,7 +2089,7 @@ padding-bottom: 70px;
 }
 
 .calcul-comment .d {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .calcul-comment .d input[type="number"] {
@@ -2089,17 +2097,90 @@ padding-bottom: 70px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  margin-left: 7px;
+  margin-top: 10px;
 }
 
 .calcul-comment button {
   cursor: pointer;
   font-family: Roboto, Arial, sans-serif;
   color: red;
-  padding: 10px;
+  padding: 6px 10px;
   border-radius: 20px;
   border: 1px solid red;
   background-color: transparent;
   font-size: 14px;
+}
+
+.calcul-comment button:hover {
+  border: 1px solid #ff9999;
+  color: #ff9999;
+}
+
+.calcul-comment-title .display {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  background: red;
+}
+
+.calcul-comment-title .display svg {
+  padding-right: 5px;
+}
+
+.calcul-comment-title .display p {
+  font-size: 18px;
+  color: white;
+}
+
+.popup-infos-comment-opacity {
+  background-color: #00000050;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.popup-infos-comment-opacity .align {
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.popup-infos-comment-opacity .card {
+  width: 280px;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.popup-infos-comment-opacity .card p {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.popup-infos-comment-opacity .card .display {
+  display: flex;
+}
+
+.popup-infos-comment-opacity .card .display p {
+  font-size: 17px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 5px;
+}
+
+.popup-enter-number-comment p {
+  font-size: 15px;
+  color: red;
 }
 
 /* update point - validate calcul comment.js */
@@ -2151,6 +2232,10 @@ padding-bottom: 70px;
 }
 
 .validate-calcul-comment .go-down-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-bottom: 20px;
 }
 
@@ -2164,6 +2249,7 @@ padding-bottom: 70px;
 }
 
 .validate-calcul-comment .c p {
+  text-align: center;
   font-size: 15px;
   padding-bottom: 40px;
 }
@@ -2172,7 +2258,7 @@ padding-bottom: 70px;
   cursor: pointer;
   font-family: Roboto, Arial, sans-serif;
   color: white;
-  padding: 10px 20px;
+  padding: 7px 20px;
   border-radius: 20px;
   border: none;
   background-color: red;
@@ -10152,6 +10238,11 @@ padding-bottom: 70px;
     margin-top: 7px;
     margin-bottom: 7px;
   }
+
+  /* home omisify */
+  .popup-infos-comment-opacity .card {
+    width: 250px;
+  }
 }
 
 /* 385px */
@@ -10589,6 +10680,10 @@ padding-bottom: 70px;
   /* home omisify */
   /* home omisify */
   /* home omisify */
+  .popup-infos-comment-opacity .card {
+    width: 250px;
+  }
+
   .navbar-bottom-omisify .display .a {
     padding: 15px 18px;
   }
@@ -10774,6 +10869,11 @@ padding-bottom: 70px;
     padding-left: 14px;
     padding-right: 14px;
   }
+
+  /* home omisify */
+  .popup-infos-comment-opacity .card {
+    width: 220px;
+  }
 }
 
 /* 299px */
@@ -10819,6 +10919,11 @@ padding-bottom: 70px;
   .infos-of-dev .icon p {
     padding-left: 2px;
     padding-right: 5px;
+  }
+
+  /* home omisify */
+  .popup-infos-comment-opacity .card {
+    width: 200px;
   }
 }
 
@@ -11075,6 +11180,11 @@ padding-bottom: 70px;
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  /* home omisify */
+  .popup-infos-comment-opacity .card {
+    width: 190px;
+  }
 }
 
 
@@ -11238,6 +11348,16 @@ padding-bottom: 70px;
     padding-right: 5px;
     font-size: 14px;
   }
+
+  /* home omisify */
+  .popup-infos-comment-opacity .card {
+    width: 180px;
+    padding: 15px;
+  }
+
+  .popup-infos-comment-opacity .card .display p {
+    font-size: 16px;
+  }
 }
 
  /* 245px */
@@ -11337,7 +11457,11 @@ padding-bottom: 70px;
   .search-app .input svg {
     padding: 6px 8px;
   }
-  
+
+  /* omisify */
+  .calcul-comment-title .display p {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 235px) {
@@ -11505,6 +11629,14 @@ padding-bottom: 70px;
   .profil-user-not-connected .display .block p {
     font-size: 17px;
   } 
+
+  /* omisify */
+  .calcul-comment-title .display {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 
@@ -11610,6 +11742,16 @@ padding-bottom: 70px;
 }
 
 /* home omisify */
+/* home omisify */
+.popup-infos-comment-opacity .card {
+  width: 170px;
+  padding: 15px;
+}
+
+.popup-infos-comment-opacity .card .display p {
+  font-size: 16px;
+}
+
 .navbar-bottom-omisify .display .a {
   padding: 15px 10px;
 }
@@ -11790,6 +11932,12 @@ padding-bottom: 70px;
 .popup-download-btn-background .card .border {
   padding: 10px 5px;
   width: 165px;
+}
+
+/* omisify */
+.popup-infos-comment-opacity .card {
+  width: 160px;
+  padding: 15px;
 }
 }
 
