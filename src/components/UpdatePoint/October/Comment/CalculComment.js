@@ -353,7 +353,7 @@ export default function CalculComment() {
 
           {newnumber && oldpointtcommentlife && (
             <p>
-              ({newnumber} x 1 ) + {oldpointtcommentlife} ={" "}
+              ({newnumber} x 500 ) + {oldpointtcommentlife} ={" "}
               {calculpointtcommentlife} point(s)
             </p>
           )}

@@ -186,7 +186,7 @@ export default function CalculPublication() {
 
           {newnumber && oldpointtpublicationlife && (
             <p>
-              ({newnumber} x 1 ) + {oldpointtpublicationlife} ={" "}
+              ({newnumber} x 1000 ) + {oldpointtpublicationlife} ={" "}
               {calculpointtpublicationlife} point(s)
             </p>
           )}
