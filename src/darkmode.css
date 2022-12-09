@@ -2273,13 +2273,19 @@ footer {
 /* update point - validate comment success */
 /* update point - validate comment success */
 /* update point - validate comment success */
+.icon-validate-comment-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
 
 .validate-comment-success {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 70px;
+  padding-top: 20px;
 }
 
 .validate-comment-success .title {
@@ -2294,9 +2300,13 @@ footer {
   background-color: blue;
   border: none;
   font-size: 15px;
-  padding: 10px 20px;
+  padding: 7px 20px;
   margin: 50px 0px;
   border-radius: 20px;
+}
+
+.validate-comment-success button:hover {
+  background-color: #9999ff;
 }
 
 
@@ -2307,12 +2317,19 @@ footer {
 /* update point - validate comment error */
 /* update point - validate comment error */
 /* update point - validate comment error */
+.icon-validate-comment-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
 .validate-comment-error {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 70px;
+  margin-top: 20px;
 }
 
 .validate-comment-error .title {
@@ -2323,13 +2340,18 @@ footer {
 .validate-comment-error button {
   cursor: pointer;
   font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: red;
-  background-color: transparent;
+  color: white;
+  background-color: red;
   border: 1px solid red;
   font-size: 15px;
-  padding: 10px 20px;
+  padding: 7px 20px;
   margin: 50px 0px;
   border-radius: 20px;
+}
+
+.validate-comment-error button:hover {
+  background-color: #ff9999;
+  border: 1px solid #ff9999;
 }
 
 
