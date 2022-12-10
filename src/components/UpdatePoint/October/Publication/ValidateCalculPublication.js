@@ -124,7 +124,7 @@ export default function ValidateCalculpublication() {
       {/* calcul-comment-title */}
 
       <div className="back-btn">
-        <NavLink to="/before-calcul-comment">
+        <NavLink to="/before-calcul-publication">
           <Back />
         </NavLink>
       </div>

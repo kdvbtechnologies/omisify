@@ -75,6 +75,7 @@ export default function ValidateCommentSuccess() {
           <path d="M0.928 30.223H31.01V31.938H0.928z"></path>
         </svg>
       </div>
+      {/* icon-validate-comment-success */}
 
       <div className="validate-comment-success">
         <div className="title">
