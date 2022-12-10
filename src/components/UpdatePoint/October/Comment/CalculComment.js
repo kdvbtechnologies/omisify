@@ -436,7 +436,10 @@ export default function CalculComment() {
                   </p>
                 </div>
 
-                <p>1 Commentaire » 500 points » 0.000001€</p>
+                <p>
+                  1 Commentaire avec une affiche publicitaire » 500 points »
+                  0.000001€
+                </p>
 
                 <p style={{ fontSize: "14px" }}>
                   Ancien total des points des commentaires :{" "}

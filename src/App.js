@@ -443,10 +443,13 @@ import NewPasswordSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/NewP
 import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
 import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
+import Partner from "./components/Partenaire Omisify/Partner";
+
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/new-partner" element={<Partner />} />
         <Route path="/translation" element={<Translation />} />
         <Route path="/validate-access-code" element={<ValidateAccessCode />} />
         <Route path="/error-access-code" element={<ErrorAccessCode />} />
