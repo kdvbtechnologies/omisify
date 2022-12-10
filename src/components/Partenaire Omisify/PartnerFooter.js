@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import PopupMaintenance from "../Home Omisify/Maintenance/PopupMaintenance";
 
 export default function PartnerFooter() {
   // welcome bonus
@@ -83,6 +84,12 @@ export default function PartnerFooter() {
   const getoldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
 
   /* {aa ? (<></>) : (<></>)} */
+
+  const [popupMaintenance, setPopupMaintenance] = useState(false);
+
+  function Maintenance() {
+    setPopupMaintenance(!popupMaintenance);
+  }
   return (
     <>
       <div>
@@ -269,10 +276,20 @@ export default function PartnerFooter() {
         </div>
       </div>
       <div className="request-money">
-        <NavLink to="/partner-contact">
+        {/* 
+         <NavLink to="/partner-contact">
           <button>Demander ma rémunération</button>
         </NavLink>
+        */}
+
+        <button onClick={Maintenance}>..</button>
       </div>
+
+      {popupMaintenance && (
+        <div onClick={Maintenance}>
+          <PopupMaintenance />
+        </div>
+      )}
     </>
   );
 }

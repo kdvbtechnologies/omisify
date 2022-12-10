@@ -301,6 +301,7 @@ export default function CalculComment() {
             </svg>
             <p>Calcul du résultat de votre travail</p>
           </div>
+          {/* b */}
 
           <div className="display-calcul-comment-title">
             <div className="calcul-comment-title">
@@ -450,7 +451,7 @@ export default function CalculComment() {
             </div>
             {/* align */}
           </div>
-          {/*  */}
+          {/* popup-infos-comment-opacity */}
         </>
       )}
 

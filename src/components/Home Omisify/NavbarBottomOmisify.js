@@ -299,7 +299,7 @@ export default function NavbarBottomOmisify() {
           </div>
 
           <div className="a">
-            <NavLink to="/new-partner">
+            <NavLink to="/partner-delete">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0"

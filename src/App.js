@@ -449,7 +449,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/new-partner" element={<Partner />} />
+        <Route path="/partner-delete" element={<Partner />} />
         <Route path="/translation" element={<Translation />} />
         <Route path="/validate-access-code" element={<ValidateAccessCode />} />
         <Route path="/error-access-code" element={<ErrorAccessCode />} />
