@@ -11,6 +11,7 @@ import NoInfluencer from "./components/Home/F.NoInfluencer";
 import HomeBonus from "./components/Home/AfterMore/Bonus/HomeBonus";
 import HomeOmisify from "./components/Home Omisify/Home";
 import NavbarBottomOmisify from "./components/Home Omisify/NavbarBottomOmisify";
+import NavbarTopOmisify from "./components/Home Omisify/NavbarTopOmisify";
 
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
@@ -444,6 +445,7 @@ import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
 import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
 import Partner from "./components/Partenaire Omisify/Partner";
+import PartieA from "./components/Home Omisify/PartieA";
 
 export default function App() {
   return (
@@ -481,6 +483,9 @@ export default function App() {
         {/* new Omisify */}
         {/* new Omisify */}
         {/* new Omisify */}
+        <Route path="/partie-a" element={<PartieA />} />
+        <Route path="/navbar-top-omisify" element={<NavbarTopOmisify />} />
+
         <Route
           path="/navbar-bottom-omisify"
           element={<NavbarBottomOmisify />}

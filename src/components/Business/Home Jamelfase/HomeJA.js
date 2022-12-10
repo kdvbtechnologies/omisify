@@ -203,6 +203,54 @@ export default function HomeJA() {
           </p>
           <button>Essayer gratuitement la publicité</button>
 
+          <p>Réussir sa campagne publicitaire</p>
+
+          <p>
+            Omisify, c'est quoi Omisify ? En tant qu'entreprise vous devez
+            retenir qu'Omisify est une plateforme qui fait de la publicité ciblé
+            pour des entreprises à travers des applications de messagerie. Tout
+            l'écosystème d'Omisify a été concue pour un seul but : Faire de la
+            publicité cibler à travers des applications de messagerie. Si dans
+            votre entreprise vous utilisez des applications de messagerie (tel
+            que Whatsapp, Telegram, Viber, Linphone, Signal, WeChat, ...) pour
+            vendre directement vos services à vos clients alors Omisify est la
+            plateforme la mieux adaptée pour votre publicité
+          </p>
+
+          <p>
+            Si la publicité de votre entreprise a pour but de ramener les
+            clients sur votre site internet ou de télécharger votre application
+            mobile alors Alrani est la plateforme la mieux adaptée pour votre
+            publicité
+          </p>
+
+          <p>
+            Si la publicité de votre entreprise a pour but de ramener les
+            clients dans votre magasin physique alors les partenaires Omisify
+            influents et vidéastes sont les mieux adaptées pour votre publicité
+          </p>
+
+          <p>
+            Si la publicité de votre entreprise ne nécessite pas un ciblage
+            précis par exemple pour ramener les internautes sur votre site de
+            réseaux social ou sur votre moteur de recherche alors les
+            Partenaires Omisify à travers les commentaires avec affiche
+            publicitaire et les Partenaires Omisify Vidéastes sont les mieux
+            adaptée pour votre publicité
+          </p>
+
+          <p>
+            Si la publicité de votre entreprise comporte une vidéo dans laquelle
+            une figure d'autorité consomme votre produit par exemple si vous
+            fabriquez des yaourts ou des boissons énergissantes, la publicité
+            cibler sur Alrani sera la mieux adaptée pour votre entreprise{" "}
+          </p>
+
+          <p>
+            Pour réussir votre campagne publicitaire, Choisissez la plateforme
+            la mieux adaptée pour la publicité de votre entreprise
+          </p>
+
           <div className="service">
             <img src={service} alt="imagee customer service jamelfase" />
             <p>Besoin d'aide ? Notre service client est disponible 24h/24</p>

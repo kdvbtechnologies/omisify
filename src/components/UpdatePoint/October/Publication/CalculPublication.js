@@ -99,7 +99,7 @@ export default function CalculPublication() {
     parseInt(newnumber) * 1000 * gdb + parseFloat(oldpointtlife);
 
   const calculgaintlife =
-    parseInt(newnumber) * 0.000002 * gdb + parseFloat(oldgaintlife);
+    parseInt(newnumber) * 1000 * 0.000002 * gdb + parseFloat(oldgaintlife);
 
   if (gdb === suggestgdb) {
     const calculgenerositydaysbonus =

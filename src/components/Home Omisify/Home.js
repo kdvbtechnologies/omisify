@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import BackbtnTwo from "../Back/BackbtnTwo";
 import influentgroup from "./img/influent-group.jpg";
 import partner from "./img/partner.jpg";
 import videaste from "./img/videaste.jpg";
+import { NavLink } from "react-router-dom";
+import BackbtnTwo from "../Back/BackbtnTwo";
 import FilePopupImagePartner from "./PopupImagePartner";
 import FilePopupImageVideaste from "./PopupImageVideaste";
 import FilePopupImageInfluent from "./PopupImageInfluent";
@@ -12,6 +12,7 @@ import { useTranslation } from "react-i18next";
 import Back from "../Back/Back";
 import homeinfluencer from "./img/home-influencer.jpg";
 import GenerationOmisify from "./GenerationOmisify";
+import NavbarTopOmisify from "./NavbarTopOmisify";
 
 export default function HomeOmisify() {
   const { t } = useTranslation();
@@ -35,7 +36,6 @@ export default function HomeOmisify() {
 
   function PopupComment() {
     setPopupComment(!popupComment);
-    console.log("comment true");
   }
 
   // partner
@@ -71,12 +71,23 @@ export default function HomeOmisify() {
     setPopupImageInfluent(!popupImageInfluent);
   }
 
+  // popup conseil
+  // popup conseil
+  // popup conseil
+  // popup conseil
+  const [popupConseil, setPopupConseil] = useState(false);
+  function PopupConseil() {
+    setPopupConseil(!popupConseil);
+  }
+
   return (
     <>
+      <NavbarTopOmisify />
+
       <div className="home-influencer-new-omisify">
         <div className="a">
           <div className="title">
-            <p>Omisify est la marque préféré des influenceurs</p>
+            <p>Omisify est la marque préférée des influenceurs</p>
           </div>
 
           <div className="display-btn">
@@ -88,12 +99,40 @@ export default function HomeOmisify() {
               <button>Travailler avec Omisify</button>
             </div>
           </div>
+          {/* display-btn */}
         </div>
+        {/* a */}
 
         <div className="b">
           <img src={homeinfluencer} alt="" />
         </div>
       </div>
+      {/* home-influencer-new-omisify */}
+
+      <div className="home-influencer-new-omisify-mobile">
+        <div className="b">
+          <img src={homeinfluencer} alt="" />
+        </div>
+
+        <div className="a">
+          <div className="title">
+            <p>Omisify est la marque préférée des influenceurs</p>
+          </div>
+
+          <div className="display-btn">
+            <div className="button-a">
+              <button>Installer l'application Omisify</button>
+            </div>
+
+            <div className="button-b">
+              <button>Travailler avec Omisify</button>
+            </div>
+          </div>
+          {/* display-btn */}
+        </div>
+        {/* a */}
+      </div>
+      {/* home-influencer-new-omisify-mobile */}
 
       <GenerationOmisify />
 
@@ -103,7 +142,31 @@ export default function HomeOmisify() {
             Omisify est favorable pour les influenceurs et pour les
             non-influenceurs
           </p>
+
+          <div className="a">
+            <div className="align">
+              <p onClick={PopupConseil}>Comment devenir influenceur</p>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0"
+                y="0"
+                cursor="pointer"
+                width="17px"
+                fill="white"
+                enableBackground="new 0 0 489.6 489.6"
+                version="1.1"
+                viewBox="0 0 489.6 489.6"
+                xmlSpace="preserve"
+              >
+                <path d="M0 244.8c0 9.5 7.7 17.2 17.2 17.2h414.2L322.9 370.4c-3.3 3.3-5 7.7-5 12.1s1.7 8.8 5 12.1c6.7 6.7 17.6 6.7 24.3 0l137.6-137.7c6.4-6.4 6.4-17.8 0-24.3L347.1 95c-6.7-6.7-17.6-6.7-24.3 0-6.7 6.7-6.7 17.6 0 24.3l108.4 108.4H17.1C7.6 227.6 0 235.3 0 244.8z"></path>
+              </svg>
+            </div>
+            {/* align */}
+          </div>
+          {/* a */}
         </div>
+        {/* center */}
       </div>
       {/* home-omisify-go-down */}
 
@@ -732,11 +795,211 @@ export default function HomeOmisify() {
       {/* popup comment */}
       {/* popup comment */}
       {/* popup comment */}
-      {/* popup comment */}
       {popupComment && (
         <>
           <div onClick={PopupComment}>
             <FilePopupComment />
+          </div>
+        </>
+      )}
+
+      {/* popup conseil */}
+      {/* popup conseil */}
+      {/* popup conseil */}
+      {/* popup conseil */}
+      {/* popup conseil */}
+      {/* popup conseil */}
+      {/* popup conseil */}
+      {popupConseil && (
+        <>
+          <div className="popup-conseil-opacity">
+            <div className="a">
+              <p>
+                Conseils des influenceurs de la Génération Omisify pour savoir
+                comment devenir influenceur à partir de rien
+              </p>
+
+              <p>
+                Aujourd'hui grace à internet vous avez la possibilité de faire
+                ce qui vous passionne et de vivre à 100% de votre passion. Le
+                gros avantage d'internet c'est qu'il connecte tout les humains
+                entre eux. Aujourd'hui grace a internet des millions de
+                personnes peuvent s'interesser a ce que vous avez a dire, a
+                votre concept ou a votre talent.
+              </p>
+
+              <p>
+                Dans cet article vous allez apprendre comment Devenir
+                influenceur à partir de rien grace aux conseils des influenceurs
+                de la Génération Omisify
+              </p>
+
+              <p>
+                Pour devenir influenceur vous allez devoir travailler dur et il
+                n'y a pas d'autres alternatives. Et travailler dur ca ne suffit
+                pas, vous aller devoir travailler comme un fou tout les jours
+                regulierement pendant 31 mois sans se décourager.
+              </p>
+
+              <p>
+                Comme une bonne nourriture prend toujours du temps à cuire, Vous
+                devez savoir que les bonnes choses prennent toujours du temps
+              </p>
+
+              <p>
+                Maintenant que votre esprit est prêt à suivre cette voie,
+                cliquer sur Continuer pour obtenir tout les conseils qui vous
+                aideront à atteindre votre but de Devenir influenceur
+              </p>
+
+              <p>
+                Pour commencer vous devez choisir une niche qui vous intéresse,
+                par exemple vous pouvez décider de devenir un influenceur qui
+                publie des videos dans laquelle vous déguster des gateaux ou
+                encore vous pouvez par exemple décider de devenir un influenceur
+                qui publie des vidéos dans laquelle vous essayer des parfums ou
+                encore vous pouvez décider de devenir un influenceur qui
+                recommande dans ces vidéos les meilleurs sites pour gagner de
+                l'argent sur internet
+              </p>
+
+              <p>
+                une fois que vous avez choisi votre niche, l'étape suivante sera
+                de creer votre systeme(Votre systeme pourra etre un Blog, compte
+                instagram, chaine youtube ou tout autre compte professionnel sur
+                les reseaux sociaux populaires)
+              </p>
+
+              <p>
+                D'après les influenceurs de la Génération Omisify, c'est plus
+                efficace de commencer par la vidéo, par exemple vous créer une
+                chaine Youtube et dans vos vidéos vous dites aux gens d'aller
+                s'abonner sur votre compte Facebook, Instagram, Tik Tok ou
+                n'importe qu'elle réseaux sociaux mais retener que vous devez
+                commencer par la vidéo et inciter les gens à vous suivre sur les
+                autres réseaux sociaux, cette méthode est la plus efficace car
+                par nature l'etre humain accorde plus d'attention et de
+                compassion à une nouvelle personne qui lui parle dans une vidéo
+                plutot qu'une simple photo que vous publier sur Facebook et vous
+                dites aux gens d'aller s'abonner sur votre chaine Youtube, ca
+                c'est inefficace parce qu'au long terme, lorsque votre page
+                Facebook atteindra le succès vous aurez du mal à ramener
+                beaucoup d'abonnés sur votre chaine Youtube alors qu'à l'inverse
+                lorsque votre chaine Youtube atteindra le succès, ca sera plutot
+                simple pour vous de ramener beaucoup d'abonnés sur votre page
+                Facebook ou compte instagram. Les mêmes vidéos que vous allez
+                publier sur votre chaine Youtube vous devez aussi les republiés
+                sur vos autres réseaux sociaux
+              </p>
+
+              <p>
+                Votre systeme créé, l'étape suivante sera de publier du nouveau
+                contenu tout les jours de manière régulière
+              </p>
+
+              <p>
+                Comme tout le monde, pendant les premiers mois vous n'aurez pas
+                de résultats, vous serez pratiquement seul sur votre chaine
+                youtube ou sur votre compte instagram, vous allez remarquer que
+                vous travaillez beaucoup mais vous n'avez pas de résultats c'est
+                à ce moment que nombreux abondonnent mais vous vous ne devez pas
+                abondonner car vous etes déjà prévenu, vous devez au contraire
+                controler vos émotions et continuer à travailler comme un fou
+                tout en vous améliorant progréssivement
+              </p>
+
+              <p>
+                En attendant votre heure de gloire, vous irez sur les comptes
+                des influenceurs qui sont dans le même domaine que vous, ensuite
+                vous allez commenter leur nouveau contenu, pas n'importe quelle
+                commentaire, vous devez commenter des commentaires digne d'un
+                expert, des commentaires digne d'une personne qui sait très bien
+                ou elle va, aujourd'hui 95% des personnes consultent les
+                commentaires, donc votre commentaire pertinent sera irrésistible
+                devant certaine personne et va les inciter à cliquer et à tomber
+                sur votre compte instagram ou votre chaine Youtube, n'oublier
+                pas de mettre une photo de profil sur votre compte ou sur votre
+                chaine. vous devez le faire constament, tout les jours vous
+                devez commenter, pas seulement sur le compte d'un seul
+                influenceur, vous devez le faire sur les comptes de plusieurs
+                influenceurs, vous devez être régulier, même quand vous n'avez
+                pas envie de faire vous le faites, même quand vous êtes fatigué
+                vous le faites, si vous êtes arrivé jusqu'ici c'est que vous
+                avez déjà la mentalité d'un champion, vous avez déjà la
+                mentalité d'une personne qui réussi, vous devez continuer avec
+                cette régularité sans jamais abondonner, c'est ainsi qu'avec
+                votre régularité à poster du nouveau contenu tout les jours et à
+                commenter tout les jours vous allez commencer à récolter vos
+                premiers abonnés
+              </p>
+
+              <p>
+                Omisify ne vous abondonne pas, Omisify est avec vous pour vous
+                aider vers votre marche vers le succès, vous pourrez bénéficier
+                gratuitement du Programme d'Aide Aux Nouveaux
+                Influenceurs(PAANI). Le Programme d'Aide aux nouveaux
+                influenceurs est un programme dans laquelle les inflenceurs qui
+                ont déjà réussi dans le domaine que vous avez choisi vont
+                recommander chaque semaine votre Chaine Youtube à leurs abonnés
+                et vont vous taguer dans leur publication. Pour être éligible
+                aux PAANI, votre chaine doit avoir beaucoup de contenu original
+                c'est à dire vous devez publier tout les jours du nouveau
+                contenu tout en vous améliorant progressivement. Au niveau du
+                menu de votre compte Omisify, aller dans Nouveau Influenceur,
+                cliquer sur PAANI et suivez les instructions pour vérifier
+                l'éligibilité de votre chaine Youtube au Programme d'Aide Aux
+                Nouveaux Influenceurs
+              </p>
+
+              <p>
+                Il viendra un moment ou il y'aura des personnes qui vont
+                decouvrir votre chaine Youtube ou votre compte Instagram et ces
+                personnes vont remarqué que votre chaine possedent beaucoup de
+                contenu original et ils vont aussi remarqué que vous publier
+                tout les jours, a ce moment ces personnes vont commencer a
+                revenir tout les jours sur votre chaine, et lorsque l'algorithme
+                remarque qu'il y'a des personnes qui reviennent tout les jours
+                sur votre chaine, automatiquement votre chaine commencera a
+                apparaitre dans les suggestions c'est la ou le nombre de vos
+                abonnés va exploser comme par magie et vous pouvez dire j'ai
+                réussi mais c'est pas encore fini car vous devez maintenir c'est
+                bonnes habitudes qui vous ont permis d'atteindre le succès, vous
+                devez continuer à publier régulièrement tout les jours et vous
+                allez remarquer qu'en continuant avec vos bonnes habitudes le
+                nombre de vos abonnés ne fera qu'augmenter de facon
+                exponentielle
+              </p>
+
+              <p>
+                Maintenant que vous avez réussi, vous pouvez écrire un livre sur
+                votre histoire et raconter dans ce livre votre parcours comment
+                vous êtes parti de rien jusqu'à atteindre le succès grace à
+                l'effet cummulé de vos bonnes habitudes. Vous pouvez choisir de
+                vendre le livre sur Amazon ou vous pouvez décider de le publier
+                sur Alrani pour permettre à vos abonnés ou n'importe quelle
+                autre personne de le télécharger gratuitement. Alrani va vous
+                rémunérer sur chaque téléchargements et en plus de cela vous
+                serez aussi rémunérer pour vos Droits d'auteur.
+              </p>
+
+              <p>
+                Dès le début de la création de votre chaine Youtube ou compte
+                Instagram vous pouvez rejoindre la Génération Omisify et ajouter
+                le logo de la marque Omisify dans vos vidéos ou dans vos photos
+                et vous serez rémunérer tout les jours par Omisify. Vous pourrez
+                aller encore plus loin en devenant Partenaire Omisify Vidéaste
+                ou Partenaire Omisify Influent comme font les autres
+                influenceurs
+              </p>
+              <p>
+                Besoin d'aide ? L'Equipe Omisify est à votre disposition pour
+                vous aider à ajouter le logo de la marque Omisify à votre photo
+                ou vidéo
+              </p>
+              <p>Contacter l'Equipe Omisify</p>
+              <button>Rejoindre la Génération Omisify</button>
+              <button>Travailler avec Omisify</button>
+            </div>
           </div>
         </>
       )}

@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
-import omisify from "./img/omisify.jpg";
-import omisifyred from "./img/omisify-red.jpg";
+import omisifyIcon from "./img/omisify-icon.jpg";
+import omisifyIconRed from "./img/omisify-icon-red.jpg";
+import omisifyIconMobile from "./img/omisify-icon-mobile.jpg";
+import omisifyIconRedMobile from "./img/omisify-icon-red-mobile.jpg";
 import go1 from "./img/go1.jpg";
 import go2 from "./img/go2.jpg";
 import go3 from "./img/go3.jpg";
@@ -10,7 +12,7 @@ import { useState } from "react";
 export default function GenerationOmisify() {
   const [popupHelp, setPopupHelp] = useState(false);
   const [join, setJoin] = useState(false);
-  const [beforeData, setBeforeData] = useState(true);
+  // const [beforeData, setBeforeData] = useState(true);
 
   function Join() {
     setJoin(!join);
@@ -30,33 +32,33 @@ export default function GenerationOmisify() {
   const [verify2, setVerify2] = useState(false);
 
   function Verify2() {
-    setBeforeData(false);
     setVerify1(false);
     setVerify2(true);
     setVerify3(false);
     setVerify4(false);
+    // setBeforeData(false);
   }
 
   // verify 3
   const [verify3, setVerify3] = useState(false);
 
   function Verify3() {
-    setBeforeData(false);
     setVerify1(false);
     setVerify2(false);
     setVerify3(true);
     setVerify4(false);
+    // setBeforeData(false);
   }
 
   // verify 4
   const [verify4, setVerify4] = useState(false);
 
   function Verify4() {
-    setBeforeData(false);
     setVerify1(false);
     setVerify2(false);
     setVerify3(false);
     setVerify4(true);
+    // setBeforeData(false);
   }
 
   function Help() {
@@ -68,27 +70,37 @@ export default function GenerationOmisify() {
       <div className="generation-omisify">
         <div className="a">
           <NavLink style={{ color: "black" }} to="/">
-            <p style={{ color: "black", paddingRight: "5px" }}>
-              Inscrivez-vous
+            <p
+              style={{
+                color: "black",
+                paddingRight: "5px",
+              }}
+            >
+              Inscrivez-vous gratuitement
             </p>
           </NavLink>
-          <p>et rejoignez ces personnes qui ont choisi de faire parti de la</p>
-          <p style={{ color: "red", paddingLeft: "5px" }}>Génération Omisify</p>
+          <p style={{ paddingRight: "5px" }}>et rejoignez</p>
+          <p style={{ paddingRight: "5px" }}>ces personnes</p>
+          <p style={{ paddingRight: "5px" }}>qui ont choisi</p>
+          <p style={{ paddingRight: "5px" }}>de faire parti</p>
+          <p style={{ paddingRight: "5px" }}>de la</p>
+          <p style={{ color: "red" }}>Génération Omisify</p>
         </div>
+        {/* a */}
+
         <div className="display">
           <div className="part-left">
-            <img src={omisify} alt="omisify" />
-            <img src={omisifyred} alt="omisify red logo" />
+            <img src={omisifyIcon} alt="omisify" />
+            <img src={omisifyIconRed} alt="omisify red logo" />
           </div>
           {/* part-left */}
 
           <div className="part-right">
             <div className="a">
-              <p>La</p>
+              <p style={{ paddingRight: "5px" }}>La</p>
               <p
                 style={{
                   color: "red",
-                  paddingLeft: "5px",
                   paddingRight: "5px",
                 }}
               >
@@ -105,132 +117,167 @@ export default function GenerationOmisify() {
           {/* part-right */}
         </div>
         {/* display */}
-        <div className="how-to-join-omisify-generation">
-          <p>Comment rejoindre la Génération Omisify ?</p>
-        </div>
-        {/* how-to-join-omisify-generation */}
-        <div className="how-to-join-omisify-generation-detail">
-          <div className="a">
-            <h2>1</h2>
-          </div>
 
-          <div className="b">
-            <h3>Installer</h3>
-            <p>Installer l'application Web Omisify depuis Vixinol Store</p>
+        <div className="display-mobile-version">
+          <div className="part-left">
+            <img src={omisifyIconMobile} alt="omisify" />
+            <img src={omisifyIconRedMobile} alt="omisify red logo" />
           </div>
-        </div>
-        {/* how-to-join-omisify-generation-detail */}
-        <div className="how-to-join-omisify-generation-detail">
-          <div className="a">
-            <h2>2</h2>
-          </div>
+          {/* part-left */}
 
-          <div className="b">
-            <h3>Inscription</h3>
-            <p>Inscrivez-vous et connecter-vous à votre compte Omisify</p>
+          <div className="part-right">
+            <div className="a">
+              <p style={{ paddingRight: "5px" }}>La</p>
+              <p
+                style={{
+                  color: "red",
+                  paddingRight: "5px",
+                }}
+              >
+                Génération Omisify
+              </p>
+              <p>concerne ces personnes,</p>
+              <p>
+                ces influenceurs ou ces artistes qui ont choisi de mettre les
+                logos de la marque Omisify dans leur photos, vidéos et sont
+                rémunérés chaque jour par Omisify
+              </p>
+            </div>
           </div>
+          {/* part-right */}
         </div>
-        {/* how-to-join-omisify-generation-detail */}
-        <div className="how-to-join-omisify-generation-detail">
-          <div className="a">
-            <h2>3</h2>
-          </div>
+        {/* display- mobile version */}
+      </div>
+      {/* generation - omisify */}
 
-          {!join && (
-            <>
-              <div className="b">
-                <h3>Rejoindre</h3>
-                <p>
-                  Au niveau du Menu de votre compte Omisify, allez dans
-                  Génération Omisify puis cliquer sur Rejoindre la Génération
-                  Omisify
+      <div className="how-to-join-omisify-generation">
+        <p>Comment rejoindre la Génération Omisify ?</p>
+      </div>
+      {/* how-to-join-omisify-generation */}
+
+      <div className="how-to-join-omisify-generation-detail">
+        <div className="a">
+          <h2>1</h2>
+        </div>
+
+        <div className="b">
+          <h3>Installer</h3>
+          <p>Installer l'application Web Omisify depuis Vixinol Store</p>
+        </div>
+      </div>
+      {/* how-to-join-omisify-generation-detail */}
+
+      <div className="how-to-join-omisify-generation-detail">
+        <div className="a">
+          <h2>2</h2>
+        </div>
+
+        <div className="b">
+          <h3>Inscription</h3>
+          <p>Inscrivez-vous et connecter-vous à votre compte Omisify</p>
+        </div>
+      </div>
+      {/* how-to-join-omisify-generation-detail */}
+
+      <div className="how-to-join-omisify-generation-detail">
+        <div className="a">
+          <h2>3</h2>
+        </div>
+
+        {!join && (
+          <>
+            <div className="b">
+              <h3>Rejoindre</h3>
+              <p>
+                Au niveau du Menu de votre compte Omisify, allez dans Génération
+                Omisify puis cliquer sur Rejoindre la Génération Omisify
+              </p>
+
+              <div className="align-icon-go-down">
+                <svg
+                  onClick={Join}
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0"
+                  y="0"
+                  cursor="pointer"
+                  width="15px"
+                  fill="#444"
+                  enableBackground="new 0 0 25.93 25.93"
+                  version="1.1"
+                  viewBox="0 0 25.93 25.93"
+                  xmlSpace="preserve"
+                >
+                  <path d="M25.397 4.554h-2.042l-9.974 12.644a.54.54 0 01-.835 0L2.575 4.554H.532a.533.533 0 00-.419.86l12.435 15.762c.104.125.255.2.419.2a.54.54 0 00.416-.2L25.816 5.413a.524.524 0 00.058-.561.524.524 0 00-.477-.298z"></path>
+                </svg>
+                {/* icon vers le bas */}
+              </div>
+            </div>
+          </>
+        )}
+        {/* join false */}
+
+        {join && (
+          <>
+            <div className="b">
+              <h3>Rejoindre</h3>
+              <p>
+                Au niveau du Menu de votre compte Omisify, allez dans Génération
+                Omisify puis cliquer sur Rejoindre la Génération Omisify
+              </p>
+
+              <div className="d">
+                <p style={{ paddingTop: "10px" }}>
+                  Vous voilà, vous êtes éligible à la rémunération de la
+                  Génération Omisify, vous pourrez aller plus loin en devenant
                 </p>
 
-                <div className="align-icon-go-down">
-                  <svg
-                    onClick={Join}
-                    xmlns="http://www.w3.org/2000/svg"
-                    x="0"
-                    y="0"
-                    cursor="pointer"
-                    width="15px"
-                    fill="#444"
-                    enableBackground="new 0 0 25.93 25.93"
-                    version="1.1"
-                    viewBox="0 0 25.93 25.93"
-                    xmlSpace="preserve"
-                  >
-                    <path d="M25.397 4.554h-2.042l-9.974 12.644a.54.54 0 01-.835 0L2.575 4.554H.532a.533.533 0 00-.419.86l12.435 15.762c.104.125.255.2.419.2a.54.54 0 00.416-.2L25.816 5.413a.524.524 0 00.058-.561.524.524 0 00-.477-.298z"></path>
-                  </svg>
-                  {/* icon vers le bas */}
-                </div>
-              </div>
-            </>
-          )}
-          {/* join false */}
-
-          {join && (
-            <>
-              <div className="b">
-                <h3>Rejoindre</h3>
-                <p>
-                  Au niveau du Menu de votre compte Omisify, allez dans
-                  Génération Omisify puis cliquer sur Rejoindre la Génération
-                  Omisify
+                <p style={{ cursor: "pointer", textDecoration: "underline" }}>
+                  Partenaire Omisify,
                 </p>
 
-                <div className="d">
-                  <p style={{ paddingTop: "10px" }}>
-                    Vous voilà, vous êtes éligible à la rémunération de la
-                    Génération Omisify, vous pourrez aller plus loin en devenant
-                  </p>
+                <p
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "underline",
+                    paddingLeft: "5px",
+                    paddingRight: "5px",
+                  }}
+                >
+                  Partenaire Omisify Influent
+                </p>
+                <p style={{ paddingLeft: "5px", paddingRight: "5px" }}>ou</p>
 
-                  <p style={{ cursor: "pointer", textDecoration: "underline" }}>
-                    Partenaire Omisify,
-                  </p>
-
-                  <p
-                    style={{
-                      cursor: "pointer",
-                      textDecoration: "underline",
-                      paddingLeft: "5px",
-                      paddingRight: "5px",
-                    }}
-                  >
-                    Partenaire Omisify Influent
-                  </p>
-                  <p style={{ paddingLeft: "5px", paddingRight: "5px" }}>ou</p>
-
-                  <p style={{ cursor: "pointer", textDecoration: "underline" }}>
-                    Partenaire Omisify Vidéaste
-                  </p>
-                </div>
-
-                <div className="align-icon-go-down">
-                  <svg
-                    onClick={Join}
-                    xmlns="http://www.w3.org/2000/svg"
-                    x="0"
-                    y="0"
-                    width="15px"
-                    fill="#444"
-                    cursor="pointer"
-                    enableBackground="new 0 0 330 330"
-                    version="1.1"
-                    viewBox="0 0 330 330"
-                    xmlSpace="preserve"
-                  >
-                    <path d="M325.606 229.393l-150.004-150a14.997 14.997 0 00-21.213.001l-149.996 150c-5.858 5.858-5.858 15.355 0 21.213 5.857 5.857 15.355 5.858 21.213 0l139.39-139.393 139.397 139.393A14.953 14.953 0 00315 255a14.95 14.95 0 0010.607-4.394c5.857-5.858 5.857-15.355-.001-21.213z"></path>
-                  </svg>
-                  {/* icon vers le haut */}
-                </div>
+                <p style={{ cursor: "pointer", textDecoration: "underline" }}>
+                  Partenaire Omisify Vidéaste
+                </p>
               </div>
-            </>
-          )}
-          {/* join true */}
-        </div>
-        {/* how-to-join-omisify-generation-detail */}
 
+              <div className="align-icon-go-down">
+                <svg
+                  onClick={Join}
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0"
+                  y="0"
+                  width="15px"
+                  fill="#444"
+                  cursor="pointer"
+                  enableBackground="new 0 0 330 330"
+                  version="1.1"
+                  viewBox="0 0 330 330"
+                  xmlSpace="preserve"
+                >
+                  <path d="M325.606 229.393l-150.004-150a14.997 14.997 0 00-21.213.001l-149.996 150c-5.858 5.858-5.858 15.355 0 21.213 5.857 5.857 15.355 5.858 21.213 0l139.39-139.393 139.397 139.393A14.953 14.953 0 00315 255a14.95 14.95 0 0010.607-4.394c5.857-5.858 5.857-15.355-.001-21.213z"></path>
+                </svg>
+                {/* icon vers le haut */}
+              </div>
+            </div>
+          </>
+        )}
+        {/* join true */}
+      </div>
+      {/* how-to-join-omisify-generation-detail */}
+
+      <div className="after-generation-omisify">
         <div className="align-box-shadow">
           <div className="box-shadow">
             <p>
@@ -252,7 +299,7 @@ export default function GenerationOmisify() {
         {/* before data */}
         {/* before data */}
         {/* before data */}
-        {/* before data */}
+        {/* 
         {beforeData && (
           <>
             <div className="display-person-join">
@@ -272,12 +319,12 @@ export default function GenerationOmisify() {
                   <path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"></path>
                 </svg>
               </div>
-              {/* left */}
+              {/* left
 
               <div className="background">
                 <p></p>
               </div>
-              {/* person-join */}
+              {/* person-join 
 
               <div className="right">
                 <svg
@@ -295,27 +342,29 @@ export default function GenerationOmisify() {
                   <path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"></path>
                 </svg>
               </div>
-              {/* right */}
+              {/* right 
             </div>
-            {/* display */}
-            {/* before data */}
+            {/* display 
+            {/* before data 
           </>
         )}
+      */}
 
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {verify1 && (
+        {/* go image person 4 */}
+        {/* go image person 4 */}
+        {/* go image person 4 */}
+        {/* go image person 4 */}
+        {/* go image person 4 */}
+        {/* go image person 4 */}
+        {/* go image person 4 */}
+        {/* go image person 4 */}
+        {/* go image person 4 */}
+        {verify4 && (
           <>
             <div className="display-person-join">
               <div className="left">
                 <svg
-                  onClick={Verify4}
+                  onClick={Verify3}
                   xmlns="http://www.w3.org/2000/svg"
                   x="0"
                   y="0"
@@ -333,13 +382,71 @@ export default function GenerationOmisify() {
               {/* left */}
 
               <div className="person-join">
-                <img src={go1} alt="Generation Omisify influenceur 1" />
+                <img src={go4} alt="Generation Omisify influenceur 2" />
               </div>
               {/* person-join */}
 
               <div className="right">
                 <svg
+                  onClick={Verify1}
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0"
+                  y="0"
+                  width="20px"
+                  cursor="pointer"
+                  fill="black"
+                  enableBackground="new 0 0 477.175 477.175"
+                  version="1.1"
+                  viewBox="0 0 477.175 477.175"
+                  xmlSpace="preserve"
+                >
+                  <path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"></path>
+                </svg>
+              </div>
+              {/* right */}
+            </div>
+            {/* display */}
+          </>
+        )}
+
+        {/* go image person 3 */}
+        {/* go image person 3 */}
+        {/* go image person 3 */}
+        {/* go image person 3 */}
+        {/* go image person 3 */}
+        {/* go image person 3 */}
+        {/* go image person 3 */}
+        {/* go image person 3 */}
+        {verify3 && (
+          <>
+            <div className="display-person-join">
+              <div className="left">
+                <svg
                   onClick={Verify2}
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0"
+                  y="0"
+                  width="20px"
+                  cursor="pointer"
+                  fill="black"
+                  enableBackground="new 0 0 477.175 477.175"
+                  version="1.1"
+                  viewBox="0 0 477.175 477.175"
+                  xmlSpace="preserve"
+                >
+                  <path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"></path>
+                </svg>
+              </div>
+              {/* left */}
+
+              <div className="person-join">
+                <img src={go3} alt="Generation Omisify influenceur 2" />
+              </div>
+              {/* person-join */}
+
+              <div className="right">
+                <svg
+                  onClick={Verify4}
                   xmlns="http://www.w3.org/2000/svg"
                   x="0"
                   y="0"
@@ -418,42 +525,18 @@ export default function GenerationOmisify() {
           </>
         )}
 
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {verify3 && (
+        {/* go image person 1 */}
+        {/* go image person 1 */}
+        {/* go image person 1 */}
+        {/* go image person 1 */}
+        {/* go image person 1 */}
+        {/* go image person 1 */}
+        {/* go image person 1 */}
+        {/* go image person 1 */}
+        {verify1 && (
           <>
             <div className="display-person-join">
               <div className="left">
-                <svg
-                  onClick={Verify2}
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0"
-                  y="0"
-                  width="20px"
-                  cursor="pointer"
-                  fill="black"
-                  enableBackground="new 0 0 477.175 477.175"
-                  version="1.1"
-                  viewBox="0 0 477.175 477.175"
-                  xmlSpace="preserve"
-                >
-                  <path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"></path>
-                </svg>
-              </div>
-              {/* left */}
-
-              <div className="person-join">
-                <img src={go3} alt="Generation Omisify influenceur 2" />
-              </div>
-              {/* person-join */}
-
-              <div className="right">
                 <svg
                   onClick={Verify4}
                   xmlns="http://www.w3.org/2000/svg"
@@ -467,53 +550,19 @@ export default function GenerationOmisify() {
                   viewBox="0 0 477.175 477.175"
                   xmlSpace="preserve"
                 >
-                  <path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"></path>
-                </svg>
-              </div>
-              {/* right */}
-            </div>
-            {/* display */}
-          </>
-        )}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {verify4 && (
-          <>
-            <div className="display-person-join">
-              <div className="left">
-                <svg
-                  onClick={Verify3}
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0"
-                  y="0"
-                  width="20px"
-                  cursor="pointer"
-                  fill="black"
-                  enableBackground="new 0 0 477.175 477.175"
-                  version="1.1"
-                  viewBox="0 0 477.175 477.175"
-                  xmlSpace="preserve"
-                >
                   <path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"></path>
                 </svg>
               </div>
               {/* left */}
 
               <div className="person-join">
-                <img src={go4} alt="Generation Omisify influenceur 2" />
+                <img src={go1} alt="Generation Omisify influenceur 1" />
               </div>
               {/* person-join */}
 
               <div className="right">
                 <svg
-                  onClick={Verify1}
+                  onClick={Verify2}
                   xmlns="http://www.w3.org/2000/svg"
                   x="0"
                   y="0"

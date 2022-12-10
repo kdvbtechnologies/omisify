@@ -140,7 +140,7 @@ export default function CalculComment() {
     parseFloat(oldpointtlife) + parseInt(newnumber) * 500 * gdb;
 
   const calculgaintlife =
-    parseFloat(oldgaintlife) + parseInt(newnumber) * 0.000001 * gdb;
+    parseFloat(oldgaintlife) + parseInt(newnumber) * 500 * 0.000001 * gdb;
 
   if (gdb === suggestgdb) {
     const calculgenerositydaysbonus =
