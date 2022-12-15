@@ -13,6 +13,7 @@ import Back from "../Back/Back";
 import homeinfluencer from "./img/home-influencer.jpg";
 import GenerationOmisify from "./GenerationOmisify";
 import NavbarTopOmisify from "./NavbarTopOmisify";
+import PopupMaintenance from "./Maintenance/PopupMaintenance";
 
 export default function HomeOmisify() {
   const { t } = useTranslation();
@@ -79,6 +80,13 @@ export default function HomeOmisify() {
   function PopupConseil() {
     setPopupConseil(!popupConseil);
   }
+  console.log(PopupConseil);
+
+  // popup maintenance
+  const [popupMaintenance, setPopupMaintenance] = useState(false);
+  function Maintenance() {
+    setPopupMaintenance(!popupMaintenance);
+  }
 
   return (
     <>
@@ -91,8 +99,14 @@ export default function HomeOmisify() {
           </div>
 
           <div className="display-btn">
+            {/* 
             <div className="button-a">
               <button>Installer l'application Omisify</button>
+            </div>
+            */}
+
+            <div className="button-a">
+              <button onClick={Maintenance}>..</button>
             </div>
 
             <div className="button-b">
@@ -120,8 +134,16 @@ export default function HomeOmisify() {
           </div>
 
           <div className="display-btn">
+            {/* 
+
             <div className="button-a">
               <button>Installer l'application Omisify</button>
+            </div>
+            
+            */}
+
+            <div className="button-a">
+              <button onClick={Maintenance}>..</button>
             </div>
 
             <div className="button-b">
@@ -145,6 +167,12 @@ export default function HomeOmisify() {
 
           <div className="a">
             <div className="align">
+              <p>..</p>
+            </div>
+            {/* align */}
+
+            {/* 
+            <div className="align">
               <p onClick={PopupConseil}>Comment devenir influenceur</p>
 
               <svg
@@ -162,7 +190,7 @@ export default function HomeOmisify() {
                 <path d="M0 244.8c0 9.5 7.7 17.2 17.2 17.2h414.2L322.9 370.4c-3.3 3.3-5 7.7-5 12.1s1.7 8.8 5 12.1c6.7 6.7 17.6 6.7 24.3 0l137.6-137.7c6.4-6.4 6.4-17.8 0-24.3L347.1 95c-6.7-6.7-17.6-6.7-24.3 0-6.7 6.7-6.7 17.6 0 24.3l108.4 108.4H17.1C7.6 227.6 0 235.3 0 244.8z"></path>
               </svg>
             </div>
-            {/* align */}
+            align */}
           </div>
           {/* a */}
         </div>
@@ -411,11 +439,11 @@ export default function HomeOmisify() {
       <div className="home-omisify-final">
         <p>
           N'attendez plus, Rejoignez toutes ces personnes qui font parties de la
-          Génération Omisify
+          Génération Connecté
         </p>
 
         <NavLink to="/">
-          <button>Rejoindre la Génération Omisify</button>
+          <button>Rejoindre la Génération des personnes Connectés</button>
         </NavLink>
       </div>
 
@@ -803,7 +831,15 @@ export default function HomeOmisify() {
         </>
       )}
 
-      {/* popup conseil */}
+      {/* popup maintenance */}
+      {/* popup maintenance */}
+      {/* popup maintenance */}
+      {popupMaintenance && (
+        <div onClick={Maintenance}>
+          <PopupMaintenance />
+        </div>
+      )}
+
       {/* popup conseil */}
       {/* popup conseil */}
       {/* popup conseil */}
@@ -815,7 +851,7 @@ export default function HomeOmisify() {
           <div className="popup-conseil-opacity">
             <div className="a">
               <p>
-                Conseils des influenceurs de la Génération Omisify pour savoir
+                Conseils des influenceurs de la Génération Connecté pour savoir
                 comment devenir influenceur à partir de rien
               </p>
 
@@ -831,7 +867,7 @@ export default function HomeOmisify() {
               <p>
                 Dans cet article vous allez apprendre comment Devenir
                 influenceur à partir de rien grace aux conseils des influenceurs
-                de la Génération Omisify
+                de la Génération Connecté
               </p>
 
               <p>
@@ -871,7 +907,7 @@ export default function HomeOmisify() {
               </p>
 
               <p>
-                D'après les influenceurs de la Génération Omisify, c'est plus
+                D'après les influenceurs de la Génération Connecté, c'est plus
                 efficace de commencer par la vidéo, par exemple vous créer une
                 chaine Youtube et dans vos vidéos vous dites aux gens d'aller
                 s'abonner sur votre compte Facebook, Instagram, Tik Tok ou
@@ -984,11 +1020,11 @@ export default function HomeOmisify() {
 
               <p>
                 Dès le début de la création de votre chaine Youtube ou compte
-                Instagram vous pouvez rejoindre la Génération Omisify et ajouter
-                le logo de la marque Omisify dans vos vidéos ou dans vos photos
-                et vous serez rémunérer tout les jours par Omisify. Vous pourrez
-                aller encore plus loin en devenant Partenaire Omisify Vidéaste
-                ou Partenaire Omisify Influent comme font les autres
+                Instagram vous pouvez rejoindre la Génération Connecté et
+                ajouter le logo de la marque Omisify dans vos vidéos ou dans vos
+                photos et vous serez rémunérer tout les jours par Omisify. Vous
+                pourrez aller encore plus loin en devenant Partenaire Omisify
+                Vidéaste ou Partenaire Omisify Influent comme font les autres
                 influenceurs
               </p>
               <p>
@@ -997,7 +1033,7 @@ export default function HomeOmisify() {
                 ou vidéo
               </p>
               <p>Contacter l'Equipe Omisify</p>
-              <button>Rejoindre la Génération Omisify</button>
+              <button>Rejoindre la Génération des personnes Connectés</button>
               <button>Travailler avec Omisify</button>
             </div>
           </div>

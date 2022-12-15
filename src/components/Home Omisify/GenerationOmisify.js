@@ -12,53 +12,9 @@ import { useState } from "react";
 export default function GenerationOmisify() {
   const [popupHelp, setPopupHelp] = useState(false);
   const [join, setJoin] = useState(false);
-  // const [beforeData, setBeforeData] = useState(true);
 
   function Join() {
     setJoin(!join);
-  }
-
-  // verify 1
-  const [verify1, setVerify1] = useState(true);
-
-  function Verify1() {
-    setVerify1(true);
-    setVerify2(false);
-    setVerify3(false);
-    setVerify4(false);
-  }
-
-  // verify 2
-  const [verify2, setVerify2] = useState(false);
-
-  function Verify2() {
-    setVerify1(false);
-    setVerify2(true);
-    setVerify3(false);
-    setVerify4(false);
-    // setBeforeData(false);
-  }
-
-  // verify 3
-  const [verify3, setVerify3] = useState(false);
-
-  function Verify3() {
-    setVerify1(false);
-    setVerify2(false);
-    setVerify3(true);
-    setVerify4(false);
-    // setBeforeData(false);
-  }
-
-  // verify 4
-  const [verify4, setVerify4] = useState(false);
-
-  function Verify4() {
-    setVerify1(false);
-    setVerify2(false);
-    setVerify3(false);
-    setVerify4(true);
-    // setBeforeData(false);
   }
 
   function Help() {
@@ -84,7 +40,7 @@ export default function GenerationOmisify() {
           <p style={{ paddingRight: "5px" }}>qui ont choisi</p>
           <p style={{ paddingRight: "5px" }}>de faire parti</p>
           <p style={{ paddingRight: "5px" }}>de la</p>
-          <p style={{ color: "red" }}>Génération Omisify</p>
+          <p style={{ color: "red" }}>Génération Connecté</p>
         </div>
         {/* a */}
 
@@ -104,12 +60,12 @@ export default function GenerationOmisify() {
                   paddingRight: "5px",
                 }}
               >
-                Génération Omisify
+                Génération Connecté
               </p>
-              <p>concerne ces personnes,</p>
+              <p style={{ paddingRight: "5px" }}>concerne ces personnes,</p>
               <p>
-                ces influenceurs ou ces artistes qui ont choisi de mettre les
-                logos de la marque Omisify dans leur photos, vidéos et sont
+                ces influenceurs ou ces artistes qui ont choisi de mettre le
+                logo de la marque Omisify dans leur photos, vidéos et sont
                 rémunérés chaque jour par Omisify
               </p>
             </div>
@@ -134,9 +90,9 @@ export default function GenerationOmisify() {
                   paddingRight: "5px",
                 }}
               >
-                Génération Omisify
+                Génération Connecté
               </p>
-              <p>concerne ces personnes,</p>
+              <p style={{ paddingRight: "5px" }}>concerne ces personnes,</p>
               <p>
                 ces influenceurs ou ces artistes qui ont choisi de mettre les
                 logos de la marque Omisify dans leur photos, vidéos et sont
@@ -151,7 +107,7 @@ export default function GenerationOmisify() {
       {/* generation - omisify */}
 
       <div className="how-to-join-omisify-generation">
-        <p>Comment rejoindre la Génération Omisify ?</p>
+        <p>Comment rejoindre la Génération des personnes Connectés ?</p>
       </div>
       {/* how-to-join-omisify-generation */}
 
@@ -190,7 +146,8 @@ export default function GenerationOmisify() {
               <h3>Rejoindre</h3>
               <p>
                 Au niveau du Menu de votre compte Omisify, allez dans Génération
-                Omisify puis cliquer sur Rejoindre la Génération Omisify
+                Connecté puis cliquer sur Rejoindre la Génération des personnes
+                Connectés
               </p>
 
               <div className="align-icon-go-down">
@@ -222,16 +179,23 @@ export default function GenerationOmisify() {
               <h3>Rejoindre</h3>
               <p>
                 Au niveau du Menu de votre compte Omisify, allez dans Génération
-                Omisify puis cliquer sur Rejoindre la Génération Omisify
+                Connecté puis cliquer sur Rejoindre la Génération des personnes
+                Connectés
               </p>
 
               <div className="d">
-                <p style={{ paddingTop: "10px" }}>
+                <p style={{ paddingRight: "5px" }}>
                   Vous voilà, vous êtes éligible à la rémunération de la
-                  Génération Omisify, vous pourrez aller plus loin en devenant
+                  Génération Connecté, vous pourrez aller plus loin en devenant
                 </p>
 
-                <p style={{ cursor: "pointer", textDecoration: "underline" }}>
+                <p
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "underline",
+                    paddingRight: "5px",
+                  }}
+                >
                   Partenaire Omisify,
                 </p>
 
@@ -239,13 +203,12 @@ export default function GenerationOmisify() {
                   style={{
                     cursor: "pointer",
                     textDecoration: "underline",
-                    paddingLeft: "5px",
                     paddingRight: "5px",
                   }}
                 >
                   Partenaire Omisify Influent
                 </p>
-                <p style={{ paddingLeft: "5px", paddingRight: "5px" }}>ou</p>
+                <p style={{ paddingRight: "5px" }}>ou</p>
 
                 <p style={{ cursor: "pointer", textDecoration: "underline" }}>
                   Partenaire Omisify Vidéaste
@@ -286,7 +249,7 @@ export default function GenerationOmisify() {
             </p>
 
             <div className="a">
-              <p>Génération Omisify ”</p>
+              <p>Génération Connecté ”</p>
             </div>
           </div>
           {/* box-shadow */}
@@ -350,238 +313,19 @@ export default function GenerationOmisify() {
         )}
       */}
 
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {/* go image person 4 */}
-        {verify4 && (
-          <>
-            <div className="display-person-join">
-              <div className="left">
-                <svg
-                  onClick={Verify3}
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0"
-                  y="0"
-                  width="20px"
-                  cursor="pointer"
-                  fill="black"
-                  enableBackground="new 0 0 477.175 477.175"
-                  version="1.1"
-                  viewBox="0 0 477.175 477.175"
-                  xmlSpace="preserve"
-                >
-                  <path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"></path>
-                </svg>
-              </div>
-              {/* left */}
-
-              <div className="person-join">
-                <img src={go4} alt="Generation Omisify influenceur 2" />
-              </div>
-              {/* person-join */}
-
-              <div className="right">
-                <svg
-                  onClick={Verify1}
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0"
-                  y="0"
-                  width="20px"
-                  cursor="pointer"
-                  fill="black"
-                  enableBackground="new 0 0 477.175 477.175"
-                  version="1.1"
-                  viewBox="0 0 477.175 477.175"
-                  xmlSpace="preserve"
-                >
-                  <path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"></path>
-                </svg>
-              </div>
-              {/* right */}
+        <div className="person-add-logo-go">
+          <div className="overflow">
+            <div className="images">
+              <img style={{ paddingRight: "10px" }} src={go1} alt="" />
+              <img style={{ paddingRight: "10px" }} src={go2} alt="" />
+              <img style={{ paddingRight: "10px" }} src={go3} alt="" />
+              <img src={go4} alt="" />
             </div>
-            {/* display */}
-          </>
-        )}
-
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {/* go image person 3 */}
-        {verify3 && (
-          <>
-            <div className="display-person-join">
-              <div className="left">
-                <svg
-                  onClick={Verify2}
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0"
-                  y="0"
-                  width="20px"
-                  cursor="pointer"
-                  fill="black"
-                  enableBackground="new 0 0 477.175 477.175"
-                  version="1.1"
-                  viewBox="0 0 477.175 477.175"
-                  xmlSpace="preserve"
-                >
-                  <path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"></path>
-                </svg>
-              </div>
-              {/* left */}
-
-              <div className="person-join">
-                <img src={go3} alt="Generation Omisify influenceur 2" />
-              </div>
-              {/* person-join */}
-
-              <div className="right">
-                <svg
-                  onClick={Verify4}
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0"
-                  y="0"
-                  width="20px"
-                  cursor="pointer"
-                  fill="black"
-                  enableBackground="new 0 0 477.175 477.175"
-                  version="1.1"
-                  viewBox="0 0 477.175 477.175"
-                  xmlSpace="preserve"
-                >
-                  <path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"></path>
-                </svg>
-              </div>
-              {/* right */}
-            </div>
-            {/* display */}
-          </>
-        )}
-
-        {/* go image person 2 */}
-        {/* go image person 2 */}
-        {/* go image person 2 */}
-        {/* go image person 2 */}
-        {/* go image person 2 */}
-        {/* go image person 2 */}
-        {/* go image person 2 */}
-        {/* go image person 2 */}
-        {verify2 && (
-          <>
-            <div className="display-person-join">
-              <div className="left">
-                <svg
-                  onClick={Verify1}
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0"
-                  y="0"
-                  width="20px"
-                  cursor="pointer"
-                  fill="black"
-                  enableBackground="new 0 0 477.175 477.175"
-                  version="1.1"
-                  viewBox="0 0 477.175 477.175"
-                  xmlSpace="preserve"
-                >
-                  <path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"></path>
-                </svg>
-              </div>
-              {/* left */}
-
-              <div className="person-join">
-                <img src={go2} alt="Generation Omisify influenceur 2" />
-              </div>
-              {/* person-join */}
-
-              <div className="right">
-                <svg
-                  onClick={Verify3}
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0"
-                  y="0"
-                  width="20px"
-                  cursor="pointer"
-                  fill="black"
-                  enableBackground="new 0 0 477.175 477.175"
-                  version="1.1"
-                  viewBox="0 0 477.175 477.175"
-                  xmlSpace="preserve"
-                >
-                  <path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"></path>
-                </svg>
-              </div>
-              {/* right */}
-            </div>
-            {/* display */}
-          </>
-        )}
-
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {/* go image person 1 */}
-        {verify1 && (
-          <>
-            <div className="display-person-join">
-              <div className="left">
-                <svg
-                  onClick={Verify4}
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0"
-                  y="0"
-                  width="20px"
-                  cursor="pointer"
-                  fill="black"
-                  enableBackground="new 0 0 477.175 477.175"
-                  version="1.1"
-                  viewBox="0 0 477.175 477.175"
-                  xmlSpace="preserve"
-                >
-                  <path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"></path>
-                </svg>
-              </div>
-              {/* left */}
-
-              <div className="person-join">
-                <img src={go1} alt="Generation Omisify influenceur 1" />
-              </div>
-              {/* person-join */}
-
-              <div className="right">
-                <svg
-                  onClick={Verify2}
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0"
-                  y="0"
-                  width="20px"
-                  cursor="pointer"
-                  fill="black"
-                  enableBackground="new 0 0 477.175 477.175"
-                  version="1.1"
-                  viewBox="0 0 477.175 477.175"
-                  xmlSpace="preserve"
-                >
-                  <path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"></path>
-                </svg>
-              </div>
-              {/* right */}
-            </div>
-            {/* display */}
-          </>
-        )}
+            {/* images */}
+          </div>
+          {/* overflow */}
+        </div>
+        {/* person-add-logo-go */}
 
         <div className="display-help">
           <svg

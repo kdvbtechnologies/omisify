@@ -129,7 +129,7 @@ export default function NavbarTopOmisify() {
               <>
                 <div className="icon">
                   <p style={{ color: "red" }} onClick={PopupGenerationOmisify}>
-                    Génération Omisify
+                    Génération Connecté
                   </p>
                   <svg
                     onClick={PopupGenerationOmisify}
@@ -154,7 +154,7 @@ export default function NavbarTopOmisify() {
             {!popupGenerationOmisify && (
               <>
                 <div className="icon">
-                  <p onClick={PopupGenerationOmisify}>Génération Omisify</p>
+                  <p onClick={PopupGenerationOmisify}>Génération Connecté</p>
                   <svg
                     onClick={PopupGenerationOmisify}
                     xmlns="http://www.w3.org/2000/svg"
@@ -339,7 +339,7 @@ export default function NavbarTopOmisify() {
             <div className="card">
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>
-                  Rejoindre la Génération Omisify
+                  Rejoindre la Génération Connecté
                 </p>
               </NavLink>
             </div>
@@ -738,11 +738,11 @@ export default function NavbarTopOmisify() {
             className="popup-generation-omisify-opacity-navbar-top-mobile"
           >
             <div className="card">
-              <li>Génération Omisify</li>
+              <li>Génération Connecté</li>
 
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>
-                  Rejoindre la Génération Omisify
+                  Rejoindre la Génération Connecté
                 </p>
               </NavLink>
             </div>
@@ -818,7 +818,7 @@ export default function NavbarTopOmisify() {
                     Omisify pour chaque publicité qu'ils réalisent
                   </p>
                   <p style={{ color: "red", paddingRight: "5px" }}>
-                    Rejoindre la Génération Omisify
+                    Rejoindre la Génération Connecté
                   </p>
                   <p style={{ paddingRight: "5px", paddingBottom: "20px" }}>
                     signifie Faire partie de ces influenceurs, ces artistes ou
