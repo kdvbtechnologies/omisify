@@ -55,7 +55,7 @@ export default function PageGenerationConnected() {
     <>
       <div className="title-settings">
         <div className="display">
-          <NavLink to="/">
+          <NavLink to="/partner">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0"
@@ -97,7 +97,7 @@ export default function PageGenerationConnected() {
 
       <div className="title-settings-mobile">
         <div className="display">
-          <NavLink to="/navbar-bottom-omisify">
+          <NavLink to="/partner">
             <div className="a">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
