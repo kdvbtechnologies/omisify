@@ -335,8 +335,8 @@ export default function NavbarBottomOmisify() {
           </div>
 
           <div className="a">
-            {/* 
             <svg
+              onClick={Maintenance}
               xmlns="http://www.w3.org/2000/svg"
               x="0"
               y="0"
@@ -358,8 +358,8 @@ export default function NavbarBottomOmisify() {
                 <path d="M35 80H15C6.716 80 0 86.716 0 95v20c0 8.284 6.716 15 15 15h20c8.284 0 15-6.716 15-15V95c0-8.284-6.716-15-15-15z"></path>
               </g>
             </svg>
-             */}
 
+            {/* 
             <svg
               onClick={Maintenance}
               xmlns="http://www.w3.org/2000/svg"
@@ -433,6 +433,7 @@ export default function NavbarBottomOmisify() {
                 ></path>
               </g>
             </svg>
+            */}
           </div>
           {/* a */}
         </div>
