@@ -3050,23 +3050,8 @@ footer {
 .page-partner-popup-to-right-opacity .card .display {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
   padding-bottom: 20px;
 }
-
-.page-partner-popup-to-right-opacity .card .display p {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-
-/* home omisify - home.js */
-/* home omisify - home.js */
-/* home omisify - home.js */
-.droit-dauteur-partner-omisify .left img {
-  width: 50%;
-}
-
 
 /* home omisify - popup card.js */
 /* home omisify - popup card.js */

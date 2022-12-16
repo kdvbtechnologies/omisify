@@ -717,7 +717,7 @@ export default function NavbarTopOmisify() {
               </div>
 
               <div className="icon">
-                <p onClick={PopupServicePartenaire}>Service Partenaire</p>
+                <p onClick={PopupServicePartenaire}>Service d'assistance</p>
               </div>
 
               {/*
