@@ -186,6 +186,8 @@ export default function PageGenerationConnected() {
       </div>
       {/* person-add-logo-go */}
 
+      <p style={{ paddingBottom: "25px" }}></p>
+
       <div className="after-generation-omisify">
         <div className="align-box-shadow">
           <div className="box-shadow">
@@ -199,6 +201,8 @@ export default function PageGenerationConnected() {
         {/* align-box-shadow */}
       </div>
       {/* after-generation-omisify */}
+
+      <p style={{ paddingBottom: "25px" }}></p>
 
       {/*
       {seeMore ? (
