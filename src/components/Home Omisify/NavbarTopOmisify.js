@@ -435,7 +435,7 @@ export default function NavbarTopOmisify() {
                   onClick={PopupServicePartenaire}
                   style={{ cursor: "pointer" }}
                 >
-                  Service Partenaire
+                  Service d'assistance
                 </p>
               </div>
 
@@ -933,7 +933,7 @@ export default function NavbarTopOmisify() {
             <div className="align">
               <div className="card">
                 <div className="a">
-                  <p>Service Partenaire</p>
+                  <p>Service d'assistance</p>
                 </div>
 
                 <div className="b">
@@ -993,7 +993,7 @@ export default function NavbarTopOmisify() {
                 {/* b */}
 
                 <div className="c">
-                  <p>Le service Partenaire d'Omisify est disponible 24h/24</p>
+                  <p>Le Service d'assistance d'Omisify est disponible 24h/24</p>
                 </div>
 
                 {/*
