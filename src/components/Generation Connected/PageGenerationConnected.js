@@ -186,6 +186,8 @@ export default function PageGenerationConnected() {
       </div>
       {/* person-add-logo-go */}
 
+      <p style={{ paddingBottom: "25px" }}></p>
+
       <div className="after-generation-omisify">
         <div className="align-box-shadow">
           <div className="box-shadow">
@@ -277,8 +279,6 @@ export default function PageGenerationConnected() {
         <p>La Génération Connecté c'est la Nouvelle Génération !</p>
       </div>
       {/* page-generation-connected-box-shadow */}
-
-      <p style={{ paddingBottom: "50px" }}></p>
 
       <div className="btn-join-new-generation">
         {/*
