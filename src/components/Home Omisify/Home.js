@@ -110,7 +110,9 @@ export default function HomeOmisify() {
             </div>
 
             <div className="button-b">
-              <button>Travailler avec Omisify</button>
+              <NavLink to="/signup">
+                <button>Travailler avec Omisify</button>
+              </NavLink>
             </div>
           </div>
           {/* display-btn */}
@@ -147,7 +149,9 @@ export default function HomeOmisify() {
             </div>
 
             <div className="button-b">
-              <button>Travailler avec Omisify</button>
+              <NavLink to="/signup">
+                <button>Travailler avec Omisify</button>
+              </NavLink>
             </div>
           </div>
           {/* display-btn */}
@@ -167,7 +171,7 @@ export default function HomeOmisify() {
 
           <div className="a">
             <div className="align">
-              <p>..</p>
+              <p onClick={Maintenance}>..</p>
             </div>
             {/* align */}
 
@@ -347,9 +351,12 @@ export default function HomeOmisify() {
           </div>
 
           <div className="home-omisify-remuneration">
+            {/*
             <p onClick={PopupRemunerationPartner}>
               Transparence sur la rémunération des Partenaires Omisify
             </p>
+            */}
+            <p onClick={Maintenance}>..</p>
           </div>
 
           {/* videaste */}
@@ -388,9 +395,12 @@ export default function HomeOmisify() {
           </div>
 
           <div className="home-omisify-remuneration">
+            {/*
             <p onClick={PopupRemunerationPartner}>
               Transparence sur la rémunération des Partenaires Omisify Vidéaste
             </p>
+             */}
+            <p onClick={Maintenance}>..</p>
           </div>
 
           {/* influent */}
@@ -429,9 +439,12 @@ export default function HomeOmisify() {
           </div>
 
           <div className="home-omisify-remuneration">
+            {/*  
             <p onClick={PopupRemunerationPartner}>
               Transparence sur la rémunération des Partenaires Omisify Influent
             </p>
+            */}
+            <p onClick={Maintenance}>..</p>
           </div>
         </div>
       </div>
@@ -442,7 +455,7 @@ export default function HomeOmisify() {
           Génération Connecté
         </p>
 
-        <NavLink to="/">
+        <NavLink to="/signup">
           <button>Rejoindre la Génération des personnes Connectés</button>
         </NavLink>
       </div>
@@ -564,9 +577,14 @@ export default function HomeOmisify() {
                   </p>
                 </NavLink>
 
+                {/*
                 <NavLink to="/">
                   <button>Continuer la lecture</button>
-                </NavLink>
+                  </NavLink>
+                */}
+                <button style={{ width: "100px" }} onClick={Maintenance}>
+                  ..
+                </button>
               </div>
             </div>
           </div>
@@ -618,11 +636,16 @@ export default function HomeOmisify() {
                   gagnez de l'argent en tant que Partenaire Omisify Vidéaste
                 </p>
 
+                {/* 
                 <p>
                   Télécharger gratuitement l'application Omisify et commencer à
                   travaillez avec Omisify
                 </p>
+                */}
 
+                <p onClick={Maintenance}>..</p>
+
+                {/* 
                 <NavLink className="navlink" to="/">
                   <p
                     style={{
@@ -634,10 +657,27 @@ export default function HomeOmisify() {
                     Télécharger l'application Omisify
                   </p>
                 </NavLink>
+                 */}
 
+                <p
+                  onClick={Maintenance}
+                  style={{
+                    color: "blue",
+                    fontSize: "16px",
+                    cursor: "pointer",
+                  }}
+                >
+                  ..
+                </p>
+
+                {/*
                 <NavLink to="/">
                   <button>Continuer la lecture</button>
-                </NavLink>
+                  </NavLink>
+                */}
+                <button style={{ width: "100px" }} onClick={Maintenance}>
+                  ..
+                </button>
               </div>
             </div>
           </div>
@@ -695,11 +735,17 @@ export default function HomeOmisify() {
                   publicité pour des entreprises
                 </p>
 
+                {/* 
+
                 <p>
                   Télécharger gratuitement l'application Omisify et commencer à
                   travaillez avec Omisify
                 </p>
+                */}
 
+                <p onClick={Maintenance}>..</p>
+
+                {/* 
                 <NavLink className="navlink" to="/">
                   <p
                     style={{
@@ -711,10 +757,28 @@ export default function HomeOmisify() {
                     Télécharger l'application Omisify
                   </p>
                 </NavLink>
+                */}
 
+                <p
+                  onClick={Maintenance}
+                  style={{
+                    color: "blue",
+                    fontSize: "16px",
+                    cursor: "pointer",
+                  }}
+                >
+                  ..
+                </p>
+
+                {/* 
                 <NavLink to="/">
                   <button>Continuer la lecture</button>
                 </NavLink>
+                */}
+
+                <button style={{ width: "100px" }} onClick={Maintenance}>
+                  ..
+                </button>
               </div>
             </div>
           </div>

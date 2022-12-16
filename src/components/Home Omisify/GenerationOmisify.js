@@ -8,6 +8,7 @@ import go2 from "./img/go2.jpg";
 import go3 from "./img/go3.jpg";
 import go4 from "./img/go4.jpg";
 import { useState } from "react";
+import PopupMaintenance from "./Maintenance/PopupMaintenance";
 
 export default function GenerationOmisify() {
   const [popupHelp, setPopupHelp] = useState(false);
@@ -21,11 +22,17 @@ export default function GenerationOmisify() {
     setPopupHelp(!popupHelp);
   }
 
+  // popup maintenance
+  const [popupMaintenance, setPopupMaintenance] = useState(false);
+  function Maintenance() {
+    setPopupMaintenance(!popupMaintenance);
+  }
+
   return (
     <>
       <div className="generation-omisify">
         <div className="a">
-          <NavLink style={{ color: "black" }} to="/">
+          <NavLink style={{ color: "black" }} to="/signup">
             <p
               style={{
                 color: "black",
@@ -118,7 +125,10 @@ export default function GenerationOmisify() {
 
         <div className="b">
           <h3>Installer</h3>
+          <p onClick={Maintenance}>..</p>
+          {/*
           <p>Installer l'application Web Omisify depuis Vixinol Store</p>
+        */}
         </div>
       </div>
       {/* how-to-join-omisify-generation-detail */}
@@ -195,9 +205,35 @@ export default function GenerationOmisify() {
                     textDecoration: "underline",
                     paddingRight: "5px",
                   }}
+                  onClick={Maintenance}
+                >
+                  ..
+                </p>
+
+                {/*
+                <p
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "underline",
+                    paddingRight: "5px",
+                  }}
                 >
                   Partenaire Omisify,
                 </p>
+                  */}
+
+                <p
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "underline",
+                    paddingRight: "5px",
+                  }}
+                  onClick={Maintenance}
+                >
+                  ..
+                </p>
+
+                {/* 
 
                 <p
                   style={{
@@ -208,11 +244,25 @@ export default function GenerationOmisify() {
                 >
                   Partenaire Omisify Influent
                 </p>
+                
+                */}
+
                 <p style={{ paddingRight: "5px" }}>ou</p>
+
+                <p
+                  onClick={Maintenance}
+                  style={{ cursor: "pointer", textDecoration: "underline" }}
+                >
+                  ..
+                </p>
+
+                {/* 
 
                 <p style={{ cursor: "pointer", textDecoration: "underline" }}>
                   Partenaire Omisify Vidéaste
                 </p>
+                
+                */}
               </div>
 
               <div className="align-icon-go-down">
@@ -391,15 +441,33 @@ export default function GenerationOmisify() {
                   ajouter le logo de la marque Omisify à votre photo ou vidéo
                 </p>
 
+                {/*
                 <NavLink style={{ textDecoration: "none" }} to="/">
                   <p style={{ color: "blue", paddingTop: "15px" }}>
                     Demander de l'aide à l'Equipe Omisify
                   </p>
                 </NavLink>
+                */}
+
+                <p
+                  onClick={Maintenance}
+                  style={{ color: "blue", paddingTop: "15px" }}
+                >
+                  ..
+                </p>
               </div>
             </div>
           </div>
         </>
+      )}
+
+      {/* popup maintenance */}
+      {/* popup maintenance */}
+      {/* popup maintenance */}
+      {popupMaintenance && (
+        <div onClick={Maintenance}>
+          <PopupMaintenance />
+        </div>
       )}
     </>
   );
