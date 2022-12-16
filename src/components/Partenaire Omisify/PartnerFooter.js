@@ -283,10 +283,6 @@ export default function PartnerFooter() {
           */}
         </div>
 
-        <p align="center" onClick={Maintenance}>
-          ..
-        </p>
-
         <div className="partner-money">
           {getoldpointtlife ? (
             <>
@@ -305,8 +301,6 @@ export default function PartnerFooter() {
           <button>Demander ma rémunération</button>
         </NavLink>
         */}
-
-        <button onClick={Maintenance}>..</button>
       </div>
 
       {popupMaintenance && (

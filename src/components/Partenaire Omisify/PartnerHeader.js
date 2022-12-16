@@ -157,9 +157,7 @@ export default function PartnerHeader() {
 
             <div className="partner-info">
               <p>Noms de naissance : {name}</p>
-              <p align="center" onClick={Maintenance}>
-                ..
-              </p>
+
               {/*
               <p>Genre : {genre}</p>
               <p>Pays : {country}</p>
@@ -253,7 +251,7 @@ export default function PartnerHeader() {
                       <p style={{ color: "black", paddingRight: "10px" }}>
                         Gains :
                       </p>
-                      <p>{getoldgaintlife} €</p>
+                      <p>{getoldgaintlife} FCFA</p>
                     </div>
                     {/* display */}
                   </>
