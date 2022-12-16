@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import omisifylogo from "./img/omisify-logo.png";
 import omisifylogomobile from "./img/omisify-logo-mobile.png";
+import PopupMaintenance from "./Maintenance/PopupMaintenance";
 
 export default function NavbarTopOmisify() {
   // Activity
@@ -61,6 +62,12 @@ export default function NavbarTopOmisify() {
   const [popupServicePartenaire, setPopupServicePartenaire] = useState(false);
   function PopupServicePartenaire() {
     setPopupServicePartenaire(!popupServicePartenaire);
+  }
+
+  // popup maintenance
+  const [popupMaintenance, setPopupMaintenance] = useState(false);
+  function Maintenance() {
+    setPopupMaintenance(!popupMaintenance);
   }
 
   return (
@@ -307,17 +314,26 @@ export default function NavbarTopOmisify() {
             className="popup-activity-opacity-navbar-top"
           >
             <div className="card">
+              {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>Partenaire Omisify</p>
               </NavLink>
+               */}
+              <p onClick={Maintenance}>..</p>
 
+              {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>Partenaire Omisify Influent</p>
               </NavLink>
+               */}
+              <p onClick={Maintenance}>..</p>
 
+              {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>Partenaire Omisify Vidéaste</p>
               </NavLink>
+               */}
+              <p onClick={Maintenance}>..</p>
             </div>
             {/* card */}
           </div>
@@ -337,11 +353,15 @@ export default function NavbarTopOmisify() {
             className="navbar-top-popup-generation-omisify-opacity"
           >
             <div className="card">
+              {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>
                   Rejoindre la Génération Connecté
                 </p>
               </NavLink>
+              */}
+
+              <p onClick={Maintenance}>..</p>
             </div>
             {/* card */}
           </div>
@@ -361,15 +381,22 @@ export default function NavbarTopOmisify() {
             className="popup-new-influencer-opacity-navbar-top"
           >
             <div className="card">
+              {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>Comment Devenir influenceur</p>
               </NavLink>
+            */}
+              <p onClick={Maintenance}>..</p>
 
+              {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>
                   Programme d'Aide Aux Nouveaux Influenceurs (PAANI)
                 </p>
               </NavLink>
+            */}
+
+              <p onClick={Maintenance}>..</p>
             </div>
             {/* card */}
           </div>
@@ -390,7 +417,7 @@ export default function NavbarTopOmisify() {
           >
             <div className="card">
               <div className="a">
-                <NavLink style={{ textDecoration: "none" }} to="/">
+                <NavLink style={{ textDecoration: "none" }} to="/partner">
                   <p>Connexion</p>
                 </NavLink>
               </div>
@@ -671,7 +698,7 @@ export default function NavbarTopOmisify() {
               )}
 
               <div className="icon">
-                <NavLink style={{ textDecoration: "none" }} to="/">
+                <NavLink style={{ textDecoration: "none" }} to="/partner">
                   <p style={{ color: "black" }}>Connexion</p>
                 </NavLink>
               </div>
@@ -688,6 +715,12 @@ export default function NavbarTopOmisify() {
           </div>
           {/* mobile-menu-opacity-navbar-top */}
         </>
+      )}
+
+      {popupMaintenance && (
+        <div onClick={Maintenance}>
+          <PopupMaintenance />
+        </div>
       )}
 
       {/* popup activity mobile */}
@@ -707,17 +740,27 @@ export default function NavbarTopOmisify() {
           >
             <div className="card">
               <li>Activités</li>
+
+              {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>Partenaire Omisify</p>
               </NavLink>
+              */}
+              <p onClick={Maintenance}>..</p>
 
+              {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>Partenaire Omisify Influent</p>
               </NavLink>
+              */}
+              <p onClick={Maintenance}>..</p>
 
+              {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>Partenaire Omisify Vidéaste</p>
               </NavLink>
+              */}
+              <p onClick={Maintenance}>..</p>
             </div>
             {/* card */}
           </div>
@@ -740,11 +783,15 @@ export default function NavbarTopOmisify() {
             <div className="card">
               <li>Génération Connecté</li>
 
+              {/* 
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>
                   Rejoindre la Génération Connecté
                 </p>
               </NavLink>
+            */}
+
+              <p onClick={Maintenance}>..</p>
             </div>
             {/* card */}
           </div>
@@ -768,15 +815,21 @@ export default function NavbarTopOmisify() {
             <div className="card">
               <li>Nouveau Influenceur</li>
 
+              {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>Comment Devenir influenceur</p>
               </NavLink>
+            */}
+              <p onClick={Maintenance}>..</p>
 
+              {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>
                   Programme d'Aide Aux Nouveaux Influenceurs (PAANI)
                 </p>
               </NavLink>
+            */}
+              <p onClick={Maintenance}>..</p>
             </div>
             {/* card */}
           </div>
@@ -831,7 +884,7 @@ export default function NavbarTopOmisify() {
 
                   <NavLink
                     style={{ color: "blue", textDecoration: "none" }}
-                    to="/"
+                    to="/signup"
                   >
                     <p
                       style={{
@@ -935,9 +988,13 @@ export default function NavbarTopOmisify() {
                   <p>Le service Partenaire d'Omisify est disponible 24h/24</p>
                 </div>
 
+                {/*
                 <NavLink to="/">
                   <button>Envoyer un message</button>
                 </NavLink>
+                */}
+
+                <button style={{ width: "100px" }}>..</button>
               </div>
               {/* card */}
             </div>
