@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function SettingsNewOmisify() {
   return (
     <>
-      <div className="title-settings">
+      <div className="new-title-settings">
         <div className="display">
           <NavLink to="/">
             <svg

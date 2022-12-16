@@ -2437,6 +2437,17 @@ footer {
   font-size: 18px;
 }
 
+.new-title-settings .display {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.new-title-settings .display p {
+  font-size: 18px;
+}
+
 .others .a {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -3039,6 +3050,7 @@ footer {
 .page-partner-popup-to-right-opacity .card .display {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   padding-bottom: 20px;
 }
 
