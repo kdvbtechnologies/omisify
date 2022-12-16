@@ -151,7 +151,7 @@ export default function PartnerHeader() {
                 <p>@{partnername}</p>
               </div>
               <div className="partner-role">
-                <i>Partenaire Omisify</i>
+                <i>Génération Connecté</i>
               </div>
             </div>
 
