@@ -29,6 +29,9 @@ export default function HomeOmisify() {
   const influentgroup =
     "https://res.cloudinary.com/rasivyy/image/upload/v1671416353/omisify/influent-group_ptvler.jpg";
 
+  // const influentdroitdauteur =
+  // "https://res.cloudinary.com/rasivyy/image/upload/v1671653231/vixinol/influent_droit_dauteur_r5ygv6.jpg";
+
   const [popupPartner, setPopupPartner] = useState(false);
   const [popupVideaste, setPopupVideaste] = useState(false);
   const [popupInfluent, setPopupInfluent] = useState(false);
@@ -83,7 +86,7 @@ export default function HomeOmisify() {
     setPopupImageInfluent(!popupImageInfluent);
   }
 
-  // popup conseil
+  // popup consesil
   // popup conseil
   // popup conseil
   // popup conseil
@@ -170,19 +173,15 @@ export default function HomeOmisify() {
       <div className="home-influencer-new-omisify">
         <div className="a">
           <div className="title">
-            <p>Omisify est la marque préférée des influenceurs</p>
+            <p>Omisify la marque préférée des influenceurs</p>
           </div>
 
+          {/* 
           <div className="display-btn">
-            {/* 
             <div className="button-a">
               <button>Installer l'application Omisify</button>
             </div>
-            */}
-
-            <div className="button-a">
-              <button onClick={Maintenance}>..</button>
-            </div>
+            
 
             <div className="button-b">
               <NavLink to="/signup">
@@ -207,20 +206,14 @@ export default function HomeOmisify() {
 
         <div className="a">
           <div className="title">
-            <p>Omisify est la marque préférée des influenceurs</p>
+            <p>Omisify la marque préférée des influenceurs</p>
           </div>
 
+          {/* 
           <div className="display-btn">
-            {/* 
 
             <div className="button-a">
               <button>Installer l'application Omisify</button>
-            </div>
-            
-            */}
-
-            <div className="button-a">
-              <button onClick={Maintenance}>..</button>
             </div>
 
             <div className="button-b">
@@ -245,11 +238,6 @@ export default function HomeOmisify() {
           </p>
 
           <div className="a">
-            <div className="align">
-              <p onClick={Maintenance}>..</p>
-            </div>
-            {/* align */}
-
             {/* 
             <div className="align">
               <p onClick={PopupConseil}>Comment devenir influenceur</p>
@@ -269,7 +257,7 @@ export default function HomeOmisify() {
                 <path d="M0 244.8c0 9.5 7.7 17.2 17.2 17.2h414.2L322.9 370.4c-3.3 3.3-5 7.7-5 12.1s1.7 8.8 5 12.1c6.7 6.7 17.6 6.7 24.3 0l137.6-137.7c6.4-6.4 6.4-17.8 0-24.3L347.1 95c-6.7-6.7-17.6-6.7-24.3 0-6.7 6.7-6.7 17.6 0 24.3l108.4 108.4H17.1C7.6 227.6 0 235.3 0 244.8z"></path>
               </svg>
             </div>
-            align */}
+           {/* align */}
           </div>
           {/* a */}
         </div>
@@ -376,7 +364,7 @@ export default function HomeOmisify() {
             }}
             className="omisify"
           >
-            <p>Omisify est la marque préférée des influenceurs</p>
+            <p>Omisify la marque préférée des influenceurs</p>
           </div>
           {/* omisify */}
         </div>
@@ -387,8 +375,7 @@ export default function HomeOmisify() {
       <div className="home-omisify">
         <div className="display">
           {/* partner */}
-          {/* partner */}
-          {/* partner */}
+          {/*
           <div className="a">
             <img src={partner} alt="" />
             <svg
@@ -426,17 +413,16 @@ export default function HomeOmisify() {
           </div>
 
           <div className="home-omisify-remuneration">
-            {/*
             <p onClick={PopupRemunerationPartner}>
               Transparence sur la rémunération des Partenaires Omisify
             </p>
-            */}
-            <p onClick={Maintenance}>..</p>
           </div>
+            */}
 
           {/* videaste */}
           {/* videaste */}
           {/* videaste */}
+          {/*
           <div className="a">
             <img src={videaste} alt="" />
             <svg
@@ -470,17 +456,16 @@ export default function HomeOmisify() {
           </div>
 
           <div className="home-omisify-remuneration">
-            {/*
             <p onClick={PopupRemunerationPartner}>
               Transparence sur la rémunération des Partenaires Omisify Vidéaste
             </p>
-             */}
-            <p onClick={Maintenance}>..</p>
           </div>
+             */}
 
           {/* influent */}
           {/* influent */}
           {/* influent */}
+          {/*
           <div className="a">
             <img src={influentgroup} alt="" />
             <svg
@@ -514,18 +499,34 @@ export default function HomeOmisify() {
           </div>
 
           <div className="home-omisify-remuneration">
-            {/*  
             <p onClick={PopupRemunerationPartner}>
               Transparence sur la rémunération des Partenaires Omisify Influent
             </p>
-            */}
-            <p onClick={Maintenance}>..</p>
           </div>
+            */}
         </div>
       </div>
 
+      {/*
+      <div className="droit-dauteur-partner-omisify">
+        <div className="left">
+          <img src={influentdroitdauteur} alt="" />
+        </div>
+
+        <div className="right">
+          <p>Droit d'Auteur</p>
+          <p>
+            En plus d'être rémunérer juste pour avoir ajouter le logo de la
+            marque Omisify à leur photo ou vidéo, les personnes qui font parties
+            de la Nouvelle Génération sont aussi rémunérer pour leur Droit
+            d'auteur
+          </p>
+        </div>
+      </div>
+      {/* droit-dauteur-partner-omisify */}
+
       <div className="home-omisify-final">
-        <p style={{ fontSize: "18px" }}>
+        <p style={{ fontSize: "18px", marginTop: "20px" }}>
           N'attendez plus, Rejoignez toutes ces personnes qui font parties de la
           Génération Connecté
         </p>
@@ -613,7 +614,7 @@ export default function HomeOmisify() {
                 <div onClick={PopupPartner} className="back-popup">
                   <BackbtnTwo />
                 </div>
-                <img onClick={PopupImagePartner} src={partner} alt="imagee" />
+                <img onClick={PopupImagePartner} src={partner} alt="" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0"
@@ -697,7 +698,7 @@ export default function HomeOmisify() {
                   <BackbtnTwo />
                 </div>
 
-                <img onClick={PopupImageVideaste} src={videaste} alt="imagee" />
+                <img onClick={PopupImageVideaste} src={videaste} alt="" />
                 <svg
                   cursor="pointer"
                   width="20px"
@@ -724,8 +725,6 @@ export default function HomeOmisify() {
                   travaillez avec Omisify
                 </p>
                 */}
-
-                <p onClick={Maintenance}>..</p>
 
                 {/* 
                 <NavLink className="navlink" to="/">
@@ -789,11 +788,7 @@ export default function HomeOmisify() {
                   <BackbtnTwo />
                 </div>
 
-                <img
-                  onClick={PopupImageInfluent}
-                  src={influentgroup}
-                  alt="imagee"
-                />
+                <img onClick={PopupImageInfluent} src={influentgroup} alt="" />
                 <svg
                   cursor="pointer"
                   width="20px"
@@ -997,8 +992,8 @@ export default function HomeOmisify() {
           <div className="popup-conseil-opacity">
             <div className="a">
               <p>
-                Conseils des influenceurs de la Génération Connecté pour savoir
-                comment devenir influenceur à partir de rien
+                Conseils de Brillant de Jésus Christ pour savoir comment devenir
+                influenceur à partir de rien
               </p>
 
               <p>
@@ -1006,21 +1001,22 @@ export default function HomeOmisify() {
                 ce qui vous passionne et de vivre à 100% de votre passion. Le
                 gros avantage d'internet c'est qu'il connecte tout les humains
                 entre eux. Aujourd'hui grace a internet des millions de
-                personnes peuvent s'interesser a ce que vous avez a dire, a
-                votre concept ou a votre talent.
+                personnes peuvent s'interesser a ce que vous avez a dire,
+                peuvent s'interesser à votre concept ou à votre talent.
               </p>
 
               <p>
                 Dans cet article vous allez apprendre comment Devenir
-                influenceur à partir de rien grace aux conseils des influenceurs
-                de la Génération Connecté
+                influenceur à partir de rien grace aux Conseils de Brillant de
+                Jésus Christ
               </p>
 
               <p>
                 Pour devenir influenceur vous allez devoir travailler dur et il
                 n'y a pas d'autres alternatives. Et travailler dur ca ne suffit
                 pas, vous aller devoir travailler comme un fou tout les jours
-                regulierement pendant 31 mois sans se décourager.
+                regulierement sans se décourager car peut importe la durée de la
+                nuit, le soleil finira toujours par se lever.
               </p>
 
               <p>
@@ -1030,10 +1026,13 @@ export default function HomeOmisify() {
 
               <p>
                 Maintenant que votre esprit est prêt à suivre cette voie,
-                cliquer sur Continuer pour obtenir tout les conseils qui vous
-                aideront à atteindre votre but de Devenir influenceur
+                cliquer sur Continuer pour obtenir tout les Conseils de Brillant
+                de Jésus Christ qui vous aideront à atteindre votre but de
+                Devenir influenceur
               </p>
+              <button>Continuer</button>
 
+              <p>Commencement (Le Choix)</p>
               <p>
                 Pour commencer vous devez choisir une niche qui vous intéresse,
                 par exemple vous pouvez décider de devenir un influenceur qui
@@ -1052,12 +1051,12 @@ export default function HomeOmisify() {
                 les reseaux sociaux populaires)
               </p>
 
+              <p>Efficacité</p>
               <p>
-                D'après les influenceurs de la Génération Connecté, c'est plus
-                efficace de commencer par la vidéo, par exemple vous créer une
-                chaine Youtube et dans vos vidéos vous dites aux gens d'aller
-                s'abonner sur votre compte Facebook, Instagram, Tik Tok ou
-                n'importe qu'elle réseaux sociaux mais retener que vous devez
+                C'est plus efficace de commencer par la vidéo, par exemple vous
+                créer une chaine Youtube et dans vos vidéos vous dites aux gens
+                d'aller s'abonner sur votre compte Facebook, Instagram, Tik Tok
+                ou n'importe qu'elle réseaux sociaux mais retener que vous devez
                 commencer par la vidéo et inciter les gens à vous suivre sur les
                 autres réseaux sociaux, cette méthode est la plus efficace car
                 par nature l'etre humain accorde plus d'attention et de
@@ -1074,11 +1073,13 @@ export default function HomeOmisify() {
                 sur vos autres réseaux sociaux
               </p>
 
+              <p>Regularité</p>
               <p>
                 Votre systeme créé, l'étape suivante sera de publier du nouveau
                 contenu tout les jours de manière régulière
               </p>
 
+              <p>Perséverance</p>
               <p>
                 Comme tout le monde, pendant les premiers mois vous n'aurez pas
                 de résultats, vous serez pratiquement seul sur votre chaine
@@ -1115,6 +1116,7 @@ export default function HomeOmisify() {
                 premiers abonnés
               </p>
 
+              <p>Soutien</p>
               <p>
                 Omisify ne vous abondonne pas, Omisify est avec vous pour vous
                 aider vers votre marche vers le succès, vous pourrez bénéficier
@@ -1132,7 +1134,7 @@ export default function HomeOmisify() {
                 l'éligibilité de votre chaine Youtube au Programme d'Aide Aux
                 Nouveaux Influenceurs
               </p>
-
+              <p>Gloire</p>
               <p>
                 Il viendra un moment ou il y'aura des personnes qui vont
                 decouvrir votre chaine Youtube ou votre compte Instagram et ces
@@ -1164,6 +1166,7 @@ export default function HomeOmisify() {
                 serez aussi rémunérer pour vos Droits d'auteur.
               </p>
 
+              <p>Génération Connecté</p>
               <p>
                 Dès le début de la création de votre chaine Youtube ou compte
                 Instagram vous pouvez rejoindre la Génération Connecté et
@@ -1181,6 +1184,76 @@ export default function HomeOmisify() {
               <p>Contacter l'Equipe Omisify</p>
               <button>Rejoindre la Nouvelle Génération</button>
               <button>Travailler avec Omisify</button>
+
+              <p>Devenez important pour les autres</p>
+              <p>
+                Aider les autres c'est important car en aidant les autres vous
+                vous faites du bien à vous même également. Plus vous publiez du
+                nouveau contenu sur votre chaine, plus vous montrer que vous
+                êtes une personne qui veut aider les autres, plus il y'aura des
+                personnes qui viendront sur votre chaine pour voir tous les
+                jours du nouveaux contenus que vous publiez et avec le temps
+                certains d'entre eux commenceront à s'abonner car vous allez
+                commencer à entrer dans leur coeur et ils vous accorderont de
+                l'importance et de la confiance.
+              </p>
+              <p>A quel moment les gens s'abonnent à votre chaine ?</p>
+              <p>
+                Les gens s'abonnent à votre chaine lorsqu'ils s'appercoivent
+                qu'avec votre contenu ils ont été plus gagnant que perdant, et
+                ils vont rapidement s'abonner pour ne pas qu'ils oublient le nom
+                de la chaine ou encore pour ne pas rater les nouvelles vidéos
+                que vous publierez car l'être humain n'aime pas rater tout ce
+                qui est à son avantage (Par exemple vous travaillez à
+                l'ambassade, vous dites à une personne venez prendre votre Visa
+                lundi à 10h, la personne sera là à 8h. Un autre exemple, vous
+                dites à une personne venez à mon bureau à 11h prendre l'argent
+                que vous m'avez demander, la personne sera là à 9h. L'être
+                humain n'aime pas rater ce qui est à son avantage). Les gens
+                s'abonnent de manière progressive, voilà pourquoi vous devez
+                vous former sans cesse, vous devez continuer à apprendre sans
+                cesse pour ne pas etre obsolete (Prenons un exemple, vous
+                réalisez des vidéos dans laquelle vous donner des conseils aux
+                gens sur l'entreprenariat, il y'a Sarah et David qui ont vu ces
+                vidéos. En remarque que Sarah s'est abonné à votre chaine après
+                avoir vu votre vidéo mais David ne s'est pas abonné à votre
+                chaine après avoir vu votre vidéo. Il peut y avoir plusieurs
+                raisons qui expliquent cela mais toutes ces raisons tournent
+                toujours autour d'une raison principale; Avec votre contenu
+                Sarah a été plus gagant que perdant (peut être parce que Sarah
+                n'a jamais connu ces conseils, elle vient de le découvrir par
+                vous et elle se dit c'est incroyable, je ne le savait pas avant)
+                et David n'a pas été plus gagant que perdant (peut être parce
+                que David connaissait déjà ces conseils et David se dit Rien
+                d'original, je connaissait déjà ces conseils et je l'applique au
+                quotiden)). Vous voyez, votre contenu n'a pas le même effet chez
+                2 personnes différentes mais comment faire pour gagner le coeur
+                de David, comment faire pour que David soit aussi votre abonné,
+                la solution est que vous devez apporter à David des nouveaux
+                conseils qu'ils n'a jamais entendu auparavant afin qu'ils soient
+                aussi plus gagant que perdant comme Sarah, pour un début David
+                fera parties de ses abonnés qui viennent sur votre chaine qui
+                voient vos vidéos et qui ne s'abonnent pas, mais avec le temps,
+                avec votre régularité il y'aura toujours un jour ou vous allez
+                publier une vidéo ou il y'aura des conseils que David n'a jamais
+                entendu auparavant et là vous aurez résolu le problème de David
+                et il s'abonnera à votre chaine; mais pour arriver à publier
+                cette vidéo qui touchera David il faut que vous apprener tout le
+                temps des nouvelles choses, voila pourquoi ca va jamais terminé
+                parce qu'il y'aura toujours des abonnés comme David que vous
+                allez chercher à conquérir, donc vous savez le secret continuer
+                à apprendre sans cesse, si vous arreter d'apprendre vous devenez
+                obsolète. Maintenant que vous avez appris Comment les gens
+                s'abonnet à votre chaine, il faut que vous sachez que tout les
+                conseils qui ont été donné depuis le début s'applique dans tout
+                les domaines de la vie, il suffit juste que vous regarder
+                attentivement et vous verrez que la meme chose s'applique dans
+                tout les domaines de la vie. La vie même se résume à ca [Mon
+                peuple périt par manque de connaissance]; [L'effet cummulé de
+                mauvaises habitudes vous tire vers le bas (Pauvreté,
+                Enfer,...)]; [L'effet cummulé de bonnes habitudes vous tire vers
+                le haut (Richesse, Paradis,...)]
+              </p>
             </div>
           </div>
         </>

@@ -154,28 +154,27 @@ export default function GenerationOmisify() {
       {/* generation - omisify */}
 
       <div className="how-to-join-omisify-generation">
-        <p>Comment rejoindre la Génération des personnes Connectés ?</p>
+        <p>Comment rejoindre la Génération Connecté ?</p>
       </div>
       {/* how-to-join-omisify-generation */}
 
       <div className="how-to-join-omisify-generation-detail">
+        {/*
         <div className="a">
           <h2>1</h2>
         </div>
 
         <div className="b">
           <h3>Installer</h3>
-          <p onClick={Maintenance}>..</p>
-          {/*
           <p>Installer l'application Web Omisify depuis Vixinol Store</p>
-        */}
         </div>
+        */}
       </div>
       {/* how-to-join-omisify-generation-detail */}
 
       <div className="how-to-join-omisify-generation-detail">
         <div className="a">
-          <h2>2</h2>
+          <h2>1</h2>
         </div>
 
         <div className="b">
@@ -187,7 +186,7 @@ export default function GenerationOmisify() {
 
       <div className="how-to-join-omisify-generation-detail">
         <div className="a">
-          <h2>3</h2>
+          <h2>2</h2>
         </div>
 
         {!join && (
@@ -196,9 +195,10 @@ export default function GenerationOmisify() {
               <h3>Rejoindre</h3>
               <p>
                 Au niveau du Menu de votre compte Omisify, allez dans Génération
-                Connecté puis cliquer sur Rejoindre la Nouvelle Génération
+                Connecté puis cliquer sur Rejoindre la Génération Connecté
               </p>
 
+              {/*
               <div className="align-icon-go-down">
                 <svg
                   onClick={Join}
@@ -215,8 +215,9 @@ export default function GenerationOmisify() {
                 >
                   <path d="M25.397 4.554h-2.042l-9.974 12.644a.54.54 0 01-.835 0L2.575 4.554H.532a.533.533 0 00-.419.86l12.435 15.762c.104.125.255.2.419.2a.54.54 0 00.416-.2L25.816 5.413a.524.524 0 00.058-.561.524.524 0 00-.477-.298z"></path>
                 </svg>
-                {/* icon vers le bas */}
+                {/* icon vers le bas 
               </div>
+            */}
             </div>
           </>
         )}
@@ -233,7 +234,7 @@ export default function GenerationOmisify() {
 
               <div className="d">
                 <p style={{ paddingRight: "5px" }}>
-                  Vous pourrez aller plus loin en devenant
+                  Vous pourrez aller plus loin si vous voulez en devenant
                 </p>
 
                 <p
@@ -507,13 +508,6 @@ export default function GenerationOmisify() {
                   </p>
                 </NavLink>
                 */}
-
-                <p
-                  onClick={Maintenance}
-                  style={{ color: "blue", paddingTop: "15px" }}
-                >
-                  ..
-                </p>
               </div>
             </div>
           </div>

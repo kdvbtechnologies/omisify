@@ -86,7 +86,8 @@ export default function NavbarTopOmisify() {
           {/* left */}
 
           <div className="right">
-            {/*  Activités - icon vers le haut */}
+            {/*
+            {/*  Activités - icon vers le haut 
             {popupActivity && (
               <>
                 <div className="icon">
@@ -112,7 +113,7 @@ export default function NavbarTopOmisify() {
               </>
             )}
 
-            {/*  Activités - icon vers le bas */}
+            {/*  Activités - icon vers le bas 
             {!popupActivity && (
               <>
                 <div className="icon">
@@ -134,8 +135,9 @@ export default function NavbarTopOmisify() {
                 </div>
               </>
             )}
+            */}
 
-            {/*  Génération Omisify - icon vers le haut */}
+            {/*  Génération Omisify - icon vers le haut 
             {popupGenerationOmisify && (
               <>
                 <div className="icon">
@@ -161,7 +163,7 @@ export default function NavbarTopOmisify() {
               </>
             )}
 
-            {/*  Génération Omisify - icon vers le bas */}
+            {/*  Génération Omisify - icon vers le bas 
             {!popupGenerationOmisify && (
               <>
                 <div className="icon">
@@ -183,8 +185,9 @@ export default function NavbarTopOmisify() {
                 </div>
               </>
             )}
+            */}
 
-            {/* Nouveau influenceur - icon vers le haut */}
+            {/* Nouveau influenceur - icon vers le haut 
             {popupNewInfluencer && (
               <>
                 <div className="icon">
@@ -211,7 +214,7 @@ export default function NavbarTopOmisify() {
               </>
             )}
 
-            {/* Nouveau influenceur - icon vers le bas */}
+            {/* Nouveau influenceur - icon vers le bas 
             {!popupNewInfluencer && (
               <>
                 <div className="icon">
@@ -233,6 +236,7 @@ export default function NavbarTopOmisify() {
                 </div>
               </>
             )}
+            */}
 
             {/* icon menu - color red */}
             {popupMenuNavbarTop && (
@@ -435,11 +439,13 @@ export default function NavbarTopOmisify() {
                 </p>
               </div>
 
+              {/*
               <div className="a">
                 <p onClick={PopupVocabulary} style={{ cursor: "pointer" }}>
                   Vocabulaire
                 </p>
               </div>
+              */}
             </div>
             {/* card */}
           </div>
@@ -547,7 +553,7 @@ export default function NavbarTopOmisify() {
             {/* btn close, on a pris le meme btn pour fermer le menu */}
 
             <div className="card">
-              {/* Activités - icon vers le haut */}
+              {/* Activités - icon vers le haut 
               {popupActivityMobile && (
                 <>
                   <div className="icon">
@@ -573,7 +579,7 @@ export default function NavbarTopOmisify() {
                 </>
               )}
 
-              {/* Activités - icon vers le bas */}
+              {/* Activités - icon vers le bas 
               {!popupActivityMobile && (
                 <>
                   <div className="icon">
@@ -595,8 +601,9 @@ export default function NavbarTopOmisify() {
                   </div>
                 </>
               )}
+              */}
 
-              {/* Generation omisify - icon vers le haut*/}
+              {/* Generation omisify - icon vers le haut
               {popupGenerationOmisifyMobile && (
                 <>
                   <div className="icon">
@@ -625,7 +632,7 @@ export default function NavbarTopOmisify() {
                 </>
               )}
 
-              {/* Generation omisify - icon vers le bas */}
+              {/* Generation omisify - icon vers le bas
               {!popupGenerationOmisifyMobile && (
                 <>
                   <div className="icon">
@@ -647,8 +654,9 @@ export default function NavbarTopOmisify() {
                   </div>
                 </>
               )}
+              */}
 
-              {/* Nouveau influenceur - icon vers le haut */}
+              {/* Nouveau influenceur - icon vers le haut
               {popupNewInfluencerMobile && (
                 <>
                   <div className="icon">
@@ -678,7 +686,7 @@ export default function NavbarTopOmisify() {
                 </>
               )}
 
-              {/* Nouveau influenceur - icon vers le bas */}
+              {/* Nouveau influenceur - icon vers le bas
               {!popupNewInfluencerMobile && (
                 <>
                   <div className="icon">
@@ -700,6 +708,7 @@ export default function NavbarTopOmisify() {
                   </div>
                 </>
               )}
+              */}
 
               <div className="icon">
                 <NavLink style={{ textDecoration: "none" }} to="/partner">
@@ -711,9 +720,11 @@ export default function NavbarTopOmisify() {
                 <p onClick={PopupServicePartenaire}>Service Partenaire</p>
               </div>
 
+              {/*
               <div className="icon">
                 <p onClick={PopupVocabulary}>Vocabulaire</p>
               </div>
+              */}
             </div>
             {/* card */}
           </div>
@@ -750,21 +761,18 @@ export default function NavbarTopOmisify() {
                 <p style={{ color: "black" }}>Partenaire Omisify</p>
               </NavLink>
               */}
-              <p onClick={Maintenance}>..</p>
 
               {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>Partenaire Omisify Influent</p>
               </NavLink>
               */}
-              <p onClick={Maintenance}>..</p>
 
               {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
                 <p style={{ color: "black" }}>Partenaire Omisify Vidéaste</p>
               </NavLink>
               */}
-              <p onClick={Maintenance}>..</p>
             </div>
             {/* card */}
           </div>
@@ -794,8 +802,6 @@ export default function NavbarTopOmisify() {
                 </p>
               </NavLink>
             */}
-
-              <p onClick={Maintenance}>..</p>
             </div>
             {/* card */}
           </div>
@@ -824,7 +830,6 @@ export default function NavbarTopOmisify() {
                 <p style={{ color: "black" }}>Comment Devenir influenceur</p>
               </NavLink>
             */}
-              <p onClick={Maintenance}>..</p>
 
               {/*
               <NavLink style={{ textDecoration: "none" }} to="/">
@@ -833,7 +838,6 @@ export default function NavbarTopOmisify() {
                 </p>
               </NavLink>
             */}
-              <p onClick={Maintenance}>..</p>
             </div>
             {/* card */}
           </div>
@@ -997,8 +1001,6 @@ export default function NavbarTopOmisify() {
                   <button>Envoyer un message</button>
                 </NavLink>
                 */}
-
-                <button style={{ width: "100px" }}>..</button>
               </div>
               {/* card */}
             </div>
