@@ -4,12 +4,13 @@ import Back from "../Back/Back";
 import PopupMaintenance from "../Home Omisify/Maintenance/PopupMaintenance";
 
 export default function Infos() {
-  const date = localStorage.getItem("https://omisify.com/date");
+  // const date = localStorage.getItem("https://omisify.com/date");
   const getname = localStorage.getItem("https://omisify.com/name");
   //const getshortname = localStorage.getItem("https://omisify.com/shortname");
   const getpartnername = localStorage.getItem(
     "https://omisify.com/partnername"
   );
+
   /*
   const getgenre = localStorage.getItem("https://omisify.com/genre");
   const getage = localStorage.getItem("https://omisify.com/age");
@@ -88,7 +89,6 @@ export default function Infos() {
         <p>Date de naissance : {getdateofbirth}</p>
         */}
         <p>Email : {getemail}</p>
-        <p onClick={Maintenance}>..</p>
         {/*
         <p>Noms court : {getshortname}</p>
         <p>Méthode de paiement préféré : {getpaymentmethod}</p>
@@ -97,13 +97,14 @@ export default function Infos() {
         <p>Groupe Whatsapp : {getgroupwhatsapp}</p>
         <p>Numéro Telegram : {getnumbertelegram}</p>
         <p>Numéro Whatsapp : {getnumberwhatsapp}</p>
-        */}
+       
 
         {date && (
           <>
             <p>Dernière actualisation des points : {date}</p>
           </>
         )}
+         */}
       </div>
 
       {popupMaintenance && (

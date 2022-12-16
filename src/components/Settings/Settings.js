@@ -5,7 +5,7 @@ export default function SettingsNewOmisify() {
     <>
       <div className="new-title-settings">
         <div className="display">
-          <NavLink to="/">
+          <NavLink to="/partner">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0"

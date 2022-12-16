@@ -389,7 +389,6 @@ export default function InfosUpdate() {
             </>
           )}
           */}
-          <p onClick={Maintenance}>..</p>
 
           {getemail ? (
             <>
@@ -560,8 +559,6 @@ export default function InfosUpdate() {
             </>
           )}
           */}
-
-          <p onClick={Maintenance}>..</p>
 
           {isLoading ? (
             <Loader />
