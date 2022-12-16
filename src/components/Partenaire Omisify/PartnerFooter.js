@@ -295,13 +295,14 @@ export default function PartnerFooter() {
           )}
         </div>
       </div>
+
+      {/* 
       <div className="request-money">
-        {/* 
          <NavLink to="/partner-contact">
           <button>Demander ma rémunération</button>
         </NavLink>
-        */}
       </div>
+        */}
 
       {popupMaintenance && (
         <div onClick={Maintenance}>

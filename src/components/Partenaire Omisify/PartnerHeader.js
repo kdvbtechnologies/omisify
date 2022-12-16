@@ -208,8 +208,6 @@ export default function PartnerHeader() {
                   <p
                     onClick={PopupGain}
                     style={{
-                      display: "flex",
-                      flexWrap: "nowrap",
                       color: "black",
                       cursor: "pointer",
                     }}
