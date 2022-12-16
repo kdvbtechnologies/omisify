@@ -191,7 +191,7 @@ export default function PageGenerationConnected() {
           <div className="box-shadow">
             <p>
               Ajouter juste le logo de la marque Omisify à votre photo ou vidéo
-              et rejoignez toute ces personnes qui sont Connectés
+              et soyez rémunérer chaque jour par Omisify
             </p>
           </div>
           {/* box-shadow */}
@@ -199,10 +199,6 @@ export default function PageGenerationConnected() {
         {/* align-box-shadow */}
       </div>
       {/* after-generation-omisify */}
-
-      <p onClick={Maintenance} style={{ textAlign: "center", padding: "20px" }}>
-        ..
-      </p>
 
       {/*
       {seeMore ? (
@@ -282,11 +278,8 @@ export default function PageGenerationConnected() {
 
       <div className="btn-join-new-generation">
         {/*
-        <button>Rejoindre la Nouvelle Génération</button>
+        <button>Rejoindre la Génération Connecté</button>
         */}
-        <button onClick={Maintenance} style={{ width: "100px" }}>
-          ..
-        </button>
       </div>
       {/* btn-join-new-generation */}
 

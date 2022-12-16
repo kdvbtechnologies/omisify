@@ -287,13 +287,6 @@ export default function GenerationOmisify() {
 
                 <p style={{ paddingRight: "5px" }}>ou</p>
 
-                <p
-                  onClick={Maintenance}
-                  style={{ cursor: "pointer", textDecoration: "underline" }}
-                >
-                  ..
-                </p>
-
                 {/* 
 
                 <p style={{ cursor: "pointer", textDecoration: "underline" }}>
