@@ -463,8 +463,8 @@ export default function App() {
         <Route path="/complete" element={<Complete />} />
         <Route path="/after-dev" element={<AfterDev />} />
         <Route path="/dev" element={<Dev />} />
-        <Route path="*" element={<AfterLoginSuccess />} />
-        <Route path="/" element={<AfterLoginSuccess />} />
+        <Route path="*" element={<HomeOmisify />} />
+        <Route path="/" element={<HomeOmisify />} />
         {/* new Omisify */}
         {/* new Omisify */}
         {/* new Omisify */}
