@@ -1,6 +1,5 @@
 import NavbarBottomOmisify from "../Home Omisify/NavbarBottomOmisify";
 import PartnerHeader from "./PartnerHeader";
-import PartnerNav from "./PartnerNav";
 
 export default function Partner() {
   const family = {
@@ -9,7 +8,6 @@ export default function Partner() {
   };
   return (
     <div style={family}>
-      <PartnerNav />
       <div>
         <PartnerHeader />
       </div>

@@ -101,8 +101,8 @@ export default function GenerationOmisify() {
               </p>
               <p style={{ paddingRight: "5px" }}>concerne ces personnes,</p>
               <p>
-                ces influenceurs ou ces artistes qui ont choisi de mettre les
-                logos de la marque Omisify dans leur photos, vidéos et sont
+                ces influenceurs ou ces artistes qui ont choisi de mettre le
+                logo de la marque Omisify dans leur photos, vidéos et sont
                 rémunérés chaque jour par Omisify
               </p>
             </div>
@@ -156,8 +156,7 @@ export default function GenerationOmisify() {
               <h3>Rejoindre</h3>
               <p>
                 Au niveau du Menu de votre compte Omisify, allez dans Génération
-                Connecté puis cliquer sur Rejoindre la Génération des personnes
-                Connectés
+                Connecté puis cliquer sur Rejoindre la Nouvelle Génération
               </p>
 
               <div className="align-icon-go-down">
@@ -189,14 +188,12 @@ export default function GenerationOmisify() {
               <h3>Rejoindre</h3>
               <p>
                 Au niveau du Menu de votre compte Omisify, allez dans Génération
-                Connecté puis cliquer sur Rejoindre la Génération des personnes
-                Connectés
+                Connecté puis cliquer sur Rejoindre la Nouvelle Génération
               </p>
 
               <div className="d">
                 <p style={{ paddingRight: "5px" }}>
-                  Vous voilà, vous êtes éligible à la rémunération de la
-                  Génération Connecté, vous pourrez aller plus loin en devenant
+                  Vous pourrez aller plus loin en devenant
                 </p>
 
                 <p

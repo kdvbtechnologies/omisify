@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import PopupMaintenance from "./Maintenance/PopupMaintenance";
+import MenuIcon from "./MenuIcon";
 
 export default function NavbarBottomOmisify() {
   const [popupMaintenance, setPopupMaintenance] = useState(false);
-
   function Maintenance() {
     setPopupMaintenance(!popupMaintenance);
+  }
+
+  const [popupMenu, setPopupMenu] = useState(false);
+  function Menu() {
+    setPopupMenu(!popupMenu);
   }
 
   return (
@@ -318,7 +323,7 @@ export default function NavbarBottomOmisify() {
           </div>
 
           <div className="a">
-            <NavLink to="/partner-delete">
+            <NavLink to="/partner">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0"
@@ -336,7 +341,7 @@ export default function NavbarBottomOmisify() {
 
           <div className="a">
             <svg
-              onClick={Maintenance}
+              onClick={Menu}
               xmlns="http://www.w3.org/2000/svg"
               x="0"
               y="0"
@@ -444,6 +449,13 @@ export default function NavbarBottomOmisify() {
       {popupMaintenance && (
         <div onClick={Maintenance}>
           <PopupMaintenance />
+        </div>
+      )}
+
+      {/* popup menu */}
+      {popupMenu && (
+        <div onClick={Menu}>
+          <MenuIcon />
         </div>
       )}
     </>

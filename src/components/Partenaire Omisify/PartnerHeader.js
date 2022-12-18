@@ -1,9 +1,13 @@
 import axios from "axios";
+import { useState } from "react";
+import PopupMaintenance from "../Home Omisify/Maintenance/PopupMaintenance";
 import PartnerFooter from "./PartnerFooter";
 
 export default function PartnerHeader() {
   const name = localStorage.getItem("https://omisify.com/name");
   const partnername = localStorage.getItem("https://omisify.com/partnername");
+
+  /*
   const age = localStorage.getItem("https://omisify.com/age");
   const country = localStorage.getItem("https://omisify.com/country");
   const codewelcome = localStorage.getItem("https://omisify.com/codewelcome");
@@ -14,6 +18,7 @@ export default function PartnerHeader() {
   const generositydays = localStorage.getItem(
     "https://omisify.com/generositydays"
   );
+  */
 
   async function get() {
     await axios
@@ -79,6 +84,11 @@ export default function PartnerHeader() {
   }
   get();
 
+  const [popupMaintenance, setPopupMaintenance] = useState(false);
+  function Maintenance() {
+    setPopupMaintenance(!popupMaintenance);
+  }
+
   return (
     <>
       <div className="profil">
@@ -95,12 +105,17 @@ export default function PartnerHeader() {
 
             <div className="partner-info">
               <p>Noms de naissance : {name}</p>
+              <p align="center" onClick={Maintenance}>
+                ..
+              </p>
+              {/*
               <p>Genre : {genre}</p>
               <p>Pays : {country}</p>
               <p>Age : {age}</p>
               <p>Code B : {codewelcome}</p>
               <p>Journées de générosité : {generositydays}</p>
               <p>Méthode de Paiement préféré : {paymentmethod}</p>
+               */}
               <div className="profil-hr">
                 <hr />
                 <hr />
@@ -110,6 +125,12 @@ export default function PartnerHeader() {
           </div>
         </div>
       </div>
+
+      {popupMaintenance && (
+        <div onClick={Maintenance}>
+          <PopupMaintenance />
+        </div>
+      )}
     </>
   );
 }

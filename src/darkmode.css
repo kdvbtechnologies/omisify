@@ -1112,7 +1112,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 10px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .partner-profil {
@@ -1614,11 +1617,24 @@ footer {
 }
 
 .update .title {
-  color: white;
-  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.update .title svg {
+  padding-bottom: 15px;
+}
+
+.update .title p {
+  background-color: white;
+  color: #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  padding: 15px 20px;
+  font-weight: bold;
+  width: 130px;
 }
 
 .update .a {
@@ -1632,17 +1648,10 @@ footer {
   cursor: pointer;
   font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
   background-color: transparent;
-  border: 1px solid red;
-  color: red;
+  border: 1px solid blue;
+  color: blue;
   padding: 10px 20px;
   font-size: 16px;
-}
-
-.update .title p {
-  background-color: red;
-  padding: 15px 20px;
-  font-weight: bold;
-  width: 130px;
 }
 
 .update p {
@@ -1738,6 +1747,17 @@ footer {
 
 
 /* src - components - logout - logout.js */
+.title-logout .display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.title-logout .display p {
+  font-size: 18px;
+}
+
 .logout {
   text-align: center;
   padding: 70px 0px;
@@ -1880,9 +1900,7 @@ footer {
 .infos .title {
   background-color: red;
   color: white;
-  font-size: 18px;
-  margin-bottom: 40px;
-  
+  font-size: 18px;  
 }
 
 .infos .title button {
@@ -1902,7 +1920,6 @@ footer {
   color: #eee;
   font-size: 18px;
   padding: 10px;
-  margin-bottom: 40px;
   display: flex;
 }
 
@@ -2397,17 +2414,25 @@ footer {
 }
 
 /* components - others - others.js */
-.others .title {
-  color: red;
-  text-align: center;
+.title-settings .display {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.title-settings .display p {
   font-size: 18px;
 }
 
 .others .a {
-  padding: 20px 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-.others .a p{
+.others .a p {
   padding: 10px 20px;
   font-size: 16px;
   color: #000;
@@ -2419,6 +2444,26 @@ footer {
 
 .others .a .navlink {
   text-decoration: none;
+}
+
+.hr-global hr {
+  border: 1px solid #eee;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+ }
+
+ /* generation connected - page generation connected.js */
+ /* generation connected - page generation connected.js */
+ /* generation connected - page generation connected.js */
+ /* generation connected - page generation connected.js */
+ /* generation connected - page generation connected.js */
+ /* generation connected - page generation connected.js */
+ /* generation connected - page generation connected.js */
+.page-generation-connected-title p {
+  font-size: 19px;
+  text-align: center;
+  margin-top: 25px;
 }
 
 
@@ -2802,8 +2847,7 @@ footer {
 .home-omisify-final p {
   font-size: 20px;
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 10px;
 }
 
 .home-omisify-final button {
@@ -2827,6 +2871,51 @@ footer {
 .home-influencer-new-omisify-mobile {
   display: none;
 }
+
+/* home omisify - MenuIcon.js */
+.popup-menu-icon-opacity {
+  background-color: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.popup-menu-icon-opacity .align {
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.popup-menu-icon-opacity .align .card {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.popup-menu-icon-opacity .align .card .title p {
+  font-size: 19px;
+  color: #ff9191;
+}
+
+.popup-menu-icon-opacity .align .card .display {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.popup-menu-icon-opacity .align .card .display svg {
+  padding-right: 10px;
+}
+
+.popup-menu-icon-opacity .align .card p {
+  font-size: 17px;
+}
+
 
 /* home omisify - popup card.js */
 /* home omisify - popup card.js */
@@ -8928,8 +9017,6 @@ footer {
   /* alrani */
   /* alrani */
   /* alrani */
-
-   
 .navbar-alr .mobile {
   display: flex;
   justify-content: space-between;
@@ -9665,26 +9752,11 @@ footer {
     padding-top: 40px;
   }
 
-  .others {
-    padding-top: 10px;
-  }
-
   .guide {
     padding-top: 10px;
   }
-  .update .title {
-    color: white;
-    font-size: 20px;
-  }
-  
-  .update .title p {
-    background-color: red;
-    margin: 0px 80px;
-    padding: 10px 20px;
-    text-align: center;
-    font-weight: bold;
-  }
 
+ 
   /* en ecris en haut pour le responsive */
   /* en ecris en haut pour le responsive */
   /* en ecris en haut pour le responsive */
@@ -10504,6 +10576,11 @@ footer {
     margin-top: 7px;
     margin-bottom: 7px;
   }
+
+  /* omisify */
+  .popup-menu-icon-opacity .align .card {
+    width: 270px;
+  }
 }
 
 /* 490px */
@@ -11077,6 +11154,10 @@ footer {
   }
 
    /* omisify */
+   .popup-menu-icon-opacity .align .card {
+    width: 250px;
+  }
+
    .popupHelp-background .align .card {
     width: 280px;
    }
@@ -11367,6 +11448,10 @@ footer {
 /* 330px */
 @media screen and (max-width: 330px) {
     /* omisify */
+    .popup-menu-icon-opacity .align .card {
+      width: 220px;
+    }
+
     .person-add-logo-go .images img {
       width: 320px;
       height: 430px;
@@ -11946,7 +12031,11 @@ footer {
     padding-right: 5px;
   }
 
-  /* home omisify */
+  /* omisify */
+  .popup-menu-icon-opacity .align .card {
+    width: 200px;
+  }
+
   .person-add-logo-go .images img {
     width: 270px;
     height: 380px;
@@ -12288,6 +12377,10 @@ footer {
   }
 
   /* omisify */
+  .popup-menu-icon-opacity .align .card {
+    width: 180px;
+  }
+
   .popupHelp-background .align .card {
     width: 170px;
    }
@@ -12861,6 +12954,14 @@ footer {
   } 
 
   /* omisify */
+  .popup-menu-icon-opacity .align .card {
+    width: 160px;
+  }
+
+  .popup-menu-icon-opacity .align .card p {
+    width: 80px;
+  }
+
   .person-add-logo-go .images img {
     width: 200px;
     height: 310px;
@@ -13342,6 +13443,10 @@ footer {
 
 /* omisify */
 /* omisify */
+.popup-menu-icon-opacity .align .card {
+  width: 155px;
+}
+
 .person-add-logo-go .images img {
   width: 180px;
   height: 290px;

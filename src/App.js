@@ -12,6 +12,8 @@ import HomeBonus from "./components/Home/AfterMore/Bonus/HomeBonus";
 import HomeOmisify from "./components/Home Omisify/Home";
 import NavbarBottomOmisify from "./components/Home Omisify/NavbarBottomOmisify";
 import NavbarTopOmisify from "./components/Home Omisify/NavbarTopOmisify";
+import SettingsNewOmisify from "./components/Settings/Settings";
+import PageGenerationConnected from "./components/Generation Connected/PageGenerationConnected";
 
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
@@ -444,14 +446,12 @@ import NewPasswordSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/NewP
 import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
 import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
-import Partner from "./components/Partenaire Omisify/Partner";
 import PartieA from "./components/Home Omisify/PartieA";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/partner-delete" element={<Partner />} />
         <Route path="/translation" element={<Translation />} />
         <Route path="/validate-access-code" element={<ValidateAccessCode />} />
         <Route path="/error-access-code" element={<ErrorAccessCode />} />
@@ -483,6 +483,11 @@ export default function App() {
         {/* new Omisify */}
         {/* new Omisify */}
         {/* new Omisify */}
+        <Route path="/settings-new-omisify" element={<SettingsNewOmisify />} />
+        <Route
+          path="/generation-connected"
+          element={<PageGenerationConnected />}
+        />
         <Route path="/partie-a" element={<PartieA />} />
         <Route path="/navbar-top-omisify" element={<NavbarTopOmisify />} />
 

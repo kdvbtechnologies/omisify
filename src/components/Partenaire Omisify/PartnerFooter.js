@@ -2,6 +2,7 @@ import { useState } from "react";
 import PopupMaintenance from "../Home Omisify/Maintenance/PopupMaintenance";
 
 export default function PartnerFooter() {
+  /*
   // welcome bonus
   const welcomebonus = localStorage.getItem("https://omisify.com/welcomebonus");
 
@@ -19,12 +20,14 @@ export default function PartnerFooter() {
   const generositydaysbonus = localStorage.getItem(
     "https://omisify.com/generositydaysbonus"
   );
+*/
 
   // comment
   const getoldpointtcommentlife = localStorage.getItem(
     "https://omisify.com/pointtcommentlife"
   );
 
+  /*
   // e10k
   const getoldpointte10klife = localStorage.getItem(
     "https://omisify.com/pointte10klife"
@@ -49,22 +52,26 @@ export default function PartnerFooter() {
   const getoldpointtm10klife = localStorage.getItem(
     "https://omisify.com/pointtm10klife"
   );
+*/
 
   // message
   const getoldpointtmessagelife = localStorage.getItem(
     "https://omisify.com/pointtmessagelife"
   );
 
+  /*
   // mwi
   const getoldpointtmwilife = localStorage.getItem(
     "https://omisify.com/pointtmwilife"
   );
+  */
 
   // publication
   const getoldpointtpublicationlife = localStorage.getItem(
     "https://omisify.com/pointtpublicationlife"
   );
 
+  /*
   // pwi
   const getoldpointtpwilife = localStorage.getItem(
     "https://omisify.com/pointtpwilife"
@@ -74,6 +81,7 @@ export default function PartnerFooter() {
   const getoldpointtpwplife = localStorage.getItem(
     "https://omisify.com/pointtpwplife"
   );
+  */
 
   // points total
   const getoldpointtlife = localStorage.getItem(
@@ -86,15 +94,16 @@ export default function PartnerFooter() {
   /* {aa ? (<></>) : (<></>)} */
 
   const [popupMaintenance, setPopupMaintenance] = useState(false);
-
   function Maintenance() {
     setPopupMaintenance(!popupMaintenance);
   }
+
   return (
     <>
       <div>
         <div className="partner-stats">
           <p>Statistiques </p>
+          {/*
 
           {welcomebonus ? (
             <>
@@ -135,6 +144,7 @@ export default function PartnerFooter() {
               <li>Bonus JG : 0 point(s)</li>
             </>
           )}
+          */}
 
           {getoldpointtcommentlife ? (
             <>
@@ -146,6 +156,7 @@ export default function PartnerFooter() {
             </>
           )}
 
+          {/*
           {getoldpointte10klife ? (
             <>
               <li>E10k : {getoldpointte10klife} point(s)</li>
@@ -195,6 +206,7 @@ export default function PartnerFooter() {
               <li>M10k : 0 point(s)</li>
             </>
           )}
+          */}
 
           {getoldpointtmessagelife ? (
             <>
@@ -206,6 +218,7 @@ export default function PartnerFooter() {
             </>
           )}
 
+          {/*
           {getoldpointtmwilife ? (
             <>
               <li>MWI : {getoldpointtmwilife} point(s)</li>
@@ -214,7 +227,7 @@ export default function PartnerFooter() {
             <>
               <li>MWI : 0 point(s)</li>
             </>
-          )}
+          )} */}
 
           {getoldpointtpublicationlife ? (
             <>
@@ -226,6 +239,7 @@ export default function PartnerFooter() {
             </>
           )}
 
+          {/*
           {getoldpointtpwilife ? (
             <>
               <li>PWI : {getoldpointtpwilife} point(s)</li>
@@ -245,6 +259,7 @@ export default function PartnerFooter() {
               <li>PWP : 0 point(s)</li>
             </>
           )}
+          */}
 
           {getoldpointtlife ? (
             <>
@@ -262,6 +277,10 @@ export default function PartnerFooter() {
             </>
           )}
         </div>
+
+        <p align="center" onClick={Maintenance}>
+          ..
+        </p>
 
         <div className="partner-money">
           {getoldgaintlife ? (

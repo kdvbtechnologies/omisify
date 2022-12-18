@@ -4,16 +4,20 @@ import { useNavigate } from "react-router-dom";
 import { updateInfos } from "../../feature/infos.slice";
 import Loader from "../Partenaire Omisify/Loader";
 import { useDispatch } from "react-redux";
+import Back from "../Back/Back";
+import PopupMaintenance from "../Home Omisify/Maintenance/PopupMaintenance";
 
 export default function InfosUpdate() {
   const getname = localStorage.getItem("https://omisify.com/name");
-  const getshortname = localStorage.getItem("https://omisify.com/shortname");
+  // const getshortname = localStorage.getItem("https://omisify.com/shortname");
   const userId = localStorage.getItem("https://omisify.com/userId");
   const dispatch = useDispatch();
 
   const getpartnername = localStorage.getItem(
     "https://omisify.com/partnername"
   );
+
+  /*
   const getgenre = localStorage.getItem("https://omisify.com/genre");
   const getage = localStorage.getItem("https://omisify.com/age");
   const getcountry = localStorage.getItem("https://omisify.com/country");
@@ -23,10 +27,14 @@ export default function InfosUpdate() {
   const getdateofbirth = localStorage.getItem(
     "https://omisify.com/dateofbirth"
   );
+*/
+  const getemail = localStorage.getItem("https://omisify.com/email");
+
+  /*
   const getpaymentmethod = localStorage.getItem(
     "https://omisify.com/paymentmethod"
   );
-  const getemail = localStorage.getItem("https://omisify.com/email");
+  
   const getcodewelcome = localStorage.getItem(
     "https://omisify.com/codewelcome"
   );
@@ -42,22 +50,27 @@ export default function InfosUpdate() {
   const getnumbertelegram = localStorage.getItem(
     "https://omisify.com/numbertelegram"
   );
+*/
 
   const [name, setname] = useState(getname);
-  const [shortname, setshortname] = useState(getshortname);
+  //const [shortname, setshortname] = useState(getshortname);
   const [partnername, setpartnername] = useState(getpartnername);
+  /*
   const [genre, setgenre] = useState(getgenre);
   const [age, setage] = useState(getage);
   const [country, setcountry] = useState(getcountry);
   const [birthcountry, setbirthcountry] = useState(getbirthcountry);
   const [dateofbirth, setdateofbirth] = useState(getdateofbirth);
-  const [paymentmethod, setpaymentmethod] = useState(getpaymentmethod);
+  */
   const [email, setemail] = useState(getemail);
+  /*
+  const [paymentmethod, setpaymentmethod] = useState(getpaymentmethod);
   const [codewelcome, setcodewelcome] = useState(getcodewelcome);
   const [groupwhatsapp, setgroupwhatsapp] = useState(getgroupwhatsapp);
   const [numberwhatsapp, setnumberwhatsapp] = useState(getnumberwhatsapp);
   const [grouptelegram, setgrouptelegram] = useState(getgrouptelegram);
   const [numbertelegram, setnumbertelegram] = useState(getnumbertelegram);
+  */
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -67,20 +80,24 @@ export default function InfosUpdate() {
 
     const data = {
       name,
-      shortname,
+      //shortname,
       partnername,
+      /*
       genre,
       age,
       country,
       birthcountry,
       dateofbirth,
-      paymentmethod,
+      */
       email,
+      /*
+      paymentmethod,
       codewelcome,
       groupwhatsapp,
       grouptelegram,
       numbertelegram,
       numberwhatsapp,
+      */
     };
 
     await axios
@@ -96,6 +113,11 @@ export default function InfosUpdate() {
     window.location = "/infos-update-success";
   }
 
+  const [popupMaintenance, setPopupMaintenance] = useState(false);
+  function Maintenance() {
+    setPopupMaintenance(!popupMaintenance);
+  }
+
   const family = {
     fontFamily:
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -103,12 +125,13 @@ export default function InfosUpdate() {
 
   return (
     <div style={family}>
-      <div className="back-btn">
-        <button onClick={() => navigate(-1)}>Retour</button>
-      </div>
       <div className="infos-update">
         <div className="title">
           <p>Modifications des informations personnelles</p>
+        </div>
+
+        <div onClick={() => navigate(-1)}>
+          <Back />
         </div>
 
         <div className="a">
@@ -160,6 +183,7 @@ export default function InfosUpdate() {
             </>
           )}
 
+          {/*
           {getshortname ? (
             <>
               <p>Noms court</p>
@@ -183,100 +207,161 @@ export default function InfosUpdate() {
               />
             </>
           )}
+           */}
 
+          {/*
           {getgenre ? (
             <>
               <p>Genre</p>
-              <input
-                type="text"
-                placeholder="Genre"
+              <select
                 value={genre}
                 onChange={(e) => setgenre(e.target.value)}
                 name="genre"
-              />
+                id="genre"
+              >
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+                <option value="Trans">Trans</option>
+              </select>
             </>
           ) : (
             <>
               <p>Genre</p>
-              <input
-                type="text"
-                placeholder="Genre"
+              <select
                 value={genre}
                 onChange={(e) => setgenre(e.target.value)}
                 name="genre"
-              />
+                id="genre"
+              >
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+                <option value="Trans">Trans</option>
+              </select>
             </>
           )}
 
           {getage ? (
             <>
               <p>Age</p>
-              <input
-                type="text"
-                placeholder="Age"
+              <select
                 value={age}
                 onChange={(e) => setage(e.target.value)}
                 name="age"
-              />
+                id="age"
+              >
+                <option value="10">10 ans</option>
+                <option value="11">11 ans</option>
+                <option value="12">12 ans</option>
+                <option value="13">13 ans</option>
+                <option value="14">14 ans</option>
+                <option value="15">15 ans</option>
+                <option value="16">16 ans</option>
+              </select>
             </>
           ) : (
             <>
               <p>Age</p>
-              <input
-                type="text"
-                placeholder="Age"
+              <select
                 value={age}
                 onChange={(e) => setage(e.target.value)}
                 name="age"
-              />
+                id="age"
+              >
+                <option value="10">10 ans</option>
+                <option value="11">11 ans</option>
+                <option value="12">12 ans</option>
+                <option value="13">13 ans</option>
+                <option value="14">14 ans</option>
+                <option value="15">15 ans</option>
+                <option value="16">16 ans</option>
+              </select>
             </>
           )}
 
           {getcountry ? (
             <>
               <p>Pays actuel</p>
-              <input
-                type="text"
-                placeholder="Pays actuel"
+              <select
                 value={country}
                 onChange={(e) => setcountry(e.target.value)}
                 name="country"
-              />
+                id="country"
+              >
+                <option value="Brésil">Brésil</option>
+                <option value="Congo">Congo</option>
+                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                <option value="Cameroun">Cameroun</option>
+                <option value="Canada">Canada</option>
+                <option value="France">France</option>
+                <option value="Guinée Équatoriale">Guinée Équatoriale</option>
+                <option value="Inde">Inde</option>
+                <option value="USA">USA</option>
+              </select>
             </>
           ) : (
             <>
               <p>Pays actuel</p>
-              <input
-                type="text"
-                placeholder="Pays actuel"
+              <select
                 value={country}
                 onChange={(e) => setcountry(e.target.value)}
                 name="country"
-              />
+                id="country"
+              >
+                <option value="Brésil">Brésil</option>
+                <option value="Congo">Congo</option>
+                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                <option value="Cameroun">Cameroun</option>
+                <option value="Canada">Canada</option>
+                <option value="France">France</option>
+                <option value="Guinée Équatoriale">Guinée Équatoriale</option>
+                <option value="Inde">Inde</option>
+                <option value="USA">USA</option>
+              </select>
             </>
           )}
 
           {getbirthcountry ? (
             <>
+              <p></p>
+              <input type="text" placeholder="Pays de naissance" />
+
               <p>Pays de naissance</p>
-              <input
-                type="text"
-                placeholder="Pays de naissance"
+              <select
                 value={birthcountry}
                 onChange={(e) => setbirthcountry(e.target.value)}
                 name="birthcountry"
-              />
+                id="birthcountry"
+              >
+                <option value="Brésil">Brésil</option>
+                <option value="Congo">Congo</option>
+                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                <option value="Cameroun">Cameroun</option>
+                <option value="Canada">Canada</option>
+                <option value="France">France</option>
+                <option value="Guinée Équatoriale">Guinée Équatoriale</option>
+                <option value="Inde">Inde</option>
+                <option value="USA">USA</option>
+              </select>
             </>
           ) : (
             <>
               <p>Pays de naissance</p>
-              <input
-                type="text"
-                placeholder="Pays de naissance"
+              <select
                 value={birthcountry}
                 onChange={(e) => setbirthcountry(e.target.value)}
                 name="birthcountry"
-              />
+                id="birthcountry"
+              >
+                <option value="Brésil">Brésil</option>
+                <option value="Congo">Congo</option>
+                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                <option value="Cameroun">Cameroun</option>
+                <option value="Canada">Canada</option>
+                <option value="France">France</option>
+                <option value="Guinée Équatoriale">Guinée Équatoriale</option>
+                <option value="Inde">Inde</option>
+                <option value="USA">USA</option>
+              </select>
             </>
           )}
 
@@ -303,6 +388,8 @@ export default function InfosUpdate() {
               />
             </>
           )}
+          */}
+          <p onClick={Maintenance}>..</p>
 
           {getemail ? (
             <>
@@ -328,6 +415,7 @@ export default function InfosUpdate() {
             </>
           )}
 
+          {/* 
           {getpaymentmethod ? (
             <>
               <p>Méthode de paiement préféré</p>
@@ -471,6 +559,9 @@ export default function InfosUpdate() {
               />
             </>
           )}
+          */}
+
+          <p onClick={Maintenance}>..</p>
 
           {isLoading ? (
             <Loader />
@@ -481,6 +572,12 @@ export default function InfosUpdate() {
           )}
         </div>
       </div>
+
+      {popupMaintenance && (
+        <div onClick={Maintenance}>
+          <PopupMaintenance />
+        </div>
+      )}
     </div>
   );
 }

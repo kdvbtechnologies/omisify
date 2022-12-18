@@ -450,13 +450,14 @@ export default function HomeOmisify() {
       </div>
 
       <div className="home-omisify-final">
-        <p>
+        <p style={{ fontSize: "18px" }}>
           N'attendez plus, Rejoignez toutes ces personnes qui font parties de la
           Génération Connecté
         </p>
+        <p>La Génération Connecté c'est la Nouvelle Génération !</p>
 
         <NavLink to="/signup">
-          <button>Rejoindre la Génération des personnes Connectés</button>
+          <button>Rejoindre la Nouvelle Génération</button>
         </NavLink>
       </div>
 
@@ -1097,7 +1098,7 @@ export default function HomeOmisify() {
                 ou vidéo
               </p>
               <p>Contacter l'Equipe Omisify</p>
-              <button>Rejoindre la Génération des personnes Connectés</button>
+              <button>Rejoindre la Nouvelle Génération</button>
               <button>Travailler avec Omisify</button>
             </div>
           </div>
