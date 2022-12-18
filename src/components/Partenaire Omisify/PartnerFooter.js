@@ -22,12 +22,13 @@ export default function PartnerFooter() {
   );
 */
 
+  /*
   // comment
   const getoldpointtcommentlife = localStorage.getItem(
     "https://omisify.com/pointtcommentlife"
   );
 
-  /*
+ 
   // e10k
   const getoldpointte10klife = localStorage.getItem(
     "https://omisify.com/pointte10klife"
@@ -54,22 +55,24 @@ export default function PartnerFooter() {
   );
 */
 
+  /*
   // message
   const getoldpointtmessagelife = localStorage.getItem(
     "https://omisify.com/pointtmessagelife"
   );
 
-  /*
+ 
   // mwi
   const getoldpointtmwilife = localStorage.getItem(
     "https://omisify.com/pointtmwilife"
   );
-  */
+ 
 
   // publication
   const getoldpointtpublicationlife = localStorage.getItem(
     "https://omisify.com/pointtpublicationlife"
   );
+ */
 
   /*
   // pwi
@@ -144,7 +147,7 @@ export default function PartnerFooter() {
               <li>Bonus JG : 0 point(s)</li>
             </>
           )}
-          */}
+          
 
           {getoldpointtcommentlife ? (
             <>
@@ -155,6 +158,7 @@ export default function PartnerFooter() {
               <li>Commentaires : 0 point(s)</li>
             </>
           )}
+          */}
 
           {/*
           {getoldpointte10klife ? (
@@ -206,7 +210,7 @@ export default function PartnerFooter() {
               <li>M10k : 0 point(s)</li>
             </>
           )}
-          */}
+         
 
           {getoldpointtmessagelife ? (
             <>
@@ -217,6 +221,7 @@ export default function PartnerFooter() {
               <li>Messages : 0 point(s)</li>
             </>
           )}
+           */}
 
           {/*
           {getoldpointtmwilife ? (
@@ -227,7 +232,7 @@ export default function PartnerFooter() {
             <>
               <li>MWI : 0 point(s)</li>
             </>
-          )} */}
+          )} 
 
           {getoldpointtpublicationlife ? (
             <>
@@ -238,6 +243,7 @@ export default function PartnerFooter() {
               <li>Publications : 0 point(s)</li>
             </>
           )}
+          */}
 
           {/*
           {getoldpointtpwilife ? (

@@ -10,8 +10,6 @@ import Influencer from "./components/Home/E.Influencer";
 import NoInfluencer from "./components/Home/F.NoInfluencer";
 import HomeBonus from "./components/Home/AfterMore/Bonus/HomeBonus";
 import HomeOmisify from "./components/Home Omisify/Home";
-import NavbarBottomOmisify from "./components/Home Omisify/NavbarBottomOmisify";
-import NavbarTopOmisify from "./components/Home Omisify/NavbarTopOmisify";
 import SettingsNewOmisify from "./components/Settings/Settings";
 import PageGenerationConnected from "./components/Generation Connected/PageGenerationConnected";
 
@@ -489,13 +487,7 @@ export default function App() {
           element={<PageGenerationConnected />}
         />
         <Route path="/partie-a" element={<PartieA />} />
-        <Route path="/navbar-top-omisify" element={<NavbarTopOmisify />} />
 
-        <Route
-          path="/navbar-bottom-omisify"
-          element={<NavbarBottomOmisify />}
-        />
-        <Route path="/home-omisify" element={<HomeOmisify />} />
         <Route path="/influential-omisify-partner" element={<Influencer />} />
         <Route path="/omisify-partner" element={<NoInfluencer />} />
         <Route path="/home-bonus" element={<HomeBonus />} />

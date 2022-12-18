@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import PopupMaintenance from "../Home Omisify/Maintenance/PopupMaintenance";
+import NavbarBottomPartner from "../Home Omisify/NavbarBottomOmisify";
 import PartnerFooter from "./PartnerFooter";
 
 export default function PartnerHeader() {
@@ -125,6 +126,8 @@ export default function PartnerHeader() {
           </div>
         </div>
       </div>
+
+      <NavbarBottomPartner />
 
       {popupMaintenance && (
         <div onClick={Maintenance}>

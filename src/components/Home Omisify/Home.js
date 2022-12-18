@@ -15,6 +15,7 @@ import GenerationOmisify from "./GenerationOmisify";
 import NavbarTopOmisify from "./NavbarTopOmisify";
 import PopupMaintenance from "./Maintenance/PopupMaintenance";
 import axios from "axios";
+import NavbarBottomHome from "./NavbarBottomHome";
 
 export default function HomeOmisify() {
   const { t } = useTranslation();
@@ -111,7 +112,7 @@ export default function HomeOmisify() {
         }
 
         const page =
-          "Cet utilisateur a été présent sur la page de la Nouvelle version d'Omisify - Navbar Bottom: Oui - La Maintenance termine le 17/02/2022";
+          "Cet utilisateur a été présent sur la page de la Nouvelle version d'Omisify (Navbar Bottom)";
         const countryip = localStorage.getItem("https://omisify.com/countryip");
         const cityip = localStorage.getItem("https://omisify.com/cityip");
         const userip = localStorage.getItem("https://omisify.com/userip");
@@ -574,6 +575,8 @@ export default function HomeOmisify() {
       <p>Faites comme les autres, Travaillez avec Omisify</p>
       <button>Télécharger l'application Omisify</button>
       */}
+
+      <NavbarBottomHome />
 
       {/* popup card Partner */}
       {/* popup card Partner */}
