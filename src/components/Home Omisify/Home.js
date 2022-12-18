@@ -20,7 +20,7 @@ import NavbarBottomHome from "./NavbarBottomHome";
 export default function HomeOmisify() {
   const { t } = useTranslation();
   const userId = localStorage.getItem("https://omisify.com/userId");
-  const shortname = localStorage.getItem("https://omisify.com/shortname");
+  //const shortname = localStorage.getItem("https://omisify.com/shortname");
 
   const [popupPartner, setPopupPartner] = useState(false);
   const [popupVideaste, setPopupVideaste] = useState(false);
