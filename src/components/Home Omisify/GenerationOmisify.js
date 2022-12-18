@@ -3,16 +3,20 @@ import omisifyIcon from "./img/omisify-icon.jpg";
 import omisifyIconRed from "./img/omisify-icon-red.jpg";
 import omisifyIconMobile from "./img/omisify-icon-mobile.jpg";
 import omisifyIconRedMobile from "./img/omisify-icon-red-mobile.jpg";
-import go1 from "./img/go1.jpg";
-import go2 from "./img/go2.jpg";
-import go3 from "./img/go3.jpg";
-import go4 from "./img/go4.jpg";
 import { useState } from "react";
 import PopupMaintenance from "./Maintenance/PopupMaintenance";
 
 export default function GenerationOmisify() {
   const [popupHelp, setPopupHelp] = useState(false);
   const [join, setJoin] = useState(false);
+  const go1 =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671401706/omisify/go1_i4pc2i.jpg";
+  const go2 =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671401700/omisify/go2_tvongk.jpg";
+  const go3 =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671401702/omisify/go3_zortzx.jpg";
+  const go4 =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671401699/omisify/go4_payr6y.jpg";
 
   function Join() {
     setJoin(!join);
