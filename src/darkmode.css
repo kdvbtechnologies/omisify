@@ -3340,7 +3340,7 @@ footer {
   bottom: 0;
   width: 100%;
   position: fixed;
-  background-color: red;
+  background-color: #e60000;
 }
 
 .navbar-bottom-omisify .display .a {
