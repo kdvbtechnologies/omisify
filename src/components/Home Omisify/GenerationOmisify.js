@@ -28,6 +28,30 @@ export default function GenerationOmisify() {
     setPopupMaintenance(!popupMaintenance);
   }
 
+  // popup image 1
+  const [popupImage1, setPopupImage1] = useState(false);
+  function PopupImage1() {
+    setPopupImage1(!popupImage1);
+  }
+
+  // popup image 2
+  const [popupImage2, setPopupImage2] = useState(false);
+  function PopupImage2() {
+    setPopupImage2(!popupImage2);
+  }
+
+  // popup image 3
+  const [popupImage3, setPopupImage3] = useState(false);
+  function PopupImage3() {
+    setPopupImage3(!popupImage3);
+  }
+
+  // popup image 4
+  const [popupImage4, setPopupImage4] = useState(false);
+  function PopupImage4() {
+    setPopupImage4(!popupImage4);
+  }
+
   return (
     <>
       <div className="generation-omisify">
@@ -363,10 +387,32 @@ export default function GenerationOmisify() {
         <div className="person-add-logo-go">
           <div className="overflow">
             <div className="images">
-              <img style={{ paddingRight: "10px" }} src={go1} alt="" />
-              <img style={{ paddingRight: "10px" }} src={go2} alt="" />
-              <img style={{ paddingRight: "10px" }} src={go3} alt="" />
-              <img src={go4} alt="" />
+              <img
+                onClick={PopupImage1}
+                style={{ paddingRight: "10px", cursor: "pointer" }}
+                src={go1}
+                alt=""
+              />
+
+              <img
+                onClick={PopupImage2}
+                style={{ paddingRight: "10px", cursor: "pointer" }}
+                src={go2}
+                alt=""
+              />
+
+              <img
+                onClick={PopupImage3}
+                style={{ paddingRight: "10px", cursor: "pointer" }}
+                src={go3}
+                alt=""
+              />
+              <img
+                onClick={PopupImage4}
+                style={{ cursor: "pointer" }}
+                src={go4}
+                alt=""
+              />
             </div>
             {/* images */}
           </div>
@@ -465,6 +511,78 @@ export default function GenerationOmisify() {
         <div onClick={Maintenance}>
           <PopupMaintenance />
         </div>
+      )}
+
+      {/* popup image 1 */}
+      {/* popup image 1 */}
+      {/* popup image 1 */}
+      {popupImage1 && (
+        <>
+          <div onClick={PopupImage1} className="popup-image-opacity">
+            <div className="align">
+              <div className="image">
+                <img src={go1} alt="" />
+              </div>
+              {/* image */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-image-opacity */}
+        </>
+      )}
+
+      {/* popup image 2 */}
+      {/* popup image 2 */}
+      {/* popup image 2 */}
+      {popupImage2 && (
+        <>
+          <div onClick={PopupImage2} className="popup-image-opacity">
+            <div className="align">
+              <div className="image">
+                <img src={go2} alt="" />
+              </div>
+              {/* image */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-image-opacity */}
+        </>
+      )}
+
+      {/* popup image 3 */}
+      {/* popup image 3 */}
+      {/* popup image 3 */}
+      {popupImage3 && (
+        <>
+          <div onClick={PopupImage3} className="popup-image-opacity">
+            <div className="align">
+              <div className="image">
+                <img src={go3} alt="" />
+              </div>
+              {/* image */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-image-opacity */}
+        </>
+      )}
+
+      {/* popup image 4 */}
+      {/* popup image 4 */}
+      {/* popup image 4 */}
+      {popupImage4 && (
+        <>
+          <div onClick={PopupImage4} className="popup-image-opacity">
+            <div className="align">
+              <div className="image">
+                <img src={go4} alt="" />
+              </div>
+              {/* image */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-image-opacity */}
+        </>
       )}
     </>
   );

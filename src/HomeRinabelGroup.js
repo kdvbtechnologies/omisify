@@ -16,8 +16,16 @@ export default function HomeRinabelGroup() {
         Group une entreprise qui crée toujours des produits gratuits pour ses
         consommateurs
       </p>
+      <p>Tarifs</p>
+      <p>Tarifs des produits</p>
       <p>Chez Rinabel Group, Tout est Gratuit !!!</p>
+      <p>Fréquence</p>
+      <p>Fréquence de travail</p>
       <p>Rinabel Group est une entreprise innovante à vision long terme</p>
+      <p>
+        Nous Chez Rinabel Group, nous travaillons 24h/24 pour créer des produits
+        qui seront de véritable addictions pour les consommateurs
+      </p>
       <p>
         Nous nous sommes engagés à créer chaque année un nouveau produits
         innovants qui changera le monde
@@ -33,8 +41,8 @@ export default function HomeRinabelGroup() {
       <p>2023</p>
       <p>Alrani</p>
       <p>
-        Alrani est une plateforme de téléchargements gratuits des histoires en
-        format PDF et des lyrics d'artiste en format PDF
+        Alrani est une plateforme de téléchargements gratuits de livres en
+        format PDF et des lyrics d'artistes en format PDF
       </p>
       <p>16 Janvier 2023</p>
       <p>Vixinol Store</p>

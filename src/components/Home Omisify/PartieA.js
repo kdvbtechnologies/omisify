@@ -18,7 +18,7 @@ export default function PartieA() {
         </div>
         {/* overflow */}
       </div>
-      {/* person-join-generation-omisify */}
+      {/* person-add-logo-go */}
     </>
   );
 }
