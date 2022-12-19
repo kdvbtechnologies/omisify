@@ -1,9 +1,5 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import go1 from "../Home Omisify/img/go1.jpg";
-import go2 from "../Home Omisify/img/go2.jpg";
-import go3 from "../Home Omisify/img/go3.jpg";
-import go4 from "../Home Omisify/img/go4.jpg";
 import PopupMaintenance from "../Home Omisify/Maintenance/PopupMaintenance";
 
 export default function PageGenerationConnected() {
@@ -12,6 +8,18 @@ export default function PageGenerationConnected() {
     setSeeMore(!seeMore);
   }
   console.log(SeeMore);
+
+  const go1 =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671401706/omisify/go1_i4pc2i.jpg";
+
+  const go2 =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671401700/omisify/go2_tvongk.jpg";
+
+  const go3 =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671401702/omisify/go3_zortzx.jpg";
+
+  const go4 =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671401699/omisify/go4_payr6y.jpg";
 
   // popup maintenance
   const [popupMaintenance, setPopupMaintenance] = useState(false);

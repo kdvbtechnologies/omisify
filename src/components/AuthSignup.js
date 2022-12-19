@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 //import LoginNav from "./Auth/LoginNav";
 import Back from "./Back/Back";
 import Login from "./Login";
@@ -78,13 +78,12 @@ export default function AuthSignup() {
       '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
   };
 
-  const navigate = useNavigate();
-
   return (
     <>
-      <div onClick={() => navigate(-1)}>
+      <NavLink to="/">
         <Back />
-      </div>
+      </NavLink>
+
       {signup ? (
         <div style={family} className="login">
           <div>
