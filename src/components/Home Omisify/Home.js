@@ -10,7 +10,6 @@ import FilePopupImageInfluent from "./PopupImageInfluent";
 import FilePopupComment from "./PopupComment";
 import { useTranslation } from "react-i18next";
 import Back from "../Back/Back";
-import homeinfluencer from "./img/home-influencer.jpg";
 import GenerationOmisify from "./GenerationOmisify";
 import NavbarTopOmisify from "./NavbarTopOmisify";
 import PopupMaintenance from "./Maintenance/PopupMaintenance";
@@ -21,6 +20,8 @@ export default function HomeOmisify() {
   const { t } = useTranslation();
   const userId = localStorage.getItem("https://omisify.com/userId");
   //const shortname = localStorage.getItem("https://omisify.com/shortname");
+  const homeinfluencer =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671410641/omisify/home-influencer_h9degr.jpg";
 
   const [popupPartner, setPopupPartner] = useState(false);
   const [popupVideaste, setPopupVideaste] = useState(false);
