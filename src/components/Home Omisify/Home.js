@@ -1,5 +1,4 @@
 import { useState } from "react";
-import influentgroup from "./img/influent-group.jpg";
 import { NavLink } from "react-router-dom";
 import BackbtnTwo from "../Back/BackbtnTwo";
 import FilePopupImagePartner from "./PopupImagePartner";
@@ -26,6 +25,9 @@ export default function HomeOmisify() {
 
   const videaste =
     "https://res.cloudinary.com/rasivyy/image/upload/v1671415297/omisify/videaste_az2frv.jpg";
+
+  const influentgroup =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671416353/omisify/influent-group_ptvler.jpg";
 
   const [popupPartner, setPopupPartner] = useState(false);
   const [popupVideaste, setPopupVideaste] = useState(false);

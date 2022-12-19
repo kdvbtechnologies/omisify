@@ -1,10 +1,14 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import omisifylogo from "./img/omisify-logo.png";
-import omisifylogomobile from "./img/omisify-logo-mobile.png";
 import PopupMaintenance from "./Maintenance/PopupMaintenance";
 
 export default function NavbarTopOmisify() {
+  const omisifylogo =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671417219/omisify/omisify-logo_tfef9j.png";
+
+  const omisifylogomobile =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671417219/omisify/omisify-logo-mobile_wtjrun.png";
+
   // Activity
   const [popupActivity, setPopupActivity] = useState(false);
   function PopupActivity() {

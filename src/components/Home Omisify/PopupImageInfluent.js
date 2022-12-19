@@ -1,11 +1,12 @@
-import influent from "./img/influent-group.jpg";
-
 export default function PopupImageInfluent() {
+  const influentgroup =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671416353/omisify/influent-group_ptvler.jpg";
+
   return (
     <>
       <div className="popup-image-background-home-omisify">
         <div className="card">
-          <img src={influent} alt="imagee" />
+          <img src={influentgroup} alt="imagee" />
         </div>
       </div>
     </>
