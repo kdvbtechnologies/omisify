@@ -1124,7 +1124,7 @@ footer {
 }
 
 .profil-desc {
-  padding: 40px 30px ;
+  padding: 40px 30px;
 }
 
 .profil-desc .partner-name {
@@ -13212,6 +13212,10 @@ footer {
   } 
 
   /* omisify */
+  .profil-desc {
+    padding: 40px 5px;
+  }
+
   .popup-image-opacity .image img {
     width: 200px;
   }

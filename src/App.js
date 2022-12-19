@@ -445,6 +445,7 @@ import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
 import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
 import PartieA from "./components/Home Omisify/PartieA";
+import PartnerHeader from "./components/Partenaire Omisify/PartnerHeader";
 
 export default function App() {
   return (
@@ -456,6 +457,7 @@ export default function App() {
         <Route path="/after-access-code" element={<AfterAccessCode />} />
         <Route path="/secure-access-code" element={<SecureAccessCode />} />
 
+        <Route path="/partner-delete" element={<PartnerHeader />} />
         <Route path="/test" element={<Test />} />
         <Route path="/incomplete" element={<Incomplete />} />
         <Route path="/complete" element={<Complete />} />
