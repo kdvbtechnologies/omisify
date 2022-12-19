@@ -1,7 +1,5 @@
 import { useState } from "react";
 import influentgroup from "./img/influent-group.jpg";
-import partner from "./img/partner.jpg";
-import videaste from "./img/videaste.jpg";
 import { NavLink } from "react-router-dom";
 import BackbtnTwo from "../Back/BackbtnTwo";
 import FilePopupImagePartner from "./PopupImagePartner";
@@ -22,6 +20,12 @@ export default function HomeOmisify() {
   //const shortname = localStorage.getItem("https://omisify.com/shortname");
   const homeinfluencer =
     "https://res.cloudinary.com/rasivyy/image/upload/v1671410641/omisify/home-influencer_h9degr.jpg";
+
+  const partner =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671415292/omisify/partner_eo1nnu.jpg";
+
+  const videaste =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671415297/omisify/videaste_az2frv.jpg";
 
   const [popupPartner, setPopupPartner] = useState(false);
   const [popupVideaste, setPopupVideaste] = useState(false);
