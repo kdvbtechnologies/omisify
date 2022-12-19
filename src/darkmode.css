@@ -2742,8 +2742,8 @@ footer {
 
 .home-omisify .display {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -2759,6 +2759,9 @@ footer {
 .home-omisify .a h3 {
   color: #444;
   font-size: 19px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .home-omisify .a p {
