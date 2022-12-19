@@ -647,7 +647,7 @@ export default function HomeOmisify() {
                   Omisify
                 </p>
 
-                <NavLink className="navlink" to="/">
+                <NavLink className="navlink" to="/signup">
                   <p
                     style={{
                       color: "blue",
