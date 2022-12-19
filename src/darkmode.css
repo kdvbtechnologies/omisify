@@ -3294,14 +3294,17 @@ footer {
 
 .after-generation-omisify .display-help {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .after-generation-omisify .display-help p {
   padding-left: 5px;
   padding-right: 10px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .popupHelp-background {
