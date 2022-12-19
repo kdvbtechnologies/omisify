@@ -1,14 +1,11 @@
 import { NavLink } from "react-router-dom";
-import omisifyIcon from "./img/omisify-icon.jpg";
-import omisifyIconRed from "./img/omisify-icon-red.jpg";
-import omisifyIconMobile from "./img/omisify-icon-mobile.jpg";
-import omisifyIconRedMobile from "./img/omisify-icon-red-mobile.jpg";
 import { useState } from "react";
 import PopupMaintenance from "./Maintenance/PopupMaintenance";
 
 export default function GenerationOmisify() {
   const [popupHelp, setPopupHelp] = useState(false);
   const [join, setJoin] = useState(false);
+
   const go1 =
     "https://res.cloudinary.com/rasivyy/image/upload/v1671401706/omisify/go1_i4pc2i.jpg";
 
@@ -20,6 +17,18 @@ export default function GenerationOmisify() {
 
   const go4 =
     "https://res.cloudinary.com/rasivyy/image/upload/v1671401699/omisify/go4_payr6y.jpg";
+
+  const omisifyIconRedMobile =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671413022/omisify/omisify-icon-red-mobile_cgvjvk.jpg";
+
+  const omisifyIconMobile =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671413467/omisify/omisify-icon-mobile_nrt9vn.jpg";
+
+  const omisifyIcon =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671414255/omisify/omisify-icon_mzbgrk.jpg";
+
+  const omisifyIconRed =
+    "https://res.cloudinary.com/rasivyy/image/upload/v1671414256/omisify/omisify-icon-red_knzvzm.jpg";
 
   function Join() {
     setJoin(!join);
