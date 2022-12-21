@@ -3043,6 +3043,11 @@ footer {
   padding-bottom: 20px;
 }
 
+.page-partner-popup-to-right-opacity .card .display p {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .page-partner-popup-to-right-opacity .card .display svg {
   padding-right: 7px;
 }
