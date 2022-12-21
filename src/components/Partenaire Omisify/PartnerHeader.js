@@ -240,9 +240,7 @@ export default function PartnerHeader() {
                       <p style={{ color: "black", paddingRight: "10px" }}>
                         Gains :
                       </p>
-                      <p style={{ display: "flex", flexWrap: "nowrap" }}>
-                        {getoldgaintlife} €
-                      </p>
+                      <p>{getoldgaintlife} €</p>
                     </div>
                     {/* display */}
                   </>

@@ -3028,7 +3028,7 @@ footer {
 
 .page-partner-popup-to-right-opacity .card {
   background-color: #fff;
-  width: 150px;
+  width: auto;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
