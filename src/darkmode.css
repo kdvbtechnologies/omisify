@@ -3039,13 +3039,7 @@ footer {
 .page-partner-popup-to-right-opacity .card .display {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
   padding-bottom: 20px;
-}
-
-.page-partner-popup-to-right-opacity .card .display p {
-  display: flex;
-  flex-wrap: nowrap;
 }
 
 .page-partner-popup-to-right-opacity .card .display svg {
