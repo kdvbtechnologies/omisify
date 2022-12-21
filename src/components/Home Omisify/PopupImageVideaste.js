@@ -6,7 +6,7 @@ export default function PopupImageVideaste() {
     <>
       <div className="popup-image-background-home-omisify">
         <div className="card">
-          <img src={videaste} alt="imagee" />
+          <img src={videaste} alt="" />
         </div>
       </div>
     </>

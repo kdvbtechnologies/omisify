@@ -3,9 +3,9 @@ import { NavLink, useNavigate } from "react-router-dom";
 import ProfilAppPopupToRight from "../HomeUser/ProfilApp/ProfilAppPopupToRight";
 
 export default function BackAndSearch() {
-  const [popup, setPopup] = useState(false);
   const navigate = useNavigate();
 
+  const [popup, setPopup] = useState(false);
   function PopupToRight() {
     setPopup(!popup);
   }

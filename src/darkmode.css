@@ -1123,6 +1123,14 @@ footer {
   border-radius: 10px;
 }
 
+.page-partner-omisify-popup-to-right svg {
+  float: right;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .profil-desc {
   padding: 40px 30px;
 }
@@ -2996,6 +3004,49 @@ footer {
 .popup-menu-icon-opacity .align .card p {
   font-size: 17px;
 }
+
+/* partenaire omisify - page-partner-popup-to-right.js */
+/* partenaire omisify - page-partner-popup-to-right.js */
+/* partenaire omisify - page-partner-popup-to-right.js */
+.page-partner-popup-to-right-opacity {
+  background-color: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.page-partner-popup-to-right-opacity .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.page-partner-popup-to-right-opacity .card {
+  background-color: #fff;
+  width: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.page-partner-popup-to-right-opacity .card .display {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.page-partner-popup-to-right-opacity .card .display svg {
+  padding-right: 7px;
+}
+
 
 
 /* home omisify - popup card.js */
@@ -9936,9 +9987,6 @@ footer {
       width: 60px
     }
 }
-
-
-
 
 /* 740px */
 @media screen and (max-width: 740px) {

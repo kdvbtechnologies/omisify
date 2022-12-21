@@ -390,7 +390,7 @@ export default function HomeOmisify() {
           {/* partner */}
           {/* partner */}
           <div className="a">
-            <img src={partner} alt="imagee" />
+            <img src={partner} alt="" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0"
@@ -438,7 +438,7 @@ export default function HomeOmisify() {
           {/* videaste */}
           {/* videaste */}
           <div className="a">
-            <img src={videaste} alt="imagee" />
+            <img src={videaste} alt="" />
             <svg
               width="20px"
               xmlns="http://www.w3.org/2000/svg"
@@ -482,7 +482,7 @@ export default function HomeOmisify() {
           {/* influent */}
           {/* influent */}
           <div className="a">
-            <img src={influentgroup} alt="imagee" />
+            <img src={influentgroup} alt="" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20px"

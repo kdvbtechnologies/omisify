@@ -6,7 +6,7 @@ export default function PopupImageInfluent() {
     <>
       <div className="popup-image-background-home-omisify">
         <div className="card">
-          <img src={influentgroup} alt="imagee" />
+          <img src={influentgroup} alt="" />
         </div>
       </div>
     </>

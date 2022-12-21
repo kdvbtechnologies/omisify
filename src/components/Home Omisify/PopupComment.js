@@ -5,7 +5,7 @@ export default function PopupComment() {
     <>
       <div className="popup-comment-background">
         <div className="card">
-          <img src={comment} alt="comment" />
+          <img src={comment} alt="" />
           <h3>
             Gagnez de l'argent en faisant de la publicité pour des entreprises
             en commentaire

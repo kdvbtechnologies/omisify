@@ -385,7 +385,7 @@ export default function UpdateSuccess() {
               <div className="a">
                 <p>Le téléchargement de la dernière mise à jour à réussi</p>
                 <NavLink to="/partner">
-                  <button>Retourner sur la page d'accueil</button>
+                  <button>Terminer</button>
                 </NavLink>
               </div>
             )}

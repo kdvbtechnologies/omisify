@@ -91,9 +91,6 @@ export default function PartnerFooter() {
     "https://omisify.com/pointtlife"
   );
 
-  // gain total
-  const getoldgaintlife = localStorage.getItem("https://omisify.com/gaintlife");
-
   /* {aa ? (<></>) : (<></>)} */
 
   const [popupMaintenance, setPopupMaintenance] = useState(false);
@@ -267,6 +264,7 @@ export default function PartnerFooter() {
           )}
           */}
 
+          {/*
           {getoldpointtlife ? (
             <>
               <li>Total des Points : {getoldpointtlife} point(s)</li>
@@ -282,6 +280,7 @@ export default function PartnerFooter() {
               <li>Valeur des points : {getoldgaintlife}€</li>
             </>
           )}
+          */}
         </div>
 
         <p align="center" onClick={Maintenance}>
@@ -289,13 +288,13 @@ export default function PartnerFooter() {
         </p>
 
         <div className="partner-money">
-          {getoldgaintlife ? (
+          {getoldpointtlife ? (
             <>
-              <p>Gains : {getoldgaintlife}€</p>
+              <p>Points : {getoldpointtlife}</p>
             </>
           ) : (
             <>
-              <p>Gains : 0€</p>
+              <p>Points : 0</p>
             </>
           )}
         </div>

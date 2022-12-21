@@ -50,7 +50,7 @@ export default function ProfilApp() {
       <BackAndSearch />
       <div className="display-image-and-name-of-app">
         <div className="image-profil-app">
-          <img src={imageProfilApp} alt="imagee Profil App" />
+          <img src={imageProfilApp} alt="" />
         </div>
 
         <div className="name-of-app">
