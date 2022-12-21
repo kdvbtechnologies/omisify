@@ -3032,7 +3032,6 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
@@ -3040,6 +3039,7 @@ footer {
 .page-partner-popup-to-right-opacity .card .display {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   padding-bottom: 20px;
 }
 
