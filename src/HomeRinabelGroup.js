@@ -5,8 +5,8 @@ export default function HomeRinabelGroup() {
       <p>icon traduction</p>
       <p>PRODUITS</p>
       <p>INVESTIR</p>
+      <p>DEVISE & LOGO</p>
       <p>CONTACT</p>
-      <p>LOGO</p>
 
       <p></p>
       <p>
@@ -83,6 +83,11 @@ export default function HomeRinabelGroup() {
         Rinabel Group
       </p>
       <button>Investir dans Rinabel Group</button>
+
+      <p>DEVISE & LOGO</p>
+      <p>DEVISE</p>
+      <p>La Dévise de Rinabel Group est :</p>
+      <p>Discipline - Travail - Reussite</p>
 
       <p>LOGO</p>
       <p>Explications des couleurs presentent sur le logo de Rinabel Group</p>

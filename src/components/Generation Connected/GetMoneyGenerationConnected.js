@@ -6,6 +6,10 @@ export default function GetMoneyGenerationConnected() {
     setListOfDays(!listOfDays);
   }
 
+  function GetMoney() {
+    window.location = "/get-money-success";
+  }
+
   return (
     <>
       <div className="get-money-generation-connected">
@@ -88,7 +92,7 @@ export default function GetMoneyGenerationConnected() {
                 {/* last-day */}
 
                 <div className="present-day">
-                  <p>30/12/2022</p>
+                  <p onClick={GetMoney}>30/12/2022</p>
                 </div>
                 {/* present-day */}
 

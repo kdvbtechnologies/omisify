@@ -2308,8 +2308,6 @@ footer {
   font-size: 14px;
 }
 
-
-
 /* update point - validate comment success */
 /* update point - validate comment success */
 /* update point - validate comment success */
@@ -3265,8 +3263,7 @@ footer {
 .popup-list-of-days-get-money-generation-connected-opacity .align .card {
   background-color: white;
   padding: 20px 30px;
-  border-radius: 5px;
-  
+  border-radius: 5px;  
 }
 
 .popup-list-of-days-get-money-generation-connected-opacity .align .card .last-day p {
@@ -3284,6 +3281,7 @@ footer {
   margin: 10px 0px;
   background-color: #00cc00;
   color: white;
+  cursor: pointer;
 }
 
 .popup-list-of-days-get-money-generation-connected-opacity .align .card .futur-day p {
@@ -3293,6 +3291,90 @@ footer {
   background-color: transparent;
   color: black;
 }
+
+
+/* generation connected - get money success */
+/* generation connected - get money success */
+/* generation connected - get money success */
+.icon-get-money-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.get-money-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.get-money-success .title {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.get-money-success button {
+  cursor: pointer;
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: blue;
+  border: none;
+  font-size: 15px;
+  padding: 7px 20px;
+  margin: 50px 0px;
+  border-radius: 20px;
+}
+
+.get-money-success button:hover {
+  background-color: #9999ff;
+}
+
+/* historic - historic.js */
+/* historic - historic.js */
+/* historic - historic.js */
+.historic .title {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  margin-top: 10px;
+}
+
+.historic .title p {
+  font-size: 20px;
+  color: red;
+}
+
+.historic .title svg {
+  padding-right: 30px;
+  fill: #a6a6a6;
+}
+
+.historic .a {
+  padding: 0px 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.historic .a p {
+  font-size: 15px;
+}
+
+.historic .navlink {
+  text-decoration: none;
+}
+
+
+.historic .hr {
+  padding: 10px 0px;
+}
+
+.historic .hr hr {
+  border: 1px solid #eee;
+}
+
 
 /* home omisify - popup card.js */
 /* home omisify - popup card.js */

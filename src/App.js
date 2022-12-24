@@ -449,6 +449,8 @@ import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
 import PartieA from "./components/Home Omisify/PartieA";
 import GetMoneyGenerationConnected from "./components/Generation Connected/GetMoneyGenerationConnected";
+import GetMoneySuccess from "./components/Generation Connected/GetMoneySuccess";
+import Historic from "./components/Historic/Historic";
 
 export default function App() {
   return (
@@ -494,6 +496,8 @@ export default function App() {
         />
 
         <Route path="/list-of-contacts" element={<ListOfContacts />} />
+        <Route path="/get-money-success" element={<GetMoneySuccess />} />
+        <Route path="/historic" element={<Historic />} />
         <Route
           path="/get-money-generation-connected"
           element={<GetMoneyGenerationConnected />}
