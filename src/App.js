@@ -12,6 +12,9 @@ import HomeBonus from "./components/Home/AfterMore/Bonus/HomeBonus";
 import HomeOmisify from "./components/Home Omisify/Home";
 import SettingsNewOmisify from "./components/Settings/Settings";
 import PageGenerationConnected from "./components/Generation Connected/PageGenerationConnected";
+import PartnerHeader from "./components/Partenaire Omisify/PartnerHeader";
+import ListOfContacts from "./components/Generation Connected/ListOfContacts";
+import AboutListOfContacts from "./components/Generation Connected/AboutListOfContacts";
 
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
@@ -445,7 +448,7 @@ import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
 import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
 import PartieA from "./components/Home Omisify/PartieA";
-import PartnerHeader from "./components/Partenaire Omisify/PartnerHeader";
+import GetMoneyGenerationConnected from "./components/Generation Connected/GetMoneyGenerationConnected";
 
 export default function App() {
   return (
@@ -483,12 +486,23 @@ export default function App() {
         {/* new Omisify */}
         {/* new Omisify */}
         {/* new Omisify */}
+        <Route path="/partie-a" element={<PartieA />} />
         <Route path="/settings-new-omisify" element={<SettingsNewOmisify />} />
+        <Route
+          path="/about-list-of-contacts"
+          element={<AboutListOfContacts />}
+        />
+
+        <Route path="/list-of-contacts" element={<ListOfContacts />} />
+        <Route
+          path="/get-money-generation-connected"
+          element={<GetMoneyGenerationConnected />}
+        />
+
         <Route
           path="/generation-connected"
           element={<PageGenerationConnected />}
         />
-        <Route path="/partie-a" element={<PartieA />} />
 
         <Route path="/influential-omisify-partner" element={<Influencer />} />
         <Route path="/omisify-partner" element={<NoInfluencer />} />

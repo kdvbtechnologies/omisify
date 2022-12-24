@@ -524,7 +524,7 @@ export default function HomeOmisify() {
         <p>La Génération Connecté c'est la Nouvelle Génération !</p>
 
         <NavLink to="/signup">
-          <button>Rejoindre la Nouvelle Génération</button>
+          <button>Rejoindre la Génération Connecté</button>
         </NavLink>
       </div>
 

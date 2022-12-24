@@ -3,14 +3,24 @@ export default function HomeRinabelGroup() {
     <>
       <p>logo</p>
       <p>icon traduction</p>
-      <p>Produits</p>
-      <p>Investir</p>
-      <p>Contact</p>
+      <p>PRODUITS</p>
+      <p>INVESTIR</p>
+      <p>CONTACT</p>
+      <p>LOGO</p>
+
+      <p></p>
+      <p>
+        Rinabel Group l'entreprise de la nouvelle génération, l'entreprise du
+        siècle présent, l'entreprise qui innove, l'entreprise qui préserve
+        l'emploi des travailleurs locaux, l'entreprise au service de toutes les
+        jeunes entreprises de la planète
+      </p>
       <p>
         Bienvenue sur le Site Officiel de Rinabel Group, l'entreprise
         technologique au coeur de Sao Paulo, Bresil
       </p>
       <p>Chez Rinabel Group, Tout est Gratuit !</p>
+      <p>Avec Rinabel de l'Eternel, Tout est Gratuit !!!</p>
       <p>
         Brillant de Jesus Christ fondateur de Rinabel Group veut de Rinabel
         Group une entreprise qui crée toujours des produits gratuits pour ses
@@ -41,8 +51,8 @@ export default function HomeRinabelGroup() {
       <p>2023</p>
       <p>Alrani</p>
       <p>
-        Alrani est une plateforme de téléchargements gratuits de livres en
-        format PDF et des lyrics d'artistes en format PDF
+        Alrani est une plateforme gratuite de téléchargements de livre
+        d'entrepreunariat et d'investissement
       </p>
       <p>16 Janvier 2023</p>
       <p>Vixinol Store</p>
@@ -65,13 +75,25 @@ export default function HomeRinabelGroup() {
       <p>
         Nous devons servir au mieux nos consommateurs tout en minimisant nos
         dépenses au maximum et en générant beaucoup d'argent pour nos
-        investisseurs{" "}
+        investisseurs avec des employés heureux, très compétent et bien
+        rémunérer
       </p>
       <p>
         Rejoignez toutes ces entreprises et personnes qui veulent investir dans
         Rinabel Group
       </p>
       <button>Investir dans Rinabel Group</button>
+
+      <p>LOGO</p>
+      <p>Explications des couleurs presentent sur le logo de Rinabel Group</p>
+      <p>
+        De gauche à droite, les couleurs rouge, jaune, vert represente les
+        couleurs du drapeau Camerounais
+      </p>
+      <p>
+        De droite à gauche, les couleurs vert, jaune, rouge representent les
+        couleurs du drapeau Congolais
+      </p>
     </>
   );
 }
