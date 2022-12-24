@@ -72,7 +72,10 @@ export default function GetMoneyGenerationConnected() {
 
       {listOfDays && (
         <>
-          <div className="popup-list-of-days-get-money-generation-connected-opacity">
+          <div
+            onClick={ListOfDays}
+            className="popup-list-of-days-get-money-generation-connected-opacity"
+          >
             <div className="align">
               <div className="card">
                 <div className="last-day">
