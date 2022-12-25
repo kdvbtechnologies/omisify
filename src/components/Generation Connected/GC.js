@@ -25,6 +25,7 @@ export default function GC() {
       data: {
         nbreDePointsListesDeContact,
         nbreDePersonnesListesDeContact,
+        yourWhatsappNumber,
       },
     })
       .then((res) => console.log(res))

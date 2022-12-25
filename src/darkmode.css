@@ -3105,6 +3105,92 @@ footer {
   padding: 15px;
 }
 
+.add-a-whatsapp-contact-opacity {
+  background-color: #00000050;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.add-a-whatsapp-contact-opacity .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.add-a-whatsapp-contact-opacity .align .close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-a-whatsapp-contact-opacity .align .close svg {
+  fill: white;
+}
+
+.add-a-whatsapp-contact-opacity .align .card {
+  height: auto;
+  width: 250px;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.add-a-whatsapp-contact-opacity .align .card p {
+  padding-top: 20px;
+  padding-bottom: 7px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.add-a-whatsapp-contact-opacity .align .card input[type="number"] {
+  padding: 4px 20px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  border: 1px solid #666666;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.add-a-whatsapp-contact-opacity .align .card input[type="text"] {
+  padding: 4px 20px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.add-a-whatsapp-contact-opacity .align .card #genre {
+  border: 1px solid black;
+  padding: 4px 73px;
+}
+
+.add-a-whatsapp-contact-opacity button {
+  padding: 8px 20px;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+}
+
+.add-a-whatsapp-contact-opacity button:hover {
+  background-color: #ff6f79;
+  color: white;
+}
+
+
 /* generation connected - about list of contacts.js */
 /* generation connected - about list of contacts.js */
 /* generation connected - about list of contacts.js */
@@ -3476,9 +3562,6 @@ footer {
   cursor: pointer;
 }
 
-/* generation connected - before list of contact.js */
-/* generation connected - before list of contact.js */
-/* generation connected - before list of contact.js */
 .popup-before-list-of-contact-opacity {
   background-color: #00000050;
   position: fixed;
@@ -3595,6 +3678,10 @@ footer {
   margin-top: 15px;
 }
 
+.add-your-contact-opacity button:hover {
+  background-color: #ff6f79;
+  color: white;
+}
 
 /* home omisify - popup card.js */
 /* home omisify - popup card.js */
