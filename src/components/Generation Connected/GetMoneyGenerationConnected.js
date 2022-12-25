@@ -9,9 +9,19 @@ export default function GetMoneyGenerationConnected() {
 
   const oldPoint = "1000";
   const getnumberEnter = "100";
+
+  const nbreDePersonnes = "1000000";
+  const nbreDeJours = "30";
+  const nbreDePlateforme = "4";
+
   const userId = localStorage.getItem("https://omisify.com/userId");
   const [numberEnter, setNumberEnter] = useState(getnumberEnter);
   const calculGCRemuneration = parseInt(numberEnter) + parseFloat(oldPoint);
+  const calculGainTotalLife =
+    0.0025 *
+    parseFloat(nbreDePersonnes) *
+    parseFloat(nbreDeJours) *
+    parseFloat(nbreDePlateforme);
 
   async function GetMoney(e) {
     console.log(calculGCRemuneration);
@@ -22,6 +32,7 @@ export default function GetMoneyGenerationConnected() {
       url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
       data: {
         pointtlife: calculGCRemuneration,
+        gaintlife: calculGainTotalLife,
       },
     })
       .then((res) => console.log(res))
