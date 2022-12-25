@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 
 export default function GetMoneyGenerationConnected() {
@@ -8,11 +9,23 @@ export default function GetMoneyGenerationConnected() {
 
   const oldPoint = "1000";
   const getnumberEnter = "100";
+  const userId = localStorage.getItem("https://omisify.com/userId");
   const [numberEnter, setNumberEnter] = useState(getnumberEnter);
   const calculGCRemuneration = parseInt(numberEnter) + parseFloat(oldPoint);
 
-  function GetMoney() {
+  async function GetMoney(e) {
     console.log(calculGCRemuneration);
+    e.preventDefault();
+
+    await axios({
+      method: "put",
+      url: `${process.env.REACT_APP_OMISIFY_API}/api/user/updatecomment/${userId}`,
+      data: {
+        pointtlife: calculGCRemuneration,
+      },
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
     //window.location = "/get-money-success";
   }
 
