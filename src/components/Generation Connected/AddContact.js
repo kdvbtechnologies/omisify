@@ -1,4 +1,7 @@
 export default function AddContact() {
+  //const nbreDePointsListesDeContact = "10";
+  //const nbreDePersonnesListesDeContact = "1000000";
+
   return (
     <>
       <div className="add-contact">

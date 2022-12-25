@@ -8,9 +8,10 @@ export default function GetMoneyGenerationConnected() {
   }
 
   const ancienNbreDePoints = "1000";
-  const nbreDePointsListesDeContact = "10";
 
+  const nbreDePointsListesDeContact = "10";
   const nbreDePersonnesListesDeContact = "1000000";
+
   const nbreDePlateforme = "4";
   const nbreDeJours = "30";
 
