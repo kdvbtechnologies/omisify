@@ -7,19 +7,19 @@ export default function GetMoneyGenerationConnected() {
     setListOfDays(!listOfDays);
   }
 
-  const oldPoint = "1000";
-  const getnumberEnter = "100";
+  const ancienNbreDePoints = "1000";
+  const nbreDePointsListesDeContact = "10";
 
-  const nbreDePersonnes = "1000000";
-  const nbreDeJours = "30";
+  const nbreDePersonnesListesDeContact = "1000000";
   const nbreDePlateforme = "4";
+  const nbreDeJours = "30";
 
   const userId = localStorage.getItem("https://omisify.com/userId");
-  const [numberEnter, setNumberEnter] = useState(getnumberEnter);
-  const calculGCRemuneration = parseInt(numberEnter) + parseFloat(oldPoint);
+  const calculGCRemuneration =
+    parseInt(nbreDePointsListesDeContact) + parseFloat(ancienNbreDePoints);
   const calculGainTotalLife =
     0.0025 *
-    parseFloat(nbreDePersonnes) *
+    parseFloat(nbreDePersonnesListesDeContact) *
     parseFloat(nbreDeJours) *
     parseFloat(nbreDePlateforme);
 
@@ -122,14 +122,7 @@ export default function GetMoneyGenerationConnected() {
                 {/* last-day */}
 
                 <div className="present-day">
-                  <p
-                    onClick={GetMoney}
-                    value={numberEnter}
-                    onChange={(e) => setNumberEnter(e.target.value)}
-                    name="numberEnter"
-                  >
-                    30/12/2022
-                  </p>
+                  <p onClick={GetMoney}>30/12/2022</p>
                 </div>
                 {/* present-day */}
 
