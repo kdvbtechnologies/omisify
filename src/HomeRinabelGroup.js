@@ -75,8 +75,7 @@ export default function HomeRinabelGroup() {
       <p>
         Nous devons servir au mieux nos consommateurs tout en minimisant nos
         dépenses au maximum et en générant beaucoup d'argent pour nos
-        investisseurs avec des employés heureux, très compétent et bien
-        rémunérer
+        investisseurs avec des employés heureux, talentueux et bien rémunérer
       </p>
       <p>
         Rejoignez toutes ces entreprises et personnes qui veulent investir dans

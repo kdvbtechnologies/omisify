@@ -15,6 +15,9 @@ import PageGenerationConnected from "./components/Generation Connected/PageGener
 import PartnerHeader from "./components/Partenaire Omisify/PartnerHeader";
 import ListOfContacts from "./components/Generation Connected/ListOfContacts";
 import AboutListOfContacts from "./components/Generation Connected/AboutListOfContacts";
+import GetMoneyGenerationConnected from "./components/Generation Connected/GetMoneyGenerationConnected";
+import GetMoneySuccess from "./components/Generation Connected/GetMoneySuccess";
+import Historic from "./components/Historic/Historic";
 
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
@@ -447,10 +450,8 @@ import NewPasswordSuccessPartnerVI from "./components/0Vixinol/Partner/Auth/NewP
 import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
 import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
-import PartieA from "./components/Home Omisify/PartieA";
-import GetMoneyGenerationConnected from "./components/Generation Connected/GetMoneyGenerationConnected";
-import GetMoneySuccess from "./components/Generation Connected/GetMoneySuccess";
-import Historic from "./components/Historic/Historic";
+import PartieA from "./PartieA";
+import GC from "./components/Generation Connected/GC";
 
 export default function App() {
   return (
@@ -499,6 +500,7 @@ export default function App() {
         <Route path="/get-money-success" element={<GetMoneySuccess />} />
         <Route path="/historic" element={<Historic />} />
         <Route path="/get-money-gc" element={<GetMoneyGenerationConnected />} />
+        <Route path="/gc" element={<GC />} />
 
         <Route
           path="/generation-connected"
