@@ -6,8 +6,14 @@ export default function GetMoneyGenerationConnected() {
     setListOfDays(!listOfDays);
   }
 
+  const oldPoint = "1000";
+  const getnumberEnter = "100";
+  const [numberEnter, setNumberEnter] = useState(getnumberEnter);
+  const calculGCRemuneration = parseInt(numberEnter) + parseFloat(oldPoint);
+
   function GetMoney() {
-    window.location = "/get-money-success";
+    console.log(calculGCRemuneration);
+    //window.location = "/get-money-success";
   }
 
   return (
@@ -92,7 +98,14 @@ export default function GetMoneyGenerationConnected() {
                 {/* last-day */}
 
                 <div className="present-day">
-                  <p onClick={GetMoney}>30/12/2022</p>
+                  <p
+                    onClick={GetMoney}
+                    value={numberEnter}
+                    onChange={(e) => setNumberEnter(e.target.value)}
+                    name="numberEnter"
+                  >
+                    30/12/2022
+                  </p>
                 </div>
                 {/* present-day */}
 

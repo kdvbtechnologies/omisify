@@ -128,7 +128,7 @@ export default function CalculComment() {
   */
 
   // ici on recupere le gdb qu'on avait sauvegarder dans le localstorage
-  // bonus de generosité - gdb = generosity days bonus
+  // bonus de generosité ou gdb ou generosity days bonus
   const gdb = localStorage.getItem("https://omisify.com/gdb");
   const suggestgdb = localStorage.getItem("https://omisify.com/suggestgdb");
 

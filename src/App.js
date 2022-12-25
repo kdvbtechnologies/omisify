@@ -498,10 +498,7 @@ export default function App() {
         <Route path="/list-of-contacts" element={<ListOfContacts />} />
         <Route path="/get-money-success" element={<GetMoneySuccess />} />
         <Route path="/historic" element={<Historic />} />
-        <Route
-          path="/get-money-generation-connected"
-          element={<GetMoneyGenerationConnected />}
-        />
+        <Route path="/get-money-gc" element={<GetMoneyGenerationConnected />} />
 
         <Route
           path="/generation-connected"

@@ -3348,8 +3348,15 @@ footer {
 }
 
 .historic .title svg {
-  padding-right: 30px;
+  padding-right: 40px;
   fill: #a6a6a6;
+}
+
+.historic .new {
+  padding: 10px 10px;
+  cursor: pointer;
+  background-color: #00cc00;
+  color: white;
 }
 
 .historic .a {
@@ -3375,12 +3382,52 @@ footer {
   border: 1px solid #eee;
 }
 
+.popup-historic-opacity {
+  background-color: #00000050;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.popup-historic-opacity .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.popup-historic-opacity .align .card {
+  width: 300px;
+  margin: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.popup-historic-opacity .align .card p {
+  font-size: 17px;
+}
+
+.popup-historic-opacity .align .card .a p {
+  padding-top: 10px;
+  text-decoration: overline dotted;
+  font-size: 15px;
+}
+
+.popup-historic-opacity .align .card .b p {
+  color: blue;
+  font-size: 14px;
+  padding-top: 10px;
+}
 
 /* home omisify - popup card.js */
 /* home omisify - popup card.js */
 /* home omisify - popup card.js */
 .popup-card-background {
-  cursor: pointer;
   background-color: #00000050;
   position: fixed;
   width: 100%;
@@ -11811,6 +11858,10 @@ footer {
 /* 370px */
 @media screen and (max-width: 370px) {
   /* omisify */
+  .popup-historic-opacity .align .card {
+    width: 270px;
+  }
+
   .title-settings {
     display: none;
    }
@@ -12174,6 +12225,10 @@ footer {
 /* 330px */
 @media screen and (max-width: 330px) {
     /* omisify */
+    .popup-historic-opacity .align .card {
+      width: 240px;
+    }
+
     .popup-image-opacity .image img {
       width: 300px;
     }
@@ -12682,6 +12737,10 @@ footer {
 
   /* omisify */
   /* omisify */
+  .popup-historic-opacity .align .card {
+    width: 220px;
+  }
+  
   .about-list-of-contacts .cover img {
     width: 260px;
     margin-top: 30px;
@@ -12859,6 +12918,10 @@ footer {
   }
 
   /* omisify */
+  .popup-historic-opacity .align .card {
+    width: 200px;
+  }
+
   .about-list-of-contacts .cover img {
     width: 240px;
     margin-top: 30px;
@@ -13247,6 +13310,10 @@ footer {
   }
 
   /* omisify */
+  .popup-historic-opacity .align .card {
+    width: 180px;
+  }
+  
   .about-list-of-contacts .cover img {
     width: 220px;
     margin-top: 30px;
@@ -13674,6 +13741,10 @@ footer {
 @media screen and (max-width: 240px) {
   /* omisify */
   /* omisify */
+  .popup-historic-opacity .align .card {
+    width: 160px;
+  }
+
   .about-list-of-contacts .cover img {
     width: 200px;
     margin-top: 30px;
@@ -14164,6 +14235,10 @@ footer {
 
 /* omisify */
 /* omisify */
+.popup-historic-opacity .align .card {
+  width: 140px;
+}
+
 .about-list-of-contacts .cover img {
   width: 190px;
   margin-top: 30px;
