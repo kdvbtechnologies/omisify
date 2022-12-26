@@ -214,9 +214,7 @@ export default function ListOfContacts() {
                   name="country"
                   id="country"
                 >
-                  <option value="Guinée Equatoriale">
-                    Guinée Equatoriale Equatoriale
-                  </option>
+                  <option value="Guinée Equatoriale">Guinée Equatoriale</option>
                   <option value="Congo">Congo</option>
                   <option value="France">France</option>
                 </select>
