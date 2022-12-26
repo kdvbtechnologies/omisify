@@ -3121,6 +3121,8 @@ footer {
   position: absolute;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  margin-top: 25px;
+  padding-bottom: 50px;
 }
 
 .add-a-whatsapp-contact-opacity .align .close {
@@ -3139,17 +3141,39 @@ footer {
   background-color: #fff;
   padding: 20px 10px;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
-.add-a-whatsapp-contact-opacity .align .card p {
-  padding-top: 20px;
-  padding-bottom: 7px;
-  font-size: 17px;
-  text-align: center;
+.add-a-whatsapp-contact-opacity .align .card .center {
+  display: flex;
+  justify-content: center;
+}
+
+.add-a-whatsapp-contact-opacity .align .card .genre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -5px;
+}
+
+.add-a-whatsapp-contact-opacity .align .card .genre p {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-a-whatsapp-contact-opacity .align .card .genre svg {
+  padding-left: 7px;
+  padding-top: 4px;
+}
+
+.add-a-whatsapp-contact-opacity .align .card .hr {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.add-a-whatsapp-contact-opacity .align .card .hr hr {
+  border: 1px solid #a6a6a6;
+  width: 210px;
 }
 
 .add-a-whatsapp-contact-opacity .align .card input[type="number"] {
@@ -3170,21 +3194,6 @@ footer {
   text-align: center;
 }
 
-.add-a-whatsapp-contact-opacity .align .card #genre {
-  border: 1px solid #666666;
-  padding: 4px 73px;
-  margin-bottom: 15px;
-  font-size: 15px;
-}
-
-.add-a-whatsapp-contact-opacity .align .card #country {
-  border: 1px solid #666666;
-  margin-bottom: 15px;
-  font-size: 15px;
-  padding: 4px 40px;
-  background: transparent;
-}
-
 .add-a-whatsapp-contact-opacity button {
   padding: 8px 20px;
   background-color: red;
@@ -3200,6 +3209,58 @@ footer {
   color: white;
 }
 
+.popup-genre-opacity {
+  background: #00000050;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.popup-genre-opacity .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.popup-genre-opacity .align .close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-genre-opacity .align .close svg {
+  fill: white;
+}
+
+.popup-genre-opacity .align .card {
+  width: 170px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.popup-genre-opacity .align .card .active {
+  background: #fcff07;
+  margin-top: 7px;
+}
+
+.popup-genre-opacity .align .card p {
+  padding: 7px 0px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.popup-genre-opacity .align .card .title li {
+  font-size: 18px;
+  color: red;
+  text-align: center;
+}
 
 /* generation connected - about list of contacts.js */
 /* generation connected - about list of contacts.js */
@@ -14750,6 +14811,10 @@ footer {
 }
 
 /* omisify */
+.popup-genre-opacity .align .card {
+  width: 155px;
+}
+
 .popup-infos-comment-opacity .card {
   width: 160px;
   padding: 15px;
