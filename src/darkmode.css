@@ -3136,7 +3136,6 @@ footer {
 }
 
 .add-a-whatsapp-contact-opacity .align .card {
-  height: auto;
   width: 250px;
   background-color: #fff;
   padding: 20px 10px;
@@ -3172,8 +3171,8 @@ footer {
 }
 
 .add-a-whatsapp-contact-opacity .align .card .hr hr {
-  border: 1px solid #a6a6a6;
   width: 210px;
+  border: 1px solid #a6a6a6;
 }
 
 .add-a-whatsapp-contact-opacity .align .card input[type="number"] {
@@ -13067,6 +13066,10 @@ footer {
 
   /* omisify */
   /* omisify */
+  .add-a-whatsapp-contact-opacity .align .card {
+    width: 230px;
+  }
+
   .add-your-contact-opacity .align .card {
     width: 230px;
   }
@@ -13256,6 +13259,22 @@ footer {
   }
 
   /* omisify */
+  .add-a-whatsapp-contact-opacity .align .card {
+    width: 210px;
+  }
+
+  .add-a-whatsapp-contact-opacity .align .card input[type="number"] {
+    padding: 4px 16px;
+  }
+
+  .add-a-whatsapp-contact-opacity .align .card input[type="text"] {
+    padding: 4px 16px;
+  }
+
+  .add-a-whatsapp-contact-opacity .align .card .hr hr {
+    width: 200px;
+  }
+
   .popup-historic-opacity .align .card {
     width: 200px;
   }
@@ -13656,6 +13675,22 @@ footer {
   }
 
   /* omisify */
+  .add-a-whatsapp-contact-opacity .align .card {
+    width: 190px;
+  }
+
+  .add-a-whatsapp-contact-opacity .align .card input[type="number"] {
+    padding: 4px 8px;
+  }
+
+  .add-a-whatsapp-contact-opacity .align .card input[type="text"] {
+    padding: 4px 8px;
+  }
+
+  .add-a-whatsapp-contact-opacity .align .card .hr hr {
+    width: 185px;
+  }
+
   .popup-historic-opacity .align .card {
     width: 180px;
   }
@@ -14099,6 +14134,22 @@ footer {
 @media screen and (max-width: 240px) {
   /* omisify */
   /* omisify */
+   .add-a-whatsapp-contact-opacity .align .card {
+    width: 180px;
+  }
+
+  .add-a-whatsapp-contact-opacity .align .card input[type="number"] {
+    padding: 4px 4px;
+  }
+
+  .add-a-whatsapp-contact-opacity .align .card input[type="text"] {
+    padding: 4px 4px;
+  }
+
+  .add-a-whatsapp-contact-opacity .align .card .hr hr {
+    width: 175px;
+  }
+
   .popup-historic-opacity .align .card {
     width: 160px;
   }
@@ -14597,6 +14648,22 @@ footer {
 
 /* omisify */
 /* omisify */
+.add-a-whatsapp-contact-opacity .align .card {
+  width: 160px;
+}
+
+.add-a-whatsapp-contact-opacity .align .card input[type="number"] {
+  padding: 4px 0px;
+}
+
+.add-a-whatsapp-contact-opacity .align .card input[type="text"] {
+  padding: 4px 0px;
+}
+
+.add-a-whatsapp-contact-opacity .align .card .hr hr {
+  width: 175px;
+}
+
 .add-your-contact-opacity .align .card {
   width: 177px;
 }
