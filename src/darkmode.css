@@ -3182,7 +3182,8 @@ footer {
   margin-bottom: 15px;
   font-size: 15px;
   padding: 4px 73px;
-  width: 213px
+  width: 213px;
+  background: transparent;
 }
 
 .add-a-whatsapp-contact-opacity button {
