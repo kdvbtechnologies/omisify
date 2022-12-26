@@ -45,6 +45,7 @@ export default function ListOfContacts() {
   }
 
   const [genre, setGenre] = useState("");
+  const [country, setCountry] = useState("");
 
   async function Save() {}
 
@@ -196,8 +197,6 @@ export default function ListOfContacts() {
                   onChange={(e) => setAddaWhatsappContact(e.target.value)}
                 />
 
-                <input type="text" placeholder="Ville" />
-
                 <select
                   value={genre}
                   onChange={(e) => setGenre(e.target.value)}
@@ -208,6 +207,21 @@ export default function ListOfContacts() {
                   <option value="Femme">Femme</option>
                   <option value="Trans">Trans</option>
                 </select>
+
+                <select
+                  value={country}
+                  onChange={(e) => setCountry(e.target.value)}
+                  name="country"
+                  id="country"
+                >
+                  <option value="Guinée Equatoriale">
+                    Guinée Equatoriale Equatoriale
+                  </option>
+                  <option value="Congo">Congo</option>
+                  <option value="France">France</option>
+                </select>
+
+                <input type="text" placeholder="Ville" />
 
                 <button onClick={Save}>Enregistrer</button>
               </div>

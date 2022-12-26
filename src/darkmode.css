@@ -3165,14 +3165,24 @@ footer {
   padding: 4px 20px;
   margin-bottom: 15px;
   font-size: 15px;
-  border: 1px solid #000;
+  border: 1px solid #666666;
   border-radius: 2px;
   text-align: center;
 }
 
 .add-a-whatsapp-contact-opacity .align .card #genre {
-  border: 1px solid black;
+  border: 1px solid #666666;
+  padding: 4px 70px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.add-a-whatsapp-contact-opacity .align .card #country {
+  border: 1px solid #666666;
+  margin-bottom: 15px;
+  font-size: 15px;
   padding: 4px 73px;
+  width: 213px
 }
 
 .add-a-whatsapp-contact-opacity button {
