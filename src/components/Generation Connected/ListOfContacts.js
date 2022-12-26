@@ -119,6 +119,12 @@ export default function ListOfContacts() {
     setGuineeE(true);
   }
 
+  // popup help
+  const [popupHelp, setPopupHelp] = useState(false);
+  function PopupHelp() {
+    setPopupHelp(!popupHelp);
+  }
+
   async function Save() {}
 
   return (
@@ -144,6 +150,7 @@ export default function ListOfContacts() {
 
           <div className="right">
             <svg
+              onClick={PopupHelp}
               style={{ paddingRight: "10px" }}
               xmlns="http://www.w3.org/2000/svg"
               width="20px"
@@ -212,7 +219,25 @@ export default function ListOfContacts() {
                   <td>{api.genre}</td>
                   <td>{api.age}</td>
                   <td>{api.country}</td>
-                  <td>{api.city}</td>
+                  <td>
+                    {api.city}
+                    <svg
+                      style={{ paddingLeft: "10px" }}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      cursor="pointer"
+                      viewBox="0 0 32 32"
+                    >
+                      <g fill="none" fillRule="evenodd">
+                        <path d="M0 0h32v32H0z"></path>
+                        <path
+                          fill="#666666"
+                          fillRule="nonzero"
+                          d="M18 2v2H4v24h24V14.022h2V30H2V2zm8.364-.61l4.243 4.243-12.601 12.6-6.697 2.386 2.535-6.71zm0 2.829l-10.8 10.8-.856 2.266 2.203-.785L27.78 5.633z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </td>
                 </tr>
               </>
             ))}
@@ -749,6 +774,96 @@ export default function ListOfContacts() {
             {/* align */}
           </div>
           {/* popup-genre-opacity */}
+        </>
+      )}
+
+      {popupHelp && (
+        <>
+          <div
+            onClick={PopupHelp}
+            className="popup-help-list-of-contacts-whatsapp-opacity"
+          >
+            <div className="align">
+              <div className="card">
+                <div className="display">
+                  <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
+                  <p style={{ fontWeight: "bold", paddingRight: "5px" }}>
+                    Liste de
+                  </p>
+                  <p style={{ fontWeight: "bold", paddingRight: "5px" }}>
+                    Contacts
+                  </p>
+                  <p style={{ fontWeight: "bold", paddingRight: "5px" }}>
+                    Whatsapp
+                  </p>
+                  <p style={{ paddingRight: "5px" }}>pour aller</p>
+                  <p style={{ paddingRight: "5px" }}>dans</p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    A Propos
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    de la
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    Liste de
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    Contacts
+                  </p>
+                  <p style={{ textDecoration: "underline" }}>Whatsapp</p>
+                </div>
+                {/* display */}
+
+                <div className="display-indice-two">
+                  <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
+                  <p style={{ paddingRight: "5px" }}>l'icone</p>
+                  <svg
+                    style={{ paddingRight: "5px" }}
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0"
+                    y="0"
+                    width="20px"
+                    enableBackground="new 0 0 489.8 489.8"
+                    version="1.1"
+                    viewBox="0 0 489.8 489.8"
+                    xmlSpace="preserve"
+                  >
+                    <path d="M438.2 0H51.6C23.1 0 0 23.2 0 51.6v386.6c0 28.5 23.2 51.6 51.6 51.6h386.6c28.5 0 51.6-23.2 51.6-51.6V51.6c0-28.4-23.2-51.6-51.6-51.6zm27.1 438.2c0 14.9-12.2 27.1-27.1 27.1H51.6c-14.9 0-27.1-12.2-27.1-27.1V51.6c0-14.9 12.2-27.1 27.1-27.1h386.6c14.9 0 27.1 12.2 27.1 27.1v386.6z"></path>
+                    <path d="M337.4 232.7h-80.3v-80.3c0-6.8-5.5-12.3-12.3-12.3s-12.3 5.5-12.3 12.3v80.3h-80.3c-6.8 0-12.3 5.5-12.3 12.2 0 6.8 5.5 12.3 12.3 12.3h80.3v80.3c0 6.8 5.5 12.3 12.3 12.3s12.3-5.5 12.3-12.3v-80.3h80.3c6.8 0 12.3-5.5 12.3-12.3 0-6.8-5.5-12.2-12.3-12.2z"></path>
+                  </svg>
+                  <p style={{ paddingRight: "5px" }}>pour</p>
+                  <p style={{ paddingRight: "5px" }}>ajouter</p>
+                  <p style={{ paddingRight: "5px" }}>un</p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    Nouveau
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    Contact
+                  </p>
+                  <p style={{ paddingRight: "5px" }}>à votre</p>
+                  <p style={{ paddingRight: "5px" }}>Liste de</p>
+                  <p style={{ paddingRight: "5px" }}>Contacts</p>
+                  <p>Whatsapp</p>
+                </div>
+                {/* display-indice-two */}
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-help-list-of-contacts-whatsapp-opacity */}
         </>
       )}
     </>

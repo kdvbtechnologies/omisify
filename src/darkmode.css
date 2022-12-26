@@ -3089,6 +3089,14 @@ footer {
   text-align: center;
 }
 
+/*
+.list-of-contacts .overflow #table .display td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+*/
+
 .list-of-contacts .overflow #table th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -3259,6 +3267,41 @@ footer {
   font-size: 18px;
   color: red;
   text-align: center;
+}
+
+.popup-help-list-of-contacts-whatsapp-opacity {
+  background: #00000050;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.popup-help-list-of-contacts-whatsapp-opacity .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.popup-help-list-of-contacts-whatsapp-opacity .align .card {
+  width: 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.popup-help-list-of-contacts-whatsapp-opacity .align .card .display {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.popup-help-list-of-contacts-whatsapp-opacity .align .card .display-indice-two {
+  display: flex;
+  align-items: center;
 }
 
 /* generation connected - about list of contacts.js */
@@ -12823,6 +12866,10 @@ footer {
 /* 310px */
 @media screen and (max-width: 310px) {
   /* omisify */
+  .popup-help-list-of-contacts-whatsapp-opacity .align .card {
+    width: 230px;
+  }
+
   .popup-image-opacity .image img {
     width: 280px;
   }
@@ -13191,6 +13238,10 @@ footer {
 /* 290px */
 @media screen and (max-width: 290px) {
 /* omisify */
+.popup-help-list-of-contacts-whatsapp-opacity .align .card {
+  width: 210px;
+}
+
 .popup-before-list-of-contact-opacity .align .card {
   width: 240px;
 }
@@ -13512,6 +13563,10 @@ footer {
 /* 270px */
 @media screen and (max-width: 270px) {
   /* omisify */
+  .popup-help-list-of-contacts-whatsapp-opacity .align .card {
+    width: 190px;
+  }
+
   .popup-before-list-of-contact-opacity .align .card {
     width: 220px;
   }
@@ -13942,6 +13997,10 @@ footer {
 
   /* omisify */
   /* omisify */
+  .popup-help-list-of-contacts-whatsapp-opacity .align .card {
+    width: 170px;
+  }
+
   .popup-before-list-of-contact-opacity .align .card {
     width: 200px;
   }
@@ -14381,6 +14440,10 @@ footer {
   } 
 
   /* omisify */
+  .popup-help-list-of-contacts-whatsapp-opacity .align .card {
+    width: 150px;
+  }
+
   .popup-before-list-of-contact-opacity .align .card {
     width: 180px;
   }
