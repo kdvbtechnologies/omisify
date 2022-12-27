@@ -3308,7 +3308,8 @@ footer {
   color: black;
   font-size: 14px;
   text-decoration: underline;
-  padding: 7px;
+  padding: 7px 20px;
+  cursor: pointer;
 }
 
 .popup-elements-en-attente-opacity {

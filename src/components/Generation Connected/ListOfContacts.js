@@ -222,7 +222,7 @@ export default function ListOfContacts() {
         {/* display */}
 
         <div className="element-en-attente-list-of-whatsapp-contacts">
-          <p onClick={PopupElementsEnAttente} style={{ cursor: "pointer" }}>
+          <p onClick={PopupElementsEnAttente}>
             Élément(s) en attente de validation
           </p>
         </div>
