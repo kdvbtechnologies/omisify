@@ -154,6 +154,11 @@ export default function HomeRinabelGroup() {
       </p>
 
       <button>Investir maintenant</button>
+
+      <p>
+        Avant de faire l'introduction de votre entreprise en bourse, effectuer
+        le paiement pour le traitement de votre dossier
+      </p>
     </>
   );
 }

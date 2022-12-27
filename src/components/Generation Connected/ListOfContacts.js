@@ -44,6 +44,14 @@ export default function ListOfContacts() {
     setPopupAddaWhatsappContact(!popupAddaWhatsappContact);
   }
 
+  const [modifierContactWhatsapp, setModifierContactWhatsapp] = useState("");
+
+  const [popupModifierContactWhatsapp, setPopupModifierContactWhatsapp] =
+    useState("");
+  function PopupModifierContactWhatsapp() {
+    setPopupModifierContactWhatsapp(!popupAddaWhatsappContact);
+  }
+
   const [popupGenre, setPopupGenre] = useState(false);
   function PopupGenre() {
     setPopupGenre(!popupGenre);
@@ -222,6 +230,7 @@ export default function ListOfContacts() {
                   <td>
                     {api.city}
                     <svg
+                      onClick={PopupModifierContactWhatsapp}
                       style={{ paddingLeft: "10px" }}
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
@@ -248,6 +257,10 @@ export default function ListOfContacts() {
       </div>
       {/* list-of-contacts */}
 
+      {/* popup add a whatsapp contact */}
+      {/* popup add a whatsapp contact */}
+      {/* popup add a whatsapp contact */}
+      {/* popup add a whatsapp contact */}
       {/* popup add a whatsapp contact */}
       {/* popup add a whatsapp contact */}
       {/* popup add a whatsapp contact */}
@@ -309,7 +322,6 @@ export default function ListOfContacts() {
 
                 {/* homme */}
                 {/* homme */}
-                {/* homme */}
                 {homme && (
                   <>
                     <div className="genre">
@@ -334,7 +346,6 @@ export default function ListOfContacts() {
 
                 {/* femme */}
                 {/* femme */}
-                {/* femme */}
                 {femme && (
                   <>
                     <div className="genre">
@@ -357,7 +368,6 @@ export default function ListOfContacts() {
                   </>
                 )}
 
-                {/* trans */}
                 {/* trans */}
                 {/* trans */}
                 {trans && (
@@ -385,14 +395,6 @@ export default function ListOfContacts() {
                   <hr />
                 </div>
 
-                {/* age */}
-                {/* age */}
-                {/* age */}
-                {/* age */}
-                {/* age */}
-                {/* age */}
-                {/* age */}
-                {/* age */}
                 {/* age */}
                 {/* age */}
                 {/* age */}
@@ -448,15 +450,6 @@ export default function ListOfContacts() {
                   <hr />
                 </div>
 
-                {/* pays */}
-                {/* pays */}
-                {/* pays */}
-                {/* pays */}
-                {/* pays */}
-                {/* pays */}
-                {/* pays */}
-                {/* pays */}
-                {/* pays */}
                 {/* pays */}
                 {/* pays */}
                 {/* pays */}
@@ -527,6 +520,275 @@ export default function ListOfContacts() {
           {/* add-your-contact-opacity */}
         </>
       )}
+      {/* popup add a whatsapp contact */}
+
+      {/* popup modifier le contact whatsapp */}
+      {/* popup modifier le contact whatsapp */}
+      {/* popup modifier le contact whatsapp */}
+      {/* popup modifier le contact whatsapp */}
+      {/* popup modifier le contact whatsapp */}
+      {/* popup modifier le contact whatsapp */}
+      {/* popup modifier le contact whatsapp */}
+      {/* popup modifier le contact whatsapp */}
+      {/* popup modifier le contact whatsapp */}
+      {/* popup modifier le contact whatsapp */}
+      {popupModifierContactWhatsapp && (
+        <>
+          <div className="add-a-whatsapp-contact-opacity">
+            <div className="align">
+              <div className="close">
+                <p></p>
+                <svg
+                  onClick={PopupModifierContactWhatsapp}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  cursor="pointer"
+                  version="1.1"
+                  viewBox="0 0 40 40"
+                  xmlSpace="preserve"
+                >
+                  <path d="M21.414 20L33.207 8.207a.999.999 0 10-1.414-1.414L20 18.586 8.207 6.793a.999.999 0 10-1.414 1.414L18.586 20 6.793 31.793a.999.999 0 101.414 1.414L20 21.414l11.793 11.793a.997.997 0 001.414 0 .999.999 0 000-1.414L21.414 20z"></path>
+                </svg>
+              </div>
+              {/* close */}
+
+              <div className="card">
+                <div className="center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="red"
+                    width="35px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M7.253 18.494l.724.423A7.953 7.953 0 0012 20a8 8 0 10-8-8 7.95 7.95 0 001.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 01-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 01-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 00.367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 01.378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 01-.21.302 2.378 2.378 0 01-.33.288 3.71 3.71 0 01-.125.09 5.024 5.024 0 01-.383.22 1.99 1.99 0 01-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 01-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 016.9 9.62a2.729 2.729 0 01.564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 01.371-.1z"></path>
+                  </svg>
+                </div>
+
+                <div className="center">
+                  <p
+                    style={{
+                      fontSize: "17px",
+                      paddingBottom: "16px",
+                      paddingTop: "5px",
+                    }}
+                  >
+                    Modifications
+                  </p>
+
+                  <input type="text" placeholder="Nom(s)" />
+
+                  <input
+                    type="number"
+                    name="modifierContactWhatsapp"
+                    placeholder="Numéro Whatsapp"
+                    value={modifierContactWhatsapp}
+                    onChange={(e) => setModifierContactWhatsapp(e.target.value)}
+                  />
+                </div>
+                {/* center */}
+
+                {/* homme */}
+                {/* homme */}
+                {homme && (
+                  <>
+                    <div className="genre">
+                      <p onClick={PopupGenre}>Homme</p>
+                      <svg
+                        onClick={PopupGenre}
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0"
+                        y="0"
+                        cursor="pointer"
+                        width="9px"
+                        enableBackground="new 0 0 25.93 25.93"
+                        version="1.1"
+                        viewBox="0 0 25.93 25.93"
+                        xmlSpace="preserve"
+                      >
+                        <path d="M25.397 4.554h-2.042l-9.974 12.644a.54.54 0 01-.835 0L2.575 4.554H.532a.533.533 0 00-.419.86l12.435 15.762c.104.125.255.2.419.2a.54.54 0 00.416-.2L25.816 5.413a.524.524 0 00.058-.561.524.524 0 00-.477-.298z"></path>
+                      </svg>
+                    </div>
+                  </>
+                )}
+
+                {/* femme */}
+                {/* femme */}
+                {femme && (
+                  <>
+                    <div className="genre">
+                      <p onClick={PopupGenre}>Femme</p>
+                      <svg
+                        onClick={PopupGenre}
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0"
+                        y="0"
+                        cursor="pointer"
+                        width="9px"
+                        enableBackground="new 0 0 25.93 25.93"
+                        version="1.1"
+                        viewBox="0 0 25.93 25.93"
+                        xmlSpace="preserve"
+                      >
+                        <path d="M25.397 4.554h-2.042l-9.974 12.644a.54.54 0 01-.835 0L2.575 4.554H.532a.533.533 0 00-.419.86l12.435 15.762c.104.125.255.2.419.2a.54.54 0 00.416-.2L25.816 5.413a.524.524 0 00.058-.561.524.524 0 00-.477-.298z"></path>
+                      </svg>
+                    </div>
+                  </>
+                )}
+
+                {/* trans */}
+                {/* trans */}
+                {trans && (
+                  <>
+                    <div className="genre">
+                      <p onClick={PopupGenre}>Trans</p>
+                      <svg
+                        onClick={PopupGenre}
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0"
+                        y="0"
+                        cursor="pointer"
+                        width="9px"
+                        enableBackground="new 0 0 25.93 25.93"
+                        version="1.1"
+                        viewBox="0 0 25.93 25.93"
+                        xmlSpace="preserve"
+                      >
+                        <path d="M25.397 4.554h-2.042l-9.974 12.644a.54.54 0 01-.835 0L2.575 4.554H.532a.533.533 0 00-.419.86l12.435 15.762c.104.125.255.2.419.2a.54.54 0 00.416-.2L25.816 5.413a.524.524 0 00.058-.561.524.524 0 00-.477-.298z"></path>
+                      </svg>
+                    </div>
+                  </>
+                )}
+                <div className="hr">
+                  <hr />
+                </div>
+
+                {/* age */}
+                {/* age */}
+                {/* age */}
+
+                {/* 17 ans */}
+                {/* 17 ans */}
+                {dixseptans && (
+                  <>
+                    <div className="genre">
+                      <p onClick={PopupAge}>17 ans</p>
+                      <svg
+                        onClick={PopupAge}
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0"
+                        y="0"
+                        cursor="pointer"
+                        width="9px"
+                        enableBackground="new 0 0 25.93 25.93"
+                        version="1.1"
+                        viewBox="0 0 25.93 25.93"
+                        xmlSpace="preserve"
+                      >
+                        <path d="M25.397 4.554h-2.042l-9.974 12.644a.54.54 0 01-.835 0L2.575 4.554H.532a.533.533 0 00-.419.86l12.435 15.762c.104.125.255.2.419.2a.54.54 0 00.416-.2L25.816 5.413a.524.524 0 00.058-.561.524.524 0 00-.477-.298z"></path>
+                      </svg>
+                    </div>
+                  </>
+                )}
+
+                {/* 18 ans */}
+                {/* 18 ans */}
+                {dixhuitans && (
+                  <>
+                    <div className="genre">
+                      <p onClick={PopupAge}>18 ans</p>
+                      <svg
+                        onClick={PopupAge}
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0"
+                        y="0"
+                        cursor="pointer"
+                        width="9px"
+                        enableBackground="new 0 0 25.93 25.93"
+                        version="1.1"
+                        viewBox="0 0 25.93 25.93"
+                        xmlSpace="preserve"
+                      >
+                        <path d="M25.397 4.554h-2.042l-9.974 12.644a.54.54 0 01-.835 0L2.575 4.554H.532a.533.533 0 00-.419.86l12.435 15.762c.104.125.255.2.419.2a.54.54 0 00.416-.2L25.816 5.413a.524.524 0 00.058-.561.524.524 0 00-.477-.298z"></path>
+                      </svg>
+                    </div>
+                  </>
+                )}
+                <div className="hr">
+                  <hr />
+                </div>
+
+                {/* pays */}
+                {/* pays */}
+                {/* pays */}
+
+                {/* congo */}
+                {/* congo */}
+                {congo && (
+                  <>
+                    <div className="genre">
+                      <p onClick={PopupCountry}>Congo</p>
+                      <svg
+                        onClick={PopupCountry}
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0"
+                        y="0"
+                        cursor="pointer"
+                        width="9px"
+                        enableBackground="new 0 0 25.93 25.93"
+                        version="1.1"
+                        viewBox="0 0 25.93 25.93"
+                        xmlSpace="preserve"
+                      >
+                        <path d="M25.397 4.554h-2.042l-9.974 12.644a.54.54 0 01-.835 0L2.575 4.554H.532a.533.533 0 00-.419.86l12.435 15.762c.104.125.255.2.419.2a.54.54 0 00.416-.2L25.816 5.413a.524.524 0 00.058-.561.524.524 0 00-.477-.298z"></path>
+                      </svg>
+                    </div>
+                  </>
+                )}
+
+                {guineeE && (
+                  <>
+                    <div className="genre">
+                      <p onClick={PopupCountry}>Guinée Equatoriale</p>
+                      <svg
+                        onClick={PopupCountry}
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0"
+                        y="0"
+                        cursor="pointer"
+                        width="9px"
+                        enableBackground="new 0 0 25.93 25.93"
+                        version="1.1"
+                        viewBox="0 0 25.93 25.93"
+                        xmlSpace="preserve"
+                      >
+                        <path d="M25.397 4.554h-2.042l-9.974 12.644a.54.54 0 01-.835 0L2.575 4.554H.532a.533.533 0 00-.419.86l12.435 15.762c.104.125.255.2.419.2a.54.54 0 00.416-.2L25.816 5.413a.524.524 0 00.058-.561.524.524 0 00-.477-.298z"></path>
+                      </svg>
+                    </div>
+                  </>
+                )}
+                <div className="hr">
+                  <hr />
+                </div>
+
+                <div className="center">
+                  <input type="text" placeholder="Ville" />
+                </div>
+                {/* center */}
+
+                <div className="center">
+                  <button onClick={Save}>Enregistrer les modifications</button>
+                </div>
+                {/* center */}
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* add-your-contact-opacity */}
+        </>
+      )}
+      {/* popup modifier le contact whatsapp */}
 
       {/* popup genre */}
       {/* popup genre */}
