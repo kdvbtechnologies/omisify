@@ -37,6 +37,9 @@ export default function ListOfContacts() {
   const partner =
     "https://res.cloudinary.com/rasivyy/image/upload/v1671415292/omisify/partner_eo1nnu.jpg";
 
+  // popup ajouter contact
+  // popup ajouter contact
+  // popup ajouter contact
   const [addaWhatsappContact, setAddaWhatsappContact] = useState("");
 
   const [popupAddaWhatsappContact, setPopupAddaWhatsappContact] = useState("");
@@ -44,14 +47,20 @@ export default function ListOfContacts() {
     setPopupAddaWhatsappContact(!popupAddaWhatsappContact);
   }
 
+  //popup modifier contact
+  //popup modifier contact
+  //popup modifier contact
+  //popup modifier contact
   const [modifierContactWhatsapp, setModifierContactWhatsapp] = useState("");
 
   const [popupModifierContactWhatsapp, setPopupModifierContactWhatsapp] =
-    useState("");
+    useState(false);
+
   function PopupModifierContactWhatsapp() {
-    setPopupModifierContactWhatsapp(!popupAddaWhatsappContact);
+    setPopupModifierContactWhatsapp(!popupModifierContactWhatsapp);
   }
 
+  // popup genre
   const [popupGenre, setPopupGenre] = useState(false);
   function PopupGenre() {
     setPopupGenre(!popupGenre);
