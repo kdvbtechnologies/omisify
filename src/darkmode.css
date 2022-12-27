@@ -3089,14 +3089,6 @@ footer {
   text-align: center;
 }
 
-/*
-.list-of-contacts .overflow #table .display td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
-}
-*/
-
 .list-of-contacts .overflow #table th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -3302,8 +3294,14 @@ footer {
 .popup-help-list-of-contacts-whatsapp-opacity .align .card .display-indice-two {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
+
+.popup-help-list-of-contacts-whatsapp-opacity .align .card .display-indice-three {
+  display: flex;
+  align-items: center;
+}
 /* generation connected - about list of contacts.js */
 /* generation connected - about list of contacts.js */
 /* generation connected - about list of contacts.js */

@@ -1129,6 +1129,54 @@ export default function ListOfContacts() {
                   <p>Whatsapp</p>
                 </div>
                 {/* display-indice-two */}
+
+                {/* display-indice-three*/}
+                {/* display-indice-three*/}
+                {/* display-indice-three*/}
+                <div className="display-indice-three">
+                  <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
+                  <p style={{ paddingRight: "5px" }}>l'icone</p>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ paddingRight: "5px" }}
+                    width="20px"
+                    viewBox="0 0 32 32"
+                  >
+                    <g fill="none" fillRule="evenodd">
+                      <path d="M0 0h32v32H0z"></path>
+                      <path
+                        fill="#666666"
+                        fillRule="nonzero"
+                        d="M18 2v2H4v24h24V14.022h2V30H2V2zm8.364-.61l4.243 4.243-12.601 12.6-6.697 2.386 2.535-6.71zm0 2.829l-10.8 10.8-.856 2.266 2.203-.785L27.78 5.633z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p style={{ paddingRight: "5px" }}>pour</p>
+
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    Modifier
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    un
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    Contact
+                  </p>
+                  <p style={{ paddingRight: "5px" }}>figurant</p>
+                  <p style={{ paddingRight: "5px" }}>dans</p>
+                  <p style={{ paddingRight: "5px" }}>votre</p>
+                  <p style={{ paddingRight: "5px" }}>Liste de</p>
+                  <p style={{ paddingRight: "5px" }}>Contacts</p>
+                  <p>Whatsapp</p>
+                </div>
+                {/* display-indice-three */}
               </div>
               {/* card */}
             </div>
