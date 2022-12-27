@@ -142,6 +142,12 @@ export default function ListOfContacts() {
     setPopupHelp(!popupHelp);
   }
 
+  // popup elements en attente de validation
+  const [popupElementsEnAttente, setPopupElementsEnAttente] = useState(false);
+  function PopupElementsEnAttente() {
+    setPopupElementsEnAttente(!popupElementsEnAttente);
+  }
+
   async function Save() {}
 
   return (
@@ -214,6 +220,13 @@ export default function ListOfContacts() {
           </div>
         </NavLink>
         {/* display */}
+
+        <div className="element-en-attente-list-of-whatsapp-contacts">
+          <p onClick={PopupElementsEnAttente} style={{ cursor: "pointer" }}>
+            Élément(s) en attente de validation
+          </p>
+        </div>
+        {/* element-en-attente-list-of-contacts-whatsapp */}
 
         <div className="overflow">
           <table id="table">
@@ -1183,6 +1196,27 @@ export default function ListOfContacts() {
             {/* align */}
           </div>
           {/* popup-help-list-of-contacts-whatsapp-opacity */}
+        </>
+      )}
+
+      {popupElementsEnAttente && (
+        <>
+          <div
+            onClick={PopupElementsEnAttente}
+            className="popup-elements-en-attente-opacity"
+          >
+            <div className="align">
+              <div className="card">
+                <p>
+                  Les Contacts que vous avez enregistrés sont en attente de
+                  validation
+                </p>
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-elements-en-attente-opacity */}
         </>
       )}
     </>

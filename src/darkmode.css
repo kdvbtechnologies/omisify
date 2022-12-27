@@ -3297,11 +3297,44 @@ footer {
   margin-bottom: 20px;
 }
 
-
 .popup-help-list-of-contacts-whatsapp-opacity .align .card .display-indice-three {
   display: flex;
   align-items: center;
 }
+
+.element-en-attente-list-of-whatsapp-contacts p {
+  text-align: center;
+  background: #fcff07;
+  color: black;
+  font-size: 14px;
+  text-decoration: underline;
+  padding: 7px;
+}
+
+.popup-elements-en-attente-opacity {
+  background-color: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.popup-elements-en-attente-opacity .align {
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.popup-elements-en-attente-opacity .align .card {
+  width: auto;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0px 15px;
+}
+
 /* generation connected - about list of contacts.js */
 /* generation connected - about list of contacts.js */
 /* generation connected - about list of contacts.js */
@@ -13111,6 +13144,10 @@ footer {
 
   /* omisify */
   /* omisify */
+  .popup-elements-en-attente-opacity .align .card {
+    width: 200px;
+  }
+
   .add-a-whatsapp-contact-opacity .align .card {
     width: 230px;
   }
@@ -13728,6 +13765,11 @@ footer {
   }
 
   /* omisify */
+  .popup-elements-en-attente-opacity .align .card {
+    width: 190px;
+    padding: 20px 15px;
+  }
+
   .add-a-whatsapp-contact-opacity .align .card {
     width: 190px;
   }
@@ -14191,7 +14233,12 @@ footer {
 @media screen and (max-width: 240px) {
   /* omisify */
   /* omisify */
-   .add-a-whatsapp-contact-opacity .align .card {
+  .popup-elements-en-attente-opacity .align .card {
+    width: 180px;
+    padding: 20px 15px;
+  }
+
+  .add-a-whatsapp-contact-opacity .align .card {
     width: 180px;
   }
 
@@ -14709,6 +14756,11 @@ footer {
 
 /* omisify */
 /* omisify */
+.popup-elements-en-attente-opacity .align .card {
+  width: 160px;
+  padding: 20px 15px;
+}
+
 .add-a-whatsapp-contact-opacity .align .card {
   width: 160px;
 }
