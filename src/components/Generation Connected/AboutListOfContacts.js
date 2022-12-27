@@ -1,10 +1,25 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function AboutListOfContacts() {
+  const navigate = useNavigate();
   const partner =
     "https://res.cloudinary.com/rasivyy/image/upload/v1671415292/omisify/partner_eo1nnu.jpg";
 
-  const navigate = useNavigate();
+  // popup Ecrire description
+  const [popupEcrireDescription, setPopupEcrireDescription] = useState(false);
+
+  function PopupEcrireDescription() {
+    setPopupEcrireDescription(!popupEcrireDescription);
+  }
+
+  // popup modifier description
+  const [popupModifierDescription, setPopupModifierDescription] =
+    useState(false);
+
+  function PopupModifierDescription() {
+    setPopupModifierDescription(!popupModifierDescription);
+  }
 
   return (
     <>
@@ -59,8 +74,48 @@ export default function AboutListOfContacts() {
 
               <div className="c">
                 <p style={{ fontSize: "16px" }}>
+                  Dites quelques choses à propos de votre Liste de Contacts
+                  Whatsapp..
+                </p>
+                <svg
+                  onClick={PopupEcrireDescription}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  cursor="pointer"
+                  viewBox="0 0 32 32"
+                >
+                  <g fill="none" fillRule="evenodd">
+                    <path d="M0 0h32v32H0z"></path>
+                    <path
+                      fill="#666666"
+                      fillRule="nonzero"
+                      d="M18 2v2H4v24h24V14.022h2V30H2V2zm8.364-.61l4.243 4.243-12.601 12.6-6.697 2.386 2.535-6.71zm0 2.829l-10.8 10.8-.856 2.266 2.203-.785L27.78 5.633z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              {/* c */}
+
+              <div className="c">
+                <p style={{ fontSize: "16px" }}>
                   C'est la liste de tout mes Contacts Whatsapp
                 </p>
+                <svg
+                  onClick={PopupModifierDescription}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  cursor="pointer"
+                  viewBox="0 0 32 32"
+                >
+                  <g fill="none" fillRule="evenodd">
+                    <path d="M0 0h32v32H0z"></path>
+                    <path
+                      fill="#666666"
+                      fillRule="nonzero"
+                      d="M18 2v2H4v24h24V14.022h2V30H2V2zm8.364-.61l4.243 4.243-12.601 12.6-6.697 2.386 2.535-6.71zm0 2.829l-10.8 10.8-.856 2.266 2.203-.785L27.78 5.633z"
+                    ></path>
+                  </g>
+                </svg>
               </div>
               {/* c */}
 
@@ -123,6 +178,103 @@ export default function AboutListOfContacts() {
         {/* align */}
       </div>
       {/* about-list-of-contacts */}
+
+      {/* popup-ecrire-description */}
+      {/* popup-ecrire-description */}
+      {/* popup-ecrire-description */}
+      {/* popup-ecrire-description */}
+      {/* popup-ecrire-description */}
+      {/* popup-ecrire-description */}
+      {popupEcrireDescription && (
+        <>
+          <div className="popup-ecrire-description-opacity">
+            <div className="align">
+              <div className="card">
+                <div className="title">
+                  <p>Description</p>
+                  <svg
+                    onClick={PopupEcrireDescription}
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0"
+                    y="0"
+                    width="20px"
+                    cursor="pointer"
+                    className="infos-of-dev-close-btn"
+                    enableBackground="new 0 0 484.271 484.271"
+                    version="1.1"
+                    viewBox="0 0 484.271 484.271"
+                    xmlSpace="preserve"
+                  >
+                    <path d="M39.938 0v49.923H0v434.348h434.348v-69.892h49.923V0H39.938zm379.41 469.271H15V64.923h404.348v404.348zm49.923-69.892h-34.923V49.923H54.938V15h414.333v384.379z"></path>
+                    <path d="M90.234 355.359c0 4.692 1.817 9.093 5.117 12.393l21.167 21.166c3.3 3.301 7.7 5.118 12.393 5.118s9.093-1.817 12.393-5.117l75.87-75.871 75.87 75.871c3.301 3.3 7.701 5.117 12.393 5.117s9.093-1.817 12.392-5.117l21.169-21.167c6.833-6.833 6.833-17.952 0-24.785l-75.871-75.87 75.871-75.871c6.832-6.834 6.832-17.951 0-24.784l-21.168-21.168c-6.832-6.83-17.95-6.833-24.784 0l-75.871 75.871-75.87-75.871c-6.833-6.831-17.95-6.834-24.785.001l-21.166 21.167c-3.301 3.3-5.118 7.7-5.118 12.393 0 4.691 1.817 9.092 5.117 12.393l75.871 75.87-75.87 75.87c-3.302 3.299-5.12 7.699-5.12 12.391zm15.725-1.785l86.477-86.478-86.477-86.478c-.631-.63-.725-1.389-.725-1.785s.094-1.155.725-1.786l21.167-21.167c.967-.969 2.604-.969 3.57 0l86.478 86.477 86.477-86.477c.969-.97 2.604-.968 3.571 0l21.168 21.168c.968.968.968 2.604 0 3.57l-86.477 86.478 86.477 86.478c.969.968.969 2.603.001 3.57l-21.169 21.168c-.63.63-1.389.724-1.785.724s-1.155-.094-1.785-.725l-86.478-86.477-86.478 86.478c-.63.63-1.389.724-1.785.724s-1.155-.094-1.785-.725l-21.168-21.167c-.63-.63-.724-1.389-.724-1.785s.094-1.155.725-1.785z"></path>
+                  </svg>
+                </div>
+                {/* title */}
+
+                <p>Écriver la description de votre Liste de Contact Whatsapp</p>
+
+                <textarea
+                  name="description"
+                  placeholder="Dites quelques chose.."
+                ></textarea>
+
+                <button>Enregistrer</button>
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-ecrire-description */}
+        </>
+      )}
+
+      {/* popup-modifier-description */}
+      {/* popup-modifier-description */}
+      {/* popup-modifier-description */}
+      {/* popup-modifier-description */}
+      {/* popup-modifier-description */}
+      {/* popup-modifier-description */}
+      {popupModifierDescription && (
+        <>
+          <div className="popup-ecrire-description-opacity">
+            <div className="align">
+              <div className="card">
+                <div className="title">
+                  <p>Modification</p>
+                  <svg
+                    onClick={PopupModifierDescription}
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0"
+                    y="0"
+                    width="20px"
+                    cursor="pointer"
+                    className="infos-of-dev-close-btn"
+                    enableBackground="new 0 0 484.271 484.271"
+                    version="1.1"
+                    viewBox="0 0 484.271 484.271"
+                    xmlSpace="preserve"
+                  >
+                    <path d="M39.938 0v49.923H0v434.348h434.348v-69.892h49.923V0H39.938zm379.41 469.271H15V64.923h404.348v404.348zm49.923-69.892h-34.923V49.923H54.938V15h414.333v384.379z"></path>
+                    <path d="M90.234 355.359c0 4.692 1.817 9.093 5.117 12.393l21.167 21.166c3.3 3.301 7.7 5.118 12.393 5.118s9.093-1.817 12.393-5.117l75.87-75.871 75.87 75.871c3.301 3.3 7.701 5.117 12.393 5.117s9.093-1.817 12.392-5.117l21.169-21.167c6.833-6.833 6.833-17.952 0-24.785l-75.871-75.87 75.871-75.871c6.832-6.834 6.832-17.951 0-24.784l-21.168-21.168c-6.832-6.83-17.95-6.833-24.784 0l-75.871 75.871-75.87-75.871c-6.833-6.831-17.95-6.834-24.785.001l-21.166 21.167c-3.301 3.3-5.118 7.7-5.118 12.393 0 4.691 1.817 9.092 5.117 12.393l75.871 75.87-75.87 75.87c-3.302 3.299-5.12 7.699-5.12 12.391zm15.725-1.785l86.477-86.478-86.477-86.478c-.631-.63-.725-1.389-.725-1.785s.094-1.155.725-1.786l21.167-21.167c.967-.969 2.604-.969 3.57 0l86.478 86.477 86.477-86.477c.969-.97 2.604-.968 3.571 0l21.168 21.168c.968.968.968 2.604 0 3.57l-86.477 86.478 86.477 86.478c.969.968.969 2.603.001 3.57l-21.169 21.168c-.63.63-1.389.724-1.785.724s-1.155-.094-1.785-.725l-86.478-86.477-86.478 86.478c-.63.63-1.389.724-1.785.724s-1.155-.094-1.785-.725l-21.168-21.167c-.63-.63-.724-1.389-.724-1.785s.094-1.155.725-1.785z"></path>
+                  </svg>
+                </div>
+                {/* title */}
+
+                <p>
+                  Modifier la Description de votre Liste de Contact Whatsapp
+                </p>
+
+                <textarea name="description"></textarea>
+
+                <button>Enregistrer</button>
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-modifier-description */}
+        </>
+      )}
     </>
   );
 }

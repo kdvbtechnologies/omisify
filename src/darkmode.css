@@ -3336,6 +3336,75 @@ footer {
   margin: 0px 15px;
 }
 
+.popup-ecrire-description-opacity {
+  background-color: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.popup-ecrire-description-opacity .align {
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.popup-ecrire-description-opacity .align .card {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0px 15px;
+  border-radius: 5px;
+}
+
+.popup-ecrire-description-opacity .align .card p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.popup-ecrire-description-opacity .align .card textarea {
+  border: 1px solid #444;
+  font-size: 16px;
+  resize: vertical;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.popup-ecrire-description-opacity .align .card .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup-ecrire-description-opacity .align .card .title p {
+  color: red;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.popup-ecrire-description-opacity .align .card button {
+  background: red;
+  color: white;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.popup-ecrire-description-opacity .align .card button:hover {
+  background: #ff6f79;
+}
+
 /* generation connected - about list of contacts.js */
 /* generation connected - about list of contacts.js */
 /* generation connected - about list of contacts.js */

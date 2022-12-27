@@ -123,15 +123,17 @@ export default function HomeRinabelGroup() {
       <p>Objectif: 3.000.000€</p>
       <p>
         Les 3.000.000€ serviront à augmenter les capacités d'hébergement de nos
-        produits/services et à augmenter le nombre d'employés talentueux, cela
-        nous permettra à accueillir sur nos sites/applications plus
-        d'utilisateurs, plus de produits innovants crée par des employés
-        talentueux et plus de bénéfices générés par la publicité et la vente aux
-        enchères. Au final, les consommateurs utilisent des produits innovants
-        gratuitement et ils sont content, les employés talentueux sont bien
-        rémunérer et ils sont content, les investisseurs gagnent beaucoup
-        d'argent grace aux revenus générés par la publicité/ventes aux enchères
-        et ils sont content. Tout le monde y gagnent !
+        produits/services et à augmenter le nombre d'employés talentueux qui
+        parlent plusieurs langues, cela nous permettra à accueillir sur nos
+        sites/applications plus d'utilisateurs venant de tout les pays du monde
+        et utilisant nos applications en fonction de la langue de leur pays,
+        plus de produits innovants crée par des employés talentueux et plus de
+        bénéfices générés par la publicité et la vente aux enchères. Au final,
+        les consommateurs utilisent des produits innovants gratuitement et ils
+        sont content, les employés talentueux sont bien rémunérer et ils sont
+        content, les investisseurs gagnent beaucoup d'argent grace aux revenus
+        générés par la publicité/ventes aux enchères et ils sont content. Tout
+        le monde y gagnent !
       </p>
 
       <p>
@@ -153,11 +155,34 @@ export default function HomeRinabelGroup() {
         maintenant pendant que l'action ne coute que 25€{" "}
       </p>
 
+      <p>
+        Investissez dans Rinabel Group l'entreprise de la Nouvelle Génération
+      </p>
+
       <button>Investir maintenant</button>
 
       <p>
         Avant de faire l'introduction de votre entreprise en bourse, effectuer
         le paiement pour le traitement de votre dossier
+      </p>
+
+      <p>PREVENTION</p>
+      <p>
+        Si un jour vous avez du mal à accéder à votre compte Omisify, essayer de
+        télécharger une application VPN pour résoudre ce problème
+      </p>
+      <p>Voici les avantages d'un VPN</p>
+      <p>
+        Avec un VPN vous pouvez accéder à des sites internet ou à des
+        applications mobiles qui sont bloqués dans votre pays
+      </p>
+      <p>
+        Lorsque vous utiliser un VPN aucune personne ne pourra savoir ce que
+        vous faites sur internet
+      </p>
+      <p>
+        Lorsque vous utiliser un VPN votre navigation sur internet est 100%
+        sécurisé
       </p>
     </>
   );
