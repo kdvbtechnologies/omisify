@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function AboutListOfContacts() {
-  const navigate = useNavigate();
   const partner =
     "https://res.cloudinary.com/rasivyy/image/upload/v1671415292/omisify/partner_eo1nnu.jpg";
 
@@ -21,43 +20,145 @@ export default function AboutListOfContacts() {
     setPopupModifierDescription(!popupModifierDescription);
   }
 
+  // popup ajouter photo couverture
+  const [popupAjouterPhotoCouverture, setPopupAjouterPhotoCouverture] =
+    useState(false);
+
+  function AjouterPhotoCouverture() {
+    setPopupAjouterPhotoCouverture(!popupAjouterPhotoCouverture);
+  }
+
+  function AddPhotoCover() {
+    window.location = "/add-photo-cover-success";
+  }
+
+  // popup changer photo couverture
+  const [popupChangerPhotoCouverture, setPopupChangerPhotoCouverture] =
+    useState(false);
+
+  function ChangerPhotoCouverture() {
+    setPopupChangerPhotoCouverture(!popupChangerPhotoCouverture);
+  }
+
+  function ChangePhotoCover() {
+    window.location = "/change-photo-cover-success";
+  }
+
+  // modifier description
+  function ModifierDescription() {
+    window.location = "/modifier-description-success";
+  }
+
+  // ajouter description
+  function AjouterDescription() {
+    window.location = "/ajouter-description-success";
+  }
+
+  // popup Help
+  const [popupHelp, setPopupHelp] = useState(false);
+  function Help() {
+    setPopupHelp(!popupHelp);
+  }
+
   return (
     <>
       <div className="about-list-of-contacts">
         <div className="align">
           <div className="cover">
-            <img src={partner} alt="" />
+            <img onClick={ChangerPhotoCouverture} src={partner} alt="" />
           </div>
           {/* cover */}
 
+          {/*
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="180px"
+            fill="#666666"
+            viewBox="0 0 30 30"
+          >
+            <path d="M19.5 9c-.492-.004-.916.242-1.092.47l-2.737 3.457c-.17.208-.55.073-.727-.03l-2.455-1.547c-.29-.19-.62-.35-.988-.35-.38 0-.786.114-1.072.434l-3.293 3.724c-.445.498.3 1.166.746.668l3.294-3.724c.218-.234.535-.05.765.084l2.46 1.552.012.006c.306.19.65.252.988.256.34.004.71-.027.985-.36l2.767-3.5c.217-.263.534-.14.744.04l2.254 1.688c.527.477 1.205-.375.62-.78l-2.252-1.69C20.252 9.188 19.913 9 19.5 9zm-12 8h15a.499.499 0 110 1h-15a.499.499 0 110-1zM11 5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 1c.558 0 1 .442 1 1s-.442 1-1 1-1-.442-1-1 .442-1 1-1zm14 19.5a.5.5 0 01-.5.5.5.5 0 01-.5-.5.5.5 0 01.5-.5.5.5 0 01.5.5zm-19 0a.5.5 0 01-.5.5.5.5 0 01-.5-.5.5.5 0 01.5-.5.5.5 0 01.5.5zm9-1.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 1c.563 0 1 .437 1 1s-.437 1-1 1-1-.437-1-1 .437-1 1-1zM26.5 3c-.665 0-.648 1 0 1h2c.286 0 .5.214.5.5v14c0 .286-.214.5-.5.5h-2c-.654 0-.66 1 0 1h2c.822 0 1.5-.678 1.5-1.5v-14c0-.822-.678-1.5-1.5-1.5zm-25 0C.678 3 0 3.678 0 4.5v14c0 .822.678 1.5 1.5 1.5h2c.66 0 .665-1 0-1h-2a.488.488 0 01-.5-.5v-14c0-.286.214-.5.5-.5h2c.66 0 .66-1 0-1zm5-1C5.678 2 5 2.678 5 3.5v16c0 .822.678 1.5 1.5 1.5h17c.822 0 1.5-.678 1.5-1.5v-16c0-.822-.678-1.5-1.5-1.5zm0 1h17c.286 0 .5.214.5.5v16c0 .286-.214.5-.5.5h-17a.488.488 0 01-.5-.5v-16c0-.286.214-.5.5-.5z"></path>
+          </svg>
+        */}
+
+          <svg
+            onClick={AjouterPhotoCouverture}
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            viewBox="0 0 508 508"
+            xmlSpace="preserve"
+            width="180px"
+            cursor="pointer"
+          >
+            <path fill="#E9B526" d="M504 438V66H8v372h496z"></path>
+            <path fill="#EDC654" d="M52 118H456V386H52z"></path>
+            <path fill="#CDEEF9" d="M80 142H428V358H80z"></path>
+            <path
+              fill="#3C8E51"
+              d="M216 193.2l-58 67.6-32.4-35.2-48 46c-.4.4 0 86.4 0 86.4H424l.8-82.8-52.4-52.4-63.2 63.6-93.2-93.2z"
+            ></path>
+            <path
+              fill="#54B265"
+              d="M213.2 195.6l-62 58 103.2 103.6 130.8.4-172-162z"
+            ></path>
+            <path
+              fill="#E8BB85"
+              d="M121.6 226.4l-44 45.6c-.4.4 0 86 0 86l176.4-.4-132.4-131.2z"
+            ></path>
+            <circle cx="302.8" cy="192.4" r="20.4" fill="#E9B526"></circle>
+            <path d="M504 446H4c-2.4 0-4-1.6-4-4V66c0-2.4 1.6-4 4-4h500c2.4 0 4 1.6 4 4v376c0 2.4-1.6 4-4 4zM8 438h492V70H8v368z"></path>
+            <path d="M452 390H52c-2.4 0-4-1.6-4-4V122c0-2.4 1.6-4 4-4h400c2.4 0 4 1.6 4 4v264c0 2.4-1.6 4-4 4zm-396-8h392V126H56v256z"></path>
+            <path d="M428 366H76c-2.4 0-4-1.6-4-4V146c0-2.4 1.6-4 4-4h292c2.4 0 4 1.6 4 4s-1.6 4-4 4H80v208h344V150h-8c-2.4 0-4-1.6-4-4s1.6-4 4-4h12c2.4 0 4 1.6 4 4v216c0 2.4-1.6 4-4 4z"></path>
+            <path d="M78 271.6c-1.2 0-2-.4-2.8-1.2-1.6-1.6-1.6-4 0-5.6l43.6-43.6c1.6-1.6 4-1.6 5.6 0s1.6 4 0 5.6l-43.6 43.6c-.8.8-1.6 1.2-2.8 1.2z"></path>
+            <path d="M194.4 301.2c-1.2 0-2-.4-2.8-1.2l-73.2-73.2c-1.6-1.6-1.6-4 0-5.6s4-1.6 5.6 0l73.2 73.2c1.6 1.6 1.6 4 0 5.6-.8.8-1.6 1.2-2.8 1.2zM163.6 249.6c-1.2 0-2-.4-2.8-1.2-1.6-1.6-1.6-4 0-5.6l52.4-52.4c1.6-1.6 4-1.6 5.6 0s1.6 4 0 5.6l-52.4 52.4c-.8.8-1.6 1.2-2.8 1.2zM320 279.2c-1.2 0-2-.4-2.8-1.2-1.6-1.6-1.6-4 0-5.6l52.4-52.4c1.6-1.6 4-1.6 5.6 0s1.6 4 0 5.6L322.8 278c-.8.8-2 1.2-2.8 1.2z"></path>
+            <path d="M337.2 318.4c-1.2 0-2-.4-2.8-1.2L213.2 196.4c-1.6-1.6-1.6-4 0-5.6s4-1.6 5.6 0L340 311.6c1.6 1.6 1.6 4 0 5.6-.8.8-2 1.2-2.8 1.2zM427.6 282c-1.2 0-2-.4-2.8-1.2l-55.2-55.2c-1.6-1.6-1.6-4 0-5.6s4-1.6 5.6 0l55.2 55.2c1.6 1.6 1.6 4 0 5.6-.8.8-2 1.2-2.8 1.2zM304.4 215.6c-13.2 0-24-10.8-24-24s10.8-24 24-24c4.8 0 9.6 1.6 13.6 4.4 2 1.2 2.4 3.6.8 5.6-1.2 2-3.6 2.4-5.6.8-2.8-2-6-2.8-9.2-2.8-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16c0-2.4 1.6-4 4-4s4 1.6 4 4c.4 13.2-10.4 24-23.6 24z"></path>
+          </svg>
+
           <div className="width">
             <div className="a">
-              <svg
-                onClick={() => navigate(-1)}
-                xmlns="http://www.w3.org/2000/svg"
-                x="0"
-                y="0"
-                width="20px"
-                cursor="pointer"
-                enableBackground="new 0 0 486.975 486.975"
-                version="1.1"
-                viewBox="0 0 486.975 486.975"
-                xmlSpace="preserve"
-              >
-                <path d="M473.475 230.025h-427.4l116-116c5.3-5.3 5.3-13.8 0-19.1-5.3-5.3-13.8-5.3-19.1 0l-139 139c-5.3 5.3-5.3 13.8 0 19.1l139 139c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-116-116h427.5c7.5 0 13.5-6 13.5-13.5s-6-13.4-13.5-13.4z"></path>
-              </svg>
+              <NavLink to="/list-of-contacts">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0"
+                  y="0"
+                  width="20px"
+                  cursor="pointer"
+                  enableBackground="new 0 0 486.975 486.975"
+                  version="1.1"
+                  viewBox="0 0 486.975 486.975"
+                  xmlSpace="preserve"
+                >
+                  <path d="M473.475 230.025h-427.4l116-116c5.3-5.3 5.3-13.8 0-19.1-5.3-5.3-13.8-5.3-19.1 0l-139 139c-5.3 5.3-5.3 13.8 0 19.1l139 139c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-116-116h427.5c7.5 0 13.5-6 13.5-13.5s-6-13.4-13.5-13.4z"></path>
+                </svg>
+              </NavLink>
 
               <div className="width">
-                <p>A propos de la Liste de Contacts Whatsapp </p>
+                <p>A propos du Groupe Whatsapp </p>
               </div>
               {/* width */}
             </div>
             {/* a */}
 
+            <div className="name-of-group-about-list-of-contacts">
+              <div className="a">
+                <p>VirilNation</p>
+              </div>
+
+              <div className="box-shadow">
+                <p>Date de création : 17/02/2022</p>
+                <a href="https://group.whatsapp.com" target="_blank" rel="noreferrer">
+                https://group.whatsapp.com
+              </a>
+              </div>
+            </div>
+            {/* name-of-group-about-list-of-contacts */}
+
             <div className="b">
               <div className="space">
                 <p></p>
+
+                {/* help */}
                 <svg
+                  onClick={Help}
                   xmlns="http://www.w3.org/2000/svg"
                   width="20px"
                   cursor="pointer"
@@ -69,27 +170,64 @@ export default function AboutListOfContacts() {
                     d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 100 16 8 8 0 000-16zm0 12a1 1 0 110 2 1 1 0 010-2zm0-10a4 4 0 011.19 7.82l-.19.054V14a1 1 0 01-1.993.117L11 14v-1a1 1 0 01.883-.993l.266-.012A2 2 0 1010 10a1 1 0 01-2 0 4 4 0 014-4z"
                   ></path>
                 </svg>
+
+                {/*  popup menu a droite
+                  <svg
+                    style={{ paddingLeft: "3px" }}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    cursor="pointer"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      stroke="#292929"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      clipPath="url(#clip0_105_1875)"
+                    >
+                      <path d="M12 12H12.01V12.01H12z"></path>
+                      <path d="M12 5H12.01V5.01H12z"></path>
+                      <path d="M12 19H12.01V19.01H12z"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_105_1875">
+                        <path
+                          fill="#fff"
+                          d="M0 0H24V24H0z"
+                          transform="translate(0 .001)"
+                        ></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  */}
               </div>
               {/* space */}
 
               <div className="c">
                 <p style={{ fontSize: "16px" }}>
-                  Dites quelques choses à propos de votre Liste de Contacts
-                  Whatsapp..
+                  Dites quelques choses à propos de votre Groupe Whatsapp..
                 </p>
+
                 <svg
                   onClick={PopupEcrireDescription}
-                  xmlns="http://www.w3.org/2000/svg"
                   width="20px"
                   cursor="pointer"
-                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  viewBox="0 0 30 30"
                 >
-                  <g fill="none" fillRule="evenodd">
-                    <path d="M0 0h32v32H0z"></path>
+                  <g transform="translate(0 -289.063)">
                     <path
-                      fill="#666666"
-                      fillRule="nonzero"
-                      d="M18 2v2H4v24h24V14.022h2V30H2V2zm8.364-.61l4.243 4.243-12.601 12.6-6.697 2.386 2.535-6.71zm0 2.829l-10.8 10.8-.856 2.266 2.203-.785L27.78 5.633z"
+                      fill="#000"
+                      fillOpacity="1"
+                      stroke="none"
+                      strokeDasharray="none"
+                      strokeMiterlimit="4"
+                      strokeOpacity="1"
+                      strokeWidth="2"
+                      d="M22.824 296.239a11.986 11.986 0 00-1.542-1.287l-2.665 2.665 2.828 2.828 2.666-2.665a11.986 11.986 0 00-1.287-1.541zm-5.621 2.792L6.596 309.638l-.707 3.535 3.536-.707L20.03 301.86z"
+                      opacity="0.93"
                     ></path>
                   </g>
                 </svg>
@@ -98,22 +236,18 @@ export default function AboutListOfContacts() {
 
               <div className="c">
                 <p style={{ fontSize: "16px" }}>
-                  C'est la liste de tout mes Contacts Whatsapp
+                  C'est la liste des membres de mon groupe Whatsapp
                 </p>
+
                 <svg
-                  onClick={PopupModifierDescription}
                   xmlns="http://www.w3.org/2000/svg"
+                  onClick={PopupModifierDescription}
                   width="20px"
                   cursor="pointer"
-                  viewBox="0 0 32 32"
+                  viewBox="0 0 24 24"
                 >
-                  <g fill="none" fillRule="evenodd">
-                    <path d="M0 0h32v32H0z"></path>
-                    <path
-                      fill="#666666"
-                      fillRule="nonzero"
-                      d="M18 2v2H4v24h24V14.022h2V30H2V2zm8.364-.61l4.243 4.243-12.601 12.6-6.697 2.386 2.535-6.71zm0 2.829l-10.8 10.8-.856 2.266 2.203-.785L27.78 5.633z"
-                    ></path>
+                  <g>
+                    <path d="M3.548 20.938h16.9a.5.5 0 000-1h-16.9a.5.5 0 000 1zM9.71 17.18a2.587 2.587 0 001.12-.65l9.54-9.54a1.75 1.75 0 000-2.47l-.94-.93a1.788 1.788 0 00-2.47 0l-9.54 9.53a2.473 2.473 0 00-.64 1.12L6.04 17a.737.737 0 00.19.72.767.767 0 00.53.22zm.41-1.36a1.468 1.468 0 01-.67.39l-.97.26-1-1 .26-.97a1.521 1.521 0 01.39-.67l.38-.37 1.99 1.99zm1.09-1.08l-1.99-1.99 6.73-6.73 1.99 1.99zm8.45-8.45L18.65 7.3l-1.99-1.99 1.01-1.02a.748.748 0 011.06 0l.93.94a.754.754 0 010 1.06z"></path>
                   </g>
                 </svg>
               </div>
@@ -133,7 +267,7 @@ export default function AboutListOfContacts() {
                   </svg>
                   <div className="width">
                     <p style={{ fontSize: "15px", paddingRight: "5px" }}>
-                      Nombre de Contacts Whatsapp
+                      Nombre de membre(s)
                     </p>
                     <p style={{ fontSize: "15px", fontWeight: "bold" }}>3</p>
                   </div>
@@ -159,7 +293,7 @@ export default function AboutListOfContacts() {
                         paddingRight: "5px",
                       }}
                     >
-                      Valeur de la Liste de Contacts Whatsapp
+                      Valeur du Groupe Whatsapp
                     </p>
                     <p style={{ fontWeight: "bold", fontSize: "17px" }}>
                       0.0025
@@ -218,7 +352,7 @@ export default function AboutListOfContacts() {
                   placeholder="Dites quelques chose.."
                 ></textarea>
 
-                <button>Enregistrer</button>
+                <button onClick={AjouterDescription}>Enregistrer</button>
               </div>
               {/* card */}
             </div>
@@ -266,13 +400,302 @@ export default function AboutListOfContacts() {
 
                 <textarea name="description"></textarea>
 
-                <button>Enregistrer</button>
+                <button onClick={ModifierDescription}>Enregistrer</button>
               </div>
               {/* card */}
             </div>
             {/* align */}
           </div>
           {/* popup-modifier-description */}
+        </>
+      )}
+
+      {/* ajouter photo couverture - about list of contacts */}
+      {/* ajouter photo couverture - about list of contacts */}
+      {/* ajouter photo couverture - about list of contacts */}
+      {popupAjouterPhotoCouverture && (
+        <>
+          <div className="popup-ajouter-photo-couverture-opacity">
+            <div className="align">
+              <div className="card">
+                <div className="title">
+                  <p>Couverture</p>
+                  <svg
+                    onClick={AjouterPhotoCouverture}
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0"
+                    y="0"
+                    width="20px"
+                    cursor="pointer"
+                    className="infos-of-dev-close-btn"
+                    enableBackground="new 0 0 484.271 484.271"
+                    version="1.1"
+                    viewBox="0 0 484.271 484.271"
+                    xmlSpace="preserve"
+                  >
+                    <path d="M39.938 0v49.923H0v434.348h434.348v-69.892h49.923V0H39.938zm379.41 469.271H15V64.923h404.348v404.348zm49.923-69.892h-34.923V49.923H54.938V15h414.333v384.379z"></path>
+                    <path d="M90.234 355.359c0 4.692 1.817 9.093 5.117 12.393l21.167 21.166c3.3 3.301 7.7 5.118 12.393 5.118s9.093-1.817 12.393-5.117l75.87-75.871 75.87 75.871c3.301 3.3 7.701 5.117 12.393 5.117s9.093-1.817 12.392-5.117l21.169-21.167c6.833-6.833 6.833-17.952 0-24.785l-75.871-75.87 75.871-75.871c6.832-6.834 6.832-17.951 0-24.784l-21.168-21.168c-6.832-6.83-17.95-6.833-24.784 0l-75.871 75.871-75.87-75.871c-6.833-6.831-17.95-6.834-24.785.001l-21.166 21.167c-3.301 3.3-5.118 7.7-5.118 12.393 0 4.691 1.817 9.092 5.117 12.393l75.871 75.87-75.87 75.87c-3.302 3.299-5.12 7.699-5.12 12.391zm15.725-1.785l86.477-86.478-86.477-86.478c-.631-.63-.725-1.389-.725-1.785s.094-1.155.725-1.786l21.167-21.167c.967-.969 2.604-.969 3.57 0l86.478 86.477 86.477-86.477c.969-.97 2.604-.968 3.571 0l21.168 21.168c.968.968.968 2.604 0 3.57l-86.477 86.478 86.477 86.478c.969.968.969 2.603.001 3.57l-21.169 21.168c-.63.63-1.389.724-1.785.724s-1.155-.094-1.785-.725l-86.478-86.477-86.478 86.478c-.63.63-1.389.724-1.785.724s-1.155-.094-1.785-.725l-21.168-21.167c-.63-.63-.724-1.389-.724-1.785s.094-1.155.725-1.785z"></path>
+                  </svg>
+                </div>
+                {/* title */}
+
+                <p>
+                  Ajouter une photo de couverture à votre Liste de Contacts
+                  Whatsapp
+                </p>
+
+                <input type="file" />
+
+                <button onClick={AddPhotoCover}>
+                  Ajouter la photo de couverture
+                </button>
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-ajouter-photo-couverture */}
+        </>
+      )}
+
+      {/* popup changer photo couverture - about list of contacts */}
+      {/* popup changer photo couverture - about list of contacts */}
+      {/* popup changer photo couverture - about list of contacts */}
+      {popupChangerPhotoCouverture && (
+        <>
+          <div className="popup-ajouter-photo-couverture-opacity">
+            <div className="align">
+              <div className="card">
+                <div className="title">
+                  <p>Couverture</p>
+                  <svg
+                    onClick={ChangerPhotoCouverture}
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0"
+                    y="0"
+                    width="20px"
+                    cursor="pointer"
+                    className="infos-of-dev-close-btn"
+                    enableBackground="new 0 0 484.271 484.271"
+                    version="1.1"
+                    viewBox="0 0 484.271 484.271"
+                    xmlSpace="preserve"
+                  >
+                    <path d="M39.938 0v49.923H0v434.348h434.348v-69.892h49.923V0H39.938zm379.41 469.271H15V64.923h404.348v404.348zm49.923-69.892h-34.923V49.923H54.938V15h414.333v384.379z"></path>
+                    <path d="M90.234 355.359c0 4.692 1.817 9.093 5.117 12.393l21.167 21.166c3.3 3.301 7.7 5.118 12.393 5.118s9.093-1.817 12.393-5.117l75.87-75.871 75.87 75.871c3.301 3.3 7.701 5.117 12.393 5.117s9.093-1.817 12.392-5.117l21.169-21.167c6.833-6.833 6.833-17.952 0-24.785l-75.871-75.87 75.871-75.871c6.832-6.834 6.832-17.951 0-24.784l-21.168-21.168c-6.832-6.83-17.95-6.833-24.784 0l-75.871 75.871-75.87-75.871c-6.833-6.831-17.95-6.834-24.785.001l-21.166 21.167c-3.301 3.3-5.118 7.7-5.118 12.393 0 4.691 1.817 9.092 5.117 12.393l75.871 75.87-75.87 75.87c-3.302 3.299-5.12 7.699-5.12 12.391zm15.725-1.785l86.477-86.478-86.477-86.478c-.631-.63-.725-1.389-.725-1.785s.094-1.155.725-1.786l21.167-21.167c.967-.969 2.604-.969 3.57 0l86.478 86.477 86.477-86.477c.969-.97 2.604-.968 3.571 0l21.168 21.168c.968.968.968 2.604 0 3.57l-86.477 86.478 86.477 86.478c.969.968.969 2.603.001 3.57l-21.169 21.168c-.63.63-1.389.724-1.785.724s-1.155-.094-1.785-.725l-86.478-86.477-86.478 86.478c-.63.63-1.389.724-1.785.724s-1.155-.094-1.785-.725l-21.168-21.167c-.63-.63-.724-1.389-.724-1.785s.094-1.155.725-1.785z"></path>
+                  </svg>
+                </div>
+                {/* title */}
+
+                <p>
+                  Changer la photo de couverture de votre Liste de Contacts
+                  Whatsapp
+                </p>
+
+                <input type="file" />
+
+                <button onClick={ChangePhotoCover}>
+                  Changer la photo de couverture
+                </button>
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-ajouter-photo-couverture */}
+        </>
+      )}
+
+      {/* popup help */}
+      {/* popup help */}
+      {/* popup help */}
+      {popupHelp && (
+        <>
+          <div
+            onClick={Help}
+            className="popup-help-list-of-contacts-whatsapp-opacity"
+          >
+            <div className="align">
+              <div className="card">
+                {/* 
+                <div className="display">
+                </div>
+                display-indice-one */}
+
+                {/* display-indice-one */}
+                {/* display-indice-one */}
+                {/* display-indice-one */}
+                <div className="display-indice-two">
+                  <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
+                  <p style={{ paddingRight: "5px" }}>l'icone</p>
+
+                  <svg
+                    style={{ paddingRight: "5px" }}
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 508 508"
+                    xmlSpace="preserve"
+                  >
+                    <path fill="#E9B526" d="M504 438V66H8v372h496z"></path>
+                    <path fill="#EDC654" d="M52 118H456V386H52z"></path>
+                    <path fill="#CDEEF9" d="M80 142H428V358H80z"></path>
+                    <path
+                      fill="#3C8E51"
+                      d="M216 193.2l-58 67.6-32.4-35.2-48 46c-.4.4 0 86.4 0 86.4H424l.8-82.8-52.4-52.4-63.2 63.6-93.2-93.2z"
+                    ></path>
+                    <path
+                      fill="#54B265"
+                      d="M213.2 195.6l-62 58 103.2 103.6 130.8.4-172-162z"
+                    ></path>
+                    <path
+                      fill="#E8BB85"
+                      d="M121.6 226.4l-44 45.6c-.4.4 0 86 0 86l176.4-.4-132.4-131.2z"
+                    ></path>
+                    <circle
+                      cx="302.8"
+                      cy="192.4"
+                      r="20.4"
+                      fill="#E9B526"
+                    ></circle>
+                    <path d="M504 446H4c-2.4 0-4-1.6-4-4V66c0-2.4 1.6-4 4-4h500c2.4 0 4 1.6 4 4v376c0 2.4-1.6 4-4 4zM8 438h492V70H8v368z"></path>
+                    <path d="M452 390H52c-2.4 0-4-1.6-4-4V122c0-2.4 1.6-4 4-4h400c2.4 0 4 1.6 4 4v264c0 2.4-1.6 4-4 4zm-396-8h392V126H56v256z"></path>
+                    <path d="M428 366H76c-2.4 0-4-1.6-4-4V146c0-2.4 1.6-4 4-4h292c2.4 0 4 1.6 4 4s-1.6 4-4 4H80v208h344V150h-8c-2.4 0-4-1.6-4-4s1.6-4 4-4h12c2.4 0 4 1.6 4 4v216c0 2.4-1.6 4-4 4z"></path>
+                    <path d="M78 271.6c-1.2 0-2-.4-2.8-1.2-1.6-1.6-1.6-4 0-5.6l43.6-43.6c1.6-1.6 4-1.6 5.6 0s1.6 4 0 5.6l-43.6 43.6c-.8.8-1.6 1.2-2.8 1.2z"></path>
+                    <path d="M194.4 301.2c-1.2 0-2-.4-2.8-1.2l-73.2-73.2c-1.6-1.6-1.6-4 0-5.6s4-1.6 5.6 0l73.2 73.2c1.6 1.6 1.6 4 0 5.6-.8.8-1.6 1.2-2.8 1.2zM163.6 249.6c-1.2 0-2-.4-2.8-1.2-1.6-1.6-1.6-4 0-5.6l52.4-52.4c1.6-1.6 4-1.6 5.6 0s1.6 4 0 5.6l-52.4 52.4c-.8.8-1.6 1.2-2.8 1.2zM320 279.2c-1.2 0-2-.4-2.8-1.2-1.6-1.6-1.6-4 0-5.6l52.4-52.4c1.6-1.6 4-1.6 5.6 0s1.6 4 0 5.6L322.8 278c-.8.8-2 1.2-2.8 1.2z"></path>
+                    <path d="M337.2 318.4c-1.2 0-2-.4-2.8-1.2L213.2 196.4c-1.6-1.6-1.6-4 0-5.6s4-1.6 5.6 0L340 311.6c1.6 1.6 1.6 4 0 5.6-.8.8-2 1.2-2.8 1.2zM427.6 282c-1.2 0-2-.4-2.8-1.2l-55.2-55.2c-1.6-1.6-1.6-4 0-5.6s4-1.6 5.6 0l55.2 55.2c1.6 1.6 1.6 4 0 5.6-.8.8-2 1.2-2.8 1.2zM304.4 215.6c-13.2 0-24-10.8-24-24s10.8-24 24-24c4.8 0 9.6 1.6 13.6 4.4 2 1.2 2.4 3.6.8 5.6-1.2 2-3.6 2.4-5.6.8-2.8-2-6-2.8-9.2-2.8-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16c0-2.4 1.6-4 4-4s4 1.6 4 4c.4 13.2-10.4 24-23.6 24z"></path>
+                  </svg>
+                  <p style={{ paddingRight: "5px" }}>pour</p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    ajouter
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    une photo
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    de couverture
+                  </p>
+                  <p style={{ paddingRight: "5px" }}>à votre</p>
+                  <p style={{ paddingRight: "5px" }}>Groupe</p>
+                  <p style={{ paddingRight: "5px" }}>Whatsapp</p>
+                  <p style={{ paddingRight: "5px" }}>et si</p>
+                  <p style={{ paddingRight: "5px" }}>vous voulez</p>
+                  <p style={{ paddingRight: "5px" }}>changer</p>
+                  <p style={{ paddingRight: "5px" }}>la photo</p>
+                  <p style={{ paddingRight: "5px" }}>de couverture</p>
+                  <p style={{ paddingRight: "5px" }}>recliquer</p>
+                  <p style={{ paddingRight: "5px" }}>sur l'image</p>
+                  <p style={{ paddingRight: "5px" }}>que vous</p>
+                  <p style={{ paddingRight: "5px" }}>avez ajouter</p>
+                  <p style={{ paddingRight: "5px" }}>et choisissez</p>
+                  <p style={{ paddingRight: "5px" }}>la nouvelle</p>
+                  <p style={{ paddingRight: "5px" }}>photo de</p>
+                  <p style={{ paddingRight: "5px" }}>couverture</p>
+                </div>
+                {/* display-indice-two */}
+
+                {/* display-indice-two */}
+                {/* display-indice-two */}
+                {/* display-indice-two */}
+                <div className="display-indice-two">
+                  <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
+                  <p style={{ paddingRight: "5px" }}>l'icone</p>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ paddingRight: "5px" }}
+                    width="20px"
+                    version="1.1"
+                    viewBox="0 0 30 30"
+                  >
+                    <g transform="translate(0 -289.063)">
+                      <path
+                        fill="#000"
+                        fillOpacity="1"
+                        stroke="none"
+                        strokeDasharray="none"
+                        strokeMiterlimit="4"
+                        strokeOpacity="1"
+                        strokeWidth="2"
+                        d="M22.824 296.239a11.986 11.986 0 00-1.542-1.287l-2.665 2.665 2.828 2.828 2.666-2.665a11.986 11.986 0 00-1.287-1.541zm-5.621 2.792L6.596 309.638l-.707 3.535 3.536-.707L20.03 301.86z"
+                        opacity="0.93"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p style={{ paddingRight: "5px" }}>pour</p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    écrire
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    la
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    description
+                  </p>
+                  <p style={{ paddingRight: "5px" }}>de votre</p>
+                  <p style={{ paddingRight: "5px" }}>Groupe</p>
+                  <p>Whatsapp</p>
+                </div>
+                {/* display-indice-two */}
+
+                {/* display-indice-three*/}
+                {/* display-indice-three*/}
+                {/* display-indice-three*/}
+                <div className="display-indice-three">
+                  <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
+                  <p style={{ paddingRight: "5px" }}>l'icone</p>
+
+                  <svg
+                    style={{ paddingRight: "5px" }}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path d="M3.548 20.938h16.9a.5.5 0 000-1h-16.9a.5.5 0 000 1zM9.71 17.18a2.587 2.587 0 001.12-.65l9.54-9.54a1.75 1.75 0 000-2.47l-.94-.93a1.788 1.788 0 00-2.47 0l-9.54 9.53a2.473 2.473 0 00-.64 1.12L6.04 17a.737.737 0 00.19.72.767.767 0 00.53.22zm.41-1.36a1.468 1.468 0 01-.67.39l-.97.26-1-1 .26-.97a1.521 1.521 0 01.39-.67l.38-.37 1.99 1.99zm1.09-1.08l-1.99-1.99 6.73-6.73 1.99 1.99zm8.45-8.45L18.65 7.3l-1.99-1.99 1.01-1.02a.748.748 0 011.06 0l.93.94a.754.754 0 010 1.06z"></path>
+                    </g>
+                  </svg>
+                  <p style={{ paddingRight: "5px" }}>pour</p>
+
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    modifier
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    la
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    description
+                  </p>
+                  <p style={{ paddingRight: "5px" }}>de</p>
+                  <p style={{ paddingRight: "5px" }}>votre</p>
+                  <p style={{ paddingRight: "5px" }}>Groupe</p>
+                  <p>Whatsapp</p>
+                </div>
+                {/* display-indice-three */}
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-help-list-of-contacts-whatsapp-opacity */}
         </>
       )}
     </>

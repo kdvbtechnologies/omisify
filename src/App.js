@@ -452,6 +452,12 @@ import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
 import PartieA from "./PartieA";
 import GC from "./components/Generation Connected/GC";
+import AddPhotoCoverSuccess from "./components/Generation Connected/AddPhotoCoverSuccess";
+import ChangePhotoCoverSuccess from "./components/Generation Connected/ChangePhotoCoverSuccess";
+import DescriptionModifierSuccess from "./components/Generation Connected/DescriptionModifierSuccess";
+import DescriptionAjouterSuccess from "./components/Generation Connected/DescriptionAjouterSuccess";
+import ContactAjouterSuccess from "./components/Generation Connected/ContactAjouterSuccess";
+import ContactModifierSuccess from "./components/Generation Connected/ContactModifierSuccess";
 
 export default function App() {
   return (
@@ -490,7 +496,39 @@ export default function App() {
         {/* new Omisify */}
         {/* new Omisify */}
         <Route path="/partie-a" element={<PartieA />} />
+
+        <Route
+          path="/add-photo-cover-success"
+          element={<AddPhotoCoverSuccess />}
+        />
+
+        <Route
+          path="/change-photo-cover-success"
+          element={<ChangePhotoCoverSuccess />}
+        />
+
+        <Route
+          path="/modifier-description-success"
+          element={<DescriptionModifierSuccess />}
+        />
+
+        <Route
+          path="/ajouter-description-success"
+          element={<DescriptionAjouterSuccess />}
+        />
+
+        <Route
+          path="/modifier-contact-success"
+          element={<ContactModifierSuccess />}
+        />
+
+        <Route
+          path="/ajouter-contact-success"
+          element={<ContactAjouterSuccess />}
+        />
+
         <Route path="/settings-new-omisify" element={<SettingsNewOmisify />} />
+
         <Route
           path="/about-list-of-contacts"
           element={<AboutListOfContacts />}

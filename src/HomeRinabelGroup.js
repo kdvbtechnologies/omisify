@@ -51,23 +51,23 @@ export default function HomeRinabelGroup() {
       <p>27 Septembre 2022</p>
       <p>Omisify</p>
       <p>
-        Omisify, une plateforme qui a été créé pour un seul but : Faire de la
+        Omisify est une plateforme qui a été créé pour un seul but : Faire de la
         publicité ciblé pour des entreprises à travers des applications de
         messagerie
       </p>
       <p>2023</p>
       <p>Alrani</p>
       <p>
-        Alrani, une plateforme gratuite de téléchargements de livre
-        d'entrepreunariat et d'investissement
+        Alrani est une plateforme gratuite de téléchargement de livre de
+        développement personnel et d'entrepreunariat
       </p>
       <p>16 Janvier 2023</p>
       <p>Vixinol Store</p>
       <p>
-        Vixinol Store, un magasin d'Application Web Progressive (PWA). Les
+        Vixinol Store est un magasin d'Application Web Progressive (PWA). Les
         Applications Web Progressive peuvent être installé sur tout les types
         d'appareils (Téléphone, tablette, ordinateur), sans aucune limite et
-        occupe moins d'espace dans l'appareil du consommateur. Avec Vixinol
+        occupe moins d'espace dans l'appareil de l'internaute. Avec Vixinol
         Store les dévéloppeurs n'ont plus besoin de créer une application pour
         chaque types d'appareils. Avec Vixinol Store une seule application
         suffit pour tout les types d'appareils, cela fait gagner du temps aux
@@ -92,7 +92,7 @@ export default function HomeRinabelGroup() {
 
       <p>Brillant de Jesus Christ fondateur de Rinabel Group dit que :</p>
       <p>
-        Nous devons servir au mieux nos consommateurs tout en minimisant nos
+        Nous devons servir au mieux nos utilisateurs tout en minimisant nos
         dépenses au maximum et en générant beaucoup d'argent pour nos
         investisseurs avec des employés discipliné, talentueux et bien rémunérer
       </p>
@@ -119,11 +119,11 @@ export default function HomeRinabelGroup() {
       </p>
 
       <p>Investir</p>
-      <p>23.850€</p>
-      <p>Objectif: 3.000.000€</p>
+      <p>230.850€</p>
+      <p>Objectif: 300.000.000€</p>
       <p>
-        Les 3.000.000€ serviront à augmenter les capacités d'hébergement de nos
-        produits/services et à augmenter le nombre d'employés talentueux qui
+        Les 300.000.000€ serviront à augmenter les capacités d'hébergement de
+        nos produits/services et à augmenter le nombre d'employés talentueux qui
         parlent plusieurs langues, cela nous permettra à accueillir sur nos
         sites/applications plus d'utilisateurs venant de tout les pays du monde
         et utilisant nos applications en fonction de la langue de leur pays,
@@ -144,8 +144,8 @@ export default function HomeRinabelGroup() {
       </p>
 
       <p>
-        Déjà 23.850€, de jours en jours nous nous rapprochons de l'objectif.
-        Doucement doucement, nous allons atteindre les 3.000.000€
+        Déjà 230.850€, de jours en jours nous nous rapprochons de l'objectif.
+        Doucement doucement, nous allons atteindre les 300.000.000€
       </p>
 
       <p>17 personnes ont déjà investis dans Rinabel Group</p>
@@ -183,6 +183,12 @@ export default function HomeRinabelGroup() {
       <p>
         Lorsque vous utiliser un VPN votre navigation sur internet est 100%
         sécurisé
+      </p>
+
+      <p>
+        Brillant de Jésus-Christ est un homme parti de rien, un homme qui à
+        connu l'échec, un homme qui à beaucoup échouer avant de devenir Brillant
+        de Jésus Christ le Saint Homme de Dieu.
       </p>
     </>
   );

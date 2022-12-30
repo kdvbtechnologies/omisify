@@ -148,7 +148,33 @@ export default function ListOfContacts() {
     setPopupElementsEnAttente(!popupElementsEnAttente);
   }
 
-  async function Save() {}
+  // modifier contact
+  function ModifierContactSuccess() {
+    window.location = "/modifier-contact-success";
+  }
+
+  // ajouter contact
+  function AjouterContactSuccess() {
+    window.location = "/ajouter-contact-success";
+  }
+
+  // popup infos capture d'ecran
+  const [popupInfosCaptureDecran, setPopupInfosCaptureDecran] = useState(false);
+  function InfosCaptureDecran() {
+    setPopupInfosCaptureDecran(!popupInfosCaptureDecran);
+  }
+
+  // popup infos capture d'ecran - modifier contact
+  const [
+    popupInfosCaptureDecranModifierContact,
+    setPopupInfosCaptureDecranModifierContact,
+  ] = useState(false);
+
+  function InfosCaptureDecranModifierContact() {
+    setPopupInfosCaptureDecranModifierContact(
+      !popupInfosCaptureDecranModifierContact
+    );
+  }
 
   return (
     <>
@@ -216,7 +242,7 @@ export default function ListOfContacts() {
         >
           <div className="display">
             <img src={partner} alt="" />
-            <p>Liste de Contacts Whatsapp</p>
+            <p>VirilNation</p>
           </div>
         </NavLink>
         {/* display */}
@@ -530,8 +556,52 @@ export default function ListOfContacts() {
                 </div>
                 {/* center */}
 
+                <div className="capture-decran-du-contact">
+                  <div className="display">
+                    <svg
+                      style={{ paddingRight: "5px" }}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      viewBox="0 0 30 30"
+                    >
+                      <path d="M21.167 12c-.402 0-.76.207-1.02.48l-5.993 6.296c-.26.29-.543.268-.792 0l-2.996-3.25c-.3-.324-.686-.52-1.107-.526-.422-.005-.814.205-1.115.543L3.16 21.136c-.48.48.26 1.21.737.682l4.986-5.593c.355-.41.626-.154.776.018l2.996 3.25c.298.325.686.507 1.102.507.416 0 .8-.187 1.102-.506l5.993-6.297c.31-.317.618-.162.792 0l4.487 4.636c.47.498 1.197-.24.707-.718L22.35 12.48c-.338-.35-.766-.48-1.185-.48zM3.5 24h23a.499.499 0 110 1h-23a.499.499 0 110-1zm5-18C7.125 6 6 7.125 6 8.5S7.125 11 8.5 11 11 9.875 11 8.5 9.875 6 8.5 6zm0 1c.834 0 1.5.666 1.5 1.5S9.334 10 8.5 10 7 9.334 7 8.5 7.666 7 8.5 7zm-7-7C.678 0 0 .678 0 1.5v27c0 .822.678 1.5 1.5 1.5h27c.822 0 1.5-.678 1.5-1.5v-27c0-.822-.678-1.5-1.5-1.5zm0 1h27c.286 0 .5.214.5.5v27c0 .286-.214.5-.5.5h-27a.488.488 0 01-.5-.5v-27c0-.286.214-.5.5-.5z"></path>
+                    </svg>
+
+                    <input type="file" />
+
+                    <svg
+                      onClick={InfosCaptureDecran}
+                      style={{ paddingLeft: "10px" }}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      cursor="pointer"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#000"
+                        fillRule="evenodd"
+                        d="M13.4 6H11v2.4h2.4V6zm0 4.8H11V18h2.4v-7.2z"
+                        clipRule="evenodd"
+                      ></path>
+                      <path
+                        fill="#000"
+                        fillRule="evenodd"
+                        d="M12.314.686L1 12l11.314 11.314L23.627 12 12.314.686zm0 2.263L3.263 12l9.05 9.051L21.366 12l-9.051-9.051z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  {/* display */}
+                </div>
+                {/* capture-decran-du-contact */}
+
+                <div className="hr">
+                  <hr />
+                </div>
+
                 <div className="center">
-                  <button onClick={Save}>Enregistrer</button>
+                  <button onClick={AjouterContactSuccess}>Enregistrer</button>
                 </div>
                 {/* center */}
               </div>
@@ -798,8 +868,54 @@ export default function ListOfContacts() {
                 </div>
                 {/* center */}
 
+                <div className="capture-decran-du-contact">
+                  <div className="display">
+                    <svg
+                      style={{ paddingRight: "5px" }}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      viewBox="0 0 30 30"
+                    >
+                      <path d="M21.167 12c-.402 0-.76.207-1.02.48l-5.993 6.296c-.26.29-.543.268-.792 0l-2.996-3.25c-.3-.324-.686-.52-1.107-.526-.422-.005-.814.205-1.115.543L3.16 21.136c-.48.48.26 1.21.737.682l4.986-5.593c.355-.41.626-.154.776.018l2.996 3.25c.298.325.686.507 1.102.507.416 0 .8-.187 1.102-.506l5.993-6.297c.31-.317.618-.162.792 0l4.487 4.636c.47.498 1.197-.24.707-.718L22.35 12.48c-.338-.35-.766-.48-1.185-.48zM3.5 24h23a.499.499 0 110 1h-23a.499.499 0 110-1zm5-18C7.125 6 6 7.125 6 8.5S7.125 11 8.5 11 11 9.875 11 8.5 9.875 6 8.5 6zm0 1c.834 0 1.5.666 1.5 1.5S9.334 10 8.5 10 7 9.334 7 8.5 7.666 7 8.5 7zm-7-7C.678 0 0 .678 0 1.5v27c0 .822.678 1.5 1.5 1.5h27c.822 0 1.5-.678 1.5-1.5v-27c0-.822-.678-1.5-1.5-1.5zm0 1h27c.286 0 .5.214.5.5v27c0 .286-.214.5-.5.5h-27a.488.488 0 01-.5-.5v-27c0-.286.214-.5.5-.5z"></path>
+                    </svg>
+
+                    <input type="file" />
+
+                    <svg
+                      onClick={InfosCaptureDecranModifierContact}
+                      style={{ paddingLeft: "10px" }}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      cursor="pointer"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#000"
+                        fillRule="evenodd"
+                        d="M13.4 6H11v2.4h2.4V6zm0 4.8H11V18h2.4v-7.2z"
+                        clipRule="evenodd"
+                      ></path>
+                      <path
+                        fill="#000"
+                        fillRule="evenodd"
+                        d="M12.314.686L1 12l11.314 11.314L23.627 12 12.314.686zm0 2.263L3.263 12l9.05 9.051L21.366 12l-9.051-9.051z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  {/* display */}
+                </div>
+                {/* capture-decran-du-contact */}
+
+                <div className="hr">
+                  <hr />
+                </div>
+
                 <div className="center">
-                  <button onClick={Save}>Enregistrer les modifications</button>
+                  <button onClick={ModifierContactSuccess}>
+                    Enregistrer les modifications
+                  </button>
                 </div>
                 {/* center */}
               </div>
@@ -1208,15 +1324,89 @@ export default function ListOfContacts() {
             <div className="align">
               <div className="card">
                 <p>
-                  Les Contacts que vous avez enregistrés sont en attente de
+                  Ces Contacts que vous avez enregistrés sont en attente de
                   validation
+                </p>
+
+                <div className="overflow">
+                  <table id="table">
+                    <tr>
+                      <th>Nom(s)</th>
+                      <th>Numéro Whatsapp</th>
+                    </tr>
+
+                    {api.map((api) => (
+                      <>
+                        <tr>
+                          <td>{api.name}</td>
+                          <td>{api.numberWhatsapp}</td>
+                        </tr>
+                      </>
+                    ))}
+                  </table>
+                  <p style={{ marginTop: "50px" }}></p>
+                </div>
+
+                {/* card */}
+              </div>
+              {/* align */}
+            </div>
+          </div>
+          {/* popup-elements-en-attente-opacity */}
+        </>
+      )}
+
+      {/* popup-infos-capture-decran-opacity */}
+      {/* popup-infos-capture-decran-opacity */}
+      {/* popup-infos-capture-decran-opacity */}
+      {popupInfosCaptureDecran && (
+        <>
+          <div
+            onClick={InfosCaptureDecran}
+            className="popup-infos-capture-decran-opacity"
+          >
+            <div className="align">
+              <div className="card">
+                <p>
+                  Au niveau de votre téléphone, tablette ou ordinateur, entrer
+                  dans votre Liste de Contacts, prenez le numéro du contact en
+                  capture d'écran, puis au niveau de votre compte Omisify,
+                  joignez la capture d'écran avant l'enregistrement du Nouveau
+                  Contact
                 </p>
               </div>
               {/* card */}
             </div>
             {/* align */}
           </div>
-          {/* popup-elements-en-attente-opacity */}
+          {/* popup-infos-capture-decran-opacity */}
+        </>
+      )}
+
+      {/* popup-infos-capture-decran-opacity - ModifierContact */}
+      {/* popup-infos-capture-decran-opacity - ModifierContact */}
+      {/* popup-infos-capture-decran-opacity - ModifierContact */}
+      {popupInfosCaptureDecranModifierContact && (
+        <>
+          <div
+            onClick={InfosCaptureDecranModifierContact}
+            className="popup-infos-capture-decran-opacity"
+          >
+            <div className="align">
+              <div className="card">
+                <p>
+                  Au niveau de votre téléphone, tablette ou ordinateur, entrer
+                  dans votre Liste de Contacts, prenez le numéro du contact en
+                  capture d'écran, puis au niveau de votre compte Omisify,
+                  joignez la capture d'écran avant l'enregistrement des
+                  modifications
+                </p>
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-infos-capture-decran-opacity */}
         </>
       )}
     </>
