@@ -1188,15 +1188,11 @@ export default function ListOfContacts() {
                 <div className="display">
                   <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
                   <p style={{ fontWeight: "bold", paddingRight: "5px" }}>
-                    Liste de
+                    VirilNation
                   </p>
-                  <p style={{ fontWeight: "bold", paddingRight: "5px" }}>
-                    Contacts
-                  </p>
-                  <p style={{ fontWeight: "bold", paddingRight: "5px" }}>
-                    Whatsapp
-                  </p>
-                  <p style={{ paddingRight: "5px" }}>pour aller</p>
+
+                  <p style={{ paddingRight: "5px" }}>pour</p>
+                  <p style={{ paddingRight: "5px" }}>aller</p>
                   <p style={{ paddingRight: "5px" }}>dans</p>
                   <p
                     style={{ textDecoration: "underline", paddingRight: "5px" }}
@@ -1206,18 +1202,9 @@ export default function ListOfContacts() {
                   <p
                     style={{ textDecoration: "underline", paddingRight: "5px" }}
                   >
-                    de la
+                    du Groupe
                   </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    Liste de
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    Contacts
-                  </p>
+
                   <p style={{ textDecoration: "underline" }}>Whatsapp</p>
                 </div>
                 {/* display */}
@@ -1240,8 +1227,16 @@ export default function ListOfContacts() {
                     <path d="M337.4 232.7h-80.3v-80.3c0-6.8-5.5-12.3-12.3-12.3s-12.3 5.5-12.3 12.3v80.3h-80.3c-6.8 0-12.3 5.5-12.3 12.2 0 6.8 5.5 12.3 12.3 12.3h80.3v80.3c0 6.8 5.5 12.3 12.3 12.3s12.3-5.5 12.3-12.3v-80.3h80.3c6.8 0 12.3-5.5 12.3-12.3 0-6.8-5.5-12.2-12.3-12.2z"></path>
                   </svg>
                   <p style={{ paddingRight: "5px" }}>pour</p>
-                  <p style={{ paddingRight: "5px" }}>ajouter</p>
-                  <p style={{ paddingRight: "5px" }}>un</p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    ajouter
+                  </p>
+                  <p
+                    style={{ textDecoration: "underline", paddingRight: "5px" }}
+                  >
+                    un
+                  </p>
                   <p
                     style={{ textDecoration: "underline", paddingRight: "5px" }}
                   >
@@ -1253,8 +1248,7 @@ export default function ListOfContacts() {
                     Contact
                   </p>
                   <p style={{ paddingRight: "5px" }}>à votre</p>
-                  <p style={{ paddingRight: "5px" }}>Liste de</p>
-                  <p style={{ paddingRight: "5px" }}>Contacts</p>
+                  <p style={{ paddingRight: "5px" }}>Groupe</p>
                   <p>Whatsapp</p>
                 </div>
                 {/* display-indice-two */}
@@ -1286,7 +1280,7 @@ export default function ListOfContacts() {
                   <p
                     style={{ textDecoration: "underline", paddingRight: "5px" }}
                   >
-                    Modifier
+                    modifier
                   </p>
                   <p
                     style={{ textDecoration: "underline", paddingRight: "5px" }}
@@ -1301,8 +1295,7 @@ export default function ListOfContacts() {
                   <p style={{ paddingRight: "5px" }}>figurant</p>
                   <p style={{ paddingRight: "5px" }}>dans</p>
                   <p style={{ paddingRight: "5px" }}>votre</p>
-                  <p style={{ paddingRight: "5px" }}>Liste de</p>
-                  <p style={{ paddingRight: "5px" }}>Contacts</p>
+                  <p style={{ paddingRight: "5px" }}>Groupe</p>
                   <p>Whatsapp</p>
                 </div>
                 {/* display-indice-three */}
