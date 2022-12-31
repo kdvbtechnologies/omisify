@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function ChangePhotoCoverError() {
+export default function ContactAjouterError() {
   return (
     <>
       <div className="change-photo-cover-error">
@@ -90,7 +90,7 @@ export default function ChangePhotoCoverError() {
             Vérifier votre connexion internet ou rééssayer plus tard
           </p>
 
-          <NavLink to="/about-list-of-contacts">
+          <NavLink to="/list-of-contacts">
             <button>Terminer</button>
           </NavLink>
         </div>

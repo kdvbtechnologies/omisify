@@ -32,6 +32,11 @@ export default function GC() {
       .catch((err) => console.log(err));
   }
 
+  console.log(Save);
+  function Savee() {
+    window.location = "/list-of-contacts";
+  }
+
   const [popupAddWhatsappNumber, setPopupAddWhatsappNumber] = useState("");
   function PopupAddWhatsappNumber() {
     setPopupAddWhatsappNumber(!popupAddWhatsappNumber);
@@ -95,7 +100,7 @@ export default function GC() {
           </div>
 
           <p onClick={PopupList} style={{ cursor: "pointer" }}>
-            Liste de Contacts
+            Effet Levier
           </p>
           <div className="hr">
             <hr />
@@ -237,7 +242,7 @@ export default function GC() {
                   value={yourWhatsappNumber}
                   onChange={(e) => setYourWhatsappNumber(e.target.value)}
                 />
-                <button onClick={Save}>Enregistrer</button>
+                <button onClick={Savee}>Enregistrer</button>
               </div>
               {/* card */}
             </div>

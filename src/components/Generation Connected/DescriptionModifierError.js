@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function ChangePhotoCoverError() {
+export default function DescriptionModifierError() {
   return (
     <>
       <div className="change-photo-cover-error">

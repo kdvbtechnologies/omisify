@@ -18,6 +18,14 @@ import AboutListOfContacts from "./components/Generation Connected/AboutListOfCo
 import GetMoneyGenerationConnected from "./components/Generation Connected/GetMoneyGenerationConnected";
 import GetMoneySuccess from "./components/Generation Connected/GetMoneySuccess";
 import Historic from "./components/Historic/Historic";
+import GC from "./components/Generation Connected/GC";
+import AddPhotoCoverSuccess from "./components/Generation Connected/AddPhotoCoverSuccess";
+import ChangePhotoCoverSuccess from "./components/Generation Connected/ChangePhotoCoverSuccess";
+import DescriptionModifierSuccess from "./components/Generation Connected/DescriptionModifierSuccess";
+import DescriptionAjouterSuccess from "./components/Generation Connected/DescriptionAjouterSuccess";
+import ContactAjouterSuccess from "./components/Generation Connected/ContactAjouterSuccess";
+import ContactModifierSuccess from "./components/Generation Connected/ContactModifierSuccess";
+import ChangePhotoCoverError from "./components/Generation Connected/ChangePhotoCoverError";
 
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
@@ -451,13 +459,12 @@ import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
 import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
 import PartieA from "./PartieA";
-import GC from "./components/Generation Connected/GC";
-import AddPhotoCoverSuccess from "./components/Generation Connected/AddPhotoCoverSuccess";
-import ChangePhotoCoverSuccess from "./components/Generation Connected/ChangePhotoCoverSuccess";
-import DescriptionModifierSuccess from "./components/Generation Connected/DescriptionModifierSuccess";
-import DescriptionAjouterSuccess from "./components/Generation Connected/DescriptionAjouterSuccess";
-import ContactAjouterSuccess from "./components/Generation Connected/ContactAjouterSuccess";
-import ContactModifierSuccess from "./components/Generation Connected/ContactModifierSuccess";
+import AddPhotoCoverError from "./components/Generation Connected/AddPhotoCoverError";
+import ContactModifierError from "./components/Generation Connected/ContactModifierError";
+import ContactAjouterError from "./components/Generation Connected/ContactAjouterError";
+import DescriptionModifierError from "./components/Generation Connected/DescriptionModifierError";
+import DescriptionAjouterError from "./components/Generation Connected/DescriptionAjouterError";
+import GetMoneyError from "./components/Generation Connected/GetMoneyError";
 
 export default function App() {
   return (
@@ -502,9 +509,16 @@ export default function App() {
           element={<AddPhotoCoverSuccess />}
         />
 
+        <Route path="/add-photo-cover-error" element={<AddPhotoCoverError />} />
+
         <Route
           path="/change-photo-cover-success"
           element={<ChangePhotoCoverSuccess />}
+        />
+
+        <Route
+          path="/change-photo-cover-error"
+          element={<ChangePhotoCoverError />}
         />
 
         <Route
@@ -513,8 +527,18 @@ export default function App() {
         />
 
         <Route
+          path="/modifier-description-error"
+          element={<DescriptionModifierError />}
+        />
+
+        <Route
           path="/ajouter-description-success"
           element={<DescriptionAjouterSuccess />}
+        />
+
+        <Route
+          path="/ajouter-description-error"
+          element={<DescriptionAjouterError />}
         />
 
         <Route
@@ -523,8 +547,18 @@ export default function App() {
         />
 
         <Route
+          path="/modifier-contact-error"
+          element={<ContactModifierError />}
+        />
+
+        <Route
           path="/ajouter-contact-success"
           element={<ContactAjouterSuccess />}
+        />
+
+        <Route
+          path="/ajouter-contact-error"
+          element={<ContactAjouterError />}
         />
 
         <Route path="/settings-new-omisify" element={<SettingsNewOmisify />} />
@@ -536,6 +570,7 @@ export default function App() {
 
         <Route path="/list-of-contacts" element={<ListOfContacts />} />
         <Route path="/get-money-success" element={<GetMoneySuccess />} />
+        <Route path="/get-money-error" element={<GetMoneyError />} />
         <Route path="/historic" element={<Historic />} />
         <Route path="/get-money-gc" element={<GetMoneyGenerationConnected />} />
         <Route path="/gc" element={<GC />} />

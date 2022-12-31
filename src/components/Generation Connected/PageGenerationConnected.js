@@ -192,8 +192,8 @@ export default function PageGenerationConnected() {
         <div className="align-box-shadow">
           <div className="box-shadow">
             <p>
-              Ajouter juste le logo de la marque Omisify à votre photo ou vidéo
-              et soyez rémunérer chaque jour par Omisify
+              Ajouter juste le logo de la marque Omisify à votre photo et soyez
+              rémunérer chaque jour par Omisify
             </p>
           </div>
           {/* box-shadow */}
@@ -231,8 +231,8 @@ export default function PageGenerationConnected() {
 
             <div className="a">
               <p>
-                Si vous êtes déjà Connecté, cliquer sur Rejoindre la Nouvelle
-                Génération pour rejoindre toutes ces personnes qui font partie
+                Si vous êtes déjà Connecté, cliquer sur Rejoindre la
+                Génération Connecté pour rejoindre toutes ces personnes qui font partie
                 de la Génération Connecté
               </p>
             </div>
@@ -300,20 +300,17 @@ export default function PageGenerationConnected() {
       <p>Fonctionnement</p>
       <p>
         Tout les jours, de nombreuses personnes sont rémunérées juste pour avoir
-        ajouter le logo de la marque Omisify à leur photo/vidéo. Pour etre
-        Connecté vous devez ajouter le logo de la marque Omisify à votre photo
-        ou vidéo
+        ajouter le logo de la marque Omisify à leur photo de profil. Pour être
+        Connecté vous devez ajouter le logo de la marque Omisify à votre photo de profil Facebook, Whatsapp, Wechat,...
       </p>
       <p>Outil</p>
       <p>
-        Utiliser l'outil photoshop ou tout autre outil professionnel pour
-        ajouter le logo de la marque Omisify à votre photo
+        Utiliser l'application photoshop ou tout autre outil professionnel pour
+        ajouter le logo de la marque Omisify à votre photo de profil
       </p>
 
-      <p>
-        Utiliser l'outil Adobe Première Pro ou tout autre outil professionnel
-        pour ajouter le logo de la marque Omisify à votre vidéo
-      </p>
+      <p>Après l'ajout du logo à votre photo de profil, aller sur les réseaux sociaux et publier la nouvelle photo de profil, aller aussi sur whatsapp, Telegram ou Wechat et remplacer la nouvelle photo de profil. Au niveau de votre compte Omisify, cliquer sur importer la photo et joignez le lien de la photo de profil (par exemple pour Facebook, connectez-vous à votre compte Facebook à partir d'un navigateur et sur la barre d'adresse, prener le lien de la nouvelle photo de profil qui contient le logo de la marque Omisify) </p>
+
       <p>Logo</p>
       <p>
         Cliquer sur Télécharger pour télécharger les logos de la marque Omisify
