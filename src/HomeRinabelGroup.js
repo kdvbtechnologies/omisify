@@ -190,6 +190,64 @@ export default function HomeRinabelGroup() {
         connu l'échec, un homme qui à beaucoup échouer avant de devenir Brillant
         de Jésus Christ le Saint Homme de Dieu.
       </p>
+
+      <p>
+        Izocash, Transférer de l'argent gratuitement partout dans le monde
+        entier
+      </p>
+      <p>Izocash, Recevez vos récompenses dans l'application Izocash</p>
+
+      <p>Tontine Familiale de 5000FCFA</p>
+
+      <p>Izocash Deal</p>
+      <p>
+        Plutot que de laisser votre argent dans votre compte Izocash, vous
+        pouvez le basculer dans votre compte Izocash Deal pour le faire
+        fructifier
+      </p>
+      <p>
+        En mettant de l'argent dans votre compte Izocash Deal, Izocash Deal
+        investira votre argent dans des placements surs et vous reversera un
+        pourcentage de 1% sur chaque euro investi. Avec Izocash Deal votre
+        argent augmentera
+      </p>
+      <p>
+        Plus vous mettez de l'argent dans votre compte Izocash Deal, plus le
+        pourcentage augmentera
+      </p>
+      <p>
+        Vous pouvez rompre le deal à tout moment, plus vous laisser votre argent
+        pendant longtemps dans votre compte Izocash Deal, plus vous gagnerez
+        beaucoup d'argent. Avec Izocash Deal votre argent augmentera
+      </p>
+
+      <p>Compte d'investissement</p>
+      <p>Le savez-vous ?</p>
+      <p>
+        Si vous mettez 250€ chaque jour dans votre compte Izocash, dans 20 ans
+        vous aurez 1 825 000€, dans 20 ans vous serez Millionnaire
+      </p>
+
+      <p>Automatisez votre compte d'investissement</p>
+      <p>
+        Chaque fois que vous mettez de l'argent dans votre compte Izocash, 5%
+        sera verser automatiquement vers votre compte d'investissement et cet
+        argent vous pourrez l'utiliser pour investir dans des entreprises cotés
+        en bourses ou vous pourrez l'utiliser pour lancer un nouveau business
+      </p>
+
+      <p>Réseaux d'entreprises</p>
+      <p>
+        Les entreprises qui font parties du Réseaux d'entreprises d'Izocash sont
+        favorisés à la bourse Obama Stock Exchange
+      </p>
+      <p>
+        La bourse est le moyen le plus efficace pour permettre à votre
+        entreprise d'être toujours en vie après votre mort. La bourse est le
+        moyen le plus efficace pour permettre à votre entreprise de se
+        développer à l'international
+      </p>
+      <p>Ajouter votre entreprise aux Réseaux d'entreprises d'Izocash</p>
     </>
   );
 }

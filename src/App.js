@@ -465,6 +465,7 @@ import ContactAjouterError from "./components/Generation Connected/ContactAjoute
 import DescriptionModifierError from "./components/Generation Connected/DescriptionModifierError";
 import DescriptionAjouterError from "./components/Generation Connected/DescriptionAjouterError";
 import GetMoneyError from "./components/Generation Connected/GetMoneyError";
+import Facebook from "./components/Generation Connected/Facebook";
 
 export default function App() {
   return (
@@ -503,6 +504,8 @@ export default function App() {
         {/* new Omisify */}
         {/* new Omisify */}
         <Route path="/partie-a" element={<PartieA />} />
+
+        <Route path="/fb" element={<Facebook />} />
 
         <Route
           path="/add-photo-cover-success"

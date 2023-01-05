@@ -4428,7 +4428,123 @@ footer {
   cursor: pointer;
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
+}
+
+.fonctionnement-gc .align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fonctionnement-gc .background {
+  background-color: #ccc;
+  width: 150px;
+  padding: 50px 20px;
+  margin-bottom: 50px;
+}
+
+.fonctionnement-gc .background .fonctionnement p {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 7px 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fonctionnement-gc .background .logo p {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 7px 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fonctionnement-gc .background .outil p {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 7px 5px;
+  text-align: center;
+}
+
+.popup-fonctionnement-opacity {
+  background-color: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.popup-fonctionnement-opacity .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.popup-fonctionnement-opacity .align .card {
+  width: 250px;
+  background-color: white;
+  padding: 20px;
+}
+
+.popup-fonctionnement-opacity .align .card .a p {
+  padding-bottom: 10px;
+}
+
+.popup-fonctionnement-opacity .align .card .center {
+  text-align: center;
+}
+
+.popup-fonctionnement-opacity .align .card .center button {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.popup-fonctionnement-opacity .align .card .center button:hover {
+  background-color: #ff6f79;
+}
+
+.popup-outil-opacity {
+  background-color: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.popup-outil-opacity .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 250px;
+  padding-bottom: 50px;
+}
+
+.popup-outil-opacity .align .card {
+  width: 250px;
+  background-color: white;
+  padding: 20px;
+}
+
+.popup-outil-opacity .align .card .a p {
+  padding-bottom: 10px;
 }
 
 .popupHelp-background {
@@ -4455,7 +4571,304 @@ footer {
   padding: 25px 20px;
 }
 
-/* home omisify - navbar bottom omisify.js */
+.help-page-gc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.popup-menu-to-right-opacity-gc {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.popup-menu-to-right-opacity-gc .float {
+  float: right;
+}
+
+.popup-menu-to-right-opacity-gc .float .card {
+  width: 140px;
+  padding: 25px 20px;
+  margin: 25px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+/* Generation Connected - Facebook.js */
+/* Generation Connected - Facebook.js */
+/* Generation Connected - Facebook.js */
+.fb .space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 10px;
+}
+
+.fb .space .a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.fb-others .a {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.fb-others .a .align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fb-others .a .align .b p {
+  background-color: red;
+  color: white;
+  padding: 3px 15px;
+  font-size: 15px;
+  margin-top: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fb-others .a .align p {
+  padding: 3px 10px;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fb-others .a .hr hr {
+ border: 1px solid #eee;
+}
+
+.fb-popup-opacity {
+  background-color: #00000050;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.fb-popup-opacity .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} 
+
+.fb-popup-opacity .align .card {
+  width: 300px;
+  padding: 20px;
+  background: #ff6f79;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.fb-popup-opacity .align .card .a p {
+  border: 1px solid white;
+  padding: 15px;
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 7px;
+}
+
+.fb-popup-opacity .align .card .b .display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fb-popup-opacity .align .card .c {
+  margin-top: 5px;
+}
+
+.fb-popup-opacity .align .card .c p {
+  font-size: 14px;
+}
+
+.popup-add-page-fb-opacity {
+  background-color: #00000050;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.popup-add-page-fb-opacity .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} 
+
+.popup-add-page-fb-opacity .align .space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup-add-page-fb-opacity .align .card {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.popup-add-page-fb-opacity .align .card .display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-choisir-lien-ou-capture-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-choisir-lien-ou-capture-page p {
+  text-align: center;
+}
+
+.input-lien-de-la-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-lien-de-la-page input[type="url"] {
+  padding: 3px 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.input-capture-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-capture-page input[type="file"] {
+  width: 150px;
+  margin-top: 7px;
+}
+
+.btn-ajouter-nouvelle-page-fb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-ajouter-nouvelle-page-fb button {
+  background: red;
+  color: white;
+  padding: 5px 12px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+}
+
+.btn-ajouter-nouvelle-page-fb button:hover {
+  background: #ff6f79;
+}
+
+.input-nombre-damis-fb p {
+  text-align: center;
+}
+
+.input-nombre-damis-fb .align-in-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.input-nombre-damis-fb input[type="number"] {
+  padding: 3px 5px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.input-nom-page-fb p {
+  text-align: center;
+}
+
+.input-nom-page-fb .align-in-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.input-nom-page-fb input[type="text"] {
+  padding: 3px 5px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.ajouter-compte-fb p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #00cc00;
+}
+
+.fb-popup-menu-to-right-opacity {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.fb-popup-menu-to-right-opacity .align {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.fb-popup-menu-to-right-opacity .align .card {
+  margin-left: 165px;
+  margin-top: 70px;
+  width: 100px;
+  background-color: white;
+  padding: 15px 10px;
+}
+
+.fb-popup-menu-to-right-opacity .align .card .display {
+  display: flex;
+  align-items: center;
+}
+
 /* home omisify - navbar bottom omisify.js */
 /* home omisify - navbar bottom omisify.js */
 /* home omisify - navbar bottom omisify.js */
@@ -12198,6 +12611,11 @@ footer {
   }
 
   /* omisify */
+  
+.popup-add-page-fb-opacity .align .card {
+  width: 280px; 
+}
+
   .about-list-of-contacts .cover img {
     width: 380px;
     margin-top: 30px;
@@ -12484,6 +12902,18 @@ footer {
   }
 
    /* omisify */
+   .fb-popup-menu-to-right-opacity .align .card {
+    margin-left: 150px;
+   }
+
+  .fb-popup-opacity .align .card {
+    width: 280px;
+  }
+
+   .popup-add-page-fb-opacity .align .card {
+    width: 260px; 
+  }
+
    .about-list-of-contacts .cover img {
     width: 340px;
     margin-top: 30px;
@@ -12625,6 +13055,14 @@ footer {
   }
 
   /* omisify */
+  .fb-popup-menu-to-right-opacity .align .card {
+    margin-left: 125px;
+   }
+
+  .fb-popup-opacity .align .card {
+    width: 260px;
+  }
+
   .title-settings-mobile .display .a {
     padding-right: 125px;
   }
@@ -12792,6 +13230,18 @@ footer {
 /* 340px */
 @media screen and (max-width: 340px) {
    /* omisify */
+   .fb-popup-menu-to-right-opacity .align .card {
+    margin-left: 125px;
+   }
+
+   .fb-popup-opacity .align .card {
+    width: 260px;
+  }
+
+    .popup-add-page-fb-opacity .align .card {
+    width: 240px; 
+  }
+
    .about-list-of-contacts .cover img {
     width: 300px;
     margin-top: 30px;
@@ -13114,6 +13564,18 @@ footer {
   }
 
    /* omisify */
+   .fb-popup-menu-to-right-opacity .align .card {
+    margin-left: 110px;
+   }
+
+   .fb-popup-opacity .align .card {
+    width: 240px;
+  }
+
+   .popup-add-page-fb-opacity .align .card {
+    width: 240px; 
+  }
+
    .about-list-of-contacts .cover img {
     width: 280px;
     margin-top: 30px;
@@ -13443,6 +13905,18 @@ footer {
 
   /* omisify */
   /* omisify */
+  .fb-popup-menu-to-right-opacity .align .card {
+    margin-left: 95px;
+   }
+
+  .fb-popup-opacity .align .card {
+    width: 230px;
+  }
+
+  .popup-add-page-fb-opacity .align .card {
+    width: 220px; 
+  }
+
   .popup-infos-capture-decran-opacity .align {
     padding-top: 140px;
   }
@@ -13661,6 +14135,18 @@ footer {
   }
 
   /* omisify */
+  .fb-popup-menu-to-right-opacity .align .card {
+    margin-left: 75px;
+   }
+
+  .fb-popup-opacity .align .card {
+    width: 210px;
+  }
+
+  .popup-add-page-fb-opacity .align .card {
+    width: 200px; 
+  }
+
   .popup-infos-capture-decran-opacity .align {
     padding-top: 120px;
   }
@@ -14102,6 +14588,23 @@ footer {
   }
 
   /* omisify */
+  .fb-popup-menu-to-right-opacity .align .card {
+    margin-left: 55px;
+   }
+
+  .fb-popup-opacity .align .card {
+    width: 190px;
+  }
+
+.popup-add-page-fb-opacity .align {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+  .popup-add-page-fb-opacity .align .card {
+    width: 180px; 
+  }
+
   .popup-infos-capture-decran-opacity .align {
     padding-top: 110px;
   }
@@ -14586,6 +15089,30 @@ footer {
 @media screen and (max-width: 240px) {
   /* omisify */
   /* omisify */
+  .fb-popup-menu-to-right-opacity .align .card {
+    margin-left: 35px;
+   }
+
+  .fb-popup-opacity .align .card {
+    width: 170px;
+  }
+
+  .input-nom-page-fb input[type="text"] {
+    padding: 3px 0px;
+  }
+
+.input-nombre-damis-fb input[type="number"] {
+  padding: 3px 0px;
+}
+
+  .input-lien-de-la-page input[type="url"] {
+    padding: 3px 0px;
+  }
+
+  .popup-add-page-fb-opacity .align .card {
+    width: 160px; 
+  }
+
   .popup-elements-en-attente-opacity .align .card {
     width: 180px;
     padding: 20px 15px;
@@ -15122,6 +15649,18 @@ footer {
 
 /* omisify */
 /* omisify */
+.fb-popup-menu-to-right-opacity .align .card {
+  margin-left: 20px;
+ }
+
+.fb-popup-opacity .align .card {
+  width: 155px;
+}
+
+.popup-add-page-fb-opacity .align .card {
+  width: 145px; 
+}
+
 .popup-infos-capture-decran-opacity .align {
   padding-top: 70px;
 }

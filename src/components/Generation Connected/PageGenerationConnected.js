@@ -51,6 +51,47 @@ export default function PageGenerationConnected() {
     setPopupImage4(!popupImage4);
   }
 
+  // popup Fonctionnement
+  const [popupFonctionnement, setPopupFonctionnement] = useState(false);
+  function Fonctionnement() {
+    setPopupFonctionnement(!popupFonctionnement);
+  }
+
+  // popup Logo
+  const [popupLogo, setPopupLogo] = useState(false);
+  function Logo() {
+    setPopupLogo(!popupLogo);
+  }
+
+  // popup Outil
+  const [popupOutil, setPopupOutil] = useState(false);
+  function Outil() {
+    setPopupOutil(!popupOutil);
+  }
+
+  // popup help
+  function Help() {}
+
+  // popup menu
+  const [popupMenuToRight, setPopupMenuToRight] = useState(false);
+  function PopupMenuToRight() {
+    setPopupMenuToRight(!popupMenuToRight);
+  }
+
+  const [list, setList] = useState(false);
+  function PopupList() {
+    setList(!list);
+  }
+
+  // page Facebook en attente de validation
+  const [
+    pageFacebookEnAttenteDeValidation,
+    setPageFacebookEnAttenteDeValidation,
+  ] = useState(false);
+  function PageFacebookEnAttenteDeValidation() {
+    setPageFacebookEnAttenteDeValidation(!pageFacebookEnAttenteDeValidation);
+  }
+
   return (
     <>
       <div className="title-settings">
@@ -145,6 +186,60 @@ export default function PageGenerationConnected() {
       </div>
       {/* hr-global */}
 
+      <div className="help-page-gc">
+        <div className="a">
+          <p></p>
+        </div>
+
+        <div className="b">
+          <svg
+            onClick={Help}
+            style={{ paddingRight: "10px" }}
+            xmlns="http://www.w3.org/2000/svg"
+            width="20px"
+            cursor="pointer"
+            fill="blue"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fillRule="evenodd"
+              d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 100 16 8 8 0 000-16zm0 12a1 1 0 110 2 1 1 0 010-2zm0-10a4 4 0 011.19 7.82l-.19.054V14a1 1 0 01-1.993.117L11 14v-1a1 1 0 01.883-.993l.266-.012A2 2 0 1010 10a1 1 0 01-2 0 4 4 0 014-4z"
+            ></path>
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            onClick={PopupMenuToRight}
+            style={{ paddingRight: "10px" }}
+            width="20px"
+            cursor="pointer"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <g
+              stroke="#292929"
+              strokeLinejoin="round"
+              strokeWidth="3"
+              clipPath="url(#clip0_105_1875)"
+            >
+              <path d="M12 12H12.01V12.01H12z"></path>
+              <path d="M12 5H12.01V5.01H12z"></path>
+              <path d="M12 19H12.01V19.01H12z"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_105_1875">
+                <path
+                  fill="#fff"
+                  d="M0 0H24V24H0z"
+                  transform="translate(0 .001)"
+                ></path>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      {/* help-page-gc */}
+
       <div className="page-generation-connected-title">
         <p>Bienvenue dans le monde des personnes Connectés !</p>
       </div>
@@ -192,8 +287,8 @@ export default function PageGenerationConnected() {
         <div className="align-box-shadow">
           <div className="box-shadow">
             <p>
-              Ajouter juste le logo de la marque Omisify à votre photo et soyez
-              rémunérer chaque jour par Omisify
+              Ajouter juste le logo de la marque Omisify à votre photo de profil
+              et soyez rémunérer chaque jour par Omisify
             </p>
           </div>
           {/* box-shadow */}
@@ -287,35 +382,148 @@ export default function PageGenerationConnected() {
       </div>
       {/* btn-join-new-generation */}
 
-      {/* popup maintenance */}
-      {/* popup maintenance */}
-      {/* popup maintenance */}
-      {popupMaintenance && (
-        <div onClick={Maintenance}>
-          <PopupMaintenance />
+      <div className="fonctionnement-gc">
+        <div className="align">
+          <div className="background">
+            <div className="fonctionnement">
+              <p onClick={Fonctionnement}>Fonctionnement</p>
+            </div>
+            {/* fonctionnement */}
+
+            <div className="logo">
+              <p onClick={Logo}>Logo</p>
+            </div>
+            {/* logo */}
+
+            <div className="outil">
+              <p onClick={Outil}>Outil</p>
+            </div>
+            {/* outil */}
+          </div>
+          {/* background */}
         </div>
+        {/* align */}
+      </div>
+      {/* fonctionnement-gc */}
+
+      {/* popup fonctionnement */}
+      {/* popup fonctionnement */}
+      {popupFonctionnement && (
+        <>
+          <div
+            onClick={Fonctionnement}
+            className="popup-fonctionnement-opacity"
+          >
+            <div className="align">
+              <div className="card">
+                <p style={{ color: "red", paddingBottom: "10px" }}>
+                  FONCTIONNEMENT
+                </p>
+                <p>
+                  Tout les jours, de nombreuses personnes sont rémunérées juste
+                  pour avoir ajouter le logo de la marque Omisify à leur photo
+                  de profil. Pour être Connecté vous devez ajouter le logo de la
+                  marque Omisify à votre photo de profil Facebook, Whatsapp,
+                  Youtube,...
+                </p>
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-fonctionnement-opacity */}
+        </>
+      )}
+
+      {/* popup logo */}
+      {/* popup logo */}
+      {popupLogo && (
+        <>
+          <div onClick={Logo} className="popup-fonctionnement-opacity">
+            <div className="align">
+              <div className="card">
+                <p style={{ color: "red", paddingBottom: "10px" }}>LOGO</p>
+                <p style={{ paddingBottom: "10px" }}>
+                  Pour ajouter le logo de la marque Omisify à votre photo de
+                  profil, commencer premièrement par choisir le logo et
+                  télécharger le logo
+                </p>
+                <p>
+                  Cliquer sur le bouton Choisir le logo et ensuite cliquer sur
+                  le logo de votre choix pour le télécharger au format PNG
+                </p>
+                <div className="center">
+                  <button>Choisir le logo</button>
+                </div>
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-fonctionnement-opacity */}
+        </>
+      )}
+
+      {/* popup outil */}
+      {/* popup outil */}
+      {popupOutil && (
+        <>
+          <div onClick={Outil} className="popup-outil-opacity">
+            <div className="align">
+              <div className="card">
+                <p style={{ color: "red", paddingBottom: "10px" }}>OUTIL</p>
+                <div className="a">
+                  <p>
+                    Pour ajouter le logo de la marque Omisify à votre photo de
+                    profil, utiliser l'application photoshop ou tout autre outil
+                    professionnel qui vous servira à ajouter le logo de la
+                    marque Omisify à votre photo de profil
+                  </p>
+
+                  <p>
+                    Après l'ajout du logo à votre photo de profil, aller sur les
+                    réseaux sociaux tel que Facebook, Tik Tok,... et publier
+                    cette photo, aller aussi sur les applications de messagerie
+                    tel que Whatsapp, Telegram,... et remplacer la nouvelle
+                    photo à votre profil
+                  </p>
+
+                  <p>
+                    Au niveau de votre compte Omisify, dans l'onglet... cliquer
+                    sur importer la photo pour importer la nouvelle photo et
+                    recuperer aussi le lien de la photo de profil sur Facebook
+                    et ensuite joignez-le là ou c'est ecrit joindre le lien
+                    aussi le lien de la photo de profil
+                  </p>
+
+                  <p>
+                    Pour récupérer le lien de la photo de profil sur Facebook,
+                    connectez-vous à votre compte Facebook à partir d'un
+                    navigateur, cliquer sur la photo de profil et ensuite prener
+                    le lien sur la barre d'adresse
+                  </p>
+
+                  <p>
+                    Sur les applications comme Whatsapp, Telegram ou d'autres
+                    reseaux sociaux ou c'est impossible de recuperer le lien de
+                    la photo de profil, ce que vous devez faire c'est prendre
+                    votre photo de profil en capture d'écran au niveau de votre
+                    compte Whatsapp ou Telegram et ensuite au niveau de votre
+                    compte Omisify, dans l'onglet... cliquer sur importer les
+                    captures d'écrans pour importer les captures d'écrans
+                  </p>
+                </div>
+                {/* a */}
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-fonctionnement-opacity */}
+        </>
       )}
 
       {/*
-      <p>Fonctionnement</p>
-      <p>
-        Tout les jours, de nombreuses personnes sont rémunérées juste pour avoir
-        ajouter le logo de la marque Omisify à leur photo de profil. Pour être
-        Connecté vous devez ajouter le logo de la marque Omisify à votre photo de profil Facebook, Whatsapp, Wechat,...
-      </p>
-      <p>Outil</p>
-      <p>
-        Utiliser l'application photoshop ou tout autre outil professionnel pour
-        ajouter le logo de la marque Omisify à votre photo de profil
-      </p>
-
-      <p>Après l'ajout du logo à votre photo de profil, aller sur les réseaux sociaux et publier la nouvelle photo de profil, aller aussi sur whatsapp, Telegram ou Wechat et remplacer la nouvelle photo de profil. Au niveau de votre compte Omisify, cliquer sur importer la photo et joignez le lien de la photo de profil (par exemple pour Facebook, connectez-vous à votre compte Facebook à partir d'un navigateur et sur la barre d'adresse, prener le lien de la nouvelle photo de profil qui contient le logo de la marque Omisify) </p>
-
-      <p>Logo</p>
-      <p>
-        Cliquer sur Télécharger pour télécharger les logos de la marque Omisify
-        au format PNG
-      </p>
       <p>Aide</p>
       <p>Besoin d'aide ?</p>
       <button>Télécharger</button>
@@ -346,6 +554,15 @@ export default function PageGenerationConnected() {
         couverture
       </p>
       */}
+
+      {/* popup maintenance */}
+      {/* popup maintenance */}
+      {/* popup maintenance */}
+      {popupMaintenance && (
+        <div onClick={Maintenance}>
+          <PopupMaintenance />
+        </div>
+      )}
 
       {/* popup image 1 */}
       {/* popup image 1 */}
@@ -416,6 +633,118 @@ export default function PageGenerationConnected() {
             {/* align */}
           </div>
           {/* popup-image-opacity */}
+        </>
+      )}
+
+      {popupMenuToRight && (
+        <>
+          <div
+            onClick={PopupMenuToRight}
+            className="popup-menu-to-right-opacity-gc"
+          >
+            <div className="float">
+              <div className="card">
+                <p
+                  onClick={PopupList}
+                  style={{ cursor: "pointer", paddingBottom: "20px" }}
+                >
+                  Réseaux Sociaux
+                </p>
+                <p style={{ cursor: "pointer" }}>Levier</p>
+              </div>
+              {/* card */}
+            </div>
+            {/* float */}
+          </div>
+          {/* popup-menu-to-right-gc */}
+        </>
+      )}
+
+      {list && (
+        <>
+          <div onClick={PopupList} className="popup-list-opacity">
+            <div className="align">
+              <div className="card">
+                <NavLink style={{ textDecoration: "none" }} to="/fb">
+                  <div className="display">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="black"
+                      width="20px"
+                      viewBox="0 0 24 24"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.19 19.19 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
+                    </svg>
+
+                    <p style={{ color: "black" }}>Facebook</p>
+                  </div>
+                  {/* display */}
+                </NavLink>
+
+                <div className="hr">
+                  <hr />
+                </div>
+
+                <div className="display">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="black"
+                    width="20px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M7.253 18.494l.724.423A7.953 7.953 0 0012 20a8 8 0 10-8-8 7.95 7.95 0 001.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 01-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 01-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 00.367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 01.378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 01-.21.302 2.378 2.378 0 01-.33.288 3.71 3.71 0 01-.125.09 5.024 5.024 0 01-.383.22 1.99 1.99 0 01-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 01-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 016.9 9.62a2.729 2.729 0 01.564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 01.371-.1z"></path>
+                  </svg>
+                  <p>Whatsapp</p>
+                </div>
+                {/* display */}
+
+                <div className="hr">
+                  <hr />
+                </div>
+
+                <div className="display">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    width="20px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.5"
+                      d="M21 5L2 12.5l7 1M21 5l-2.5 15L9 13.5M21 5L9 13.5m0 0V19l3.249-3.277"
+                    ></path>
+                  </svg>
+                  <p>Telegram</p>
+                </div>
+                {/* display */}
+              </div>
+              {/* card */}
+            </div>
+            {/* align */}
+          </div>
+          {/* popup-list-opacity */}
+        </>
+      )}
+
+      {/* page ajouté - en attente de validation */}
+      {/* page ajouté - en attente de validation */}
+      {pageFacebookEnAttenteDeValidation && (
+        <>
+          <div className="page-en-attente-de-validation-opacity">
+            <div className="align">
+              <div className="card">
+                <p>
+                  La page Facebook que vous avez ajouté est en attente de
+                  validation
+                </p>
+              </div>
+            </div>
+          </div>
         </>
       )}
     </>
