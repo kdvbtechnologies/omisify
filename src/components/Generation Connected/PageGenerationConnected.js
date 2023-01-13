@@ -2252,8 +2252,17 @@ export default function PageGenerationConnected() {
                   </div>
                   {/* b */}
 
-                  <input type="url" placeholder="Lien Youtube.." />
-                  <input type="url" placeholder="Lien Facebook.." />
+                  {youtubeSelected && (
+                    <>
+                      <input type="url" placeholder="Lien Youtube.." />
+                    </>
+                  )}
+                  {facebookSelected && (
+                    <>
+                      <input type="url" placeholder="Lien Facebook.." />
+                    </>
+                  )}
+
                   <button onClick={LevierSuccessPage}>Activer le Levier</button>
                 </div>
                 {/* lien-video */}
