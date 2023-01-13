@@ -470,6 +470,7 @@ import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
 import PartieA from "./PartieA";
 import FBModifierSuccess from "./components/Generation Connected/FBModifierSuccess";
+import LevierSuccess from "./components/Generation Connected/LevierSuccess";
 
 export default function App() {
   return (
@@ -509,6 +510,7 @@ export default function App() {
         {/* new Omisify */}
         <Route path="/partie-a" element={<PartieA />} />
 
+        <Route path="/levier-success" element={<LevierSuccess />} />
         <Route path="/fb-error" element={<FacebookError />} />
         <Route
           path="/fb-ajouter-compte-success"

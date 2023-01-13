@@ -393,6 +393,11 @@ export default function PageGenerationConnected() {
     setFacebookSelected(!facebookSelected);
   }
 
+  // Levier Success Page
+  function LevierSuccessPage() {
+    window.location = "/levier-success";
+  }
+
   return (
     <>
       <div className="title-settings">
@@ -2249,7 +2254,7 @@ export default function PageGenerationConnected() {
 
                   <input type="url" placeholder="Lien Youtube.." />
                   <input type="url" placeholder="Lien Facebook.." />
-                  <button>Activer le Levier</button>
+                  <button onClick={LevierSuccessPage}>Activer le Levier</button>
                 </div>
                 {/* lien-video */}
               </div>
