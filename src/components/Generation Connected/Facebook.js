@@ -1,6 +1,99 @@
 import { useState } from "react";
 
+function Enfant({ api }) {
+  const [checked, setChecked] = useState(false);
+
+  function Checked() {
+    setChecked(!checked);
+
+    const id = api.id;
+    localStorage.setItem("https://omisify.com/getIdFB", id);
+  }
+
+  return (
+    <>
+      <div className="fb-others">
+        <div className="a">
+          <div className="align" onClick={Checked}>
+            <p>{api.nomPageFacebook}</p>
+
+            <div className="b">
+              <p>{api.nombreDabonnesPageFacebook} abonnés</p>
+            </div>
+          </div>
+          {/* align */}
+
+          <div className="hr">
+            <hr />
+          </div>
+          {/* hr */}
+        </div>
+        {/* a */}
+      </div>
+      {/* others */}
+    </>
+  );
+}
+
 export default function Facebook() {
+  const api = [
+    {
+      nomPageFacebook: "Les Montagnes de l'Alsace",
+      nombreDabonnesPageFacebook: "8000",
+      lienPageFacebook: "https://vixinol.com/",
+      id: "12",
+    },
+
+    {
+      nomPageFacebook: "Kigali Hier, Aujourd'hui et Demain",
+      nombreDabonnesPageFacebook: "12000",
+      lienPageFacebook: "https://vixinol.com/",
+      id: "222",
+    },
+
+    {
+      nomPageFacebook: "Dégustez et Prenez",
+      nombreDabonnesPageFacebook: "7000",
+      lienPageFacebook: "https://vixinol.com/",
+      id: "3",
+    },
+
+    {
+      nomPageFacebook: "5 minutes avec Henri",
+      nombreDabonnesPageFacebook: "5000",
+      lienPageFacebook: "https://vixinol.com/",
+      id: "4",
+    },
+  ];
+
+  /* 
+    const data = api
+      .sort((a, b) => b.num - a.num)
+      .map((x) => x.nomPageFacebook);
+    console.log(data);
+
+     const [popup, setPopup] = useState(false);
+  function Popup() {
+    const num = "4";
+    const apii = api.filter((item) => item.num === num);
+    console.log(apii);
+
+    setPopup(!popup);
+  }
+  */
+
+  // filtre et onClick par id
+  const getIdFB = localStorage.getItem("https://omisify.com/getIdFB");
+  const id = getIdFB;
+  const filtreTrouver = api.filter((item) => item.id === id);
+
+  // on obtiens le nom de la page et on sauvegarde dans le localStorage
+  const FiltreNomPageFacebook = filtreTrouver.map((api) => api.nomPageFacebook);
+
+  // input pour changer le nom de la page
+  const [nomPageFacebook, setNomPageFacebook] = useState("");
+
+  // popup infos
   const [popup, setPopup] = useState(false);
   function Popup() {
     setPopup(!popup);
@@ -181,20 +274,17 @@ export default function Facebook() {
             <div className="hr">
               <hr />
             </div>
-
-            <div className="align" onClick={Popup}>
-              <p>Vivre Heureux et Mourir jeune</p>
-
-              <div className="b">
-                <p>8000 abonnés</p>
-              </div>
-            </div>
-            {/* align */}
-
-            <div className="hr">
-              <hr />
-            </div>
-            {/* hr */}
+            {api.map((api) => {
+              return (
+                <>
+                  {" "}
+                  <div onClick={Popup}>
+                    {" "}
+                    <Enfant api={api} />{" "}
+                  </div>{" "}
+                </>
+              );
+            })}
           </div>
           {/* a */}
         </div>
@@ -211,90 +301,127 @@ export default function Facebook() {
       {/* infos of page - popup */}
       {popup && (
         <>
-          <div className="fb-popup-opacity">
-            <div className="align">
-              <svg
-                onClick={Popup}
-                xmlns="http://www.w3.org/2000/svg"
-                width="20px"
-                cursor="pointer"
-                fill="#ff6f79"
-                version="1.1"
-                viewBox="0 0 40 40"
-                xmlSpace="preserve"
-              >
-                <path d="M21.414 20L33.207 8.207a.999.999 0 10-1.414-1.414L20 18.586 8.207 6.793a.999.999 0 10-1.414 1.414L18.586 20 6.793 31.793a.999.999 0 101.414 1.414L20 21.414l11.793 11.793a.997.997 0 001.414 0 .999.999 0 000-1.414L21.414 20z"></path>
-              </svg>
+          {filtreTrouver.map((api) => (
+            <>
+              <div className="fb-popup-opacity">
+                <div className="align">
+                  <svg
+                    onClick={Popup}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    cursor="pointer"
+                    fill="#ff6f79"
+                    version="1.1"
+                    viewBox="0 0 40 40"
+                    xmlSpace="preserve"
+                  >
+                    <path d="M21.414 20L33.207 8.207a.999.999 0 10-1.414-1.414L20 18.586 8.207 6.793a.999.999 0 10-1.414 1.414L18.586 20 6.793 31.793a.999.999 0 101.414 1.414L20 21.414l11.793 11.793a.997.997 0 001.414 0 .999.999 0 000-1.414L21.414 20z"></path>
+                  </svg>
 
-              <div className="card">
-                <div className="a">
-                  <p>Vivre Heureux et Mourir jeune</p>
-                </div>
+                  <div className="card">
+                    <div className="a">
+                      <p style={{ fontSize: "17px" }}>{api.nomPageFacebook}</p>
+                      <p
+                        style={{
+                          fontSize: "13px",
+                          textDecoration: "overline dotted",
+                          paddingTop: "10px",
+                        }}
+                      >
+                        Page Facebook
+                      </p>
 
-                <div className="b">
-                  <div className="display">
-                    <div className="f">
-                      <p>8000 abonnés</p>
+                      <p
+                        style={{
+                          fontSize: "13px",
+                          textDecoration: "overline dotted",
+                          paddingTop: "10px",
+                        }}
+                      >
+                        Compte Facebook
+                      </p>
                     </div>
 
-                    <div className="g">
-                      <svg
-                        onClick={BeforeModifierNomPageHelp}
-                        style={{ paddingRight: "10px" }}
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        cursor="pointer"
-                        fill="#fff"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 100 16 8 8 0 000-16zm0 12a1 1 0 110 2 1 1 0 010-2zm0-10a4 4 0 011.19 7.82l-.19.054V14a1 1 0 01-1.993.117L11 14v-1a1 1 0 01.883-.993l.266-.012A2 2 0 1010 10a1 1 0 01-2 0 4 4 0 014-4z"
-                        ></path>
-                      </svg>
+                    <div className="b">
+                      <div className="display">
+                        <div className="f">
+                          <p>{api.nombreDabonnesPageFacebook} abonnés</p>
+                        </div>
 
-                      <svg
-                        onClick={MenuToRight}
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        cursor="pointer"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <g
-                          stroke="#fff"
-                          strokeLinejoin="round"
-                          strokeWidth="3"
-                          clipPath="url(#clip0_105_1875)"
-                        >
-                          <path d="M12 12H12.01V12.01H12z"></path>
-                          <path d="M12 5H12.01V5.01H12z"></path>
-                          <path d="M12 19H12.01V19.01H12z"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_105_1875">
+                        <div className="g">
+                          <svg
+                            onClick={BeforeModifierNomPageHelp}
+                            style={{ paddingRight: "10px" }}
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20px"
+                            cursor="pointer"
+                            fill="#fff"
+                            viewBox="0 0 24 24"
+                          >
                             <path
-                              fill="#fff"
-                              d="M0 0H24V24H0z"
-                              transform="translate(0 .001)"
+                              fillRule="evenodd"
+                              d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 100 16 8 8 0 000-16zm0 12a1 1 0 110 2 1 1 0 010-2zm0-10a4 4 0 011.19 7.82l-.19.054V14a1 1 0 01-1.993.117L11 14v-1a1 1 0 01.883-.993l.266-.012A2 2 0 1010 10a1 1 0 01-2 0 4 4 0 014-4z"
                             ></path>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
-                  </div>
-                  {/* display */}
-                </div>
-                {/* b */}
+                          </svg>
 
-                <div className="c">
-                  <p>Levier : Activé</p>
-                  <p>https://facebook.com</p>
+                          <svg
+                            onClick={MenuToRight}
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20px"
+                            cursor="pointer"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              stroke="#fff"
+                              strokeLinejoin="round"
+                              strokeWidth="3"
+                              clipPath="url(#clip0_105_1875)"
+                            >
+                              <path d="M12 12H12.01V12.01H12z"></path>
+                              <path d="M12 5H12.01V5.01H12z"></path>
+                              <path d="M12 19H12.01V19.01H12z"></path>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_105_1875">
+                                <path
+                                  fill="#fff"
+                                  d="M0 0H24V24H0z"
+                                  transform="translate(0 .001)"
+                                ></path>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      {/* display */}
+                    </div>
+                    {/* b */}
+
+                    <div className="c">
+                      <a
+                        href={api.lienPageFacebook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        https://facebook.com
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20px"
+                          cursor="pointer"
+                          fill="white"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M4 0v3H1v12h12v-3h3V0zm7.2 13.2H2.8V4.8H4V12h7.2zm3.4-2.6H6.39l5.11-5.1L13 7V3H9l1.5 1.5-5.1 5.11V1.4h9.2z"></path>
+                        </svg>
+                      </a>
+                    </div>
+                    {/* c */}
+                  </div>
                 </div>
-                {/* c */}
               </div>
-            </div>
-          </div>
+            </>
+          ))}
         </>
       )}
       {/* infos of page - popup */}
@@ -362,121 +489,71 @@ export default function Facebook() {
             <div className="align">
               <div className="card">
                 <div className="display">
-                  <li style={{ paddingRight: "5px" }}>
-                    Infos of Page - help popup - Cliquer sur
-                  </li>
-                  <p style={{ fontWeight: "bold", paddingRight: "5px" }}>
-                    VirilNation
-                  </p>
-
-                  <p style={{ paddingRight: "5px" }}>pour</p>
-                  <p style={{ paddingRight: "5px" }}>aller</p>
-                  <p style={{ paddingRight: "5px" }}>dans</p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    A Propos
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    du Groupe
-                  </p>
-
-                  <p style={{ textDecoration: "underline" }}>Whatsapp</p>
-                </div>
-                {/* display */}
-
-                <div className="display-indice-two">
                   <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
-                  <p style={{ paddingRight: "5px" }}>l'icone</p>
+                  <p style={{ paddingRight: "1px" }}>l'icone</p>
                   <svg
-                    style={{ paddingRight: "5px" }}
                     xmlns="http://www.w3.org/2000/svg"
-                    x="0"
-                    y="0"
                     width="20px"
-                    enableBackground="new 0 0 489.8 489.8"
-                    version="1.1"
-                    viewBox="0 0 489.8 489.8"
-                    xmlSpace="preserve"
+                    fill="none"
+                    viewBox="0 0 24 24"
                   >
-                    <path d="M438.2 0H51.6C23.1 0 0 23.2 0 51.6v386.6c0 28.5 23.2 51.6 51.6 51.6h386.6c28.5 0 51.6-23.2 51.6-51.6V51.6c0-28.4-23.2-51.6-51.6-51.6zm27.1 438.2c0 14.9-12.2 27.1-27.1 27.1H51.6c-14.9 0-27.1-12.2-27.1-27.1V51.6c0-14.9 12.2-27.1 27.1-27.1h386.6c14.9 0 27.1 12.2 27.1 27.1v386.6z"></path>
-                    <path d="M337.4 232.7h-80.3v-80.3c0-6.8-5.5-12.3-12.3-12.3s-12.3 5.5-12.3 12.3v80.3h-80.3c-6.8 0-12.3 5.5-12.3 12.2 0 6.8 5.5 12.3 12.3 12.3h80.3v80.3c0 6.8 5.5 12.3 12.3 12.3s12.3-5.5 12.3-12.3v-80.3h80.3c6.8 0 12.3-5.5 12.3-12.3 0-6.8-5.5-12.2-12.3-12.2z"></path>
+                    <g
+                      stroke="#000"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      clipPath="url(#clip0_105_1875)"
+                    >
+                      <path d="M12 12H12.01V12.01H12z"></path>
+                      <path d="M12 5H12.01V5.01H12z"></path>
+                      <path d="M12 19H12.01V19.01H12z"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_105_1875">
+                        <path
+                          fill="#fff"
+                          d="M0 0H24V24H0z"
+                          transform="translate(0 .001)"
+                        ></path>
+                      </clipPath>
+                    </defs>
                   </svg>
-                  <p style={{ paddingRight: "5px" }}>pour</p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    ajouter
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    un
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    Nouveau
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    Contact
-                  </p>
-                  <p style={{ paddingRight: "5px" }}>à votre</p>
-                  <p style={{ paddingRight: "5px" }}>Groupe</p>
-                  <p>Whatsapp</p>
-                </div>
-                {/* display-indice-two */}
 
-                {/* display-indice-three*/}
-                {/* display-indice-three*/}
-                {/* display-indice-three*/}
-                <div className="display-indice-three">
-                  <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
-                  <p style={{ paddingRight: "5px" }}>l'icone</p>
-
+                  <p style={{ paddingRight: "5px" }}>puis</p>
+                  <p style={{ paddingRight: "3px" }}>cliquer sur</p>
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    style={{ paddingRight: "5px" }}
+                    style={{ paddingRight: "3px" }}
                     width="20px"
-                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 30 30"
                   >
-                    <g fill="none" fillRule="evenodd">
-                      <path d="M0 0h32v32H0z"></path>
+                    <g transform="translate(0 -289.063)">
                       <path
-                        fill="#666666"
-                        fillRule="nonzero"
-                        d="M18 2v2H4v24h24V14.022h2V30H2V2zm8.364-.61l4.243 4.243-12.601 12.6-6.697 2.386 2.535-6.71zm0 2.829l-10.8 10.8-.856 2.266 2.203-.785L27.78 5.633z"
+                        fill="#000"
+                        fillOpacity="1"
+                        stroke="none"
+                        strokeDasharray="none"
+                        strokeMiterlimit="4"
+                        strokeOpacity="1"
+                        strokeWidth="2"
+                        d="M22.824 296.239a11.986 11.986 0 00-1.542-1.287l-2.665 2.665 2.828 2.828 2.666-2.665a11.986 11.986 0 00-1.287-1.541zm-5.621 2.792L6.596 309.638l-.707 3.535 3.536-.707L20.03 301.86z"
+                        opacity="0.93"
                       ></path>
                     </g>
                   </svg>
                   <p style={{ paddingRight: "5px" }}>pour</p>
-
                   <p
                     style={{ textDecoration: "underline", paddingRight: "5px" }}
                   >
                     modifier
                   </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    un
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    Contact
-                  </p>
-                  <p style={{ paddingRight: "5px" }}>figurant</p>
-                  <p style={{ paddingRight: "5px" }}>dans</p>
-                  <p style={{ paddingRight: "5px" }}>votre</p>
-                  <p style={{ paddingRight: "5px" }}>Groupe</p>
-                  <p>Whatsapp</p>
+                  <p style={{ paddingRight: "5px" }}>les</p>
+                  <p style={{ paddingRight: "5px" }}>informations</p>
+                  <p style={{ paddingRight: "5px" }}>de votre Page</p>
+                  <p style={{ paddingRight: "5px" }}>ou</p>
+                  <p style={{ paddingRight: "5px" }}>Compte Facebook</p>
                 </div>
-                {/* display-indice-three */}
+                {/* display */}
               </div>
               {/* card */}
             </div>
@@ -853,28 +930,10 @@ export default function Facebook() {
             <div className="align">
               <div className="card">
                 <div className="display">
-                  <li style={{ paddingRight: "5px" }}>
-                    add page - Cliquer sur
+                  <li>
+                    Ajouter un Compte ou une Page Facebook auquel vous avez
+                    ajouter le logo de la marque Omisify à la photo de profil
                   </li>
-                  <p style={{ fontWeight: "bold", paddingRight: "5px" }}>
-                    VirilNation
-                  </p>
-
-                  <p style={{ paddingRight: "5px" }}>pour</p>
-                  <p style={{ paddingRight: "5px" }}>aller</p>
-                  <p style={{ paddingRight: "5px" }}>dans</p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    A Propos
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    du Groupe
-                  </p>
-
-                  <p style={{ textDecoration: "underline" }}>Whatsapp</p>
                 </div>
                 {/* display */}
 
@@ -884,90 +943,18 @@ export default function Facebook() {
                   <svg
                     style={{ paddingRight: "5px" }}
                     xmlns="http://www.w3.org/2000/svg"
-                    x="0"
-                    y="0"
-                    width="20px"
-                    enableBackground="new 0 0 489.8 489.8"
+                    width="12px"
                     version="1.1"
-                    viewBox="0 0 489.8 489.8"
+                    viewBox="0 0 40 40"
                     xmlSpace="preserve"
                   >
-                    <path d="M438.2 0H51.6C23.1 0 0 23.2 0 51.6v386.6c0 28.5 23.2 51.6 51.6 51.6h386.6c28.5 0 51.6-23.2 51.6-51.6V51.6c0-28.4-23.2-51.6-51.6-51.6zm27.1 438.2c0 14.9-12.2 27.1-27.1 27.1H51.6c-14.9 0-27.1-12.2-27.1-27.1V51.6c0-14.9 12.2-27.1 27.1-27.1h386.6c14.9 0 27.1 12.2 27.1 27.1v386.6z"></path>
-                    <path d="M337.4 232.7h-80.3v-80.3c0-6.8-5.5-12.3-12.3-12.3s-12.3 5.5-12.3 12.3v80.3h-80.3c-6.8 0-12.3 5.5-12.3 12.2 0 6.8 5.5 12.3 12.3 12.3h80.3v80.3c0 6.8 5.5 12.3 12.3 12.3s12.3-5.5 12.3-12.3v-80.3h80.3c6.8 0 12.3-5.5 12.3-12.3 0-6.8-5.5-12.2-12.3-12.2z"></path>
+                    <path d="M19.962 28.131a.941.941 0 01-.67-.281L5.27 13.542a.938.938 0 111.337-1.313l13.354 13.625L33.394 12.15a.939.939 0 011.326-.015.941.941 0 01.013 1.327L20.632 27.85a.945.945 0 01-.67.281z"></path>
                   </svg>
                   <p style={{ paddingRight: "5px" }}>pour</p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    ajouter
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    un
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    Nouveau
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    Contact
-                  </p>
-                  <p style={{ paddingRight: "5px" }}>à votre</p>
-                  <p style={{ paddingRight: "5px" }}>Groupe</p>
-                  <p>Whatsapp</p>
+                  <p style={{ paddingRight: "5px" }}>faire</p>
+                  <p>votre choix</p>
                 </div>
                 {/* display-indice-two */}
-
-                {/* display-indice-three*/}
-                {/* display-indice-three*/}
-                {/* display-indice-three*/}
-                <div className="display-indice-three">
-                  <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
-                  <p style={{ paddingRight: "5px" }}>l'icone</p>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    style={{ paddingRight: "5px" }}
-                    width="20px"
-                    viewBox="0 0 32 32"
-                  >
-                    <g fill="none" fillRule="evenodd">
-                      <path d="M0 0h32v32H0z"></path>
-                      <path
-                        fill="#666666"
-                        fillRule="nonzero"
-                        d="M18 2v2H4v24h24V14.022h2V30H2V2zm8.364-.61l4.243 4.243-12.601 12.6-6.697 2.386 2.535-6.71zm0 2.829l-10.8 10.8-.856 2.266 2.203-.785L27.78 5.633z"
-                      ></path>
-                    </g>
-                  </svg>
-                  <p style={{ paddingRight: "5px" }}>pour</p>
-
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    modifier
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    un
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    Contact
-                  </p>
-                  <p style={{ paddingRight: "5px" }}>figurant</p>
-                  <p style={{ paddingRight: "5px" }}>dans</p>
-                  <p style={{ paddingRight: "5px" }}>votre</p>
-                  <p style={{ paddingRight: "5px" }}>Groupe</p>
-                  <p>Whatsapp</p>
-                </div>
-                {/* display-indice-three */}
               </div>
               {/* card */}
             </div>
@@ -1117,7 +1104,13 @@ export default function Facebook() {
                     <div className="input-nom-page-fb">
                       <p>Nom de la Page</p>
                       <div className="align-in-center">
-                        <input type="text" />
+                        <input
+                          type="text"
+                          value={nomPageFacebook}
+                          onChange={(e) => setNomPageFacebook(e.target.value)}
+                          name="nomPageFacebook"
+                          placeholder={FiltreNomPageFacebook}
+                        />
                       </div>
                     </div>
                     {/* input-nom-page-fb */}
@@ -1348,121 +1341,12 @@ export default function Facebook() {
             <div className="align">
               <div className="card">
                 <div className="display">
-                  <li style={{ paddingRight: "5px" }}>
-                    Modifier nom page - Cliquer sur
+                  <li>
+                    Dans cette section vous pouvez modifier les informations de
+                    votre Page ou Compte Facebook
                   </li>
-                  <p style={{ fontWeight: "bold", paddingRight: "5px" }}>
-                    VirilNation
-                  </p>
-
-                  <p style={{ paddingRight: "5px" }}>pour</p>
-                  <p style={{ paddingRight: "5px" }}>aller</p>
-                  <p style={{ paddingRight: "5px" }}>dans</p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    A Propos
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    du Groupe
-                  </p>
-
-                  <p style={{ textDecoration: "underline" }}>Whatsapp</p>
                 </div>
                 {/* display */}
-
-                <div className="display-indice-two">
-                  <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
-                  <p style={{ paddingRight: "5px" }}>l'icone</p>
-                  <svg
-                    style={{ paddingRight: "5px" }}
-                    xmlns="http://www.w3.org/2000/svg"
-                    x="0"
-                    y="0"
-                    width="20px"
-                    enableBackground="new 0 0 489.8 489.8"
-                    version="1.1"
-                    viewBox="0 0 489.8 489.8"
-                    xmlSpace="preserve"
-                  >
-                    <path d="M438.2 0H51.6C23.1 0 0 23.2 0 51.6v386.6c0 28.5 23.2 51.6 51.6 51.6h386.6c28.5 0 51.6-23.2 51.6-51.6V51.6c0-28.4-23.2-51.6-51.6-51.6zm27.1 438.2c0 14.9-12.2 27.1-27.1 27.1H51.6c-14.9 0-27.1-12.2-27.1-27.1V51.6c0-14.9 12.2-27.1 27.1-27.1h386.6c14.9 0 27.1 12.2 27.1 27.1v386.6z"></path>
-                    <path d="M337.4 232.7h-80.3v-80.3c0-6.8-5.5-12.3-12.3-12.3s-12.3 5.5-12.3 12.3v80.3h-80.3c-6.8 0-12.3 5.5-12.3 12.2 0 6.8 5.5 12.3 12.3 12.3h80.3v80.3c0 6.8 5.5 12.3 12.3 12.3s12.3-5.5 12.3-12.3v-80.3h80.3c6.8 0 12.3-5.5 12.3-12.3 0-6.8-5.5-12.2-12.3-12.2z"></path>
-                  </svg>
-                  <p style={{ paddingRight: "5px" }}>pour</p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    ajouter
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    un
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    Nouveau
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    Contact
-                  </p>
-                  <p style={{ paddingRight: "5px" }}>à votre</p>
-                  <p style={{ paddingRight: "5px" }}>Groupe</p>
-                  <p>Whatsapp</p>
-                </div>
-                {/* display-indice-two */}
-
-                {/* display-indice-three*/}
-                {/* display-indice-three*/}
-                {/* display-indice-three*/}
-                <div className="display-indice-three">
-                  <li style={{ paddingRight: "5px" }}>Cliquer sur</li>
-                  <p style={{ paddingRight: "5px" }}>l'icone</p>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    style={{ paddingRight: "5px" }}
-                    width="20px"
-                    viewBox="0 0 32 32"
-                  >
-                    <g fill="none" fillRule="evenodd">
-                      <path d="M0 0h32v32H0z"></path>
-                      <path
-                        fill="#666666"
-                        fillRule="nonzero"
-                        d="M18 2v2H4v24h24V14.022h2V30H2V2zm8.364-.61l4.243 4.243-12.601 12.6-6.697 2.386 2.535-6.71zm0 2.829l-10.8 10.8-.856 2.266 2.203-.785L27.78 5.633z"
-                      ></path>
-                    </g>
-                  </svg>
-                  <p style={{ paddingRight: "5px" }}>pour</p>
-
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    modifier
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    un
-                  </p>
-                  <p
-                    style={{ textDecoration: "underline", paddingRight: "5px" }}
-                  >
-                    Contact
-                  </p>
-                  <p style={{ paddingRight: "5px" }}>figurant</p>
-                  <p style={{ paddingRight: "5px" }}>dans</p>
-                  <p style={{ paddingRight: "5px" }}>votre</p>
-                  <p style={{ paddingRight: "5px" }}>Groupe</p>
-                  <p>Whatsapp</p>
-                </div>
-                {/* display-indice-three */}
               </div>
               {/* card */}
             </div>

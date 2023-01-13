@@ -1,4 +1,4 @@
-import NavbarBottomOmisify from "../Home Omisify/NavbarBottomOmisify";
+import NavbarBottomPartner from "../Home Omisify/NavbarBottomPartner";
 import PartnerHeader from "./PartnerHeader";
 
 export default function Partner() {
@@ -12,7 +12,7 @@ export default function Partner() {
         <PartnerHeader />
       </div>
 
-      <NavbarBottomOmisify />
+      <NavbarBottomPartner />
     </div>
   );
 }

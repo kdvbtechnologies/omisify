@@ -236,18 +236,42 @@ export default function HomeRinabelGroup() {
         en bourses ou vous pourrez l'utiliser pour lancer un nouveau business
       </p>
 
-      <p>Réseaux d'entreprises</p>
       <p>
-        Les entreprises qui font parties du Réseaux d'entreprises d'Izocash sont
-        favorisés à la bourse Obama Stock Exchange
+        Les entreprises qui utilisent Izocash au quotidien augmentent leur
+        chance d'être coté en bourse
       </p>
+
+      <p>
+        Relier votre compte Izocash Professionnel à votre compte d'entreprise
+        OSE permettra à OSE de vérifier la véracité des informations que vous
+        avez fournies ainsi que le volume des transactions de votre entreprise.
+      </p>
+
       <p>
         La bourse est le moyen le plus efficace pour permettre à votre
-        entreprise d'être toujours en vie après votre mort. La bourse est le
-        moyen le plus efficace pour permettre à votre entreprise de se
-        développer à l'international
+        entreprise d'être toujours en activité de génération en génération. La
+        bourse est le moyen le plus efficace pour permettre à votre entreprise
+        de se développer à l'international
       </p>
-      <p>Ajouter votre entreprise aux Réseaux d'entreprises d'Izocash</p>
+
+      <p>Bienvenue dans la Cour des Grands !</p>
+      <p>
+        Maintenant que vous faites parti de la Cour des Grands, vous n'êtes plus
+        obligé de passer par les chaines Youtube pour parler de tout ce qui
+        concerne votre entreprise, vous pouvez le faire directement depuis votre
+        entreprise et publier le lien de la video dans la partie nouvelles de
+        votre compte OSE, rapprocher vous des Grands et copier leur manière de
+        procéder
+      </p>
+      <p>
+        La seule obligation que vous devez faire c'est faire un compte rendu
+        chaque mois aux investisseurs dans une vidéo ou dans un direct, regarder
+        les Grands qui vous en précéder et copier leur manière de faire{" "}
+      </p>
+      <p>
+        N'oubliez pas d'établir et publier la liste des actionnaires qui feront
+        parties du Conseil d'administration de votre entreprise !
+      </p>
     </>
   );
 }

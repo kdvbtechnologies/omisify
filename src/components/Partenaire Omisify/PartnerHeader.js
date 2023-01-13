@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import PopupMaintenance from "../Home Omisify/Maintenance/PopupMaintenance";
-import NavbarBottomPartner from "../Home Omisify/NavbarBottomOmisify";
+import NavbarBottomPartner from "../Home Omisify/NavbarBottomPartner";
 import PartnerFooter from "./PartnerFooter";
 
 export default function PartnerHeader() {

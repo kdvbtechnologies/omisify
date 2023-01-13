@@ -26,6 +26,16 @@ import DescriptionAjouterSuccess from "./components/Generation Connected/Descrip
 import ContactAjouterSuccess from "./components/Generation Connected/ContactAjouterSuccess";
 import ContactModifierSuccess from "./components/Generation Connected/ContactModifierSuccess";
 import ChangePhotoCoverError from "./components/Generation Connected/ChangePhotoCoverError";
+import AddPhotoCoverError from "./components/Generation Connected/AddPhotoCoverError";
+import ContactModifierError from "./components/Generation Connected/ContactModifierError";
+import ContactAjouterError from "./components/Generation Connected/ContactAjouterError";
+import DescriptionModifierError from "./components/Generation Connected/DescriptionModifierError";
+import DescriptionAjouterError from "./components/Generation Connected/DescriptionAjouterError";
+import GetMoneyError from "./components/Generation Connected/GetMoneyError";
+import Facebook from "./components/Generation Connected/Facebook";
+import FacebookError from "./components/Generation Connected/FacebookError";
+import FBAjouterPageSuccess from "./components/Generation Connected/FBAjouterPageSuccess";
+import FBAjouterCompteSuccess from "./components/Generation Connected/FBAjouterCompteSuccess";
 
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
@@ -459,13 +469,7 @@ import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
 import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
 import PartieA from "./PartieA";
-import AddPhotoCoverError from "./components/Generation Connected/AddPhotoCoverError";
-import ContactModifierError from "./components/Generation Connected/ContactModifierError";
-import ContactAjouterError from "./components/Generation Connected/ContactAjouterError";
-import DescriptionModifierError from "./components/Generation Connected/DescriptionModifierError";
-import DescriptionAjouterError from "./components/Generation Connected/DescriptionAjouterError";
-import GetMoneyError from "./components/Generation Connected/GetMoneyError";
-import Facebook from "./components/Generation Connected/Facebook";
+import FBModifierSuccess from "./components/Generation Connected/FBModifierSuccess";
 
 export default function App() {
   return (
@@ -504,6 +508,19 @@ export default function App() {
         {/* new Omisify */}
         {/* new Omisify */}
         <Route path="/partie-a" element={<PartieA />} />
+
+        <Route path="/fb-error" element={<FacebookError />} />
+        <Route
+          path="/fb-ajouter-compte-success"
+          element={<FBAjouterCompteSuccess />}
+        />
+
+        <Route
+          path="/fb-ajouter-page-success"
+          element={<FBAjouterPageSuccess />}
+        />
+
+        <Route path="/fb-modifier-success" element={<FBModifierSuccess />} />
 
         <Route path="/fb" element={<Facebook />} />
 

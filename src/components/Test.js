@@ -1,3 +1,4 @@
+/*
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -65,5 +66,46 @@ export default function Test() {
       <button onClick={startTime}>Obtenir heure</button>
       <p>{time}</p>
     </>
+  );
+}
+*/
+
+import { useState } from "react";
+
+const faqdata = [
+  { Question: "Q1", Answer: "A1", id: "100000" },
+  { Question: "Q2", Answer: "A2", id: "22" },
+  { Question: "Q3", Answer: "A3", id: "666" },
+  { Question: "Q4", Answer: "A4", id: "4" },
+];
+
+const AddIcon = () => <span class="icon">&#43;</span>;
+const RemoveIcon = () => <span class="icon">&#9747;</span>;
+
+function ListItem({ d }) {
+  const [checked, setChecked] = useState(false);
+  console.log(d.id);
+  const save = d.id;
+  localStorage.setItem("Save2023", save);
+
+  return (
+    <li
+      onClick={() => {
+        setChecked(!checked);
+      }}
+    >
+      {checked ? <RemoveIcon /> : <AddIcon />}
+      {d.Question}
+    </li>
+  );
+}
+
+export default function Test() {
+  return (
+    <ul>
+      {faqdata.map((d) => {
+        return <ListItem d={d} />;
+      })}
+    </ul>
   );
 }
