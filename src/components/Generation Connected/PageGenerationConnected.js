@@ -556,7 +556,7 @@ export default function PageGenerationConnected() {
           >
             <div className="align">
               <div className="card">
-                <div className="display">
+                <div style={{ marginBottom: "-5px" }} className="display">
                   <li style={{ paddingRight: "5px" }}>Cliquer sur l'icone</li>
                   <svg
                     style={{ paddingRight: "3px" }}
@@ -598,8 +598,9 @@ export default function PageGenerationConnected() {
                   <p style={{ paddingRight: "5px" }}>le réseau social</p>
                   <p>où vous avez ajouter votre photo de profil</p>
                 </div>
-                {/* display*/}
+                {/* display */}
 
+                {/*
                 <div className="display-indice-two">
                   <li style={{ fontWeight: "bold" }}>Levier</li>
                   <p style={{ paddingBottom: "5px" }}>
@@ -622,7 +623,7 @@ export default function PageGenerationConnected() {
                     d'argent grâce à la Puissance du Levier
                   </p>
                 </div>
-                {/* display-indice-two */}
+               display-indice-two */}
               </div>
               {/* card */}
             </div>
@@ -1080,21 +1081,18 @@ export default function PageGenerationConnected() {
           >
             <div className="float">
               <div className="card">
-                <p
-                  onClick={PopupList}
-                  style={{ cursor: "pointer", paddingBottom: "20px" }}
-                >
+                <p onClick={PopupList} style={{ cursor: "pointer" }}>
                   Réseaux Sociaux
                 </p>
 
-                <p
+                {/* <p
                   onClick={AvantProcessusActiverLevierPopup}
                   style={{ cursor: "pointer" }}
                 >
                   Levier
                 </p>
+              card */}
               </div>
-              {/* card */}
             </div>
             {/* float */}
           </div>
@@ -2257,6 +2255,7 @@ export default function PageGenerationConnected() {
                       <input type="url" placeholder="Lien Youtube.." />
                     </>
                   )}
+
                   {facebookSelected && (
                     <>
                       <input type="url" placeholder="Lien Facebook.." />
