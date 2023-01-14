@@ -60,6 +60,7 @@ export default function MenuIcon() {
               {/* display */}
             </NavLink>
 
+            {/*
             <NavLink
               style={{ textDecoration: "none", color: "black" }}
               to="/get-money-gc"
@@ -81,8 +82,9 @@ export default function MenuIcon() {
                 </svg>
                 <p>Rémunération</p>
               </div>
-              {/* display */}
+              display 
             </NavLink>
+              */}
 
             <NavLink
               style={{ textDecoration: "none", color: "black" }}
