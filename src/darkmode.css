@@ -15346,6 +15346,10 @@ footer {
 
   /* omisify */
   /* omisify */
+  .debut-processus-activer-levier-popup .align .card .lien-video input[type="url"] {
+    padding: 3px 1px;
+  }
+
   .debut-processus-activer-levier-popup .align .card {
     width: 181px;
   }
@@ -15370,6 +15374,7 @@ footer {
     width: 190px;
   }
 
+     
   .add-your-contact-opacity .align .card input[type="number"] {
     padding: 4px 8px;
   }
@@ -15854,6 +15859,11 @@ footer {
   } 
 
   /* omisify */
+  /* omisify */
+  .debut-processus-activer-levier-popup .align .card .lien-video input[type="url"] {
+    font-size: 15px;
+  }
+
   .debut-processus-activer-levier-popup .align {
     margin-top: 50px;
   }
