@@ -209,6 +209,11 @@ export default function Facebook() {
     setBeforeModifierNomPageHelpPopup(!beforeModifierNomPageHelpPopup);
   }
 
+  // fb success
+  function FbSuccess() {
+    window.location = "/fb-ajouter-page-success";
+  }
+
   return (
     <>
       <div className="fb">
@@ -893,7 +898,7 @@ export default function Facebook() {
                 {page && (
                   <>
                     <div className="btn-ajouter-nouvelle-page-fb">
-                      <button>Ajouter</button>
+                      <button onClick={FbSuccess}>Ajouter</button>
                     </div>
                   </>
                 )}
@@ -901,7 +906,7 @@ export default function Facebook() {
                 {compte && (
                   <>
                     <div className="btn-ajouter-nouvelle-page-fb">
-                      <button>Ajouter</button>
+                      <button onClick={FbSuccess}>Ajouter</button>
                     </div>
                   </>
                 )}

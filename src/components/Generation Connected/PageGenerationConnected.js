@@ -108,6 +108,13 @@ export default function PageGenerationConnected() {
   const [list, setList] = useState(false);
   function PopupList() {
     setList(!list);
+    /*
+    const zeroFb = "0";
+  localStorage.setItem("https://omisify.com/fb-zero", zeroFb);
+
+  const dejaFb = "fb-deja";
+  localStorage.setItem("https://omisify.com/fb-deja", dejaFb);
+  */
   }
 
   // page Facebook en attente de validation
@@ -218,6 +225,7 @@ export default function PageGenerationConnected() {
     setHelpTelechargerLogo(!helpTelechargerLogo);
   }
 
+  /*
   // pour utiliser levier, rejoindre GC
   const [pourUtiliserLevierRejoindreGC, setPourUtiliserLevierRejoindreGC] =
     useState(false);
@@ -293,6 +301,7 @@ export default function PageGenerationConnected() {
   function HelpAjouterUnGroupe() {
     setHelpAjouterUnGroupe(!helpAjouterUnGroupe);
   }
+  */
 
   /*
   // popup ajouter contact
@@ -380,7 +389,7 @@ export default function PageGenerationConnected() {
     setPopupInfosCaptureDecran(!popupInfosCaptureDecran);
   }
   */
-
+  /*
   // youtube activer levier
   const [youtubeSelected, setYoutubeSelected] = useState(false);
   function YoutubeSelected() {
@@ -397,6 +406,27 @@ export default function PageGenerationConnected() {
   function LevierSuccessPage() {
     window.location = "/levier-success";
   }
+  */
+
+  // fb success
+  function FbSuccess() {
+    const unFb = "1";
+    localStorage.setItem("https://omisify.com/fb-un", unFb);
+    //localStorage.removeItem("https://omisify.com/fb-zero");
+
+    window.location = "/fb-ajouter-page-success";
+  }
+
+  const fbUn = localStorage.getItem("https://omisify.com/fb-un");
+
+  /*
+  const fbZero = localStorage.getItem(
+    "https://omisify.com/fb-zero"
+  );
+
+   const fbDeja = localStorage.getItem(
+    "https://omisify.com/fb-deja"
+  );*/
 
   return (
     <>
@@ -1105,22 +1135,44 @@ export default function PageGenerationConnected() {
           <div onClick={PopupList} className="popup-list-opacity">
             <div className="align">
               <div className="card">
-                <NavLink style={{ textDecoration: "none" }} to="/fb">
-                  <div className="display">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="black"
-                      width="20px"
-                      viewBox="0 0 24 24"
-                    >
-                      <path fill="none" d="M0 0h24v24H0z"></path>
-                      <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.19 19.19 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
-                    </svg>
+                <div className="display">
+                  {fbUn ? (
+                    <>
+                      <svg
+                        onClick={PageFacebookEnAttenteDeValidation}
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="black"
+                        width="20px"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.19 19.19 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
+                      </svg>
 
-                    <p style={{ color: "black" }}>Facebook</p>
-                  </div>
-                  {/* display */}
-                </NavLink>
+                      <p onClick={PageFacebookEnAttenteDeValidation} style={{ color: "black" }}>
+                        Facebook
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <svg
+                        onClick={Add}
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="black"
+                        width="20px"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.19 19.19 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
+                      </svg>
+
+                      <p onClick={Add} style={{ color: "black" }}>
+                        Facebook
+                      </p>
+                    </>
+                  )}
+                </div>
+                {/* display */}
 
                 <div className="hr">
                   <hr />
@@ -1147,7 +1199,6 @@ export default function PageGenerationConnected() {
 
                 <div className="display">
                   <svg
-                    onClick={Add}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     width="20px"
@@ -1226,7 +1277,7 @@ export default function PageGenerationConnected() {
       {/* page ajouté - en attente de validation */}
 
       {/* pour utiliser le levier - rejoindre la GC */}
-      {/* pour utiliser le levier - rejoindre la GC */}
+      {/* pour utiliser le levier - rejoindre la GC 
       {pourUtiliserLevierRejoindreGC && (
         <>
           <div
@@ -1240,17 +1291,17 @@ export default function PageGenerationConnected() {
                   Connecté
                 </p>
               </div>
-              {/* card */}
+              {/* card 
             </div>
-            {/* align */}
+            {/* align 
           </div>
-          {/* popup-page-en-attente-de-validation-opacity */}
+          {/* popup-page-en-attente-de-validation-opacity 
         </>
       )}
-      {/* pour utiliser le levier - rejoindre la GC */}
+       pour utiliser le levier - rejoindre la GC */}
 
       {/* avant processus activer levier - popup */}
-      {/* avant processus activer levier - popup */}
+      {/* avant processus activer levier - popup 
       {avantProcessusActiverLevierPopup && (
         <>
           <div className="popup-before-list-of-contact-opacity">
@@ -1269,7 +1320,7 @@ export default function PageGenerationConnected() {
                   <path d="M21.414 20L33.207 8.207a.999.999 0 10-1.414-1.414L20 18.586 8.207 6.793a.999.999 0 10-1.414 1.414L18.586 20 6.793 31.793a.999.999 0 101.414 1.414L20 21.414l11.793 11.793a.997.997 0 001.414 0 .999.999 0 000-1.414L21.414 20z"></path>
                 </svg>
               </div>
-              {/* close */}
+              {/* close 
 
               <div className="card">
                 <p>
@@ -1280,17 +1331,17 @@ export default function PageGenerationConnected() {
                   Continuer
                 </button>
               </div>
-              {/* card */}
+              {/* card 
             </div>
-            {/* align */}
+            {/* align 
           </div>
-          {/* popup-before-list-of-contact-opacity */}
+          {/* popup-before-list-of-contact-opacity 
         </>
       )}
-      {/* avant processus activer levier - popup */}
+       avant processus activer levier - popup */}
 
       {/* debut Processus Activer Levier - Popup */}
-      {/* debut Processus Activer Levier - Popup */}
+      {/* debut Processus Activer Levier - Popup
       {debutProcessusActiverLevierPopup && (
         <>
           <div className="debut-processus-activer-levier-popup">
@@ -1332,7 +1383,7 @@ export default function PageGenerationConnected() {
                   </g>
                 </svg>
               </div>
-              {/* close */}
+              {/* close
 
               <div className="card">
                 <div className="display">
@@ -1349,7 +1400,7 @@ export default function PageGenerationConnected() {
                       <path d="M505.727 240.511L399.06 134.229c-3.989-4.011-9.408-6.229-15.061-6.229H21.332c-8.619 0-16.427 5.205-19.712 13.184-3.307 7.979-1.451 17.173 4.651 23.253L98.154 256 6.271 347.562c-6.101 6.08-7.957 15.275-4.651 23.253 3.285 7.979 11.093 13.184 19.712 13.184h362.667c5.675 0 11.115-2.24 15.104-6.272L505.77 270.676c4.011-4.011 6.229-9.429 6.229-15.104a21.29 21.29 0 00-6.272-15.061z"></path>
                     </svg>
                   </div>
-                  {/* a */}
+                  {/* a
 
                   <div className="a">
                     <p style={{ fontSize: "17px", color: "#ccc" }}>02</p>
@@ -1365,7 +1416,7 @@ export default function PageGenerationConnected() {
                     </svg>
                   </div>
                 </div>
-                {/* a */}
+                {/* a 
 
                 {!facebookSelected && (
                   <>
@@ -1389,9 +1440,10 @@ export default function PageGenerationConnected() {
                         Facebook
                       </p>
                     </div>
-                    {/* display-debut-processus-activer-levier */}
+                    {/* display-debut-processus-activer-levier 
                   </>
                 )}
+                   
 
                 {facebookSelected && (
                   <>
@@ -1419,7 +1471,7 @@ export default function PageGenerationConnected() {
                         Facebook
                       </p>
                     </div>
-                    {/* display-debut-processus-activer-levier */}
+                    {/* display-debut-processus-activer-levier 
                   </>
                 )}
 
@@ -1445,7 +1497,7 @@ export default function PageGenerationConnected() {
                         Youtube
                       </p>
                     </div>
-                    {/* display-debut-processus-activer-levier */}
+                    {/* display-debut-processus-activer-levier
                   </>
                 )}
 
@@ -1475,7 +1527,7 @@ export default function PageGenerationConnected() {
                         Youtube
                       </p>
                     </div>
-                    {/* display-debut-processus-activer-levier */}
+                    {/* display-debut-processus-activer-levier
                   </>
                 )}
 
@@ -1491,17 +1543,17 @@ export default function PageGenerationConnected() {
                   </>
                 )}
               </div>
-              {/* card */}
+              {/* card
             </div>
-            {/* align */}
+            {/* align
           </div>
-          {/* debut-processus-activer-levier-popup */}
+          {/* debut-processus-activer-levier-popup
         </>
       )}
-      {/* debut Processus Activer Levier - Popup */}
+       debut Processus Activer Levier - Popup */}
 
       {/* help Ajouter Un Groupe - popup */}
-      {/* help Ajouter Un Groupe - popup */}
+      {/* help Ajouter Un Groupe - popup 
       {helpAjouterUnGroupe && (
         <>
           <div
@@ -1516,7 +1568,7 @@ export default function PageGenerationConnected() {
                     Levier
                   </li>
                 </div>
-                {/* display */}
+                {/* display 
 
                 <div className="display-indice-two">
                   <li style={{ paddingRight: "5px" }}>
@@ -1524,16 +1576,16 @@ export default function PageGenerationConnected() {
                     activer le Levier pour plusieurs Réseaux Sociaux
                   </li>
                 </div>
-                {/* display-indice-two */}
+                {/* display-indice-two
               </div>
-              {/* card */}
+              {/* card
             </div>
-            {/* align */}
+            {/* align
           </div>
-          {/* popup-help-list-of-contacts-whatsapp-opacity */}
+          {/* popup-help-list-of-contacts-whatsapp-opacity
         </>
       )}
-      {/* help Ajouter Un Groupe - popup */}
+       help Ajouter Un Groupe - popup */}
 
       {/* Deuxieme Processus Activer Levier Popup */}
       {/* Deuxieme Processus Activer Levier Popup 
@@ -2159,7 +2211,7 @@ export default function PageGenerationConnected() {
         */}
 
       {/* Deuxieme processus activer levier - popup */}
-      {/* Deuxieme processus activer levier - popup */}
+      {/* Deuxieme processus activer levier - popup 
       {deuxiemeProcessusActiverLevierPopup && (
         <>
           <div className="debut-processus-activer-levier-popup">
@@ -2201,7 +2253,7 @@ export default function PageGenerationConnected() {
                   </g>
                 </svg>
               </div>
-              {/* close */}
+              {/* close
 
               <div className="card">
                 <div className="display">
@@ -2219,7 +2271,7 @@ export default function PageGenerationConnected() {
                       <path d="M505.767 240.525L399.101 134.243a21.335 21.335 0 00-15.058-6.221H21.376c-19.024 0-28.534 23.017-15.058 36.445l91.884 91.555-91.884 91.554c-13.476 13.428-3.967 36.445 15.058 36.445h362.667a21.332 21.332 0 0015.112-6.276l106.667-107.051c8.316-8.345 8.291-21.853-.055-30.169zm-130.583 100.83H73.01l70.474-70.221c8.367-8.337 8.367-21.887 0-30.224L73.01 170.688h302.218l85.311 85.004-85.355 85.663z"></path>
                     </svg>
                   </div>
-                  {/* a */}
+                  {/* a
 
                   <div className="a">
                     <p style={{ fontSize: "17px", color: "red" }}>02</p>
@@ -2235,20 +2287,20 @@ export default function PageGenerationConnected() {
                       <path d="M505.727 240.511L399.06 134.229c-3.989-4.011-9.408-6.229-15.061-6.229H21.332c-8.619 0-16.427 5.205-19.712 13.184-3.307 7.979-1.451 17.173 4.651 23.253L98.154 256 6.271 347.562c-6.101 6.08-7.957 15.275-4.651 23.253 3.285 7.979 11.093 13.184 19.712 13.184h362.667c5.675 0 11.115-2.24 15.104-6.272L505.77 270.676c4.011-4.011 6.229-9.429 6.229-15.104a21.29 21.29 0 00-6.272-15.061z"></path>
                     </svg>
                   </div>
-                  {/* a */}
+                  {/* a 
                 </div>
-                {/* display */}
+                {/* display 
 
                 <div className="lien-video">
                   <div className="a">
                     <p>BOITE MAGIQUE</p>
                   </div>
-                  {/* a */}
+                  {/* a 
 
                   <div className="b">
                     <p>Lien de la vidéo</p>
                   </div>
-                  {/* b */}
+                  {/* b 
 
                   {youtubeSelected && (
                     <>
@@ -2264,19 +2316,19 @@ export default function PageGenerationConnected() {
 
                   <button onClick={LevierSuccessPage}>Activer le Levier</button>
                 </div>
-                {/* lien-video */}
+                {/* lien-video
               </div>
-              {/* card */}
+              {/* card 
             </div>
-            {/* align */}
+            {/* align 
           </div>
-          {/* debut-processus-activer-levier-popup */}
+          {/* debut-processus-activer-levier-popup 
         </>
       )}
-      {/* Deuxieme-processus-activer-levier-popup */}
+       Deuxieme-processus-activer-levier-popup */}
 
       {/* help Deuxieme Processus Activer Levier */}
-      {/* help Deuxieme Processus Activer Levier */}
+      {/* help Deuxieme Processus Activer Levier 
       {helpDeuxiemeProcessusActiverLevier && (
         <>
           <div
@@ -2296,7 +2348,7 @@ export default function PageGenerationConnected() {
                     coller le lien puis cliquer sur Activer le Levier
                   </li>
                 </div>
-                {/* display */}
+                {/* display 
 
                 <div className="display-indice-two">
                   <li>
@@ -2325,19 +2377,19 @@ export default function PageGenerationConnected() {
                     photos publier sur vos reseaux sociaux
                   </p>
                 </div>
-                {/* display-indice-two */}
+                {/* display-indice-two
               </div>
-              {/* card */}
+              {/* card 
             </div>
-            {/* align */}
+            {/* align
           </div>
-          {/* popup-help-list-of-contacts-whatsapp-opacity */}
+          {/* popup-help-list-of-contacts-whatsapp-opacity 
         </>
       )}
-      {/* help Deuxieme Processus Activer Levier */}
+       help Deuxieme Processus Activer Levier */}
 
       {/* choisir groupe - popup */}
-      {/* choisir groupe - popup */}
+      {/* choisir groupe - popup
       {choisirGroupePopup && (
         <>
           <div className="popup-genre-opacity">
@@ -2356,11 +2408,10 @@ export default function PageGenerationConnected() {
                   <path d="M21.414 20L33.207 8.207a.999.999 0 10-1.414-1.414L20 18.586 8.207 6.793a.999.999 0 10-1.414 1.414L18.586 20 6.793 31.793a.999.999 0 101.414 1.414L20 21.414l11.793 11.793a.997.997 0 001.414 0 .999.999 0 000-1.414L21.414 20z"></path>
                 </svg>
               </div>
-              {/* close */}
+               close
 
               <div className="card">
-                {/* Telegram Group */}
-                {/* Telegram Group */}
+               
                 {telegramGroup && (
                   <>
                     <div onClick={TelegramGroup} className="active">
@@ -2376,9 +2427,7 @@ export default function PageGenerationConnected() {
                     </div>
                   </>
                 )}
-
-                {/* Whatsapp Group */}
-                {/* Whatsapp Group */}
+                
                 {whatsappGroup && (
                   <>
                     <div onClick={WhatsappGroup} className="active">
@@ -2395,12 +2444,13 @@ export default function PageGenerationConnected() {
                   </>
                 )}
               </div>
-              {/* card */}
+              {/* card 
             </div>
-            {/* align */}
+            {/* align 
           </div>
         </>
       )}
+    */}
       {/* choisir groupe popup */}
 
       {/* before add page - popup */}
@@ -2767,7 +2817,7 @@ export default function PageGenerationConnected() {
                 {page && (
                   <>
                     <div className="btn-ajouter-nouvelle-page-fb">
-                      <button>Ajouter</button>
+                      <button onClick={FbSuccess}>Ajouter</button>
                     </div>
                   </>
                 )}
@@ -2775,7 +2825,7 @@ export default function PageGenerationConnected() {
                 {compte && (
                   <>
                     <div className="btn-ajouter-nouvelle-page-fb">
-                      <button>Ajouter</button>
+                      <button onClick={FbSuccess}>Ajouter</button>
                     </div>
                   </>
                 )}
