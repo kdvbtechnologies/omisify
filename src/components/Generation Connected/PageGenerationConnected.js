@@ -848,7 +848,7 @@ export default function PageGenerationConnected() {
                   pour avoir ajouter le logo de la marque Omisify à leur photo
                   de profil. Rejoindre la Génération Connecté signifie que vous
                   allez devoir ajouter le logo de la marque Omisify à votre
-                  photo de profil Facebook, Whatsapp ou Youtube
+                  photo de profil Alrani
                 </p>
               </div>
               {/* card */}
@@ -905,13 +905,9 @@ export default function PageGenerationConnected() {
                     logo de la marque Omisify à votre photo
                   </p>
                   <p style={{ paddingRight: "3px" }}>
-                    Après l'ajout du logo à votre photo, rendez-vous sur vos
-                    réseaux sociaux et remplacer votre ancienne photo de profil
-                    par la nouvelle photo. Puis récuperer le lien de la photo de
-                    profil ou le lien de votre compte ou tout simplement prenez
-                    une capture d'écran de votre compte et venez l'ajouter au
-                    niveau de votre compte Omisify, pour cela, dans l'onglet
-                    Génération Connecté,
+                    Après l'ajout du logo à votre photo, rendez-vous sur votre
+                    compte Alrani et remplacer votre ancienne photo de profil
+                    par la nouvelle photo. Au niveau de votre photo de profil,
                   </p>
                   <p style={{ paddingRight: "3px" }}>cliquer sur l'icone</p>
                   <svg
@@ -941,44 +937,18 @@ export default function PageGenerationConnected() {
                       </clipPath>
                     </defs>
                   </svg>{" "}
-                  <p style={{ paddingRight: "5px" }}>, allez dans</p>
+                  <p style={{ paddingRight: "5px" }}>Puis cliquer sur</p>
                   <p style={{ paddingRight: "5px", fontWeight: "bold" }}>
-                    Réseaux
+                    Plus
                   </p>
                   <p style={{ paddingRight: "5px", fontWeight: "bold" }}>
-                    sociaux
+                    d'options
                   </p>
                   <p style={{ paddingRight: "5px" }}>et</p>
                   <p style={{ paddingRight: "5px" }}>choisissez</p>
-                  <p style={{ paddingRight: "5px" }}>le réseau social</p>
-                  <p style={{ paddingRight: "5px" }}>
-                    où vous avez ajouter votre photo de profil, n'hésitez pas à
-                    cliquer
+                  <p>
+                    Ajouter à Omisify pour lié votre photo de profil à Omisify
                   </p>
-                  <p style={{ paddingRight: "5px" }}>sur chaque icone</p>
-                  <svg
-                    style={{ paddingRight: "3px" }}
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15px"
-                    fill="none"
-                    viewBox="0 0 16 16"
-                  >
-                    <g fill="blue">
-                      <path
-                        fillRule="evenodd"
-                        d="M8.197 4.523a1.532 1.532 0 00-1.051.196c-.318.19-.563.49-.687.85a.75.75 0 01-1.418-.49 3.1 3.1 0 011.335-1.648 3.032 3.032 0 012.079-.386 3.057 3.057 0 011.829 1.065 3.13 3.13 0 01.716 2c0 .487-.092.905-.275 1.266-.182.36-.431.62-.679.817-.194.156-.41.291-.581.398l-.096.06a2.507 2.507 0 00-.452.34.643.643 0 00-.172.292.75.75 0 01-1.499-.033c0-.163.035-.324.086-.479.08-.243.232-.543.515-.832.239-.243.505-.419.72-.554.044-.029.086-.056.126-.08.169-.106.296-.186.415-.282a.976.976 0 00.279-.323c.059-.117.113-.296.113-.59v-.002a1.63 1.63 0 00-.372-1.041c-.24-.29-.57-.481-.931-.544z"
-                        clipRule="evenodd"
-                      ></path>
-                      <path d="M8 11a1 1 0 100 2h.007a1 1 0 100-2H8z"></path>
-                      <path
-                        fillRule="evenodd"
-                        d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13z"
-                        clipRule="evenodd"
-                      ></path>
-                    </g>
-                  </svg>
-                  <p style={{ paddingRight: "5px" }}>pour savoir</p>
-                  <p>les instructions à chaque niveau</p>
                 </div>
                 {/* a */}
               </div>
@@ -1149,14 +1119,17 @@ export default function PageGenerationConnected() {
                         <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.19 19.19 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
                       </svg>
 
-                      <p onClick={PageFacebookEnAttenteDeValidation} style={{ color: "black" }}>
+                      <p
+                        onClick={PageFacebookEnAttenteDeValidation}
+                        style={{ color: "black" }}
+                      >
                         Facebook
                       </p>
                     </>
                   ) : (
                     <>
                       <svg
-                        onClick={Add}
+                        onClick={PopupBefore}
                         xmlns="http://www.w3.org/2000/svg"
                         fill="black"
                         width="20px"
@@ -1166,7 +1139,7 @@ export default function PageGenerationConnected() {
                         <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.19 19.19 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
                       </svg>
 
-                      <p onClick={Add} style={{ color: "black" }}>
+                      <p onClick={PopupBefore} style={{ color: "black" }}>
                         Facebook
                       </p>
                     </>
@@ -1180,7 +1153,6 @@ export default function PageGenerationConnected() {
 
                 <div className="display">
                   <svg
-                    onClick={PageFacebookEnAttenteDeValidation}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="black"
                     width="20px"
@@ -1189,7 +1161,7 @@ export default function PageGenerationConnected() {
                     <path fill="none" d="M0 0h24v24H0z"></path>
                     <path d="M7.253 18.494l.724.423A7.953 7.953 0 0012 20a8 8 0 10-8-8 7.95 7.95 0 001.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 01-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 01-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 00.367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 01.378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 01-.21.302 2.378 2.378 0 01-.33.288 3.71 3.71 0 01-.125.09 5.024 5.024 0 01-.383.22 1.99 1.99 0 01-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 01-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 016.9 9.62a2.729 2.729 0 01.564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 01.371-.1z"></path>
                   </svg>
-                  <p onClick={PageFacebookEnAttenteDeValidation}>Whatsapp</p>
+                  <p>Whatsapp</p>
                 </div>
                 {/* display */}
 
@@ -1212,7 +1184,7 @@ export default function PageGenerationConnected() {
                       d="M21 5L2 12.5l7 1M21 5l-2.5 15L9 13.5M21 5L9 13.5m0 0V19l3.249-3.277"
                     ></path>
                   </svg>
-                  <p onClick={PopupBefore}>Telegram</p>
+                  <p>Telegram</p>
                 </div>
                 {/* display */}
               </div>

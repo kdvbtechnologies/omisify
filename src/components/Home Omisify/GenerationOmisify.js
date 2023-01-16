@@ -111,8 +111,8 @@ export default function GenerationOmisify() {
               </p>
               <p style={{ paddingRight: "5px" }}>concerne ces personnes,</p>
               <p>
-                ces influenceurs ou ces artistes qui ont choisi de mettre le
-                logo de la marque Omisify dans leur photos, vidéos et sont
+                ces influenceurs ou ces artistes qui ont choisi d'ajouter le
+                logo de la marque Omisify à leur photo de profil et sont
                 rémunérés chaque jour par Omisify
               </p>
             </div>
@@ -141,8 +141,8 @@ export default function GenerationOmisify() {
               </p>
               <p style={{ paddingRight: "5px" }}>concerne ces personnes,</p>
               <p>
-                ces influenceurs ou ces artistes qui ont choisi de mettre le
-                logo de la marque Omisify dans leur photos, vidéos et sont
+                ces influenceurs ou ces artistes qui ont choisi d'ajouter le
+                logo de la marque Omisify à leur photo de profil et sont
                 rémunérés chaque jour par Omisify
               </p>
             </div>
@@ -326,7 +326,7 @@ export default function GenerationOmisify() {
           <div className="box-shadow">
             <p>
               Soyez rémunérer chaque jour par Omisify juste pour avoir ajouter
-              le logo de la marque Omisify à votre photo
+              le logo de la marque Omisify à votre photo de profil
             </p>
 
             <div className="a">
@@ -491,7 +491,7 @@ export default function GenerationOmisify() {
 
                 <p>
                   L'Equipe Omisify est à votre disposition pour vous aider à
-                  ajouter le logo de la marque Omisify à votre photo ou vidéo
+                  ajouter le logo de la marque Omisify à votre photo de profil
                 </p>
 
                 {/*
