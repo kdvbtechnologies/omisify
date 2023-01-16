@@ -618,14 +618,11 @@ export default function PageGenerationConnected() {
                   <p style={{ paddingRight: "5px" }}>ensuite</p>
                   <p style={{ paddingRight: "5px" }}>cliquer sur</p>
                   <p style={{ paddingRight: "5px", fontWeight: "bold" }}>
-                    Réseaux
-                  </p>
-                  <p style={{ paddingRight: "5px", fontWeight: "bold" }}>
-                    sociaux
+                    Plateforme
                   </p>
                   <p style={{ paddingRight: "5px" }}>puis</p>
                   <p style={{ paddingRight: "5px" }}>choisissez</p>
-                  <p style={{ paddingRight: "5px" }}>le réseau social</p>
+                  <p style={{ paddingRight: "5px" }}>la plateforme</p>
                   <p>où vous avez ajouter votre photo de profil</p>
                 </div>
                 {/* display */}
@@ -942,13 +939,14 @@ export default function PageGenerationConnected() {
                     Plus
                   </p>
                   <p style={{ paddingRight: "5px", fontWeight: "bold" }}>
-                    d'options
+                    d'options.
                   </p>
-                  <p style={{ paddingRight: "5px" }}>et</p>
-                  <p style={{ paddingRight: "5px" }}>choisissez</p>
-                  <p>
-                    Ajouter à Omisify pour lié votre photo de profil à Omisify
+                  <p style={{ paddingRight: "5px" }}>Enfin</p>
+                  <p style={{ paddingRight: "5px" }}>cliquer sur</p>
+                  <p style={{ paddingRight: "5px", fontWeight: "bold" }}>
+                    Ajouter à Omisify
                   </p>
+                  <p>pour lié votre photo de profil à Omisify</p>
                 </div>
                 {/* a */}
               </div>
@@ -1082,7 +1080,7 @@ export default function PageGenerationConnected() {
             <div className="float">
               <div className="card">
                 <p onClick={PopupList} style={{ cursor: "pointer" }}>
-                  Réseaux Sociaux
+                  Plateforme
                 </p>
 
                 {/* <p
@@ -1123,7 +1121,7 @@ export default function PageGenerationConnected() {
                         onClick={PageFacebookEnAttenteDeValidation}
                         style={{ color: "black" }}
                       >
-                        Facebook
+                        Alrani
                       </p>
                     </>
                   ) : (
@@ -1140,7 +1138,7 @@ export default function PageGenerationConnected() {
                       </svg>
 
                       <p onClick={PopupBefore} style={{ color: "black" }}>
-                        Facebook
+                        Alrani
                       </p>
                     </>
                   )}
@@ -2448,7 +2446,7 @@ export default function PageGenerationConnected() {
               {/* close */}
 
               <div className="card">
-                <p>Ajouter un Compte ou une Page Facebook</p>
+                <p>Ajouter un Compte Alrani</p>
                 <button onClick={Add}>Ajouter</button>
               </div>
               {/* card */}
