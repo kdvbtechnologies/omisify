@@ -126,79 +126,9 @@ export default function PageGenerationConnected() {
     setPopupHelp(!popupHelp);
   }
 
-  // compte - popup Choisir lien ou capture
-  const [popupChoisirLienOuCaptureCompte, setPopupChoisirLienOuCaptureCompte] =
-    useState(false);
-
-  function ChoisirLienOuCaptureCompte() {
-    setPopupChoisirLienOuCaptureCompte(!popupChoisirLienOuCaptureCompte);
-  }
-
-  // popup Choisir Page Ou Compte
-  const [popupChoisirPageOuCompte, setPopupChoisirPageOuCompte] =
-    useState(false);
-
-  function ChoisirPageOuCompte() {
-    setPopupChoisirPageOuCompte(!popupChoisirPageOuCompte);
-  }
-
-  // page
-  const [page, setPage] = useState(true);
-  function Page() {
-    setPage(true);
-    setCompte(false);
-  }
-
-  // compte
-  const [compte, setCompte] = useState(false);
-  function Compte() {
-    setPage(false);
-    setCompte(true);
-  }
-
-  // page - popup Choisir lien ou capture
-  const [popupChoisirLienOuCapturePage, setPopupChoisirLienOuCapturePage] =
-    useState(false);
-
-  function ChoisirLienOuCapturePage() {
-    setPopupChoisirLienOuCapturePage(!popupChoisirLienOuCapturePage);
-  }
-
   const [popupAdd, setPopupAdd] = useState(false);
   function Add() {
     setPopupAdd(!popupAdd);
-  }
-
-  // page
-  // page
-  // lien page
-  const [lienPage, setLienPage] = useState(true);
-  function LienPage() {
-    setLienPage(true);
-    setCapturePage(false);
-  }
-
-  // capture page
-  const [capturePage, setCapturePage] = useState(false);
-  function CapturePage() {
-    setLienPage(false);
-    setCapturePage(true);
-  }
-
-  // compte
-  // compte
-  // lien compte
-  const [lienCompte, setLienCompte] = useState(true);
-  function LienCompte() {
-    setLienCompte(true);
-    setCaptureCompte(false);
-  }
-
-  // capture compte
-  const [captureCompte, setCaptureCompte] = useState(false);
-  function CaptureCompte() {
-    setLienCompte(false);
-    setCaptureCompte(true);
   }
 
   const [popupBefore, setPopupBefore] = useState(false);
@@ -774,14 +704,16 @@ export default function PageGenerationConnected() {
                   {fbUn ? (
                     <>
                       <svg
-                        onClick={PageFacebookEnAttenteDeValidation}
                         xmlns="http://www.w3.org/2000/svg"
+                        onClick={PageFacebookEnAttenteDeValidation}
                         fill="black"
                         width="20px"
-                        viewBox="0 0 24 24"
+                        version="1.1"
+                        viewBox="0 0 422 422"
+                        xmlSpace="preserve"
                       >
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.19 19.19 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
+                        <path d="M315.91 415.682c-18.036-25.363-33.765-53.708-46.749-84.248-9.987-23.464-18.514-48.622-25.406-74.934h1.595a4 4 0 000-8h-3.608c-.284-1.148-.586-2.285-.864-3.438-27.564-114.287-16.372-214.6-16.255-215.6a4.006 4.006 0 00-3.575-4.444L215 24.412V4a4 4 0 00-8 0v20.414l-6.049.606a4.004 4.004 0 00-3.575 4.444c.117 1 11.311 101.313-16.255 215.6-.278 1.152-.58 2.289-.864 3.438h-3.608a4 4 0 000 8h1.596c-6.893 26.315-15.42 51.474-25.407 74.935-12.98 30.534-28.709 58.88-46.748 84.246a4.001 4.001 0 003.26 6.318h41.69a4.001 4.001 0 003.997-4.182 40.58 40.58 0 01-.036-1.817c0-30.879 25.121-56 56-56s56 25.121 56 56c0 .61-.01 1.221-.036 1.822a3.997 3.997 0 003.996 4.177h41.689a4.001 4.001 0 003.26-6.319zM188.899 246.938c24.771-102.701 18.605-194.315 16.82-214.354l5.13-.514 5.432.514c-1.785 20.039-7.95 111.653 16.82 214.354.126.524.265 1.039.393 1.563h-44.987c.127-.524.266-1.039.392-1.563zM274.969 414c-1.06-34.367-29.349-62-63.969-62s-62.908 27.633-63.969 62h-30.017c16.536-24.193 31.046-50.878 43.186-79.434 10.393-24.417 19.213-50.643 26.295-78.066h49.009c7.081 27.42 15.901 53.645 26.295 78.065 12.142 28.56 26.651 55.244 43.185 79.435h-30.015z"></path>
+                        <path d="M224.001 274.458a4 4 0 00-3.862-2.959h-18.275a3.999 3.999 0 00-3.862 2.959l-15.362 57a4 4 0 005.68 4.604 50.14 50.14 0 0122.683-5.452 50.143 50.143 0 0122.683 5.452 4 4 0 005.68-4.605l-15.365-56.999zm-13 48.152a58.162 58.162 0 00-18.513 3.045l12.439-46.156h12.146l12.439 46.156a58.145 58.145 0 00-18.511-3.045z"></path>
                       </svg>
 
                       <p
@@ -794,14 +726,16 @@ export default function PageGenerationConnected() {
                   ) : (
                     <>
                       <svg
-                        onClick={PopupBefore}
                         xmlns="http://www.w3.org/2000/svg"
+                        onClick={PopupBefore}
                         fill="black"
                         width="20px"
-                        viewBox="0 0 24 24"
+                        version="1.1"
+                        viewBox="0 0 422 422"
+                        xmlSpace="preserve"
                       >
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.19 19.19 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
+                        <path d="M315.91 415.682c-18.036-25.363-33.765-53.708-46.749-84.248-9.987-23.464-18.514-48.622-25.406-74.934h1.595a4 4 0 000-8h-3.608c-.284-1.148-.586-2.285-.864-3.438-27.564-114.287-16.372-214.6-16.255-215.6a4.006 4.006 0 00-3.575-4.444L215 24.412V4a4 4 0 00-8 0v20.414l-6.049.606a4.004 4.004 0 00-3.575 4.444c.117 1 11.311 101.313-16.255 215.6-.278 1.152-.58 2.289-.864 3.438h-3.608a4 4 0 000 8h1.596c-6.893 26.315-15.42 51.474-25.407 74.935-12.98 30.534-28.709 58.88-46.748 84.246a4.001 4.001 0 003.26 6.318h41.69a4.001 4.001 0 003.997-4.182 40.58 40.58 0 01-.036-1.817c0-30.879 25.121-56 56-56s56 25.121 56 56c0 .61-.01 1.221-.036 1.822a3.997 3.997 0 003.996 4.177h41.689a4.001 4.001 0 003.26-6.319zM188.899 246.938c24.771-102.701 18.605-194.315 16.82-214.354l5.13-.514 5.432.514c-1.785 20.039-7.95 111.653 16.82 214.354.126.524.265 1.039.393 1.563h-44.987c.127-.524.266-1.039.392-1.563zM274.969 414c-1.06-34.367-29.349-62-63.969-62s-62.908 27.633-63.969 62h-30.017c16.536-24.193 31.046-50.878 43.186-79.434 10.393-24.417 19.213-50.643 26.295-78.066h49.009c7.081 27.42 15.901 53.645 26.295 78.065 12.142 28.56 26.651 55.244 43.185 79.435h-30.015z"></path>
+                        <path d="M224.001 274.458a4 4 0 00-3.862-2.959h-18.275a3.999 3.999 0 00-3.862 2.959l-15.362 57a4 4 0 005.68 4.604 50.14 50.14 0 0122.683-5.452 50.143 50.143 0 0122.683 5.452 4 4 0 005.68-4.605l-15.365-56.999zm-13 48.152a58.162 58.162 0 00-18.513 3.045l12.439-46.156h12.146l12.439 46.156a58.145 58.145 0 00-18.511-3.045z"></path>
                       </svg>
 
                       <p onClick={PopupBefore} style={{ color: "black" }}>
@@ -900,7 +834,7 @@ export default function PageGenerationConnected() {
                   ></path>
                 </svg>
                 <p>
-                  La Page Facebook que vous avez ajouté est en attente de
+                  Le compte Alrani que vous avez ajouté est en attente de
                   validation
                 </p>
               </div>
@@ -1003,105 +937,41 @@ export default function PageGenerationConnected() {
               {/* space */}
 
               <div className="card">
-                {compte && (
-                  <>
-                    <div className="display">
-                      <p
-                        onClick={ChoisirPageOuCompte}
-                        style={{
-                          cursor: "pointer",
-                          color: "red",
-                          fontSize: "18px",
-                        }}
-                      >
-                        Compte Alrani
-                      </p>
-                      <svg
-                        onClick={ChoisirPageOuCompte}
-                        style={{ paddingLeft: "5px", paddingTop: "4px" }}
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12px"
-                        cursor="pointer"
-                        version="1.1"
-                        viewBox="0 0 40 40"
-                        xmlSpace="preserve"
-                      >
-                        <path d="M19.962 28.131a.941.941 0 01-.67-.281L5.27 13.542a.938.938 0 111.337-1.313l13.354 13.625L33.394 12.15a.939.939 0 011.326-.015.941.941 0 01.013 1.327L20.632 27.85a.945.945 0 01-.67.281z"></path>
-                      </svg>
-                    </div>
-                    {/* display */}
-                  </>
-                )}
+                <div className="display">
+                  <p
+                    style={{
+                      cursor: "pointer",
+                      color: "red",
+                      fontSize: "18px",
+                    }}
+                  >
+                    Compte Alrani
+                  </p>
+                </div>
+                {/* display */}
 
-                {page && (
-                  <>
-                    <div className="display">
-                      <p
-                        onClick={ChoisirPageOuCompte}
-                        style={{
-                          cursor: "pointer",
-                          color: "red",
-                          fontSize: "18px",
-                        }}
-                      >
-                        Page Facebook
-                      </p>
-                      <svg
-                        onClick={ChoisirPageOuCompte}
-                        style={{ paddingLeft: "5px", paddingTop: "4px" }}
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12px"
-                        cursor="pointer"
-                        version="1.1"
-                        viewBox="0 0 40 40"
-                        xmlSpace="preserve"
-                      >
-                        <path d="M19.962 28.131a.941.941 0 01-.67-.281L5.27 13.542a.938.938 0 111.337-1.313l13.354 13.625L33.394 12.15a.939.939 0 011.326-.015.941.941 0 01.013 1.327L20.632 27.85a.945.945 0 01-.67.281z"></path>
-                      </svg>
-                    </div>
-                    {/* display */}
-                  </>
-                )}
-
-                {page && (
-                  <>
-                    <div className="ajouter-compte-fb">
-                      <p>Ajouter une Page Facebook</p>
-                    </div>
-                  </>
-                )}
-
-                {compte && (
-                  <>
-                    <div className="ajouter-compte-fb">
-                      <p>Ajouter un Compte Alrani</p>
-                    </div>
-                    {/* ajouter-compte-fb */}
-                  </>
-                )}
+                <div className="ajouter-compte-fb">
+                  <p>Se connecter à un Compte</p>
+                </div>
+                {/* ajouter-compte-fb */}
 
                 <div className="input-nom-page-fb">
                   <div className="align-in-center">
-                    <input type="text" placeholder="E-mail" />
+                    <input type="text" placeholder="Adresse E-mail" />
                   </div>
                 </div>
                 {/* input-nom-page-fb */}
 
-                {page && (
-                  <>
-                    <div className="btn-ajouter-nouvelle-page-fb">
-                      <button onClick={FbSuccess}>Ajouter</button>
-                    </div>
-                  </>
-                )}
+                <div className="input-nom-page-fb">
+                  <div className="align-in-center">
+                    <input type="text" placeholder="Mot de passe" />
+                  </div>
+                </div>
+                {/* input-nom-page-fb */}
 
-                {compte && (
-                  <>
-                    <div className="btn-ajouter-nouvelle-page-fb">
-                      <button onClick={FbSuccess}>Ajouter</button>
-                    </div>
-                  </>
-                )}
+                <div className="btn-ajouter-nouvelle-page-fb">
+                  <button onClick={FbSuccess}>Se connecter</button>
+                </div>
               </div>
               {/* card */}
             </div>
@@ -1116,8 +986,6 @@ export default function PageGenerationConnected() {
       {/* ajouter - help popup */}
       {/* ajouter - help popup */}
       {/* ajouter - help popup */}
-      {/* ajouter - help popup */}
-      {/* ajouter - help popup */}
       {popupHelp && (
         <>
           <div
@@ -1128,8 +996,8 @@ export default function PageGenerationConnected() {
               <div className="card">
                 <div className="display">
                   <li>
-                    Entrer l'adresse e-mail de votre Compte Alrani pour lié
-                    votre compte Alrani à votre compte Omisify
+                    Connectez-vous à votre compte Alrani pour lié votre compte
+                    Alrani à votre compte Omisify
                   </li>
                 </div>
                 {/* display */}
@@ -1142,207 +1010,6 @@ export default function PageGenerationConnected() {
         </>
       )}
       {/* ajouter - help popup */}
-
-      {/* choisir page ou compte - popup */}
-      {/* choisir page ou compte - popup */}
-      {popupChoisirPageOuCompte && (
-        <>
-          <div className="popup-genre-opacity">
-            <div className="align">
-              <div className="close">
-                <p></p>
-                <svg
-                  onClick={ChoisirPageOuCompte}
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  cursor="pointer"
-                  version="1.1"
-                  viewBox="0 0 40 40"
-                  xmlSpace="preserve"
-                >
-                  <path d="M21.414 20L33.207 8.207a.999.999 0 10-1.414-1.414L20 18.586 8.207 6.793a.999.999 0 10-1.414 1.414L18.586 20 6.793 31.793a.999.999 0 101.414 1.414L20 21.414l11.793 11.793a.997.997 0 001.414 0 .999.999 0 000-1.414L21.414 20z"></path>
-                </svg>
-              </div>
-              {/* close */}
-
-              <div className="card">
-                {/* page */}
-                {/* page */}
-                {page && (
-                  <>
-                    <div onClick={Page} className="active">
-                      <p>Page Facebook</p>
-                    </div>
-                  </>
-                )}
-
-                {!page && (
-                  <>
-                    <div onClick={Page} className="no-active">
-                      <p>Page Facebook</p>
-                    </div>
-                  </>
-                )}
-
-                {/* compte */}
-                {/* compte */}
-                {compte && (
-                  <>
-                    <div onClick={Compte} className="active">
-                      <p>Compte Facebook</p>
-                    </div>
-                  </>
-                )}
-
-                {!compte && (
-                  <>
-                    <div onClick={Compte} className="no-active">
-                      <p>Compte Facebook</p>
-                    </div>
-                  </>
-                )}
-              </div>
-              {/* card */}
-            </div>
-            {/* align */}
-          </div>
-        </>
-      )}
-      {/* choisir page ou compte - popup */}
-
-      {/* page - popup choisir lien ou capture */}
-      {/* page - popup choisir lien ou capture */}
-      {popupChoisirLienOuCapturePage && (
-        <>
-          <div className="popup-genre-opacity">
-            <div className="align">
-              <div className="close">
-                <p></p>
-                <svg
-                  onClick={ChoisirLienOuCapturePage}
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  cursor="pointer"
-                  version="1.1"
-                  viewBox="0 0 40 40"
-                  xmlSpace="preserve"
-                >
-                  <path d="M21.414 20L33.207 8.207a.999.999 0 10-1.414-1.414L20 18.586 8.207 6.793a.999.999 0 10-1.414 1.414L18.586 20 6.793 31.793a.999.999 0 101.414 1.414L20 21.414l11.793 11.793a.997.997 0 001.414 0 .999.999 0 000-1.414L21.414 20z"></path>
-                </svg>
-              </div>
-              {/* close */}
-
-              <div className="card">
-                {/* lien de la page */}
-                {/* lien de la page */}
-                {lienPage && (
-                  <>
-                    <div onClick={LienPage} className="active">
-                      <p>Lien de la Page</p>
-                    </div>
-                  </>
-                )}
-
-                {!lienPage && (
-                  <>
-                    <div onClick={LienPage} className="no-active">
-                      <p>Lien de la Page</p>
-                    </div>
-                  </>
-                )}
-
-                {/* capture de la page */}
-                {/* capture de la page */}
-                {capturePage && (
-                  <>
-                    <div onClick={CapturePage} className="active">
-                      <p>Capture d'écran de la Page</p>
-                    </div>
-                  </>
-                )}
-
-                {!capturePage && (
-                  <>
-                    <div onClick={CapturePage} className="no-active">
-                      <p>Capture d'écran de la Page</p>
-                    </div>
-                  </>
-                )}
-              </div>
-              {/* card */}
-            </div>
-            {/* align */}
-          </div>
-        </>
-      )}
-      {/* page - popup choisir lien ou capture */}
-
-      {/* compte - popup choisir lien ou capture */}
-      {/* compte - popup choisir lien ou capture */}
-      {popupChoisirLienOuCaptureCompte && (
-        <>
-          <div className="popup-genre-opacity">
-            <div className="align">
-              <div className="close">
-                <p></p>
-                <svg
-                  onClick={ChoisirLienOuCaptureCompte}
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  cursor="pointer"
-                  version="1.1"
-                  viewBox="0 0 40 40"
-                  xmlSpace="preserve"
-                >
-                  <path d="M21.414 20L33.207 8.207a.999.999 0 10-1.414-1.414L20 18.586 8.207 6.793a.999.999 0 10-1.414 1.414L18.586 20 6.793 31.793a.999.999 0 101.414 1.414L20 21.414l11.793 11.793a.997.997 0 001.414 0 .999.999 0 000-1.414L21.414 20z"></path>
-                </svg>
-              </div>
-              {/* close */}
-
-              <div className="card">
-                {/* lien du compte */}
-                {/* lien du compte */}
-                {lienCompte && (
-                  <>
-                    <div onClick={LienCompte} className="active">
-                      <p>Lien du Compte</p>
-                    </div>
-                  </>
-                )}
-
-                {!lienCompte && (
-                  <>
-                    <div onClick={LienCompte} className="no-active">
-                      <p>Lien du Compte</p>
-                    </div>
-                  </>
-                )}
-
-                {/* capture du compte */}
-                {/* capture du compte */}
-                {captureCompte && (
-                  <>
-                    <div onClick={CaptureCompte} className="active">
-                      <p>Capture d'écran du Compte</p>
-                    </div>
-                  </>
-                )}
-
-                {!captureCompte && (
-                  <>
-                    <div onClick={CaptureCompte} className="no-active">
-                      <p>Capture d'écran du Compte</p>
-                    </div>
-                  </>
-                )}
-              </div>
-              {/* card */}
-            </div>
-            {/* align */}
-          </div>
-        </>
-      )}
-      {/* compte - popup choisir lien ou capture */}
 
       {/* telecharger les logo - popup */}
       {/* telecharger les logo - popup */}
