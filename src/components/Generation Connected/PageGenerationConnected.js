@@ -745,59 +745,6 @@ export default function PageGenerationConnected() {
         </>
       )}
 
-      {/* page ajouté - en attente de validation */}
-      {/* page ajouté - en attente de validation
-      {pageFacebookEnAttenteDeValidation && (
-        <>
-          <div
-            onClick={PageFacebookEnAttenteDeValidation}
-            className="popup-page-en-attente-de-validation-opacity"
-          >
-            <div className="align">
-              <div className="card">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="black"
-                  width="25px"
-                  viewBox="0 0 24 24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.19 19.19 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
-                </svg>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="100px"
-                  fill="blue"
-                  data-name="Layer 1"
-                  viewBox="0 0 16 16"
-                >
-                  <circle
-                    cx="12.5"
-                    cy="11.5"
-                    r="1.5"
-                    className="cls-1"
-                  ></circle>
-                  <path
-                    d="M14 4.693l-8.182 8.182L2 9.057 3.636 7.42l2.25 2.25 6.546-6.545z"
-                    className="cls-2"
-                  ></path>
-                </svg>
-                <p>
-                  Le compte Alrani que vous avez ajouté est en attente de
-                  validation
-                </p>
-              </div>
-              {/* card 
-            </div>
-            {/* align 
-          </div>
-          {/* popup-page-en-attente-de-validation-opacity 
-        </>
-      )}
-    */}
-      {/* page ajouté - en attente de validation */}
-
       {/* before add page - popup */}
       {/* avant d'atterir sur add page - nous avons cette popup */}
       {popupBefore && (
@@ -859,7 +806,7 @@ export default function PageGenerationConnected() {
                       <path
                         fill="#fff"
                         fillRule="evenodd"
-                        d="M7.53 6.47a.75.75 0 00-1.06 1.06L10.94 12l-4.47 4.47a.75.75 0 101.06 1.06L12 13.06l4.47 4.47a.75.75 0 101.06-1.06L13.06 12l4.47-4.47a.75.75 0 00-1.06-1.06L12 10.94z"
+                        d="M7.53 6.47sa.75.75 0 00-1.06 1.06L10.94 12l-4.47 4.47a.75.75 0 101.06 1.06L12 13.06l4.47 4.47a.75.75 0 101.06-1.06L13.06 12l4.47-4.47a.75.75 0 00-1.06-1.06L12 10.94z"
                         clipRule="evenodd"
                       ></path>
                     </svg>
