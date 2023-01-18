@@ -800,15 +800,12 @@ export default function PageGenerationConnected() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
                       cursor="pointer"
-                      fill="none"
-                      viewBox="0 0 24 24"
+                      fill="white"
+                      version="1.1"
+                      viewBox="0 0 40 40"
+                      xmlSpace="preserve"
                     >
-                      <path
-                        fill="#fff"
-                        fillRule="evenodd"
-                        d="M7.53 6.47sa.75.75 0 00-1.06 1.06L10.94 12l-4.47 4.47a.75.75 0 101.06 1.06L12 13.06l4.47 4.47a.75.75 0 101.06-1.06L13.06 12l4.47-4.47a.75.75 0 00-1.06-1.06L12 10.94z"
-                        clipRule="evenodd"
-                      ></path>
+                      <path d="M21.414 20L33.207 8.207a.999.999 0 10-1.414-1.414L20 18.586 8.207 6.793a.999.999 0 10-1.414 1.414L18.586 20 6.793 31.793a.999.999 0 101.414 1.414L20 21.414l11.793 11.793a.997.997 0 001.414 0 .999.999 0 000-1.414L21.414 20z"></path>
                     </svg>
 
                     <svg

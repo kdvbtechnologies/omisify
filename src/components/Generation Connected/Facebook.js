@@ -121,11 +121,9 @@ export default function Facebook() {
     setToggle(!toggle);
   }
 
-  /*
-  const resCompteLier = localStorage.getItem(
-    "https://omisify.com/res-compte-lier"
-  );
-*/
+  function Terminer() {
+    window.location = "/secure-page";
+  }
 
   return (
     <>
@@ -491,9 +489,7 @@ export default function Facebook() {
                     </div>
 
                     <div className="btn-ajouter-nouvelle-page-fb">
-                      <NavLink to="/secure-page">
-                        <button>Terminer</button>
-                      </NavLink>
+                      <button onClick={Terminer}>Terminer</button>
                     </div>
                   </>
                 )}
@@ -524,8 +520,9 @@ export default function Facebook() {
               <div className="card">
                 <div className="display">
                   <li>
-                    Connectez-vous à votre compte Alrani pour lié votre compte
-                    Alrani à votre compte Omisify
+                    Pour ajouter un nouveau compte, connectez-vous à votre
+                    compte Alrani pour lié votre compte Alrani à votre compte
+                    Omisify
                   </li>
                 </div>
                 {/* display */}
