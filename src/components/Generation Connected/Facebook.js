@@ -246,7 +246,7 @@ export default function Facebook() {
               <path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.19 19.19 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
             </svg>
 
-            <p style={{ color: "black", fontSize: "17px" }}>Facebook</p>
+            <p style={{ color: "black", fontSize: "17px" }}>Alrani</p>
           </div>
 
           <div className="b">
@@ -326,15 +326,6 @@ export default function Facebook() {
                   <div className="card">
                     <div className="a">
                       <p style={{ fontSize: "17px" }}>{api.nomPageFacebook}</p>
-                      <p
-                        style={{
-                          fontSize: "13px",
-                          textDecoration: "overline dotted",
-                          paddingTop: "10px",
-                        }}
-                      >
-                        Page Facebook
-                      </p>
 
                       <p
                         style={{
@@ -343,7 +334,7 @@ export default function Facebook() {
                           paddingTop: "10px",
                         }}
                       >
-                        Compte Facebook
+                        Compte Alrani
                       </p>
                     </div>
 
