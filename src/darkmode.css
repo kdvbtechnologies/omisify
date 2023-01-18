@@ -5106,6 +5106,16 @@ footer {
   font-size: 16px;
 }
 
+.display-compte-lier-om-al {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-compte-lier-om-al p {
+  text-align: center;
+}
+
 .ajouter-compte-fb p {
   text-align: center;
   margin-top: 20px;

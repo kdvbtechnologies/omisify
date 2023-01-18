@@ -32,10 +32,12 @@ import ContactAjouterError from "./components/Generation Connected/ContactAjoute
 import DescriptionModifierError from "./components/Generation Connected/DescriptionModifierError";
 import DescriptionAjouterError from "./components/Generation Connected/DescriptionAjouterError";
 import GetMoneyError from "./components/Generation Connected/GetMoneyError";
-import Facebook from "./components/Generation Connected/Facebook";
 import FacebookError from "./components/Generation Connected/FacebookError";
 import FBAjouterPageSuccess from "./components/Generation Connected/FBAjouterPageSuccess";
 import FBAjouterCompteSuccess from "./components/Generation Connected/FBAjouterCompteSuccess";
+import FBModifierSuccess from "./components/Generation Connected/FBModifierSuccess";
+import LevierSuccess from "./components/Generation Connected/LevierSuccess";
+import SecurePage from "./components/Generation Connected/SecurePage";
 
 import ContactPartner from "./Pages/ContactPartner";
 import Program from "./components/Program";
@@ -469,8 +471,6 @@ import ProfilPartnerVS from "./components/0Vixinol/Partner/Profil/Profil";
 import FavoriteVI from "./components/0Vixinol/ProfilUser/Favorite/Favorite";
 
 import PartieA from "./PartieA";
-import FBModifierSuccess from "./components/Generation Connected/FBModifierSuccess";
-import LevierSuccess from "./components/Generation Connected/LevierSuccess";
 
 export default function App() {
   return (
@@ -524,7 +524,7 @@ export default function App() {
 
         <Route path="/fb-modifier-success" element={<FBModifierSuccess />} />
 
-        <Route path="/fb" element={<Facebook />} />
+        <Route path="/secure-page" element={<SecurePage />} />
 
         <Route
           path="/add-photo-cover-success"
