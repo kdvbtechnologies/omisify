@@ -1,9 +1,7 @@
-import { useNavigate } from "react-router-dom";
 import Back from "../../Back/Back";
 import StarsFive from "./StarsFive";
 
 export default function PageCommentBookFiveStars() {
-  const navigate = useNavigate(-1);
 
   const api = [
     {
@@ -43,7 +41,6 @@ export default function PageCommentBookFiveStars() {
     <>
       <div
         style={{ backgroundColor: "#eee" }}
-        onClick={() => navigate(-1)}
         className="comment-book-back-btn"
       >
         <Back />

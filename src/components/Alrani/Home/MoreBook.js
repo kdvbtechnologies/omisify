@@ -1,12 +1,9 @@
 import { NavLink } from "react-router-dom";
-import book2 from "../img/book2.jpg";
-import book3 from "../img/book3.jpg";
-import book4 from "../img/book4.jpg";
-import book5 from "../img/book5.jpg";
 
 const api = [
   {
-    imagebook: `${book2}`,
+    imagebook:
+      "https://res.cloudinary.com/rasivyy/image/upload/v1668836770/alrani/book2_bvwki6.jpg",
     nameofbook: "L'autoroute du Millionnaire",
     authorbook: "MJ Demarco",
     numberinthechart: "1",
@@ -14,21 +11,24 @@ const api = [
   },
 
   {
-    imagebook: `${book3}`,
+    imagebook:
+      "https://res.cloudinary.com/rasivyy/image/upload/v1668836770/alrani/book3_ztcce1.jpg",
     nameofbook: "Tout le monde n'a pas eu la chance de rater ses études",
     authorbook: "Olivier Roland",
     categorieofthebook: "Satisfaction Professionnelle",
   },
 
   {
-    imagebook: `${book4}`,
+    imagebook:
+      "https://res.cloudinary.com/rasivyy/image/upload/v1674153635/alrani/book4_uqvh1p.jpg",
     nameofbook: "Le Principe de Pareto",
     authorbook: "Luca CANNIZARO",
     categorieofthebook: "Finances et Economie",
   },
 
   {
-    imagebook: `${book5}`,
+    imagebook:
+      "https://res.cloudinary.com/rasivyy/image/upload/v1674153884/alrani/book5_r3kojw.jpg",
     nameofbook: "Réfléchissez et devenez Riche",
     authorbook: "Napoleon Hill",
     numberinthechart: "5",
@@ -36,7 +36,8 @@ const api = [
   },
 
   {
-    imagebook: `${book2}`,
+    imagebook:
+      "https://res.cloudinary.com/rasivyy/image/upload/v1668836770/alrani/book2_bvwki6.jpg",
     nameofbook: "L'autoroute du Millionnaire",
     authorbook: "MJ Demarco",
     numberinthechart: "1",
@@ -44,14 +45,16 @@ const api = [
   },
 
   {
-    imagebook: `${book3}`,
+    imagebook:
+      "https://res.cloudinary.com/rasivyy/image/upload/v1668836770/alrani/book3_ztcce1.jpg",
     nameofbook: "Tout le monde n'a pas eu la chance de rater ses études",
     authorbook: "Olivier Roland",
     categorieofthebook: "Satisfaction Professionnelle",
   },
 
   {
-    imagebook: `${book4}`,
+    imagebook:
+      "https://res.cloudinary.com/rasivyy/image/upload/v1674153635/alrani/book4_uqvh1p.jpg",
     nameofbook: "Le Principe de Pareto",
     authorbook: "Luca CANNIZARO",
     categorieofthebook: "Finances et Economie",

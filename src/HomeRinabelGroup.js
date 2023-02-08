@@ -184,11 +184,13 @@ export default function HomeRinabelGroup() {
         Lorsque vous utiliser un VPN votre navigation sur internet est 100%
         sécurisé
       </p>
+	  
+	  <p>Chiffre d'affaire 2022 : 224 000 000€</p>
+	  <p>Bénéfices réalisés : 18 000 000€</p>
 
       <p>
-        Brillant de Jésus-Christ est un homme parti de rien, un homme qui à
-        connu l'échec, un homme qui à beaucoup échouer avant de devenir Brillant
-        de Jésus Christ le Saint Homme de Dieu.
+        Brillant de Jésus-Christ est le Champion de l'Eternel avec Jésus-Christ
+        et le Roi David. Brillant de Jésus Christ est un Saint Homme de Dieu
       </p>
 
       <p>
@@ -225,7 +227,7 @@ export default function HomeRinabelGroup() {
       <p>Le savez-vous ?</p>
       <p>
         Si vous mettez 250€ chaque jour dans votre compte Izocash, dans 20 ans
-        vous aurez 1 825 000€, dans 20 ans vous serez Millionnaire
+        vous aurez 1 825 000€
       </p>
 
       <p>Automatisez votre compte d'investissement</p>

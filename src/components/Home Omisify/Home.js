@@ -518,8 +518,7 @@ export default function HomeOmisify() {
 
       <div className="home-omisify-final">
         <p style={{ fontSize: "18px", marginTop: "20px" }}>
-          N'attendez plus, Rejoignez toutes ces personnes qui font parties de la
-          Génération Connecté
+          N'attendez plus, Rejoignez toutes ces personnes qui sont rémunérées par Omisify
         </p>
         <p>La Génération Connecté c'est la Nouvelle Génération !</p>
 
