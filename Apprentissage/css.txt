@@ -1,0 +1,18 @@
+
+
+.telephoneVirtuel {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+  
+  .telephoneVirtuel p {
+    font-size: 17px;
+    color: #00cc00;
+	border: 1px solid blue;
+	font-family: Arial, Helvetica, sans-serif;
+  }
