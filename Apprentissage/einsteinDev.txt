@@ -1,0 +1,23 @@
+import { useState } from "react";
+
+export default function Home() {
+    //cette logique permet d'afficher le telephone virtuel directement sur le menu des applications
+    /*on met useState(true) pour que lorsqu'on recharge la page, on puisse atterrir sur le menu
+    des applications virtuelles */
+    const [telephoneVirtuel, setTelephoneVirtuel] = useState(true);
+
+    return(
+        <>
+          {/* telephone Virtuel */}
+          {/* telephone Virtuel */}
+          {/* telephone Virtuel */}
+          {telephoneVirtuel && (<>
+            <div className="telephoneVirtuel">
+              <p>Applications Virtuelles (Einstein Développeur)</p>
+            </div>
+            {/* telephoneVirtuel */}
+          </>)}
+          {/* telephone Virtuel */}
+        </>
+    )
+}
