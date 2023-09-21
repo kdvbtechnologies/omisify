@@ -1,31 +1,9 @@
 
 
-  // jamelfase app
-  // jamelfase app
-  // jamelfase app
-  // ca c'est l'application Jamelfase
-  const [jamelfaseApp, setJamelfaseApp] = useState(false);
-  function JamelfaseApp() {
-    setJamelfaseApp(true);
+
+  //fermer
+  function CloseJamelfaseApp() {
+    setJamelfaseApp(false);
   }
-
-  // Xizok App
-  // Xizok App
-  // Xizok App
-  // ca c'est l'application xizok
-  const [xizokApp, setXizokApp] = useState(false);
-  function XizokApp() {
-    setXizokApp(true);
-  }
-
-  // One Topzer App
-  // One Topzer App
-  // One Topzer App
-  // ca c'est l'application One Topzer
-  const [oneTopzerApp, setOneTopzerApp] = useState(false);
-  function OneTopzerApp() {
-    setOneTopzerApp(true);
-  }
-
-
-
+  
+  
