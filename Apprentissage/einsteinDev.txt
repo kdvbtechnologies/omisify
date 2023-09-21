@@ -1,9 +1,4 @@
 
 
+onClick={CloseJamelfaseApp}
 
-  //fermer
-  function CloseJamelfaseApp() {
-    setJamelfaseApp(false);
-  }
-  
-  
