@@ -1,36 +1,50 @@
 
 
 
+import { useState } from "react";
 
+export default function Cahier() {
+  //ca a affiche la liste des exercices et solutions
+  //ca c'est le cahier d'exercices
+  const [cahier, setCahier] = useState(true);
 
-
- {/* jamelfaseApp 1 */}
-      {/* jamelfaseApp 1 */}
-      {/* jamelfaseApp 1 */}
-      {/* ca c'est l'application jamelfase */}
-      {jamelfaseApp1 && (
+  return (
+    <>
+      {/* Cahier d'exercices */}
+      {/* Cahier d'exercices */}
+      {cahier && (
         <>
-          <div onClick={CloseJamelfaseApp1} className="jamelfaseApp">
-            <p>S'inscrire sur Jamelfase</p>
+          <div className="cahier">
+            <div className="sommaire">
+              <div className="a">
+                <p>Cahier d'exercices</p>
+              </div>
+
+              <div className="b">
+                <p>Développeur : Einstein</p>
+              </div>
+              {/* b */}
+            </div>
+            {/* sommaire */}
+
+            <div className="exercice">
+              <div className="a">
+                <p>Page d'inscription One Topzer (Exercice)</p>
+              </div>
+
+              <div className="b">
+                <p>Page d'inscription One Topzer (Solution)</p>
+              </div>
+              {/* b */}
+            </div>
+            {/* exercice */}
           </div>
-          {/* jamelfaseApp */}
+          {/* cahier */}
         </>
       )}
-      {/* jamelfaseApp 1 */}
+      {/* Cahier d'exercices*/}
+    </>
+  );
+}
 
-       {/* jamelfaseApp 2 */}
-      {/* jamelfaseApp 2 */}
-      {/* jamelfaseApp 2 */}
-      {/* ca c'est l'application jamelfase */}
-      {jamelfaseApp2 && (
-        <>
-          <div onClick={CloseJamelfaseApp2} className="jamelfaseApp">
-            <p>S'inscrire sur Jamelfase</p>
-          </div>
-          {/* jamelfaseApp */}
-        </>
-      )}
-      {/* jamelfaseApp 2 */}
-	  
-	  
-	  
+
