@@ -1,4 +1,36 @@
 
 
-onClick={CloseJamelfaseApp}
 
+
+
+
+ {/* jamelfaseApp 1 */}
+      {/* jamelfaseApp 1 */}
+      {/* jamelfaseApp 1 */}
+      {/* ca c'est l'application jamelfase */}
+      {jamelfaseApp1 && (
+        <>
+          <div onClick={CloseJamelfaseApp1} className="jamelfaseApp">
+            <p>S'inscrire sur Jamelfase</p>
+          </div>
+          {/* jamelfaseApp */}
+        </>
+      )}
+      {/* jamelfaseApp 1 */}
+
+       {/* jamelfaseApp 2 */}
+      {/* jamelfaseApp 2 */}
+      {/* jamelfaseApp 2 */}
+      {/* ca c'est l'application jamelfase */}
+      {jamelfaseApp2 && (
+        <>
+          <div onClick={CloseJamelfaseApp2} className="jamelfaseApp">
+            <p>S'inscrire sur Jamelfase</p>
+          </div>
+          {/* jamelfaseApp */}
+        </>
+      )}
+      {/* jamelfaseApp 2 */}
+	  
+	  
+	  
