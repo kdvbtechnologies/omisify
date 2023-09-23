@@ -24,7 +24,6 @@ import rosed from "../Home Omisify/img/omisify-rose.png";
 import violet from "../Home Omisify/img/omisify-violet.jpg";
 import violetd from "../Home Omisify/img/omisify-violet.png";
 import white from "../Home Omisify/img/omisify-white.jpg";
-import whited from "../Home Omisify/img/omisify-white.png";
 
 export default function PageGenerationConnected() {
   const go1 =
@@ -1002,7 +1001,7 @@ export default function PageGenerationConnected() {
                 {/* close */}
 
                 <div className="images">
-                  <a href={whited} download="Omisify-white-logo">
+                  <a href={white} download="Omisify-white-logo">
                     <img src={white} alt="" />
                   </a>
 

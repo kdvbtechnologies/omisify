@@ -166,11 +166,11 @@ export default function HomeOmisify() {
   }
   get();
 
-  //const [ecranDemarrageOA, setEcranDemarrageOA] = useState(false);
+  const [ecranDemarrageOA, setEcranDemarrageOA] = useState(false);
   //fermer
   function CloseEcranDemarrageOA() {
-    //setEcranDemarrageOA(false);
-    //console.log(ecranDemarrageOA);
+    setEcranDemarrageOA(false);
+    console.log(ecranDemarrageOA);
     console.log("ecran de demarrage false, menu des applications true");
     const menu = "1";
     localStorage.setItem("https://vixinol.com/menu", menu);
