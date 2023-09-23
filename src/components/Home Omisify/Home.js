@@ -212,7 +212,7 @@ export default function HomeOmisify() {
 
       <div className="home-influencer-new-omisify-mobile">
         <div className="b">
-          <img onClick={CloseEcranDemarrageOA} src={homeinfluencer} alt="" />
+          <img src={homeinfluencer} alt="" />
         </div>
 
         <div className="a">
@@ -243,7 +243,7 @@ export default function HomeOmisify() {
 
       <div className="home-omisify-go-down">
         <div className="center">
-          <p>
+          <p onClick={CloseEcranDemarrageOA}>
             Omisify est favorable pour les influenceurs et pour les
             non-influenceurs
           </p>
