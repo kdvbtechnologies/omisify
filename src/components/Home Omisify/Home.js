@@ -166,6 +166,17 @@ export default function HomeOmisify() {
   }
   get();
 
+  const [ecranDemarrageOA, setEcranDemarrageOA] = useState(false);
+  //fermer
+  function CloseEcranDemarrageOA() {
+    setEcranDemarrageOA(false);
+    console.log(ecranDemarrageOA);
+    console.log("ecran de demarrage false, menu des applications true");
+    const menu = "1";
+    localStorage.setItem("https://vixinol.com/menu", menu);
+    console.log("localStorage.setItem reussie !");
+  }
+
   return (
     <>
       <NavbarTopOmisify />
@@ -194,14 +205,14 @@ export default function HomeOmisify() {
         {/* a */}
 
         <div className="b">
-          <img src={homeinfluencer} alt="" />
+          <img onClick={CloseEcranDemarrageOA} src={homeinfluencer} alt="" />
         </div>
       </div>
       {/* home-influencer-new-omisify */}
 
       <div className="home-influencer-new-omisify-mobile">
         <div className="b">
-          <img src={homeinfluencer} alt="" />
+          <img onClick={CloseEcranDemarrageOA} src={homeinfluencer} alt="" />
         </div>
 
         <div className="a">
@@ -518,7 +529,8 @@ export default function HomeOmisify() {
 
       <div className="home-omisify-final">
         <p style={{ fontSize: "18px", marginTop: "20px" }}>
-          N'attendez plus, Rejoignez toutes ces personnes qui sont rémunérées par Omisify
+          N'attendez plus, Rejoignez toutes ces personnes qui sont rémunérées
+          par Omisify
         </p>
         <p>La Génération Connecté c'est la Nouvelle Génération !</p>
 
